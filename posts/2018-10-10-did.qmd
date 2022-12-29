@@ -1,0 +1,71 @@
+---
+title: "Difference-in-differences in R"
+categories: [data]
+date: "2018-10-10"
+---
+
+This post recreates [this post](https://the-tarzan.com/2011/06/20/differences-in-differences-estimation-in-r-and-stata/) with proper formatting, syntax highlighting, etc. 
+
+```{r}
+library(tidyverse)
+library(skimr)
+```
+
+First we'll load the data (download if necessary).  I just started playing around with `skimr::skim()` to generate nice summaries.  (`digits` doesn't seem to do anything, though?)
+
+
+```{r}
+data_file = '../_data/did_data.dta'
+if (!file.exists(data_file)) {
+    download.file(url = 'https://drive.google.com/uc?authuser=0&id=0B0iAUHM7ljQ1cUZvRWxjUmpfVXM&export=download', 
+                  destfile = data_file)
+}
+
+dataf = haven::read_dta(data_file)
+skim(dataf, work, year, children)
+```
+
+Following the old post, we need to construct dummy variables for (a) before-and-after the EITC takes effect in 1994 and (b) the treatment group (1 or more children).  We'll keep these as logicals (rather than the numerics in the old post).  
+
+
+```{r}
+dataf = dataf %>%
+    mutate(post93 = year >= 1994, 
+           anykids = children >= 1)
+```
+
+The regression equation is 
+
+$$ work = \beta_0 + \delta_0 post93 + \beta_1 anykids + \delta_1 (anykids \times post93) + \varepsilon. $$
+
+The "difference-in-differences coefficient" is $$\delta_1$$, which indicates how the effect of kids changed after the EITC went into effect. Let's take a second to plot this.  
+
+
+```{r}
+ggplot(dataf, aes(post93, work, color = anykids)) +
+    geom_jitter() +
+    theme_minimal()
+```
+
+Okay, so the scatterplot version, like, isn't perspicuous.  How about the un-dummied variables, and just the mean?  
+
+
+```{r}
+ggplot(dataf, aes(year, work, color = anykids)) +
+    stat_summary(geom = 'line') +
+    geom_vline(xintercept = 1994) +
+    theme_minimal()
+```
+
+The parallel trends assumption looks good, at least qualitatively.  (Remember this only applies prior to the intervention.)  However, the parallel trends are nonlinear, which maybe is why the example uses the dummied variable.  
+
+Anyway, on to the regression.  Which, hey, is a [linear probability model](https://en.wikipedia.org/wiki/Linear_probability_model) because econometricians are funny like that.  
+
+
+```{r}
+model = lm(work ~ anykids*post93, data = dataf)
+summary(model)
+```
+
+This indicates that the EITC increased `work` (workforce participation? whether someone was employed?) by 5% among families with at least 1 child.  In the second plot, the blue line goes from about 45% prior to 1994 to about 50% afterwards.  
+
