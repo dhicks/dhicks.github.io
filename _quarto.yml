@@ -7,7 +7,7 @@ website:
     right:
       - about.qmd
       - research.md
-      - text: ORCid
+      - text: "{{< fa brands orcid >}}"
         href: https://orcid.org/0000-0001-7945-4416
       - text: GS
         href: https://scholar.google.com/citations?user=XvkwYZsAAAAJ&hl=en

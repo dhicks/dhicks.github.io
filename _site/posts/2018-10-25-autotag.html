@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Dan Hicks">
 <meta name="dcterms.date" content="2018-10-25">
 
 <title>Dan Hicks - Auto-tagging posts + the nDH metric</title>
@@ -103,6 +104,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -126,6 +129,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Dan Hicks - Auto-tagging posts + the nDH metric">
+<meta property="og:description" content="This morning I added a new feature to the blog posts: an R script that automatically generates and applies tags, allowing users to find old posts on (potentially, roughly) similar topics.">
+<meta property="og:site-name" content="Dan Hicks">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -154,7 +160,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://orcid.org/0000-0001-7945-4416">
- <span class="menu-text">ORCid</span></a>
+ <span class="menu-text"><i class="fa-brands fa-orcid" aria-label="orcid"></i></span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://scholar.google.com/citations?user=XvkwYZsAAAAJ&amp;hl=en">
@@ -181,12 +187,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Auto-tagging posts + the nDH metric</h1>
-                      </div>
+                                <div class="quarto-categories">
+                <div class="quarto-category">data</div>
+                <div class="quarto-category">developing</div>
+                <div class="quarto-category">idf</div>
+                <div class="quarto-category">local</div>
+                <div class="quarto-category">market</div>
+                <div class="quarto-category">meat</div>
+                <div class="quarto-category">rights</div>
+                <div class="quarto-category">students</div>
+                <div class="quarto-category">tf</div>
+                <div class="quarto-category">vegetarianism</div>
+              </div>
+                  </div>
   </div>
     
   
   <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Dan Hicks </p>
+            </div>
+    </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
