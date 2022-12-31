@@ -1,5 +1,5 @@
 ---
-title: "My research"
+title: "Research"
 ---
 
 Thanks to a series of academic and policy opportunities, I've been able to work on a variety of multidisciplinary research topics, using a variety of qualitative and quantitative methods.  This page briefly describes some of my major research interests, including links to relevant publications.  A full list of papers and other research outputs can be found on [my ORCID profile](https://orcid.org/0000-0001-7945-4416).  

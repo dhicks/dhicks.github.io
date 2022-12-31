@@ -7,16 +7,24 @@ website:
     right:
       - about.qmd
       - research.md
+      - text: "Teaching"
+        menu:
+          - text: "Methods of Data Science"
+            href: https://data-science-methods.github.io/
       - text: "{{< fa brands orcid >}}"
         href: https://orcid.org/0000-0001-7945-4416
-      - text: GS
+      - text: "{{< ai google-scholar >}}"
         href: https://scholar.google.com/citations?user=XvkwYZsAAAAJ&hl=en
+      - text: "{{< ai cv >}}"
+        href: https://dhicks.github.io/cv
       - icon: github
         href: https://github.com/dhicks/
 #       - icon: twitter
 #         href: https://twitter.com/danieljhicks/
       - icon: mastodon
         href: https://mastodon.social/@danhicks
+      - icon: envelope
+        href: mailto:dhicks4@ucmerced.edu
   open-graph: true
       
 format:
