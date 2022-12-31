@@ -3,7 +3,7 @@ project:
   output-dir: _docs
 
 website:
-  title: "Dan Hicks"
+  title: "Dan Hicks "
   navbar:
     right:
       - about.qmd
