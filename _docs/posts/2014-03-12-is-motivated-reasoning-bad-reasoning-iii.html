@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.280">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dan Hicks">
+<meta name="dcterms.date" content="2014-03-12">
+
+<title>Dan Hicks - Is Motivated Reasoning Bad Reasoning? III</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Dan Hicks - Is Motivated Reasoning Bad Reasoning? III">
+<meta property="og:description" content="This is part III of a three-part series. This series will be posted simultaneously on Je Fais, Donc Je Suis, my personal blog, as well as the Rotman Institute Blog.">
+<meta property="og:site-name" content="Dan Hicks">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Dan Hicks</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../research.html">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Teaching</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
+        <li>
+    <a class="dropdown-item" href="https://data-science-methods.github.io/">
+ <span class="dropdown-text">Methods of Data Science</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0001-7945-4416">
+ <span class="menu-text"><i class="fa-brands fa-orcid" aria-label="orcid"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=XvkwYZsAAAAJ&amp;hl=en">
+ <span class="menu-text"><i class="ai  ai-google-scholar" title="" style="color:"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://dhicks.github.io/cv">
+ <span class="menu-text"><i class="ai  ai-cv" title="" style="color:"></i></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dhicks/"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://mastodon.social/@danhicks"><i class="bi bi-mastodon" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:dhicks4@ucmerced.edu"><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Is Motivated Reasoning Bad Reasoning? III</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">critic</div>
+                <div class="quarto-category">hypothesis</div>
+                <div class="quarto-category">motivated</div>
+                <div class="quarto-category">policy</div>
+                <div class="quarto-category">reasoning</div>
+                <div class="quarto-category">scientist</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Dan Hicks </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">March 12, 2014</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="productive-disagreement-among-motivated-reasoners" class="level2">
+<h2 class="anchored" data-anchor-id="productive-disagreement-among-motivated-reasoners">Productive Disagreement among Motivated Reasoners</h2>
+<p><em>This is part III of a three-part series. This series will be posted simultaneously on <a href="http://jefais.tumblr.com/"><em>Je Fais, Donc Je Suis</em></a>, my personal blog, as well as the <a href="http://www.rotman.uwo.ca/blog/">Rotman Institute Blog</a>.</em></p>
+<p>In part I of this series, I discussed motivated reasoning, reasoning in which emotions or values play a significant role. I looked at the work of Dan Kahan, which suggests that motivated reasoning is pervasive. This, in turn, suggested the gloomy thought that bad reasoning is pervasive. But, in part II, I argued that motivated reasoning is not necessarily bad reasoning. To make this case, I looked at two models of motivated reasoning (or, values in science) from STS scholar Daniel Sarewitz and philosopher of science Heather Douglas.</p>
+<p>At this point, another gloomy thought seems to threaten. Motivated reasoning might not be bad reasoning, but it can still lead to intractable disagreement. If I — based in part on my values — accept the hypothesis that humans are causing climate change, and you — based in part on your values — reject this hypothesis, then how are we supposed to move forward? Now we recognize the role that emotions and values are playing in the disagreement; but disagreements over emotions and values seem to be as intractable as anything. In this final post in this series, I’ll address this gloomy thought.</p>
+<p>Disagreement — even intractable disagreement — is not necessarily a bad thing. Consider a simple scientific debate: A scientist says that some body of evidence supports her hypothesis. A critic points out, say, that there’s a crucial assumption linking the evidence and the hypothesis, and that the scientist hasn’t given any reason whatsoever to believe this assumption. The observers (other scientists) nod their heads, and ask the scientist why they should accept her assumption. The scientist conducts more research, and eventually produces an argument in favor of the assumption. The critic still isn’t satisfied, but the observers generally find the scientist’s argument convincing, and so they accept her hypothesis.<sup><a href="#fn:1">1</a></sup></p>
+<p>Now, in this simple scenario, the disagreement was intractable: the scientist never convinced the critic. But the disagreement was also quite productive. Without the critic, neither the scientist nor the observers would have realized that the hypothesis depended on the crucial assumption. Thanks to the critic, the scientist and the observers have a better understanding of the relationship between the evidence and the hypothesis, a better understanding of what all they’re accepting when they accept the hypothesis, and a better understanding of the ways in which the hypothesis could be undermined in the future.</p>
+<p>Next, suppose that the critic was critical because (and only because) of motivated reasoning — his values conflicted with the hypothesis, and so he made a special effort to identify the crucial assumption. Then motivated reasoning made for good reasoning and a productive disagreement. Indeed, without his motivated reasoning, it seems, no-one would have bothered to identify the crucial assumption.</p>
+<p>But now suppose that the critic — who, remember, never accepted the hypothesis — refuses to go quietly. Maybe, despite the fact that everyone else thinks the scientist has answered his criticism, he keeps making the same point over and over again, in the published scientific literature, then on his blog, and eventually on, say, Fox News. Suppose that the hypothesis has some policy implications that certain powerful lobbyists and politicians don’t like. They promote the critic’s criticisms, <a href="http://www.project2061.org/events/meetings/climate2010/includes/media/NotwrongClimateChange.MITPress.2007.pdf">despite the fact that every other scientist in the field accepts the hypothesis</a>. Let’s call this the <strong>celebrity skeptic</strong> scenario.</p>
+<p>At this point, we should worry that things could have gone wrong. I don’t want to assume that they have <em>actually</em> gone wrong.<sup><a href="#fn:2">2</a></sup> Instead, I want to ask: how could we tell <em>whether</em> they’ve gone wrong?</p>
+<p>In part II, my argument that motivated reasoning can be good reasoning relied on this claim: “If motivated reasoning leads us to recognize when our best science is ambiguous and uncertain, and we respond to this ambiguity and uncertainty properly, then our reasoning can be good.” This suggests two ways in which motivated reasoning can be <em>bad</em> reasoning:</p>
+<ol type="1">
+<li>The science is no longer either ambiguous or uncertain.</li>
+<li>The science is still ambiguous or uncertain, but we’re not responding to it properly.</li>
+</ol>
+<p>How would these play out in the celebrity skeptic scenario? First, the scientist might respond to the critic by eliminating all of the ambiguities and providing overwhelmingly evidence. She might show that, whatever set of choices we make, we get to the same conclusion; and that there is no reason whatsoever to think that the hypothesis is wrong.</p>
+<p>In this case, it seems that the critic is rejecting the hypothesis <em>only</em> because of his values; or that his values are simply overriding good evidence and reasoning, which clearly and unambiguously are pointing towards the hypothesis. To put it another way, the two places where Sarewitz and Douglas find room for values — ambiguity and uncertainty — have been filled in. So the critic’s motivated reasoning is, in this case, <em>bad</em> reasoning.</p>
+<p>I recognize that this scenario is a possibility. But I think eliminating <em>all</em> ambiguity and uncertainty will be practically impossible in many real-world cases. Consider what it would take to completely eliminate the ambiguities and uncertainties about climate change that we saw in part II.</p>
+<p>Second, suppose that the scientist hasn’t eliminated all the ambiguity and uncertainty. But she fails to acknowledge this, and acts as though the science were unambiguous and certain. She could even claim that the critic is rejecting the hypothesis only because of his values. Or, in the other extreme, the critic exaggerates the ambiguity and uncertainty, and even claims that the scientist has accepted the hypothesis only because of her values. Indeed, perhaps both things happen, and each side accuses the other of thoroughgoing irrationality.</p>
+<p>In these cases, the science is ambiguous and uncertain, but the participants in the debate are handling it badly. They are misrepresenting the extent of the ambiguity and uncertainty, and using this to mischaracterize their opponent in an effort to discredit him or her.</p>
+<p>I think that this kind of scenario is all too common in our society. Our scientific findings are frequently ambiguous and uncertain, and we fail to handle this properly. Instead, we wield the unattainable ideal of unambiguity and certainty as a rhetorical weapon (recall the discussion of “settled science” in part II).</p>
+<p>What would it look like if we handled ambiguity and uncertainty properly? Suppose the scientist — and the other members of the near-consensus — respond to the critic by saying something like this:</p>
+<blockquote class="blockquote">
+<p>Yes, there are remaining uncertainties and ambiguities. We believe that these uncertainties and ambiguities have been sufficiently addressed, though we recognize that the critic doesn’t agree. We recognize that values and emotions play an important role in this disagreement.</p>
+<p>More research could further address these issues. However, we do not think that any amount of research could address them completely. Our understanding of complex systems like these can never be totally unambiguous and totally certain.</p>
+<p>In any case, if our hypothesis is correct, then we must take action now to prevent serious problems. We hope that policymakers can find policies that are acceptable to both believers and skeptics — that prevent the problems without creating other ones. But this is not something science can do.</p>
+</blockquote>
+<p>There are still ambiguities and uncertainties. But the scientists acknowledge those ambiguities and uncertainties — they don’t try to pretend that they don’t exist — and they acknowledge that motivated reasoning is playing a role on both sides of the disagreement. This validates the critic’s criticisms, without completely conceding them.</p>
+<p>Furthermore — and this part is even more important — the scientists recognize that disagreements about values are best resolved by a political process, not a scientific one. Science — at least, not ambiguous and uncertain science, which is nearly all science — can’t compel us to adopt a certain policy on the basis of pure logic and evidence. Indeed, wielding logic and evidence as a political weapon will probably just make things worse. Handling ambiguity and uncertainty well — making disagreement productive — requires recognizing where science leaves off and politics must take over.</p>
+<div class="footnotes">
+<hr>
+<ol type="1">
+<li><div id="fn:1">
+<p>My discussion of this scenario is based on the account of non-value-free objectivity developed by philosopher of science <a href="http://books.google.com/books?id=S8fIbD19BisC">Helen Longino</a>. <a href="#fnref:1">↩︎</a></p>
+</div></li>
+<li><div id="fn:2">
+<p>Specifically, I don’t want to conclude that things have gone wrong just because there’s a near-consensus and a single holdout. There have been plenty of episodes in the history of science in which the near-consensus position turned out to be wrong, and the critics (who turned out to be right) were ignored because they weren’t men, weren’t white, didn’t have positions at prestigious universities, didn’t have the support of wealthy and powerful people, and so on. <a href="#fnref:2">↩︎</a></p>
+</div></li>
+</ol>
+</div>
+<div id="footer">
+<p><span id="timestamp">March 12th, 2014 10:00am</span> <span class="tag">(philosophy of) science</span> <span class="tag">science and values</span> <span class="tag">climate change</span></p>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

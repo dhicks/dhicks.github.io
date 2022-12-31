@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.280">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dan Hicks">
+<meta name="dcterms.date" content="2014-06-18">
+
+<title>Dan Hicks - Virtue Ethics for Robots</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Dan Hicks - Virtue Ethics for Robots">
+<meta property="og:description" content="Autonomous automated systems — machines capable of acting on their own for extended periods of time in complex environments — have been a major trope of science fiction for as long as the genre has…">
+<meta property="og:site-name" content="Dan Hicks">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Dan Hicks</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../research.html">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Teaching</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
+        <li>
+    <a class="dropdown-item" href="https://data-science-methods.github.io/">
+ <span class="dropdown-text">Methods of Data Science</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0001-7945-4416">
+ <span class="menu-text"><i class="fa-brands fa-orcid" aria-label="orcid"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=XvkwYZsAAAAJ&amp;hl=en">
+ <span class="menu-text"><i class="ai  ai-google-scholar" title="" style="color:"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://dhicks.github.io/cv">
+ <span class="menu-text"><i class="ai  ai-cv" title="" style="color:"></i></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dhicks/"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://mastodon.social/@danhicks"><i class="bi bi-mastodon" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:dhicks4@ucmerced.edu"><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Virtue Ethics for Robots</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">automated</div>
+                <div class="quarto-category">creativity</div>
+                <div class="quarto-category">data</div>
+                <div class="quarto-category">rights</div>
+                <div class="quarto-category">robot</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Dan Hicks </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 18, 2014</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p>Autonomous automated systems — machines capable of acting on their own for extended periods of time in complex environments — have been a major trope of science fiction for as long as the genre has existed. Over the last ten years or so, autonomous systems research has advanced dramatically, and it is generally recognized that autonomous automated systems will be common in warfare and everyday life (at least in wealthy countries) within the next ten years or so.</p>
+<p>In light of these developments, “robot ethics” has developed as a serious scholarly (and popular) topic. Dipping into this literature, I get the impression that much of robot ethics takes what I’m going to call a <em>principle-based approach</em> to ethics. On such an approach, ethical judgment is a matter of, first, identifying the correct set of ethical principles, and second, correctly applying those principles in a given situation. (I have some thoughts on why robot ethics has taken the principle-based approach, but I’ll leave them out here. I’d be happy to elaborate in the comments.)</p>
+<p>In this post, I’m going to argue that a principle-based approach tends to overlook two important features of ethical judgments in complex situations. In addition, I think that these two features correspond to certain worries that many members of the public have about automated ethical decisionmaking — that is, about turning over responsibility for ethical decisions to autonomous automated systems. So, insofar as robot ethics want to (try to) assuage public concerns about autonomous automated systems, they should at least broaden their range of ethical approaches.</p>
+<p>Before going further, I should make it clear that I’m not actually very familiar with the current state of robot ethics. I’ve glanced at a few things, and read some things shared (and in a couple of cases, written) by my advisor, Don Howard, over social media, and I’ve had a few discussions with my friend and co-author Charles Pence. But I am, professionally speaking, a philosopher with expertise in ethics, and I generally work within an approach to ethics that is sharply critical of the limitations of a principle-based approach. So hopefully my arguments here will be valuable to robot ethicists even if they are built on a hasty generalization.</p>
+<p>My argument is going to contrast principle-based approaches to ethics with an alternative approach called <em>virtue ethics</em>. Within philosophical work on ethics, principle-based approaches — especially Kantian deontology, utilitarianism, and appeals to human rights — have been dominant for the last several centuries. Virtue ethics has been recognized as a distinct approach for about 40 or 50 years, but virtue ethicists trace their approach back to such ancient philosophers as Aristotle and Confucius, as well as traditional ethe (ethos, plural) of agrarian and nomadic hunting societies in Africa and the Americas.</p>
+<p>The principle-based approaches generally focus on decisions about particular actions, and aim to find the one right or best course of action to take in a given situation. By contrast, virtue ethics generally focuses on the character of agents over time. Since they’re less concerned about what to do in particular situations, virtue ethicists tend to be more attentive to complexity and uncertainty in decisionmaking than principle-based approaches. In addition, virtue ethicists tend to be concerned about more aspects of our ethical lives than just making decisions. Consequently, virtue ethicists have developed the conceptual tools that I’ll use below, and it’s hard to find room for these tools in the principle-based approaches. Thus, again, robot ethicists should expand their approaches, so that they can make use of these virtue ethics tools.</p>
+<p>To make my discussion concrete, let’s consider two cases, both of which seem to be common in robot ethics.</p>
+<blockquote class="blockquote">
+<p>An autonomous, automated soldier/weapons system is sent on a mission to engage with an enemy squad. The squad has barricaded themselves in a small building with a dozen children. Should the system engage the enemy — risking the lives of the children — or maintain its distance — risking the possibility that the enemy squad will escape?</p>
+<p>An autonomous, automated car is transporting one passenger along a narrow street with parked cars on either side. A child suddenly runs out into the street from between two parked cars. The car does not have time to brake safely. Should it veer into the cars on the side of the street — risking the life of its passenger — or hit the child — risking its life?</p>
+</blockquote>
+<p>On the principle-based approach, the task for robot ethics is to identify the correct ethical principles to be applied in these cases, and so to determine the ethically correct course of action for the automated system.</p>
+<p>However, I argue that <strong>there is no ethically correct course of action in either of these cases</strong>. Both cases are examples of <em>moral dilemmas</em>: situations in which every available course of action is, in some respect or another, seriously bad, wrong, or vicious. In the automated car case, both of the available options risk serious harm to moral innocents (people who do not deserve to be harmed). In the automated weapons system case, the choice is between serious harm to moral innocents now or serious harm later (after the enemy squad escapes).</p>
+<p>Principle-based approaches have trouble recognizing moral dilemmas to the extent that they are based on a single fundamental ethical principle, such as Kant’s categorical imperative or utilitarianism’s principle of greatest happiness. On pain of contradiction, the fundamental ethical principle cannot imply both <em>the system should do X</em> and <em>the system should not do X</em>. Pluralist principle-based approaches — like Beauchamp and Childress’ principlism for biomedical ethics — do better here. But the impression I have is that writers in robot ethics generally do not recognize the moral dilemmas is these cases; instead, they keep searching for (and arguing about) “the” right answer.</p>
+<p>Bernard Williams, Rosalind Hursthouse, and Lisa Tessman — three major virtue ethicists — all emphasize <em>regret</em> as an appropriate response to finding oneself in a moral dilemma. Consider an ordinary human being, rather than an autonomous system, in either of our example cases. We expect that this person, whatever they do, will feel ethically responsible for bringing about a serious harm; they will feel regret. The fact that they have done the best that they could do in terrible, regretful circumstances could mean that we will not punish them for, say, the death of the children. But they will still feel responsible. Furthermore, <strong>this feeling of regret is an ethically appropriate response to a moral dilemma</strong>. Someone who does not feel bad in any way at all about the death of the children is callous, morally reprehensible, and <a href="http://behavenet.com/node/21650">a candidate for antisocial personality disorder according to the DSM IV criteria</a>.</p>
+<p>This brings us to the first concern that, I think, many people have about autonomous ethical decisionmaking. In the popular imagination, robots are cold, calculating, and callous; they simply “follow their programming” wherever it leads them. In other words, <strong>autonomous systems do not experience regret when confronted with moral dilemmas, and so respond to these situations in disturbing and ethically inappropriate ways</strong>. In this respect, concerns about automated ethical decisionmaking parallel Cold War-era concerns about scientific-military technocrats — Dr Strangelove and HAL are both morally reprehensible and disturbing characters because of their callous, calculating decisionmaking processes.</p>
+<p>I presented our two example cases dichotomously: the autonomous automated system must choose exactly one of two options, A or B. But of course real-world cases aren’t that simple; there are many different courses of action that could be taken, and many different options within each possible course. In the case of the automated soldier/weapons system, the system could rush into the building, relying on its superhuman reaction times to take out the enemy before any of the children are hurt; it could use smoke or some other means to drive everyone out of the building; or it could call in automated or human support.</p>
+<p>Principle-based approaches generally assume that the range of possible course of action is fixed and known in advance. The principles are used to evaluate each possible course, and the correct course of action is the one that comes out highest on this evaluation. Even Beauchamp and Childress’ approach seems to assume that this is how ethical decisionmaking works. But the observation in the last paragraph indicates that, in general, we don’t know the range of possible courses of action in advance.</p>
+<p>Indeed, <strong>in ethically complex and challenging situations, there is a crucial role for creativity and innovation</strong>. Sometimes we can appear to be in a moral dilemma because of serious problems with all of the simple, obvious options. But, by taking advantage of particular features of the situation in creative ways, we can find a way to avoid the dilemma. Because principle-based approaches generally assume that all of the possible courses of action are known in advance, they generally miss this role for creativity.</p>
+<p>I want to stress that this role for creativity is closely tied to the particular features of the situation. We might call this <em>tactical creativity</em>, to distinguish it from the <em>strategic creativity</em> that can develop novel approaches to general situations. Both strategic and tactical creativity are invaluable resources for resolving ethical dilemmas and novel situations; but tactical creativity, unlike strategic creativity, can only be exercised “on the ground,” in the particular situation at hand. Consequently, <strong>correctly resolving some apparent moral dilemmas requires tactical creativity</strong>.</p>
+<p>This brings us to the second concern about automated ethical decisionmaking. Robots, in the popular imagination, are uncreative and unadaptable; as with the first concern, they simply “follow their programming,” rigidly and without deviation. In other words, while their designers might exercise strategic creativity, autonomous automated systems are incapable of tactical creativity. But, as I argued above, tactical creativity is required to resolve some apparent moral dilemmas. Thus, <strong>autonomous automated systems are more likely than humans to incorrectly resolve some apparent moral dilemmas</strong>. Because these systems are rigid and uncreative, they are incapable of seeing the creative way out of the dilemma. And so they are more likely than creative humans to do unnecessary ethical damage.</p>
+<p>In this post, I’ve raised two concerns for robot ethicists, drawing on work in virtue ethics. First, because autonomous systems do not experience regret, they do not respond appropriately to finding themselves in moral dilemmas. And second, because these systems lack creativity, they are incapable of correctly resolving some moral dilemmas.</p>
+<p>My arguments for these concerns draw on the popular image of robots and other autonomous automated systems as cold, callous, and calculating. Some readers might think that these concerns can be responded to by changing the popular image of robots — by encouraging people to think of Data from <em>Star Trek</em> or the robot in <em>Robot and Frank</em>, rather than HAL. But this would be superficial. What’s necessary, I think, is to think of ethical deliberation by autonomous automated systems not in terms of applying a set of principles, but instead as having and exercising a set of responsive capacities, including regret and creativity. This might require a radical change in the way roboticists approach system design, but (if successful) it would produce robots with <em>genuinely virtuous character</em>.</p>
+<div id="footer">
+<p><span id="timestamp">June 18th, 2014 11:46am</span> <span class="tag">robot ethics</span> <span class="tag">virtue ethics</span> <span class="tag">philosophy of technology</span></p>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

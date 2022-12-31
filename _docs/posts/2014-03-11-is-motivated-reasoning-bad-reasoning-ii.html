@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.280">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dan Hicks">
+<meta name="dcterms.date" content="2014-03-11">
+
+<title>Dan Hicks - Is Motivated Reasoning Bad Reasoning? II</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Dan Hicks - Is Motivated Reasoning Bad Reasoning? II">
+<meta property="og:description" content="This is part II of a three-part series. This series will be posted simultaneously on Je Fais, Donc Je Suis, my personal blog, as well as the Rotman Institute Blog.">
+<meta property="og:site-name" content="Dan Hicks">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Dan Hicks</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../research.html">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Teaching</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
+        <li>
+    <a class="dropdown-item" href="https://data-science-methods.github.io/">
+ <span class="dropdown-text">Methods of Data Science</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0001-7945-4416">
+ <span class="menu-text"><i class="fa-brands fa-orcid" aria-label="orcid"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=XvkwYZsAAAAJ&amp;hl=en">
+ <span class="menu-text"><i class="ai  ai-google-scholar" title="" style="color:"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://dhicks.github.io/cv">
+ <span class="menu-text"><i class="ai  ai-cv" title="" style="color:"></i></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dhicks/"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://mastodon.social/@danhicks"><i class="bi bi-mastodon" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:dhicks4@ucmerced.edu"><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Is Motivated Reasoning Bad Reasoning? II</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">hypothesis</div>
+                <div class="quarto-category">motivated</div>
+                <div class="quarto-category">reasoning</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Dan Hicks </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">March 11, 2014</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="alternatives-to-antagonism-ambiguity-and-uncertainty" class="level2">
+<h2 class="anchored" data-anchor-id="alternatives-to-antagonism-ambiguity-and-uncertainty">Alternatives to Antagonism: Ambiguity and Uncertainty</h2>
+<p><em>This is part II of a three-part series. This series will be posted simultaneously on <a href="http://jefais.tumblr.com/"><em>Je Fais, Donc Je Suis</em></a>, my personal blog, as well as the <a href="http://www.rotman.uwo.ca/blog/">Rotman Institute Blog</a>.</em></p>
+<p>In the first part of this post, I discussed the work of social psychologist Dan Kahan on motivated reasoning. As he defines it, motivated reasoning is “the unconscious tendency of individuals to process information in a manner that suits some end or goal extrinsic to the formation of accurate beliefs.” According to what I called the antagonistic picture, motivated reasoning is bad reasoning; it leads us to have false or unjustified beliefs. And Kahan’s work shows that motivated reasoning is pervasive; specifically, I discussed some work that shows that high science literacy and numeracy seems to exacerbate, not remove, motivated reasoning.</p>
+<p>All together, this leads us to a gloomy conclusion. But, in this post, I’ll argue that things aren’t necessarily so gloomy. Specifically, I’ll argue that <strong>motivated reasoning isn’t necessarily bad reasoning</strong>. I’ll do this by first thinking a bit more about why we expected high science literacy and numeracy to lead to agreement, then introducing two models of motivated reasoning, one from STS scholar <a href="http://archive.cspo.org/people/bio/sarewitz/">Daniel Sarewitz</a> and one from philosopher of science <a href="https://uwaterloo.ca/philosophy/people-profiles/heather-douglas">Heather Douglas</a>.<sup><a href="#fn:1">1</a></sup></p>
+<p>In the first part of the post, we saw that science literacy and numeracy seem to increase disagreement, at least about climate change. This was exactly the opposite of what we had predicted, namely, that science literacy and numeracy would decrease disagreement, and it led to our gloomy conclusion that we are doomed to bad, motivated reasoning. But why did we expect science literacy and numeracy to have this effect? In other words, why did we expect highly science literate and numerate people to agree on what the evidence says about climate change?</p>
+<p>Part of the answer, I think, is that we assumed that the reasoning involved — going from some evidence to accepting or rejecting a hypothesis — is <strong>unambiguous</strong> and <strong>certain</strong>. In other words, given the available evidence, it is clear whether the hypothesis should be accepted or rejected; and there is no reason to think that we could be wrong to accept or reject the hypothesis.</p>
+<p>If the reasoning involved in, say, assessing the risks of climate change really is unambiguous and beyond reasonable doubt, then we would expect good reasoners to agree. But if one or the other of these assumptions is false, then the door is open for good reasoners to disagree.</p>
+<p>Sarewitz and Douglas, respectively, start their analyses by rejecting these assumptions. Sarewitz points out that scientific evidence is often quite ambiguous, and Dougas starts by recognizing that inductive inferences can never be certain. In different ways, each goes on to argue that values have a role to play in recognizing these ambiguities and uncertainties.</p>
+<p>But that means that <em>motivated reasoning can be good reasoning</em>. If motivated reasoning leads us to recognize when our best science is ambiguous and uncertain, and we respond to this ambiguity and uncertainty properly, then our reasoning can be good. Indeed, in this kind of case, if non-motivated reasoning would have led us to assume (incorrectly) that our findings are unambiguous and certain, then <em>motivated reasoning would be better than non-motivated reasoning</em>. (We’ll take a closer look at this possibility in part III.)</p>
+<p>Let’s turn now to Sarewitz and Douglas for a little more detail. I’m going to stick with the example of climate change to illustrate things.</p>
+<p>The computer simulations we use to study the global climate are enormously complex; arguably, some of them are the most complex things that human beings have ever created. But even these extraordinarily complex systems involve <a href="http://link.springer.com/article/10.1007%2Fs10699-005-3196-x">significant simplifications and approximations</a> in the ways they represent the global climate. Choices have to be made about which parts of the system will be modeled in which ways, and which parts will be left out entirely. When we move from modeling the climate itself to modeling the social and economic effects of climate change, the choices ramify.</p>
+<p>Consequently, <a href="http://www.sciencedirect.com/science/article/pii/S1462901104000620">Sarewitz argues</a>,</p>
+<blockquote class="blockquote">
+<p>nature itself — the reality out there — is sufficiently rich and complex to support a science enterprise of enormous methodological, disciplinary, and institutional diversity. I will argue that science, in doing its job well, presents this richness, through a proliferation of facts assembled via a variety of disciplinary lenses, in ways that can legitimately support, and are causally indistinguishable from, a range of competing, value-based political positions.</p>
+</blockquote>
+<p>In other words, choices are unavoidable; “when cause-and-effect relations are not simple or well-established, all uses of facts are selective.” Then, once we see where a certain set of choices is taking us, we seem to be free to endorse those choices — if they agree with our values — or call them into question — if they don’t.<sup><a href="#fn:2">2</a></sup> Specifically, once we see the implications of the choices made by climate scientists, liberals are free to endorse those choices and conservatives are free to call them into question.</p>
+<p>This doesn’t mean that <em>all</em> sets of choices are equally good. Rather, Sarewitz’ starting point is that <em>no one set of choices is unambiguously the best</em>. At this point, motivated reasoning can lead us go with one set rather than another, without our reasoning being flawed in any way whatsoever. Indeed, motivated reasoning can help us recognize that someone else’s findings depend on choices that they have made unconsciously.</p>
+<p><a href="http://books.google.com/books?id=LcFvKeOJRmgC">Douglas’ model</a> is built on the idea of <strong>inductive risk</strong>. When we accept or reject a general hypothesis or a prediction about the future based on limited evidence, there’s always a possibility that we’ve gotten things wrong — that our sample wasn’t representative of the whole population, that some unanticipated factor changed the way things turned out. Douglas points out that getting things wrong in this way can have negative downstream consequences. For example, if we accept the hypothesis that climate change will cause massive population displacements (due to sea level rise and desertification), make serious economic sacrifices to try to forestall these displacements, and then it turns out that the hypothesis was wrong, then our serious economic sacrifices were unnecessary. Similarly, if we reject this hypothesis, do nothing to forestall the displacements, and it turns out that we’re wrong, then we’ll have massive population displacements on our hands.</p>
+<p>The values that we attach to the downstream consequences of a hypothesis can and should play a role in determining how much evidence we need to accept or reject the hypothesis. If the consequences of incorrectly accepting the hypothesis are relatively minor, then we should be satisfied with relatively little and weak evidence. But if the consequences are relatively major, then we should demand much more and more stringent evidence.</p>
+<p>Because of this, when everyone can agree on the values of the various consequences, we can expect agreement on how much evidence is required to accept or reject the hypothesis, and so we can expect everyone to act the same way (that is, everyone accepts it or everyone rejects it). On the other hand, <em>when people don’t agree on the values at stake, we expect disagreement about whether we have enough evidence</em>.</p>
+<p>This could help explain why climate change is politically polarized. Liberals generally think the economic consequences of doing something about climate change will be minor, while the social and ecological consequences of not doing something will be major. Conservatives (at least pro-capitalist conservatives) generally think exactly the opposite: the economic consequences are major and the social and ecological consequences are minor. So liberals are satisfied with the available evidence concerning climate change and conservatives want more and better evidence.</p>
+<p>In this explanation of the controversy, both sides are using motivated reasoning. Indeed, on Douglas’ model, motivated reasoning is absolutely necessary. Without motivated reasoning — without taking into account the significance of the consequences — we have no way to make a non-arbitrary decision about whether we have enough evidence to accept the hypothesis. <em>Good reasoning requires emotions and values.</em><sup><a href="#fn:3">3</a></sup></p>
+<p>If this explanation is right, then the controversy over whether “the science is settled” (about climate change) is disingenuous, in two ways. First, we can never be certain about climate change, and in this sense the science can never be “settled.” <a href="http://www.nationalreview.com/article/371639/myth-settled-science-charles-krauthammer">It’s disingenuous for conservatives to demand this</a>, and <a href="http://www.npr.org/templates/story/story.php?storyId=9047642">likewise disingenuous for liberals to claim that it has been achieved</a>. The controversy is really over whether the evidence is <em>sufficient</em> to accept the key claims about climate change (humans are responsible, it will have specific bad consequences, and so on). But even this is disingenuous, because liberals and conservatives are working with different standards of sufficient evidence. Due to motivated reasoning, the evidence can be both sufficient for liberals <em>and at the same time</em> insufficient for conservatives.</p>
+<p>So motivated reasoning is not necessarily bad reasoning. Because of ambiguity and uncertainty, emotions and values have a role to play in our reasoning. But does this mean that “reasoning” degenerates into an anything-goes free-for-all? No.&nbsp;That will be the topic of part III.</p>
+<div class="footnotes">
+<hr>
+<ol type="1">
+<li><div id="fn:1">
+<p>To be precise, Douglas and Sarewitz write more about “value-freedom” and “objectivity” than “motivated reasoning.” But they’re closely connected. In my research, I define value-freedom as the normative ideal or principle that ethical and political values should not play a role in accepting (or rejecting) a claim. Value-freedom is one way (but only one way) of understanding objectivity. Motivated reasoning — and cultural cognition specifically — often seems to violate value-freedom. Now, Douglas and Sarewitz are both arguing that <em>non-value-free science can still be good science</em>. If they’re right, then in the same way motivated reasoning can still be good reasoning. <a href="#fnref:1">↩︎</a></p>
+</div></li>
+<li><div id="fn:2">
+<p>“We are free to do X” is shorthand here for something like “good reasoning does not require that we do not-X.” <a href="#fnref:2">↩︎</a></p>
+</div></li>
+<li><div id="fn:3">
+<p>We might worry that, say, conservatives are putting too much weight on the economic consequences, and not enough on the social and ecological consequences. That is, we might worry that conservatives are working with wrong or unreasonable values. I think a weakness of both of these models is that <a href="http://www.jstor.org/discover/10.1086/673720?uid=2&amp;uid=4&amp;sid=21103228040821">they treat values as exogenous</a> — values just sort of come in from beyond the scope of rational debate and disagreement. <a href="#fnref:3">↩︎</a></p>
+</div></li>
+</ol>
+</div>
+<div id="footer">
+<p><span id="timestamp">March 11th, 2014 10:01am</span> <span class="tag">(philosophy of) science</span> <span class="tag">science and values</span> <span class="tag">climate change</span></p>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.280">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dan Hicks">
+<meta name="dcterms.date" content="2018-02-28">
+
+<title>Dan Hicks - A care ethics for data science</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Dan Hicks - A care ethics for data science">
+<meta property="og:description" content="Care ethics is an approach to ethical theorizing and reflection that emphasizes personal relations rather than abstract principles or rules.">
+<meta property="og:site-name" content="Dan Hicks">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Dan Hicks</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../research.html">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Teaching</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
+        <li>
+    <a class="dropdown-item" href="https://data-science-methods.github.io/">
+ <span class="dropdown-text">Methods of Data Science</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0001-7945-4416">
+ <span class="menu-text"><i class="fa-brands fa-orcid" aria-label="orcid"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=XvkwYZsAAAAJ&amp;hl=en">
+ <span class="menu-text"><i class="ai  ai-google-scholar" title="" style="color:"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://dhicks.github.io/cv">
+ <span class="menu-text"><i class="ai  ai-cv" title="" style="color:"></i></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dhicks/"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://mastodon.social/@danhicks"><i class="bi bi-mastodon" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:dhicks4@ucmerced.edu"><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">A care ethics for data science</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">data</div>
+                <div class="quarto-category">scientist</div>
+                <div class="quarto-category">students</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Dan Hicks </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 28, 2018</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p><a href="https://plato.stanford.edu/entries/feminism-ethics/#FemAppEth">Care ethics</a> is an approach to ethical theorizing and reflection that emphasizes personal relations rather than abstract principles or rules. For example, <a href="https://medium.com/@dpatil/a-code-of-ethics-for-data-science-cda27d1fac1#---244-587">ethics codes</a> and <a href="https://en.wikipedia.org/wiki/Common_Rule">human subjects research regulations</a> take a rule-based approach to identifying and mitigating ethical problems. On a care ethics approach, we start by thinking about whose lives are affected by our actions, and whether our actions make for health or damaged relationships to those people.</p>
+<p>Care ethics developed in the 1980s, after psychologist Carol Gilligan observed differences in the ways adolescent girls and boys reason about moral dilemmas. Boys tended to rely more on abstract principles or rules to decide what was right (“cheating on an exam is wrong”), while girls tended to focus more on how their actions affected the people in their lives (“my mother would be disappointed if I cheated on an exam”). While contemporary care ethicists do not think that <em>all</em> men or women think in these stereotypical ways, focusing only on abstract principles ignores an important alternative approach used by many women. For this reason, several feminist psychologists and ethicists have developed care ethics as a robust approach to thinking about ethics.</p>
+<p>In this post, I want to begin to sketch a care ethics for data scientists. Specifically, I want to ask <em>who are the people that data scientists relate to, in our work as data scientists?</em> That is, whose lives do we affect by doing data science? Clarifying these different relationships doesn’t yet tell us what makes these relationships go well or badly. But, as a first step, it’s important to systematically think about the range of different relationships in which we stand.</p>
+<section id="two-paradigms-of-data-science" class="level1">
+<h1>Two Paradigms of Data Science</h1>
+<p>Throughout this post, I’m going to assume two different paradigms for data science activity. In <em>academic data science</em>, the data scientist is a member of an academic research lab, and specifically is a person who works directly with the lab’s research data. The data scientist is usually not the experimentalist or data collector — they’re not the person who runs the experiments or sets up the sensor systems in the field. At least, they don’t do data collection <em>in their role as a data scientist</em>. In other words, data scientist and data collector are two different roles, even though they might be done by the same particular individual. Similarly, I’m going to assume that the data scientist role is different from the role of the principal investigator. Among other things, the principal investigator sets the overall aims and research agenda for the lab, and has ultimate authority over the way research findings are interpreted and presented.</p>
+<p>In <em>business data science</em>, the data scientist is an employee or contractor at a for-profit company or other “business-like” organization. In contrast with an academic setting, the overall aim of this organization is not to produce new knowledge. The organization has some other aim — say, to sell ads — and data science is used to better achieve this overall aim. Further, the data scientist uses “found data.” These data might be produced internally by the organization — maybe from logs of user behavior on the organization’s social media platform — or externally — such as public records or stock ticker data. The data scientist also has a supervisor or manager, who assigns the data scientist analytical or modeling tasks and is nominally responsible for communicating the data scientist’s findings or products to other parts of the organization.</p>
+<p>In both paradigms, the data scientist — again, in their role as data scientist — is not responsible for the way the data are collected. They are also not ultimately responsible for the way the data are interpreted and communicated. Instead, the data scientist occupies one stage of a pipeline or assemblyline that connects sources of data to “decisionmakers.” This pipeline metaphor suggests that we can think about the relationships in which a data scientist finds herself by thinking about who is found “upstream” and “downstream” from data scientists.</p>
+</section>
+<section id="upstream" class="level1">
+<h1>Upstream</h1>
+<p>Starting from the data scientist, the first people we find upstream are data collectors and data curators (also called “data engineers” and “informaticists”). Data collectors construct and utilize the “instruments” — the experimental apparatus, the SurveyMonkey forms, the user activity logs — that transform physical events into “inscriptions” or “raw data.” Data curators are responsible for creating and maintaining the computing infrastructure needed to preserve collected data for use by data scientists: servers, databases, computer clusters, and so on.</p>
+<p>Like data scientists, data collectors and data curators will often be professionals with a postsecondary formal education and certification. But they may have lower status than data scientists — they might have the title of “librarian” or “technician” rather than “scientist.” Their work will often be anonymous — we will see the database and API, but not the name of the software engineer who designed them.</p>
+<p>Further upstream are the sources of data, the people — or animals, or places, or other things — whose actions are inscribed in the “raw data.” Informed consent is frequently discussed as an important rule governing our relationships with data sources: we must obtain their consent before collecting and utilizing their data. Informed consent can also be thought of as an important aspect of our personal relationships with data sources. Do they understand what we want to do with their data? Would they approve? Would they find our analysis helpful, valuable, important? A waste of time, annoying, a distraction? Or worse, exploitative or harmful?</p>
+</section>
+<section id="downstream" class="level1">
+<h1>Downstream</h1>
+<p>Immediately downstream from us — or perhaps circling with us in an eddy — are fellow data scientists. We may relate to particular data scientists as mentors and students, or collaborators. An important implication of open source software and open data is that we often use the tools and datasets of fellow data scientists, and they in turn make use of the tools and datasets that we create. Collaborations will often involve data scientists with complementary areas of expertise within data science, creating further ties of interdependence. What would they say about how I am using the products of their work? What would I say about how they are using the products of mine?</p>
+<p>Next we have people who have authority over the way our work is interpreted, communicated, and used: managers, PIs, “decisionmakers,” readers/audiences, “the public.” In some cases we can easily exercise significant influence over these interpretations, communications, and utilizations. But often this is difficult to do, and we may need to think carefully about how to pass on our findings to avoid misinterpretation or the malign use (or neglect) of the products of our work.</p>
+<p>In some cases, as data scientists we make claims about patterns or findings that we have discovered in the data. But data scientists also engage in visual communication, constructing static plots and graphics that require audiences to do more active interpretation. Further, we might create “interactives,” “dashboards,” or “systems” that leave open to users aspects of the process of discovering patterns and drawing conclusions. More flexible data products give more autonomy to our audiences or users. But even the most flexible data products are based on assumptions that inform their design — about what variables are important, how they might be related, how these relations might be used by audiences or users, and so on. In this way, we are pointing them towards certain conclusions, and away from others. Users have autonomy; but we are still channeling that autonomy. In what directions? Will they resist moving in that direction, or follow our lead? If they go where we are pointing, will it be too reluctantly, or perhaps too quickly? What do we want them to do when they get there? And what will they think of those broader aims?</p>
+<p>I use the term <em>data subjects</em> to refer to people — and animals, and places, and other things — whose lives (or existence) are shaped, in important ways, by the interpretation and use of data products. Data subjects often include data sources; but perhaps more often data subjects are not data sources. Consider a criminology model built using data from Philadelphia but put into use in Chicago. The people who applied the data — residents of Philadelphia — are not the people whose lives are shaped by the use of the model. While human subjects research rules regulate the relationship between researchers and data sources, they say absolutely nothing about data subjects.</p>
+<p>As data scientists, our relationship with data subjects is mediated by supervisors, systems users, or other “decisionmakers.” But because decisions that we make channel the decisions made by downstream systems users, our decisions indirectly affect data subjects. If data subjects argue that our model has harmed them, it is callous to respond that we were “just following orders” and “doing what the client wanted.” That is literally denying our responsibility to care about our relations to other people. Just as it is important to reflect on the people whose data we use, and consider what they would think of the ways we are utilizing their data, it is also important to reflect on the people whose lives are governed by the analysis that we conduct, and consider what they think of that analysis.</p>
+<p>These relationships become more difficult to reflect upon as they become more distant. Suppose I develop a deidentified dataset that is linked with a second dataset by another data scientist; then the combined dataset is re-identified by a third data scientist, and used to construct a predictive model; which is then sold to an IT contractor and bundled into a software suite; which is then used by an insurance company to predict risk of disease; with the result that someone cannot afford health insurance and dies of a treatable disease. It is tempting to say that our responsibility to the patient at the end of this chain has been watered down to nothing. But care ethics leads us to consider even this tenuous connection. If I come across this person as he lays dying at home untreated, what will I say? To deny any responsibility for his suffering because “I couldn’t know” or “I just played the smallest part” is, again, callous.</p>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>In this post, I have identified a series of relationships surrounding a data scientist: data sources; data collectors; data curators; fellow data scientists; managers, systems users, and other decisionmakers; and data subjects. I have also suggested some questions that can be used to start reflection on these relationships. Ethicists and other theorists could use these initial questions to describe the features that make these different relationships health or damaged. Care ethics also encourages us to think about the social context in which our relationships are formed and either sustained or damaged. This perspective might be especially important for thinking through the indirect relationships that I have identified here, such as between data scientists and data subjects.</p>
+<p>Practicing data scientists — and students and others training into data science — could use this post as a starting point for reflection on their own practice. What are the particular relationships of your data science activity? How would you describe those relationships — as healthy, or damaged, or in some other terms? How would the people on the other side of those relationships describe them? How do you know how they would describe them? If you — or they — would describe the relationship as damaged, or harmful, or exploitative, what steps can you take to repair the relationship?</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

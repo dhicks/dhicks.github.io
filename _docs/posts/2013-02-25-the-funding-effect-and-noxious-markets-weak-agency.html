@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.280">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dan Hicks">
+<meta name="dcterms.date" content="2013-02-25">
+
+<title>Dan Hicks - The Funding Effect and Noxious Markets: Weak Agency</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Dan Hicks - The Funding Effect and Noxious Markets: Weak Agency">
+<meta property="og:description" content="(In this series of posts, I’m applying Debra Satz’ account of noxious markets to a specific aspect of commercialized science, the funding effect. In the first post, I summarized Satz’ account.">
+<meta property="og:site-name" content="Dan Hicks">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Dan Hicks</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../research.html">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Teaching</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
+        <li>
+    <a class="dropdown-item" href="https://data-science-methods.github.io/">
+ <span class="dropdown-text">Methods of Data Science</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0001-7945-4416">
+ <span class="menu-text"><i class="fa-brands fa-orcid" aria-label="orcid"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=XvkwYZsAAAAJ&amp;hl=en">
+ <span class="menu-text"><i class="ai  ai-google-scholar" title="" style="color:"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://dhicks.github.io/cv">
+ <span class="menu-text"><i class="ai  ai-cv" title="" style="color:"></i></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dhicks/"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://mastodon.social/@danhicks"><i class="bi bi-mastodon" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:dhicks4@ucmerced.edu"><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">The Funding Effect and Noxious Markets: Weak Agency</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">developing</div>
+                <div class="quarto-category">funding</div>
+                <div class="quarto-category">market</div>
+                <div class="quarto-category">markets</div>
+                <div class="quarto-category">medicine</div>
+                <div class="quarto-category">satz</div>
+                <div class="quarto-category">scientist</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Dan Hicks </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 25, 2013</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p>(In this series of posts, I’m applying Debra Satz’ account of noxious markets to a specific aspect of commercialized science, the funding effect. In <a href="http://jefais.tumblr.com/post/40261004397/satz-account-of-noxious-markets">the first post</a>, I summarized Satz’ account. In <a href="http://jefais.tumblr.com/post/41864258936/the-funding-effect">part two</a>, I explained the funding effect.)</p>
+<p>We are now prepared to pose the primary question of this series: <strong>In light of the funding effect, is the commodification of scientific research – at least in areas of research where the effect is substantial and well-documented – noxious?</strong></p>
+<p>An affirmative answer to this question does not imply directly that commodification should be illegal. First, because my use of “commodification” is quite loose; further inquiry would have to investigate precisely which forms of commodification – which kinds of transactions and institutional arrangements – are noxious. Second, because thorough deliberation might conclude that commodification is indeed noxious, yet all things considered better than any alternative institutional arrangement. For example, regulatory capture and interest-group politics might render state funding of research just as noxious. Market reform and regulation, not a simple prohibition of a market in scientific research, might be preferable. But again, I am concerned here with the prior question of whether the commodification of scientific research is noxious.</p>
+<p>Previous answers to this question generally fall into three categories. First is the favorable argument that commodification directs research funding towards products that are valuable for the public, in the way that markets in general produce Pareto-optimal distributions of goods. Second is the category of appeals to Merton’s “ethos of science,” which argue that the ethos of commercialization is incompatible with the scientific ethos. And third is a family of epistemological arguments that claim in various ways that commodification does or will frustrate the epistemological quality of the research.</p>
+<p>Philip Mirowski and Robert Van Horn — who take a <em>sui generis</em> approach — call people in the first category “Economic Whigs,” and those in the second “Mertonian Tories” (<a href="#mirowskivanhorn">Mirowski and Van Horn</a>). They level roughly two basic criticisms of these two views. First, both work with highly simplified and uncritical – perhaps even naïve – conceptions of the institutions involved in commodified science. Mertonian Tories uncritically adopt the framework of Merton’s ethos, ignoring the empirical work in Merton’s day and since that has found “counternorms” to this ethos. (For example, <a href="#mitroff">Mitroff</a>’s study of Apollo-project moon scientists.) Economic Whigs, for their part, rely on the simplifying assumptions, for example, required for the efficient market theorems. Second, and consequently, any problems with commodification are attributed to individual bad actors (as the epithets suggest, the Economic Whigs see far fewer problems than the Mertonian Tories), neglecting the structural or institutional causes that make these problems pervasive and limit the effectiveness of, for example, conflict of interest reporting requirements.</p>
+<p>Examples of the third approach include papers and books by James Robert Brown, and Thomas McGarity and Wendy Wagner, among others (<a href="#brown">J.R. Brown</a>, <a href="#mcgaritywagner">McGarity and Wagner</a>). Brown, for example, has argued recently that epistemologically high-quality randomized controlled studies are so expensive that they cannot be run more than a small number of times; but, given the funding effect, we cannot be confident in the findings of these studies if they are funded by industry; and so they should be publicly funded. However, as we’ve seen, the inference from industry funding to low epistemological quality is not as easy as this argument seems to assume. Furthermore, in light of Mirowski and Van Horn’s institutionalist critiques in the last paragraph, we might question these approaches’ assumptions about what happens when one institution (the state) replaces another (the market), and whether public funding is so much more likely to avoid the problems of commodified research.</p>
+<p>Here I take a fourth approach, bringing Satz’ account of noxious markets to bear. As we saw above, Satz identifies four dimensions of noxious markets. In what follows, I’ll consider to what extent the funding effect – and the mechanisms that lie under it – indicate problems along each of these dimensions. [It turns out that I had plenty to say for each of the four dimensions, so I’m presenting the subsections in separate posts.)</p>
+<p>Recall that Satz often works with a simple model of a transaction, in which exactly one individual (the seller) offers a good or service to exactly one other individual (the buyer) in exchange for money. Following this, I’ll assume that the seller is a scientist, who is selling the services of his or her lab to an individual product manufacturer.</p>
+<section id="weak-agency" class="level2">
+<h2 class="anchored" data-anchor-id="weak-agency">Weak Agency</h2>
+<p>Satz’ first concern was with weak, limited, or no agency, especially in the forms of asymmetric knowledge between transactors, externalities, and principal-agent problems. The funding effect does not seem to be worrisome in terms of asymmetric knowledge. Certainly the scientist knows more than the manufacturer – this is the reason why the manufacturer wishes to buy the services of the scientist, after all – but this does not seem likely to make the transaction problematic. I suppose there is the possibility of a fake scientist defrauding the manufacturer, but I know of no prominent examples of this.</p>
+<p>Principal-agent problems are a distinct possibility when the transaction is arranged by a third party (the agent) on behalf of the scientist herself (the principal). For example, in a private research firm, a marketing department might be responsible for negotiating the research contract (<a href="#mirowskivanhorn">Mirowski and Van Horn 535</a>). The marketing department is effectively acting as an agent on the scientist’s behalf in the negotiation. The negotiations over the funding arrangement between the Plant and Microbial Biology Department [PMB] at UC Berkeley and Novartis Agricultural Discovery Institute [NADI], a subsidiary of the multinational biotechnology conglomerate Novartis, also involved principal-agent negotiations. After the partnership with Novartis was approved by the PMB faculty, the details were worked out by a team of nine people: “three PMB scientists, two senior people from NADI, two senior administrators from [Berkeley’s Office of Technology Licensing], and two attorneys from Novartis” (<a href="#busch">Busch, et al.</a> 28). These three scientists acted as agents on behalf of all of the other members of the department.</p>
+<p>Are there important externalities involved in these kinds of cases? This, I think, is a tricky question. If the scientist is represented by an agent in the transaction, it’s plausible to think that her interests may not be well represented by the marketing department, but quite well represented by fellow faculty members.</p>
+<p>Another important third party — influenced by the transaction but not represented in it — are consumers of the manufacturer’s product, who (to simplify again) rely on the scientist’s findings in making their consumption decisions. That is, at the conclusion of her research the scientist produces claims about the safety, technical effectiveness, and so on, of the manufacturer’s product; since the consumer cannot investigate these claims himself, the only source of information he has about the product is the scientist’s testimony. (In more realistic scenarios, this testimony may be mediated by a regulator, who assesses the testimony before approving the sale of the product to the consumer. Or by a journalist, who produces a nontechnical summary of the scientist’s claims. To keep the scenario simple, suppose that the consumer simply receives the scientist’s testimony directly.)</p>
+<p>In light of the funding effect, we might worry that, as it were, the producer’s interests are overrepresented in the scientist’s testimony, and the consumer’s interests are underrepresented. For example, suppose the scientist claims that the product is safer and more effective than it actually is. Then some consumers would consume the product who, if they had more accurate information, would not. Or, consumers might be willing to pay the manufacturer a higher price for the product than if they (the consumers) had more accurate information. That is, <em>the weak agency of consumers in the transaction between the scientist and the manufacturer could lead to information asymmetry or exploitation in the later transaction between the consumer and the manufacturer</em>. The failure of the downstream market is a product of the failure of the upstream market; and this downstream noxiousness implies that the upstream transaction is also noxious.</p>
+<p>However, this worrisome scenario is more complex than it initially seems. The funding effect is a statistical generalization, not a claim about any particular research. That is, industry-funded research <em>in general tends</em> to produce claims that are more favorable to industry. We cannot infer directly from the fact that this particular scientist received industry funding to the conclusion that her claims are more favorable to industry than those of an independently-funded scientist. And even if it is more favorable, this may be because, as we saw in the last post, it has examined a more thoroughly vetted or refined product or because of low (or high) but still reasonable standards for making causal claims.</p>
+<p>I argue that this complexity, far from excusing worries about the weak agency of consumers, is the core of the problem. In order to make a well-informed decision, consumers must be able to evaluate the scientist’s testimony by, for instance, relating the standards the scientist used – say, the threshold for statistical significance used – to their own. Thus, if and insofar as the scientist is not explicit about how and why they adopted these standards, the consumer cannot appropriately evaluate the scientist’s testimony. Even worse, he (the consumer) may believe that he is well-informed about the product while actually being quite ignorant. For example, consider a single claim <em>C</em> that the product increases the risk of cancer. Suppose that the industry-funded scientist adopts a high (but reasonable) standard of statistical significance for claim <em>C</em>, and on this basis concludes that the claim is false, that is, it doesn’t cause cancer. Suppose in addition that the consumer adopts (or would adopt) a low (but reasonable) standard for claim <em>C</em>. By this low standard, the evidence adequately supports this claim. The consumer does not assess the evidence directly; instead, he relies strictly on the scientist’s testimony that not-<em>C</em>. Hence, if and insofar as the consumer is not aware that the scientist is working with a higher standard and indeed believes that the scientist is working with his lower standard, the consumer mistakenly believes that <em>C</em> is false. (In the classic justified-true-belief analysis of knowledge, the consumer’s mistake is a matter of the justification rather than the truth of his belief that not-<em>C</em>.) Consequently, in his negotiation with the manufacturer, the consumer cannot accurately (relative to his preferences) evaluate the risk of developing cancer, is more likely to settle for a higher price, or will be harmed in other ways. If the consumer <em>could</em> make the easy inference from industry funding to inaccuracy, it would be much easier for him to evaluate the scientist’s testimony. <em>It is the combination of (a) the consumer’s weak agency in the transaction between the scientist and the manufacturer and (b) the complexities of the funding effect that produces the consumer’s weak agency.</em></p>
+<p>Similar arguments lead to similar assessments for the other mechanisms underlying the funding effect. For example, suppose the consumer is trying to decide whether to buy organic or conventional (pesticide-sprayed) food. The scientist claims that organic food is not significantly healthier than conventional food, but using a metric that looks only at select nutritional components and does not look at pesticides. (This is a simplification of some events that played out in Fall 2012. <a href="#smithspangler">Crystal Smith-Spangler and her coauthors</a> published a study of the nutritional content of organic produce in the <em>Annals of Internal Medicine</em>. A few days later, <em>New York Times</em> opinion columnist <a href="#cohen">Roger Cohen</a> characterized their findings this way: “I cheered this week when Stanford University concluded, after examining four decades of research, that fruits and vegetables labeled organic are, on average, no more nutritious than their cheaper conventional counterparts.” Responding to Cohen and others a few weeks later, <a href="#bittman">Mark Bittman</a>, another <em>New York Times</em> opinion columnist, wrote that “It was the equivalent of comparing milk and Elmer’s glue on the basis of whiteness. It did, in short, miss the point …. In fact, the Stanford study … does say that ‘consumption of organic foods may reduce exposure to pesticide residues and antibiotic-resistant bacteria.’” Both Cohen and Bittman accurately reported the findings of Smith-Spangler et al., but using different metrics.) The mismatch between the metrics and standards used by the scientist and assumed by the consumer effectively, combined with the inability of the consumer to recognize this mismatch, weaken her agency in her transaction with the producer.</p>
+<p>It might be thought that this problem can be resolved simply by improving transparency: making it clearer when scientists are funded by industry through conflict-of-interest disclosures, requiring more explicit statements of standards and metrics used, the statistical power of the experiments and analysis, and so on. But this response assumes that consumers are in a position to evaluate these disclosures. Specifically, it assumes that consumers understand such notions as statistical power and have at least somewhat well-developed views on, for example, what the threshold of statistical significance should be for claims that a product causes cancer. That is, it assumes that a consumer can reason more or less literally along the following lines:<br>
+1. The threshold of significance for claim <em>C</em> should be at <em>p0</em>, or less demanding.<br>
+2. This scientist uses threshold <em>p1 &lt; p0</em>.<br>
+3. A lower <em>p</em>-threshold is a more demanding standard of significance. 4. Hence, I should not rely on the testimony of this scientist.</p>
+<p>But many – if not almost all – consumers are effectively statistically innumerate, that is, lack the ability to understand, much less evaluate, claims such as premises (1-3). Similarly, in the case of organic food, we might simply require making (more) explicit that nutritional content, and only nutritional content, is being used as a proxy for health benefits. But again, this assumes that consumers recognize the limitations of this proxy and understanding the distinction between nutritional content and the presence of pesticides. Making commercialized science more transparent would seem to be necessary but far from sufficient for addressing this structural problem. Perhaps surprisingly, the noxiousness of commercialized science depends in part on the strength of our education system.</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<ul>
+<li><p>Bittman, Mark. “That Flawed Stanford Study.” <em>New York Times</em>, <a href="http://">http://opinionator.blogs.nytimes.com/2012/10/02/that-flawed-stanford-study/</a>.</p></li>
+<li><p>Brown, James Robert. “One Shot Science,” in Radder, ed., <em>The Commodification of Academic Research</em>, Pittsburgh UP.</p></li>
+<li><p>Busch, Lawrence, et al.&nbsp;<em>External Review of the Collaborative Research Agreement between Novartis Agricultural Discovery Institute, Inc.&nbsp;and The Regents of the University of California</em>. East Lansing, MI: Institute for Food and Agricultural Standards, Michigan State University.</p></li>
+<li><p>Cohen, Roger. “The Organic Fable,” <em>New York Times</em>, <a href="http://">http://www.nytimes.com/2012/09/07/opinion/roger-cohen-the-organic-fable.html</a>.</p></li>
+<li><p>McGarity, Thomas and Wendy Wagner. <em>Bending Science</em>, Harvard UP.</p></li>
+<li><p>Mirowski, Philip, and Robert Van Horn. “The Contract Research Organization and the Commercialization of Scientific Research.” <em>Social Studies of Science</em> 35, no. 4: 503–548. doi:10.1177/0306312705052103.</p></li>
+<li><p>Mitroff, Ian I. “Norms and Counter-Norms in a Select Group of the Apollo Moon Scientists: a Case Study of the Ambivalence of Scientists.” <em>American Sociological Review</em> 39, no. 4: 579–595.</p></li>
+<li><p>Smith-Spangler, Crystal, et al.&nbsp;“Are Organic Foods Safer or Healthier Than Conventional Alternatives? A Systematic Review,” <em>Annals of Internal Medicine</em> 157: 348-66.</p></li>
+</ul>
+<div id="footer">
+<p><span id="timestamp">February 25th, 2013 10:27am</span> <span class="tag">food</span> <span class="tag">(philosophy of) science</span> <span class="tag">economics</span></p>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

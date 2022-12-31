@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.280">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dan Hicks">
+<meta name="dcterms.date" content="2014-03-10">
+
+<title>Dan Hicks - Is Motivated Reasoning Bad Reasoning? I</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Dan Hicks - Is Motivated Reasoning Bad Reasoning? I">
+<meta property="og:description" content="This is part I of a three-part series. This series will be posted simultaneously on Je Fais, Donc Je Suis, my personal blog, as well as the Rotman Institute Blog.">
+<meta property="og:site-name" content="Dan Hicks">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Dan Hicks</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../research.html">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Teaching</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
+        <li>
+    <a class="dropdown-item" href="https://data-science-methods.github.io/">
+ <span class="dropdown-text">Methods of Data Science</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0001-7945-4416">
+ <span class="menu-text"><i class="fa-brands fa-orcid" aria-label="orcid"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=XvkwYZsAAAAJ&amp;hl=en">
+ <span class="menu-text"><i class="ai  ai-google-scholar" title="" style="color:"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://dhicks.github.io/cv">
+ <span class="menu-text"><i class="ai  ai-cv" title="" style="color:"></i></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dhicks/"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://mastodon.social/@danhicks"><i class="bi bi-mastodon" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:dhicks4@ucmerced.edu"><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Is Motivated Reasoning Bad Reasoning? I</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">data</div>
+                <div class="quarto-category">gm</div>
+                <div class="quarto-category">motivated</div>
+                <div class="quarto-category">reasoning</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Dan Hicks </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">March 10, 2014</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="the-pervasiveness-of-motivated-reasoning" class="level2">
+<h2 class="anchored" data-anchor-id="the-pervasiveness-of-motivated-reasoning">The Pervasiveness of Motivated Reasoning</h2>
+<p><em>This is part I of a three-part series. This series will be posted simultaneously on <a href="http://jefais.tumblr.com/"><em>Je Fais, Donc Je Suis</em></a>, my personal blog, as well as the <a href="http://www.rotman.uwo.ca/blog/">Rotman Institute Blog</a>.</em></p>
+<p>Social and political values predict your views on climate change: if you’re an egalitarian-communitarian (think: liberal, on the political left), chances are you think humans are responsible for climate change; if you’re a hierarchical-individualist (think: conservative, on the political right), chances are you think climate change is a natural phenomenon, or isn’t happening at all.</p>
+<p>Social psychologist Dan Kahan argues that this is due to <a href="http://www.culturalcognition.net/blog/2013/5/15/motivated-reasoning-its-cognates.html"><strong>motivated reasoning</strong></a>, “the unconscious tendency of individuals to process information in a manner that suits some end or goal extrinsic to the formation of accurate beliefs.” Specifically, in the case of climate change (though <em>not</em> in the case of <a href="http://www.culturalcognition.net/blog/2014/1/27/who-fears-childhood-vaccines-and-why-research-report-project.html">vaccines</a> or <a href="http://www.culturalcognition.net/blog/2013/11/5/we-arent-polarized-on-gm-foods-no-matter-what-the-result-in.html">genetically modified foods</a>), Kahan argues that <strong>cultural cognition</strong> is at work: you accept or reject the belief that humans are responsible for climate change because you identify yourself as a member of a group (“liberals,” “conservatives”) that is committed to accepting or rejecting this belief. In other words, you believe humans are responsible for climate change because you’re a liberal and liberals believe humans are responsible for climate change.</p>
+<p>Values and good reasoning are often assumed to be antagonistic. There’s a <a href="http://en.wikipedia.org/wiki/Chariot_Allegory">metaphor that goes back to Plato</a>: we’re in a chariot, being pulled by two horses, reason and emotion. Reason tries to pull us towards truth; but emotion pulls us away from truth. If emotion isn’t restrained, it will ride roughshod over reason and truth. (That last bit muddles the metaphor, but you get the idea.) Kahan’s defintion of motivated reasoning seems to suggest this antagonism. The end or goal is, as he puts it, “extrinsic to accurate belief”; it’s external to, irrelevant to, perhaps even opposed to the truth.</p>
+<p>On this <strong>antagonistic picture</strong>, motivated reasoning seems to be bad reasoning. Consider two cases: motivated reasoning leads us to accept a false claim; or it leads us to accept a true claim. In the first case, things have clearly gone wrong: we believe something that’s false. In the second case, we’ve gotten to the right conclusion (we accept a true claim), but in the wrong way (following emotion and values rather than evidence and logic). In philosophy-ese, motivated reasoning seems to lead to beliefs that are <em>false</em>, <em>unjustified</em>, or both.</p>
+<p>Working within this antagonistic picture, you might think that we can avoid motivated reasoning by improving <strong>science literacy</strong> — how much people know about science — and <strong>numeracy</strong> — “not just mathematical ability but also [the] disposition to engage quantitative information in a reflective and systematic way and use it to support valid inferences” <a href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2319992">(6)</a>. To go with Plato’s metaphor: by making the reason horse strong and powerful, we will move towards truth, whichever direction the emotion horse happens to want to go. We will tend to get justified true beliefs by overwhelming the influence of emotion or values.</p>
+<p>Kahan’s work suggests that this isn’t the case. In one line of research, he divides people into two groups: high science literacy/numeracy [high SLN] and low science literacy/numeracy [low SLN]. The antagonistic picture suggests that (a) people in high SLN group will tend to agree with each other — they’re all being moved towards truth by a relatively strong reason horse — while (b) people in the low SLN group will tend to disagree with each other — they’re being moved in all different directions by a relatively strong emotion horse.</p>
+<p><em>This prediction gets things exactly backwards: polarization increases with science comprehension</em>. Consider this image, <a href="http://www.culturalcognition.net/blog/2014/2/10/motivated-numeracy-whats-the-point-lecture-synopsis-slides.html">from Kahan’s blog</a>:<br>
+<img src="http://www.culturalcognition.net/storage/polinc.png?__SQUARESPACE_CACHEVERSION=1392075594686" class="img-fluid" alt="polarization increases with science comprehension"></p>
+<p>On the left is the prediction: as SLN increase (as we move from left to right in the graph) the two groups converge. On the right is actual survey data: as SLN increases, egalitarian-communitarians (liberals) become <em>more</em> worried about climate change while hierarchical-individualists (conservatives) become <em>less</em> worried. The two groups move further apart, not together!</p>
+<p>These results suggest that motivated reasoning is pervasive. High science literacy and numeracy don’t help; indeed, they just seem to make things worse. In terms of Plato’s metaphor, it seems that we don’t have two horses, reason and emotion. It’s more like reasoning is the horse pulling the chariot, but emotion is the charioteer, the one who ultimately decides which direction reason is going to go. <a href="http://www.culturalcognition.net/blog/2014/2/10/motivated-numeracy-whats-the-point-lecture-synopsis-slides.html">Kahan puts it less metaphorically:</a></p>
+<blockquote class="blockquote">
+<p>When the data, properly construed, supported an ideological noncongenial result, high numerate subjects latched onto the incorrect but ideologically satisfying heuristic alternative to the logical analysis required to solve the problem correctly.</p>
+</blockquote>
+<p>So it seems that we’re doomed to bad reasoning. Motivated reasoning leads us to false or unjustified beliefs, and motivated reasoning is pervasive.</p>
+<p>I don’t think this is necessarily the case. Specifically, I don’t think that motivated reasoning necessarily leads us to false or unjustified beliefs. Certainly they do sometimes. But not in all cases. In other words, the antagonistic picture is wrong. And that’s what I’m going to argue in part II of this post.</p>
+<div id="footer">
+<p><span id="timestamp">March 10th, 2014 10:01am</span> <span class="tag">(philosophy of) science</span> <span class="tag">science and values</span> <span class="tag">climate change</span></p>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
