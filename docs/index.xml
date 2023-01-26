@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Dan Hicks </title>
+<link>https://dhicks.github.io/index.html</link>
+<atom:link href="https://dhicks.github.io/index.xml" rel="self" type="application/rss+xml"/>
+<description>Website description</description>
+<generator>quarto-1.2.280</generator>
+<lastBuildDate>Tue, 24 Jan 2023 08:00:00 GMT</lastBuildDate>
+<item>
+  <title>Technocratic legitimacy and the value-free ideal</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2023-01-25-legitimacy-vfi.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><span class="citation" data-cites="HolmanNewDemarcationProblem2022">Holman and Wilholt (2022)</span> argue that, as philosophers of science work to dismantle the value-free ideal, it is important to understand the function that the ideal played. Quoting Chesterton, they write</p>
+<blockquote class="blockquote">
+<p>only when one understands how an institution arose and what purposes it was intended to serve, is one in a position to say “they were bad purposes, or they have since become bad purposes, or that they are purposes which are no longer being served.” <span class="citation" data-cites="HolmanNewDemarcationProblem2022">(Holman and Wilholt 2022, 214)</span></p>
+</blockquote>
+<p>Consequently,</p>
+<blockquote class="blockquote">
+<p>if one rejects a purpose which motivated the adoption of the value-free ideal, then one must have a convincing answer as to why it should never have been endorsed, why it should no longer be endorsed, or at least show that the value-free ideal fails to serve the intended purpose. <span class="citation" data-cites="HolmanNewDemarcationProblem2022">(Holman and Wilholt 2022, 215)</span></p>
+</blockquote>
+<p>Holman and Wilholt identify three functions for the value-free ideal:</p>
+<dl>
+<dt>veracity</dt>
+<dd>
+science pursues truth and avoids error
+</dd>
+<dt>universality</dt>
+<dd>
+scientific results are useable by anyone, whether they share scientists’ personal value-judgments or not
+</dd>
+<dt>authority</dt>
+<dd>
+science provides “a trustworthy body of knowledge that has broadly recognized social legitimacy” <span class="citation" data-cites="HolmanNewDemarcationProblem2022">(Holman and Wilholt 2022, 214)</span>
+</dd>
+</dl>
+<p>In the brief discussion that follows, Holman and Wilholt tie this sense of authority to questions of political legitimacy. In this post, I want to argue that the value-free ideal plays an important role in legitimizing the progressive, technocratic state, as illustrated in two historic moments where the value-free ideal was articulated.</p>
+<p>The first moment was the Progressive Era of the late nineteenth and early twentieth centuries. The Progressive movement proposed that management of social-biological systems by credentialed, scientific experts would ensure prosperity and social peace, in areas including public health <span class="citation" data-cites="KriegerEpidemiologyPeopleHealth2011">(Krieger 2011 ch.&nbsp;4)</span>, the economy <span class="citation" data-cites="StaplefordCostLivingAmerica2009">(Stapleford 2009)</span>, and natural resources (Gifford Pinchot), but also the human gene pool (eugenics). Versions of the value-free ideal were developed around the same time, most famously by Weber.</p>
+<p>The second moment was the emergence of the risk management state in the 1970s-1980s <span class="citation" data-cites="BeckRiskSocietyNew1992">(Beck 1992)</span>. Just as the Progressive movement was a technocratic response to the social and public health crises of the late nineteenth century, the risk management state was a technocratic response to the environmental and consumer safety crises of the 1950s-1960s. The primary methodology of the risk management state, risk assessment, institutionalized the value-free ideal, with (in principle) a strict demarcation between risk analysis — the scientific task of quantitatively determining the probability and magnitude of hazard — and risk management — the political task of designing and implementing policies to prevent and mitigate risk <span class="citation" data-cites="FernandezPintoLegitimizingValuesRegulatory2019">(Fernández Pinto and Hicks 2019)</span>.</p>
+<p>In both moments, the value-free ideal enabled supporters of the technocratic state to de-politicize technocratic management, by distinguishing the realm of rational, expert decisionmaking — as “science” — from the realm of emotional, public “politics.” To reconcile technocracy with democracy — at least in the US — expert managers were placed under the authority of political appointees, who in turn were appointed and approved by elected officials. In other words, two forms of legitimacy were used to support the technocratic state. Democratic legitimacy was nominally top-down, from the voters electing politicians, who then delegate authority to experts in the executive branch agencies. While technocratic legitimacy was nominally bottom-up, depending on credentials and demonstrated competence as experts rose through the meritocratic hierarchy of those agencies. These two systems of legitimacy are not obviously compatible; consider today’s debates between epistocrats and democrats. The value-free ideal offers a solution, creating non-overlapping magisteria <span class="citation" data-cites="GouldRocksAgesScience2011">(Gould 2011)</span>: the systems do not come into conflict because potentially controversial values do not play a role in the experts’ work.</p>
+<p>Unfortunately, in this role the value-free ideal is self-defeating <span class="citation" data-cites="FernandezPintoLegitimizingValuesRegulatory2019">(Fernández Pinto and Hicks 2019)</span>. The problem is not so much that properly assessing the downstream risk of error requires appeal to potentially controversial political and ethical values, as per the argument from inductive risk <span class="citation" data-cites="ElliottExploringInductiveRisk2017">(Elliott and Richards 2017)</span>. In the context of risk assessment, both scientists and policymakers have maintained the façade of value-freedom by, basically, pretending that all consideration of downstream consequences can be isolated on the political, risk management side of things.</p>
+<p>Instead, the value-free ideal is self-defeating because of the <em>fact of reasonable scientific pluralism</em>. In almost any case, it’s possible to construct a reasonable, technically sophisticated argument in favor of a different methodology, more and better data, an overlooked possibility, or an alternative explanation. Given resources and connections, parties with an interest in a certain policy outcome can pretty much always find at least one credentialed expert who will not only make an apparently reasonable, highly technical case for a preferred interpretation of “the science,” but also will castigate opposing experts as “biased” or following “an agenda.” The STS scholar Dan Sarewitz called this scenario “an excess of objectivity” <span class="citation" data-cites="SarewitzScienceEnvironmentalPolicy2000 SarewitzHowScienceMakes2004">(Sarewitz 2000, 2004)</span> and I’ve referred to it as “Scientific Controversies as Proxy Politics” <span class="citation" data-cites="HicksScientificControversiesProxy2017">(Hicks 2017)</span>.</p>
+<p>Given this analysis, what should a replacement for the value-free ideal attempt to do? One option would be something like “provide an alternative basis for the legitimacy of the technocratic state, more or less as it exists now.” I think many philosophers of science would support this sort of project. But to me this is not an attractive project — and I say this as someone who would probably be working for the US Environmental Protection Agency today if Clinton had won the 2016 election. Instead, I suggest that <strong>a replacement for the value-free ideal should help us democratize the technocratic state</strong>.</p>
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-BeckRiskSocietyNew1992" class="csl-entry">
+Beck, Ulrich. 1992. <em>Risk society: towards a new modernity</em>. Theory, culture &amp; society. London ; Newbury Park, Calif: Sage Publications.
+</div>
+<div id="ref-ElliottExploringInductiveRisk2017" class="csl-entry">
+Elliott, Kevin C., and Ted Richards, eds. 2017. <em>Exploring Inductive Risk: Case Studies of Values in Science</em>. New York: Oxford University Press.
+</div>
+<div id="ref-FernandezPintoLegitimizingValuesRegulatory2019" class="csl-entry">
+Fernández Pinto, Manuela, and Daniel J. Hicks. 2019. <span>“Legitimizing Values in Regulatory Science.”</span> <em>Environmental Health Perspectives</em> 127 (3): 035001. <a href="https://doi.org/10.1289/EHP3317">https://doi.org/10.1289/EHP3317</a>.
+</div>
+<div id="ref-GouldRocksAgesScience2011" class="csl-entry">
+Gould, Stephen Jay. 2011. <em>Rocks of Ages: Science and Religion in the Fullness of Life</em>. Random House Publishing Group.
+</div>
+<div id="ref-HicksScientificControversiesProxy2017" class="csl-entry">
+Hicks, Daniel J. 2017. <span>“Scientific Controversies as Proxy Politics.”</span> <em>Issues in Science and Technology</em>, January 2017. <a href="https://www.jstor.org/stable/24891967">https://www.jstor.org/stable/24891967</a>.
+</div>
+<div id="ref-HolmanNewDemarcationProblem2022" class="csl-entry">
+Holman, Bennett, and Torsten Wilholt. 2022. <span>“The New Demarcation Problem.”</span> <em>Studies in History and Philosophy of Science</em> 91 (February): 211–20. <a href="https://doi.org/10.1016/j.shpsa.2021.11.011">https://doi.org/10.1016/j.shpsa.2021.11.011</a>.
+</div>
+<div id="ref-KriegerEpidemiologyPeopleHealth2011" class="csl-entry">
+Krieger, Nancy. 2011. <em>Epidemiology and the People’s Health: Theory and Context</em>. New York: Oxford University Press.
+</div>
+<div id="ref-SarewitzScienceEnvironmentalPolicy2000" class="csl-entry">
+Sarewitz, Daniel. 2000. <span>“Science and Environmental Policy: An Excess of Objectivity.”</span> In <em>Earth Matters:&nbsp; The Earth Sciences, Philosophy, and the Claims of Community</em>, edited by Robert Frodeman, 79–98. Prentice Hall. <a href="http://www.cspo.org/_old_ourlibrary/ScienceandEnvironmentalPolicy.htm">http://www.cspo.org/_old_ourlibrary/ScienceandEnvironmentalPolicy.htm</a>.
+</div>
+<div id="ref-SarewitzHowScienceMakes2004" class="csl-entry">
+———. 2004. <span>“How Science Makes Environmental Controversies Worse.”</span> <em>Environmental Science and Policy</em> 7 (5): 385–403. <a href="https://doi.org/10.1016/j.envsci.2004.06.001">https://doi.org/10.1016/j.envsci.2004.06.001</a>.
+</div>
+<div id="ref-StaplefordCostLivingAmerica2009" class="csl-entry">
+Stapleford, Thomas A. 2009. <em>The Cost of Living in America: A Political History of Economic Statistics, 1880-2000</em>. Cambridge University Press.
+</div>
+</div></section></div> ]]></description>
+  <guid>https://dhicks.github.io/posts/2023-01-25-legitimacy-vfi.html</guid>
+  <pubDate>Tue, 24 Jan 2023 08:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Leftist dynamics for city simulation games</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2021-06-26-city-sim-dynamics.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I’ve been playing <em>Cities: Skylines</em> recently, and that prompted me to go back and re-read Kevin Baker’s <a href="https://logicmag.io/play/model-metropolis/">Model Metropolis</a>, on the libertarian assumptions baked in to the dynamics of <em>SimCity</em> and its descendants, including <em>C:S</em>.</p>
+<p>City simulators aren’t static. Successive games have added new dynamics and more complex models of older dynamics. Turning all of this over, I asked myself what dynamics I would like to see in a city simulator, that would (a) mitigate or replace the libertarian assumptions Will Wright took from Forrester, and (b) would enable users/players to explore some of the pressing issues in today’s cities? I can’t claim any expertise whatsoever in urban geography, sociology, or dynamics, so I would really be interested in how folks who do have such expertise would answer these questions. For what it’s worth, here are some of the things I came up with.</p>
+<p><strong>Cost of living</strong> and <strong>land/building/business ownership</strong>. Even in rural California we have conversations about homelessness, lack of affordable housing, and the cost of living. Insofar as <em>C:S</em> has a general measure of how well your city is doing, it’s land value. But, in the real world, protecting and promoting land value reflects the interests of owners rather than renters or employees; increasing land value tends to increase the cost of living, gentrification, homelessness, and sprawl. The simulation could also explore uncommon forms of ownership, such as co-operatives and publicly-owned residences or businesses.</p>
+<p><strong>Alternative services</strong>, especially for policing and jails. Last summer the revival of the Black Lives Matter movement prompted renewed calls for abolition of policing and jails. In <em>C:S</em>, increasing police presence causes reduced crime which increases land values. There are no downsides to the expansion of police, and no way to explore non-carceral alternatives such as greater mental health and counseling services. Notably, <em>C:S</em> provides a wide range of transportation options, giving players ways to explore cities that emphasize bicycles and public transit rather than cars. It would be great to be able to do the same with policing.</p>
+<p><strong>Factions</strong> are the first of two mechanics I’d like to see adopted from <em>Stellaris</em>, a 4X strategy game developed by Paradox (Paradox is the publisher of <em>C:S</em>). Briefly, factions have a happiness score based on the policies that the player has adopted; depending on how (un)happy the faction is, and the share of the population that supports the faction, they can give bonuses or penalties to gameplay. For a city simulation, I can imagine factions based on real-world movements such as NIMBYs, YIMBYs, and social housing advocates; small businesses, unions; abolition and “law and order”; and environmental justice. While not the most sophisticated simulation of democracy, factions would bring a model of politics into a genre that’s basically autocratic on its face. Perhaps, simulating the tension between a mayor and city council, significantly powerful factions would be able to enact or retract policies against the player’s will.</p>
+<p>The need to hire <strong>managers</strong> is the other mechanic I’d like to see brought over from <em>Stellaris</em>. In <em>Stellaris</em>, you need to hire various officials to run your empire — scientists to conduct expeditions, governors of regions, military leaders. These officials bring bonuses (and sometimes penalties), and can also be allied with factions. Over time they gain experience, becoming more effective; but can also die. In a city simulation these managers would be heads of major service areas: policing, fire, education, health, sanitation, traffic, parks, etc. I can imagine complex interactions with the faction dynamics; different factions might support rival police chiefs, for example.</p>
+<p>Finally, it would be really interesting to add <strong>explicit options to explore alternative dynamics</strong>, especially for controversial processes. For example, <em>C:S</em> uses the simple model that increased police causes lower crime causes people to be happy causes property values to increase. But Marxist and critical race analyses of policing suggest a different model of the effects of policing: increasing police protects ownership, which increases property values; this makes property owners and rich (white) people happy, but increases cost of living for poor people (of color) and (also) makes them unhappy directly, while increasing crime (as it’s measured by arrests and other data produced by the police), which can increase support for “law and order” factions. <em>C:S</em> already supports <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2025147082">mods that change the population dynamics</a>, and it’s easy to turn these on and off to compare different dynamics.</p>
+
+
+
+ ]]></description>
+  <guid>https://dhicks.github.io/posts/2021-06-26-city-sim-dynamics.html</guid>
+  <pubDate>Sat, 26 Jun 2021 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Talk: Open science can’t solve the replication crisis</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2021-03-19-open-science-i.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I gave this talk yesterday at the <a href="https://pencelab.be/events/ds2-2021/">Digital Studies for Digital Science (DS2)</a> online conference. You can watch the recording <a href="https://www.youtube.com/watch?v=uheU_W7_oz8">on YouTube</a>.</p>
+<section id="open-science-cant-solve-the-replication-crisis" class="level2">
+<h2 class="anchored" data-anchor-id="open-science-cant-solve-the-replication-crisis">Open science can’t solve the replication crisis</h2>
+<p>In the last few years, concerns about the replication crisis in biomedicine and social psychology have bolstered the open science movement, and played a significant role in arguing for open science requirements at scholarly journals and even government agencies — as in the case of the US Environmental Protection Agency’s “Strengthening Transparency in Regulatory Science” proposed rule. However, the discourse surrounding the replication crisis frequently conflates two very distinct desiderata of experimental-computational science, namely, replicability and reproducibility. Following definitions proposed by the US National Academies, <em>reproducibility</em> is a purely computational notation: the ability of an independent researcher to produce <em>numerically identical</em> output from an analysis, using the <em>same</em> data and analysis code. By contrast, <em>replicability</em> is the ability of an independent researcher to reach <em>qualitatively similar</em> conclusions by repeating an experiment, using the same analytical approach but collecting <em>different</em> data. I first argue that reproducibility has minimal (but non-zero) epistemic value, comparable to mere logical consistency. Next I survey a variety of proposed causes for the replication crisis: p-hacking, publication bias, insufficient statistical power, unrepresentative samples, publish-or-perish incentive structures, noisy measurement, underspecified phenomena, imprecise theory, data mismanagement, software bugs, and fraud. I argue that open science requirements effective promotely reproducibility, but promote replicability only insofar as replication failures are due to causes that leave traces (as in historical science) in data and code. Because very few of the proposed causes leave such traces, open science cannot solve the replication crisis.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://dhicks.github.io/posts/2021-03-19-open-science-i.html</guid>
+  <pubDate>Fri, 19 Mar 2021 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Teaching critical thinking in 2020</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2020-07-10-critical-thinking.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Back in May, I read a blog post by Cathy Davidson, an English professor at CUNY Grad Center, <a href="https://www.hastac.org/blogs/cathy-davidson/2020/05/11/single-most-essential-requirement-designing-fall-online-course">“The Single Most Essential Requirement in Designing a Fall Online Course.”</a> It’s a really useful meditation for academics (and other teachers, and really anyone who works with young people) start to plan our courses for Fall 2020. Here’s the question that’s Davidson’s answer to the question-as-statement of her title:</p>
+<blockquote class="blockquote">
+<p>Before we begin to design our fall syllabus, before we make clever instructional videos, we all need to think from a student’s point of view. We need to try to understand what it means to be studying for a future you don’t know that you will have. No one knows what lies ahead in the best of times. Now, all the predictions seem like some dystopian futuristic novel. Total social breakdown? Total economic collapse? A health emergency in which millions die over the next three or four years? How do you study to prepare for this future?</p>
+<p>What do our students need now? That is the essential question for going on line. Whether teaching algebraic geometry or sociology or literature or art or religion, we need to begin with the question of: <strong>what would I need if I were a student in this historic moment?</strong> [my emphasis]</p>
+</blockquote>
+<p>I’m teaching a critical thinking course this Fall. I immediately knew what the students in my course would need in the current moment: <strong>the virtues of engaging well in conversation across deep, emotionally-laden disagreement</strong>. If you’re an 19-year-old lefty or progressive, how do you talk with your Trump supporter parents about the election? Maybe you’re white and Black Lives Matter is challenging some of your deep-seated beliefs about policing, prisons, and criminals. Or you’re on DACA and your bio lab partner is talking about the pro-ICE rally that he went to last week. (CW: This link describes a rally that actually happened at UC Merced in 2018. <a href="https://www.mercedsunstar.com/news/local/education/uc-merced/article204022279.html" class="uri">https://www.mercedsunstar.com/news/local/education/uc-merced/article204022279.html</a>) Our culture right now doesn’t provide many models of how (and whether) to have good conversations about these kinds of issues.</p>
+<p>There’s significant demand for these models in our society right now, as witnessed by the success of books nominally about reason, logic, and deep disagreement by authors associated with the right-wing/anti-left <a href="https://en.wikipedia.org/wiki/Intellectual_dark_web">“intellectual dark web.”</a> (I’m thinking in particular of <a href="https://medium.com/@cianchartier/a-review-of-stefan-molyneuxs-the-art-of-the-argument-2c1c83fa7802">Stefan Molyneux’</a> <a href="https://freethoughtblogs.com/pharyngula/2017/09/05/barely-an-argument-a-review-of-the-art-of-the-argument-western-civilizations-last-stand-by-stefan-molyneux/"><em>The Art of the Argument</em></a>, <a href="https://arcdigital.media/the-political-pick-up-artists-6bcece72bb92">Boghossian and Lindsay’s <em>How to Have Impossible Conversations</em></a>, and to an extent <a href="https://www.currentaffairs.org/2018/03/the-intellectual-we-deserve">Jordan Peterson’s <em>12 Rules for Life</em></a>. These links are all to reviews or more general critical discussions.) These books have two problems. First, as textbooks in critical thinking they’re not very good. (Check the reviews.) Second, they serve as subtle entry points to the right-wing social media network. I’m not saying that students should never encounter and engage with right-wing ideas. But it should be done with care, and honesty, and none of these books are transparent about their political alignment.</p>
+<p>Many standard critical thinking textbooks take one of two approaches. The first approach, which I think is also the most common, focuses on the technicalities of logic: definitions, fallacies, often Aristotelean syllogism and a little sentence logic; maybe a little probability theory as (Bayesian) inductive logic. A good example of this approach is <a href="https://www.google.com/books/edition/A_Concise_Introduction_to_Logic/qGBQAwAAQBAJ">Hurley’s <em>A Concise Introduction to Logic</em></a>, currently in its twelfth edition and paradoxically running to more than 700 pages. If there’s anything in this book about interacting with other people in any way, it doesn’t appear in the table of contents.</p>
+<p>I think being familiar with more-or-less formalized logic can be useful, especially for upper-division philosophy majors. But it’s much less useful if what we want to do is talk with people with whom we disagree.</p>
+<p>The second approach to critical thinking aims to cultivate what I think of as the “liberal conversational virtues”: open-mindedness, direct and accessible expression of one’s ideas, attentive listening, empathy, interpretive charity, and identifying common ground. Some good examples here are Maureen Linker’s <em>Intellectual Empathy</em>, Martin Fowler’s <em>The Ethical Practice of Critical Thinking</em>, and Anthony Weston’s <em>Rulebook for Arguments</em>. These books come closer to what I want to offer my students. (And that’s one of the main reasons I chose Morrow and Weston’s <em>Workbook for Arguments</em>, which includes the full text of <em>Rulebook</em> plus exercises and larger assignments.)</p>
+<p>But these liberal conversational virtues can be — and historically have been — weaponized against cultural movements for social justice. I’m thinking of tactics such as <a href="https://en.wikipedia.org/wiki/Sealioning">sealioning</a>, <a href="https://en.wikipedia.org/wiki/Tone_policing">tone policing</a>, <a href="https://en.wikipedia.org/wiki/Internet_troll#Concern_troll">concern trolling</a>, “just asking questions,” and Alice McIntyre’s notion (via Alison Bailey) of <a href="https://philpapers.org/rec/BAIWTA">“white talk”</a> (especially assertions of one’s anti-racist open-mindedness and empathy as a way to avoid criticism). The liberal conversational virtues become <em>vices</em> when they make my students more susceptible to these tactics.</p>
+<p>As a first pass, I might address this limitation of teaching the liberal conversational virtues by assigning some additional readings and activities, discussing these various tactics, helping my students spot them in the wild, and giving them tools to respond appropriately.</p>
+<p>I’ll probably do some of this. But it risks turning a chunk of my class into a laundry list of fallacies — just a different list from the standard one you find in Hurley’s textbook. So, as a second pass, I think we (including both teachers and students of critical thinking) need to think about what goes wrong when the liberal conversational virtues are weaponized. Why is the sealion’s endless call to open debate not just annoying but actually ethically problematic?</p>
+<p>I think the answer has to do with <em>power</em>. Characteristically, sealioning and similar tactics are directed downwards, from someone who is relatively high in our society’s power hierarchies — and interested in defending those hierarchies — and towards someone who is relatively low — and interesting in criticizing them. In other words, sealioning is a vice because it functions to protect an unjust status quo from criticism. (Linker discusses power dynamics in the introduction and second chapter of her book, though on a quick skim I can’t tell if she’s connecting power to my concern with the ways thinks like empathy and open-mindedness can be weaponized and do harm. I might assign some of her discussion in my course.)</p>
+<p>On this analysis, critical thinking — and specifically whether certain approaches to conversation are, in a given case, virtuous or vicious — is loaded with substantive assumptions about power and justice. I can’t assume that students share my substantive assumptions about power and justice. (Though, in my experience so far, most UC Merced students are pretty sympathetic to my views.) But I can, at least, teach them that the deep disagreements in our society also apply to the meta-level; that our deep disagreements about Black Lives Matter or Trump are, at the same time, also deep disagreements about how to talk about our deep disagreements.</p>
+
+
+
+ ]]></description>
+  <guid>https://dhicks.github.io/posts/2020-07-10-critical-thinking.html</guid>
+  <pubDate>Fri, 10 Jul 2020 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Configuring Github and Travis-CI for Automated Lab Feedback</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2020-07-10-travis-lab-feedback.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Last summer, anticipating teaching for the first time since 2013, I started reading about <a href="https://www.insidehighered.com/news/2019/04/02/professors-reflections-their-experiences-ungrading-spark-renewed-interest-student">ungrading</a>, and somewhere (maybe even in that piece, I didn’t check) read about a computer scientist who uses <a href="https://en.wikipedia.org/wiki/Continuous_integration">continuous integration</a> (CI) to automatically give students feedback on their CS lab assignments. Each lab assignment has well-specified goals, and the CI automated tests evaluate the students’ solutions for correctness. Successful completion of the assignment can be counted automatically, specifications-grading style, or the instructor can review the code after it’s working for things like coding style and efficiency.</p>
+<p>This fall I’ll be teaching a graduate methods course on data science. This seems like a great course for implementing this CI approach. But I haven’t used CI before, and <a href="https://kieranhealy.org/blog/archives/2015/10/16/using-containerized-travis-ci-to-check-r-in-rmarkdown-files/">the tutorials for using Travis-CI with R</a> turned out to be unnecessarily complicated, not least because Travis-CI now has good support for R. The purpose of this post is to briefly review how to set up Github and Travis-CI for automated lab feedback.</p>
+<p>Each lab assignment is based on this template repo: <a href="https://github.com/data-science-methods/lab-test" class="uri">https://github.com/data-science-methods/lab-test</a>.</p>
+<section id="basic-lab-workflow" class="level1">
+<h1>Basic lab workflow</h1>
+<p><strong>This setup assumes a workflow for lab assignments where students clone a Github repository with instructions, data, etc.; complete the assignment in a single R script; that a working solution has deterministic values for variables with set names; and that students submit their work using a pull request.</strong> A different programming language (or multiple programming languages) will require different infrastructure for running unit tests. Multiple R scripts (including more complex project structures) will require more articulated test files. Writing unit tests for non-deterministic values will be quite a bit more complicated than the example test in the template.</p>
+<p>There are three phases for this approach: one-time setup with accounts, and then steps you and your students will do for each lab assignment.</p>
+</section>
+<section id="instructor-account-setup" class="level1">
+<h1>Instructor: Account setup</h1>
+<p>You’ll only need to do these steps once.</p>
+<ol type="1">
+<li>You’ll need a Github account.
+<ul>
+<li>I assume you already have one of these and that you know basic git terminology and Github workflows.<br>
+</li>
+<li><em>Optional:</em> I went ahead and created a new <a href="https://github.com/settings/organizations">organization</a> for my course, so that the course website and lab repos all live together. But that’s strictly unnecessary.<br>
+</li>
+</ul></li>
+<li>You’ll need a <a href="https://travis-ci.org">Travis-CI</a> account, which you create using a Github login. Travis-CI is free for working with public Github repositories.<br>
+</li>
+<li><em>Optional:</em> If you created a new organization for your course, make sure it shows up in your Travis-CI settings: Click on your profile picture (upper-right corner), then Settings. Look for the list of organizations on the left-hand column. If your organization isn’t there, then at the bottom of that column you should see a link to “Review and add your authorized organizations.”</li>
+</ol>
+<p>I <em>think</em> that’s basically it. Travis-CI should now be able to see your public repositories.</p>
+</section>
+<section id="instructor-repository-setup" class="level1">
+<h1>Instructor: Repository setup</h1>
+<p>You’ll do these steps when you create each lab assignment.</p>
+<ol type="1">
+<li>In the <a href="https://github.com/data-science-methods/lab-test">template repo</a>, click the green “Use this template” button (where the Clone button usually lives) to create a new repo for the lab.
+<ul>
+<li>I’m going to use the naming scheme <code>lab-01</code> where <code>01</code> indicates the week of the course.<br>
+</li>
+</ul></li>
+<li>Clone the new repo to the machine where you work.<br>
+</li>
+<li>Edit <code>lab.R</code> with the assignment instructions.<br>
+</li>
+<li><strong>If you add any packages to the setup, add them to <code>DESCRIPTION</code> as well.</strong>
+<ul>
+<li>Travis-CI assumes that R repositories are packages. It will automatically install dependencies, but only if all of the dependencies (including <code>testthat</code>) are listed in the <code>DESCRIPTION</code> file. You don’t need any of the usual package metadata; all you need are the list of <code>Imports</code>.<br>
+</li>
+</ul></li>
+<li>For each problem in the assignment, write appropriate tests in <code>tests/test_lab.R</code>.
+<ul>
+<li>You write tests using <code>testthat</code> expectations: <a href="https://testthat.r-lib.org/reference/index.html" class="uri">https://testthat.r-lib.org/reference/index.html</a>.<br>
+</li>
+</ul></li>
+<li>If you changed any file names, make sure they’re consistent across <code>lab.R</code>, <code>tests/test_lab.R</code> (which <code>source()</code>es the assignment script), and <code>.travis.yml</code> (it needs to know where to point <code>testthat::test_dir()</code>).<br>
+</li>
+<li><em>Optional:</em> Create a <code>solutions</code> branch. Fill in solutions for each problem, and run <code>testthat::test_dir('tests')</code> to check that your instructions and tests work as expected. Cherry-pick any corrections back to <code>master</code>.</li>
+<li>Push <code>master</code> back up to Github.<br>
+</li>
+<li>In Travis-CI’s Settings, find the lab repo and flip the switch to turn on CI. (In my experience, it can take like 10 seconds for Travis-CI to see the new repo or a push/pull request to an active repo.)</li>
+<li><em>Optional:</em> Push <code>solutions</code> up to ensure that Travis-CI is working as expected.
+<ul>
+<li>Note that there doesn’t appear to be a way to have a private branch of a public repo.</li>
+</ul></li>
+</ol>
+</section>
+<section id="student-lab-workflow" class="level1">
+<h1>Student: Lab workflow</h1>
+<p>The students will do these steps when they work on the lab assignment.</p>
+<ol type="1">
+<li>Fork the lab assignment to their own account, then clone the fork to their working machine.<br>
+</li>
+<li>Modify the yaml header for the lab assignment with their name and so on.</li>
+<li>Work in <code>lab.R</code> to complete the assignment, per instructions.<br>
+</li>
+<li><strong>If any packages are added to the setup, add them to <code>DESCRIPTION</code> as well.</strong></li>
+<li>At any point, run <code>testthat::test_dir('tests')</code> to get immediate feedback on their progress.<br>
+</li>
+<li>At any point, submit a pull request to get automated feedback via Travis-CI.
+<ul>
+<li><a href="https://docs.travis-ci.com/user/pull-requests/">Travis-CI docs on building pull requests</a></li>
+</ul></li>
+<li>Submit their work by submitting a final (passing) pull request.<br>
+</li>
+<li><em>Optional:</em> Use the RStudio knitr button (or <code>rmarkdown::render('lab.R')</code>) to generate a pretty HTML or PDF version of their completed assignment.</li>
+</ol>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://dhicks.github.io/posts/2020-07-10-travis-lab-feedback.html</guid>
+  <pubDate>Fri, 10 Jul 2020 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Replication, reproducibility, and Strengthening Transparency</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2020-05-18-strengthening-transparency.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><a href="https://www.epa.gov/osa/strengthening-transparency-regulatory-science"><em>Strengthening Transparency in Regulatory Science</em></a> is an open science rule that the US Environmental Protection Agency proposed in April 2018. If adopted, the rule would restrict the scientific information that EPA uses in policymaking, requiring that the data and analysis code be available either publicly or in a secure data enclave for independent reanalysis. Strengthening Transparency is non-accidentally similar to the <a href="https://science.sciencemag.org/content/356/6342/989">HONEST Act</a> and <a href="http://blogs.edf.org/climate411/2017/02/07/less-science-more-cost-why-the-misguided-secret-science-bill-is-bad-policy/">Secret Science Act</a>, which were attempts by Republicans in previous congresses to introduce the same requirement. Since at least the 1990s, industry and its allies have attempted to argue that environmental public health research can’t be trusted unless “we” can inspect the “raw data.”</p>
+<p>Strengthening Transparency tries to justify itself with explicit appeals to the <a href="https://en.wikipedia.org/wiki/Replication_crisis">replication crisis</a> that’s been unfolding in, primarily, social psychology. So the rule has a nice convergence between my ongoing research on public scientific controversies and my side interest in the replication crisis.</p>
+<p>In March of this year, EPA published a Supplemental Notice of Proposed Rulemaking, which added definitions for several of the key terms and opened another round of public comments. I submitted a comment based on the distinction between reproducibility (can we run the same data through the same code to get quantitatively identical output) and replicability (can we run a similar experiment to get new data that support qualitatively similar conclusions). I argued that open science can promote reproducibility, but not replicability; while Strengthening Transparency is nominally based on concerns about replicability. So the proposed rule can’t do anything about the problem it’s supposed to address.</p>
+<p>While I’ve been following the replication crisis — and even taught an undergraduate course on it last fall — the focus of my research has really been on more public, policy-relevant controversies. So there’s a good chance my comment is the only thing I’ll ever write on the replication crisis. You can read it here: <a href="https://drive.google.com/open?id=1Ze4EgDgtQJCQoW1_p4ebuDGOgtX2oi79" class="uri">https://drive.google.com/open?id=1Ze4EgDgtQJCQoW1_p4ebuDGOgtX2oi79</a></p>
+
+
+
+ ]]></description>
+  <guid>https://dhicks.github.io/posts/2020-05-18-strengthening-transparency.html</guid>
+  <pubDate>Mon, 18 May 2020 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Talk: “When Virtues are Vices: The Weaponization of Scientific Norms”</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2020-05-18-dayton-talk.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Back in March, I was supposed to present at a <a href="https://udayton.edu/artssciences/academics/philosophy/science-and-values/index.php">colloquium at the University of Dayton</a> on “Doing Science in a Pluralistic Society.” Due to the pandemic, the colloquium was turned into a virtual conference over two Fridays in April. The recording of my talk is now <a href="https://www.youtube.com/watch?v=R4-nOlvOhq4">on Youtube</a> and at the bottom of this post.</p>
+<section id="when-virtues-are-vices-the-weaponization-of-scientific-norms" class="level2">
+<h2 class="anchored" data-anchor-id="when-virtues-are-vices-the-weaponization-of-scientific-norms">When Virtues are Vices: The Weaponization of Scientific Norms</h2>
+<p>Conservative critics of mainstream climate science and environmental health science often “weaponize” traditional scientific virtues to manufacture doubt and slow the regulatory process. For example, climate skeptics appeal to Popperian falsifiability and Mertonian norms such as organized skepticism, arguing that mainstream climate science is unfalsifiable and propped up through closed scientific communities. The “Secret Science Reform Act,” which was passed by the US House of Representatives in both 2014 and 2015, would have prohibited US EPA from using “scientific technical information” unless it was “publicly available online in a manner that is sufficient for independent analysis and substantial reproduction of research results.”</p>
+<p>These rhetorical appeal to traditional scientific virtues make it difficult to dismiss these anti-environmentalists as “anti-science.” Indeed, the effect of these appeals is to represent anti-environmentalists as defenders of science from the threats of politicization.</p>
+<p>I first argue that this kind of appeal to scientific virtues depends on a “narrowly epistemic” conception of the aims of scientific research. On this conception, the sole constitutive aim of science is to produce impartial knowledge. Other aims — such as protecting human health and the environment — are less important. The traditional scientific virtues reflect this strict separation of constitutive epistemic aims and practical uses of science.</p>
+<p>I go on to propose an alternative conception of the aims of scientific research, according to which epistemic and pragmatic aims of science can be equally important and mutually influencing. This view of the aims of science supports an alternative understanding of scientific virtues. On this understanding, when traditional scientific “virtues” are weaponized by conservative anti-environmentalists — when they are used to delay protective regulation, frustrating the constitutive pragmatic aims of a scientific field — they are actually vices rather than virtues.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R4-nOlvOhq4" frameborder="0" allow="picture-in-picture" allowfullscreen="">
+</iframe>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://dhicks.github.io/posts/2020-05-18-dayton-talk.html</guid>
+  <pubDate>Mon, 18 May 2020 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>COVID-19 needs adaptive management</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2020-05-12-covid-adaptive-management.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><em>[I wrote this general-audience piece during the last week of April and first few days of May. I pitched it to a few popular outlets, but couldn’t find it a home.]</em></p>
+<p>What is the infection fatality rate for COVID-19? What groups of people are at greater risk, and what treatments are effective for lowering that risk? How many people have already been infected, and how many of them would be immune to reinfection? Which businesses are safe to reopen now, without triggering a second wave of infections, and under what guidelines? How can we conduct mass testing and contract tracing in a just and ethical way? What will the cultural and political fallout of this pandemic be for our society?</p>
+<p>In the first days of May 2020, we know two things for certain about the answers to all of these questions. First, that almost nothing in certain. The data are incomplete, or unreliable, or simply won’t exist for months or years. Different models reach different conclusions, even when they use basically the same data and only subtly different methods. Preprints are available immediately, but haven’t been vetted by peer review, and may be retracted just as quickly. For any given study, it’s not hard to find a PhD on Twitter who has some scathing (and witty) criticism.</p>
+<p>The other thing we know for certain is that we can’t wait until we’re certain. Policymakers at all levels — from Congress and FDA, through governors and state public health officials, down to mayors and ICU clinicians — need to make decisions now. Even inaction is a kind of action, as we’ve learned over the last three months from the contrasting cases of China and South Korea, New York and California. Any decision we make relies on answers to these questions, either implicit or explicitly.</p>
+<p>A traditional view of the relationship between science and policy has two distinct steps. First scientists produce knowledge. Then policymakers pick up that knowledge and use it to make decisions. This view is simple and clean. Scientists have their job; policymakers have theirs. But it requires science to be <em>finished</em> before policymakers can <em>act</em>. We need an alternative, one that enables science to inform policy even as it tries to reduce uncertainty. Adaptive management provides exactly this alternative.</p>
+<p>Adaptive management was originally developed in natural resources management and conservation biology. Ecosystems, such as forests and fisheries, are extremely complex systems. Organisms interact with each other and their environments in complex ways, and data are often indirect and patchy. Consequently, one forest may not react the same as any other forest in response to the same policy, and these differences can be all but impossible to predict in advance.</p>
+<p>Adaptive management responds to this uncertainty by treat policies as science and science as policy. Like good experiments, good adaptive management policies compare interventions to control areas and systematically collect data. It’s important to identify the major outcomes of interest, while also being on the lookout for signs of unanticipated side-effects are “unknown unknowns.” Managers may even formulate precise hypotheses, and design policies that carefully test those hypotheses. Critically, as circumstances change and understanding improves, the knowledge produced by this scientific research is used to update and adapt policies. This requires ongoing, close collaboration between policymakers, researchers, and people on the ground in the area of interest, such as workers and local residents.</p>
+<p>This does not mean that adaptive management is easy. It challenges deep-seated assumptions about both good policy and good science. On the policy side, stakeholders — often relevant businesses — push for “regulatory certainty,” meaning a stable policy landscape without economic surprises. In part for this reason, Fischman and Ruhl found that US federal agencies often practice “adaptive management lite,” which includes data collection but does not have any way for policies to adapt to improved scientific understanding. On the science side, some standards of “good science” — such as the slow process of peer review — might need to be adjusted or even sacrificed for the sake of rapidly informing policy. And the close collaboration with policymakers on controversial issues risks the accusation that science has been “politicized.” These challenges may explain why adaptive management has not been widely discussed outside of natural resources management policy. Nonetheless, DeFries and Nagendra include control of infectious disease as an area where adaptive management and related approaches can be especially valuable.</p>
+<p>What would an adaptive management approach to lifting stay-at-home orders look like? First, data collection is essential. Communities must be able to know immediately when covid-19 appears in their area, and be able to respond rapidly using measures such as contact tracing. Second, policy changes might be patchy and staggered. Restrictions might be eased in one area a week or two before other areas. Some lessons learned in the early-open area might change the way opening is done elsewhere. Third, research ethics must be respected. Individual residents can’t give their consent to participating in policy experiments. But individuals can be informed about why policies are patchy, or might suddenly change. And individuals can also be given a chance to participate in making democratic policy-science. For example, town halls might be used to give residents an opportunity to share their experiences (data), interpret the most recent findings (science), and recommend courses of action (democracy). Similarly, policies must respect justice, recognizing for example that the burdens of the pandemic have fallen heavily on low-income communities of color.</p>
+<p>Uncertainty does not need to be debilitating. But it does require thinking about policy as science and science as policy. And this, in turn, requires policymakers, researchers, and the public to work together.</p>
+<section id="suggested-readings" class="level1">
+<h1>Suggested Readings</h1>
+<p>DeFries, Ruth, and Harini Nagendra. 2017. “Ecosystem Management as a Wicked Problem.” Science 356 (6335): 265–70. <a href="https://doi.org/10.1126/science.aal1950" class="uri">https://doi.org/10.1126/science.aal1950</a>.</p>
+<p>Fischman, Robert L., and J.b. Ruhl. 2015. “Judging Adaptive Management Practices of U.S. Agencies.” Conservation Biology 30 (2): 268–75. <a href="https://doi.org/10.1111/cobi.12616" class="uri">https://doi.org/10.1111/cobi.12616</a>.</p>
+<p>Mitchell, Sandra D. 2009. Unsimple Truths. Science, Complexity, and Policy. University of Chicago Press.</p>
+<p>Norton, Bryan G. 2005. Sustainability: A Philosophy of Adaptive Ecosystem Management. Chicago: University of Chicago Press.</p>
+<p>Westgate, Martin J., Gene E. Likens, and David B. Lindenmayer. 2013. “Adaptive Management of Biological Systems: A Review.” Biological Conservation 158 (February): 128–39. <a href="https://doi.org/10.1016/j.biocon.2012.08.016" class="uri">https://doi.org/10.1016/j.biocon.2012.08.016</a>.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://dhicks.github.io/posts/2020-05-12-covid-adaptive-management.html</guid>
+  <pubDate>Tue, 12 May 2020 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Why I won’t give you a hug</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2020-05-08-no-hug.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Dear family member,</p>
+<p>I understand your perspective. The rural Californian county where you live — like mine — has had a few dozen confirmed cases of COVID-19, and no deaths. You talked to another member of our extended family, in an even more remote and rural county; he told you that he, his family, and his buddies all had something that sounds a lot like COVID-19, back in February. He couldn’t get tested at that point, of course, but they had all the symptoms: dry cough, fever, body aches. You’ve read a couple of news stories, saying that we know COVID-19 was in the state in February, and that a lot more people had antibodies for the disease than we first suspected (though, in our state, this is maybe as high as 4%, not 40%).</p>
+<p>Meanwhile, due to health issues in your household, you’ve been under quarantine since the first of March. You missed one family birthday gathering — the last family gathering of any kind — in the first week of March, not long before the whole state went into quarantine. That’s exhausting. Lots of small business owners in your community haven’t been eligible to apply for unemployment. Some of your neighbors have gotten their relief checks — a single check, that can cover some fraction of one month’s rent, their only income over the past six weeks. Others — especially older folks who don’t do their taxes online — are still waiting for their checks. You retired recently, and right now your primary income is rent from a small cottage on your property. But you’re not entirely sure whether the family living in the cottage is working right now. If they can’t pay their rent, you’re not quite sure how you’ll be able to pay the electric bill and get groceries.</p>
+<p>It’s not that you want to open the doors wide across the state. The outbreak in the Bay Area, about two hours from both of us, is still simmering. And things are still quite bad in LA. But, you think, rural counties like ours, with just a few dozen confirmed cases and no deaths, we should be able to open things back up. For our communities, the treatment seems to be worse than the disease.</p>
+<p>That’s your perspective, and I can understand and respect why you think that. It would be great for people to go back to work, for the state and national parks to reopen, for our family to get together again for food and hugs.</p>
+<p>But I have a different perspective. In major epidemics this one, outbreaks and quarantines tend to come in cycles. Things start to get bad, quarantine is imposed until they simmer down again, things open up, and then things start to get bad again. And because COVID-19 is so sneaky, it’s incredibly easy for things to get bad again, incredibly quickly. <a href="https://erinbromage.wixsite.com/covid19/post/the-risks-know-them-avoid-them">In Chicago</a>, in a series of family get-togethers, one infected person unwittingly spread the disease to 16 other people. Three of those people died, and several went on to infect further people, all within a few weeks. While things are quiet in our rural counties now, just fewer than 10 active, confirmed cases, I worry that opening things up too quickly will lead to 100 cases, then 500, and then our small rural hospitals will be overwhelmed.</p>
+<p>To prevent another bad way of cases, we need to be able to do the two things that the CDC has recommended since January: lots of testing, and rapid contact tracing. In California, the latest recommendation is that we should be able to do <a href="https://www.npr.org/sections/health-shots/2020/05/07/851610771/u-s-coronavirus-testing-still-falls-short-hows-your-state-doing">108 tests per 100,000 people</a>. (This is actually lower than the <a href="https://www.nytimes.com/interactive/2020/04/17/us/coronavirus-testing-states.html">recommendation of 152 tests per 100,000 people</a> from mid-April.) But currently we’re only doing <a href="https://www.npr.org/sections/health-shots/2020/05/07/851610771/u-s-coronavirus-testing-still-falls-short-hows-your-state-doing">74 tests per 100,000 people</a>. We’ve expanded our testing capacity, but we’ve still got a ways to go. Things are even worse in most other states.</p>
+<p>I know you don’t like to talk about politics. But for me the crisis is unavoidably political, in terms of both the disease itself as well as the economic effects of the quarantine. <a href="https://www.washingtonpost.com/national-security/us-intelligence-reports-from-january-and-february-warned-about-a-likely-pandemic/2020/03/20/299d8cda-6ad5-11ea-b5f1-a5a804158597_story.html">As the epidemic unfolded in Asia in January and February, Trump was repeatedly warned that it would be here and that we needed to prepare.</a> The Defense Production Act gives Trump the authority to order manufacturers to produce essential goods — like protective equipment for doctors and the swabs and chemicals needed for testing. <a href="https://www.vox.com/2020/5/6/21249233/coronavirus-defense-production-act-ppe-tests-trump">He’s barely used it, which is part of the reason why our testing capacity is still so far below where it needs to be.</a></p>
+<p>On the economic side, some of the effects of the quarantine are unavoidable. Shutting down the economy for 6 weeks or longer means that some economic pain is unavoidable. But we’re not distributing this pain fairly. Restaurant servers and kitchen staff are getting that one check, plus a little bump in unemployment benefits. <a href="https://www.ainonline.com/aviation-news/business-aviation/2020-03-26/us-relief-bill-sets-aside-billions-aviation-industry">The airline industry is getting tens of billions of dollars</a>, and <a href="https://www.washingtonpost.com/opinions/2020/04/14/trump-kushner-could-reap-pandemic-windfall/">real estate investors — including Trump and his family — are getting $170 billion</a>.</p>
+<p>When we talked the other day, I told you about Germany’s approach to the crisis, where <a href="https://www.washingtonpost.com/world/europe/how-europe-manages-to-keep-a-lid-on-coronavirus-unemployment-while-it-spikes-in-the-us/2020/04/11/29b23c90-7b4f-11ea-a311-adb1344719a9_story.html">the government covers workers’ salaries</a>, avoiding the disastrous spike in unemployment that we’ve seen in the US. You asked me how we could possibly pay for such a program. For the past few years, <a href="https://www.snopes.com/fact-check/amazon-no-income-taxes-2018/">Amazon has made billions of dollars of profits, but paid no federal income tax, and even received refunds of more than $100 million</a>. In part, this is due to <a href="https://finance.yahoo.com/news/amazon-taxes-zero-180337770.html">Trump’s 2017 corporate tax cut</a>. Since March, Amazon’s stock price has increased <a href="https://www.nasdaq.com/market-activity/stocks/amzn">about 25%</a>, as customers shift from brick-and-mortar stores to shopping online during the pandemic. Even if you don’t agree with me that a substantial general increase in taxes on the wealthy and large corporations is a good idea, couldn’t we agree that a one-time tax on windfall profits would be fair?</p>
+<p>I hope that I’m wrong about what’s going to happen over the next few weeks. Like you, I think it would be wonderful if most people had already been exposed, that cases don’t rise as we reopen the economy, and that the emergency field hospitals and testing sites we’ve built over the last six weeks turn out to be unnecessary. I want to go backpacking, enjoy a latte on a Saturday afternoon before going to the movies, and most importantly get together with you and everyone else for a family dinner. But we’re far from certain that this best-case scenario is what’s going to happen. From my perspective, we need to move slowly, and be prepared for the worst case.</p>
+<p>I love you. But I won’t hug you. Not until June.</p>
+<p>Dan</p>
+
+
+
+ ]]></description>
+  <guid>https://dhicks.github.io/posts/2020-05-08-no-hug.html</guid>
+  <pubDate>Fri, 08 May 2020 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Paper: Census Demographics and Chlorpyrifos Use in California’s Central Valley, 2011–15: A Distributional Environmental Justice Analysis</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2020-05-04-chlorpyrifos-paper.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>In Spring 2018, I audited a spatial data analysis class taught by Noli Brazil at UC Davis. The pesticide chlorpyrifos had been in the news for the past year, as one of the first things Scott Pruitt did at EPA in 2017 was to deny a petition to revoke all tolerances for the pesticide (effectively banning it in the US). For my project for the class, I decided to apply some spatial regression techniques to understand where chlorpyrifos is used in California’s central valley. The initial results were quite compelling, indicating that Hispanic communities are potentially exposed to quite a bit more chlorpyrifos than White communities. I also developed what seems to be a novel way to account for measurement error in the American Community Survey’s public data.</p>
+<p>A few years later I finally found time to finish writing things up, and <a href="https://doi.org/10.3390/ijerph17072593">the paper</a> was recently published in the <em>International Journal of Environmental Research and Public Health</em>. (Incidentally, I was impressed at the fact that the journal got a pair of pretty decent reviews back in just a few weeks. In philosophy of science, a fast turnaround time for reviews is 2-3 months.)</p>
+<p>Here’s figure 1 of the paper, showing the study area in terms of census tracts (blue) and places (yellow) and where chlorpyrifos is used (red dots; more saturation = more chlorpyrifos).</p>
+<p><img src="https://dhicks.github.io/img/03_chlor_use.png" class="img-fluid" alt="A map of California, showing the study area of the Central Valley in blue. Chlorpyrifos use is indicated by a cloud of redish points; the cloud is densest in the San Joaquin Valley.">{:width=“50%”}</p>
+<p><strong>Abstract</strong>:</p>
+<p>Chlorpyrifos is one of the most widely-used pesticides in the world, and is generally recognized to be a moderate neurotoxin. This paper reports a distributional environmental justice (dEJ) analysis of chlorpyrifos use in California’s Central Valley, examining the way distributions of environmental risks are associated with race, ethnicity, class, gender, and other systems of structural oppression. Spatial data on chlorpyrifos use were retrieved from California’s Department of Pesticide Registration (DPR) public pesticide use records (PUR) for 2011-2015. These data were combined with demographic data for the Central Valley from the American Community Survey (ACS). Spatial regression models were used to estimate effects of demographic covariates on local chlorpyrifos use. A novel bootstrap method was used to account for measurement error in the ACS estimates. There is consistent evidence that Hispanic population proportion is associated with increased local chlorpyrifos use. A 10-point increase in Hispanic proportion is associated with an estimated 1.05-1.4-fold increase in local chlorpyrifos use across Census tract models. By contrast, effects of agricultural employment and poverty on local chlorpyrifos use are ambiguous and inconsistent between Census tracts and Census-designated places.</p>
+<p><a href="https://doi.org/10.3390/ijerph17072593" class="uri">https://doi.org/10.3390/ijerph17072593</a></p>
+
+
+
+ ]]></description>
+  <guid>https://dhicks.github.io/posts/2020-05-04-chlorpyrifos-paper.html</guid>
+  <pubDate>Mon, 04 May 2020 07:00:00 GMT</pubDate>
+  <media:content url="https://dhicks.github.io/img/03_chlor_use.png" medium="image" type="image/png" height="168" width="144"/>
+</item>
+<item>
+  <title>A “Toolbox-lite” for the First Day of Philosophy of Science</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2020-01-21-toolbox-lite.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>This semester I get to teach an undergraduate philosophy of science course for the first time ever, and today was the first meeting of the class. I’ve always struggled with first days. You can’t get students to do any work beforehand, which makes it really hard to have a substantive discussion. So you call roll to check the roster and then you go over the syllabus, which is somewhat useful but very boring. And because my preferred teaching style involves as little lecturing as possible, me reading through the syllabus also radically misrepresents the feel of every other meeting of the class.</p>
+<p>Last fall, I had the idea of adapting the workshop format from the <a href="http://tdi.msu.edu/">Toolbox Dialogue Intiative</a> at Michigan State. The Toolbox workshops were originally developed for interdisciplinary team science groups. During the workshop, the members of the group first complete <a href="https://i2s.anu.edu.au/wp-content/uploads/2014/02/ScientificResearch-Toolbox-SciTS-042512.pdf">a survey on their views about science</a>; then the workshop facilitator runs a philosophical discussion of points of agreement and disagreement among the group members.</p>
+<p>In the plan I conceived last fall, my students would engage with the Toolbox format twice: once as participants in class and then as facilitators, running a version of the workshop with lab groups across campus. The students wouldn’t need any particular preparation for the survey, it would help preview the main topics of the course, and it would give us a good starting point for the kind of open-ended discussion that characterizes my preferred teaching style. So it would work well as an activity for the first class meeting. As facilitators, students would be organized into groups of 3 and each group would be assigned a lab or other research group on campus. During the final week of classes, each group would give a presentation on highlights of their workshop discussion. This would allow them to directly tie the class content into active scientific research across campus, which is one of the four <a href="http://philo.ucmerced.edu/PLO.html">program learning outcomes</a> for our philosophy major.</p>
+<p>Unfortunately the second part didn’t work out. I have 35 students registered, meaning I’d need to recruit 12 research groups on campus as participants for my students’ workshops. After just one semester at UC Merced, I do know at least a dozen other faculty; but not enough well enough to get them to sacrifice one of their lab meetings. The standard Toolbox workshop is most of a day; I felt like I could shorten it to 90 minutes or 2 hours while still keeping enough of the workshop to be useful for my students. But that would still be a significant ask from people whom I barely know.</p>
+<p>But I was able to incorporate a “Toolbox-lite” into the first meeting of my class. Starting with the Scientific Research Toolbox Instrument (linked above), I selected a few questions that were immediately relevant to my course, and wrote a few more. While we’re not talking directly about the definition of science or the demarcation problem (which I think is a pseudo-problem), I decided to add a set of questions about whether specific fields are sciences. The resulting list was below; students responded on a 3-point Likert scale, with anchors at “agree” and “disagree” and the middle option unmarked.</p>
+<ul>
+<li>All fields of science use the same basic scientific method.</li>
+<li>Scientific research primarily uses experimental methods.</li>
+<li>Scientific research primarily uses quantitative methods.</li>
+<li>There are strict requirements for determining when empirical data confirm a tested hypothesis.</li>
+<li>Scientific research aims to identify truths about a world independent of the investigators.</li>
+<li>Good scientists let the data speak for themselves.</li>
+<li>Scientific research reveals the laws that govern how the world operates.</li>
+<li>The world is fully explicable as the assembly of its constituent parts.</li>
+<li>The principal value of research stems from the potential application of the knowledge gained.</li>
+<li>Allowing values to influence research is unscientific.</li>
+<li>When it comes to making public policy, scientific facts are more important than people’s feelings.</li>
+<li>Members of the general public shouldn’t question scientific findings.</li>
+<li>Are these academic fields sciences?
+<ul>
+<li>Evolutionary biology</li>
+<li>Agriculture</li>
+<li>Public health</li>
+<li>Chemical engineering</li>
+<li>Particle physics</li>
+<li>Climate science</li>
+<li>Literature</li>
+<li>History</li>
+<li>Psychology</li>
+<li>Economics</li>
+<li>Anthropology</li>
+<li>Sociology</li>
+<li>Philosophy</li>
+</ul></li>
+</ul>
+<p>I had the students fill this out on Qualtrics while I was passing out the hard copies of the syllabus. I wrote a little dashboard in R to retrieve the responses from Qualtrics and display summary plots.</p>
+<p>Here are the results.</p>
+<p><img src="https://dhicks.github.io/img/2020-01-21-q2.png" class="img-fluid" alt="bar chart of responses to block 1"> <img src="https://dhicks.github.io/img/2020-01-21-q3.png" class="img-fluid" alt="bar chart of responses to block 1"> <img src="https://dhicks.github.io/img/2020-01-21-q4.png" class="img-fluid" alt="bar chart of responses to block 1"> <img src="https://dhicks.github.io/img/2020-01-21-q5.png" class="img-fluid" alt="bar chart of responses to block 1"></p>
+<p>I had the students divide into small groups, introduce themselves to their group members, and then discuss “Scientific research primarily uses quantitative methods” for about 10 minutes. Then we came back together, I solicited a few highlights from these discussions, and then we had a short class discussion (maybe another 10 minutes) on “Allowing values to influence research is unscientific.”</p>
+<p>The discussions were lively. I heard a few students relating their views to their majors (the most popular major among registrants is cognitive science, followed by psychology and economics), which I think is really key to the way philosophy of science can engage students without much philosophy background.</p>
+<p>I think these results are really interesting. The students generally agree with each other on a few points, but most prompts have a mix of responses. The majority disagreement on “Allowing values to influence research is unscientific” and “Members of the general public shouldn’t question scientific findings” are especially interesting. We’re talking about feminist philosophy of science, race (in) science, and values in science in the middle of the term; I’m looking forward to see what the students have to say about those topics.</p>
+<p>The field responses were also really interesting. For every field, even Literature and History, a majority of students said the field is a science. Philosophy gets treated more like a social science than the other two humanities fields, with a supermajority thinking that it is a science but a few students having doubts. (As a registration requirement, all of the students had to have taken an intro-level philosophy course; but only one or two are philosophy majors.) Unfortunately we didn’t have any time to talk about these responses.</p>
+<p>All together, these responses and the discussions made me even more excited for this course. The students are already thoughtful about what science is and how it works, and I think every one will have their views challenged by their classmates and readings at some point.</p>
+
+
+
+ ]]></description>
+  <guid>https://dhicks.github.io/posts/2020-01-21-toolbox-lite.html</guid>
+  <pubDate>Tue, 21 Jan 2020 08:00:00 GMT</pubDate>
+  <media:content url="https://dhicks.github.io/img/2020-01-21-q2.png" medium="image" type="image/png" height="58" width="144"/>
+</item>
+<item>
+  <title>Radical Immanent Critique</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2020-01-19-radical-immanent-critique.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>My general approach to philosophy might be characterized as <em>radical immanent critique</em>. This might seem paradoxical. The goal of this blog post is to resolve this apparent paradox.</p>
+<p>Let’s start at the end. My approach is critical. By this I mean that my approach is evaluative, not purely descriptive; and that my evaluations are frequently negative. Things are going wrong; things aren’t working. This might be because the means aren’t appropriate to the ends, or it might be because the ends are bad ones.</p>
+<p>My critique is radical. By this I mean that it targets deep assumptions of the scientific practices I study (and critique). The value-free ideal, and related concepts such as objectivity and partisan neutrality, is a good example here. The value-free ideal (for science) is widely assumed by scientists, policymakers, and members of the general public. It is also rarely questioned or put up for debate. This ideal has a profound influence on the way we organize scientific institutions and integrate them into our systems of public decisionmaking. In these ways, the value-free ideal is a deep assumption of science in our society. And it is an assumption I am sharply critical of. I don’t just think it’s mistaken; I think it’s pernicious. By criticizing this deep assumption, my work becomes radical.</p>
+<p>But my critique is also immanent. This means that it is addressed to the social practices that I think should change — scientific research and policymaking — framed in terms that they can understand, and argued by appealing to premises that they accept. (This is also why I’ve published so much of my work in venues like <em>Environmental Health Perspectives</em> or <em>Risk Analysis</em>.) My basic argument against the value-free ideal is that it prevents scientists from doing the very things that they claim to be trying to do. For example, environmental health scientists characteristically want to produce knowledge that will be useful for protecting human health and the environment. I didn’t make up the phrase “protect human health and the environment”; it’s from the mission statement of US EPA. The value-free ideal prevents them from pursuing this goal when it’s used to portray and dismiss their research as “biased” and to justify excessively skeptical standards of evidence.</p>
+<p>The sense of paradox in “radical immanent critique” comes from the fact that, on the one hand, I appeal to deep assumptions of scientific practices while also, on the other hand, criticizing deep assumptions of these same practices. How can I both appeal to and criticize an assumption?</p>
+<p>The solution is that I’m appealing to some deep assumptions to criticize other ones. The aim of protecting human health and the environment is a deep assumption of environmental health science; my argument points out that this assumption is incompatible with another deep assumption, the value-free ideal. We might distinguish between <em>radical</em> critique and <em>Cartesian</em> critique. Radical critique targets deep assumptions of a social practice; but not necessarily every assumption. Only Cartesian critique attempts to target every assumption of a social practice at once. Cartesian immanent critique would be paradoxical; but there’s no logical problem with non-Cartesian radical immanent critique.</p>
+
+
+
+ ]]></description>
+  <guid>https://dhicks.github.io/posts/2020-01-19-radical-immanent-critique.html</guid>
+  <pubDate>Sun, 19 Jan 2020 08:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Comment: Inductive Risk, Science, and Values: A Reply to MacGillivray</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2020-01-06-macgillivray-commentary.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Last fall Jessey Wright, P.D. Magnus, and I put together a short commentary replying to a paper on inductive risk published in the journal <em>Risk Analysis</em>. The paper is now available <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/risa.13434">here</a>.</p>
+<p><strong>Abstract:</strong></p>
+<p>The argument from inductive risk (AIR) is perhaps the most common argument against the value‐free ideal of science. Brian MacGillivray rejects the AIR (at least as it would apply to risk assessment) and embraces the value‐free ideal. We clarify the issues at stake and argue that MacGillivray’s criticisms, although effective against some formulations of the AIR, fail to overcome the essential concerns that motivate the AIR. There are inevitable trade‐offs in scientific enquiry that cannot be resolved with any formal methods or general rules. Choices must be made, and values will be involved. It is best to recognize this explicitly. Even so, there is more work to be done developing methods and institutional support for these choices.</p>
+<p><a href="https://doi.org/10.1111/risa.13434" class="uri">https://doi.org/10.1111/risa.13434</a></p>
+
+
+
+ ]]></description>
+  <guid>https://dhicks.github.io/posts/2020-01-06-macgillivray-commentary.html</guid>
+  <pubDate>Mon, 06 Jan 2020 08:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>White Supremacy and Evolutionary Games</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2019-12-06-White-supremacy-and-evolutionary-games.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>This morning I’m productinating (productively procrastinating) by reading <a href="https://ndpr.nd.edu/news/the-origins-of-unfairness-social-categories-and-cultural-evolution/">Ann Cudd’s review of Cailin O’Connor’s <em>The Origins of Unfairness</em></a>. I started to read O’Connor’s book a couple of months ago, but game theory is not my thing, so I think I only made it as far as the introduction. Both the introduction and Cudd’s review frame O’Connor’s project as primarily trying to explain the origins of patriarchy — understood as a systematically unfair gendered division of labor and goods — using evolutionary game theory. But O’Connor has also taken this approach to explain the origins of white supremacy. Her work in this area includes a <a href="http://philsci-archive.pitt.edu/13474/">preprint of a paper with Liam Kofi Bright and Justin Brunner</a> (which I have read), several forthcoming papers cited in that paper (which I haven’t read), and apparently some of the later chapters of O’Connor’s book (again, which I haven’t read).</p>
+<p>In both the paper and (based on Cuddy’s summary) the book, white supremacy is operationalized as a systematically unfair division of labor and goods between two groups, one in the majority (i.e., more than 50% of the individuals) and the other in the minority. The models show how, under certain conditions, minority individuals will come to adopt a “non-aggressive strategy,” requesting less than their fair share in a division of goods when interacting with majority individuals. Here’s Cudd’s summary of the dynamics:</p>
+<blockquote class="blockquote">
+<p>When there is a minority-majority interaction, if the majority risks playing the aggressive strategy some of the time, the minority type will more quickly learn to play the non-aggressive strategy, and this will result in an unequal split becoming the stable outcome of minority-majority interactions. This is because minorities meet more majorities than they meet each other, and so they quickly learn that the other type are more likely to play aggressive than same type and thus minorities more quickly learn that they must play the less aggressive strategy when they meet the other type.</p>
+<p>Thus, the fact of being a minority interacting with a majority social category itself becomes a cause of inequality.</p>
+</blockquote>
+<p>Call this process the <em>minority disadvantage dynamics</em>. With respect to white supremacy, I take it that the overall thesis that O’Connor and her collaborators want to defend is that the minority disadvantage dynamics explain the development of white supremacy. Cudd finds their analysis compelling: “My own view is that the models hit the mark and provide a powerful statement about how unfairness between genders and races is likely to arise in a wide variety of actual conditions.”</p>
+<p>In the last two paragraphs of the review, Cudd considers an objection, namely, that O’Connor’s models neglect the ways in which “historical acts of violence, terror, and greed have played critical roles in the oppressive structures we see today in any given society.” Cudd responds that “these forces simply reinforce the explanations [O’Connor] has given, but do not nullify them” and that O’Connor “has provided is a set of models to frame the work of empirical social scientists, historians, ethicists, and social philosophers who can put the flesh on the system.” Using new mechanist terminology, we might say that O’Connor et al.&nbsp;have provided a “mechanism schema,” “a truncated abstract description of a mechanism that can be filled with descriptions of known component parts and activities” (MDC 15) to produce an empirically-informed, conceptually-well-supported explanation for actually existing systematic injustice. Specifically, by mapping the entities and activities involved in the minority disadvantage dynamics to entities and activities in the actual history of gendered or raced divisions of labor, we can produce such explanations of patriarchy or white supremacy.</p>
+<p>As I understand it, our knowledge of the actual origins and development of gendered divisions of labor is extremely limited. <a href="https://www.worldcat.org/title/evidential-reasoning-in-archaeology/oclc/1124071952">Archaeology is hard</a>, especially when we’re talking about processes that were unlikely to leave unambiguous material traces (what was the gender distribution of the people who used that bowl?) that have survived ten thousand years or more. The diversity of gender systems across thousands of human cultures also complicates things a bit: kinds of work done by men in one culture might have been done by women in another culture, or not been gendered at all, which makes it difficult to generalize; and of course <a href="http://www.pbs.org/independentlens/content/two-spirits_map-html/">many human cultures don’t have binary gender systems</a>.</p>
+<p>By contrast, <a href="https://www.worldcat.org/title/racial-contract/oclc/912381847">we know a lot about the origins of white supremacy</a>. Briefly, Europeans abducted thousands of Africans, transported them thousands of miles over the Atlantic Ocean, tortured them, and kept them culturally isolated from nearby populations; all in order to force them to work on land that had been appropriated from indigenous people using genocidal methods. African slaves and their descendants <a href="https://en.wikipedia.org/wiki/Slave_rebellion#North_America">were not particularly satisfied with this arrangement</a>, but a system of horrific violence and the ideology of biological race were effective at creating what were, up to that point, some of the wealthiest societies in human history.</p>
+<p>Can the minority disadvantage dynamics be mapped on to this history of white supremacy? The entities would seem to be straightforward: the white settler-slavers are the agents who get the unfair advantage, while the black slaves are the agents who get the unfair disadvantage. Beyond this, however, things get more difficult.</p>
+<p>One issue is that evolutionary game theory idealizes interactions between agents as cases of free choice. In each play of the game, all of the agents involved are free to choose among the available options. While Hobbes thought that threats of violence — and even instantiated violence — were entirely compatible with a free choice, most of us today would call this coercion. Slaves were not free to decide whether or not they would work for their owner; that’s why we call them “slaves.”</p>
+<p>However, we might say that slaves were free to decide whether to comply or rebel, either on particular occasions or with the slave system as a whole. The violence they would face for not complying — and the value of freedom if their rebellion were successful — could be bundled into the payoff matrix. “Free choice” might not accurately capture the phenomenology or injustice-as-domination of slavery, but those are not the aspects of white supremacy that evolutionary game theory is trying to explain.</p>
+<p>If we’re making the decision to comply or rebel the primary choice faced by slaves, then another issue arises. The chances of successful rebellion likely depend on the decisions made by other slaves, including the decision of whether to join the rebellion but also the decision of whether to let the slavers know about the impending rebellion. However, in principle this could be accounted for by moving to a more complex multi-player game with multiple different strategies available to each type of player. I’m not sure how robust evolutionary game theoretic results tend to be when they’re generalized in this way, but for the purposes of this blog post let’s suppose that the basic picture of the minority disadvantage dynamics still holds up.</p>
+<p>There’s still another issue, though, which I think is a much more serious problem for the empirical project suggested by Cudd on behalf of O’Connor. <strong>In the slave societies of the US South and the Caribbean, slaves were the majority group, not the minority.</strong> <a href="https://en.wikipedia.org/wiki/Demographics_of_South_Carolina">White people were the minority in South Carolina from about 1708 until about 1910.</a> <a href="https://en.wikipedia.org/wiki/Haiti#French_rule_(1625%E2%80%931804)">In 1788, Haiti (then Saint-Domingue) had about 25,000 Europeans, 22,000 “free coloreds,” and 700,000 slaves.</a> The white settlers were always the minority in what we might call the “non-genocidal” settler societies, such as in Africa and Asia, where the indigenous population was not destroyed or removed. (You might object that the case of Haiti is consistent with O’Connor et al.’s model, because it shows that a majority can overthrow an oppressive minority. But presumably slaves were in an overwhelming majority for several decades before the revolution began in 1791.)</p>
+<p>The minority disadvantage dynamics are driven entirely by how frequently individuals encounter members of their same and different groups. Minorities have a disadvantage because they less frequently encounter individuals who will give them a fair deal (i.e., members of their same group), and so the majority gradually accrues the lion’s share of the wealth. But in actual white supremacist slave societies, it was the slaver minority who captured the wealth, not the enslaved majority. The minority disadvantage dynamics cannot explain the <em>minority advantage phenomenon</em> observed in most actual white supremacist societies. It seems that we need to appeal to power relations, not population shares.</p>
+<p>O’Connor, Bright, and Bruner do develop models that incorporate bargaining power, as an assumption that “when members of social groups bargain, and when bargaining breaks down, the fall back position for one group tends to be better than for the other” (7). They use this to model intersectional scenarios which have majority-minority dynamics along one axis of oppression (e.g., a black racial minority) and similar populations but asymmetric bargaining power along another axis of oppression (e.g., women have less wealth than men) (§4). They show that these dynamics disadvantage the minority group, the less powerful group, and especially disadvantage the intersectional less power-minority group (i.e., black women). The more power-majority group (i.e., white men) enjoy the largest advantage.</p>
+<p>However, in this model, the power dynamics exacerbate the inequality produced by the minority disadvantage dynamics; they do not negate or reserve it. The majority still has an advantage. If we swap the black-white share of the population (which is equivalent to swapping the black and white labels attached to the model), then black men would enjoy the largest advantage. And so this way of combining power and minority disadvantage can’t explain the minority advantage phenomenon.</p>
+<p>An alternative approach could have a single axis of oppression, with both minority-majority and power dynamics operating along this single axis. Namely, one group would be larger than the other, but this group would also have significantly less bargaining power. For some parameter values, this kind of model would produce minority advantage; namely, if the bargaining power asymmetry were strong enough, it would overcome the minority disadvantage dynamics. But here the minority disadvantage dynamics do not explain the minority advantage phenomenon. Rather, this model shows how bargaining power can produce minority advantage <em>despite</em> the minority disadvantage dynamics.</p>
+<p>In short, I don’t see how the minority disadvantage dynamics can be mapped on the actual historical development of white supremacy in slave and settler societies. So then I further don’t see how it can be used to explain the origins of white supremacy.</p>
+<p>For all that I’ve argued here, O’Connor’s overall project may provide useful mechanism schemata for explaining the origins of patriarchy. This is O’Connor’s primary aim in <em>The Origins of Equality</em>, and so perhaps one could agree with my critique here and still accept most of Cudd’s conclusion that “the models hit the mark.” And, in the same way, alternative evolutionary game theoretic models — ones emphasizing power asymmetries — might provide useful mechanism schemata for explaining the origins of white supremacy. But I think the minority disadvantage model, highlighted by Cudd in her review and at the center of O’Connor’s collaborative work on white supremacy, misses the mark.</p>
+
+
+
+ ]]></description>
+  <guid>https://dhicks.github.io/posts/2019-12-06-White-supremacy-and-evolutionary-games.html</guid>
+  <pubDate>Fri, 06 Dec 2019 08:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Paper: Network analysis to evaluate the impact of research funding on research community consolidation</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2019-06-18-network-analysis-to-evaluate.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>A <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0218273">new paper</a> by myself and three UC Davis collaborators (David Coil, Carl Stahmer, and Jonathan Eisen), “Network analysis to evaluate the impact of research funding on research community consolidation,” has just been published in <em>PLOS One</em>. This paper will most be of interest to the science policy, science of team science, and bibliometrics communities.</p>
+<p><strong>Abstract</strong>:</p>
+<p>In 2004, the Alfred P. Sloan Foundation launched a new program focused on incubating a new field, “Microbiology of the Built Environment” (MoBE). By the end of 2017, the program had supported the publication of hundreds of scholarly works, but it was unclear to what extent it had stimulated the development of a new research community. We identified 307 works funded by the MoBE program, as well as a comparison set of 698 authors who published in the same journals during the same period of time but were not part of the Sloan Foundation-funded collaboration. Our analysis of collaboration networks for both groups of authors suggests that the Sloan Foundation’s program resulted in a more consolidated community of researchers, specifically in terms of number of components, diameter, density, and transitivity of the coauthor networks. In addition to highlighting the success of this particular program, our method could be applied to other fields to examine the impact of funding programs and other large-scale initiatives on the formation of research communities.</p>
+<p><a href="https://doi.org/10.1371/journal.pone.0218273" class="uri">https://doi.org/10.1371/journal.pone.0218273</a></p>
+
+
+
+ ]]></description>
+  <guid>https://dhicks.github.io/posts/2019-06-18-network-analysis-to-evaluate.html</guid>
+  <pubDate>Tue, 18 Jun 2019 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Luck and the Academic Job Market</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2019-05-30-luck-and-the-academic-job-market.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>First, some news: starting this fall, I will be an assistant professor in the Department of Cognitive and Information Sciences at the University of California, Merced. I wrote the bulk of this post on May 26, the day after the 9th annual Conference on Values in Medicine, Science, and Technology at UT Dallas. I have a great community at this conference, and I’ve been sharing the news with my friends. Everyone is thrilled for me, of course.</p>
+<p>But certain kinds of congratulation, while well-intentioned, give me pause. These are “you really deserve this” and “things finally worked out.” To my ear, these kinds of congratulation accept the dominant meritocratic view of academia, which further tends to lead to the conclusion that academics struggling with precarity and contingency deserve their low pay, lack of stability, and marginalized status.</p>
+<p>It’s not that I think that I don’t deserve a tenure-track job, in some sense or another. I check all the meritocratic boxes, with something like 12 or 14 peer-reviewed publications, the majority of which are in “top” philosophy of science journals; I have a good mix of single-authored disciplinary papers and interdisciplinary collaborations; my PhD is from a fairly prestigious program; over the past seven years I’ve held a series of postdocs and research positions at comparable institutions; and so on.</p>
+<p>But luck has played an enormous role in getting me to the point where I could check all these boxes. If things had gone just slightly differently, I would be struggling like so many of my peers: teaching 7+ courses per year, trying to make ends meet on $30,000 per year or less, and desperately trying to find time to publish an occasional paper.</p>
+<p>In the rest of this post, I want to highlight 3 moments where luck made an enormous difference to the trajectory of my career.</p>
+<p>The first moment was my admission to Notre Dame. I was not a philosophy major in undergrad; I studied math and political science, and took two philosophy of science courses my senior year. I decided to pursue a career in philosophy after taking those two courses and sitting in on a few graduate courses at the University of Illinois, Chicago. For obvious reasons I didn’t have a lot of mentorship to help me articulate my interests clearly, identify appropriate grad programs, weigh the advantages of philosophy vs.&nbsp;HPS, or write a relevant writing sample. (My first attempt at a writing sample was on Wittgenstein, Foucault, and philosophy of math. The second attempt was a little better, on Kant’s philosophy of math.) My application was a mess.</p>
+<p>Officially, I was waitlisted at every grad program to which I applied; but I doubt I was considered seriously anywhere. Except at Notre Dame. Two days before the deadline in 2005 I was offered a seat in the incoming cohort. No doubt ND was scraping the bottom of the waitlist when they got to me. I was just lucky that everyone else above me had declined the offer.</p>
+<p>Of course, once I was admitted, I was a Notre Dame grad student and later a Notre Dame PhD, with all of the prestige and alumni connections that are attached to that name.</p>
+<p>The second moment where luck played a major role in my career was actually a series of moments: the positions I’ve held since finishing my PhD. Like a lot of other precarious scholars, I’ve had to scramble from temporary position to temporary position, moving long distances every few years in order to follow the next opportunity. But unlike a lot of other precarious scholars, I’ve had a series of postdocs and other research-focused positions. Except for a single course of 6 students, I haven’t had any teaching responsibilities since 2013.</p>
+<p>This series of research positions is largely the reason why I’ve been able to write so much, averaging almost 2 peer-reviewed papers per year since I finished my dissertation. (A traditional standard for tenure in philosophy at research universities is 1 single-authored paper per year.) In addition, these positions have given me opportunities to work in science policy, learn an entirely distinct set of research skills as a data scientist, and collaborate with researchers in other disciplines. Finally, they have also provided me with a comfortable income and conference travel support, giving me enough time and peace of mind to focus on research, rather than continually worrying about finding my next position while grinding through grading and commuting for poverty wages.</p>
+<p>Over the last 15 years, I’ve regularly had to think about what my backup plan would be if I didn’t find a good next step. For a long time the best option would have been to live with my dad in the San Francisco Bay Area and adjunct while getting a certificate to teach high school math. In the last couple years, the best backup plan would have been to work as a data scientist in the tech industry. Data science would have paid much better than high school math, but both backups would have meant the end of my research career.</p>
+<p>In each case, these research positions weren’t things that were planned out well in advance. Most of the offers came in April, which is relatively late in the annual academic job market cycle. The offer for my most recent position, at UC Davis, came in early August, about a month before my then-current position ended.</p>
+<p>The third moment where luck made a huge difference in my career was the <a href="https://philjobs.org/job/show/10738">job ad for UC Merced</a>. I’m currently finishing a postdoc position at UC Davis. Davis is about 15 miles west of Sacramento; I grew up about 30 miles east of Sacramento. My entire immediate family is in the Sacramento area. I knew when I applied for the postdoc that my family couldn’t handle me moving home just to move away again two years later. I was committed to staying in Northern California.</p>
+<p>I recognized that this meant I was basically writing off a faculty position. (Unlike my grad school applications, I talked out the decision to accept this postdoc with a couple mentors before I had to make it.) There are several bachelor’s-granting colleges and universities in Northern California; but most are in the Bay Area, which is experiencing a severe housing crisis. Things are so bad that <a href="https://www.sfchronicle.com/bayarea/article/UC-Berkeley-s-plan-for-new-housing-classrooms-13815323.php">even UC Berkeley has lost faculty due to the cost of housing</a>.</p>
+<p>Davis and the Sacramento area haven’t been affected (too much, yet) by the Bay Area housing crisis. And I thought there might be a chance that UC Davis would hire a philosopher of science during the two years of my postdoc. But really, when I took the postdoc, my plan was to use the time to figure out pathways into state government and the tech industry.</p>
+<p>Then, last August, a few people emailed me a job ad for a data ethics position (not at UC Merced, but another school). It was within my geographic range, and my work experience as a data scientist might compensate for the fact that I haven’t published anything on data ethics. I was hesitant to jump into the job market again, even just for one position. But once I decided to apply for that one, I went on PhilJobs and saw <a href="https://philjobs.org/job/show/10738">the UC Merced ad</a>:</p>
+<blockquote class="blockquote">
+<p>We are seeking candidates who take an interdisciplinary approach to ethics, applying ethical theories and principles to topics within the purview of [Cognitive and Information Sciences]. Sample topics might include neuroethics or the ethics of technology. Applied ethicists working on topics outside the scope of CIS who use scientific methods will also be considered (for example, someone who draws on large data sets).</p>
+</blockquote>
+<p>Not only was I a good topical fit; but also the department liked the interdisciplinary breadth of my work, my experience as a data scientist, and my connections to the data science community at UC Davis. Geographically, Merced is about 2 hours south of Sacramento, and about 2 hours and 30 minutes from my mom’s house. It’s a small city of about 80,000 people, and far enough from the Bay Area that it hasn’t really been affected by the current housing crisis yet. (Though Merced was one of the epicenters of the housing crisis in 2007-08.)</p>
+<p>In other words, an interdisciplinary department at a university in an affordable location within my geographic range was looking to hire someone who does roughly what I do. During the two-year period between my moving back to California and my giving up on academia entirely to work in the tech industry. The fit in both directions could hardly have been better.</p>
+<p>In all of these moments, things easily could have gone some other way. I might still have been an academic, but I probably wouldn’t be heading into a very nice tenure-track position at a research university. And there’s a very good chance I would have left academia for good, whether to teach high school math or to work in the tech industry. For all of the success I’ve had due to my hard work and “talent”, there are people who were equally “talented” and worked just as hard — if not harder — but haven’t been recognized or rewarded. Still other people would have been just as “talented” and worked just as hard, but were never given the chance. I’ll happily take your congratulations, but please keep in mind the people who weren’t lucky enough to get the kinds of opportunities that have come my way.</p>
+
+
+
+ ]]></description>
+  <guid>https://dhicks.github.io/posts/2019-05-30-luck-and-the-academic-job-market.html</guid>
+  <pubDate>Thu, 30 May 2019 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Paper: Legitimizing Values in Regulatory Science</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2019-03-14-legitimizing-values.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>A <a href="https://ehp.niehs.nih.gov/doi/full/10.1289/EHP3317">new paper</a> by Manuela Fernández Pinto and me, “Legitimizing Values in Regulatory Science,” has just been published in <em>Environmental Health Perspectives</em>. This paper will be of interest to philosophers of science as well as the environmental public health community.</p>
+<p><strong>Abstract</strong>:</p>
+<p>Background: Over the last several decades, scientists and social groups have frequently raised concerns about politicization or political interference in regulatory science. Public actors (environmentalists and industry advocates, politically aligned public figures, scientists and political commentators, in the United States as well as in other countries) across major political-regulatory controversies have expressed concerns about the inappropriate politicization of science. Although we share concerns about the politicization of science, they are frequently framed in terms of an ideal of value-free science, according to which political and economic values have no legitimate role to play in science. For several decades, work in philosophy of science has identified serious conceptual and practical problems with the value-free ideal.</p>
+<p>Objectives: Our objectives are to discuss the literature regarding the conceptual and practical problems with the value-free ideal and offer a constructive alternative to the value-free ideal.</p>
+<p>Discussion: We first discuss the prevalence of the value-free ideal in regulatory science, then argue that this ideal is self-undermining and has been exploited to delay protective regulation. To offer a constructive alternative, we analyze the relationship between the goals of regulatory science and the standards of good scientific activity. This analysis raises questions about the relationship between methodological and practical standards for good science, tensions among various important social goods, and tensions among various social interests. We argue that the aims of regulatory science help to legitimize value-laden choices regarding research methods and study designs. Finally, we discuss how public deliberation, adaptive management, and community-based participatory research can be used to improve the legitimacy of scientists as representatives of the general public on issues of environmental knowledge.</p>
+<p>Conclusions: Reflecting on the aims of regulatory science—such as protecting human health and the environment, informing democratic deliberation, and promoting the capacities of environmental justice and Indigenous communities—can clarify when values have legitimate roles in regulatory science.</p>
+<p><a href="https://doi.org/10.1289/EHP3317" class="uri">https://doi.org/10.1289/EHP3317</a></p>
+
+
+
+ ]]></description>
+  <guid>https://dhicks.github.io/posts/2019-03-14-legitimizing-values.html</guid>
+  <pubDate>Thu, 14 Mar 2019 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Slides: Explainable Machine Learning: An Integrated Epistemic-Ethical Analysis</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2019-02-01-explainable-machine-learning.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Machine learning (ML) algorithms have become widely adopted over the past decade. Contemporary ML can achieve near-human levels of accuracy, but operates as an inscrutable “black box.” This has stimulated significant research in methods to explain the behavior of ML systems. However, many of the proposed methods violate a common assumption that explanations must be true. Arguably, such “explanations” of ML systems are not actually explanations. I draw on work in the philosophy of science and political philosophy to clarify the requirements for explainable ML. Recent work on idealization in science suggests that explanations can be false, but only if these falsehoods promote the goals of inquiry. I argue that, at least when ML is used in policy contexts, the goals of explainable ML ultimately trace back to democratic accountability, and conclude that ML can be explainable only when system development is participatory and democratic.</p>
+<p>PDF: <a href="https://drive.google.com/open?id=0B6oYmzobonqoM1lNZWdmMFEzTG8" class="uri">https://drive.google.com/open?id=0B6oYmzobonqoM1lNZWdmMFEzTG8</a></p>
+
+
+
+ ]]></description>
+  <guid>https://dhicks.github.io/posts/2019-02-01-explainable-machine-learning.html</guid>
+  <pubDate>Fri, 01 Feb 2019 08:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Slides: Why Baier? Feminism, Trust, and Power</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2018-11-06-why-baier.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Here are the slides for my talk at the Philosophy of Science Association meeting this past weekend in Seattle: <a href="http://qrf.in/lainpn">Why Baier? Feminism, Trust, and Power</a></p>
+<iframe src="https://drive.google.com/file/d/1ZwEEO-6ZuKPRYexGC_yF0zf-uq_gLoD_/preview" width="640" height="480">
+</iframe>
+<p>Here’s the original abstract for this talk, written last fall.</p>
+<section id="why-baier-feminism-trust-and-political-critiques-of-science" class="level2">
+<h2 class="anchored" data-anchor-id="why-baier-feminism-trust-and-political-critiques-of-science">Why Baier? Feminism, Trust, and Political Critiques of Science</h2>
+<p>Feminist philosophers of science continue to draw on ideas about trust and trustworthiness developed by feminist ethicist Annette Baier more than thirty years ago (Baier 1986). Why does Baier remain popular among feminist philosophers? In this paper, I suggest that Baier’s account of trust supports a characteristic kind of feminist critique of science. This feature of Baier’s account means that it is also relevant, as a descriptive theory, to contemporary empirical work on conservative attacks on environmental science.</p>
+<p>Feminists have long recognized that science has the potential to be an invaluable tool for challenging sexism and dismantling patriarchal power structures. Thus many feminists are not interested in attacking science as such. However, feminists have also long recognized that science has often been used to defend sexism and prop up patriarchy (Harding 1991, Wylie and Nelson 2007). The feminist critique does not aim to destroy science, but instead to redirect it from oppressive to liberatory ends.</p>
+<p>Baier’s account of trustworthiness distinguishes “competence” from “good will,” and requires both for trustworthiness. This means that patriarchal science can still be conducted competently — it can still produce knowledge using reliable methods. But, by being used in sexist and patriarchal ways, patriarchal science can be understood as bearing ill will towards women. Patriarchal science is therefore untrustworthy, even when scientists are epistemically competent. By contrast, on other influential accounts, epistemic trustworthiness depends exclusively on epistemic competence. These accounts do not fit as well with the complex feminist stance towards science.</p>
+<p>Baier’s account also provides theoretical support for the “anti-reflexivity thesis,” developed by sociologist Aaron McCright and collaborators (McCright et al.&nbsp;2013). McCright has found that political conservatives tend to display low trust in “impact science” — “science that identifies environmental and public health impacts of economic production” — but also high trust in “production science” associated with technological development. That is, conservatives do not distrust or reject science as such; they are not “anti-science.” Instead, they are anti-environmental regulation. Indeed, the loudest critics of EPA and other regulatory agencies often promote the benefits of practical scientific research and technological development.</p>
+<p>Baier’s account allows us to recognize that conservative distrust of impact science is not necessarily based on ignorance or irrationality. Rather, conservatives might believe that impact scientists bear them (or entities with which they identify, such as the fossil fuels or chemical industry) ill will. This ill will would be grounds to find impact scientist untrustworthy, independent of whether impact scientists are epistemically competent.</p>
+<p>References</p>
+<p>Baier, Annette. 1986. “Trust and Antitrust.” Ethics 96 (2):231–60.</p>
+<p>Harding, Sandra G. 1991. Whose Science? Whose Knowledge?: Thinking from Women’s Lives. Ithaca, N.Y: Cornell University Press.</p>
+<p>McCright, Aaron M, et al.&nbsp;2013. “The Influence of Political Ideology on Trust in Science.” Environmental Research Letters 8 (4):044029.</p>
+<p>Wylie, Alison and Lynn Hankinson Nelson. 2007. “Coming to Terms with the Values of Science.” In Harold Kindcaid, John Dupré, and Alison Wylie, eds., Value-Fre Science? Oxford: Oxford University Press.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://dhicks.github.io/posts/2018-11-06-why-baier.html</guid>
+  <pubDate>Tue, 06 Nov 2018 08:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Auto-tagging posts + the nDH metric</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2018-10-25-autotag.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>This morning I added a new feature to the blog posts: an R script that automatically generates and applies tags, allowing users to find old posts on (potentially, roughly) similar topics. Because of some difficulties setting up a chronological archive, I was worried old posts would be lost down the memory hole. This new feature should help prevent that.</p>
+<p>My previous blogs had tags; you can see some of the remains of Tumblr’s tagging system at the bottom of many migrated posts. But the tags had to be added manually. This added a step to the publication process, and made me worried about inconsistent tags. What if I recently adopted a new tag that applied to some old posts? I’d have to scroll back through the archive to find them, which was both very tedious and prone to human error.</p>
+<p>The new script solves these problems by automatically selecting tags and applying them across all posts at the same time. After writing a post, all I need to do is run a one-line command in the terminal. As a side effect, the tags will change, highlighting different arrays of topics as I add posts to the blog.</p>
+<p>In the rest of this post, I want to explain the logic behind the tag selection process by walking through the code of the autotagging script. The post also includes a discussion of a metric I use for “high-information” terms, which I call <img src="https://latex.codecogs.com/png.latex?n%20%5CDelta%20H">.</p>
+<p>The script uses two R packages: <code>tidyverse</code>, a suite of packages of data wrangling; and <code>tidytext</code>, a text mining package designed for use with the <code>tidyverse</code>. After loading these packages, the rest of the following chunk loads the content of every post on the blog into a single dataframe structure.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;">library</span>(tidyverse)</span></code></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ ggplot2 3.3.6     ✔ purrr   0.3.4
+✔ tibble  3.1.8     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.1
+✔ readr   2.1.2     ✔ forcats 0.5.1</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><span class="fu" style="color: #4758AB;">library</span>(tidytext)</span>
+<span id="cb5-2"></span>
+<span id="cb5-3"></span>
+<span id="cb5-4">post_folder <span class="ot" style="color: #003B4F;">=</span> <span class="fu" style="color: #4758AB;">getwd</span>()  <span class="co" style="color: #5E5E5E;"># Just `_posts/` in the actual script</span></span>
+<span id="cb5-5">post_files <span class="ot" style="color: #003B4F;">=</span> <span class="fu" style="color: #4758AB;">list.files</span>(post_folder, <span class="at" style="color: #657422;">pattern =</span> <span class="st" style="color: #20794D;">'</span><span class="sc" style="color: #5E5E5E;">\\</span><span class="st" style="color: #20794D;">.q?md'</span>) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb5-6">    <span class="fu" style="color: #4758AB;">file.path</span>(post_folder, .)</span>
+<span id="cb5-7"></span>
+<span id="cb5-8">dataf <span class="ot" style="color: #003B4F;">=</span> <span class="fu" style="color: #4758AB;">tibble</span>(<span class="at" style="color: #657422;">path =</span> post_files) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb5-9">    <span class="fu" style="color: #4758AB;">mutate</span>(<span class="at" style="color: #657422;">post_id =</span> <span class="fu" style="color: #4758AB;">row_number</span>()) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb5-10">    <span class="fu" style="color: #4758AB;">rowwise</span>() <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb5-11">    <span class="fu" style="color: #4758AB;">mutate</span>(<span class="at" style="color: #657422;">raw_text =</span> <span class="fu" style="color: #4758AB;">read_file</span>(path)) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb5-12">    <span class="fu" style="color: #4758AB;">ungroup</span>()</span>
+<span id="cb5-13"></span>
+<span id="cb5-14"><span class="fu" style="color: #4758AB;">str</span>(dataf)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>tibble [60 × 3] (S3: tbl_df/tbl/data.frame)
+ $ path    : chr [1:60] "/Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-friedersdorf-the-sex-friendly-case-against-free-bi"| __truncated__ "/Users/danhicks/Google Drive/Coding/website/posts/2012-04-21-the-agroecological-argument-for-eating-meat.md" "/Users/danhicks/Google Drive/Coding/website/posts/2012-05-23-fetishism-and-innate-differences.md" "/Users/danhicks/Google Drive/Coding/website/posts/2012-07-23-two-conceptions-of-human-nature.md" ...
+ $ post_id : int [1:60] 1 2 3 4 5 6 7 8 9 10 ...
+ $ raw_text: chr [1:60] "---\nlayout: post\ntitle: \"Friedersdorf: The Sex-Friendly Case Against Free Birth Control, part II\"\n\n\n\nta"| __truncated__ "---\nlayout: post\ntitle: \"The Agroecological Argument for Eating Meat\"\n\n\n\n\ntags: [data,meat,students,ve"| __truncated__ "---\nlayout: post\ntitle: \"Fetishism and Innate Differences\"\n---\n\n\n(Going through my folder of notes and "| __truncated__ "---\nlayout: post\ntitle: \"Two Conceptions of Human Nature\"\n\n\n\n\ntags: [market,rights]\n---\n\n\nIn his e"| __truncated__ ...</code></pre>
+</div>
+</div>
+<p>Next we use <code>tidytext</code> to parse the text of each post into individual terms or tokens.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1">tokens_df <span class="ot" style="color: #003B4F;">=</span> <span class="fu" style="color: #4758AB;">unnest_tokens</span>(dataf, token, raw_text)</span>
+<span id="cb7-2">tokens_df</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 71,815 × 3
+   path                                                            post_id token
+   &lt;chr&gt;                                                             &lt;int&gt; &lt;chr&gt;
+ 1 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 layo…
+ 2 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 post 
+ 3 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 title
+ 4 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 frie…
+ 5 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 the  
+ 6 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 sex  
+ 7 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 frie…
+ 8 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 case 
+ 9 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 agai…
+10 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 free 
+# … with 71,805 more rows</code></pre>
+</div>
+</div>
+<p>To develop tags, we want to identify “highly meaningful terms” across the cropus of parsed blog posts. In text mining, a measure called <em>TF-IDF</em> is frequently used for this task. TF-IDF is calculated for each term-document combination. The TF-IDF of term <img src="https://latex.codecogs.com/png.latex?i"> in document <img src="https://latex.codecogs.com/png.latex?j"> is - the number of times <img src="https://latex.codecogs.com/png.latex?i"> occurs in <img src="https://latex.codecogs.com/png.latex?j"> (the <em>term frequency</em>), divided by - the (log) number of documents in which <img src="https://latex.codecogs.com/png.latex?i"> occurs at least once (the <em>document frequency</em>).</p>
+<p>Intuitively, TF-IDF tries to identify words that are common in a particular document (high term frequency) but also only occur in a few documents (low document frequency). In English, words like “the” and “and” tend to have high term frequencies but also very high document frequencies, so their TF-IDF scores tend to be low. Misspelled words like “mipelled” have low document frequency, but also low term frequency, so again their TF-IDF scores tend to be low. Terms with a high TF-IDF should, the thought goes, be distinctive to a given document.</p>
+<p>The problem with TF-IDF is that it’s difficult to make this intuitive account more precise. It can also be difficult to interpret, because the units are occurrences per log documents. Is 3 occurrences per log documents high or low? That depends on things like the number and length of documents in the corpus. In addition, TF-IDF is calculated for term-document pairs, not for individual terms. A word will have the same IDF value across the entire corpus, but will have different TF values as it occurs a different number of times across different documents.</p>
+<p>For these reasons, in my text mining work I’ve switched to an information-based measure. To understand this one, note first that we have <img src="https://latex.codecogs.com/png.latex?m=42"> blog posts. Suppose we draw one of these blog posts at random. The probability of drawing any given post is <img src="https://latex.codecogs.com/png.latex?p(doc)%20=%20%5Cfrac%7B1%7D%7Bm%7D%20=%20%5Cfrac%7B1%7D%7B42%7D">. The <em>entropy</em> of this probability distribution tells us the number of binary bits (0s and 1s) we need to give a unique ID for each blog post.</p>
+<p><img src="https://latex.codecogs.com/png.latex?%20H%20=%20-%20%5Csum_%7Bdocs%7D%20p(doc)%20%5Clog_2%20p(docs)%20=%20-%20%5Csum_m%20%5Cfrac%7B1%7D%7Bm%7D%20%5Clog_2%20%5Cfrac%7B1%7D%7Bm%7D%20=%20log_2%20m.%20"></p>
+<p>In the case of my blog before writing this post, the entropy is <img src="https://latex.codecogs.com/png.latex?log_2%2042%20=%205.4">.</p>
+<p>Now suppose that, after drawing a post at random, we draw a single word from the post at random (without peeking at exactly which post we’ve drawn). The probability that we’ve drawn any given post is now <img src="https://latex.codecogs.com/png.latex?p(doc%20%5Cmid%20word)">. The <em>information gain</em> of the word is the difference between <img src="https://latex.codecogs.com/png.latex?H"> up above and the entropy of this new distribution <img src="https://latex.codecogs.com/png.latex?p(doc%20%5Cmid%20word)">:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5CDelta%20H%20=%20H%5Bp(doc)%5D%20-%20H%5Bp(doc%20%5Cmid%20word)%5D."></p>
+<p>We can think of <img src="https://latex.codecogs.com/png.latex?%5CDelta%20H"> as the number of bits of information, relative to the full post ID, that we’ve gained from knowing the word. <img src="https://latex.codecogs.com/png.latex?%5CDelta%20H"> corresponds to inverse document frequency (dividing by the document frequency) in TF-IDF: it tells us how unique that word is to each document. A term like “the” will tend to have <img src="https://latex.codecogs.com/png.latex?%5CDelta%20H"> near 0 (it doesn’t give us any new information); a more distinctive term like “virtue” (only some of my posts are about virtue ethics) will have a relatively high <img src="https://latex.codecogs.com/png.latex?%5CDelta">, perhaps 4 or even 5 (it tells us a lot about which particular posts we might have).</p>
+<p>To calculate an overall score for each term, we multiply <img src="https://latex.codecogs.com/png.latex?%5CDelta%20H"> by the (log) total times the term occurs across the entire corpus. Suppose “virtue” occurs 100 times across all blog posts, and has an information gain of 3 bits. Then we have <img src="https://latex.codecogs.com/png.latex?%5Clog_%7B10%7D%20n%20%5Ctimes%20%5CDelta%20H%20=%202%20%5Ctimes%203%20=%206">. The units here are <em>orders of magnitude-bits</em>. An increase of 1 of these units means that a word occurs <img src="https://latex.codecogs.com/png.latex?10%5Ctimes"> as frequently or provides 1 added bit of information. I call the resulting measure <img src="https://latex.codecogs.com/png.latex?n%5CDelta%20H"> (not writing the log for readability).</p>
+<p>The following block calculates <img src="https://latex.codecogs.com/png.latex?H"> for the distribution <img src="https://latex.codecogs.com/png.latex?p(doc)">, as <code>baseline</code>, then calculates the information gain and <img src="https://latex.codecogs.com/png.latex?n%5CDelta%20H">.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1">baseline <span class="ot" style="color: #003B4F;">=</span> <span class="fu" style="color: #4758AB;">log2</span>(<span class="fu" style="color: #4758AB;">nrow</span>(dataf))</span>
+<span id="cb9-2"></span>
+<span id="cb9-3">info_df <span class="ot" style="color: #003B4F;">=</span> tokens_df <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb9-4">    <span class="fu" style="color: #4758AB;">count</span>(token, post_id) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb9-5">    <span class="fu" style="color: #4758AB;">group_by</span>(token) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb9-6">    <span class="fu" style="color: #4758AB;">arrange</span>(token) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb9-7">    <span class="fu" style="color: #4758AB;">mutate</span>(<span class="at" style="color: #657422;">p =</span> n <span class="sc" style="color: #5E5E5E;">/</span> <span class="fu" style="color: #4758AB;">sum</span>(n), </span>
+<span id="cb9-8">           <span class="at" style="color: #657422;">H_term =</span> <span class="sc" style="color: #5E5E5E;">-</span>p<span class="sc" style="color: #5E5E5E;">*</span><span class="fu" style="color: #4758AB;">log2</span>(p)) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb9-9">    <span class="fu" style="color: #4758AB;">summarize</span>(<span class="at" style="color: #657422;">n =</span> <span class="fu" style="color: #4758AB;">sum</span>(n), </span>
+<span id="cb9-10">              <span class="at" style="color: #657422;">H =</span> <span class="fu" style="color: #4758AB;">sum</span>(H_term), </span>
+<span id="cb9-11">              <span class="at" style="color: #657422;">delta_H =</span> baseline <span class="sc" style="color: #5E5E5E;">-</span> H,</span>
+<span id="cb9-12">              <span class="at" style="color: #657422;">ndH =</span> <span class="fu" style="color: #4758AB;">log10</span>(n)<span class="sc" style="color: #5E5E5E;">*</span>delta_H)</span>
+<span id="cb9-13"></span>
+<span id="cb9-14"><span class="fu" style="color: #4758AB;">str</span>(info_df)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>tibble [8,016 × 5] (S3: tbl_df/tbl/data.frame)
+ $ token  : chr [1:8016] "__squarespace_cacheversion" "_data" "_jmp0_" "_market" ...
+ $ n      : int [1:8016] 1 1 1 1 1 1 1 26 1 1 ...
+ $ H      : num [1:8016] 0 0 0 0 0 ...
+ $ delta_H: num [1:8016] 5.91 5.91 5.91 5.91 5.91 ...
+ $ ndH    : num [1:8016] 0 0 0 0 0 ...</code></pre>
+</div>
+</div>
+<p>This next block isn’t included in the script; it generates a plot showing the distribution of <img src="https://latex.codecogs.com/png.latex?n%5CDelta%20H"> scores for a sample of 500 terms. Each point represents a single term; the x-axis is the (log) number of total occurrences across the corpus, color indicates the information gain <img src="https://latex.codecogs.com/png.latex?%5CDelta%20H">, and the y-axis is the overall <img src="https://latex.codecogs.com/png.latex?n%20%5CDelta%20H"> score.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><span class="fu" style="color: #4758AB;">set.seed</span>(<span class="dv" style="color: #AD0000;">2018-10-25</span>)</span>
+<span id="cb11-2">info_df <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb11-3">    <span class="fu" style="color: #4758AB;">sample_n</span>(<span class="dv" style="color: #AD0000;">500</span>) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb11-4">    <span class="fu" style="color: #4758AB;">ggplot</span>(<span class="fu" style="color: #4758AB;">aes</span>(<span class="fu" style="color: #4758AB;">log10</span>(n), <span class="at" style="color: #657422;">color =</span> delta_H, </span>
+<span id="cb11-5">                                ndH, <span class="at" style="color: #657422;">label =</span> token)) <span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb11-6">    <span class="fu" style="color: #4758AB;">geom_text</span>() <span class="sc" style="color: #5E5E5E;">+</span></span>
+<span id="cb11-7">    <span class="fu" style="color: #4758AB;">theme_minimal</span>()</span></code></pre></div>
+<div class="cell-output-display">
+<p><img src="https://dhicks.github.io/posts/2018-10-25-autotag_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Informally, the <img src="https://latex.codecogs.com/png.latex?n%20%5CDelta%20H"> score does a good job of identifying characteristic words for different kinds of posts, such as “data,” “developing,” and “feminism.”</p>
+<p>The overall shape of the plot also shows how <img src="https://latex.codecogs.com/png.latex?n%20%5CDelta%20H"> balances information gain and frequency. Some terms like “yourself” and “x’s” have a high information gain (more than 4 bits — remember that the maximum is about 5.4), but occur fewer than 10 times and so have a low <img src="https://latex.codecogs.com/png.latex?n%20%5CDelta%20H">. Extremely common terms (many more than 100 occurrences across a set of 42 posts) have very little information. The highest-scoring term, “market,” has both high information (4.3) and occurs 71 times.</p>
+<p>All together, the <img src="https://latex.codecogs.com/png.latex?n%20%5CDelta%20H"> score picks out a set of high-information, moderate-frequency terms in the middle of the plot, much like TF-IDF. In contrast with TF-IDF, it uses information theory for theoretical support and produces a relatively interpretable value.</p>
+<p>The last step in the script is to select a vocabulary of terms to use as tags, identify them in the posts, and write the tags into the Markdown files.</p>
+<p>To select the vocabulary, we simply take the terms with the highest <img src="https://latex.codecogs.com/png.latex?n%20%5CDelta%20H"> scores. Because the blog is fairly small, it’s not unreasonable to take as many terms as there are blog posts (42 tags <img src="https://latex.codecogs.com/png.latex?%5Cto"> 42 tags). As the blog grows, I’ll probably want to trim this down to set a hard cap. Alternatively, I might want to select a number of tags such that each post has at least 1 tag and no post has more than, say, 5 tags. For now, though, I’ll just use the simpler logic of the top 42 terms.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1">vocab <span class="ot" style="color: #003B4F;">=</span>  <span class="fu" style="color: #4758AB;">top_n</span>(info_df, <span class="fu" style="color: #4758AB;">nrow</span>(dataf), ndH)</span></code></pre></div>
+</div>
+<p>Then we’ll filter the list of tokens down to these tags, collapse the tags into a list, and convert the list into the string that will go in the header of the Markdown files.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1">tags_df <span class="ot" style="color: #003B4F;">=</span> tokens_df <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb13-2">    <span class="fu" style="color: #4758AB;">filter</span>(token <span class="sc" style="color: #5E5E5E;">%in%</span> vocab<span class="sc" style="color: #5E5E5E;">$</span>token) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb13-3">    <span class="fu" style="color: #4758AB;">count</span>(path, post_id, token) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb13-4">    <span class="fu" style="color: #4758AB;">group_by</span>(path, post_id) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb13-5">    <span class="fu" style="color: #4758AB;">summarize</span>(<span class="at" style="color: #657422;">tags =</span> <span class="fu" style="color: #4758AB;">list</span>(token)) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb13-6">    <span class="fu" style="color: #4758AB;">mutate</span>(<span class="at" style="color: #657422;">tags_str =</span> <span class="fu" style="color: #4758AB;">map_chr</span>(tags, str_c, <span class="at" style="color: #657422;">collapse =</span> <span class="st" style="color: #20794D;">','</span>), </span>
+<span id="cb13-7">           <span class="at" style="color: #657422;">tags_str =</span> <span class="fu" style="color: #4758AB;">str_c</span>(<span class="st" style="color: #20794D;">'tags: ['</span>, tags_str, <span class="st" style="color: #20794D;">']'</span>)) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb13-8">    <span class="fu" style="color: #4758AB;">ungroup</span>()</span></code></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`summarise()` has grouped output by 'path'. You can override using the
+`.groups` argument.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><span class="fu" style="color: #4758AB;">str</span>(tags_df, <span class="at" style="color: #657422;">max.level =</span> <span class="dv" style="color: #AD0000;">1</span>)</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>tibble [53 × 4] (S3: tbl_df/tbl/data.frame)</code></pre>
+</div>
+</div>
+<p>Finally we’ll write these files back to disk. Each post has a header section that looks something like this:</p>
+<div class="sourceCode" id="cb17" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb17-1"><span class="pp" style="color: #AD0000;">---</span></span>
+<span id="cb17-2"><span class="fu" style="color: #4758AB;">title</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span><span class="st" style="color: #20794D;">"Post title goes here"</span></span>
+<span id="cb17-3"><span class="fu" style="color: #4758AB;">style</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> post</span></span>
+<span id="cb17-4"><span class="fu" style="color: #4758AB;">tags</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span><span class="kw" style="color: #003B4F;">[</span><span class="at" style="color: #657422;">monkey</span><span class="kw" style="color: #003B4F;">,</span><span class="at" style="color: #657422;">zoo</span><span class="kw" style="color: #003B4F;">]</span></span>
+<span id="cb17-5"><span class="pp" style="color: #AD0000;">---</span></span></code></pre></div>
+<p>We’ll separate this header section from the body by searching for the <code>---</code>, add the tags, then put everything back together and write to disk. (Except we won’t actually write the results out to disk here.)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><span class="fu" style="color: #4758AB;">right_join</span>(dataf, tags_df) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb18-2">    <span class="fu" style="color: #4758AB;">separate</span>(raw_text, <span class="at" style="color: #657422;">into =</span> <span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">'null'</span>, <span class="st" style="color: #20794D;">'header'</span>, <span class="st" style="color: #20794D;">'body'</span>), </span>
+<span id="cb18-3">             <span class="at" style="color: #657422;">sep =</span> <span class="st" style="color: #20794D;">'---'</span>, <span class="at" style="color: #657422;">extra =</span> <span class="st" style="color: #20794D;">'merge'</span>) <span class="sc" style="color: #5E5E5E;">%&gt;%</span> </span>
+<span id="cb18-4">    <span class="do" style="color: #5E5E5E;
+font-style: italic;">## Remove old tags</span></span>
+<span id="cb18-5">    <span class="fu" style="color: #4758AB;">mutate</span>(<span class="at" style="color: #657422;">header =</span> <span class="fu" style="color: #4758AB;">str_replace</span>(header, </span>
+<span id="cb18-6">                                <span class="st" style="color: #20794D;">'tags: </span><span class="sc" style="color: #5E5E5E;">\\</span><span class="st" style="color: #20794D;">[[^</span><span class="sc" style="color: #5E5E5E;">\\</span><span class="st" style="color: #20794D;">]]+</span><span class="sc" style="color: #5E5E5E;">\\</span><span class="st" style="color: #20794D;">]'</span>, </span>
+<span id="cb18-7">                                <span class="st" style="color: #20794D;">''</span>)) <span class="sc" style="color: #5E5E5E;">%&gt;%</span> </span>
+<span id="cb18-8">    <span class="fu" style="color: #4758AB;">mutate</span>(<span class="at" style="color: #657422;">combined =</span> <span class="fu" style="color: #4758AB;">str_c</span>(<span class="st" style="color: #20794D;">'---'</span>, </span>
+<span id="cb18-9">                            header, </span>
+<span id="cb18-10">                            tags_str, <span class="st" style="color: #20794D;">'</span><span class="sc" style="color: #5E5E5E;">\n</span><span class="st" style="color: #20794D;">'</span>,</span>
+<span id="cb18-11">                            <span class="st" style="color: #20794D;">'---'</span>, </span>
+<span id="cb18-12">                            body)) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
+<span id="cb18-13">    <span class="co" style="color: #5E5E5E;"># pull(combined) %&gt;% {cat(.[[1]])}</span></span>
+<span id="cb18-14">    <span class="fu" style="color: #4758AB;">rowwise</span>() <span class="co" style="color: #5E5E5E;">#%&gt;%</span></span></code></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Joining, by = c("path", "post_id")</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 53 × 8
+# Rowwise: 
+   path                         post_id null  header body  tags  tags_…¹ combi…²
+   &lt;chr&gt;                          &lt;int&gt; &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt; &lt;lis&gt; &lt;chr&gt;   &lt;chr&gt;  
+ 1 /Users/danhicks/Google Driv…       1 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
+ 2 /Users/danhicks/Google Driv…       2 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
+ 3 /Users/danhicks/Google Driv…       4 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
+ 4 /Users/danhicks/Google Driv…       5 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
+ 5 /Users/danhicks/Google Driv…       6 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
+ 6 /Users/danhicks/Google Driv…       7 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
+ 7 /Users/danhicks/Google Driv…       8 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
+ 8 /Users/danhicks/Google Driv…       9 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
+ 9 /Users/danhicks/Google Driv…      10 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
+10 /Users/danhicks/Google Driv…      11 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
+# … with 43 more rows, and abbreviated variable names ¹​tags_str, ²​combined</code></pre>
+</div>
+</div>
+<pre><code>    #mutate(written = map2(combined, path, write_lines))</code></pre>
+
+
+
+ ]]></description>
+  <category>data</category>
+  <category>developing</category>
+  <category>idf</category>
+  <category>local</category>
+  <category>market</category>
+  <category>meat</category>
+  <category>rights</category>
+  <category>students</category>
+  <category>tf</category>
+  <category>vegetarianism</category>
+  <guid>https://dhicks.github.io/posts/2018-10-25-autotag.html</guid>
+  <pubDate>Thu, 25 Oct 2018 07:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

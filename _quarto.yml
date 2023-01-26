@@ -4,6 +4,8 @@ project:
 
 website:
   title: "Dan Hicks "
+  site-url: "https://dhicks.github.io/"
+  description: "Website description"
   navbar:
     right:
       - about.qmd
@@ -26,6 +28,8 @@ website:
         href: https://mastodon.social/@danhicks
       - icon: envelope
         href: mailto:dhicks4@ucmerced.edu
+      - icon: rss
+        href: index.xml
   open-graph: true
       
 format:
