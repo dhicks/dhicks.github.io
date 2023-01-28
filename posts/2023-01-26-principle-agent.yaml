@@ -1,0 +1,1189 @@
+---
+references:
+- id: BeckRiskSocietyNew1992
+  author:
+    - family: Beck
+      given: Ulrich
+  call-number: HM201 .B3913 1992
+  citation-key: BeckRiskSocietyNew1992
+  collection-title: Theory, culture & society
+  event-place: London ; Newbury Park, Calif
+  ISBN: 978-0-8039-8345-8 978-0-8039-8346-5
+  issued:
+    - year: 1992
+  language: eng
+  number-of-pages: '260'
+  publisher: Sage Publications
+  publisher-place: London ; Newbury Park, Calif
+  source: Library of Congress ISBN
+  title: 'Risk society: towards a new modernity'
+  title-short: Risk society
+  type: book
+
+- id: BrownScienceDemocracyExpertise2009
+  author:
+    - family: Brown
+      given: Mark B.
+  call-number: Q175.5 .B759 2009
+  citation-key: BrownScienceDemocracyExpertise2009
+  event-place: Cambridge, Mass
+  ISBN: 978-0-262-01324-6
+  issued:
+    - year: 2009
+  number-of-pages: '354'
+  publisher: MIT Press
+  publisher-place: Cambridge, Mass
+  source: Library of Congress ISBN
+  title: 'Science in democracy: expertise, institutions, and representation'
+  title-short: Science in democracy
+  type: book
+
+- id: CostaPublicCommentsInfluence2019
+  abstract: >-
+    Scholarship on bureaucratic policymaking has long focused on both the use of
+    expertise and public accountability. However, few have considered the degree
+    to which public input affects the use of research in U.S. regulatory impact
+    analyses (RIAs). We examine changes in the research that is cited in RIAs in
+    response to public comments to assess the influence of participation on the
+    use of information for rulemaking. We conduct an in-depth analysis of
+    comments on a major proposed U.S. Environmental Protection Agency (EPA) rule
+    to determine whether regulators alter the evidence used based on public
+    input and whether some types of commenters have more influence than others.
+    We analyze the text similarity of comments to scientific research utilized
+    in the RIAs to determine whether regulators iteratively update their rule
+    justification based on scientific information referenced in comments. We
+    find support for seminal subgovernment theories about the relationship
+    between business interests, Congress, and the bureaucracy; in relation to
+    all kinds of commenters, members of Congress and industry groups had the
+    strongest effect on changes in the research used in the RIAs. The article
+    provides one of the first statistical analyses of science exchange between
+    the public and a bureaucratic agency.
+  accessed:
+    - year: 2019
+      month: 5
+      day: 10
+  author:
+    - family: Costa
+      given: Mia
+    - family: Desmarais
+      given: Bruce A.
+    - family: Hird
+      given: John A.
+  citation-key: CostaPublicCommentsInfluence2019
+  container-title: The American Review of Public Administration
+  container-title-short: The American Review of Public Administration
+  DOI: 10.1177/0275074018795287
+  ISSN: 0275-0740
+  issue: '1'
+  issued:
+    - year: 2019
+      month: 1
+      day: 1
+  language: en
+  page: 36-50
+  source: SAGE Journals
+  title: >-
+    Public Comments’ Influence on Science Use in U.S. Rulemaking: The Case of
+    EPA’s National Emission Standards
+  title-short: Public Comments’ Influence on Science Use in U.S. Rulemaking
+  type: article-journal
+  URL: https://doi.org/10.1177/0275074018795287
+  volume: '49'
+
+- id: ElliottExploringInductiveRisk2017
+  abstract: >-
+    Science is the most reliable means available for understanding the world
+    around us and our place in it. But, since science draws conclusions based on
+    limited empirical evidence, there is always a chance that a scientific
+    inference will be incorrect. That chance, known as inductive risk, is
+    endemic to science. Though inductive risk has always been present in
+    scientific practice, the role of values in responding to it has only
+    recently gained extensive attention from philosophers, scientists, and
+    policy-makers. Exploring Inductive Risk brings together a set of eleven
+    concrete case studies with the goals of illustrating the pervasiveness of
+    inductive risk, assisting scientists and policymakers in responding to it,
+    and moving theoretical discussions of this phenomenon forward. The case
+    studies range over a wide variety of scientific contexts, including the drug
+    approval process, high energy particle physics, dual-use research, climate
+    science, research on gender disparities in employment, clinical trials, and
+    toxicology. The book includes an introductory chapter that provides a
+    conceptual introduction to the topic and a historical overview of the
+    argument that values have an important role to play in responding to
+    inductive risk, as well as a concluding chapter that synthesizes important
+    themes from the book and maps out issues in need of further consideration.
+  call-number: Q175.32.I54 E97 2017
+  citation-key: ElliottExploringInductiveRisk2017
+  contributor:
+    - family: Elliott
+      given: Kevin C.
+    - family: Richards
+      given: Ted
+    - family: Stegenga
+      given: Jacob
+    - family: Staley
+      given: Kent W.
+    - family: Resnik
+      given: David
+    - family: Frank
+      given: David M.
+    - family: Havstad
+      given: Joyce C.
+    - literal: Matthew J. Brown
+    - literal: Robin Andreasen
+    - family: Doty
+      given: Heather
+    - family: Plutynski
+      given: Anya
+    - family: Stanev
+      given: Roger
+    - family: Bluhm
+      given: Robyn
+    - family: Biddle
+      given: Justin B.
+    - family: Kukla
+      given: Rebecca
+    - family: Powers
+      given: Jack
+  editor:
+    - family: Elliott
+      given: Kevin C.
+    - family: Richards
+      given: Ted
+  event-place: New York
+  ISBN: 978-0-19-046772-2
+  issued:
+    - year: 2017
+  language: en
+  number-of-pages: '313'
+  publisher: Oxford University Press
+  publisher-place: New York
+  source: Library of Congress ISBN
+  title: 'Exploring Inductive Risk: Case Studies of Values in Science'
+  title-short: Exploring Inductive Risk
+  type: book
+
+- id: EpsteinImpureScience1996
+  abstract: >-
+    Epstein shows the extent to which AIDS research has been a social and
+    political phenomenon and how the AIDS movement has transformed biomedical
+    research practices through its capacity to garner credibility by novel
+    strategies.
+  author:
+    - family: Epstein
+      given: Steven
+  citation-key: EpsteinImpureScience1996
+  collection-title: AIDS, Activism, and the Politics of Knowledge
+  event-place: Berkeley, Los Angeles, and Oxford
+  ISBN: 978-0-520-21445-3
+  issued:
+    - year: 1996
+  number-of-pages: '466'
+  publisher: University of California Press
+  publisher-place: Berkeley, Los Angeles, and Oxford
+  title: Impure Science
+  type: book
+  URL: >-
+    http://books.google.ca/books?id=kZOso0FMsrMC&pg=PA39&dq=intitle:Impure+Science+inauthor:epstein&hl=&cd=1&source=gbs_api
+
+- id: FernandezPintoLegitimizingValuesRegulatory2019
+  abstract: >-
+    Background:Over the last several decades, scientists and social groups have
+    frequently raised concerns about politicization or political interference in
+    regulatory science. Public actors (environmentalists and industry advocates,
+    politically aligned public figures, scientists and political commentators,
+    in the United States as well as in other countries) across major
+    political-regulatory controversies have expressed concerns about the
+    inappropriate politicization of science. Although we share concerns about
+    the politicization of science, they are frequently framed in terms of an
+    ideal of value-free science, according to which political and economic
+    values have no legitimate role to play in science. For several decades, work
+    in philosophy of science has identified serious conceptual and practical
+    problems with the value-free ideal.Objectives:Our objectives are to discuss
+    the literature regarding the conceptual and practical problems with the
+    value-free ideal and offer a constructive alternative to the value-free
+    ideal.Discussion:We first discuss the prevalence of the value-free ideal in
+    regulatory science, then argue that this ideal is self-undermining and has
+    been exploited to delay protective regulation. To offer a constructive
+    alternative, we analyze the relationship between the goals of regulatory
+    science and the standards of good scientific activity. This analysis raises
+    questions about the relationship between methodological and practical
+    standards for good science, tensions among various important social goods,
+    and tensions among various social interests. We argue that the aims of
+    regulatory science help to legitimize value-laden choices regarding research
+    methods and study designs. Finally, we discuss how public deliberation,
+    adaptive management, and community-based participatory research can be used
+    to improve the legitimacy of scientists as representatives of the general
+    public on issues of environmental knowledge.Conclusions:Reflecting on the
+    aims of regulatory science—such as protecting human health and the
+    environment, informing democratic deliberation, and promoting the capacities
+    of environmental justice and Indigenous communities—can clarify when values
+    have legitimate roles in regulatory science. 
+    https://doi.org/10.1289/EHP3317
+  accessed:
+    - year: 2019
+      month: 3
+      day: 15
+  author:
+    - family: Fernández Pinto
+      given: Manuela
+    - family: Hicks
+      given: Daniel J.
+  citation-key: FernandezPintoLegitimizingValuesRegulatory2019
+  container-title: Environmental Health Perspectives
+  container-title-short: Environmental Health Perspectives
+  DOI: 10.1289/EHP3317
+  issue: '3'
+  issued:
+    - year: 2019
+      month: 3
+      day: 14
+  page: '035001'
+  source: ehp.niehs.nih.gov (Atypon)
+  title: Legitimizing Values in Regulatory Science
+  type: article-journal
+  URL: https://ehp.niehs.nih.gov/doi/full/10.1289/EHP3317
+  volume: '127'
+
+- id: GillamQuestionsEPAMonsantoCollusion2017
+  abstract: Questions about EPA-Monsanto collusion raised in cancer lawsuits
+  accessed:
+    - year: 2023
+      month: 1
+      day: 27
+  author:
+    - family: Gillam
+      given: Carey
+  citation-key: GillamQuestionsEPAMonsantoCollusion2017
+  container-title: HuffPost
+  issued:
+    - year: 2017
+      month: 2
+      day: 13
+  language: en
+  section: Environment
+  title: Questions about EPA-Monsanto collusion raised in cancer lawsuits
+  type: webpage
+  URL: https://www.huffpost.com/entry/questions-about-epa-monsa_b_14727648
+
+- id: GoldbergCatchingDeliberativeWave2022
+  abstract: >-
+    A ‘deliberative wave’, with increasing uses of deliberative citizen forums,
+    is sweeping the globe. Whereas deliberative citizen forum enthusiasts claim
+    that they represent appropriate tools to reconnect citizens with politics
+    and demand a stronger empowerment of deliberative citizen forums, critics
+    argue that they will reduce rather than increase democratic legitimacy. This
+    letter sheds new light on the roles of deliberative citizen forums in
+    democratic systems, with a particular eye on disaffected citizens. Drawing
+    on a conjoint experiment with a representative sample of non-participating
+    German citizens, it shows that citizens in general challenge notions of the
+    strong empowerment of deliberative citizen forums. They prefer deliberative
+    citizen forums that are limited to policy advice, collaborate with legacy
+    institutions and include extra provisions (such as a large size or clear
+    majorities). By contrast, disaffected citizens are more open to the
+    empowerment and decoupling of deliberative citizen forums compared to
+    allegiant citizens, but this not imply that they are generally in clear
+    favour of such design features (in fact, they are mostly indifferent
+    viaà-vis empowerment and decoupling). These findings have important
+    ramifications for democratic designs.
+  accessed:
+    - year: 2023
+      month: 1
+      day: 27
+  author:
+    - family: Goldberg
+      given: Saskia
+    - family: Bächtiger
+      given: André
+  citation-key: GoldbergCatchingDeliberativeWave2022
+  container-title: British Journal of Political Science
+  container-title-short: Brit. J. Polit. Sci.
+  DOI: 10.1017/S0007123422000059
+  ISSN: 0007-1234, 1469-2112
+  issued:
+    - year: 2022
+      month: 3
+      day: 25
+  language: en
+  page: 1-9
+  source: DOI.org (Crossref)
+  title: >-
+    Catching the ‘Deliberative Wave’? How (Disaffected) Citizens Assess
+    Deliberative Citizen Forums
+  title-short: Catching the ‘Deliberative Wave’?
+  type: article-journal
+  URL: >-
+    https://www.cambridge.org/core/product/identifier/S0007123422000059/type/journal_article
+
+- id: GouldRocksAgesScience2011
+  abstract: >-
+    "People of good will wish to see science and religion at peace. . . . I do
+    not see how science and religion could be unified, or even synthesized,
+    under any common scheme of explanation or analysis; but I also do not
+    understand why the two enterprises should experience any conflict." So
+    states internationally renowned evolutionist and bestselling author Stephen
+    Jay Gould in the simple yet profound thesis of his brilliant new
+    book.Writing with bracing intelligence and elegant clarity, Gould sheds new
+    light on a dilemma that has plagued thinking people since the Renaissance.
+    Instead of choosing between science and religion, Gould asks, why not opt
+    for a golden mean that accords dignity and distinction to each realm?At the
+    heart of Gould's penetrating argument is a lucid, contemporary principle he
+    calls NOMA (for nonoverlapping magisteria)--a "blessedly simple and entirely
+    conventional resolution" that allows science and religion to coexist
+    peacefully in a position of respectful noninterference. Science defines the
+    natural world; religion, our moral world, in recognition of their separate
+    spheres of influence.In elaborating and exploring this thought-provoking
+    concept, Gould delves into the history of science, sketching affecting
+    portraits of scientists and moral leaders wrestling with matters of faith
+    and reason. Stories of seminal figures such as Galileo, Darwin, and Thomas
+    Henry Huxley make vivid his argument that individuals and cultures must
+    cultivate both a life of the spirit and a life of rational inquiry in order
+    to experience the fullness of being human.In his bestselling books Wonderful
+    Life, The Mismeasure of Man, and Questioning the Millennium, Gould has
+    written on the abundance of marvels in human history and the natural world.
+    In Rocks of Ages, Gould's passionate humanism, ethical discernment, and
+    erudition are fused to create a dazzling gem of contemporary cultural
+    philosophy. As the world's preeminent Darwinian theorist writes, "I believe,
+    with all my heart, in a respectful, even loving concordat between . . .
+    science and religion."
+  author:
+    - family: Gould
+      given: Stephen Jay
+  citation-key: GouldRocksAgesScience2011
+  ISBN: 978-0-307-80141-8
+  issued:
+    - year: 2011
+      month: 7
+      day: 20
+  language: en
+  number-of-pages: '258'
+  publisher: Random House Publishing Group
+  source: Google Books
+  title: 'Rocks of Ages: Science and Religion in the Fullness of Life'
+  title-short: Rocks of Ages
+  type: book
+
+- id: HaederInfluenceAdministrativeProcess2015
+  abstract: >-
+    All administrative processes contain points of entry for politics, and the
+    U.S. president's use of the Office of Management and Budget (OMB) to review
+    government regulations is no exception. Specifically, OMB review can open up
+    a pathway for interest groups to lobby for policy change. We theorize that
+    interest group lobbying can be influential during OMB review, especially
+    when there is consensus across groups. We use a selection model to test our
+    argument with more than 1,500 regulations written by federal agencies that
+    were subjected to OMB review. We find that lobbying is associated with
+    change during OMB review. We also demonstrate that, when only business
+    groups lobby, we are more likely to see rule change; however, the same is
+    not true for public interest groups. We supplement these results with
+    illustrative examples suggesting that interest groups can, at times, use OMB
+    review to influence the content of legally binding government regulations.
+  accessed:
+    - year: 2017
+      month: 12
+      day: 12
+  author:
+    - family: Haeder
+      given: Simon F.
+    - family: Yackee
+      given: Susan Webb
+  citation-key: HaederInfluenceAdministrativeProcess2015
+  container-title: American Political Science Review
+  DOI: 10.1017/S0003055415000246
+  ISSN: 0003-0554, 1537-5943
+  issue: '3'
+  issued:
+    - year: 2015
+      month: 8
+  page: 507-522
+  source: Cambridge Core
+  title: >-
+    Influence and the Administrative Process: Lobbying the U.S. President's
+    Office of Management and Budget
+  title-short: Influence and the Administrative Process
+  type: article-journal
+  URL: >-
+    https://www.cambridge.org/core/journals/american-political-science-review/article/influence-and-the-administrative-process-lobbying-the-us-presidents-office-of-management-and-budget/638F34BC73235AB4833C852B24C431AF
+  volume: '109'
+
+- id: HaederPresidentiallyDirectedPolicy2018
+  abstract: >-
+    Abstract.  US presidents—working through the Office of Information and
+    Regulatory Affairs (OIRA)—influence administrative agencies by directing
+    agencies to modi
+  accessed:
+    - year: 2023
+      month: 1
+      day: 27
+  author:
+    - family: Haeder
+      given: Simon F
+    - family: Yackee
+      given: Susan Webb
+  citation-key: HaederPresidentiallyDirectedPolicy2018
+  container-title: Journal of Public Administration Research and Theory
+  container-title-short: J Public Adm Res Theory
+  DOI: 10.1093/jopart/muy033
+  ISSN: 1053-1858, 1477-9803
+  issue: '4'
+  issued:
+    - year: 2018
+      month: 9
+      day: 19
+  language: en
+  page: 475-488
+  source: DOI.org (Crossref)
+  title: >-
+    Presidentially Directed Policy Change: The Office of Information and
+    Regulatory Affairs as Partisan or Moderator?
+  title-short: Presidentially Directed Policy Change
+  type: article-journal
+  URL: https://academic.oup.com/jpart/article/28/4/475/5056341
+  volume: '28'
+
+- id: HarvardCausalInferenceMoral2021
+  abstract: >-
+    Throughout the Covid-19 pandemic, people have been eager to learn what
+    factors, and especially what public health policies, cause infection rates
+    to wax and wane. But figuring out conclusively what causes what is difficult
+    in complex systems with nonlinear dynamics, such as pandemics. We review
+    some of the challenges that scientists have faced in answering quantitative
+    causal questions during the Covid-19 pandemic, and suggest that these
+    challenges are a reason to augment the moral dimension of conversations
+    about causal inference. We take a lesson from Martha Nussbaum—who cautions
+    us not to think we have just one question on our hands when we have at least
+    two—and apply it to modeling for causal inference in the context of
+    cost-benefit analysis.
+  accessed:
+    - year: 2021
+      month: 9
+      day: 18
+  author:
+    - family: Harvard
+      given: Stephanie
+    - family: Winsberg
+      given: Eric
+  citation-key: HarvardCausalInferenceMoral2021
+  container-title: Philosophy of Medicine
+  DOI: 10.5195/philmed.2021.70
+  ISSN: 2692-3963
+  issue: '2'
+  issued:
+    - year: 2021
+      month: 9
+      day: 17
+  language: en
+  license: Copyright (c) 2021 Stephanie Harvard, Eric Winsberg
+  number: '2'
+  source: philmed.pitt.edu
+  title: Causal Inference, Moral Intuition, and Modeling in a Pandemic
+  type: article-journal
+  URL: https://philmed.pitt.edu/philmed/article/view/70
+  volume: '2'
+
+- id: HarvardValueJudgmentsCOVID192021
+  abstract: >-
+    Scientific modelling is a value-laden process: the decisions involved can
+    seldom be made using ‘scientific’ criteria alone, but rather draw on social
+    and ethical values. In this paper, we draw on a body of philosophical
+    literature to analyze a COVID-19 vaccination model, presenting a case study
+    of social and ethical value judgments in health-oriented modelling. This
+    case study urges us to make value judgments in health-oriented models
+    explicit and interpretable by non-experts and to invite public involvement
+    in making them.
+  accessed:
+    - year: 2021
+      month: 8
+      day: 21
+  author:
+    - family: Harvard
+      given: Stephanie
+    - family: Winsberg
+      given: Eric
+    - family: Symons
+      given: John
+    - family: Adibi
+      given: Amin
+  citation-key: HarvardValueJudgmentsCOVID192021
+  container-title: Social Science & Medicine
+  container-title-short: Social Science & Medicine
+  DOI: 10.1016/j.socscimed.2021.114323
+  ISSN: 0277-9536
+  issued:
+    - year: 2021
+      month: 10
+      day: 1
+  language: en
+  page: '114323'
+  source: ScienceDirect
+  title: >-
+    Value judgments in a COVID-19 vaccination model: A case study in the need
+    for public involvement in health-oriented modelling
+  title-short: Value judgments in a COVID-19 vaccination model
+  type: article-journal
+  URL: https://www.sciencedirect.com/science/article/pii/S0277953621006559
+  volume: '286'
+
+- id: HicksNewDirectionScience2014
+  author:
+    - family: Hicks
+      given: Daniel J.
+  citation-key: HicksNewDirectionScience2014
+  container-title: Synthese
+  container-title-short: Synthese
+  DOI: 10.1007/s11229-014-0447-9
+  issue: '14'
+  issued:
+    - year: 2014
+      month: 9
+  page: 3271-3295
+  title: A new direction for science and values
+  type: article-journal
+  URL: http://link.springer.com/10.1007/s11229-014-0447-9
+  volume: '191'
+
+- id: HicksScientificControversiesProxy2017
+  accessed:
+    - year: 2017
+      month: 3
+      day: 20
+  author:
+    - family: Hicks
+      given: Daniel J.
+  citation-key: HicksScientificControversiesProxy2017
+  container-title: Issues in Science and Technology
+  issue: Winter 2017
+  issued:
+    - year: 2017
+      month: 1
+  page: 67-72
+  title: Scientific Controversies as Proxy Politics
+  type: article-magazine
+  URL: https://www.jstor.org/stable/24891967
+  volume: '33'
+
+- id: HolmanNewDemarcationProblem2022
+  abstract: >-
+    There is now a general consensus amongst philosophers in the values in
+    science literature that values necessarily play a role in core areas of
+    scientific inquiry. We argue that attention should now be turned from
+    debating the value-free ideal to delineating legitimate from illegitimate
+    influences of values in science, a project we dub “The New Demarcation
+    Problem.” First, we review past attempts to demarcate the uses of values and
+    propose a categorization of the strategies by where they seek to draw
+    legitimacy from. Next, we propose a set of desiderata for what we take to be
+    a satisfactory solution and present a case study where conflicting sets of
+    values clearly impinge on science, but where the legitimacy of their
+    influence is ambiguous. We use these desiderata and the case study to
+    illustrate what we take to be the strengths and weaknesses of current
+    strategies. To be clear, our goal is not to answer the question we pose, but
+    to articulate a framework within which a solution can be judged.
+  accessed:
+    - year: 2021
+      month: 12
+      day: 29
+  author:
+    - family: Holman
+      given: Bennett
+    - family: Wilholt
+      given: Torsten
+  citation-key: HolmanNewDemarcationProblem2022
+  container-title: Studies in History and Philosophy of Science
+  container-title-short: Studies in History and Philosophy of Science
+  DOI: 10.1016/j.shpsa.2021.11.011
+  ISSN: 0039-3681
+  issued:
+    - year: 2022
+      month: 2
+      day: 1
+  language: en
+  page: 211-220
+  source: ScienceDirect
+  title: The new demarcation problem
+  type: article-journal
+  URL: https://www.sciencedirect.com/science/article/pii/S0039368121001886
+  volume: '91'
+
+- id: JacobsRightKindParticipation2021
+  abstract: >-
+    Deliberative mini-publics have been put forward as a form of citizen
+    participation that is particularly well suited to improve the legitimacy of
+    public decision-making. Using a survey experiment, we find that the
+    perceived legitimacy of a process that includes a deliberative mini-public
+    is higher than a process in which citizens are not able to participate at
+    all, but no higher than a process that includes a participation method that
+    relies on self-selection. Our findings imply that deliberative mini-publics
+    may not be the right instrument to repair the loss of legitimacy that many
+    democratic institutions are thought to suffer.
+  accessed:
+    - year: 2021
+      month: 8
+      day: 12
+  author:
+    - family: Jacobs
+      given: Daan
+    - family: Kaufmann
+      given: Wesley
+  citation-key: JacobsRightKindParticipation2021
+  container-title: Public Management Review
+  DOI: 10.1080/14719037.2019.1668468
+  ISSN: 1471-9037
+  issue: '1'
+  issued:
+    - year: 2021
+      month: 1
+      day: 2
+  note: '_eprint: https://doi.org/10.1080/14719037.2019.1668468'
+  page: 91-111
+  publisher: Routledge
+  source: Taylor and Francis+NEJM
+  title: >-
+    The right kind of participation? The effect of a deliberative mini-public on
+    the perceived legitimacy of public decision-making
+  title-short: The right kind of participation?
+  type: article-journal
+  URL: https://doi.org/10.1080/14719037.2019.1668468
+  volume: '23'
+
+- id: KaplanDesigningParticipatoryTechnology2021
+  abstract: >-
+    Decades of social science scholarship have documented and explored the
+    interconnected nature of science, technology, and society. Multiple
+    theoretical frameworks suggest the potential to direct this process of
+    mutual shaping toward desired outcomes and away from undesired ones through
+    broader inclusion of new voices and visions. In 2010, a group of
+    researchers, educators, and policy practitioners established the Expert and
+    Citizen Assessment of Science and Technology (ECAST) network to
+    operationalize these frameworks. Over the course of a decade, ECAST
+    developed an innovative and reflexive participatory technology assessment
+    (pTA) method to support democratic science policy decision-making in
+    different technical, social, and political contexts. The method's reflexive
+    nature gave rise to continuous innovations and iterative improvements. The
+    current ECAST pTA method includes three participatory phases: 1) Problem
+    Framing; 2) ECAST Citizen Deliberation; and 3) Results and Integration.
+    Proving adaptable and replicable, the method has generated outputs for
+    decision-making on a variety of science and technology issues and at
+    governance scales ranging from the local to the national and international.
+    ECAST's distributed network model has also promoted independence,
+    continuity, and sustainability through changing sociopolitical contexts. In
+    this paper, we detail the current state of the ECAST pTA method; share mini
+    case studies to illustrate circumstances that prompted new method
+    innovations; and offer a vision for further developing and integrating pTA
+    into democratic science policy decision-making.
+  accessed:
+    - year: 2021
+      month: 7
+      day: 6
+  author:
+    - family: Kaplan
+      given: Leah R.
+    - family: Farooque
+      given: Mahmud
+    - family: Sarewitz
+      given: Daniel
+    - family: Tomblin
+      given: David
+  citation-key: KaplanDesigningParticipatoryTechnology2021
+  container-title: Technological Forecasting and Social Change
+  container-title-short: Technological Forecasting and Social Change
+  DOI: 10.1016/j.techfore.2021.120974
+  ISSN: 0040-1625
+  issued:
+    - year: 2021
+      month: 10
+      day: 1
+  language: en
+  page: '120974'
+  source: ScienceDirect
+  title: >-
+    Designing Participatory Technology Assessments: A Reflexive Method for
+    Advancing the Public Role in Science Policy Decision-making
+  title-short: Designing Participatory Technology Assessments
+  type: article-journal
+  URL: https://www.sciencedirect.com/science/article/pii/S0040162521004066
+  volume: '171'
+
+- id: KriegerEpidemiologyPeopleHealth2011
+  abstract: >-
+    "Epidemiology is often referred to as the science of public health. However,
+    unlike other major sciences, its theoretical foundations are rarely
+    articulated. While the idea of epidemiologic theory may seem dry and arcane,
+    it is at its core about explaining the people's health. It is about life and
+    death. It is about biology and society. It is about ecology and the economy.
+    It is about how myriad aspects of people's lives--involving work, dignity,
+    desire, love, play, conflict, discrimination, and injustice--become
+    literally incorporated biologically into our bodies and manifest in our
+    health status, individually and collectively. And it is about essential
+    knowledge critical for improving the people's health and minimizing
+    inequitable burdens of disease, disability, and death. Woven from a vast
+    array of schools of thought, including those in the natural, social, and
+    biomedical sciences, epidemiologic theory is a rich tapestry whose time for
+    analysis is long overdue. By tracing its history and contours from ancient
+    societies on through the development of--and debates within--contemporary
+    epidemiology worldwide, Nancy Krieger shows how epidemiologic theory has
+    long shaped epidemiologic practice, knowledge, and the politics of public
+    health. Outlining an ecosocial theory of disease distribution that situates
+    both population health and epidemiologic theory in societal and ecologic
+    context, she offers a more holistic picture of how we embody the human
+    experience"--Provided by publisher
+  author:
+    - family: Krieger
+      given: Nancy
+  call-number: RA651 .K75 2011
+  citation-key: KriegerEpidemiologyPeopleHealth2011
+  event-place: New York
+  ISBN: 978-0-19-538387-4
+  issued:
+    - year: 2011
+  language: en
+  note: 'OCLC: ocn685111261'
+  number-of-pages: '381'
+  publisher: Oxford University Press
+  publisher-place: New York
+  source: Library of Congress ISBN
+  title: 'Epidemiology and the people''s health: theory and context'
+  title-short: Epidemiology and the people's health
+  type: book
+
+- id: LeeViralVisualizationsHow2021
+  abstract: >-
+    Controversial understandings of the coronavirus pandemic have turned data
+    visualizations into a battleground. Defying public health officials,
+    coronavirus skeptics on US social media spent much of 2020 creating data
+    visualizations showing that the government's pandemic response was excessive
+    and that the crisis was over. This paper investigates how pandemic
+    visualizations circulated on social media, and shows that people who
+    mistrust the scientific establishment often deploy the same rhetorics of
+    data-driven decision-making used by experts, but to advocate for radical
+    policy changes. Using a quantitative analysis of how visualizations spread
+    on Twitter and an ethnographic approach to analyzing conversations about
+    COVID data on Facebook, we document an epistemological gap that leads pro-
+    and anti-mask groups to draw drastically different inferences from similar
+    data. Ultimately, we argue that the deployment of COVID data visualizations
+    reflect a deeper sociopolitical rift regarding the place of science in
+    public life.
+  accessed:
+    - year: 2021
+      month: 5
+      day: 16
+  author:
+    - family: Lee
+      given: Crystal
+    - family: Yang
+      given: Tanya
+    - family: Inchoco
+      given: Gabrielle
+    - family: Jones
+      given: Graham M.
+    - family: Satyanarayan
+      given: Arvind
+  citation-key: LeeViralVisualizationsHow2021
+  container-title: Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems
+  DOI: 10.1145/3411764.3445211
+  issued:
+    - year: 2021
+      month: 5
+      day: 6
+  page: 1-18
+  source: arXiv.org
+  title: >-
+    Viral Visualizations: How Coronavirus Skeptics Use Orthodox Data Practices
+    to Promote Unorthodox Science Online
+  title-short: Viral Visualizations
+  type: article-journal
+  URL: http://arxiv.org/abs/2101.07993
+
+- id: OttingerTechnoscienceEnvironmentalJustice2011
+  call-number: TD194 .T43 2011
+  citation-key: OttingerTechnoscienceEnvironmentalJustice2011
+  collection-title: Urban and industrial environments
+  contributor:
+    - family: Frickel
+      given: Scott
+    - family: Hoffman
+      given: Karen
+    - family: Delborne
+      given: Jason
+    - family: Galusky
+      given: Wyatt
+    - family: Morello-Frosch
+      given: Rachel
+    - family: Brown
+      given: Phil
+    - family: Brody
+      given: Julia Green
+    - family: Altman
+      given: Rebecca Gasior
+    - family: Rudel
+      given: Ruthann A.
+    - family: Zota
+      given: Ami
+    - family: Pérez
+      given: Carla
+    - family: Nieusma
+      given: Dean
+    - family: Powell
+      given: Maria
+    - family: Powell
+      given: Jim
+    - family: Johnson
+      given: Jaclyn R.
+    - family: Ranco
+      given: Darren J.
+    - family: Liévanos
+      given: Raoul S.
+    - family: London
+      given: Jonathan K.
+    - family: Sze
+      given: Julie
+    - family: Ottinger
+      given: Gwen
+    - family: Fortun
+      given: Kim
+  editor:
+    - family: Ottinger
+      given: Gwen
+    - family: Cohen
+      given: Benjamin R.
+  event-place: Cambridge, Mass
+  ISBN: 978-0-262-01579-0 978-0-262-51618-1
+  issued:
+    - year: 2011
+  language: en
+  note: 'OCLC: ocn692084754'
+  number-of-pages: '298'
+  publisher: MIT Press
+  publisher-place: Cambridge, Mass
+  source: Library of Congress ISBN
+  title: >-
+    Technoscience and environmental justice: expert cultures in a grassroots
+    movement
+  title-short: Technoscience and environmental justice
+  type: book
+
+- id: PauliFlintFightsBack2019
+  abstract: >-
+    An account of the Flint water crisis shows that Flint's struggle for safe
+    and affordable water is part of a broader struggle for democracy.When Flint,
+    Michigan, changed its source of municipal water from Lake Huron to the Flint
+    River, Flint residents were repeatedly assured that the water was of the
+    highest quality. At the switchover ceremony, the mayor and other officials
+    performed a celebratory toast, declaring “Here's to Flint!” and downing
+    glasses of freshly treated water. But as we now know, the water coming out
+    of residents' taps harbored a variety of contaminants, including high levels
+    of lead. In Flint Fights Back, Benjamin Pauli examines the water crisis and
+    the political activism that it inspired, arguing that Flint's struggle for
+    safe and affordable water was part of a broader struggle for democracy.
+    Pauli connects Flint's water activism with the ongoing movement protesting
+    the state of Michigan's policy of replacing elected officials in financially
+    troubled cities like Flint and Detroit with appointed “emergency
+    managers.”Pauli distinguishes the political narrative of the water crisis
+    from the historical and technical narratives, showing that Flint activists'
+    emphasis on democracy helped them to overcome some of the limitations of
+    standard environmental justice frameworks. He discusses the pro-democracy
+    (anti–emergency manager) movement and traces the rise of the “water
+    warriors”; describes the uncompromising activist culture that developed out
+    of the experience of being dismissed and disparaged by officials; and
+    examines the interplay of activism and scientific expertise. Finally, he
+    explores efforts by activists to expand the struggle for water justice and
+    to organize newly mobilized residents into a movement for a radically
+    democratic Flint.
+  author:
+    - family: Pauli
+      given: Benjamin J.
+  citation-key: PauliFlintFightsBack2019
+  ISBN: 978-0-262-03985-7
+  issued:
+    - year: 2019
+      month: 5
+      day: 14
+  language: en
+  number-of-pages: '433'
+  publisher: MIT Press
+  source: Google Books
+  title: >-
+    Flint Fights Back: Environmental Justice and Democracy in the Flint Water
+    Crisis
+  title-short: Flint Fights Back
+  type: book
+
+- id: PitkinConceptRepresentation1967
+  abstract: >-
+    Being concerned with representation, this book is about an idea, a concept,
+    a word. It is primarily a conceptual analysis, not a historical study of the
+    way in which representative government has evolved, nor yet an empirical
+    investigation of the behavior of contemporary representatives or the
+    expectations voters have about them. Yet, although the book is about a word,
+    it is not about mere words, not merely about words. For the social
+    philosopher, for the social scientist, words are not "mere"; they are the
+    tools of his trade and a vital part of his subject matter. Since human
+    beings are not merely political animals but also language-using animals,
+    their behavior is shaped by their ideas. What they do and how they do it
+    depends upon how they see themselves and their world, and this in turn
+    depends upon the concepts through which they see. Learning what
+    "representation" means and learning how to represent are intimately
+    connected. But even beyond this, the social theorist sees the world through
+    a network of concepts. Our words define and delimit our world in important
+    ways, and this is particularly true of the world of human and social things.
+    For a zoologist may capture a rare specimen and simply observe it; but who
+    can capture an instance of representation (or of power, or of interest)?
+    Such things, too, can be observed, but the observation always presupposes at
+    least a rudimentary conception of what representation (or power, or
+    interest) is, what counts as representation, where it leaves off and some
+    other phenomenon begins. Questions about what representation is, or is like,
+    are not fully separable from the question of what "representation" means.
+    This book approaches the former questions by way of the latter.
+  author:
+    - family: Pitkin
+      given: Hanna F.
+  citation-key: PitkinConceptRepresentation1967
+  ISBN: 978-0-520-02156-3
+  issued:
+    - year: 1967
+  language: en
+  number-of-pages: '332'
+  publisher: University of California Press
+  source: Google Books
+  title: The Concept of Representation
+  type: book
+
+- id: RichardsonAdministrativePolicymakingRule1999
+  author:
+    - family: Richardson
+      given: Henry
+  citation-key: RichardsonAdministrativePolicymakingRule1999
+  container-title: 'Recrafting the Rule of Law: The Limits of Legal Order'
+  editor:
+    - family: Dyzenhaus
+      given: David
+  event-place: Oxford and Portland, Oregon
+  ISBN: 1 901362–31–0
+  issued:
+    - year: 1999
+  page: 309-30
+  publisher: Hart Publishing
+  publisher-place: Oxford and Portland, Oregon
+  title: 'Administrative Policy-making: Rule of Law or Bureaucracy?'
+  type: chapter
+
+- id: SarewitzHowScienceMakes2004
+  author:
+    - family: Sarewitz
+      given: Daniel
+  citation-key: SarewitzHowScienceMakes2004
+  container-title: Environmental Science and Policy
+  container-title-short: Environmental Science and Policy
+  DOI: 10.1016/j.envsci.2004.06.001
+  issue: '5'
+  issued:
+    - year: 2004
+  page: 385-403
+  title: How science makes environmental controversies worse
+  type: article-journal
+  volume: '7'
+
+- id: SarewitzScienceEnvironmentalPolicy2000
+  author:
+    - family: Sarewitz
+      given: Daniel
+  citation-key: SarewitzScienceEnvironmentalPolicy2000
+  container-title: "Earth Matters:\_ The Earth Sciences, Philosophy, and the Claims of Community"
+  editor:
+    - family: Frodeman
+      given: Robert
+  issued:
+    - year: 2000
+  page: 79-98
+  publisher: Prentice Hall
+  title: 'Science and Environmental Policy: An Excess of Objectivity'
+  type: chapter
+  URL: http://www.cspo.org/_old_ourlibrary/ScienceandEnvironmentalPolicy.htm
+
+- id: StaplefordCostLivingAmerica2009
+  abstract: >-
+    Since the late nineteenth century, the "cost of living" has been a prominent
+    part of debates about American political economy. By the early twentieth
+    century, that prominence had taken a quantitative turn, as businessmen,
+    unions, economists, and politicians all turned to cost-of-living statistics
+    in their struggle to control and reshape the American economy. Today, the
+    continuing power of these statistics is exemplified by the U.S Consumer
+    Price Index, whose fluctuations have enormous consequences for economic
+    policy and the federal budget (including the allocation of hundreds of
+    billions of dollars annually through cost-of-living escalator clauses in
+    programs such as Social Security). In this book, Stapleford interweaves
+    economic theory with political history to create a novel account of the
+    quantitative knowledge that underpins much of American political economy.
+    Demonstrating that statistical calculations inevitably require political
+    judgments, he reveals what choices were made in constructing and using
+    cost-of-living statistics and why those choices matter both for our
+    understanding of American history and for contemporary political and
+    economic life.
+  author:
+    - family: Stapleford
+      given: Thomas A.
+  citation-key: StaplefordCostLivingAmerica2009
+  ISBN: 978-0-521-89501-9
+  issued:
+    - year: 2009
+      month: 9
+      day: 14
+  language: en
+  number-of-pages: '421'
+  publisher: Cambridge University Press
+  source: Google Books
+  title: >-
+    The Cost of Living in America: A Political History of Economic Statistics,
+    1880-2000
+  title-short: The Cost of Living in America
+  type: book
+
+- id: SteelRethinkingRepresentationDiversity2020
+  abstract: 'Article: Rethinking Representation and Diversity in Deliberative Minipublics'
+  accessed:
+    - year: 2020
+      month: 9
+      day: 1
+  author:
+    - family: Steel
+      given: Daniel
+    - family: Bolduc
+      given: Naseeb
+    - family: Jenei
+      given: Kristina
+    - family: Burgess
+      given: Michael
+  citation-key: SteelRethinkingRepresentationDiversity2020
+  container-title: Journal of Deliberative Democracy
+  DOI: 10.16997/jdd.398
+  ISSN: 2634-0488
+  issue: '1'
+  issued:
+    - year: 2020
+      month: 8
+      day: 26
+  language: en
+  license: >-
+    Authors who publish with this journal agree to the following terms:   
+    Authors retain copyright and grant the journal right of first publication
+    with the work simultaneously licensed under a  Creative Commons Attribution
+    License  that allows others to share the work with an acknowledgement of the
+    work's authorship and initial publication in this journal.  Authors are able
+    to enter into separate, additional contractual arrangements for the
+    non-exclusive distribution of the journal's published version of the work
+    (e.g., post it to an institutional repository or publish it in a book), with
+    an acknowledgement of its initial publication in this journal.  Authors are
+    permitted and encouraged to post their work online (e.g., in institutional
+    repositories or on their website) prior to and during the submission
+    process, as it can lead to productive exchanges, as well as earlier and
+    greater citation of published work (See  The Effect of Open Access ).  All
+    third-party images reproduced on this journal are shared under Educational
+    Fair Use. For more information on  Educational Fair Use , please see  this
+    useful checklist prepared by Columbia University Libraries .   All
+    copyright  of third-party content posted here for research purposes belongs
+    to its original owners.  Unless otherwise stated all references to
+    characters and comic art presented on this journal are ©, ® or ™ of their
+    respective owners. No challenge to any owner’s rights is intended or should
+    be inferred.
+  number: '1'
+  page: 46–57
+  publisher: University of Westminster Press
+  source: delibdemjournal.org
+  title: Rethinking Representation and Diversity in Deliberative Minipublics
+  type: article-journal
+  URL: http://delibdemjournal.org/articles/10.16997/jdd.398/
+  volume: '16'
+
+- id: WarrenCanDeliberativeMinipublics2015
+  accessed:
+    - year: 2023
+      month: 1
+      day: 27
+  author:
+    - family: Warren
+      given: Mark E.
+    - family: Gastil
+      given: John
+  citation-key: WarrenCanDeliberativeMinipublics2015
+  container-title: The Journal of Politics
+  container-title-short: The Journal of Politics
+  DOI: 10.1086/680078
+  ISSN: 0022-3816, 1468-2508
+  issue: '2'
+  issued:
+    - year: 2015
+      month: 4
+  language: en
+  page: 562-574
+  source: DOI.org (Crossref)
+  title: >-
+    Can Deliberative Minipublics Address the Cognitive Challenges of Democratic
+    Citizenship?
+  type: article-journal
+  URL: https://www.journals.uchicago.edu/doi/10.1086/680078
+  volume: '77'
+
+- id: WarrenHowRepresentationEnables2018
+  accessed:
+    - year: 2023
+      month: 1
+      day: 17
+  author:
+    - family: Warren
+      given: Mark E.
+  citation-key: WarrenHowRepresentationEnables2018
+  container-title: 'Creating Political Presence: The New Politics of Democratic Representation'
+  editor:
+    - family: Castiglione
+      given: Dario
+    - family: Pollak
+      given: Johannes
+  event-place: Chicago, IL
+  ISBN: 978-0-226-58853-7
+  issued:
+    - year: 2018
+      month: 12
+  language: en
+  page: 39-60
+  publisher: University of Chicago Press
+  publisher-place: Chicago, IL
+  source: University of Chicago Press
+  title: How Representation Enables Democratic Citizenship
+  type: chapter
+  URL: https://press.uchicago.edu/ucp/books/book/chicago/C/bo29203064.html
+
+- id: WilholtEpistemicInterestsObjectivity2022
+  abstract: >-
+    This paper advocates for making epistemic interests a central object of
+    philosophical analysis in epistemology and philosophy of science. It is
+    argued that the importance of epistemic interests derives from their
+    fundamental importance for the notion of objectivity. Epistemic interests
+    are defined as individuated by a set of objectives, each of which represents
+    a dimension of the search for truth. Among these dimensions, specificity,
+    sensitivity, and productivity (the rate at which results are delivered per
+    unit of time) are discussed in detail. It is argued that the relevance of
+    productivity is often overlooked in debates about the ends and means of
+    science. A definition of the objectivity of inquiry is proposed that takes
+    the notion of epistemic interest as its starting point.
+  accessed:
+    - year: 2021
+      month: 12
+      day: 8
+  author:
+    - family: Wilholt
+      given: Torsten
+  citation-key: WilholtEpistemicInterestsObjectivity2022
+  container-title: Studies in History and Philosophy of Science
+  container-title-short: Studies in History and Philosophy of Science
+  DOI: 10.1016/j.shpsa.2021.11.009
+  ISSN: 0039-3681
+  issued:
+    - year: 2022
+      month: 2
+      day: 1
+  language: en
+  page: 86-93
+  source: ScienceDirect
+  title: Epistemic interests and the objectivity of inquiry
+  type: article-journal
+  URL: https://www.sciencedirect.com/science/article/pii/S0039368121001862
+  volume: '91'
+...

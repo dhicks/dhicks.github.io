@@ -271,10 +271,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>✔ ggplot2 3.3.6     ✔ purrr   0.3.4
-✔ tibble  3.1.8     ✔ dplyr   1.0.9
-✔ tidyr   1.2.0     ✔ stringr 1.4.1
-✔ readr   2.1.2     ✔ forcats 0.5.1</code></pre>
+<pre><code>✔ ggplot2 3.4.0      ✔ purrr   1.0.0 
+✔ tibble  3.1.8      ✔ dplyr   1.0.10
+✔ tidyr   1.2.1      ✔ stringr 1.5.0 
+✔ readr   2.1.3      ✔ forcats 0.5.2 </code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
@@ -296,10 +296,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(dataf)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>tibble [60 × 3] (S3: tbl_df/tbl/data.frame)
- $ path    : chr [1:60] "/Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-friedersdorf-the-sex-friendly-case-against-free-bi"| __truncated__ "/Users/danhicks/Google Drive/Coding/website/posts/2012-04-21-the-agroecological-argument-for-eating-meat.md" "/Users/danhicks/Google Drive/Coding/website/posts/2012-05-23-fetishism-and-innate-differences.md" "/Users/danhicks/Google Drive/Coding/website/posts/2012-07-23-two-conceptions-of-human-nature.md" ...
- $ post_id : int [1:60] 1 2 3 4 5 6 7 8 9 10 ...
- $ raw_text: chr [1:60] "---\nlayout: post\ntitle: \"Friedersdorf: The Sex-Friendly Case Against Free Birth Control, part II\"\n\n\n\nta"| __truncated__ "---\nlayout: post\ntitle: \"The Agroecological Argument for Eating Meat\"\n\n\n\n\ntags: [data,meat,students,ve"| __truncated__ "---\nlayout: post\ntitle: \"Fetishism and Innate Differences\"\n---\n\n\n(Going through my folder of notes and "| __truncated__ "---\nlayout: post\ntitle: \"Two Conceptions of Human Nature\"\n\n\n\n\ntags: [market,rights]\n---\n\n\nIn his e"| __truncated__ ...</code></pre>
+<pre><code>tibble [63 × 3] (S3: tbl_df/tbl/data.frame)
+ $ path    : chr [1:63] "/Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-friedersdorf-the-sex-friendly-case-against-free-bi"| __truncated__ "/Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-friedersdorf-the-sex-friendly-case-against-free-bi"| __truncated__ "/Users/danhicks/Google Drive/Coding/website/posts/2012-04-21-the-agroecological-argument-for-eating-meat.md" "/Users/danhicks/Google Drive/Coding/website/posts/2012-05-23-fetishism-and-innate-differences.md" ...
+ $ post_id : int [1:63] 1 2 3 4 5 6 7 8 9 10 ...
+ $ raw_text: chr [1:63] "---\ntitle: \"Friedersdorf: The Sex-Friendly Case Against Free Birth Control, part I\"\ndate: \"2012-03-14\"\nc"| __truncated__ "---\nlayout: post\ntitle: \"Friedersdorf: The Sex-Friendly Case Against Free Birth Control, part II\"\ndate: \""| __truncated__ "---\nlayout: post\ntitle: \"The Agroecological Argument for Eating Meat\"\ndate: \"2012-04-21\"\ncategories: [d"| __truncated__ "---\nlayout: post\ntitle: \"Fetishism and Innate Differences\"\ndate: \"2012-05-23\"\n---\n\n\n(Going through m"| __truncated__ ...</code></pre>
 </div>
 </div>
 <p>Next we use <code>tidytext</code> to parse the text of each post into individual terms or tokens.</p>
@@ -307,20 +307,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>tokens_df <span class="ot">=</span> <span class="fu">unnest_tokens</span>(dataf, token, raw_text)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>tokens_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 71,815 × 3
+<pre><code># A tibble: 74,983 × 3
    path                                                            post_id token
    &lt;chr&gt;                                                             &lt;int&gt; &lt;chr&gt;
- 1 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 layo…
- 2 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 post 
- 3 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 title
- 4 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 frie…
- 5 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 the  
- 6 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 sex  
- 7 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 frie…
- 8 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 case 
- 9 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 agai…
-10 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 free 
-# … with 71,805 more rows</code></pre>
+ 1 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 title
+ 2 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 frie…
+ 3 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 the  
+ 4 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 sex  
+ 5 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 frie…
+ 6 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 case 
+ 7 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 agai…
+ 8 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 free 
+ 9 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 birth
+10 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 cont…
+# … with 74,973 more rows</code></pre>
 </div>
 </div>
 <p>To develop tags, we want to identify “highly meaningful terms” across the cropus of parsed blog posts. In text mining, a measure called <em>TF-IDF</em> is frequently used for this task. TF-IDF is calculated for each term-document combination. The TF-IDF of term <span class="math display">\[i\]</span> in document <span class="math display">\[j\]</span> is - the number of times <span class="math display">\[i\]</span> occurs in <span class="math display">\[j\]</span> (the <em>term frequency</em>), divided by - the (log) number of documents in which <span class="math display">\[i\]</span> occurs at least once (the <em>document frequency</em>).</p>
@@ -350,12 +350,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(info_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>tibble [8,016 × 5] (S3: tbl_df/tbl/data.frame)
- $ token  : chr [1:8016] "__squarespace_cacheversion" "_data" "_jmp0_" "_market" ...
- $ n      : int [1:8016] 1 1 1 1 1 1 1 26 1 1 ...
- $ H      : num [1:8016] 0 0 0 0 0 ...
- $ delta_H: num [1:8016] 5.91 5.91 5.91 5.91 5.91 ...
- $ ndH    : num [1:8016] 0 0 0 0 0 ...</code></pre>
+<pre><code>tibble [8,127 × 5] (S3: tbl_df/tbl/data.frame)
+ $ token  : chr [1:8127] "__squarespace_cacheversion" "_data" "_jmp0_" "_market" ...
+ $ n      : int [1:8127] 1 1 1 1 1 1 1 17 1 1 ...
+ $ H      : num [1:8127] 0 0 0 0 0 ...
+ $ delta_H: num [1:8127] 5.98 5.98 5.98 5.98 5.98 ...
+ $ ndH    : num [1:8127] 0 0 0 0 0 ...</code></pre>
 </div>
 </div>
 <p>This next block isn’t included in the script; it generates a plot showing the distribution of <span class="math display">\[n\Delta H\]</span> scores for a sample of 500 terms. Each point represents a single term; the x-axis is the (log) number of total occurrences across the corpus, color indicates the information gain <span class="math display">\[\Delta H\]</span>, and the y-axis is the overall <span class="math display">\[n \Delta H\]</span> score.</p>
@@ -387,7 +387,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(path, post_id) <span class="sc">%&gt;%</span></span>
 <span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarize</span>(<span class="at">tags =</span> <span class="fu">list</span>(token)) <span class="sc">%&gt;%</span></span>
 <span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">tags_str =</span> <span class="fu">map_chr</span>(tags, str_c, <span class="at">collapse =</span> <span class="st">','</span>), </span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>           <span class="at">tags_str =</span> <span class="fu">str_c</span>(<span class="st">'tags: ['</span>, tags_str, <span class="st">']'</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>           <span class="at">tags_str =</span> <span class="fu">str_c</span>(<span class="st">'categories: ['</span>, tags_str, <span class="st">']'</span>)) <span class="sc">%&gt;%</span></span>
 <span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ungroup</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`summarise()` has grouped output by 'path'. You can override using the
@@ -395,14 +395,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(tags_df, <span class="at">max.level =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>tibble [53 × 4] (S3: tbl_df/tbl/data.frame)</code></pre>
+<pre><code>tibble [56 × 4] (S3: tbl_df/tbl/data.frame)</code></pre>
 </div>
 </div>
 <p>Finally we’ll write these files back to disk. Each post has a header section that looks something like this:</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Post title goes here"</span></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">style</span><span class="kw">:</span><span class="at"> post</span></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="fu">tags</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">monkey</span><span class="kw">,</span><span class="at">zoo</span><span class="kw">]</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">monkey</span><span class="kw">,</span><span class="at">zoo</span><span class="kw">]</span></span>
 <span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>We’ll separate this header section from the body by searching for the <code>---</code>, add the tags, then put everything back together and write to disk. (Except we won’t actually write the results out to disk here.)</p>
 <div class="cell">
@@ -411,7 +411,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>             <span class="at">sep =</span> <span class="st">'---'</span>, <span class="at">extra =</span> <span class="st">'merge'</span>) <span class="sc">%&gt;%</span> </span>
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    <span class="do">## Remove old tags</span></span>
 <span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">header =</span> <span class="fu">str_replace</span>(header, </span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>                                <span class="st">'tags: </span><span class="sc">\\</span><span class="st">[[^</span><span class="sc">\\</span><span class="st">]]+</span><span class="sc">\\</span><span class="st">]'</span>, </span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>                                <span class="st">'categories: </span><span class="sc">\\</span><span class="st">[[^</span><span class="sc">\\</span><span class="st">]]+</span><span class="sc">\\</span><span class="st">]'</span>, </span>
 <span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>                                <span class="st">''</span>)) <span class="sc">%&gt;%</span> </span>
 <span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">combined =</span> <span class="fu">str_c</span>(<span class="st">'---'</span>, </span>
 <span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>                            header, </span>
@@ -424,21 +424,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>Joining, by = c("path", "post_id")</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 53 × 8
+<pre><code># A tibble: 56 × 8
 # Rowwise: 
    path                         post_id null  header body  tags  tags_…¹ combi…²
    &lt;chr&gt;                          &lt;int&gt; &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt; &lt;lis&gt; &lt;chr&gt;   &lt;chr&gt;  
- 1 /Users/danhicks/Google Driv…       1 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
- 2 /Users/danhicks/Google Driv…       2 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
- 3 /Users/danhicks/Google Driv…       4 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
- 4 /Users/danhicks/Google Driv…       5 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
- 5 /Users/danhicks/Google Driv…       6 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
- 6 /Users/danhicks/Google Driv…       7 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
- 7 /Users/danhicks/Google Driv…       8 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
- 8 /Users/danhicks/Google Driv…       9 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
- 9 /Users/danhicks/Google Driv…      10 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
-10 /Users/danhicks/Google Driv…      11 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
-# … with 43 more rows, and abbreviated variable names ¹​tags_str, ²​combined</code></pre>
+ 1 /Users/danhicks/Google Driv…       1 ""    "\nti… "\n\… &lt;chr&gt; catego… "---\n…
+ 2 /Users/danhicks/Google Driv…       2 ""    "\nla… "\n\… &lt;chr&gt; catego… "---\n…
+ 3 /Users/danhicks/Google Driv…       3 ""    "\nla… "\n\… &lt;chr&gt; catego… "---\n…
+ 4 /Users/danhicks/Google Driv…       5 ""    "\nla… "\n\… &lt;chr&gt; catego… "---\n…
+ 5 /Users/danhicks/Google Driv…       6 ""    "\nla… "\n\… &lt;chr&gt; catego… "---\n…
+ 6 /Users/danhicks/Google Driv…       7 ""    "\nla… "\n\… &lt;chr&gt; catego… "---\n…
+ 7 /Users/danhicks/Google Driv…       8 ""    "\nla… "\n\… &lt;chr&gt; catego… "---\n…
+ 8 /Users/danhicks/Google Driv…       9 ""    "\nla… "\n\… &lt;chr&gt; catego… "---\n…
+ 9 /Users/danhicks/Google Driv…      10 ""    "\nla… "\n\… &lt;chr&gt; catego… "---\n…
+10 /Users/danhicks/Google Driv…      11 ""    "\nla… "\n\… &lt;chr&gt; catego… "---\n…
+# … with 46 more rows, and abbreviated variable names ¹​tags_str, ²​combined</code></pre>
 </div>
 </div>
 <pre><code>    #mutate(written = map2(combined, path, write_lines))</code></pre>

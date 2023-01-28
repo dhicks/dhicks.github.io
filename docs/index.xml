@@ -90,6 +90,117 @@ Stapleford, Thomas A. 2009. <em>The Cost of Living in America: A Political Histo
   <pubDate>Tue, 24 Jan 2023 08:00:00 GMT</pubDate>
 </item>
 <item>
+  <title>The presence-absence model and epistemic representation</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2023-01-26-principle-agent.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>In 2015-16 I was working for<sup>1</sup> the US Environmental Protection Agency. My work colleagues were technocratic managers, most of whom had PhDs and were professionalized as scientists (even when they were on the policymaking, risk management side of things). Because the concept of “legitimacy” in questions about “the legitimate roles for values in science” comes from <em>political</em> legitimacy — at least, it does for me — I started to ruminate on the idea of <strong>scientists as representatives</strong>, in close analogy to elected political representatives. Manuela Fernández-Pinto and I included a few of these ideas in <span class="citation" data-cites="FernandezPintoLegitimizingValuesRegulatory2019">Fernández Pinto and Hicks (2019)</span>. But I haven’t taken the time to develop the analogy further.</p>
+<p>Among political theorists, a key work on political representation is Hanna Pitkin’s <em>The Concept of Representation</em> <span class="citation" data-cites="PitkinConceptRepresentation1967">(Pitkin 1967)</span>. While I haven’t read it myself, my understanding is that Pitkin developed an account of representation in terms of presence and absence. As Mark Warren puts it, “representatives stand in, speak, or act for the represented <em>in their absence</em>: they are <em>represented in</em> the spaces and activities where they cannot be” <span class="citation" data-cites="WarrenHowRepresentationEnables2018">(Warren 2018, 39, Warren’s emphasis)</span>. This way of thinking about representation goes back at least to Hobbes, where the relationship between the people and the sovereign is literally a principal-agent contract <span class="citation" data-cites="BrownScienceDemocracyExpertise2009">(Brown 2009 ch.&nbsp;5)</span>. In this line of political thought, the represented are absent primarily for logistical reasons: it’s impractical to have thousands (or millions) of people in one place all talking to each other and coming to agreement.</p>
+<p>This model is simplistic, and in later posts I’ll start to explore its limits and follow the intellectual trails constructed by political theorists. But, just as this is a useful first model for political representation, I want to argue that it’s a useful first model for <strong>scientists as epistemic representatives</strong>. Namely: scientists stand in, speak, or act <em>epistemically</em> for the general public in their absence. Scientists are often epistemic agents on behalf of the public, who are generally absent from the space of technocratic decisionmaking.<sup>2</sup></p>
+<p>The public are typically absent from these spaces for the same logistical reasons that they are typically absent from spaces of political decisionmaking. But also for two other, more interesting reasons. First, the public lacks the credentials of scientists, the diplomas and work history that are taken as evidence that someone has relevant knowledge and skill. And second, the public often lack relevant knowledge and skill.</p>
+<p>When I talk about expertise in my undergraduate Critical Reasoning course, I like to illustrate the difference between credentials and actual expertise with the examples of ACT UP and the environmental justice movement <span class="citation" data-cites="EpsteinImpureScience1996 PauliFlintFightsBack2019">(Epstein 1996; Pauli 2019)</span>. <em>[Say more here in the actual paper]</em></p>
+<p>However, on any given topic, most people have only very limited knowledge and skill. We are radically epistemically interdependent beings, relying on others with actual expertise to develop knowledge that promotes our epistemic interests <span class="citation" data-cites="WilholtEpistemicInterestsObjectivity2022">(Wilholt 2022)</span>. I suggest that this point corresponds to political theorists’ distinction between <em>preferences</em> and <em>interests</em> <span class="citation" data-cites="WarrenHowRepresentationEnables2018">(Warren 2018, 41)</span>. A good political representative acts to promote the considered interests of the constituency — the things they would want if they had the time and resources to engage in thoughtful deliberation — even if those interests don’t align with what they prefer in the moment. Similarly, scientists as epistemic representatives are responsible for producing the knowledge that we would produce if we had the time and resources to do so.</p>
+<p>Following Warren’s discussion, we run into a problem:</p>
+<blockquote class="blockquote">
+<p>without more analysis, the formulation can tacitly legitimize paternalistic claims by representatives to know what is best for their constituents’ interests, often despite their preferences. At some limit, this formulation merges with Burke’s conception of elected representatives as <em>trustees</em> who substitute their (better) judgment for those of their relatively uninformed constituents. <span class="citation" data-cites="WarrenHowRepresentationEnables2018">(Warren 2018, 42, Warren’s emphasis)</span></p>
+</blockquote>
+<p>The use of “paternalism” here is notable, because feminist philosophy of science was born out of feminist critics of paternalistic, patriarchal science, especially (but not only) biomedical science. It’s therefore tempting to say that this same paternalism is a key problem for the legitimacy of the technocratic state today. Consider the backlash to lockdown approaches to Covid-19 <span class="citation" data-cites="HarvardValueJudgmentsCOVID192021 HarvardCausalInferenceMoral2021 LeeViralVisualizationsHow2021">(Harvard et al. 2021; Harvard and Winsberg 2021; Lee et al. 2021)</span>.</p>
+<p>But let’s follow the political theorists for one more dialectical step. Warren fends off the spectre of Burke by offering “two loci of judgment [that] must be robust for <em>democratic</em> representation to occur:”</p>
+<blockquote class="blockquote">
+<ul>
+<li>The representative must be responsive to the represented, which involves judgments about their interests as affected by a relevant collectivity.</li>
+<li>The represented must judge in what ways and how well they are represented by a representative, especially insofar as their interests are affected by a relevant collectivity. <span class="citation" data-cites="WarrenHowRepresentationEnables2018">(Warren 2018, 43)</span></li>
+</ul>
+</blockquote>
+<p>In other words, democratic representation requires continuous, reciprocal exchange between representatives and their constituents. Representatives might make decisions that contradict the constituents’ preferences. But they will need to be able to justify those decisions in terms that the constituents recognize as their interests. And the constituents will need to engage in quasi-public deliberation and remonstration, and ultimately decide whether or not to accept the claimed interests as theirs <span class="citation" data-cites="WarrenHowRepresentationEnables2018">(Warren 2018, 45)</span>.</p>
+<p>On this analysis, the problem with the technocratic management state is that it lacks institutions — or even informal effective processes — for the necessary continuous reciprocal exchange.<sup>3</sup> And, per my last blog post, this reflects the value-free ideal.</p>
+<p>A responsive, reciprocal relationship between scientists as representatives and their constituents can also help to address the gap between credentials and actual expertise. In environmental justice contexts, one important role of credentialed expert allies is to translate the expertise of community members and activists into the idiom of the technocratic management state <span class="citation" data-cites="OttingerTechnoscienceEnvironmentalJustice2011">(Ottinger and Cohen 2011, 7–8)</span>. Activists might also be included more directly in policymaking, as with ACT-UP <span class="citation" data-cites="EpsteinImpureScience1996">(Epstein 1996)</span>.</p>
+<p>All together, while it is oversimplified, this first model of representation supports an argument for incorporating more substantive opportunities for direct interaction between publics and experts in technocratic policymaking. For decades, science policy scholars and political scientists have examined a variety of institutional forms for such interactions <span class="citation" data-cites="WarrenCanDeliberativeMinipublics2015 SteelRethinkingRepresentationDiversity2020 KaplanDesigningParticipatoryTechnology2021">(Warren and Gastil 2015; Steel et al. 2020; Kaplan et al. 2021)</span>. However, it’s worth noting that some European studies have found that deliberative minipublics do not improve legitimacy <span class="citation" data-cites="JacobsRightKindParticipation2021 GoldbergCatchingDeliberativeWave2022">(Jacobs and Kaufmann 2021; Goldberg and Bächtiger 2022)</span>.</p>
+
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-BrownScienceDemocracyExpertise2009" class="csl-entry">
+Brown, Mark B. 2009. <em>Science in Democracy: Expertise, Institutions, and Representation</em>. Cambridge, Mass: MIT Press.
+</div>
+<div id="ref-CostaPublicCommentsInfluence2019" class="csl-entry">
+Costa, Mia, Bruce A. Desmarais, and John A. Hird. 2019. <span>“Public Comments’ Influence on Science Use in U.S. Rulemaking: The Case of EPA’s National Emission Standards.”</span> <em>The American Review of Public Administration</em> 49 (1): 36–50. <a href="https://doi.org/10.1177/0275074018795287">https://doi.org/10.1177/0275074018795287</a>.
+</div>
+<div id="ref-EpsteinImpureScience1996" class="csl-entry">
+Epstein, Steven. 1996. <em>Impure Science</em>. AIDS, Activism, and the Politics of Knowledge. Berkeley, Los Angeles, and Oxford: University of California Press. <a href="http://books.google.ca/books?id=kZOso0FMsrMC&amp;pg=PA39&amp;dq=intitle:Impure+Science+inauthor:epstein&amp;hl=&amp;cd=1&amp;source=gbs_api">http://books.google.ca/books?id=kZOso0FMsrMC&amp;pg=PA39&amp;dq=intitle:Impure+Science+inauthor:epstein&amp;hl=&amp;cd=1&amp;source=gbs_api</a>.
+</div>
+<div id="ref-FernandezPintoLegitimizingValuesRegulatory2019" class="csl-entry">
+Fernández Pinto, Manuela, and Daniel J. Hicks. 2019. <span>“Legitimizing Values in Regulatory Science.”</span> <em>Environmental Health Perspectives</em> 127 (3): 035001. <a href="https://doi.org/10.1289/EHP3317">https://doi.org/10.1289/EHP3317</a>.
+</div>
+<div id="ref-GillamQuestionsEPAMonsantoCollusion2017" class="csl-entry">
+Gillam, Carey. 2017. <span>“Questions about EPA-Monsanto Collusion Raised in Cancer Lawsuits.”</span> HuffPost. February 13, 2017. <a href="https://www.huffpost.com/entry/questions-about-epa-monsa_b_14727648">https://www.huffpost.com/entry/questions-about-epa-monsa_b_14727648</a>.
+</div>
+<div id="ref-GoldbergCatchingDeliberativeWave2022" class="csl-entry">
+Goldberg, Saskia, and André Bächtiger. 2022. <span>“Catching the <span>‘Deliberative Wave’</span>? How (Disaffected) Citizens Assess Deliberative Citizen Forums.”</span> <em>British Journal of Political Science</em>, March, 1–9. <a href="https://doi.org/10.1017/S0007123422000059">https://doi.org/10.1017/S0007123422000059</a>.
+</div>
+<div id="ref-HaederInfluenceAdministrativeProcess2015" class="csl-entry">
+Haeder, Simon F., and Susan Webb Yackee. 2015. <span>“Influence and the Administrative Process: Lobbying the U.S. President’s Office of Management and Budget.”</span> <em>American Political Science Review</em> 109 (3): 507–22. <a href="https://doi.org/10.1017/S0003055415000246">https://doi.org/10.1017/S0003055415000246</a>.
+</div>
+<div id="ref-HaederPresidentiallyDirectedPolicy2018" class="csl-entry">
+Haeder, Simon F, and Susan Webb Yackee. 2018. <span>“Presidentially Directed Policy Change: The Office of Information and Regulatory Affairs as Partisan or Moderator?”</span> <em>Journal of Public Administration Research and Theory</em> 28 (4): 475–88. <a href="https://doi.org/10.1093/jopart/muy033">https://doi.org/10.1093/jopart/muy033</a>.
+</div>
+<div id="ref-HarvardCausalInferenceMoral2021" class="csl-entry">
+Harvard, Stephanie, and Eric Winsberg. 2021. <span>“Causal Inference, Moral Intuition, and Modeling in a Pandemic.”</span> <em>Philosophy of Medicine</em> 2 (2). <a href="https://doi.org/10.5195/philmed.2021.70">https://doi.org/10.5195/philmed.2021.70</a>.
+</div>
+<div id="ref-HarvardValueJudgmentsCOVID192021" class="csl-entry">
+Harvard, Stephanie, Eric Winsberg, John Symons, and Amin Adibi. 2021. <span>“Value Judgments in a COVID-19 Vaccination Model: A Case Study in the Need for Public Involvement in Health-Oriented Modelling.”</span> <em>Social Science &amp; Medicine</em> 286 (October): 114323. <a href="https://doi.org/10.1016/j.socscimed.2021.114323">https://doi.org/10.1016/j.socscimed.2021.114323</a>.
+</div>
+<div id="ref-JacobsRightKindParticipation2021" class="csl-entry">
+Jacobs, Daan, and Wesley Kaufmann. 2021. <span>“The Right Kind of Participation? The Effect of a Deliberative Mini-Public on the Perceived Legitimacy of Public Decision-Making.”</span> <em>Public Management Review</em> 23 (1): 91–111. <a href="https://doi.org/10.1080/14719037.2019.1668468">https://doi.org/10.1080/14719037.2019.1668468</a>.
+</div>
+<div id="ref-KaplanDesigningParticipatoryTechnology2021" class="csl-entry">
+Kaplan, Leah R., Mahmud Farooque, Daniel Sarewitz, and David Tomblin. 2021. <span>“Designing Participatory Technology Assessments: A Reflexive Method for Advancing the Public Role in Science Policy Decision-Making.”</span> <em>Technological Forecasting and Social Change</em> 171 (October): 120974. <a href="https://doi.org/10.1016/j.techfore.2021.120974">https://doi.org/10.1016/j.techfore.2021.120974</a>.
+</div>
+<div id="ref-LeeViralVisualizationsHow2021" class="csl-entry">
+Lee, Crystal, Tanya Yang, Gabrielle Inchoco, Graham M. Jones, and Arvind Satyanarayan. 2021. <span>“Viral Visualizations: How Coronavirus Skeptics Use Orthodox Data Practices to Promote Unorthodox Science Online.”</span> <em>Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems</em>, May, 1–18. <a href="https://doi.org/10.1145/3411764.3445211">https://doi.org/10.1145/3411764.3445211</a>.
+</div>
+<div id="ref-OttingerTechnoscienceEnvironmentalJustice2011" class="csl-entry">
+Ottinger, Gwen, and Benjamin R. Cohen, eds. 2011. <em>Technoscience and Environmental Justice: Expert Cultures in a Grassroots Movement</em>. Urban and Industrial Environments. Cambridge, Mass: MIT Press.
+</div>
+<div id="ref-PauliFlintFightsBack2019" class="csl-entry">
+Pauli, Benjamin J. 2019. <em>Flint Fights Back: Environmental Justice and Democracy in the Flint Water Crisis</em>. MIT Press.
+</div>
+<div id="ref-PitkinConceptRepresentation1967" class="csl-entry">
+Pitkin, Hanna F. 1967. <em>The Concept of Representation</em>. University of California Press.
+</div>
+<div id="ref-RichardsonAdministrativePolicymakingRule1999" class="csl-entry">
+Richardson, Henry. 1999. <span>“Administrative Policy-Making: Rule of Law or Bureaucracy?”</span> In <em>Recrafting the Rule of Law: The Limits of Legal Order</em>, edited by David Dyzenhaus, 309–30. Oxford and Portland, Oregon: Hart Publishing.
+</div>
+<div id="ref-SteelRethinkingRepresentationDiversity2020" class="csl-entry">
+Steel, Daniel, Naseeb Bolduc, Kristina Jenei, and Michael Burgess. 2020. <span>“Rethinking Representation and Diversity in Deliberative Minipublics.”</span> <em>Journal of Deliberative Democracy</em> 16 (1): 46–57. <a href="https://doi.org/10.16997/jdd.398">https://doi.org/10.16997/jdd.398</a>.
+</div>
+<div id="ref-WarrenHowRepresentationEnables2018" class="csl-entry">
+Warren, Mark E. 2018. <span>“How Representation Enables Democratic Citizenship.”</span> In <em>Creating Political Presence: The New Politics of Democratic Representation</em>, edited by Dario Castiglione and Johannes Pollak, 39–60. Chicago, IL: University of Chicago Press. <a href="https://press.uchicago.edu/ucp/books/book/chicago/C/bo29203064.html">https://press.uchicago.edu/ucp/books/book/chicago/C/bo29203064.html</a>.
+</div>
+<div id="ref-WarrenCanDeliberativeMinipublics2015" class="csl-entry">
+Warren, Mark E., and John Gastil. 2015. <span>“Can Deliberative Minipublics Address the Cognitive Challenges of Democratic Citizenship?”</span> <em>The Journal of Politics</em> 77 (2): 562–74. <a href="https://doi.org/10.1086/680078">https://doi.org/10.1086/680078</a>.
+</div>
+<div id="ref-WilholtEpistemicInterestsObjectivity2022" class="csl-entry">
+Wilholt, Torsten. 2022. <span>“Epistemic Interests and the Objectivity of Inquiry.”</span> <em>Studies in History and Philosophy of Science</em> 91 (February): 86–93. <a href="https://doi.org/10.1016/j.shpsa.2021.11.009">https://doi.org/10.1016/j.shpsa.2021.11.009</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Technically, I was working for AAAS, as a Science and Technology Policy Fellow, and “hosted by” EPA.↩︎</p></li>
+<li id="fn2"><p>Note that I intend to use “epistemic agent” in exactly the same way as feminist social epistemologists.↩︎</p></li>
+<li id="fn3"><p>This is incorrect as stated. Agencies like EPA have at least two such processes. However, one is formal and ineffective, while the other is effective but fails criteria of democratic inclusion and justice. First, the formal notice-and-comment system solicits feedback from the general public on proposed regulation. But agency staff merely have to provide pro forma responses to these comments, giving the public very little effective political agency in this process <span class="citation" data-cites="RichardsonAdministrativePolicymakingRule1999 HaederInfluenceAdministrativeProcess2015 HaederPresidentiallyDirectedPolicy2018 CostaPublicCommentsInfluence2019">(Richardson 1999; Simon F. Haeder and Yackee 2015; Simon F. Haeder and Yackee 2018; Costa, Desmarais, and Hird 2019)</span>. Second, regulatory agency staff often have informal interactions with various “stakeholders,” providing opportunities for much more effective reciprocal exchange. But typically the only stakeholders included in these interactions are regulated industries <span class="citation" data-cites="GillamQuestionsEPAMonsantoCollusion2017">(eg, Gillam 2017)</span>. Environmental justice communities, for example, are unlikely to be included in these interactions, making these interactions both exclusionary and injust.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <guid>https://dhicks.github.io/posts/2023-01-26-principle-agent.html</guid>
+  <pubDate>Mon, 16 Jan 2023 08:00:00 GMT</pubDate>
+</item>
+<item>
   <title>Leftist dynamics for city simulation games</title>
   <dc:creator>Dan Hicks</dc:creator>
   <link>https://dhicks.github.io/posts/2021-06-26-city-sim-dynamics.html</link>
@@ -664,215 +775,6 @@ Stapleford, Thomas A. 2009. <em>The Cost of Living in America: A Political Histo
  ]]></description>
   <guid>https://dhicks.github.io/posts/2018-11-06-why-baier.html</guid>
   <pubDate>Tue, 06 Nov 2018 08:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Auto-tagging posts + the nDH metric</title>
-  <dc:creator>Dan Hicks</dc:creator>
-  <link>https://dhicks.github.io/posts/2018-10-25-autotag.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>This morning I added a new feature to the blog posts: an R script that automatically generates and applies tags, allowing users to find old posts on (potentially, roughly) similar topics. Because of some difficulties setting up a chronological archive, I was worried old posts would be lost down the memory hole. This new feature should help prevent that.</p>
-<p>My previous blogs had tags; you can see some of the remains of Tumblr’s tagging system at the bottom of many migrated posts. But the tags had to be added manually. This added a step to the publication process, and made me worried about inconsistent tags. What if I recently adopted a new tag that applied to some old posts? I’d have to scroll back through the archive to find them, which was both very tedious and prone to human error.</p>
-<p>The new script solves these problems by automatically selecting tags and applying them across all posts at the same time. After writing a post, all I need to do is run a one-line command in the terminal. As a side effect, the tags will change, highlighting different arrays of topics as I add posts to the blog.</p>
-<p>In the rest of this post, I want to explain the logic behind the tag selection process by walking through the code of the autotagging script. The post also includes a discussion of a metric I use for “high-information” terms, which I call <img src="https://latex.codecogs.com/png.latex?n%20%5CDelta%20H">.</p>
-<p>The script uses two R packages: <code>tidyverse</code>, a suite of packages of data wrangling; and <code>tidytext</code>, a text mining package designed for use with the <code>tidyverse</code>. After loading these packages, the rest of the following chunk loads the content of every post on the blog into a single dataframe structure.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;">library</span>(tidyverse)</span></code></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>✔ ggplot2 3.3.6     ✔ purrr   0.3.4
-✔ tibble  3.1.8     ✔ dplyr   1.0.9
-✔ tidyr   1.2.0     ✔ stringr 1.4.1
-✔ readr   2.1.2     ✔ forcats 0.5.1</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><span class="fu" style="color: #4758AB;">library</span>(tidytext)</span>
-<span id="cb5-2"></span>
-<span id="cb5-3"></span>
-<span id="cb5-4">post_folder <span class="ot" style="color: #003B4F;">=</span> <span class="fu" style="color: #4758AB;">getwd</span>()  <span class="co" style="color: #5E5E5E;"># Just `_posts/` in the actual script</span></span>
-<span id="cb5-5">post_files <span class="ot" style="color: #003B4F;">=</span> <span class="fu" style="color: #4758AB;">list.files</span>(post_folder, <span class="at" style="color: #657422;">pattern =</span> <span class="st" style="color: #20794D;">'</span><span class="sc" style="color: #5E5E5E;">\\</span><span class="st" style="color: #20794D;">.q?md'</span>) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb5-6">    <span class="fu" style="color: #4758AB;">file.path</span>(post_folder, .)</span>
-<span id="cb5-7"></span>
-<span id="cb5-8">dataf <span class="ot" style="color: #003B4F;">=</span> <span class="fu" style="color: #4758AB;">tibble</span>(<span class="at" style="color: #657422;">path =</span> post_files) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb5-9">    <span class="fu" style="color: #4758AB;">mutate</span>(<span class="at" style="color: #657422;">post_id =</span> <span class="fu" style="color: #4758AB;">row_number</span>()) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb5-10">    <span class="fu" style="color: #4758AB;">rowwise</span>() <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb5-11">    <span class="fu" style="color: #4758AB;">mutate</span>(<span class="at" style="color: #657422;">raw_text =</span> <span class="fu" style="color: #4758AB;">read_file</span>(path)) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb5-12">    <span class="fu" style="color: #4758AB;">ungroup</span>()</span>
-<span id="cb5-13"></span>
-<span id="cb5-14"><span class="fu" style="color: #4758AB;">str</span>(dataf)</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>tibble [60 × 3] (S3: tbl_df/tbl/data.frame)
- $ path    : chr [1:60] "/Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-friedersdorf-the-sex-friendly-case-against-free-bi"| __truncated__ "/Users/danhicks/Google Drive/Coding/website/posts/2012-04-21-the-agroecological-argument-for-eating-meat.md" "/Users/danhicks/Google Drive/Coding/website/posts/2012-05-23-fetishism-and-innate-differences.md" "/Users/danhicks/Google Drive/Coding/website/posts/2012-07-23-two-conceptions-of-human-nature.md" ...
- $ post_id : int [1:60] 1 2 3 4 5 6 7 8 9 10 ...
- $ raw_text: chr [1:60] "---\nlayout: post\ntitle: \"Friedersdorf: The Sex-Friendly Case Against Free Birth Control, part II\"\n\n\n\nta"| __truncated__ "---\nlayout: post\ntitle: \"The Agroecological Argument for Eating Meat\"\n\n\n\n\ntags: [data,meat,students,ve"| __truncated__ "---\nlayout: post\ntitle: \"Fetishism and Innate Differences\"\n---\n\n\n(Going through my folder of notes and "| __truncated__ "---\nlayout: post\ntitle: \"Two Conceptions of Human Nature\"\n\n\n\n\ntags: [market,rights]\n---\n\n\nIn his e"| __truncated__ ...</code></pre>
-</div>
-</div>
-<p>Next we use <code>tidytext</code> to parse the text of each post into individual terms or tokens.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1">tokens_df <span class="ot" style="color: #003B4F;">=</span> <span class="fu" style="color: #4758AB;">unnest_tokens</span>(dataf, token, raw_text)</span>
-<span id="cb7-2">tokens_df</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 71,815 × 3
-   path                                                            post_id token
-   &lt;chr&gt;                                                             &lt;int&gt; &lt;chr&gt;
- 1 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 layo…
- 2 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 post 
- 3 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 title
- 4 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 frie…
- 5 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 the  
- 6 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 sex  
- 7 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 frie…
- 8 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 case 
- 9 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 agai…
-10 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 free 
-# … with 71,805 more rows</code></pre>
-</div>
-</div>
-<p>To develop tags, we want to identify “highly meaningful terms” across the cropus of parsed blog posts. In text mining, a measure called <em>TF-IDF</em> is frequently used for this task. TF-IDF is calculated for each term-document combination. The TF-IDF of term <img src="https://latex.codecogs.com/png.latex?i"> in document <img src="https://latex.codecogs.com/png.latex?j"> is - the number of times <img src="https://latex.codecogs.com/png.latex?i"> occurs in <img src="https://latex.codecogs.com/png.latex?j"> (the <em>term frequency</em>), divided by - the (log) number of documents in which <img src="https://latex.codecogs.com/png.latex?i"> occurs at least once (the <em>document frequency</em>).</p>
-<p>Intuitively, TF-IDF tries to identify words that are common in a particular document (high term frequency) but also only occur in a few documents (low document frequency). In English, words like “the” and “and” tend to have high term frequencies but also very high document frequencies, so their TF-IDF scores tend to be low. Misspelled words like “mipelled” have low document frequency, but also low term frequency, so again their TF-IDF scores tend to be low. Terms with a high TF-IDF should, the thought goes, be distinctive to a given document.</p>
-<p>The problem with TF-IDF is that it’s difficult to make this intuitive account more precise. It can also be difficult to interpret, because the units are occurrences per log documents. Is 3 occurrences per log documents high or low? That depends on things like the number and length of documents in the corpus. In addition, TF-IDF is calculated for term-document pairs, not for individual terms. A word will have the same IDF value across the entire corpus, but will have different TF values as it occurs a different number of times across different documents.</p>
-<p>For these reasons, in my text mining work I’ve switched to an information-based measure. To understand this one, note first that we have <img src="https://latex.codecogs.com/png.latex?m=42"> blog posts. Suppose we draw one of these blog posts at random. The probability of drawing any given post is <img src="https://latex.codecogs.com/png.latex?p(doc)%20=%20%5Cfrac%7B1%7D%7Bm%7D%20=%20%5Cfrac%7B1%7D%7B42%7D">. The <em>entropy</em> of this probability distribution tells us the number of binary bits (0s and 1s) we need to give a unique ID for each blog post.</p>
-<p><img src="https://latex.codecogs.com/png.latex?%20H%20=%20-%20%5Csum_%7Bdocs%7D%20p(doc)%20%5Clog_2%20p(docs)%20=%20-%20%5Csum_m%20%5Cfrac%7B1%7D%7Bm%7D%20%5Clog_2%20%5Cfrac%7B1%7D%7Bm%7D%20=%20log_2%20m.%20"></p>
-<p>In the case of my blog before writing this post, the entropy is <img src="https://latex.codecogs.com/png.latex?log_2%2042%20=%205.4">.</p>
-<p>Now suppose that, after drawing a post at random, we draw a single word from the post at random (without peeking at exactly which post we’ve drawn). The probability that we’ve drawn any given post is now <img src="https://latex.codecogs.com/png.latex?p(doc%20%5Cmid%20word)">. The <em>information gain</em> of the word is the difference between <img src="https://latex.codecogs.com/png.latex?H"> up above and the entropy of this new distribution <img src="https://latex.codecogs.com/png.latex?p(doc%20%5Cmid%20word)">:</p>
-<p><img src="https://latex.codecogs.com/png.latex?%5CDelta%20H%20=%20H%5Bp(doc)%5D%20-%20H%5Bp(doc%20%5Cmid%20word)%5D."></p>
-<p>We can think of <img src="https://latex.codecogs.com/png.latex?%5CDelta%20H"> as the number of bits of information, relative to the full post ID, that we’ve gained from knowing the word. <img src="https://latex.codecogs.com/png.latex?%5CDelta%20H"> corresponds to inverse document frequency (dividing by the document frequency) in TF-IDF: it tells us how unique that word is to each document. A term like “the” will tend to have <img src="https://latex.codecogs.com/png.latex?%5CDelta%20H"> near 0 (it doesn’t give us any new information); a more distinctive term like “virtue” (only some of my posts are about virtue ethics) will have a relatively high <img src="https://latex.codecogs.com/png.latex?%5CDelta">, perhaps 4 or even 5 (it tells us a lot about which particular posts we might have).</p>
-<p>To calculate an overall score for each term, we multiply <img src="https://latex.codecogs.com/png.latex?%5CDelta%20H"> by the (log) total times the term occurs across the entire corpus. Suppose “virtue” occurs 100 times across all blog posts, and has an information gain of 3 bits. Then we have <img src="https://latex.codecogs.com/png.latex?%5Clog_%7B10%7D%20n%20%5Ctimes%20%5CDelta%20H%20=%202%20%5Ctimes%203%20=%206">. The units here are <em>orders of magnitude-bits</em>. An increase of 1 of these units means that a word occurs <img src="https://latex.codecogs.com/png.latex?10%5Ctimes"> as frequently or provides 1 added bit of information. I call the resulting measure <img src="https://latex.codecogs.com/png.latex?n%5CDelta%20H"> (not writing the log for readability).</p>
-<p>The following block calculates <img src="https://latex.codecogs.com/png.latex?H"> for the distribution <img src="https://latex.codecogs.com/png.latex?p(doc)">, as <code>baseline</code>, then calculates the information gain and <img src="https://latex.codecogs.com/png.latex?n%5CDelta%20H">.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1">baseline <span class="ot" style="color: #003B4F;">=</span> <span class="fu" style="color: #4758AB;">log2</span>(<span class="fu" style="color: #4758AB;">nrow</span>(dataf))</span>
-<span id="cb9-2"></span>
-<span id="cb9-3">info_df <span class="ot" style="color: #003B4F;">=</span> tokens_df <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb9-4">    <span class="fu" style="color: #4758AB;">count</span>(token, post_id) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb9-5">    <span class="fu" style="color: #4758AB;">group_by</span>(token) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb9-6">    <span class="fu" style="color: #4758AB;">arrange</span>(token) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb9-7">    <span class="fu" style="color: #4758AB;">mutate</span>(<span class="at" style="color: #657422;">p =</span> n <span class="sc" style="color: #5E5E5E;">/</span> <span class="fu" style="color: #4758AB;">sum</span>(n), </span>
-<span id="cb9-8">           <span class="at" style="color: #657422;">H_term =</span> <span class="sc" style="color: #5E5E5E;">-</span>p<span class="sc" style="color: #5E5E5E;">*</span><span class="fu" style="color: #4758AB;">log2</span>(p)) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb9-9">    <span class="fu" style="color: #4758AB;">summarize</span>(<span class="at" style="color: #657422;">n =</span> <span class="fu" style="color: #4758AB;">sum</span>(n), </span>
-<span id="cb9-10">              <span class="at" style="color: #657422;">H =</span> <span class="fu" style="color: #4758AB;">sum</span>(H_term), </span>
-<span id="cb9-11">              <span class="at" style="color: #657422;">delta_H =</span> baseline <span class="sc" style="color: #5E5E5E;">-</span> H,</span>
-<span id="cb9-12">              <span class="at" style="color: #657422;">ndH =</span> <span class="fu" style="color: #4758AB;">log10</span>(n)<span class="sc" style="color: #5E5E5E;">*</span>delta_H)</span>
-<span id="cb9-13"></span>
-<span id="cb9-14"><span class="fu" style="color: #4758AB;">str</span>(info_df)</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>tibble [8,016 × 5] (S3: tbl_df/tbl/data.frame)
- $ token  : chr [1:8016] "__squarespace_cacheversion" "_data" "_jmp0_" "_market" ...
- $ n      : int [1:8016] 1 1 1 1 1 1 1 26 1 1 ...
- $ H      : num [1:8016] 0 0 0 0 0 ...
- $ delta_H: num [1:8016] 5.91 5.91 5.91 5.91 5.91 ...
- $ ndH    : num [1:8016] 0 0 0 0 0 ...</code></pre>
-</div>
-</div>
-<p>This next block isn’t included in the script; it generates a plot showing the distribution of <img src="https://latex.codecogs.com/png.latex?n%5CDelta%20H"> scores for a sample of 500 terms. Each point represents a single term; the x-axis is the (log) number of total occurrences across the corpus, color indicates the information gain <img src="https://latex.codecogs.com/png.latex?%5CDelta%20H">, and the y-axis is the overall <img src="https://latex.codecogs.com/png.latex?n%20%5CDelta%20H"> score.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><span class="fu" style="color: #4758AB;">set.seed</span>(<span class="dv" style="color: #AD0000;">2018-10-25</span>)</span>
-<span id="cb11-2">info_df <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb11-3">    <span class="fu" style="color: #4758AB;">sample_n</span>(<span class="dv" style="color: #AD0000;">500</span>) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb11-4">    <span class="fu" style="color: #4758AB;">ggplot</span>(<span class="fu" style="color: #4758AB;">aes</span>(<span class="fu" style="color: #4758AB;">log10</span>(n), <span class="at" style="color: #657422;">color =</span> delta_H, </span>
-<span id="cb11-5">                                ndH, <span class="at" style="color: #657422;">label =</span> token)) <span class="sc" style="color: #5E5E5E;">+</span></span>
-<span id="cb11-6">    <span class="fu" style="color: #4758AB;">geom_text</span>() <span class="sc" style="color: #5E5E5E;">+</span></span>
-<span id="cb11-7">    <span class="fu" style="color: #4758AB;">theme_minimal</span>()</span></code></pre></div>
-<div class="cell-output-display">
-<p><img src="https://dhicks.github.io/posts/2018-10-25-autotag_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-<p>Informally, the <img src="https://latex.codecogs.com/png.latex?n%20%5CDelta%20H"> score does a good job of identifying characteristic words for different kinds of posts, such as “data,” “developing,” and “feminism.”</p>
-<p>The overall shape of the plot also shows how <img src="https://latex.codecogs.com/png.latex?n%20%5CDelta%20H"> balances information gain and frequency. Some terms like “yourself” and “x’s” have a high information gain (more than 4 bits — remember that the maximum is about 5.4), but occur fewer than 10 times and so have a low <img src="https://latex.codecogs.com/png.latex?n%20%5CDelta%20H">. Extremely common terms (many more than 100 occurrences across a set of 42 posts) have very little information. The highest-scoring term, “market,” has both high information (4.3) and occurs 71 times.</p>
-<p>All together, the <img src="https://latex.codecogs.com/png.latex?n%20%5CDelta%20H"> score picks out a set of high-information, moderate-frequency terms in the middle of the plot, much like TF-IDF. In contrast with TF-IDF, it uses information theory for theoretical support and produces a relatively interpretable value.</p>
-<p>The last step in the script is to select a vocabulary of terms to use as tags, identify them in the posts, and write the tags into the Markdown files.</p>
-<p>To select the vocabulary, we simply take the terms with the highest <img src="https://latex.codecogs.com/png.latex?n%20%5CDelta%20H"> scores. Because the blog is fairly small, it’s not unreasonable to take as many terms as there are blog posts (42 tags <img src="https://latex.codecogs.com/png.latex?%5Cto"> 42 tags). As the blog grows, I’ll probably want to trim this down to set a hard cap. Alternatively, I might want to select a number of tags such that each post has at least 1 tag and no post has more than, say, 5 tags. For now, though, I’ll just use the simpler logic of the top 42 terms.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1">vocab <span class="ot" style="color: #003B4F;">=</span>  <span class="fu" style="color: #4758AB;">top_n</span>(info_df, <span class="fu" style="color: #4758AB;">nrow</span>(dataf), ndH)</span></code></pre></div>
-</div>
-<p>Then we’ll filter the list of tokens down to these tags, collapse the tags into a list, and convert the list into the string that will go in the header of the Markdown files.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb13" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1">tags_df <span class="ot" style="color: #003B4F;">=</span> tokens_df <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb13-2">    <span class="fu" style="color: #4758AB;">filter</span>(token <span class="sc" style="color: #5E5E5E;">%in%</span> vocab<span class="sc" style="color: #5E5E5E;">$</span>token) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb13-3">    <span class="fu" style="color: #4758AB;">count</span>(path, post_id, token) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb13-4">    <span class="fu" style="color: #4758AB;">group_by</span>(path, post_id) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb13-5">    <span class="fu" style="color: #4758AB;">summarize</span>(<span class="at" style="color: #657422;">tags =</span> <span class="fu" style="color: #4758AB;">list</span>(token)) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb13-6">    <span class="fu" style="color: #4758AB;">mutate</span>(<span class="at" style="color: #657422;">tags_str =</span> <span class="fu" style="color: #4758AB;">map_chr</span>(tags, str_c, <span class="at" style="color: #657422;">collapse =</span> <span class="st" style="color: #20794D;">','</span>), </span>
-<span id="cb13-7">           <span class="at" style="color: #657422;">tags_str =</span> <span class="fu" style="color: #4758AB;">str_c</span>(<span class="st" style="color: #20794D;">'tags: ['</span>, tags_str, <span class="st" style="color: #20794D;">']'</span>)) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb13-8">    <span class="fu" style="color: #4758AB;">ungroup</span>()</span></code></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>`summarise()` has grouped output by 'path'. You can override using the
-`.groups` argument.</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb15" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><span class="fu" style="color: #4758AB;">str</span>(tags_df, <span class="at" style="color: #657422;">max.level =</span> <span class="dv" style="color: #AD0000;">1</span>)</span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>tibble [53 × 4] (S3: tbl_df/tbl/data.frame)</code></pre>
-</div>
-</div>
-<p>Finally we’ll write these files back to disk. Each post has a header section that looks something like this:</p>
-<div class="sourceCode" id="cb17" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb17-1"><span class="pp" style="color: #AD0000;">---</span></span>
-<span id="cb17-2"><span class="fu" style="color: #4758AB;">title</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span><span class="st" style="color: #20794D;">"Post title goes here"</span></span>
-<span id="cb17-3"><span class="fu" style="color: #4758AB;">style</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> post</span></span>
-<span id="cb17-4"><span class="fu" style="color: #4758AB;">tags</span><span class="kw" style="color: #003B4F;">:</span><span class="at" style="color: #657422;"> </span><span class="kw" style="color: #003B4F;">[</span><span class="at" style="color: #657422;">monkey</span><span class="kw" style="color: #003B4F;">,</span><span class="at" style="color: #657422;">zoo</span><span class="kw" style="color: #003B4F;">]</span></span>
-<span id="cb17-5"><span class="pp" style="color: #AD0000;">---</span></span></code></pre></div>
-<p>We’ll separate this header section from the body by searching for the <code>---</code>, add the tags, then put everything back together and write to disk. (Except we won’t actually write the results out to disk here.)</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb18" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><span class="fu" style="color: #4758AB;">right_join</span>(dataf, tags_df) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb18-2">    <span class="fu" style="color: #4758AB;">separate</span>(raw_text, <span class="at" style="color: #657422;">into =</span> <span class="fu" style="color: #4758AB;">c</span>(<span class="st" style="color: #20794D;">'null'</span>, <span class="st" style="color: #20794D;">'header'</span>, <span class="st" style="color: #20794D;">'body'</span>), </span>
-<span id="cb18-3">             <span class="at" style="color: #657422;">sep =</span> <span class="st" style="color: #20794D;">'---'</span>, <span class="at" style="color: #657422;">extra =</span> <span class="st" style="color: #20794D;">'merge'</span>) <span class="sc" style="color: #5E5E5E;">%&gt;%</span> </span>
-<span id="cb18-4">    <span class="do" style="color: #5E5E5E;
-font-style: italic;">## Remove old tags</span></span>
-<span id="cb18-5">    <span class="fu" style="color: #4758AB;">mutate</span>(<span class="at" style="color: #657422;">header =</span> <span class="fu" style="color: #4758AB;">str_replace</span>(header, </span>
-<span id="cb18-6">                                <span class="st" style="color: #20794D;">'tags: </span><span class="sc" style="color: #5E5E5E;">\\</span><span class="st" style="color: #20794D;">[[^</span><span class="sc" style="color: #5E5E5E;">\\</span><span class="st" style="color: #20794D;">]]+</span><span class="sc" style="color: #5E5E5E;">\\</span><span class="st" style="color: #20794D;">]'</span>, </span>
-<span id="cb18-7">                                <span class="st" style="color: #20794D;">''</span>)) <span class="sc" style="color: #5E5E5E;">%&gt;%</span> </span>
-<span id="cb18-8">    <span class="fu" style="color: #4758AB;">mutate</span>(<span class="at" style="color: #657422;">combined =</span> <span class="fu" style="color: #4758AB;">str_c</span>(<span class="st" style="color: #20794D;">'---'</span>, </span>
-<span id="cb18-9">                            header, </span>
-<span id="cb18-10">                            tags_str, <span class="st" style="color: #20794D;">'</span><span class="sc" style="color: #5E5E5E;">\n</span><span class="st" style="color: #20794D;">'</span>,</span>
-<span id="cb18-11">                            <span class="st" style="color: #20794D;">'---'</span>, </span>
-<span id="cb18-12">                            body)) <span class="sc" style="color: #5E5E5E;">%&gt;%</span></span>
-<span id="cb18-13">    <span class="co" style="color: #5E5E5E;"># pull(combined) %&gt;% {cat(.[[1]])}</span></span>
-<span id="cb18-14">    <span class="fu" style="color: #4758AB;">rowwise</span>() <span class="co" style="color: #5E5E5E;">#%&gt;%</span></span></code></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Joining, by = c("path", "post_id")</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 53 × 8
-# Rowwise: 
-   path                         post_id null  header body  tags  tags_…¹ combi…²
-   &lt;chr&gt;                          &lt;int&gt; &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt; &lt;lis&gt; &lt;chr&gt;   &lt;chr&gt;  
- 1 /Users/danhicks/Google Driv…       1 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
- 2 /Users/danhicks/Google Driv…       2 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
- 3 /Users/danhicks/Google Driv…       4 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
- 4 /Users/danhicks/Google Driv…       5 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
- 5 /Users/danhicks/Google Driv…       6 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
- 6 /Users/danhicks/Google Driv…       7 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
- 7 /Users/danhicks/Google Driv…       8 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
- 8 /Users/danhicks/Google Driv…       9 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
- 9 /Users/danhicks/Google Driv…      10 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
-10 /Users/danhicks/Google Driv…      11 ""    "\nla… "\n\… &lt;chr&gt; tags: … "---\n…
-# … with 43 more rows, and abbreviated variable names ¹​tags_str, ²​combined</code></pre>
-</div>
-</div>
-<pre><code>    #mutate(written = map2(combined, path, write_lines))</code></pre>
-
-
-
- ]]></description>
-  <category>data</category>
-  <category>developing</category>
-  <category>idf</category>
-  <category>local</category>
-  <category>market</category>
-  <category>meat</category>
-  <category>rights</category>
-  <category>students</category>
-  <category>tf</category>
-  <category>vegetarianism</category>
-  <guid>https://dhicks.github.io/posts/2018-10-25-autotag.html</guid>
-  <pubDate>Thu, 25 Oct 2018 07:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
