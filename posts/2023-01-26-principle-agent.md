@@ -1,7 +1,7 @@
 ---
 title: "The presence-absence model and epistemic representation"
 author: Dan Hicks
-date: 2023-01-16
+date: 2023-01-26
 bibliography: "2023-01-26-principle-agent.yaml"
 ---
 

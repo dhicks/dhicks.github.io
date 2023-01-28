@@ -10,85 +10,7 @@
 <atom:link href="https://dhicks.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Website description</description>
 <generator>quarto-1.2.280</generator>
-<lastBuildDate>Tue, 24 Jan 2023 08:00:00 GMT</lastBuildDate>
-<item>
-  <title>Technocratic legitimacy and the value-free ideal</title>
-  <dc:creator>Dan Hicks</dc:creator>
-  <link>https://dhicks.github.io/posts/2023-01-25-legitimacy-vfi.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p><span class="citation" data-cites="HolmanNewDemarcationProblem2022">Holman and Wilholt (2022)</span> argue that, as philosophers of science work to dismantle the value-free ideal, it is important to understand the function that the ideal played. Quoting Chesterton, they write</p>
-<blockquote class="blockquote">
-<p>only when one understands how an institution arose and what purposes it was intended to serve, is one in a position to say “they were bad purposes, or they have since become bad purposes, or that they are purposes which are no longer being served.” <span class="citation" data-cites="HolmanNewDemarcationProblem2022">(Holman and Wilholt 2022, 214)</span></p>
-</blockquote>
-<p>Consequently,</p>
-<blockquote class="blockquote">
-<p>if one rejects a purpose which motivated the adoption of the value-free ideal, then one must have a convincing answer as to why it should never have been endorsed, why it should no longer be endorsed, or at least show that the value-free ideal fails to serve the intended purpose. <span class="citation" data-cites="HolmanNewDemarcationProblem2022">(Holman and Wilholt 2022, 215)</span></p>
-</blockquote>
-<p>Holman and Wilholt identify three functions for the value-free ideal:</p>
-<dl>
-<dt>veracity</dt>
-<dd>
-science pursues truth and avoids error
-</dd>
-<dt>universality</dt>
-<dd>
-scientific results are useable by anyone, whether they share scientists’ personal value-judgments or not
-</dd>
-<dt>authority</dt>
-<dd>
-science provides “a trustworthy body of knowledge that has broadly recognized social legitimacy” <span class="citation" data-cites="HolmanNewDemarcationProblem2022">(Holman and Wilholt 2022, 214)</span>
-</dd>
-</dl>
-<p>In the brief discussion that follows, Holman and Wilholt tie this sense of authority to questions of political legitimacy. In this post, I want to argue that the value-free ideal plays an important role in legitimizing the progressive, technocratic state, as illustrated in two historic moments where the value-free ideal was articulated.</p>
-<p>The first moment was the Progressive Era of the late nineteenth and early twentieth centuries. The Progressive movement proposed that management of social-biological systems by credentialed, scientific experts would ensure prosperity and social peace, in areas including public health <span class="citation" data-cites="KriegerEpidemiologyPeopleHealth2011">(Krieger 2011 ch.&nbsp;4)</span>, the economy <span class="citation" data-cites="StaplefordCostLivingAmerica2009">(Stapleford 2009)</span>, and natural resources (Gifford Pinchot), but also the human gene pool (eugenics). Versions of the value-free ideal were developed around the same time, most famously by Weber.</p>
-<p>The second moment was the emergence of the risk management state in the 1970s-1980s <span class="citation" data-cites="BeckRiskSocietyNew1992">(Beck 1992)</span>. Just as the Progressive movement was a technocratic response to the social and public health crises of the late nineteenth century, the risk management state was a technocratic response to the environmental and consumer safety crises of the 1950s-1960s. The primary methodology of the risk management state, risk assessment, institutionalized the value-free ideal, with (in principle) a strict demarcation between risk analysis — the scientific task of quantitatively determining the probability and magnitude of hazard — and risk management — the political task of designing and implementing policies to prevent and mitigate risk <span class="citation" data-cites="FernandezPintoLegitimizingValuesRegulatory2019">(Fernández Pinto and Hicks 2019)</span>.</p>
-<p>In both moments, the value-free ideal enabled supporters of the technocratic state to de-politicize technocratic management, by distinguishing the realm of rational, expert decisionmaking — as “science” — from the realm of emotional, public “politics.” To reconcile technocracy with democracy — at least in the US — expert managers were placed under the authority of political appointees, who in turn were appointed and approved by elected officials. In other words, two forms of legitimacy were used to support the technocratic state. Democratic legitimacy was nominally top-down, from the voters electing politicians, who then delegate authority to experts in the executive branch agencies. While technocratic legitimacy was nominally bottom-up, depending on credentials and demonstrated competence as experts rose through the meritocratic hierarchy of those agencies. These two systems of legitimacy are not obviously compatible; consider today’s debates between epistocrats and democrats. The value-free ideal offers a solution, creating non-overlapping magisteria <span class="citation" data-cites="GouldRocksAgesScience2011">(Gould 2011)</span>: the systems do not come into conflict because potentially controversial values do not play a role in the experts’ work.</p>
-<p>Unfortunately, in this role the value-free ideal is self-defeating <span class="citation" data-cites="FernandezPintoLegitimizingValuesRegulatory2019">(Fernández Pinto and Hicks 2019)</span>. The problem is not so much that properly assessing the downstream risk of error requires appeal to potentially controversial political and ethical values, as per the argument from inductive risk <span class="citation" data-cites="ElliottExploringInductiveRisk2017">(Elliott and Richards 2017)</span>. In the context of risk assessment, both scientists and policymakers have maintained the façade of value-freedom by, basically, pretending that all consideration of downstream consequences can be isolated on the political, risk management side of things.</p>
-<p>Instead, the value-free ideal is self-defeating because of the <em>fact of reasonable scientific pluralism</em>. In almost any case, it’s possible to construct a reasonable, technically sophisticated argument in favor of a different methodology, more and better data, an overlooked possibility, or an alternative explanation. Given resources and connections, parties with an interest in a certain policy outcome can pretty much always find at least one credentialed expert who will not only make an apparently reasonable, highly technical case for a preferred interpretation of “the science,” but also will castigate opposing experts as “biased” or following “an agenda.” The STS scholar Dan Sarewitz called this scenario “an excess of objectivity” <span class="citation" data-cites="SarewitzScienceEnvironmentalPolicy2000 SarewitzHowScienceMakes2004">(Sarewitz 2000, 2004)</span> and I’ve referred to it as “Scientific Controversies as Proxy Politics” <span class="citation" data-cites="HicksScientificControversiesProxy2017">(Hicks 2017)</span>.</p>
-<p>Given this analysis, what should a replacement for the value-free ideal attempt to do? One option would be something like “provide an alternative basis for the legitimacy of the technocratic state, more or less as it exists now.” I think many philosophers of science would support this sort of project. But to me this is not an attractive project — and I say this as someone who would probably be working for the US Environmental Protection Agency today if Clinton had won the 2016 election. Instead, I suggest that <strong>a replacement for the value-free ideal should help us democratize the technocratic state</strong>.</p>
-
-
-
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-BeckRiskSocietyNew1992" class="csl-entry">
-Beck, Ulrich. 1992. <em>Risk society: towards a new modernity</em>. Theory, culture &amp; society. London ; Newbury Park, Calif: Sage Publications.
-</div>
-<div id="ref-ElliottExploringInductiveRisk2017" class="csl-entry">
-Elliott, Kevin C., and Ted Richards, eds. 2017. <em>Exploring Inductive Risk: Case Studies of Values in Science</em>. New York: Oxford University Press.
-</div>
-<div id="ref-FernandezPintoLegitimizingValuesRegulatory2019" class="csl-entry">
-Fernández Pinto, Manuela, and Daniel J. Hicks. 2019. <span>“Legitimizing Values in Regulatory Science.”</span> <em>Environmental Health Perspectives</em> 127 (3): 035001. <a href="https://doi.org/10.1289/EHP3317">https://doi.org/10.1289/EHP3317</a>.
-</div>
-<div id="ref-GouldRocksAgesScience2011" class="csl-entry">
-Gould, Stephen Jay. 2011. <em>Rocks of Ages: Science and Religion in the Fullness of Life</em>. Random House Publishing Group.
-</div>
-<div id="ref-HicksScientificControversiesProxy2017" class="csl-entry">
-Hicks, Daniel J. 2017. <span>“Scientific Controversies as Proxy Politics.”</span> <em>Issues in Science and Technology</em>, January 2017. <a href="https://www.jstor.org/stable/24891967">https://www.jstor.org/stable/24891967</a>.
-</div>
-<div id="ref-HolmanNewDemarcationProblem2022" class="csl-entry">
-Holman, Bennett, and Torsten Wilholt. 2022. <span>“The New Demarcation Problem.”</span> <em>Studies in History and Philosophy of Science</em> 91 (February): 211–20. <a href="https://doi.org/10.1016/j.shpsa.2021.11.011">https://doi.org/10.1016/j.shpsa.2021.11.011</a>.
-</div>
-<div id="ref-KriegerEpidemiologyPeopleHealth2011" class="csl-entry">
-Krieger, Nancy. 2011. <em>Epidemiology and the People’s Health: Theory and Context</em>. New York: Oxford University Press.
-</div>
-<div id="ref-SarewitzScienceEnvironmentalPolicy2000" class="csl-entry">
-Sarewitz, Daniel. 2000. <span>“Science and Environmental Policy: An Excess of Objectivity.”</span> In <em>Earth Matters:&nbsp; The Earth Sciences, Philosophy, and the Claims of Community</em>, edited by Robert Frodeman, 79–98. Prentice Hall. <a href="http://www.cspo.org/_old_ourlibrary/ScienceandEnvironmentalPolicy.htm">http://www.cspo.org/_old_ourlibrary/ScienceandEnvironmentalPolicy.htm</a>.
-</div>
-<div id="ref-SarewitzHowScienceMakes2004" class="csl-entry">
-———. 2004. <span>“How Science Makes Environmental Controversies Worse.”</span> <em>Environmental Science and Policy</em> 7 (5): 385–403. <a href="https://doi.org/10.1016/j.envsci.2004.06.001">https://doi.org/10.1016/j.envsci.2004.06.001</a>.
-</div>
-<div id="ref-StaplefordCostLivingAmerica2009" class="csl-entry">
-Stapleford, Thomas A. 2009. <em>The Cost of Living in America: A Political History of Economic Statistics, 1880-2000</em>. Cambridge University Press.
-</div>
-</div></section></div> ]]></description>
-  <guid>https://dhicks.github.io/posts/2023-01-25-legitimacy-vfi.html</guid>
-  <pubDate>Tue, 24 Jan 2023 08:00:00 GMT</pubDate>
-</item>
+<lastBuildDate>Thu, 26 Jan 2023 08:00:00 GMT</lastBuildDate>
 <item>
   <title>The presence-absence model and epistemic representation</title>
   <dc:creator>Dan Hicks</dc:creator>
@@ -198,7 +120,85 @@ Wilholt, Torsten. 2022. <span>“Epistemic Interests and the Objectivity of Inqu
 </ol>
 </section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2023-01-26-principle-agent.html</guid>
-  <pubDate>Mon, 16 Jan 2023 08:00:00 GMT</pubDate>
+  <pubDate>Thu, 26 Jan 2023 08:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Technocratic legitimacy and the value-free ideal</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2023-01-25-legitimacy-vfi.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><span class="citation" data-cites="HolmanNewDemarcationProblem2022">Holman and Wilholt (2022)</span> argue that, as philosophers of science work to dismantle the value-free ideal, it is important to understand the function that the ideal played. Quoting Chesterton, they write</p>
+<blockquote class="blockquote">
+<p>only when one understands how an institution arose and what purposes it was intended to serve, is one in a position to say “they were bad purposes, or they have since become bad purposes, or that they are purposes which are no longer being served.” <span class="citation" data-cites="HolmanNewDemarcationProblem2022">(Holman and Wilholt 2022, 214)</span></p>
+</blockquote>
+<p>Consequently,</p>
+<blockquote class="blockquote">
+<p>if one rejects a purpose which motivated the adoption of the value-free ideal, then one must have a convincing answer as to why it should never have been endorsed, why it should no longer be endorsed, or at least show that the value-free ideal fails to serve the intended purpose. <span class="citation" data-cites="HolmanNewDemarcationProblem2022">(Holman and Wilholt 2022, 215)</span></p>
+</blockquote>
+<p>Holman and Wilholt identify three functions for the value-free ideal:</p>
+<dl>
+<dt>veracity</dt>
+<dd>
+science pursues truth and avoids error
+</dd>
+<dt>universality</dt>
+<dd>
+scientific results are useable by anyone, whether they share scientists’ personal value-judgments or not
+</dd>
+<dt>authority</dt>
+<dd>
+science provides “a trustworthy body of knowledge that has broadly recognized social legitimacy” <span class="citation" data-cites="HolmanNewDemarcationProblem2022">(Holman and Wilholt 2022, 214)</span>
+</dd>
+</dl>
+<p>In the brief discussion that follows, Holman and Wilholt tie this sense of authority to questions of political legitimacy. In this post, I want to argue that the value-free ideal plays an important role in legitimizing the progressive, technocratic state, as illustrated in two historic moments where the value-free ideal was articulated.</p>
+<p>The first moment was the Progressive Era of the late nineteenth and early twentieth centuries. The Progressive movement proposed that management of social-biological systems by credentialed, scientific experts would ensure prosperity and social peace, in areas including public health <span class="citation" data-cites="KriegerEpidemiologyPeopleHealth2011">(Krieger 2011 ch.&nbsp;4)</span>, the economy <span class="citation" data-cites="StaplefordCostLivingAmerica2009">(Stapleford 2009)</span>, and natural resources (Gifford Pinchot), but also the human gene pool (eugenics). Versions of the value-free ideal were developed around the same time, most famously by Weber.</p>
+<p>The second moment was the emergence of the risk management state in the 1970s-1980s <span class="citation" data-cites="BeckRiskSocietyNew1992">(Beck 1992)</span>. Just as the Progressive movement was a technocratic response to the social and public health crises of the late nineteenth century, the risk management state was a technocratic response to the environmental and consumer safety crises of the 1950s-1960s. The primary methodology of the risk management state, risk assessment, institutionalized the value-free ideal, with (in principle) a strict demarcation between risk analysis — the scientific task of quantitatively determining the probability and magnitude of hazard — and risk management — the political task of designing and implementing policies to prevent and mitigate risk <span class="citation" data-cites="FernandezPintoLegitimizingValuesRegulatory2019">(Fernández Pinto and Hicks 2019)</span>.</p>
+<p>In both moments, the value-free ideal enabled supporters of the technocratic state to de-politicize technocratic management, by distinguishing the realm of rational, expert decisionmaking — as “science” — from the realm of emotional, public “politics.” To reconcile technocracy with democracy — at least in the US — expert managers were placed under the authority of political appointees, who in turn were appointed and approved by elected officials. In other words, two forms of legitimacy were used to support the technocratic state. Democratic legitimacy was nominally top-down, from the voters electing politicians, who then delegate authority to experts in the executive branch agencies. While technocratic legitimacy was nominally bottom-up, depending on credentials and demonstrated competence as experts rose through the meritocratic hierarchy of those agencies. These two systems of legitimacy are not obviously compatible; consider today’s debates between epistocrats and democrats. The value-free ideal offers a solution, creating non-overlapping magisteria <span class="citation" data-cites="GouldRocksAgesScience2011">(Gould 2011)</span>: the systems do not come into conflict because potentially controversial values do not play a role in the experts’ work.</p>
+<p>Unfortunately, in this role the value-free ideal is self-defeating <span class="citation" data-cites="FernandezPintoLegitimizingValuesRegulatory2019">(Fernández Pinto and Hicks 2019)</span>. The problem is not so much that properly assessing the downstream risk of error requires appeal to potentially controversial political and ethical values, as per the argument from inductive risk <span class="citation" data-cites="ElliottExploringInductiveRisk2017">(Elliott and Richards 2017)</span>. In the context of risk assessment, both scientists and policymakers have maintained the façade of value-freedom by, basically, pretending that all consideration of downstream consequences can be isolated on the political, risk management side of things.</p>
+<p>Instead, the value-free ideal is self-defeating because of the <em>fact of reasonable scientific pluralism</em>. In almost any case, it’s possible to construct a reasonable, technically sophisticated argument in favor of a different methodology, more and better data, an overlooked possibility, or an alternative explanation. Given resources and connections, parties with an interest in a certain policy outcome can pretty much always find at least one credentialed expert who will not only make an apparently reasonable, highly technical case for a preferred interpretation of “the science,” but also will castigate opposing experts as “biased” or following “an agenda.” The STS scholar Dan Sarewitz called this scenario “an excess of objectivity” <span class="citation" data-cites="SarewitzScienceEnvironmentalPolicy2000 SarewitzHowScienceMakes2004">(Sarewitz 2000, 2004)</span> and I’ve referred to it as “Scientific Controversies as Proxy Politics” <span class="citation" data-cites="HicksScientificControversiesProxy2017">(Hicks 2017)</span>.</p>
+<p>Given this analysis, what should a replacement for the value-free ideal attempt to do? One option would be something like “provide an alternative basis for the legitimacy of the technocratic state, more or less as it exists now.” I think many philosophers of science would support this sort of project. But to me this is not an attractive project — and I say this as someone who would probably be working for the US Environmental Protection Agency today if Clinton had won the 2016 election. Instead, I suggest that <strong>a replacement for the value-free ideal should help us democratize the technocratic state</strong>.</p>
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-BeckRiskSocietyNew1992" class="csl-entry">
+Beck, Ulrich. 1992. <em>Risk society: towards a new modernity</em>. Theory, culture &amp; society. London ; Newbury Park, Calif: Sage Publications.
+</div>
+<div id="ref-ElliottExploringInductiveRisk2017" class="csl-entry">
+Elliott, Kevin C., and Ted Richards, eds. 2017. <em>Exploring Inductive Risk: Case Studies of Values in Science</em>. New York: Oxford University Press.
+</div>
+<div id="ref-FernandezPintoLegitimizingValuesRegulatory2019" class="csl-entry">
+Fernández Pinto, Manuela, and Daniel J. Hicks. 2019. <span>“Legitimizing Values in Regulatory Science.”</span> <em>Environmental Health Perspectives</em> 127 (3): 035001. <a href="https://doi.org/10.1289/EHP3317">https://doi.org/10.1289/EHP3317</a>.
+</div>
+<div id="ref-GouldRocksAgesScience2011" class="csl-entry">
+Gould, Stephen Jay. 2011. <em>Rocks of Ages: Science and Religion in the Fullness of Life</em>. Random House Publishing Group.
+</div>
+<div id="ref-HicksScientificControversiesProxy2017" class="csl-entry">
+Hicks, Daniel J. 2017. <span>“Scientific Controversies as Proxy Politics.”</span> <em>Issues in Science and Technology</em>, January 2017. <a href="https://www.jstor.org/stable/24891967">https://www.jstor.org/stable/24891967</a>.
+</div>
+<div id="ref-HolmanNewDemarcationProblem2022" class="csl-entry">
+Holman, Bennett, and Torsten Wilholt. 2022. <span>“The New Demarcation Problem.”</span> <em>Studies in History and Philosophy of Science</em> 91 (February): 211–20. <a href="https://doi.org/10.1016/j.shpsa.2021.11.011">https://doi.org/10.1016/j.shpsa.2021.11.011</a>.
+</div>
+<div id="ref-KriegerEpidemiologyPeopleHealth2011" class="csl-entry">
+Krieger, Nancy. 2011. <em>Epidemiology and the People’s Health: Theory and Context</em>. New York: Oxford University Press.
+</div>
+<div id="ref-SarewitzScienceEnvironmentalPolicy2000" class="csl-entry">
+Sarewitz, Daniel. 2000. <span>“Science and Environmental Policy: An Excess of Objectivity.”</span> In <em>Earth Matters:&nbsp; The Earth Sciences, Philosophy, and the Claims of Community</em>, edited by Robert Frodeman, 79–98. Prentice Hall. <a href="http://www.cspo.org/_old_ourlibrary/ScienceandEnvironmentalPolicy.htm">http://www.cspo.org/_old_ourlibrary/ScienceandEnvironmentalPolicy.htm</a>.
+</div>
+<div id="ref-SarewitzHowScienceMakes2004" class="csl-entry">
+———. 2004. <span>“How Science Makes Environmental Controversies Worse.”</span> <em>Environmental Science and Policy</em> 7 (5): 385–403. <a href="https://doi.org/10.1016/j.envsci.2004.06.001">https://doi.org/10.1016/j.envsci.2004.06.001</a>.
+</div>
+<div id="ref-StaplefordCostLivingAmerica2009" class="csl-entry">
+Stapleford, Thomas A. 2009. <em>The Cost of Living in America: A Political History of Economic Statistics, 1880-2000</em>. Cambridge University Press.
+</div>
+</div></section></div> ]]></description>
+  <guid>https://dhicks.github.io/posts/2023-01-25-legitimacy-vfi.html</guid>
+  <pubDate>Tue, 24 Jan 2023 08:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Leftist dynamics for city simulation games</title>
