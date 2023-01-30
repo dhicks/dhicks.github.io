@@ -1,0 +1,245 @@
+---
+references:
+- id: FernandezPintoLegitimizingValuesRegulatory2019
+  abstract: >-
+    Background:Over the last several decades, scientists and social groups have
+    frequently raised concerns about politicization or political interference in
+    regulatory science. Public actors (environmentalists and industry advocates,
+    politically aligned public figures, scientists and political commentators,
+    in the United States as well as in other countries) across major
+    political-regulatory controversies have expressed concerns about the
+    inappropriate politicization of science. Although we share concerns about
+    the politicization of science, they are frequently framed in terms of an
+    ideal of value-free science, according to which political and economic
+    values have no legitimate role to play in science. For several decades, work
+    in philosophy of science has identified serious conceptual and practical
+    problems with the value-free ideal.Objectives:Our objectives are to discuss
+    the literature regarding the conceptual and practical problems with the
+    value-free ideal and offer a constructive alternative to the value-free
+    ideal.Discussion:We first discuss the prevalence of the value-free ideal in
+    regulatory science, then argue that this ideal is self-undermining and has
+    been exploited to delay protective regulation. To offer a constructive
+    alternative, we analyze the relationship between the goals of regulatory
+    science and the standards of good scientific activity. This analysis raises
+    questions about the relationship between methodological and practical
+    standards for good science, tensions among various important social goods,
+    and tensions among various social interests. We argue that the aims of
+    regulatory science help to legitimize value-laden choices regarding research
+    methods and study designs. Finally, we discuss how public deliberation,
+    adaptive management, and community-based participatory research can be used
+    to improve the legitimacy of scientists as representatives of the general
+    public on issues of environmental knowledge.Conclusions:Reflecting on the
+    aims of regulatory science—such as protecting human health and the
+    environment, informing democratic deliberation, and promoting the capacities
+    of environmental justice and Indigenous communities—can clarify when values
+    have legitimate roles in regulatory science. 
+    https://doi.org/10.1289/EHP3317
+  accessed:
+    - year: 2019
+      month: 3
+      day: 15
+  author:
+    - family: Fernández Pinto
+      given: Manuela
+    - family: Hicks
+      given: Daniel J.
+  citation-key: FernandezPintoLegitimizingValuesRegulatory2019
+  container-title: Environmental Health Perspectives
+  container-title-short: Environmental Health Perspectives
+  DOI: 10.1289/EHP3317
+  issue: '3'
+  issued:
+    - year: 2019
+      month: 3
+      day: 14
+  page: '035001'
+  source: ehp.niehs.nih.gov (Atypon)
+  title: Legitimizing Values in Regulatory Science
+  type: article-journal
+  URL: https://ehp.niehs.nih.gov/doi/full/10.1289/EHP3317
+  volume: '127'
+
+- id: HicksInductiveRiskScience2020
+  abstract: >-
+    The argument from inductive risk (AIR) is perhaps the most common argument
+    against the value-free ideal of science. Brian MacGillivray rejects the AIR
+    (at least as it would apply to risk assessment) and embraces the value-free
+    ideal. We clarify the issues at stake and argue that MacGillivray's
+    criticisms, although effective against some formulations of the AIR, fail to
+    overcome the essential concerns that motivate the AIR. There are inevitable
+    trade-offs in scientific enquiry that cannot be resolved with any formal
+    methods or general rules. Choices must be made, and values will be involved.
+    It is best to recognize this explicitly. Even so, there is more work to be
+    done developing methods and institutional support for these choices.
+  accessed:
+    - year: 2019
+      month: 12
+      day: 24
+  author:
+    - family: Hicks
+      given: Daniel J.
+    - family: Magnus
+      given: P. D.
+    - family: Wright
+      given: Jessey
+  citation-key: HicksInductiveRiskScience2020
+  container-title: Risk Analysis
+  container-title-short: Risk Analysis
+  DOI: 10.1111/risa.13434
+  ISSN: 0272-4332, 1539-6924
+  issue: '4'
+  issued:
+    - year: 2020
+      month: 4
+  language: en
+  license: © 2019 Society for Risk Analysis
+  page: 667-673
+  source: Wiley Online Library
+  title: 'Inductive Risk, Science, and Values: A Reply to MacGillivray'
+  title-short: Inductive Risk, Science, and Values
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/abs/10.1111/risa.13434
+  volume: '40'
+
+- id: HicksOpenScienceReplication2023
+  abstract: >-
+    Concerns about a crisis of mass irreplicability across scientific fields
+    (“the replication crisis”) have stimulated a movement for open science,
+    encouraging or even requiring researchers to publish their raw data and
+    analysis code. Recently, a rule at the US Environmental Protection Agency
+    (US EPA) would have imposed a strong open data requirement. The rule
+    prompted significant public discussion about whether open science practices
+    are appropriate for fields of environmental public health. The aims of this
+    paper are to assess (1) whether the replication crisis extends to fields of
+    environmental public health; and (2) in general whether open science
+    requirements can address the replication crisis. There is little empirical
+    evidence for or against mass irreplicability in environmental public health
+    specifically. Without such evidence, strong claims about whether the
+    replication crisis extends to environmental public health — or not — seem
+    premature. By distinguishing three concepts — reproducibility,
+    replicability, and robustness — it is clear that open data initiatives can
+    promote reproducibility and robustness but do little to promote
+    replicability. I conclude by reviewing some of the other benefits of open
+    science, and offer some suggestions for funding streams to mitigate the
+    costs of adoption of open science practices in environmental public health.
+  accessed:
+    - year: 2021
+      month: 7
+      day: 31
+  author:
+    - family: Hicks
+      given: Daniel J.
+  citation-key: HicksOpenScienceReplication2023
+  container-title: Accountability in Research
+  DOI: 10.1080/08989621.2021.1962713
+  ISSN: 0898-9621
+  issue: '1'
+  issued:
+    - year: 2023
+  license: All rights reserved
+  note: '_eprint: https://doi.org/10.1080/08989621.2021.1962713'
+  page: 34-62
+  PMID: '34330172'
+  publisher: Taylor & Francis
+  source: Taylor and Francis+NEJM
+  title: Open science, the replication crisis, and environmental public health
+  type: article-journal
+  URL: https://doi.org/10.1080/08989621.2021.1962713
+  volume: '30'
+
+- id: HicksWhenVirtuesAre2022
+  abstract: >-
+    <p>Since at least the mid-2000s, political commentators, environmental
+    advocates, and scientists have raised concerns about an “anti-science”
+    approach to environmental policymaking in conservative governments in the US
+    and Canada. This paper explores and resolves a paradox surrounding at least
+    some uses of the “anti-science” epithet. I examine two cases of such
+    “anti-science” environmental policy, both of which involve appeals to
+    epistemic values that are widely endorsed by both scientists and
+    philosophers of science. It seems paradoxical to call an appeal to epistemic
+    values “anti-science.” I develop an analysis that, I argue, can resolve this
+    paradox. This analysis is a version of the “aims approach” to science and
+    values, drawing on ideas from axiology and virtue ethics. I characterize the
+    paradox in terms of conflicts or tensions between epistemic and pragmatic
+    aims, and argue that there is a key asymmetry between them: epistemic aims
+    are valuable, in part, because they are useful for pursuing pragmatic aims.
+    Thus, when epistemic and pragmatic aims conflict, epistemic aims need to be
+    reconceptualized in order to reconcile them to pragmatic aims. When this is
+    done, in the “anti-science” cases, the epistemic values are scientific vices
+    rather than virtues. Thus the “anti-science” epithet is apt.</p>
+  accessed:
+    - year: 2022
+      month: 4
+      day: 28
+  author:
+    - family: Hicks
+      given: Daniel J.
+  citation-key: HicksWhenVirtuesAre2022
+  container-title: Philosophy, Theory, and Practice in Biology
+  DOI: 10.3998/.2629
+  ISSN: 2475-3025
+  issue: '0'
+  issued:
+    - year: 2022
+      month: 4
+      day: 28
+  language: eng
+  license: All rights reserved
+  number: '0'
+  publisher: Michigan Publishing
+  source: journals.publishing.umich.edu
+  title: >-
+    When Virtues are Vices: 'Anti-Science' Epistemic Values in Environmental
+    Politics
+  title-short: When Virtues are Vices
+  type: article-journal
+  URL: https://journals.publishing.umich.edu/ptpbio/article/id/2629/
+  volume: '14'
+
+- id: LuskDoesDemocracyRequire2021
+  abstract: >-
+    Philosophers now commonly reject the value free ideal for science by arguing
+    that non-epistemic values, including personal or social values, are
+    permissible within the core of scientific research. However, little
+    attention has been paid to the normative political consequences of this
+    position. This paper explores these consequences and shows how political
+    theory is fruitful for proceeding in a world without value-neutral science.
+    I draw attention to an oft-overlooked argument employed by proponents of the
+    value free ideal I dub the “political legitimacy argument.” This argument
+    claims that the value-free ideal follows directly from the foundational
+    principles of liberal democracy. If so, then the use of value-laden
+    scientific information within democratic decision making would be
+    illegitimate on purely political grounds. Despite highlighting this
+    unaddressed and important argument, I show how it can be rejected. By
+    appealing to deliberative democratic theory, I demonstrate scientific
+    information can be value-laden and politically legitimate. The deliberative
+    democratic account I develop is well suited for capturing the intuitions of
+    many opponents of the value free ideal and points to a new set of questions
+    for those interested in values in science.
+  accessed:
+    - year: 2021
+      month: 10
+      day: 5
+  author:
+    - family: Lusk
+      given: Greg
+  citation-key: LuskDoesDemocracyRequire2021
+  container-title: Studies in History and Philosophy of Science Part A
+  container-title-short: Studies in History and Philosophy of Science Part A
+  DOI: 10.1016/j.shpsa.2021.08.009
+  ISSN: 0039-3681
+  issued:
+    - year: 2021
+      month: 12
+      day: 1
+  language: en
+  page: 102-110
+  source: ScienceDirect
+  title: >-
+    Does democracy require value-neutral science? Analyzing the legitimacy of
+    scientific information in the political sphere
+  title-short: Does democracy require value-neutral science?
+  type: article-journal
+  URL: https://www.sciencedirect.com/science/article/pii/S0039368121001254
+  volume: '90'
+...

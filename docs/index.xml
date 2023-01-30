@@ -10,7 +10,63 @@
 <atom:link href="https://dhicks.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Website description</description>
 <generator>quarto-1.2.280</generator>
-<lastBuildDate>Thu, 26 Jan 2023 08:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 30 Jan 2023 08:00:00 GMT</lastBuildDate>
+<item>
+  <title>Undue influence of epistemic values</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2023-01-30-democracy-defense.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><span class="citation" data-cites="LuskDoesDemocracyRequire2021">Lusk (2021)</span> examines <em>the political legitimacy argument for the value free ideal</em>; elsewhere collaborators and I have called this the “democracy defense” <span class="citation" data-cites="FernandezPintoLegitimizingValuesRegulatory2019 HicksInductiveRiskScience2020">(Fernández Pinto and Hicks 2019; Hicks, Magnus, and Wright 2020)</span>. Here’s Lusk’s reconstruction of the argument <span class="citation" data-cites="LuskDoesDemocracyRequire2021">(Lusk 2021, 104; edited down a bit further by me)</span>:</p>
+<ol type="1">
+<li><strong>Legitimacy Premise</strong>: No set of non-epistemic values should have an undue influence in coercive democratic political decisions.</li>
+<li><strong>Infiltration Premise</strong>: If non-epistemic values play a role in the empirical justification of political decisions, then those values have an undue influence.</li>
+<li>Therefore, non-epistemic values should not play a role in empirical justification of political decisions.</li>
+</ol>
+<p>Lusk focuses on the Infiltration Premise, arguing that institutions for deliberative democracy can “generate [democratically] acceptable sets of values for use in scientific methodology” <span class="citation" data-cites="LuskDoesDemocracyRequire2021">(Lusk 2021, 215)</span>; influences of these values would therefore not be undue, and so the Infiltration Premise would be false.</p>
+<p>I was actually more interested in the Legitimacy Premise. Lusk gives it a brief defense:</p>
+<blockquote class="blockquote">
+<p>The legitimacy premise follows from liberal democratic principles. One of the core ideals of liberal democracy is that the democratic state should be <em>neutral</em> with regard to the different values and desires held by citizens; the state should not play favorites. <span class="citation" data-cites="LuskDoesDemocracyRequire2021">(Lusk 2021, 214, my emphasis)</span></p>
+</blockquote>
+<p>The Legitimacy Premise implicates — though does not logically entail — a difference in status between epistemic and non-epistemic values<sup>1</sup>. Specifically, the Legitimacy Premise picks out non-epistemic values as specifically problematic or worrisome if they play a role in political decisionmaking; epistemic values are not regarded as problematic or worrisome.</p>
+<p>But epistemic values can have influences that undermine (descriptive) legitimacy. Consider <em>Strengthening Transparency in Regulatory Science</em>, a rule proposed and (very briefly) adopted by the US EPA under the Trump administration <span class="citation" data-cites="HicksWhenVirtuesAre2022 HicksOpenScienceReplication2023">(Hicks 2022, 2023)</span>. The rule restricted the science that EPA could use to justify regulation, effectively imposing a strong open data requirement on environmental public health research. The rule was (publicly) justified by an appeal to epistemic values, namely, that open science practices will make the underlying science more reliable and reduce the rate/influence of false positive results. The rule received on the order of a million public comments, the vast majority of which were sharply negative. One of the most common criticisms was that the rule would undermine and delay regulation necessary to protect human health and the environment.</p>
+<p>In other words, <em>Strengthening Transparency</em> was widely regarded as illegitimate because it prioritized an epistemic value (avoiding false positives) over a non-epistemic value (protecting human health and the environment).</p>
+<p>I suggest that the Legitimacy Premise relies on a pair of assumptions, namely, that epistemic values are politically neutral while non-epistemic values are politically controversial. Consider the block quotation from Lusk above. A principle of state neutrality only justifies excluding non-epistemic values insofar as they are controversial (ie, not neutral), and would also apply to controversial epistemic values. In the case of <em>Strengthening Transparency</em>, the non-epistemic value of protecting human health and the environment was, mostly, politically neutral; it was the epistemic value of eliminating false positives that was controversial.</p>
+<p>The ideal of state neutrality is an ideal of depoliticization: that we can somehow get beyond the implacable chaos of power hierarchies, deep disagreement, sophistry, and naked (or artfully clothed) self-interest. The attraction of technocracy is that it purports to move us closer to this ideal, at least in the realm of the administrative state.</p>
+<p>So it seems to me there is a deep irony within the “democracy defense” of the value-free ideal. Proponents of this argument present themselves as defending democracy from technocrats run amock. But the conceptual framework and institutional forms assumed by the argument function to carve out a depoliticized, technocratic realm that is protected from democratic accountability.</p>
+
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-FernandezPintoLegitimizingValuesRegulatory2019" class="csl-entry">
+Fernández Pinto, Manuela, and Daniel J. Hicks. 2019. <span>“Legitimizing Values in Regulatory Science.”</span> <em>Environmental Health Perspectives</em> 127 (3): 035001. <a href="https://doi.org/10.1289/EHP3317">https://doi.org/10.1289/EHP3317</a>.
+</div>
+<div id="ref-HicksWhenVirtuesAre2022" class="csl-entry">
+Hicks, Daniel J. 2022. <span>“When Virtues are Vices: <span>‘Anti-Science’</span> Epistemic Values in Environmental Politics.”</span> <em>Philosophy, Theory, and Practice in Biology</em> 14 (0). <a href="https://doi.org/10.3998/.2629">https://doi.org/10.3998/.2629</a>.
+</div>
+<div id="ref-HicksOpenScienceReplication2023" class="csl-entry">
+———. 2023. <span>“Open Science, the Replication Crisis, and Environmental Public Health.”</span> <em>Accountability in Research</em> 30 (1): 34–62. <a href="https://doi.org/10.1080/08989621.2021.1962713">https://doi.org/10.1080/08989621.2021.1962713</a>.
+</div>
+<div id="ref-HicksInductiveRiskScience2020" class="csl-entry">
+Hicks, Daniel J., P. D. Magnus, and Jessey Wright. 2020. <span>“Inductive Risk, Science, and Values: A Reply to MacGillivray.”</span> <em>Risk Analysis</em> 40 (4): 667–73. <a href="https://doi.org/10.1111/risa.13434">https://doi.org/10.1111/risa.13434</a>.
+</div>
+<div id="ref-LuskDoesDemocracyRequire2021" class="csl-entry">
+Lusk, Greg. 2021. <span>“Does Democracy Require Value-Neutral Science? Analyzing the Legitimacy of Scientific Information in the Political Sphere.”</span> <em>Studies in History and Philosophy of Science Part A</em> 90 (December): 102–10. <a href="https://doi.org/10.1016/j.shpsa.2021.08.009">https://doi.org/10.1016/j.shpsa.2021.08.009</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Many authors in the SVP literature use “non-epistemic” values as synonymous with social, ethical, and political values. However, if epistemic values are defined as features of scientific practice or its products that promote the attainment of truth, then paradigm “non-epistemic” values can be truth-promoting.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <guid>https://dhicks.github.io/posts/2023-01-30-democracy-defense.html</guid>
+  <pubDate>Mon, 30 Jan 2023 08:00:00 GMT</pubDate>
+</item>
 <item>
   <title>The presence-absence model and epistemic representation</title>
   <dc:creator>Dan Hicks</dc:creator>
@@ -742,39 +798,6 @@ Stapleford, Thomas A. 2009. <em>The Cost of Living in America: A Political Histo
  ]]></description>
   <guid>https://dhicks.github.io/posts/2019-02-01-explainable-machine-learning.html</guid>
   <pubDate>Fri, 01 Feb 2019 08:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Slides: Why Baier? Feminism, Trust, and Power</title>
-  <dc:creator>Dan Hicks</dc:creator>
-  <link>https://dhicks.github.io/posts/2018-11-06-why-baier.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Here are the slides for my talk at the Philosophy of Science Association meeting this past weekend in Seattle: <a href="http://qrf.in/lainpn">Why Baier? Feminism, Trust, and Power</a></p>
-<iframe src="https://drive.google.com/file/d/1ZwEEO-6ZuKPRYexGC_yF0zf-uq_gLoD_/preview" width="640" height="480">
-</iframe>
-<p>Here’s the original abstract for this talk, written last fall.</p>
-<section id="why-baier-feminism-trust-and-political-critiques-of-science" class="level2">
-<h2 class="anchored" data-anchor-id="why-baier-feminism-trust-and-political-critiques-of-science">Why Baier? Feminism, Trust, and Political Critiques of Science</h2>
-<p>Feminist philosophers of science continue to draw on ideas about trust and trustworthiness developed by feminist ethicist Annette Baier more than thirty years ago (Baier 1986). Why does Baier remain popular among feminist philosophers? In this paper, I suggest that Baier’s account of trust supports a characteristic kind of feminist critique of science. This feature of Baier’s account means that it is also relevant, as a descriptive theory, to contemporary empirical work on conservative attacks on environmental science.</p>
-<p>Feminists have long recognized that science has the potential to be an invaluable tool for challenging sexism and dismantling patriarchal power structures. Thus many feminists are not interested in attacking science as such. However, feminists have also long recognized that science has often been used to defend sexism and prop up patriarchy (Harding 1991, Wylie and Nelson 2007). The feminist critique does not aim to destroy science, but instead to redirect it from oppressive to liberatory ends.</p>
-<p>Baier’s account of trustworthiness distinguishes “competence” from “good will,” and requires both for trustworthiness. This means that patriarchal science can still be conducted competently — it can still produce knowledge using reliable methods. But, by being used in sexist and patriarchal ways, patriarchal science can be understood as bearing ill will towards women. Patriarchal science is therefore untrustworthy, even when scientists are epistemically competent. By contrast, on other influential accounts, epistemic trustworthiness depends exclusively on epistemic competence. These accounts do not fit as well with the complex feminist stance towards science.</p>
-<p>Baier’s account also provides theoretical support for the “anti-reflexivity thesis,” developed by sociologist Aaron McCright and collaborators (McCright et al.&nbsp;2013). McCright has found that political conservatives tend to display low trust in “impact science” — “science that identifies environmental and public health impacts of economic production” — but also high trust in “production science” associated with technological development. That is, conservatives do not distrust or reject science as such; they are not “anti-science.” Instead, they are anti-environmental regulation. Indeed, the loudest critics of EPA and other regulatory agencies often promote the benefits of practical scientific research and technological development.</p>
-<p>Baier’s account allows us to recognize that conservative distrust of impact science is not necessarily based on ignorance or irrationality. Rather, conservatives might believe that impact scientists bear them (or entities with which they identify, such as the fossil fuels or chemical industry) ill will. This ill will would be grounds to find impact scientist untrustworthy, independent of whether impact scientists are epistemically competent.</p>
-<p>References</p>
-<p>Baier, Annette. 1986. “Trust and Antitrust.” Ethics 96 (2):231–60.</p>
-<p>Harding, Sandra G. 1991. Whose Science? Whose Knowledge?: Thinking from Women’s Lives. Ithaca, N.Y: Cornell University Press.</p>
-<p>McCright, Aaron M, et al.&nbsp;2013. “The Influence of Political Ideology on Trust in Science.” Environmental Research Letters 8 (4):044029.</p>
-<p>Wylie, Alison and Lynn Hankinson Nelson. 2007. “Coming to Terms with the Values of Science.” In Harold Kindcaid, John Dupré, and Alison Wylie, eds., Value-Fre Science? Oxford: Oxford University Press.</p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://dhicks.github.io/posts/2018-11-06-why-baier.html</guid>
-  <pubDate>Tue, 06 Nov 2018 08:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
