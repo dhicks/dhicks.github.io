@@ -10,7 +10,86 @@
 <atom:link href="https://dhicks.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Website description</description>
 <generator>quarto-1.2.280</generator>
-<lastBuildDate>Mon, 30 Jan 2023 08:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 08 Feb 2023 08:00:00 GMT</lastBuildDate>
+<item>
+  <title>Constructivist accounts of representation, in science and politics</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2023-02-08-demagoguery.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Political theorists developed a <em>constructivist</em> approach to political representation around 2010; <span class="citation" data-cites="SawardRepresentativeClaim2010">Saward (2010)</span> seems to be the canonical citation for this approach, but I think <span class="citation" data-cites="BrownScienceDemocracyExpertise2009">M. B. Brown (2009)</span> is doing something quite similar. Prior to 2010, work by political theorists on representation focused on either (a) formal procedures of elections and voting or (b) deliberative practices, either in civil society (that is, outside of government) or in boundary institutions that connected public deliberation to policymakers. Recently several philosophers of science have picked up ideas from the latter (citations in <a href="2023-01-30-democracy-defense.html">a previous post</a>).</p>
+<p>Constructivists challenge an implicit assumption of these approaches, namely, the there is a constituency or public that exists prior to representation and has more-or-less well-defined interests or preferences. This assumption might (<em>might</em>) make sense when we’re talking about legislative districts: the State of California existed before Diane Feinstein was first elected Senator in 1992. But it doesn’t work as well for less formal types of representation, for example, Martin Luther King, Jr., or Greta Thunberg as representatives of social movements.</p>
+<p><span class="citation" data-cites="SawardRepresentativeClaim2010">Saward (2010)</span> apparently (I haven’t actually read the book) draws on Gricean philosophy of language that will be familiar to most philosophers today. Specifically, <span class="citation" data-cites="SawardRepresentativeClaim2010">Saward (2010)</span> examines representative claims as speech acts, claims that the speaker represents a certain public or constituency to an audience in a certain context and that this constituency believes or wants or does something. These acts are successful insofar as they are taken up by the audience. In other words, to be a representative for a constituency is nothing more or less than to be taken as a representative for that constituency.</p>
+<p>Importantly, the constituency does not need to exist for a representative claim to be successful. One practical <em>effect</em> of the speech act might be that the constituency comes into existence as members of the audience identify themselves as members of that constituency. For example, what we now call the “MAGA movement” or “MAGA Republicans” didn’t exist until after Trump presented himself as a representative for that then-unnamed constituency in 2015. Drawing on Hobbes, <span class="citation" data-cites="BrownScienceDemocracyExpertise2009">M. B. Brown (2009)</span> calls this <em>virtual representation</em><sup>1</sup>, and he uses it to develop an account of (natural) scientists as representatives of nature in policy contexts. Even if it makes sense to talk about “nature” as a single coherent entity, that entity can’t do something like authorize a scientist as its representative through a formal election or have beliefs or interests that are accurately or inaccurately represented by a scientist’s representative claims.</p>
+<p><span class="citation" data-cites="UrbinatiJudgmentAloneCloven2018">Urbinati (2018)</span> discusses this constructivist approach to political representation. I found her writing somewhat difficult to follow, so I’m not going to try to fully reconstruct her views. But she does seem to present three objections to constructivism:</p>
+<ol type="1">
+<li>It neglects inequalities in who will make representative claims and whose representative claims will be taken up.<br>
+</li>
+<li>The representative is accountable to the audience rather than the constituency.<br>
+</li>
+<li>There’s no reason to think that successful representative claims (as constructivists understand that success) will have any effects on policy. <span class="citation" data-cites="UrbinatiJudgmentAloneCloven2018">(Urbinati 2018, 74ff)</span></li>
+</ol>
+<p>The first objection echoes <span class="citation" data-cites="YoungInclusionDemocracy2000">Young (2000)</span>’s critique of deliberative democracy, which (prior to Young’s critique) tended to focus on idealized deliberative scenarios and norms of deliberation that favored highly educated white men. The third objection seems to provide the best support for <span class="citation" data-cites="UrbinatiJudgmentAloneCloven2018">Urbinati (2018)</span>’s “diarchic” approach, which emphasizes the relationship between formal institutions of political power and the open-ended deliberation of civil society. (I suspect some of the later contributions to this collection will do this as well.)</p>
+<p>On the “pre-constructivist” models of representation, representatives are primarily accountable to the constituency that they represent. This might be done formally — the representative needs to stand for (re)election — or it might happen informally — as constituents call representatives to give an account of their actions qua representatives.<sup>2</sup> Urbinati’s point seems to be that, by basing legitimacy on audience uptake, constructivists lose the demand for democratic accountability. Audience uptake matters, and representative and constituency co-construct each other (again, consider Trump), but <em>good</em> representatives must still represent their constituents <em>accurately</em>.</p>
+<p>For <span class="citation" data-cites="BrownScienceDemocracyExpertise2009">M. B. Brown (2009)</span>, a constructivist account of scientific representation (scientists as representatives of nature) is attractive because democratic accountability to “nature” seems to be nonsensical.<sup>3</sup> So if scientists are to be held accountable to anyone besides themselves, the audience seems to be the only option.</p>
+<p>In the context of Brown’s account, we might understand Urbinati’s second concern as a critique of “wishful thinking” or “anything-goes” relativism: nothing seems to be stopping the audience from rejecting scientists whose claims are inconvenient or unfavorable (no matter how well-supported), and accepting scientists whose claims are convenient and favorable (no matter how flimsy) <span class="citation" data-cites="SarewitzHowScienceMakes2004 SteelQualifiedEpistemicPriority2017 LichtensteinInconvenientTruthInductive2022">(Sarewitz 2004; Steel 2017; Lichtenstein 2022)</span>.</p>
+<p>One constructivist response to this critique might be to reject the notion of accuracy, as in the formulation “good representatives must still represent their constituents accurately.” Such a constructivist might argue that “accuracy” assumes a pre-existing constituency; but representative claims are prior to constituencies, etc. On the science side, this leads to the interminable and fatally abstract debates over “realism” of the 1970s and ’80s.</p>
+<p>An alternative approach might draw on Dewey’s account of inquiry, specifically as articulated by <span class="citation" data-cites="BrownScienceMoralImagination2020">M. Brown (2020)</span>. On this account, inquiry starts with a problematic situation — things aren’t working — and inquiry is successful insofar as it resolves the situation — develops alternative things that do work. Importantly, “working” here has both “realist” and “constructivist” aspects. It’s realist insofar as the agent can <em>incorrectly</em> believe that a certain alternative will work when “in fact” it will not. But it’s also constructivist insofar as one tactic to resolve the situation is for the agent to change their understanding of the activity and its goals, and resolving the situation does not require a “true” representation of the world (in a classical correspondence sense).<sup>4</sup></p>
+<p>I suggest we can view political representation as “inquiry” using this account. The problematic situation is that some people<sup>5</sup> have some felt dissatisfaction with the status quo. A representative claim is then a hypothesis that there is a group (the constituency) whose interests are not being served by the policy status quo (the diagnosis), and that adopting a different policy will resolve the problematic situation (the remedy).</p>
+<p>On this model, a representative claim will have locutionary success criteria, that is, it needs to be taken up by the audience, especially people with the power to enact the proposed policy. And the constituency can be constructed by the representative claim, insofar as the “some people” subsequently decide that they are indeed members of the group and their interests are not being served by the status quo. But <strong>the representative claim also has pragmatic success criteria</strong>: would the remedy actually resolve the problematic situation as characterized by the diagnosis? This is unlikely to be the case if, for example, there is good evidence that the felt dissatisfaction experienced by group members is not caused by the factors identified in the diagnosis.</p>
+<p>Consider how this model might work for Trump’s 2016 campaign. We can reconstruct the central representative claim of Trump’s campaign as something like the hypothesis that rural poverty is caused by mass undocumented immigration and so strong immigration restrictions will solve this problem. This claim was taken up by the media, who did numerous profiles of “Trump voters” (the newly-constructed constituency) in impoverished rural areas and their attitudes towards immigration. So it was evidently a locutionary success. But its pragmatic success is tenuous at best; agricultural consolidation and demographic shifts (depopulation and aging as young adults go to college and move to urban areas) are probably much more important causes of rural poverty than immigration, undocumented or otherwise.</p>
+
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-BrownScienceDemocracyExpertise2009" class="csl-entry">
+Brown, Mark B. 2009. <em>Science in Democracy: Expertise, Institutions, and Representation</em>. Cambridge, Mass: MIT Press.
+</div>
+<div id="ref-BrownScienceMoralImagination2020" class="csl-entry">
+Brown, Matthew. 2020. <em>Science and Moral Imagination: A New Ideal for Values in Science</em>. University of Pittsburgh Press.
+</div>
+<div id="ref-LiboironPollutionColonialism2021" class="csl-entry">
+Liboiron, Max. 2021. <em>Pollution Is Colonialism</em>. Duke University Press.
+</div>
+<div id="ref-LichtensteinInconvenientTruthInductive2022" class="csl-entry">
+Lichtenstein, Eli I. 2022. <span>“Inconvenient Truth and Inductive Risk in Covid-19 Science.”</span> <em>Philosophy of Medicine</em> 3 (1). <a href="https://doi.org/10.5195/pom.2022.132">https://doi.org/10.5195/pom.2022.132</a>.
+</div>
+<div id="ref-SarewitzHowScienceMakes2004" class="csl-entry">
+Sarewitz, Daniel. 2004. <span>“How Science Makes Environmental Controversies Worse.”</span> <em>Environmental Science and Policy</em> 7 (5): 385–403. <a href="https://doi.org/10.1016/j.envsci.2004.06.001">https://doi.org/10.1016/j.envsci.2004.06.001</a>.
+</div>
+<div id="ref-SawardRepresentativeClaim2010" class="csl-entry">
+Saward, Michael. 2010. <em>The Representative Claim</em>. OUP Oxford.
+</div>
+<div id="ref-SimpsonLandPedagogyNishnaabeg2014" class="csl-entry">
+Simpson, Leanne Betasamosake. 2014. <span>“Land as Pedagogy: Nishnaabeg Intelligence and Rebellious Transformation.”</span> <em>Decolonization: Indigeneity, Education &amp; Society</em> 3 (3). <a href="https://jps.library.utoronto.ca/index.php/des/article/view/22170">https://jps.library.utoronto.ca/index.php/des/article/view/22170</a>.
+</div>
+<div id="ref-SteelQualifiedEpistemicPriority2017" class="csl-entry">
+Steel, Daniel. 2017. <span>“Qualified Epistemic Priority.”</span> In <em>Current Controversies in Values and Science</em>, edited by Kevin C. Elliott and Daniel Steel, 49–63. New York and London: Routledge.
+</div>
+<div id="ref-UrbinatiJudgmentAloneCloven2018" class="csl-entry">
+Urbinati, Nadia. 2018. <span>“Judgment Alone: Cloven Citizenship in the Era of the Internet.”</span> In <em>Creating Political Presence: The New Politics of Democratic Representation</em>, edited by Dario Castiglione and Johannes Pollak. Chicago, IL: University of Chicago Press. <a href="https://press.uchicago.edu/ucp/books/book/chicago/C/bo29203064.html">https://press.uchicago.edu/ucp/books/book/chicago/C/bo29203064.html</a>.
+</div>
+<div id="ref-YoungInclusionDemocracy2000" class="csl-entry">
+Young, Iris Marion. 2000. <em>Inclusion and Democracy</em>. Oxford University Press. <a href="http://books.google.ca/books?id=Gonp8GXTxb0C&amp;pg=PA18&amp;dq=intitle:INCLUSION+AND+DEMOCRACY+inauthor:young&amp;hl=&amp;cd=1&amp;source=gbs_api">http://books.google.ca/books?id=Gonp8GXTxb0C&amp;pg=PA18&amp;dq=intitle:INCLUSION+AND+DEMOCRACY+inauthor:young&amp;hl=&amp;cd=1&amp;source=gbs_api</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Or maybe “fictional representation”? Need to check.↩︎</p></li>
+<li id="fn2"><p>Young cite here?↩︎</p></li>
+<li id="fn3"><p>Yesterday I was preparing <span class="citation" data-cites="SimpsonLandPedagogyNishnaabeg2014">Simpson (2014)</span> as a reading on Indigenous epistemology and land relations for the Environmental Philosophy course that I’m teaching this semester. From the perspective of Indigenous land relations, accountability to “nature” — or rather, nonhuman agents — does make sense. Indeed, as presented by various Indigenous authors <span class="citation" data-cites="SimpsonLandPedagogyNishnaabeg2014 LiboironPollutionColonialism2021">(Simpson 2014; Liboiron 2021)</span> a key idea in Indigenous knowledge-making practices is consent and collaboration with nonhuman agents. I’m going to bracket this thought for the purposes of this post.↩︎</p></li>
+<li id="fn4"><p>Sorry Matt Brown, nobody else thinks Dewey was a correspondence theorist.↩︎</p></li>
+<li id="fn5"><p>This should be understood as a Boolosean plural quantifier: “there are some <img src="https://latex.codecogs.com/png.latex?x">s,” rather than “there is a set <img src="https://latex.codecogs.com/png.latex?X">.”↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <guid>https://dhicks.github.io/posts/2023-02-08-demagoguery.html</guid>
+  <pubDate>Wed, 08 Feb 2023 08:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Undue influence of epistemic values</title>
   <dc:creator>Dan Hicks</dc:creator>
@@ -20,6 +99,7 @@
 
 
 
+<p>[We discussed this post <a href="https://www.facebook.com/hicks.daniel.j/posts/pfbid0UYjAapCWUSVvtfqg5bM5viGYJ3fCR9XU5DGLBkAcGn1u6cEoCrAymY2nRBbBtqqxl?comment_id=1342087143214313&amp;notif_id=1675111791180975&amp;notif_t=feed_comment&amp;ref=notif">on Facebook</a>.]</p>
 <p><span class="citation" data-cites="LuskDoesDemocracyRequire2021">Lusk (2021)</span> examines <em>the political legitimacy argument for the value free ideal</em>; elsewhere collaborators and I have called this the “democracy defense” <span class="citation" data-cites="FernandezPintoLegitimizingValuesRegulatory2019 HicksInductiveRiskScience2020">(Fernández Pinto and Hicks 2019; Hicks, Magnus, and Wright 2020)</span>. Here’s Lusk’s reconstruction of the argument <span class="citation" data-cites="LuskDoesDemocracyRequire2021">(Lusk 2021, 104; edited down a bit further by me)</span>:</p>
 <ol type="1">
 <li><strong>Legitimacy Premise</strong>: No set of non-epistemic values should have an undue influence in coercive democratic political decisions.</li>
@@ -780,24 +860,6 @@ Stapleford, Thomas A. 2009. <em>The Cost of Living in America: A Political Histo
  ]]></description>
   <guid>https://dhicks.github.io/posts/2019-03-14-legitimizing-values.html</guid>
   <pubDate>Thu, 14 Mar 2019 07:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Slides: Explainable Machine Learning: An Integrated Epistemic-Ethical Analysis</title>
-  <dc:creator>Dan Hicks</dc:creator>
-  <link>https://dhicks.github.io/posts/2019-02-01-explainable-machine-learning.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Machine learning (ML) algorithms have become widely adopted over the past decade. Contemporary ML can achieve near-human levels of accuracy, but operates as an inscrutable “black box.” This has stimulated significant research in methods to explain the behavior of ML systems. However, many of the proposed methods violate a common assumption that explanations must be true. Arguably, such “explanations” of ML systems are not actually explanations. I draw on work in the philosophy of science and political philosophy to clarify the requirements for explainable ML. Recent work on idealization in science suggests that explanations can be false, but only if these falsehoods promote the goals of inquiry. I argue that, at least when ML is used in policy contexts, the goals of explainable ML ultimately trace back to democratic accountability, and conclude that ML can be explainable only when system development is participatory and democratic.</p>
-<p>PDF: <a href="https://drive.google.com/open?id=0B6oYmzobonqoM1lNZWdmMFEzTG8" class="uri">https://drive.google.com/open?id=0B6oYmzobonqoM1lNZWdmMFEzTG8</a></p>
-
-
-
- ]]></description>
-  <guid>https://dhicks.github.io/posts/2019-02-01-explainable-machine-learning.html</guid>
-  <pubDate>Fri, 01 Feb 2019 08:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

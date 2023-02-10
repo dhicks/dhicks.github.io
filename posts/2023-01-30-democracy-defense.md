@@ -5,6 +5,8 @@ date: 2023-01-30
 bibliography: 2023-01-30-democracy-defense.yaml
 ---
 
+[We discussed this post [on Facebook](https://www.facebook.com/hicks.daniel.j/posts/pfbid0UYjAapCWUSVvtfqg5bM5viGYJ3fCR9XU5DGLBkAcGn1u6cEoCrAymY2nRBbBtqqxl?comment_id=1342087143214313&notif_id=1675111791180975&notif_t=feed_comment&ref=notif).]
+
 @LuskDoesDemocracyRequire2021 examines *the political legitimacy argument for the value free ideal*; elsewhere collaborators and I have called this the "democracy defense" [@FernandezPintoLegitimizingValuesRegulatory2019; @HicksInductiveRiskScience2020].  Here's Lusk's reconstruction of the argument [@LuskDoesDemocracyRequire2021 104\; edited down a bit further by me]: 
 
 1. **Legitimacy Premise**: No set of non-epistemic values should have an undue influence in coercive democratic political decisions. 

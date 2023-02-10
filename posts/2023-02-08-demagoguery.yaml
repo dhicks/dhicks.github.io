@@ -1,0 +1,340 @@
+---
+references:
+- id: BrownScienceDemocracyExpertise2009
+  author:
+    - family: Brown
+      given: Mark B.
+  call-number: Q175.5 .B759 2009
+  citation-key: BrownScienceDemocracyExpertise2009
+  event-place: Cambridge, Mass
+  ISBN: 978-0-262-01324-6
+  issued:
+    - year: 2009
+  number-of-pages: '354'
+  publisher: MIT Press
+  publisher-place: Cambridge, Mass
+  source: Library of Congress ISBN
+  title: 'Science in democracy: expertise, institutions, and representation'
+  title-short: Science in democracy
+  type: book
+
+- id: BrownScienceMoralImagination2020
+  abstract: >-
+    The idea that science is or should be value-free, and that values are or
+    should be formed independently of science, has been under fire by
+    philosophers of science for decades. Science and Moral Imagination directly
+    challenges the idea that science and values cannot and should not influence
+    each other. Matthew J. Brown argues that science and values mutually
+    influence and implicate one another, that the influence of values on science
+    is pervasive and must be responsibly managed, and that science can and
+    should have an influence on our values. This interplay, he explains, must be
+    guided by accounts of scientific inquiry and value judgment that are
+    sensitive to the complexities of their interactions. Brown presents
+    scientific inquiry and value judgment as types of problem-solving practices
+    and provides a new framework for thinking about how we might ethically
+    evaluate episodes and decisions in science, while offering guidance for
+    scientific practitioners and institutions about how they can incorporate
+    value judgments into their work. His framework, dubbed "the ideal of moral
+    imagination," emphasizes the role of imagination in value judgment and the
+    positive role that value judgment plays in science.
+  author:
+    - family: Brown
+      given: Matthew
+  citation-key: BrownScienceMoralImagination2020
+  ISBN: 978-0-8229-4626-7
+  issued:
+    - year: 2020
+      month: 10
+      day: 27
+  language: en
+  number-of-pages: '296'
+  publisher: University of Pittsburgh Press
+  source: Google Books
+  title: 'Science and Moral Imagination: A New Ideal for Values in Science'
+  title-short: Science and Moral Imagination
+  type: book
+
+- id: LiboironPollutionColonialism2021
+  abstract: >-
+    In Pollution Is Colonialism Max Liboiron presents a framework for
+    understanding scientific research methods as practices that can align with
+    or against colonialism. They point out that even when researchers are
+    working toward benevolent goals, environmental science and activism are
+    often premised on a colonial worldview and access to land. Focusing on
+    plastic pollution, the book models an anticolonial scientific practice
+    aligned with Indigenous, particularly Métis, concepts of land, ethics, and
+    relations. Liboiron draws on their work in the Civic Laboratory for
+    Environmental Action Research (CLEAR)—an anticolonial science laboratory in
+    Newfoundland, Canada—to illuminate how pollution is not a symptom of
+    capitalism but a violent enactment of colonial land relations that claim
+    access to Indigenous land. Liboiron's creative, lively, and passionate text
+    refuses theories of pollution that make Indigenous land available for
+    settler and colonial goals. In this way, their methodology demonstrates that
+    anticolonial science is not only possible but is currently being practiced
+    in ways that enact more ethical modes of being in the world.
+  author:
+    - family: Liboiron
+      given: Max
+  citation-key: LiboironPollutionColonialism2021
+  ISBN: 978-1-4780-2144-5
+  issued:
+    - year: 2021
+      month: 4
+      day: 23
+  language: en
+  number-of-pages: '134'
+  publisher: Duke University Press
+  source: Google Books
+  title: Pollution Is Colonialism
+  type: book
+
+- id: LichtensteinInconvenientTruthInductive2022
+  abstract: >-
+    To clarify the proper role of values in science, focusing on controversial
+    expert responses to Covid-19, this article examines the status of
+    (in)convenient hypotheses. Polarizing cases like health experts downplaying
+    mask efficacy to save resources for healthcare workers, or scientists
+    dismissing “accidental lab leak” hypotheses in view of potential xenophobia,
+    plausibly involve modifying evidential standards for (in)convenient claims.
+    Societies could accept that scientists handle (in)convenient claims just
+    like nonscientists, and give experts less political power. Or societies
+    could hold scientists to a higher bar, by expecting them not to modify
+    evidential standards to avoid costs only incidentally tied to error.
+  accessed:
+    - year: 2022
+      month: 12
+      day: 15
+  author:
+    - family: Lichtenstein
+      given: Eli I.
+  citation-key: LichtensteinInconvenientTruthInductive2022
+  container-title: Philosophy of Medicine
+  DOI: 10.5195/pom.2022.132
+  ISSN: 2692-3963
+  issue: '1'
+  issued:
+    - year: 2022
+      month: 12
+      day: 14
+  language: en
+  license: Copyright (c) 2022 Eli I. Lichtenstein
+  number: '1'
+  source: philmed.pitt.edu
+  title: Inconvenient Truth and Inductive Risk in Covid-19 Science
+  type: article-journal
+  URL: https://philmed.pitt.edu/philmed/article/view/132
+  volume: '3'
+
+- id: LuskDoesDemocracyRequire2021
+  abstract: >-
+    Philosophers now commonly reject the value free ideal for science by arguing
+    that non-epistemic values, including personal or social values, are
+    permissible within the core of scientific research. However, little
+    attention has been paid to the normative political consequences of this
+    position. This paper explores these consequences and shows how political
+    theory is fruitful for proceeding in a world without value-neutral science.
+    I draw attention to an oft-overlooked argument employed by proponents of the
+    value free ideal I dub the “political legitimacy argument.” This argument
+    claims that the value-free ideal follows directly from the foundational
+    principles of liberal democracy. If so, then the use of value-laden
+    scientific information within democratic decision making would be
+    illegitimate on purely political grounds. Despite highlighting this
+    unaddressed and important argument, I show how it can be rejected. By
+    appealing to deliberative democratic theory, I demonstrate scientific
+    information can be value-laden and politically legitimate. The deliberative
+    democratic account I develop is well suited for capturing the intuitions of
+    many opponents of the value free ideal and points to a new set of questions
+    for those interested in values in science.
+  accessed:
+    - year: 2021
+      month: 10
+      day: 5
+  author:
+    - family: Lusk
+      given: Greg
+  citation-key: LuskDoesDemocracyRequire2021
+  container-title: Studies in History and Philosophy of Science Part A
+  container-title-short: Studies in History and Philosophy of Science Part A
+  DOI: 10.1016/j.shpsa.2021.08.009
+  ISSN: 0039-3681
+  issued:
+    - year: 2021
+      month: 12
+      day: 1
+  language: en
+  page: 102-110
+  source: ScienceDirect
+  title: >-
+    Does democracy require value-neutral science? Analyzing the legitimacy of
+    scientific information in the political sphere
+  title-short: Does democracy require value-neutral science?
+  type: article-journal
+  URL: https://www.sciencedirect.com/science/article/pii/S0039368121001254
+  volume: '90'
+
+- id: SarewitzHowScienceMakes2004
+  author:
+    - family: Sarewitz
+      given: Daniel
+  citation-key: SarewitzHowScienceMakes2004
+  container-title: Environmental Science and Policy
+  container-title-short: Environmental Science and Policy
+  DOI: 10.1016/j.envsci.2004.06.001
+  issue: '5'
+  issued:
+    - year: 2004
+  page: 385-403
+  title: How science makes environmental controversies worse
+  type: article-journal
+  volume: '7'
+
+- id: SawardRepresentativeClaim2010
+  abstract: >-
+    Representation is more than a matter of elections and parties. This book
+    offers a radical new perspective on the subject. Representation, it argues,
+    is all around us, a dynamic practise across societies rather than simply a
+    fixed feature of government. At the heart of the argument is the
+    straightforward but versatile notion of the representative claim. People
+    claim to speak or stand for others in multiple, shifting, and surprising
+    patterns. At the same time they offer images of their constituents and
+    audiences as artists paint portraits. Who can speak for and about us in this
+    volatile world of representations? Which representative claims can have
+    democratic legitimacy? The Representative Claim is set to transform our core
+    assumptions about what representation is and can be. At a time when
+    political representation is widely believed to be in crisis, the book
+    provides a timely and critical corrective to conventional wisdom on the
+    present and potential future of representative democracy.
+  author:
+    - family: Saward
+      given: Michael
+  citation-key: SawardRepresentativeClaim2010
+  ISBN: 978-0-19-157681-2
+  issued:
+    - year: 2010
+      month: 5
+      day: 13
+  language: en
+  number-of-pages: '217'
+  publisher: OUP Oxford
+  source: Google Books
+  title: The Representative Claim
+  type: book
+
+- id: SimpsonLandPedagogyNishnaabeg2014
+  abstract: >-
+    A resurgence of Indigenous political cultures, governances and
+    nation-building requires generations of Indigenous peoples to grow up
+    intimately and strongly connected to our homelands, immersed in our
+    languages and spiritualities, and embodying our traditions of agency,
+    leadership, decision-making and diplomacy. This requires a radical break
+    from state education systems – systems that are primarily designed to
+    produce communities of individuals willing to uphold settler colonialism.
+    This paper uses Nishnaabeg stories to advocate for a reclamation of land as
+    pedagogy, both as process and context for Nishnaabeg intelligence, in order
+    to nurture a generation of Indigenous peoples that have the skills,
+    knowledge and values to rebuild our nation according to the word views and
+    values of Nishnaabeg culture.
+  accessed:
+    - year: 2023
+      month: 1
+      day: 11
+  author:
+    - family: Simpson
+      given: Leanne Betasamosake
+  citation-key: SimpsonLandPedagogyNishnaabeg2014
+  container-title: 'Decolonization: Indigeneity, Education & Society'
+  ISSN: 1929-8692
+  issue: '3'
+  issued:
+    - year: 2014
+      month: 11
+      day: 21
+  language: en
+  license: 'Copyright (c) 2014 Decolonization: Indigeneity, Education & Society'
+  number: '3'
+  source: jps.library.utoronto.ca
+  title: 'Land as pedagogy: Nishnaabeg intelligence and rebellious transformation'
+  title-short: Land as pedagogy
+  type: article-journal
+  URL: https://jps.library.utoronto.ca/index.php/des/article/view/22170
+  volume: '3'
+
+- id: SteelQualifiedEpistemicPriority2017
+  author:
+    - family: Steel
+      given: Daniel
+  citation-key: SteelQualifiedEpistemicPriority2017
+  container-title: Current Controversies in Values and Science
+  editor:
+    - family: Elliott
+      given: Kevin C.
+    - family: Steel
+      given: Daniel
+  event-place: New York and London
+  ISBN: 978-1-317-27399-8
+  issued:
+    - year: 2017
+  page: 49-63
+  publisher: Routledge
+  publisher-place: New York and London
+  source: Google Scholar
+  title: Qualified Epistemic Priority
+  type: chapter
+
+- id: UrbinatiJudgmentAloneCloven2018
+  accessed:
+    - year: 2023
+      month: 1
+      day: 17
+  author:
+    - family: Urbinati
+      given: Nadia
+  citation-key: UrbinatiJudgmentAloneCloven2018
+  container-title: 'Creating Political Presence: The New Politics of Democratic Representation'
+  editor:
+    - family: Castiglione
+      given: Dario
+    - family: Pollak
+      given: Johannes
+  event-place: Chicago, IL
+  ISBN: 978-0-226-58853-7
+  issued:
+    - year: 2018
+      month: 12
+  language: en
+  publisher: University of Chicago Press
+  publisher-place: Chicago, IL
+  source: University of Chicago Press
+  title: 'Judgment Alone: Cloven Citizenship in the Era of the Internet'
+  type: chapter
+  URL: https://press.uchicago.edu/ucp/books/book/chicago/C/bo29203064.html
+
+- id: YoungInclusionDemocracy2000
+  abstract: >-
+    'Young advances a nuanced way of thinking about the problem of political
+    exclusion, and its potential remedies... Young's book is a timely
+    intervention urging an enlargement of political vision. Inclusion and
+    Democracy is an important text, which will rightly generate a deal of
+    provocative debate.' -Radical PhilosophyIn the long awaited follow-up to
+    Justice and the Politics of Difference, Iris Marion Young- one of the
+    world's leading political philosophers- makes major and controversial
+    contribution to the debates about democracy in a multicultural society. The
+    book considers the ideals of political inclusion and exclusion and
+    recommends ways of engaging in democratic politics in a more inclusive way.
+    It includes a discussion of class, race and gender bias in democratic
+    processes, and asks whether in an era of greater global interaction,
+    democratic institutions should become more global
+  author:
+    - family: Young
+      given: Iris Marion
+  citation-key: YoungInclusionDemocracy2000
+  ISBN: 978-0-19-829755-0
+  issued:
+    - year: 2000
+  number-of-pages: '304'
+  publisher: Oxford University Press
+  title: Inclusion and Democracy
+  type: book
+  URL: >-
+    http://books.google.ca/books?id=Gonp8GXTxb0C&pg=PA18&dq=intitle:INCLUSION+AND+DEMOCRACY+inauthor:young&hl=&cd=1&source=gbs_api
+...

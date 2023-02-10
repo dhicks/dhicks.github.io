@@ -296,10 +296,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(dataf)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>tibble [64 × 3] (S3: tbl_df/tbl/data.frame)
- $ path    : chr [1:64] "/Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-friedersdorf-the-sex-friendly-case-against-free-bi"| __truncated__ "/Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-friedersdorf-the-sex-friendly-case-against-free-bi"| __truncated__ "/Users/danhicks/Google Drive/Coding/website/posts/2012-04-21-the-agroecological-argument-for-eating-meat.md" "/Users/danhicks/Google Drive/Coding/website/posts/2012-05-23-fetishism-and-innate-differences.md" ...
- $ post_id : int [1:64] 1 2 3 4 5 6 7 8 9 10 ...
- $ raw_text: chr [1:64] "---\ntitle: \"Friedersdorf: The Sex-Friendly Case Against Free Birth Control, part I\"\ndate: \"2012-03-14\"\nc"| __truncated__ "---\nlayout: post\ntitle: \"Friedersdorf: The Sex-Friendly Case Against Free Birth Control, part II\"\ndate: \""| __truncated__ "---\nlayout: post\ntitle: \"The Agroecological Argument for Eating Meat\"\ndate: \"2012-04-21\"\ncategories: [d"| __truncated__ "---\nlayout: post\ntitle: \"Fetishism and Innate Differences\"\ndate: \"2012-05-23\"\n---\n\n\n(Going through m"| __truncated__ ...</code></pre>
+<pre><code>tibble [65 × 3] (S3: tbl_df/tbl/data.frame)
+ $ path    : chr [1:65] "/Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-friedersdorf-the-sex-friendly-case-against-free-bi"| __truncated__ "/Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-friedersdorf-the-sex-friendly-case-against-free-bi"| __truncated__ "/Users/danhicks/Google Drive/Coding/website/posts/2012-04-21-the-agroecological-argument-for-eating-meat.md" "/Users/danhicks/Google Drive/Coding/website/posts/2012-05-23-fetishism-and-innate-differences.md" ...
+ $ post_id : int [1:65] 1 2 3 4 5 6 7 8 9 10 ...
+ $ raw_text: chr [1:65] "---\ntitle: \"Friedersdorf: The Sex-Friendly Case Against Free Birth Control, part I\"\ndate: \"2012-03-14\"\nc"| __truncated__ "---\nlayout: post\ntitle: \"Friedersdorf: The Sex-Friendly Case Against Free Birth Control, part II\"\ndate: \""| __truncated__ "---\nlayout: post\ntitle: \"The Agroecological Argument for Eating Meat\"\ndate: \"2012-04-21\"\ncategories: [d"| __truncated__ "---\nlayout: post\ntitle: \"Fetishism and Innate Differences\"\ndate: \"2012-05-23\"\n---\n\n\n(Going through m"| __truncated__ ...</code></pre>
 </div>
 </div>
 <p>Next we use <code>tidytext</code> to parse the text of each post into individual terms or tokens.</p>
@@ -307,7 +307,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>tokens_df <span class="ot">=</span> <span class="fu">unnest_tokens</span>(dataf, token, raw_text)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>tokens_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 75,666 × 3
+<pre><code># A tibble: 77,093 × 3
    path                                                            post_id token
    &lt;chr&gt;                                                             &lt;int&gt; &lt;chr&gt;
  1 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 title
@@ -320,7 +320,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
  8 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 free 
  9 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 birth
 10 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 cont…
-# … with 75,656 more rows</code></pre>
+# … with 77,083 more rows</code></pre>
 </div>
 </div>
 <p>To develop tags, we want to identify “highly meaningful terms” across the cropus of parsed blog posts. In text mining, a measure called <em>TF-IDF</em> is frequently used for this task. TF-IDF is calculated for each term-document combination. The TF-IDF of term <span class="math display">\[i\]</span> in document <span class="math display">\[j\]</span> is - the number of times <span class="math display">\[i\]</span> occurs in <span class="math display">\[j\]</span> (the <em>term frequency</em>), divided by - the (log) number of documents in which <span class="math display">\[i\]</span> occurs at least once (the <em>document frequency</em>).</p>
@@ -350,12 +350,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(info_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>tibble [8,165 × 5] (S3: tbl_df/tbl/data.frame)
- $ token  : chr [1:8165] "__squarespace_cacheversion" "_data" "_jmp0_" "_market" ...
- $ n      : int [1:8165] 1 1 1 1 1 1 1 17 1 1 ...
- $ H      : num [1:8165] 0 0 0 0 0 ...
- $ delta_H: num [1:8165] 6 6 6 6 6 ...
- $ ndH    : num [1:8165] 0 0 0 0 0 ...</code></pre>
+<pre><code>tibble [8,255 × 5] (S3: tbl_df/tbl/data.frame)
+ $ token  : chr [1:8255] "__squarespace_cacheversion" "_data" "_jmp0_" "_market" ...
+ $ n      : int [1:8255] 1 1 1 1 1 1 1 17 1 1 ...
+ $ H      : num [1:8255] 0 0 0 0 0 ...
+ $ delta_H: num [1:8255] 6.02 6.02 6.02 6.02 6.02 ...
+ $ ndH    : num [1:8255] 0 0 0 0 0 ...</code></pre>
 </div>
 </div>
 <p>This next block isn’t included in the script; it generates a plot showing the distribution of <span class="math display">\[n\Delta H\]</span> scores for a sample of 500 terms. Each point represents a single term; the x-axis is the (log) number of total occurrences across the corpus, color indicates the information gain <span class="math display">\[\Delta H\]</span>, and the y-axis is the overall <span class="math display">\[n \Delta H\]</span> score.</p>
@@ -395,7 +395,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(tags_df, <span class="at">max.level =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>tibble [57 × 4] (S3: tbl_df/tbl/data.frame)</code></pre>
+<pre><code>tibble [58 × 4] (S3: tbl_df/tbl/data.frame)</code></pre>
 </div>
 </div>
 <p>Finally we’ll write these files back to disk. Each post has a header section that looks something like this:</p>
@@ -424,7 +424,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>Joining, by = c("path", "post_id")</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 57 × 8
+<pre><code># A tibble: 58 × 8
 # Rowwise: 
    path                         post_id null  header body  tags  tags_…¹ combi…²
    &lt;chr&gt;                          &lt;int&gt; &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt; &lt;lis&gt; &lt;chr&gt;   &lt;chr&gt;  
@@ -438,7 +438,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
  8 /Users/danhicks/Google Driv…       8 ""    "\nla… "\n\… &lt;chr&gt; catego… "---\n…
  9 /Users/danhicks/Google Driv…       9 ""    "\nla… "\n\… &lt;chr&gt; catego… "---\n…
 10 /Users/danhicks/Google Driv…      10 ""    "\nla… "\n\… &lt;chr&gt; catego… "---\n…
-# … with 47 more rows, and abbreviated variable names ¹​tags_str, ²​combined</code></pre>
+# … with 48 more rows, and abbreviated variable names ¹​tags_str, ²​combined</code></pre>
 </div>
 </div>
 <pre><code>    #mutate(written = map2(combined, path, write_lines))</code></pre>
