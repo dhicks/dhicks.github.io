@@ -1,0 +1,640 @@
+---
+references:
+- id: ColognaCommunicationValueJudgements2022
+  abstract: >-
+    Scientists are called upon by policymakers to provide recommendations on how
+    to address climate change. It has been argued that as policy advisors,
+    scientists can legitimately make instrumental value judgements
+    (recommendations based on deﬁned policy goals), but not categorical value
+    judgements (challenge and/or redeﬁne established policy goals), and that to
+    do otherwise is to overstep in ways that may threaten their perceived
+    trustworthiness. However, whether these types of value judgements aﬀect
+    public trust in scientists remains largely untested. We conducted two
+    studies (N1 = 367, N2 = 819) to investigate public perceptions of
+    trustworthiness of a climate scientist expressing either an instrumental or
+    a categorical value judgement. We found no diﬀerence in perceived
+    trustworthiness between the two conditions. However, trustworthiness
+    perceptions in both studies depended on individuals’ support for the policy
+    recommended by the scientist. Our ﬁndings suggest that climate scientists
+    should not fear for their overall perceived trustworthiness when making
+    categorical value judgments if their opinions are supported by the majority
+    of the public.
+  accessed:
+    - year: 2023
+      month: 1
+      day: 3
+  author:
+    - family: Cologna
+      given: Viktoria
+    - family: Baumberger
+      given: Christoph
+    - family: Knutti
+      given: Reto
+    - family: Oreskes
+      given: Naomi
+    - family: Berthold
+      given: Anne
+  citation-key: ColognaCommunicationValueJudgements2022
+  container-title: Environmental Communication
+  container-title-short: Environmental Communication
+  DOI: 10.1080/17524032.2022.2153896
+  ISSN: 1752-4032, 1752-4040
+  issued:
+    - year: 2022
+      month: 12
+      day: 13
+  language: en
+  page: 1-14
+  source: DOI.org (Crossref)
+  title: >-
+    The Communication of Value Judgements and its Effects on Climate Scientists’
+    Perceived Trustworthiness
+  type: article-journal
+  URL: https://www.tandfonline.com/doi/full/10.1080/17524032.2022.2153896
+
+- id: DouglasIrreducibleComplexityObjectivity2004
+  abstract: >-
+    The terms "objectivity" and "objective" are among the most used yet
+    illdefined terms in the philosophy of science and epistemology. Common to
+    all the various usages is the rhetorical force of "I endorse this and you
+    should too", or to put it more mildly, that one should trust the outcome of
+    the objectivity-producing process. The persuasive endorsement and call to
+    trust provide some conceptual coherence to objectivity, but the reference to
+    objectivity is hopefully not merely an attempt at persuasive endorsement.
+    What, in addition to epistemological endorsement, does objectivity carry
+    with it? Drawing on recent historical and philosophical work, I articulate
+    eight operationally accessible and distinct senses of objectivity. While
+    there are links among these senses, providing cohesion to the concept, I
+    argue that none of the eight senses is strictly reducible to the others,
+    giving objectivity its irreducible complexity. © 2004 Kluwer Academic
+    Publishers.
+  archive: Scopus
+  author:
+    - family: Douglas
+      given: H.
+  citation-key: DouglasIrreducibleComplexityObjectivity2004
+  container-title: Synthese
+  DOI: 10.1023/B:SYNT.0000016451.18182.91
+  issue: '3'
+  issued:
+    - year: 2004
+  page: 453-473
+  source: Scopus
+  title: The irreducible complexity of objectivity
+  type: article-journal
+  volume: '138'
+
+- id: DouglasWeighingComplexEvidence2012
+  author:
+    - family: Douglas
+      given: Heather
+  citation-key: DouglasWeighingComplexEvidence2012
+  container-title: Kennedy Institute of Ethics Journal
+  container-title-short: Kennedy Institute of Ethics Journal
+  issue: '2'
+  issued:
+    - year: 2012
+  title: Weighing Complex Evidence in a Democratic Society
+  type: article-journal
+  volume: '22'
+
+- id: ElliottValuesEnvironmentalResearch2017
+  abstract: >-
+    Scientists who perform environmental research on policy-relevant topics face
+    challenges when communicating about how values may have influenced their
+    research. This study examines how citizens view scientists who publicly
+    acknowledge values. Specifically, we investigate whether it matters: if
+    citizens share or oppose a scientist’s values, if a scientist’s conclusions
+    seem contrary to or consistent with the scientist’s values, and if a
+    scientist is assessing the state of the science or making a policy
+    recommendation. We conducted two 3x2 factorial design online experiments.
+    Experiment 1 featured a hypothetical scientist assessing the state of the
+    science on the public-health effects of exposure to Bisphenol A (BPA), and
+    Experiment 2 featured a scientist making a policy recommendation on use of
+    BPA. We manipulated whether or not the scientist expressed values and
+    whether the scientist’s conclusion appeared contrary to or consistent with
+    the scientist’s values, and we accounted for whether or not subjects’ values
+    aligned with the scientist’s values. We analyzed our data with ordinary
+    least squares (OLS) regression techniques. Our results provide at least
+    preliminary evidence that acknowledging values may reduce the perceived
+    credibility of scientists within the general public, but this effect differs
+    depending on whether scientists and citizens share values, whether
+    scientists draw conclusions that run contrary to their values, and whether
+    scientists make policy recommendations.
+  accessed:
+    - year: 2017
+      month: 10
+      day: 27
+  author:
+    - family: Elliott
+      given: Kevin C.
+    - family: McCright
+      given: Aaron M.
+    - family: Allen
+      given: Summer
+    - family: Dietz
+      given: Thomas
+  citation-key: ElliottValuesEnvironmentalResearch2017
+  container-title: PLOS ONE
+  container-title-short: PLOS ONE
+  DOI: 10.1371/journal.pone.0186049
+  ISSN: 1932-6203
+  issue: '10'
+  issued:
+    - year: 2017
+      month: 10
+      day: 25
+  page: e0186049
+  source: PLoS Journals
+  title: >-
+    Values in environmental research: Citizens’ views of scientists who
+    acknowledge values
+  title-short: Values in environmental research
+  type: article-journal
+  URL: http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0186049
+  volume: '12'
+
+- id: FernandezPintoLegitimizingValuesRegulatory2019
+  abstract: >-
+    Background:Over the last several decades, scientists and social groups have
+    frequently raised concerns about politicization or political interference in
+    regulatory science. Public actors (environmentalists and industry advocates,
+    politically aligned public figures, scientists and political commentators,
+    in the United States as well as in other countries) across major
+    political-regulatory controversies have expressed concerns about the
+    inappropriate politicization of science. Although we share concerns about
+    the politicization of science, they are frequently framed in terms of an
+    ideal of value-free science, according to which political and economic
+    values have no legitimate role to play in science. For several decades, work
+    in philosophy of science has identified serious conceptual and practical
+    problems with the value-free ideal.Objectives:Our objectives are to discuss
+    the literature regarding the conceptual and practical problems with the
+    value-free ideal and offer a constructive alternative to the value-free
+    ideal.Discussion:We first discuss the prevalence of the value-free ideal in
+    regulatory science, then argue that this ideal is self-undermining and has
+    been exploited to delay protective regulation. To offer a constructive
+    alternative, we analyze the relationship between the goals of regulatory
+    science and the standards of good scientific activity. This analysis raises
+    questions about the relationship between methodological and practical
+    standards for good science, tensions among various important social goods,
+    and tensions among various social interests. We argue that the aims of
+    regulatory science help to legitimize value-laden choices regarding research
+    methods and study designs. Finally, we discuss how public deliberation,
+    adaptive management, and community-based participatory research can be used
+    to improve the legitimacy of scientists as representatives of the general
+    public on issues of environmental knowledge.Conclusions:Reflecting on the
+    aims of regulatory science—such as protecting human health and the
+    environment, informing democratic deliberation, and promoting the capacities
+    of environmental justice and Indigenous communities—can clarify when values
+    have legitimate roles in regulatory science. 
+    https://doi.org/10.1289/EHP3317
+  accessed:
+    - year: 2019
+      month: 3
+      day: 15
+  author:
+    - family: Fernández Pinto
+      given: Manuela
+    - family: Hicks
+      given: Daniel J.
+  citation-key: FernandezPintoLegitimizingValuesRegulatory2019
+  container-title: Environmental Health Perspectives
+  container-title-short: Environmental Health Perspectives
+  DOI: 10.1289/EHP3317
+  issue: '3'
+  issued:
+    - year: 2019
+      month: 3
+      day: 14
+  page: '035001'
+  source: ehp.niehs.nih.gov (Atypon)
+  title: Legitimizing Values in Regulatory Science
+  type: article-journal
+  URL: https://ehp.niehs.nih.gov/doi/full/10.1289/EHP3317
+  volume: '127'
+
+- id: HavstadNeutralityRelevancePrescription2017
+  author:
+    - family: Havstad
+      given: Joyce C.
+    - family: Brown
+      given: Matthew J.
+  citation-key: HavstadNeutralityRelevancePrescription2017
+  container-title: Public Affairs Quarterly
+  issue: '4'
+  issued:
+    - year: 2017
+  page: 303-324
+  source: Google Scholar
+  title: Neutrality, Relevance, Prescription, and the IPCC
+  type: article-journal
+  URL: https://www.jstor.org/stable/44732800
+  volume: '31'
+
+- id: HendriksMeasuringLaypeopleTrust2015
+  abstract: >-
+    Given their lack of background knowledge, laypeople require expert help when
+    dealing with scientific information. To decide whose help is dependable,
+    laypeople must judge an expert’s epistemic trustworthiness in terms of
+    competence, adherence to scientific standards, and good intentions. Online,
+    this may be difficult due to the often limited and sometimes unreliable
+    source information available. To measure laypeople’s evaluations of experts
+    (encountered online), we constructed an inventory to assess epistemic
+    trustworthiness on the dimensions expertise, integrity, and benevolence.
+    Exploratory (n = 237) and confirmatory factor analyses (n = 345) showed that
+    the Muenster Epistemic Trustworthiness Inventory (METI) is composed of these
+    three factors. A subsequent experimental study (n = 137) showed that all
+    three dimensions of the METI are sensitive to variation in source
+    characteristics. We propose using this inventory to measure assignments of
+    epistemic trustworthiness, that is, all judgments laypeople make when
+    deciding whether to place epistemic trust in–and defer to–an expert in order
+    to solve a scientific informational problem that is beyond their
+    understanding.
+  accessed:
+    - year: 2021
+      month: 6
+      day: 14
+  author:
+    - family: Hendriks
+      given: Friederike
+    - family: Kienhues
+      given: Dorothe
+    - family: Bromme
+      given: Rainer
+  citation-key: HendriksMeasuringLaypeopleTrust2015
+  container-title: PLOS ONE
+  container-title-short: PLOS ONE
+  DOI: 10.1371/journal.pone.0139309
+  ISSN: 1932-6203
+  issue: '10'
+  issued:
+    - year: 2015
+      month: 10
+      day: 16
+  language: en
+  page: e0139309
+  publisher: Public Library of Science
+  source: PLoS Journals
+  title: >-
+    Measuring Laypeople’s Trust in Experts in a Digital Age: The Muenster
+    Epistemic Trustworthiness Inventory (METI)
+  title-short: Measuring Laypeople’s Trust in Experts in a Digital Age
+  type: article-journal
+  URL: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0139309
+  volume: '10'
+
+- id: HicksValuesDisclosuresTrust2022
+  abstract: >-
+    While philosophers of science generally agree that social, political, and
+    ethical values can play legitimate roles in science, there is active debate
+    over whether scientists should disclosure such values in their public
+    communications. This debate depends, in part, on empirical claims about
+    whether values disclosures might undermine public trust in science. In a
+    previous study, Elliott et al. used an online experiment to test this
+    empirical claim. The current paper reports a replication attempt of their
+    experiment. Comparing results of the original study and our replication, we
+    do not find evidence for a transparency penalty or “shared values” effect,
+    but do find evidence that the content of scientific conclusions (whether or
+    not a chemical is found to cause harm) might effect perceived
+    trustworthiness and that scientists who value public health and disclose
+    this value might be perceived as more trustworthy.
+  accessed:
+    - year: 2022
+      month: 11
+      day: 7
+  author:
+    - family: Hicks
+      given: Daniel J.
+    - family: Lobato
+      given: Emilio Jon Christopher
+  citation-key: HicksValuesDisclosuresTrust2022
+  container-title: Frontiers in Communication
+  ISSN: 2297-900X
+  issued:
+    - year: 2022
+  license: All rights reserved
+  source: Frontiers
+  title: 'Values disclosures and trust in science: A replication study'
+  title-short: Values disclosures and trust in science
+  type: article-journal
+  URL: https://www.frontiersin.org/articles/10.3389/fcomm.2022.1017362
+  volume: '7'
+
+- id: HicksWhenVirtuesAre2022
+  abstract: >-
+    <p>Since at least the mid-2000s, political commentators, environmental
+    advocates, and scientists have raised concerns about an “anti-science”
+    approach to environmental policymaking in conservative governments in the US
+    and Canada. This paper explores and resolves a paradox surrounding at least
+    some uses of the “anti-science” epithet. I examine two cases of such
+    “anti-science” environmental policy, both of which involve appeals to
+    epistemic values that are widely endorsed by both scientists and
+    philosophers of science. It seems paradoxical to call an appeal to epistemic
+    values “anti-science.” I develop an analysis that, I argue, can resolve this
+    paradox. This analysis is a version of the “aims approach” to science and
+    values, drawing on ideas from axiology and virtue ethics. I characterize the
+    paradox in terms of conflicts or tensions between epistemic and pragmatic
+    aims, and argue that there is a key asymmetry between them: epistemic aims
+    are valuable, in part, because they are useful for pursuing pragmatic aims.
+    Thus, when epistemic and pragmatic aims conflict, epistemic aims need to be
+    reconceptualized in order to reconcile them to pragmatic aims. When this is
+    done, in the “anti-science” cases, the epistemic values are scientific vices
+    rather than virtues. Thus the “anti-science” epithet is apt.</p>
+  accessed:
+    - year: 2022
+      month: 4
+      day: 28
+  author:
+    - family: Hicks
+      given: Daniel J.
+  citation-key: HicksWhenVirtuesAre2022
+  container-title: Philosophy, Theory, and Practice in Biology
+  DOI: 10.3998/.2629
+  ISSN: 2475-3025
+  issue: '0'
+  issued:
+    - year: 2022
+      month: 4
+      day: 28
+  language: eng
+  license: All rights reserved
+  number: '0'
+  publisher: Michigan Publishing
+  source: journals.publishing.umich.edu
+  title: >-
+    When Virtues are Vices: 'Anti-Science' Epistemic Values in Environmental
+    Politics
+  title-short: When Virtues are Vices
+  type: article-journal
+  URL: https://journals.publishing.umich.edu/ptpbio/article/id/2629/
+  volume: '14'
+
+- id: HoldenThorpScienceEIC[@hholdenthorp]LightNatureExcellent2023
+  accessed:
+    - year: 2023
+      month: 3
+      day: 22
+  author:
+    - literal: Holden Thorp, Science EIC [@hholdenthorp]
+  citation-key: HoldenThorpScienceEIC[@hholdenthorp]LightNatureExcellent2023
+  container-title: Twitter
+  genre: Tweet
+  issued:
+    - year: 2023
+      month: 3
+      day: 21
+  language: en
+  title: >-
+    In light of @Nature's excellent editorial about why it makes sense to
+    comment on politics (all the way, in their case, to making an endorsement),
+    this is the Pew finding that is most relevant. Following the admonition to
+    stick to science is conceding 1/n https://t.co/1jcwWSsBDs
+  type: post
+  URL: https://twitter.com/hholdenthorp/status/1638203875160104961
+
+- id: KitcherArgumentFreeInquiry1997
+  accessed:
+    - year: 2022
+      month: 1
+      day: 19
+  author:
+    - family: Kitcher
+      given: Philip
+  citation-key: KitcherArgumentFreeInquiry1997
+  container-title: Noûs
+  ISSN: 0029-4624
+  issue: '3'
+  issued:
+    - year: 1997
+  page: 279-306
+  publisher: Wiley
+  source: JSTOR
+  title: An Argument About Free Inquiry
+  type: article-journal
+  URL: https://www.jstor.org/stable/2216207
+  volume: '31'
+
+- id: KouranyShouldKnowledgeBe2016
+  abstract: >-
+    For centuries scientists have claimed that women are intellectually inferior
+    to men and blacks are inferior to whites. Although these claims have been
+    contested and corrected for centuries, they still continue to be made.
+    Meanwhile, scientists have documented the harm done to women and blacks by
+    the publication of such claims. Can anything be done to improve this
+    situation? Freedom of research is universally recognized to be of first-rate
+    importance. Yet, constraints on that freedom are also universally
+    recognized. I consider three of these constraints and argue for tighter
+    restrictions on race- and gender-related cognitive differences research on
+    their basis.
+  accessed:
+    - year: 2016
+      month: 11
+      day: 19
+  author:
+    - family: Kourany
+      given: Janet A.
+  citation-key: KouranyShouldKnowledgeBe2016
+  container-title: Philosophy of Science
+  container-title-short: Philosophy of Science
+  DOI: 10.1086/687863
+  ISSN: 0031-8248
+  issue: '5'
+  issued:
+    - year: 2016
+      month: 6
+      day: 16
+  page: 779-790
+  source: journals.uchicago.edu.proxy1.lib.uwo.ca (Atypon)
+  title: >-
+    Should Some Knowledge Be Forbidden? The Case of Cognitive Differences
+    Research
+  title-short: Should Some Knowledge Be Forbidden?
+  type: article-journal
+  URL: http://www.journals.uchicago.edu.proxy1.lib.uwo.ca/doi/abs/10.1086/687863
+  volume: '83'
+
+- id: LupiaPoliticalEndorsementsCan2023
+  abstract: Endorsing Joe Biden caused Trump supporters to trust Nature less.
+  accessed:
+    - year: 2023
+      month: 3
+      day: 20
+  author:
+    - family: Lupia
+      given: Arthur
+  citation-key: LupiaPoliticalEndorsementsCan2023
+  container-title: Nature
+  DOI: 10.1038/d41586-023-00799-3
+  issue: '7953'
+  issued:
+    - year: 2023
+      month: 3
+  language: en
+  license: 2023 Springer Nature Limited
+  note: |-
+    Bandiera_abtest: a
+    Cg_type: News And Views
+    Subject_term: Sociology, Society, Politics, Scientific community
+  number: '7953'
+  page: 590-591
+  publisher: Nature Publishing Group
+  source: www.nature.com
+  title: Political endorsements can affect scientific credibility
+  type: article-journal
+  URL: https://www.nature.com/articles/d41586-023-00799-3
+  volume: '615'
+
+- id: RawlsJusticeFairness2001
+  abstract: >-
+    PART I Fundamental Ideas §1. Four Roles of Political Philosophy 1.1. We
+    begin by distinguishing four roles that political philosophy may have as
+    part of ...
+  author:
+    - family: Rawls
+      given: John
+  citation-key: RawlsJusticeFairness2001
+  collection-title: a restatement
+  ISBN: 978-0-674-00510-5
+  issued:
+    - year: 2001
+  number-of-pages: '214'
+  publisher: Harvard University Press
+  title: Justice as fairness
+  type: book
+  URL: http://books.google.com/books?id=AjrXZIlbK1cC
+
+- id: SchroederDemocraticValuesBetter
+  abstract: >-
+    Abstract.  There is a growing consensus among philosophers of science that
+    core parts of the scientific process involve non-epistemic values. This
+    undermines th
+  accessed:
+    - year: 2019
+      month: 6
+      day: 29
+  author:
+    - family: Schroeder
+      given: S. Andrew
+  citation-key: SchroederDemocraticValuesBetter
+  container-title: The British Journal for the Philosophy of Science
+  container-title-short: Br J Philos Sci
+  DOI: 10.1093/bjps/axz023
+  language: en
+  source: academic.oup.com
+  title: 'Democratic Values: A Better Foundation for Public Trust in Science'
+  title-short: Democratic Values
+  type: article-journal
+  URL: >-
+    https://academic.oup.com/bjps/advance-article/doi/10.1093/bjps/axz023/5524669
+
+- id: ShouldNatureEndorse2023
+  abstract: >-
+    Political endorsements might not always win hearts and minds, but when
+    candidates threaten a retreat from reason, science must speak out.
+  accessed:
+    - year: 2023
+      month: 3
+      day: 21
+  citation-key: ShouldNatureEndorse2023
+  container-title: Nature
+  DOI: 10.1038/d41586-023-00789-5
+  issue: '7953'
+  issued:
+    - year: 2023
+      month: 3
+      day: 20
+  language: en
+  license: 2023 Springer Nature Limited
+  note: |-
+    Bandiera_abtest: a
+    Cg_type: Editorial
+    Subject_term: Society, Human behaviour, Politics, Policy
+  number: '7953'
+  page: 561-561
+  publisher: Nature Publishing Group
+  source: www.nature.com
+  title: >-
+    Should Nature endorse political candidates? Yes — when the occasion demands
+    it
+  title-short: Should Nature endorse political candidates?
+  type: article-journal
+  URL: https://www.nature.com/articles/d41586-023-00789-5
+  volume: '615'
+
+- id: WhyNatureSupports2020
+  abstract: >-
+    We cannot stand by and let science be undermined. Joe Biden’s trust in
+    truth, evidence, science and democracy make him the only choice in the US
+    election.
+  accessed:
+    - year: 2023
+      month: 3
+      day: 22
+  citation-key: WhyNatureSupports2020
+  container-title: Nature
+  DOI: 10.1038/d41586-020-02852-x
+  issue: '7829'
+  issued:
+    - year: 2020
+      month: 10
+      day: 14
+  language: en
+  license: 2021 Nature
+  note: |-
+    Bandiera_abtest: a
+    Cg_type: Editorial
+    Subject_term: Government, Politics, Policy
+  number: '7829'
+  page: 335-335
+  publisher: Nature Publishing Group
+  source: www.nature.com
+  title: Why Nature supports Joe Biden for US president
+  type: article-journal
+  URL: https://www.nature.com/articles/d41586-020-02852-x
+  volume: '586'
+
+- id: ZhangPoliticalEndorsementNature2023
+  abstract: >-
+    High-profile political endorsements by scientific publications have become
+    common in recent years, raising concerns about backlash against the
+    endorsing organizations and scientific expertise. In a preregistered
+    large-sample controlled experiment, I randomly assigned participants to
+    receive information about the endorsement of Joe Biden by the scientific
+    journal Nature during the COVID-19 pandemic. The endorsement message caused
+    large reductions in stated trust in Nature among Trump supporters. This
+    distrust lowered the demand for COVID-related information provided by
+    Nature, as evidenced by substantially reduced requests for Nature articles
+    on vaccine efficacy when offered. The endorsement also reduced Trump
+    supporters’ trust in scientists in general. The estimated effects on Biden
+    supporters’ trust in Nature and scientists were positive, small and mostly
+    statistically insignificant. I found little evidence that the endorsement
+    changed views about Biden and Trump. These results suggest that political
+    endorsement by scientific journals can undermine and polarize public
+    confidence in the endorsing journals and the scientific community.
+  accessed:
+    - year: 2023
+      month: 3
+      day: 22
+  author:
+    - family: Zhang
+      given: Floyd Jiuyun
+  citation-key: ZhangPoliticalEndorsementNature2023
+  container-title: Nature Human Behaviour
+  container-title-short: Nat Hum Behav
+  DOI: 10.1038/s41562-023-01537-5
+  ISSN: 2397-3374
+  issued:
+    - year: 2023
+      month: 3
+      day: 20
+  language: en
+  license: 2023 The Author(s)
+  page: 1-11
+  publisher: Nature Publishing Group
+  source: www.nature.com
+  title: >-
+    Political endorsement by Nature and trust in scientific expertise during
+    COVID-19
+  type: article-journal
+  URL: https://www.nature.com/articles/s41562-023-01537-5
+...
