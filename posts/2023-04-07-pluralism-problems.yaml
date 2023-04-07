@@ -1,0 +1,706 @@
+---
+references:
+- id: BolsenCitizensScientistsPolicy2015
+  abstract: >-
+    Numerous factors shape citizens’ beliefs about global warming, but there is
+    very little research that compares the views of the public with key actors
+    in the policymaking process. We analyze data from simultaneous and parallel
+    surveys of (1) the U.S. public, (2) scientists who actively publish research
+    on energy technologies in the United States, and (3) congressional policy
+    advisors and find that beliefs about global warming vary markedly among
+    them. Scientists and policy advisors are more likely than the public to
+    express a belief in the existence and anthropogenic nature of global
+    warming. We also find ideological polarization about global warming in all
+    three groups, although scientists are less polarized than the public and
+    policy advisors over whether global warming is actually occurring.
+    Alarmingly, there is evidence that the ideological divide about global
+    warming gets significantly larger according to respondents’ knowledge about
+    politics, energy, and science.
+  accessed:
+    - year: 2015
+      month: 2
+      day: 26
+  author:
+    - family: Bolsen
+      given: Toby
+    - family: Druckman
+      given: James N.
+    - family: Cook
+      given: Fay Lomax
+  citation-key: BolsenCitizensScientistsPolicy2015
+  container-title: The ANNALS of the American Academy of Political and Social Science
+  container-title-short: The ANNALS of the American Academy of Political and Social Science
+  DOI: 10.1177/0002716214558393
+  ISSN: 0002-7162, 1552-3349
+  issue: '1'
+  issued:
+    - year: 2015
+      month: 3
+      day: 1
+  language: en
+  page: 271-295
+  source: ann.sagepub.com.proxy1.lib.uwo.ca
+  title: Citizens’, Scientists’, and Policy Advisors’ Beliefs about Global Warming
+  type: article-journal
+  URL: http://ann.sagepub.com.proxy1.lib.uwo.ca/content/658/1/271
+  volume: '658'
+
+- id: BrownDemocraticControlScientific2013
+  author:
+    - family: Brown
+      given: Matthew J
+  citation-key: BrownDemocraticControlScientific2013
+  container-title: The European Philosophy of Science Association Proceedings
+  editor:
+    - family: Karakostas
+      given: Vassilios
+    - family: Dieks
+      given: Dennis
+  issued:
+    - year: 2013
+  page: 479-491
+  publisher: Springer International Publishing
+  title: The Democratic Control of the Scientific Control of Politics
+  type: chapter
+  URL: http://dx.doi.org/10.1007/978-3-319-01306-0_39
+  volume: '2'
+
+- id: CartwrightEvidenceBasedPolicyPractical2012
+  abstract: >-
+    Over the last twenty or so years, it has become standard to require policy
+    makers to base their recommendations on evidence. That is now
+    uncontroversial to the point of triviality—of course, policy should be based
+    on the facts. But are the methods that policy makers rely on to gather and
+    analyze evidence the right ones? In Evidence-Based Policy, Nancy Cartwright,
+    an eminent scholar, and Jeremy Hardie, who has had a long and successful
+    career in both business and the economy, explain that the dominant methods
+    which are in use now—broadly speaking, methods that imitate standard
+    practices in medicine like randomized control trials—do not work. They fail,
+    Cartwright and Hardie contend, because they do not enhance our ability to
+    predict if policies will be effective. The prevailing methods fall short not
+    just because social science, which operates within the domain of real-world
+    politics and deals with people, differs so much from the natural science
+    milieu of the lab. Rather, there are principled reasons why the advice for
+    crafting and implementing policy now on offer will lead to bad results.
+    Current guides in use tend to rank scientific methods according to the
+    degree of trustworthiness of the evidence they produce. That is valuable in
+    certain respects, but such approaches offer little advice about how to think
+    about putting such evidence to use. Evidence-Based Policy focuses on showing
+    policymakers how to effectively use evidence. It also explains what types of
+    information are most necessary for making reliable policy, and offers
+    lessons on how to organize that information.
+  author:
+    - family: Cartwright
+      given: Nancy
+    - family: Hardie
+      given: Jeremy
+  citation-key: CartwrightEvidenceBasedPolicyPractical2012
+  ISBN: 978-0-19-984162-2
+  issued:
+    - year: 2012
+  number-of-pages: '224'
+  publisher: Oxford University Press
+  title: 'Evidence-Based Policy: A Practical Guide to Doing It Better'
+  type: book
+  URL: >-
+    http://books.google.ca/books?id=kN3OdpkUyTcC&printsec=frontcover&dq=intitle:Evidence+Based+Policy+A+Practical+Guide+to+Doing+It+Better&hl=&cd=1&source=gbs_api
+
+- id: DouglasSciencePolicyValuefree2009
+  author:
+    - family: Douglas
+      given: Heather E.
+  call-number: Q175.5 .D68 2009
+  citation-key: DouglasSciencePolicyValuefree2009
+  event-place: Pittsburgh, Pa
+  ISBN: 978-0-8229-6026-3
+  issued:
+    - year: 2009
+  number-of-pages: '210'
+  publisher: University of Pittsburgh Press
+  publisher-place: Pittsburgh, Pa
+  source: Library of Congress ISBN
+  title: Science, policy, and the value-free ideal
+  type: book
+
+- id: FeyerabendHowDefendSociety1975
+  author:
+    - family: Feyerabend
+      given: Paul
+  citation-key: FeyerabendHowDefendSociety1975
+  container-title: Radical Philosophy
+  issue: '011'
+  issued:
+    - year: 1975
+      season: 2
+  language: en
+  page: 3-8
+  source: Zotero
+  title: How to Defend Society Against Science
+  type: article-journal
+
+- id: Hertel-FernandezLegislativeStaffRepresentation2019
+  abstract: |-
+    Legislative staff link Members of Congress and their constituents,
+    theoretically facilitating democratic representation. Yet, little
+    research has examined whether Congressional staff actually recognize
+    the preferences of their Members’ constituents. Using an original
+    survey of senior US Congressional staffers, we show that staff
+    systematically mis-estimate constituent opinions. We then evaluate
+    the sources of these misperceptions, using observational analyses
+    and two survey experiments. Staffers who rely more heavily on
+    conservative and business interest groups for policy information
+    have more skewed perceptions of constituent opinion. Egocentric
+    biases also shape staff perceptions. Our findings complicate
+    assumptions that Congress represents constituent opinion, and help
+    to explain why Congress often appears so unresponsive to ordinary
+    citizens. We conclude that scholars should focus more closely on
+    legislative aides as key actors in the policymaking process, both in
+    the United States and across other advanced democracies.
+  accessed:
+    - year: 2019
+      month: 5
+      day: 11
+  author:
+    - family: Hertel-Fernandez
+      given: Alexander
+    - family: Mildenberger
+      given: Matto
+    - family: Stokes
+      given: Leah C.
+  citation-key: Hertel-FernandezLegislativeStaffRepresentation2019
+  container-title: American Political Science Review
+  DOI: 10.1017/S0003055418000606
+  ISSN: 0003-0554, 1537-5943
+  issue: '1'
+  issued:
+    - year: 2019
+      month: 2
+  language: en
+  page: 1-18
+  source: Cambridge Core
+  title: Legislative Staff and Representation in Congress
+  type: article-journal
+  URL: >-
+    https://www.cambridge.org/core/journals/american-political-science-review/article/legislative-staff-and-representation-in-congress/D7735FCF39B843B9F3269FD39362FD66
+  volume: '113'
+
+- id: HicksEpistemologicalDepthGM2015
+  abstract: >-
+    This paper examines the scientific controversy over the yields of
+    genetically modified [GM] crops as a case study in epistemologically deep
+    disagreements. Appeals to “the evidence” are inadequate to resolve such
+    disagreements; not because the interlocutors have radically different
+    metaphysical views (as in cases of incommensurability), but instead because
+    they assume rival epistemological frameworks and so have incompatible views
+    about what kinds of research methods and claims count as evidence.
+    Specifically, I show that, in the yield debate, proponents and opponents of
+    GM crops cite two different sets of claims as evidence, which correspond to
+    two rival epistemological frameworks, classical experimental epistemology
+    and Nancy Cartwright's evidence for use. I go on to argue that, even if both
+    sides of the debate accepted Cartwright's view, they might still disagree
+    over what counts as evidence, because evidence for use ties standards of
+    evidence to what is sometimes called the “context of application.”
+  accessed:
+    - year: 2015
+      month: 8
+      day: 26
+  author:
+    - family: Hicks
+      given: Daniel J.
+  citation-key: HicksEpistemologicalDepthGM2015
+  container-title: >-
+    Studies in History and Philosophy of Science Part C: Studies in History and
+    Philosophy of Biological and Biomedical Sciences
+  container-title-short: >-
+    Studies in History and Philosophy of Science Part C: Studies in History and
+    Philosophy of Biological and Biomedical Sciences
+  DOI: 10.1016/j.shpsc.2015.02.002
+  ISSN: 1369-8486
+  issued:
+    - year: 2015
+      month: 4
+  page: 1-12
+  source: ScienceDirect
+  title: Epistemological depth in a GM crops controversy
+  type: article-journal
+  URL: http://www.sciencedirect.com/science/article/pii/S1369848615000321
+  volume: '50'
+
+- id: HicksGeneticallyModifiedCrops2017
+  abstract: >-
+    The public controversy over genetically modified (GM) crops is predominantly
+    framed in terms of health and safety risks to humans and the environment.
+    However, opponents of GM crops are motivated by a wide variety of other
+    social, political, and economic concerns. In this paper, I critically assess
+    the predominance of the health and safety framing in terms of Iris Young’s
+    model of communicative democracy. I argue that the health and safety framing
+    leads to the marginalization of the social, political, and economic concerns
+    of GM opponents, within both public discourse and government, and is
+    therefore democratically illegitimate.
+  author:
+    - family: Hicks
+      given: Daniel J.
+  citation-key: HicksGeneticallyModifiedCrops2017
+  container-title: Perspectives on Science
+  container-title-short: Perspectives on Science
+  DOI: 10.1162/POSC_a_00251
+  ISSN: 1063-6145
+  issue: '4'
+  issued:
+    - year: 2017
+      month: 7
+    - year: 2017
+      month: 8
+  page: 488-520
+  source: MIT Press Journals
+  title: Genetically Modified Crops, Inclusion, and Democracy
+  type: article-journal
+  URL: http://dx.doi.org/10.1162/POSC_a_00251
+  volume: '25'
+
+- id: LaceyScientificResearchTechnological2014
+  accessed:
+    - year: 2015
+      month: 1
+      day: 18
+  author:
+    - family: Lacey
+      given: Hugh
+  citation-key: LaceyScientificResearchTechnological2014
+  container-title: Scientiae Studia
+  DOI: 10.1590/S1678-31662014000400003
+  ISSN: 1678-3166
+  issue: SPE
+  issued:
+    - year: 2014
+  page: 37-55
+  source: SciELO
+  title: >-
+    Scientific research, technological innovation and the agenda of social
+    justice, democratic participation and sustainability
+  type: article-journal
+  URL: >-
+    http://www.scielo.br/scielo.php?script=sci_abstract&pid=S1678-31662014000500003&lng=en&nrm=iso&tlng=en
+  volume: '12'
+
+- id: LeiserowitzGlobalWarmingSix2021
+  abstract: >-
+    Strategic communication requires the identification and understanding of
+    target audiences for tailored communication. The Global Warming’s Six
+    Americas analysis segments the U.S. public into six distinct, but internally
+    consistent audiences, who each respond differently to the issue of climate
+    change. The segments include the Alarmed, Concerned, Cautious, Disengaged,
+    Doubtful, and Dismissive. The framework was first developed in 2008 and has
+    been tracked twice a year using nationally representative surveys for over a
+    decade. This research has helped advance communication theory and practice
+    and the Six Americas framework has informed the decision making of
+    stakeholders ranging from scientists to government officials, journalists,
+    educators, and advocates. The framework has also been extended to assess
+    specialized audiences (e.g. broadcast meteorologists) and other countries
+    (e.g. India, Australia, and Germany). Future research should further develop
+    and investigate the Six Americas within the United States, while also
+    developing tailored segmentations and related tools for other countries.
+  accessed:
+    - year: 2022
+      month: 4
+      day: 6
+  author:
+    - family: Leiserowitz
+      given: Anthony
+    - family: Roser-Renouf
+      given: Connie
+    - family: Marlon
+      given: Jennifer
+    - family: Maibach
+      given: Edward
+  citation-key: LeiserowitzGlobalWarmingSix2021
+  collection-title: 'Human Response to Climate Change: From Neurons to Collective Action'
+  container-title: Current Opinion in Behavioral Sciences
+  container-title-short: Current Opinion in Behavioral Sciences
+  DOI: 10.1016/j.cobeha.2021.04.007
+  ISSN: 2352-1546
+  issued:
+    - year: 2021
+      month: 12
+      day: 1
+  language: en
+  page: 97-103
+  source: ScienceDirect
+  title: >-
+    Global Warming’s Six Americas: a review and recommendations for climate
+    change communication
+  title-short: Global Warming’s Six Americas
+  type: article-journal
+  URL: https://www.sciencedirect.com/science/article/pii/S2352154621000929
+  volume: '42'
+
+- id: LewandowskyAliceWonderlandMechanics2016
+  abstract: >-
+    Science strives for coherence. For example, the findings from climate
+    science form a highly coherent body of knowledge that is supported by many
+    independent lines of evidence: greenhouse gas (GHG) emissions from human
+    economic activities are causing the global climate to warm and unless GHG
+    emissions are drastically reduced in the near future, the risks from climate
+    change will continue to grow and major adverse consequences will become
+    unavoidable. People who oppose this scientific body of knowledge because the
+    implications of cutting GHG emissions—such as regulation or increased
+    taxation—threaten their worldview or livelihood cannot provide an
+    alternative view that is coherent by the standards of conventional
+    scientific thinking. Instead, we suggest that people who reject the fact
+    that the Earth’s climate is changing due to greenhouse gas emissions (or any
+    other body of well-established scientific knowledge) oppose whatever
+    inconvenient finding they are confronting in piece-meal fashion, rather than
+    systematically, and without considering the implications of this rejection
+    to the rest of the relevant scientific theory and findings. Hence, claims
+    that the globe “is cooling” can coexist with claims that the “observed
+    warming is natural” and that “the human influence does not matter because
+    warming is good for us.” Coherence between these mutually contradictory
+    opinions can only be achieved at a highly abstract level, namely that
+    “something must be wrong” with the scientific evidence in order to justify a
+    political position against climate change mitigation. This high-level
+    coherence accompanied by contradictory subordinate propositions is a known
+    attribute of conspiracist ideation, and conspiracism may be implicated when
+    people reject well-established scientific propositions.
+  accessed:
+    - year: 2016
+      month: 9
+      day: 20
+  author:
+    - family: Lewandowsky
+      given: Stephan
+    - family: Cook
+      given: John
+    - family: Lloyd
+      given: Elisabeth
+  citation-key: LewandowskyAliceWonderlandMechanics2016
+  container-title: Synthese
+  container-title-short: Synthese
+  DOI: 10.1007/s11229-016-1198-6
+  ISSN: 0039-7857, 1573-0964
+  issued:
+    - year: 2016
+      month: 9
+      day: 19
+  language: en
+  page: 1-22
+  source: link.springer.com
+  title: >-
+    The ‘Alice in Wonderland’ mechanics of the rejection of (climate) science:
+    simulating coherence by conspiracism
+  title-short: The ‘Alice in Wonderland’ mechanics of the rejection of (climate) science
+  type: article-journal
+  URL: http://link.springer.com/article/10.1007/s11229-016-1198-6
+
+- id: LloydModelRobustnessConfirmatory2015
+  abstract: >-
+    I propose a distinct type of robustness, which I suggest can support a
+    confirmatory role in scientific reasoning, contrary to the usual
+    philosophical claims. In model robustness, repeated production of the
+    empirically successful model prediction or retrodiction against a background
+    of independently-supported and varying model constructions, within a group
+    of models containing a shared causal factor, may suggest how confident we
+    can be in the causal factor and predictions/retrodictions, especially once
+    supported by a variety of evidence framework. I present climate models of
+    greenhouse gas global warming of the 20th Century as an example, and
+    emphasize climate scientists' discussions of robust models and causal
+    aspects. The account is intended as applicable to a broad array of sciences
+    that use complex modeling techniques.
+  accessed:
+    - year: 2015
+      month: 2
+      day: 3
+  author:
+    - family: Lloyd
+      given: Elisabeth A.
+  citation-key: LloydModelRobustnessConfirmatory2015
+  container-title: Studies in History and Philosophy of Science Part A
+  container-title-short: Studies in History and Philosophy of Science Part A
+  DOI: 10.1016/j.shpsa.2014.12.002
+  ISSN: 0039-3681
+  issued:
+    - year: 2015
+      month: 2
+  page: 58-68
+  source: ScienceDirect
+  title: 'Model robustness as a confirmatory virtue: The case of climate science'
+  title-short: Model robustness as a confirmatory virtue
+  type: article-journal
+  URL: http://www.sciencedirect.com/science/article/pii/S0039368114001150
+  volume: '49'
+
+- id: LonginoCanThereBe1987
+  abstract: >-
+    //static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0887536700000799/resource/name/firstPage-S0887536700000799a.jpg
+  accessed:
+    - year: 2021
+      month: 2
+      day: 17
+  author:
+    - family: Longino
+      given: Helen E.
+  citation-key: LonginoCanThereBe1987
+  container-title: Hypatia
+  DOI: 10.1111/j.1527-2001.1987.tb01341.x
+  ISSN: 0887-5367, 1527-2001
+  issue: '3'
+  issued:
+    - year: 1987
+  language: en
+  page: 51-64
+  publisher: Cambridge University Press
+  source: Cambridge University Press
+  title: Can There Be A Feminist Science?
+  type: article-journal
+  URL: >-
+    https://www.cambridge.org/core/journals/hypatia/article/abs/can-there-be-a-feminist-science/469039F2925E2C3BB7576D618C3E72CE
+  volume: '2'
+
+- id: LuskPoliticalLegitimacyDemocratic2020
+  accessed:
+    - year: 2020
+      month: 8
+      day: 1
+  author:
+    - family: Lusk
+      given: Greg
+  citation-key: LuskPoliticalLegitimacyDemocratic2020
+  container-title: Philosophy of Science
+  container-title-short: Philosophy of Science
+  DOI: 10.1086/710803
+  ISSN: 0031-8248
+  issued:
+    - year: 2020
+      month: 7
+      day: 14
+  publisher: The University of Chicago Press
+  source: journals.uchicago.edu (Atypon)
+  title: 'Political Legitimacy in the Democratic View: The Case of Climate Services'
+  title-short: Political Legitimacy in the Democratic View
+  type: article-journal
+  URL: https://www.journals.uchicago.edu/doi/abs/10.1086/710803
+
+- id: OreskesMerchantsDoubtHow2011
+  abstract: >-
+    The U.S. scientific community has long led the world in research on such
+    areas as public health, environmental science, and issues affecting quality
+    of life. These scientists have produced landmark studies on the dangers of
+    DDT, tobacco smoke, acid rain, and global warming. But at the same time, a
+    small yet potent subset of this community leads the world in vehement denial
+    of these dangers.Merchants of Doubt tells the story of how a loose-knit
+    group of high-level scientists and scientific advisers, with deep
+    connections in politics and industry, ran effective campaigns to mislead the
+    public and deny well-established scientific knowledge over four decades.
+    Remarkably, the same individuals surface repeatedly-some of the same figures
+    who have claimed that the science of global warming is "not settled" denied
+    the truth of studies linking smoking to lung cancer, coal smoke to acid
+    rain, and CFCs to the ozone hole. "Doubt is our product," wrote one tobacco
+    executive. These "experts" supplied it. Naomi Oreskes and Erik M. Conway,
+    historians of science, roll back the rug on this dark corner of the American
+    scientific community, showing how ideology and corporate interests, aided by
+    a too-compliant media, have skewed public understanding of some of the most
+    pressing issues of our era.
+  author:
+    - family: Oreskes
+      given: Naomi
+    - family: Conway
+      given: Erik M.
+  citation-key: OreskesMerchantsDoubtHow2011
+  event-place: New York, NY, USA
+  ISBN: 978-1-4088-2877-9
+  issued:
+    - year: 2011
+      month: 10
+      day: 3
+  language: en
+  number-of-pages: '368'
+  publisher: Bloomsbury
+  publisher-place: New York, NY, USA
+  source: Google Books
+  title: >-
+    Merchants of Doubt: How a Handful of Scientists Obscured the Truth on Issues
+    from Tobacco Smoke to Global Warming
+  title-short: Merchants of Doubt
+  type: book
+
+- id: ParkerIncorporatingUserValues2019
+  abstract: >-
+    Increasingly there are calls for climate services to be “co-produced” with
+    users, taking into account not only the basic information needs of users but
+    also their value systems and decision contexts. What does this mean in
+    practice? One way that user values can be incorporated into climate services
+    is in the management of inductive risk. This involves understanding which
+    errors in climate service products would have particularly negative
+    consequences from the users’ perspective (e.g., underestimating rather than
+    overestimating the change in an impact variable) and then prioritizing the
+    avoidance of those errors. This essay shows how inductive risk could be
+    managed in climate services in ways that serve user values and argues that
+    there are both ethical and practical reasons in favor of doing so.
+  accessed:
+    - year: 2019
+      month: 9
+      day: 28
+  author:
+    - family: Parker
+      given: Wendy S.
+    - family: Lusk
+      given: Greg
+  citation-key: ParkerIncorporatingUserValues2019
+  container-title: Bulletin of the American Meteorological Society
+  container-title-short: Bull. Amer. Meteor. Soc.
+  DOI: 10.1175/BAMS-D-17-0325.1
+  ISSN: 0003-0007
+  issue: '9'
+  issued:
+    - year: 2019
+      month: 4
+      day: 30
+  page: 1643-1650
+  source: journals.ametsoc.org (Atypon)
+  title: Incorporating User Values into Climate Services
+  type: article-journal
+  URL: https://journals.ametsoc.org/doi/full/10.1175/BAMS-D-17-0325.1
+  volume: '100'
+
+- id: SarewitzHowScienceMakes2004
+  author:
+    - family: Sarewitz
+      given: Daniel
+  citation-key: SarewitzHowScienceMakes2004
+  container-title: Environmental Science and Policy
+  container-title-short: Environmental Science and Policy
+  DOI: 10.1016/j.envsci.2004.06.001
+  issue: '5'
+  issued:
+    - year: 2004
+  page: 385-403
+  title: How science makes environmental controversies worse
+  type: article-journal
+  volume: '7'
+
+- id: SicotteWillGreenNew2021
+  abstract: >-
+    On February 7, 2019, Rep. Alexandria Ocasio-Cortez (D-NY) and colleagues in
+    the U.S. House of Representatives called climate change “a direct threat to
+    the
+  accessed:
+    - year: 2023
+      month: 4
+      day: 7
+  author:
+    - family: Sicotte
+      given: Diane
+  citation-key: SicotteWillGreenNew2021
+  issued:
+    - year: 2021
+      season: 2
+  language: en-US
+  title: >-
+    Will the Green New Deal Bring About a “Just Transition,” or Just Transition?
+    - American Sociological Association
+  title-short: Will the Green New Deal Bring About a “Just Transition,” or Just Transition?
+  type: post-weblog
+  URL: >-
+    https://www.asanet.org/footnotes-article/will-green-new-deal-bring-about-just-transition-or-just-transition/
+
+- id: SparkmanAmericansExperienceFalse2022
+  abstract: >-
+    Pluralistic ignorance—a shared misperception of how others think or
+    behave—poses a challenge to collective action on problems like climate
+    change. Using a representative sample of Americans (N = 6119), we examine
+    whether Americans accurately perceive national concern about climate change
+    and support for mitigating policies. We find a form of pluralistic ignorance
+    that we describe as a false social reality: a near universal perception of
+    public opinion that is the opposite of true public sentiment. Specifically,
+    80–90% of Americans underestimate the prevalence of support for major
+    climate change mitigation policies and climate concern. While 66–80%
+    Americans support these policies, Americans estimate the prevalence to only
+    be between 37–43% on average. Thus, supporters of climate policies outnumber
+    opponents two to one, while Americans falsely perceive nearly the opposite
+    to be true. Further, Americans in every state and every assessed demographic
+    underestimate support across all polices tested. Preliminary evidence
+    suggests three sources of these misperceptions: (i) consistent with a false
+    consensus effect, respondents who support these policies less
+    (conservatives) underestimate support by a greater degree; controlling for
+    one’s own personal politics, (ii) exposure to more conservative local norms
+    and (iii) consuming conservative news correspond to greater misperceptions.
+  accessed:
+    - year: 2022
+      month: 8
+      day: 23
+  author:
+    - family: Sparkman
+      given: Gregg
+    - family: Geiger
+      given: Nathan
+    - family: Weber
+      given: Elke U.
+  citation-key: SparkmanAmericansExperienceFalse2022
+  container-title: Nature Communications
+  container-title-short: Nat Commun
+  DOI: 10.1038/s41467-022-32412-y
+  ISSN: 2041-1723
+  issue: '1'
+  issued:
+    - year: 2022
+      month: 8
+      day: 23
+  language: en
+  license: 2022 The Author(s)
+  number: '1'
+  page: '4779'
+  publisher: Nature Publishing Group
+  source: www.nature.com
+  title: >-
+    Americans experience a false social reality by underestimating popular
+    climate policy support by nearly half
+  type: article-journal
+  URL: https://www.nature.com/articles/s41467-022-32412-y
+  volume: '13'
+
+- id: SupranAssessingExxonMobilClimate2017
+  abstract: >-
+    This paper assesses whether ExxonMobil Corporation has in the past misled
+    the general public about climate change. We present an empirical
+    document-by-document textual content analysis and comparison of 187 climate
+    change communications from ExxonMobil, including peer-reviewed and
+    non-peer-reviewed publications, internal company documents, and paid,
+    editorial-style advertisements (‘advertorials’) in The New York Times . We
+    examine whether these communications sent consistent messages about the
+    state of climate science and its implications—specifically, we compare their
+    positions on climate change as real, human-caused, serious, and solvable. In
+    all four cases, we find that as documents become more publicly accessible,
+    they increasingly communicate doubt. This discrepancy is most pronounced
+    between advertorials and all other documents. For example, accounting for
+    expressions of reasonable doubt, 83% of peer-reviewed papers and 80% of
+    internal documents acknowledge that climate change is real and human-caused,
+    yet only 12% of advertorials do so, with 81% instead expressing doubt. We
+    conclude that ExxonMobil contributed to advancing climate science—by way of
+    its scientists’ academic publications—but promoted doubt about it in
+    advertorials. Given this discrepancy, we conclude that ExxonMobil misled the
+    public. Our content analysis also examines ExxonMobil’s discussion of the
+    risks of stranded fossil fuel assets. We find the topic discussed and
+    sometimes quantified in 24 documents of various types, but absent from
+    advertorials. Finally, based on the available documents, we outline
+    ExxonMobil’s strategic approach to climate change research and
+    communication, which helps to contextualize our findings.
+  author:
+    - family: Supran
+      given: Geoffrey
+    - family: Oreskes
+      given: Naomi
+  citation-key: SupranAssessingExxonMobilClimate2017
+  container-title: Environmental Research Letters
+  container-title-short: Environ. Res. Lett.
+  DOI: 10.1088/1748-9326/aa815f
+  ISSN: 1748-9326
+  issue: '8'
+  issued:
+    - year: 2017
+  language: en
+  page: '084019'
+  source: Institute of Physics
+  title: Assessing ExxonMobil’s climate change communications (1977–2014)
+  type: article-journal
+  URL: http://stacks.iop.org/1748-9326/12/i=8/a=084019
+  volume: '12'
+...

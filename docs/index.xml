@@ -10,7 +10,99 @@
 <atom:link href="https://dhicks.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Website description</description>
 <generator>quarto-1.2.280</generator>
-<lastBuildDate>Wed, 22 Mar 2023 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 07 Apr 2023 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Pluralism about problematic situations</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2023-04-07-pluralism-problems.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I’ve been invited to give <a href="https://values.utdallas.edu/2022/12/20/2023-conference/">a keynote</a> on Matt Brown’s work at the UT Dallas conference in May. <span class="citation" data-cites="BrownDemocraticControlScientific2013">Brown (2013)</span> fits with my current project (as seen in the recent blog posts), so this post is maybe the first of a sub-series of posts on his paper. All headless citations are to <span class="citation" data-cites="BrownDemocraticControlScientific2013">Brown (2013)</span>.</p>
+<p>Brown first argues that there is a tension between the autonomy (lack of accountability) of science and its social and political authority in a democratic society. He quotes Douglas:</p>
+<blockquote class="blockquote">
+<p>[A]n autonomous and authoritative science is intolerable …. A fully autonomous and authoritative science is too powerful, with no attendant responsibility <span class="citation" data-cites="DouglasSciencePolicyValuefree2009">(Douglas 2009, 7–8, as quoted by Brown, 481)</span></p>
+</blockquote>
+<p>Scholars and activists who have been sensitive to this tension — he names Feyerabend and STS scholars; we could include many feminists, anti-racists, and Marxists — “have tended to challenge the … authority of science …. weakening or denying the existence of expertise in politics” (481). This is objectionable because it amounts to “giv[ing] up tools in policy-making that we cannot do without, … given the remarkable success of science” (481-2).</p>
+<p>Here, and elsewhere in the paper, Brown links the epistemic credibility or <em>reliability</em> of science to its political authority. Science should have authority in policymaking because it is an especially (the most?) reliable way of producing knowledge. But the kind or degree of political authority that Brown has in mind is vague. It’s one thing to say that scientific findings or methods can be useful in many policymaking situations, and so typically there should be a deliberate effort to solicit advice from scientists; it’s another to say that science should have some kind of priority or greater standing over other considerations.</p>
+<p>I argue that Brown’s own account of inquiry should lead us towards the former formulation, of science as frequently useful rather than science taking priority. On Brown’s account, inquiry (scientific or otherwise) is a systematic response to a <em>problematic situation</em>, a situation in which we (we’ll come back to this “we”) realize that our established habits fail to realize their aims. Inquiry is considered <em>successful</em> insofar as it establishes a better fit between habits and aims; this might involve developing completely new habits, tweaking old habits, and/or reconstituting the aims.</p>
+<p>A number of different kinds of controversies can emerge from this simple framework. In <strong>aim controversies</strong>, parties disagree over the aims that our habits are supposed to be realizing. <strong>Diagnostic controversies</strong> concern the explanation for why the habits are failing to realize their aims. We can even have <strong>problem controversies</strong>, in which parties disagree over whether we are in a problematic situation at all. Brown gives the example of US policy debates surrounding health care reform in 2009-2010 (483-4), which featured each of these kinds of controversies.</p>
+<p>When parties disagree with each other in these kinds of ways, they will disagree with each other about whether a line of inquiry should be considered <strong>relevant</strong> to a policy problem, and thus whether it should be counted as successful with respect to the problematic situation at hand. For example, consider an economic analysis that finds that a combination of employer and individual health insurance mandates and a means-tested subsidy for private insurance will tend to increase health insurance coverage. This line of inquiry might be considered successful by someone whose diagnosis of the problem with the US health care system is that private insurance is too expensive, but not by people who think the problem is a profit-driven healthcare industry or creeping government overreach. For the latter two groups of people, even if the economic analysis is highly reliable it is not relevant to developing a solution to the problem <span class="citation" data-cites="CartwrightEvidenceBasedPolicyPractical2012 HicksEpistemologicalDepthGM2015">(Cartwright and Hardie 2012; Hicks 2015)</span>.</p>
+<p>In other words, the “we” who find ourselves in a problematic situation can often be diverse in ways that lead “us” to different ways of understanding the nature of the problem. Giving “science” priority or greater standing over other considerations amounts to giving one group or perspective priority over the others <span class="citation" data-cites="FeyerabendHowDefendSociety1975 LonginoCanThereBe1987 LaceyScientificResearchTechnological2014 HicksGeneticallyModifiedCrops2017">(Feyerabend 1975; Longino 1987; Lacey 2014; Hicks 2017)</span>.</p>
+<p>This analysis might seem to threaten to degenerate into anything-goes relativism, with partisans cherry-picking the science that fits their preferred account of the problem <span class="citation" data-cites="SarewitzHowScienceMakes2004">(Sarewitz 2004)</span>. But I think we can avoid relativism by viewing a policy controversy as itself a problematic situation prompting inquiry. In other words, we can use scientific inquiry as a way to understand and thereby navigate political conflict, not as a cudgel that one side gets to use against the others.</p>
+<p>Consider climate change. Climate scientists have raised concerns in public about the impacts of carbon dioxide emissions for over 35 years, but policy responses have been faltering at best and public attitudes seem deeply divided. Why is this, and what could be done to get a better match between the apparent problem and a policy solution? Scholars in several fields of the social sciences and humanities have tackled this question for at least 20 years, working to understand the roles of fossil fuel companies <span class="citation" data-cites="OreskesMerchantsDoubtHow2011 SupranAssessingExxonMobilClimate2017">(Oreskes and Conway 2011; Supran and Oreskes 2017)</span>; uncertainties in climate science, both real and manufactured <span class="citation" data-cites="LloydModelRobustnessConfirmatory2015">(Lloyd 2015)</span>; public perceptions of and attitudes towards climate change <span class="citation" data-cites="LewandowskyAliceWonderlandMechanics2016 LeiserowitzGlobalWarmingSix2021">(Lewandowsky, Cook, and Lloyd 2016; Leiserowitz et al. 2021)</span>; and how well political representatives understand the views and preferences of their constituents <span class="citation" data-cites="BolsenCitizensScientistsPolicy2015 Hertel-FernandezLegislativeStaffRepresentation2019">(Bolsen, Druckman, and Cook 2015; Hertel-Fernandez, Mildenberger, and Stokes 2019)</span>. Taken together, this body of work supports a model on which there is strong public support for climate policy, even among Republican/conservative voters, but that the fossil fuel industry’s propaganda efforts have succeeded in creating the misleading appearance of scientific and public controversy, what <span class="citation" data-cites="SparkmanAmericansExperienceFalse2022">Sparkman, Geiger, and Weber (2022)</span> call a “false social reality: a near universal perception of public opinion that is the opposite of true public sentiment.”</p>
+<p>Much like using physical climate models to model future flood risks <span class="citation" data-cites="ParkerIncorporatingUserValues2019 LuskPoliticalLegitimacyDemocratic2020">(Parker and Lusk 2019; Lusk 2020)</span>, this body of social scientific-humanistic climate research is useful without claiming priority over other concerns. By understanding key actors and constituencies in the climate controversy, policymakers can design policies that are more likely to gather the support of broad coalitions. For example, a distinct feature of Ocasio-Cortez and Markey’s 2019 Green New Deal resolution was its call for a “just transition,” enabling fossil fuel workers to gradually move into other industries or take early retirement. These ideas played a significant role in the 2021 American Jobs Plan <span class="citation" data-cites="SicotteWillGreenNew2021">(Sicotte 2021)</span>, and thereby influenced the Bipartisan Infrastructure Bill.</p>
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-BolsenCitizensScientistsPolicy2015" class="csl-entry">
+Bolsen, Toby, James N. Druckman, and Fay Lomax Cook. 2015. <span>“Citizens’, Scientists’, and Policy Advisors’ Beliefs about Global Warming.”</span> <em>The ANNALS of the American Academy of Political and Social Science</em> 658 (1): 271–95. <a href="https://doi.org/10.1177/0002716214558393">https://doi.org/10.1177/0002716214558393</a>.
+</div>
+<div id="ref-BrownDemocraticControlScientific2013" class="csl-entry">
+Brown, Matthew J. 2013. <span>“The Democratic Control of the Scientific Control of Politics.”</span> In <em>The European Philosophy of Science Association Proceedings</em>, edited by Vassilios Karakostas and Dennis Dieks, 2:479–91. Springer International Publishing. <a href="http://dx.doi.org/10.1007/978-3-319-01306-0_39">http://dx.doi.org/10.1007/978-3-319-01306-0_39</a>.
+</div>
+<div id="ref-CartwrightEvidenceBasedPolicyPractical2012" class="csl-entry">
+Cartwright, Nancy, and Jeremy Hardie. 2012. <em>Evidence-Based Policy: A Practical Guide to Doing It Better</em>. Oxford University Press. <a href="http://books.google.ca/books?id=kN3OdpkUyTcC&amp;printsec=frontcover&amp;dq=intitle:Evidence+Based+Policy+A+Practical+Guide+to+Doing+It+Better&amp;hl=&amp;cd=1&amp;source=gbs_api">http://books.google.ca/books?id=kN3OdpkUyTcC&amp;printsec=frontcover&amp;dq=intitle:Evidence+Based+Policy+A+Practical+Guide+to+Doing+It+Better&amp;hl=&amp;cd=1&amp;source=gbs_api</a>.
+</div>
+<div id="ref-DouglasSciencePolicyValuefree2009" class="csl-entry">
+Douglas, Heather E. 2009. <em>Science, Policy, and the Value-Free Ideal</em>. Pittsburgh, Pa: University of Pittsburgh Press.
+</div>
+<div id="ref-FeyerabendHowDefendSociety1975" class="csl-entry">
+Feyerabend, Paul. 1975. <span>“How to Defend Society Against Science.”</span> <em>Radical Philosophy</em>, no. 011 (Summer): 3–8.
+</div>
+<div id="ref-Hertel-FernandezLegislativeStaffRepresentation2019" class="csl-entry">
+Hertel-Fernandez, Alexander, Matto Mildenberger, and Leah C. Stokes. 2019. <span>“Legislative Staff and Representation in Congress.”</span> <em>American Political Science Review</em> 113 (1): 1–18. <a href="https://doi.org/10.1017/S0003055418000606">https://doi.org/10.1017/S0003055418000606</a>.
+</div>
+<div id="ref-HicksEpistemologicalDepthGM2015" class="csl-entry">
+Hicks, Daniel J. 2015. <span>“Epistemological Depth in a GM Crops Controversy.”</span> <em>Studies in History and Philosophy of Science Part C: Studies in History and Philosophy of Biological and Biomedical Sciences</em> 50 (April): 1–12. <a href="https://doi.org/10.1016/j.shpsc.2015.02.002">https://doi.org/10.1016/j.shpsc.2015.02.002</a>.
+</div>
+<div id="ref-HicksGeneticallyModifiedCrops2017" class="csl-entry">
+———. 2017. <span>“Genetically Modified Crops, Inclusion, and Democracy.”</span> <em>Perspectives on Science</em> 25 (4): 488–520. <a href="https://doi.org/10.1162/POSC_a_00251">https://doi.org/10.1162/POSC_a_00251</a>.
+</div>
+<div id="ref-LaceyScientificResearchTechnological2014" class="csl-entry">
+Lacey, Hugh. 2014. <span>“Scientific Research, Technological Innovation and the Agenda of Social Justice, Democratic Participation and Sustainability.”</span> <em>Scientiae Studia</em> 12 (SPE): 37–55. <a href="https://doi.org/10.1590/S1678-31662014000400003">https://doi.org/10.1590/S1678-31662014000400003</a>.
+</div>
+<div id="ref-LeiserowitzGlobalWarmingSix2021" class="csl-entry">
+Leiserowitz, Anthony, Connie Roser-Renouf, Jennifer Marlon, and Edward Maibach. 2021. <span>“Global Warming’s Six Americas: A Review and Recommendations for Climate Change Communication.”</span> <em>Current Opinion in Behavioral Sciences</em>, Human Response to Climate Change: From Neurons to Collective Action, 42 (December): 97–103. <a href="https://doi.org/10.1016/j.cobeha.2021.04.007">https://doi.org/10.1016/j.cobeha.2021.04.007</a>.
+</div>
+<div id="ref-LewandowskyAliceWonderlandMechanics2016" class="csl-entry">
+Lewandowsky, Stephan, John Cook, and Elisabeth Lloyd. 2016. <span>“The <span>‘Alice in Wonderland’</span> Mechanics of the Rejection of (Climate) Science: Simulating Coherence by Conspiracism.”</span> <em>Synthese</em>, September, 1–22. <a href="https://doi.org/10.1007/s11229-016-1198-6">https://doi.org/10.1007/s11229-016-1198-6</a>.
+</div>
+<div id="ref-LloydModelRobustnessConfirmatory2015" class="csl-entry">
+Lloyd, Elisabeth A. 2015. <span>“Model Robustness as a Confirmatory Virtue: The Case of Climate Science.”</span> <em>Studies in History and Philosophy of Science Part A</em> 49 (February): 58–68. <a href="https://doi.org/10.1016/j.shpsa.2014.12.002">https://doi.org/10.1016/j.shpsa.2014.12.002</a>.
+</div>
+<div id="ref-LonginoCanThereBe1987" class="csl-entry">
+Longino, Helen E. 1987. <span>“Can There Be A Feminist Science?”</span> <em>Hypatia</em> 2 (3): 51–64. <a href="https://doi.org/10.1111/j.1527-2001.1987.tb01341.x">https://doi.org/10.1111/j.1527-2001.1987.tb01341.x</a>.
+</div>
+<div id="ref-LuskPoliticalLegitimacyDemocratic2020" class="csl-entry">
+Lusk, Greg. 2020. <span>“Political Legitimacy in the Democratic View: The Case of Climate Services.”</span> <em>Philosophy of Science</em>, July. <a href="https://doi.org/10.1086/710803">https://doi.org/10.1086/710803</a>.
+</div>
+<div id="ref-OreskesMerchantsDoubtHow2011" class="csl-entry">
+Oreskes, Naomi, and Erik M. Conway. 2011. <em>Merchants of Doubt: How a Handful of Scientists Obscured the Truth on Issues from Tobacco Smoke to Global Warming</em>. New York, NY, USA: Bloomsbury.
+</div>
+<div id="ref-ParkerIncorporatingUserValues2019" class="csl-entry">
+Parker, Wendy S., and Greg Lusk. 2019. <span>“Incorporating User Values into Climate Services.”</span> <em>Bulletin of the American Meteorological Society</em> 100 (9): 1643–50. <a href="https://doi.org/10.1175/BAMS-D-17-0325.1">https://doi.org/10.1175/BAMS-D-17-0325.1</a>.
+</div>
+<div id="ref-SarewitzHowScienceMakes2004" class="csl-entry">
+Sarewitz, Daniel. 2004. <span>“How Science Makes Environmental Controversies Worse.”</span> <em>Environmental Science and Policy</em> 7 (5): 385–403. <a href="https://doi.org/10.1016/j.envsci.2004.06.001">https://doi.org/10.1016/j.envsci.2004.06.001</a>.
+</div>
+<div id="ref-SicotteWillGreenNew2021" class="csl-entry">
+Sicotte, Diane. 2021. <span>“Will the Green New Deal Bring About a <span>‘Just Transition,’</span> or Just Transition? - American Sociological Association.”</span> Summer 2021. <a href="https://www.asanet.org/footnotes-article/will-green-new-deal-bring-about-just-transition-or-just-transition/">https://www.asanet.org/footnotes-article/will-green-new-deal-bring-about-just-transition-or-just-transition/</a>.
+</div>
+<div id="ref-SparkmanAmericansExperienceFalse2022" class="csl-entry">
+Sparkman, Gregg, Nathan Geiger, and Elke U. Weber. 2022. <span>“Americans Experience a False Social Reality by Underestimating Popular Climate Policy Support by Nearly Half.”</span> <em>Nature Communications</em> 13 (1): 4779. <a href="https://doi.org/10.1038/s41467-022-32412-y">https://doi.org/10.1038/s41467-022-32412-y</a>.
+</div>
+<div id="ref-SupranAssessingExxonMobilClimate2017" class="csl-entry">
+Supran, Geoffrey, and Naomi Oreskes. 2017. <span>“Assessing ExxonMobil’s Climate Change Communications (1977–2014).”</span> <em>Environmental Research Letters</em> 12 (8): 084019. <a href="https://doi.org/10.1088/1748-9326/aa815f">https://doi.org/10.1088/1748-9326/aa815f</a>.
+</div>
+</div></section></div> ]]></description>
+  <guid>https://dhicks.github.io/posts/2023-04-07-pluralism-problems.html</guid>
+  <pubDate>Fri, 07 Apr 2023 07:00:00 GMT</pubDate>
+</item>
 <item>
   <title>The Nature endorsement and the value-free ideal</title>
   <dc:creator>Dan Hicks</dc:creator>
@@ -962,44 +1054,6 @@ Stapleford, Thomas A. 2009. <em>The Cost of Living in America: A Political Histo
  ]]></description>
   <guid>https://dhicks.github.io/posts/2019-06-18-network-analysis-to-evaluate.html</guid>
   <pubDate>Tue, 18 Jun 2019 07:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Luck and the Academic Job Market</title>
-  <dc:creator>Dan Hicks</dc:creator>
-  <link>https://dhicks.github.io/posts/2019-05-30-luck-and-the-academic-job-market.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>First, some news: starting this fall, I will be an assistant professor in the Department of Cognitive and Information Sciences at the University of California, Merced. I wrote the bulk of this post on May 26, the day after the 9th annual Conference on Values in Medicine, Science, and Technology at UT Dallas. I have a great community at this conference, and I’ve been sharing the news with my friends. Everyone is thrilled for me, of course.</p>
-<p>But certain kinds of congratulation, while well-intentioned, give me pause. These are “you really deserve this” and “things finally worked out.” To my ear, these kinds of congratulation accept the dominant meritocratic view of academia, which further tends to lead to the conclusion that academics struggling with precarity and contingency deserve their low pay, lack of stability, and marginalized status.</p>
-<p>It’s not that I think that I don’t deserve a tenure-track job, in some sense or another. I check all the meritocratic boxes, with something like 12 or 14 peer-reviewed publications, the majority of which are in “top” philosophy of science journals; I have a good mix of single-authored disciplinary papers and interdisciplinary collaborations; my PhD is from a fairly prestigious program; over the past seven years I’ve held a series of postdocs and research positions at comparable institutions; and so on.</p>
-<p>But luck has played an enormous role in getting me to the point where I could check all these boxes. If things had gone just slightly differently, I would be struggling like so many of my peers: teaching 7+ courses per year, trying to make ends meet on $30,000 per year or less, and desperately trying to find time to publish an occasional paper.</p>
-<p>In the rest of this post, I want to highlight 3 moments where luck made an enormous difference to the trajectory of my career.</p>
-<p>The first moment was my admission to Notre Dame. I was not a philosophy major in undergrad; I studied math and political science, and took two philosophy of science courses my senior year. I decided to pursue a career in philosophy after taking those two courses and sitting in on a few graduate courses at the University of Illinois, Chicago. For obvious reasons I didn’t have a lot of mentorship to help me articulate my interests clearly, identify appropriate grad programs, weigh the advantages of philosophy vs.&nbsp;HPS, or write a relevant writing sample. (My first attempt at a writing sample was on Wittgenstein, Foucault, and philosophy of math. The second attempt was a little better, on Kant’s philosophy of math.) My application was a mess.</p>
-<p>Officially, I was waitlisted at every grad program to which I applied; but I doubt I was considered seriously anywhere. Except at Notre Dame. Two days before the deadline in 2005 I was offered a seat in the incoming cohort. No doubt ND was scraping the bottom of the waitlist when they got to me. I was just lucky that everyone else above me had declined the offer.</p>
-<p>Of course, once I was admitted, I was a Notre Dame grad student and later a Notre Dame PhD, with all of the prestige and alumni connections that are attached to that name.</p>
-<p>The second moment where luck played a major role in my career was actually a series of moments: the positions I’ve held since finishing my PhD. Like a lot of other precarious scholars, I’ve had to scramble from temporary position to temporary position, moving long distances every few years in order to follow the next opportunity. But unlike a lot of other precarious scholars, I’ve had a series of postdocs and other research-focused positions. Except for a single course of 6 students, I haven’t had any teaching responsibilities since 2013.</p>
-<p>This series of research positions is largely the reason why I’ve been able to write so much, averaging almost 2 peer-reviewed papers per year since I finished my dissertation. (A traditional standard for tenure in philosophy at research universities is 1 single-authored paper per year.) In addition, these positions have given me opportunities to work in science policy, learn an entirely distinct set of research skills as a data scientist, and collaborate with researchers in other disciplines. Finally, they have also provided me with a comfortable income and conference travel support, giving me enough time and peace of mind to focus on research, rather than continually worrying about finding my next position while grinding through grading and commuting for poverty wages.</p>
-<p>Over the last 15 years, I’ve regularly had to think about what my backup plan would be if I didn’t find a good next step. For a long time the best option would have been to live with my dad in the San Francisco Bay Area and adjunct while getting a certificate to teach high school math. In the last couple years, the best backup plan would have been to work as a data scientist in the tech industry. Data science would have paid much better than high school math, but both backups would have meant the end of my research career.</p>
-<p>In each case, these research positions weren’t things that were planned out well in advance. Most of the offers came in April, which is relatively late in the annual academic job market cycle. The offer for my most recent position, at UC Davis, came in early August, about a month before my then-current position ended.</p>
-<p>The third moment where luck made a huge difference in my career was the <a href="https://philjobs.org/job/show/10738">job ad for UC Merced</a>. I’m currently finishing a postdoc position at UC Davis. Davis is about 15 miles west of Sacramento; I grew up about 30 miles east of Sacramento. My entire immediate family is in the Sacramento area. I knew when I applied for the postdoc that my family couldn’t handle me moving home just to move away again two years later. I was committed to staying in Northern California.</p>
-<p>I recognized that this meant I was basically writing off a faculty position. (Unlike my grad school applications, I talked out the decision to accept this postdoc with a couple mentors before I had to make it.) There are several bachelor’s-granting colleges and universities in Northern California; but most are in the Bay Area, which is experiencing a severe housing crisis. Things are so bad that <a href="https://www.sfchronicle.com/bayarea/article/UC-Berkeley-s-plan-for-new-housing-classrooms-13815323.php">even UC Berkeley has lost faculty due to the cost of housing</a>.</p>
-<p>Davis and the Sacramento area haven’t been affected (too much, yet) by the Bay Area housing crisis. And I thought there might be a chance that UC Davis would hire a philosopher of science during the two years of my postdoc. But really, when I took the postdoc, my plan was to use the time to figure out pathways into state government and the tech industry.</p>
-<p>Then, last August, a few people emailed me a job ad for a data ethics position (not at UC Merced, but another school). It was within my geographic range, and my work experience as a data scientist might compensate for the fact that I haven’t published anything on data ethics. I was hesitant to jump into the job market again, even just for one position. But once I decided to apply for that one, I went on PhilJobs and saw <a href="https://philjobs.org/job/show/10738">the UC Merced ad</a>:</p>
-<blockquote class="blockquote">
-<p>We are seeking candidates who take an interdisciplinary approach to ethics, applying ethical theories and principles to topics within the purview of [Cognitive and Information Sciences]. Sample topics might include neuroethics or the ethics of technology. Applied ethicists working on topics outside the scope of CIS who use scientific methods will also be considered (for example, someone who draws on large data sets).</p>
-</blockquote>
-<p>Not only was I a good topical fit; but also the department liked the interdisciplinary breadth of my work, my experience as a data scientist, and my connections to the data science community at UC Davis. Geographically, Merced is about 2 hours south of Sacramento, and about 2 hours and 30 minutes from my mom’s house. It’s a small city of about 80,000 people, and far enough from the Bay Area that it hasn’t really been affected by the current housing crisis yet. (Though Merced was one of the epicenters of the housing crisis in 2007-08.)</p>
-<p>In other words, an interdisciplinary department at a university in an affordable location within my geographic range was looking to hire someone who does roughly what I do. During the two-year period between my moving back to California and my giving up on academia entirely to work in the tech industry. The fit in both directions could hardly have been better.</p>
-<p>In all of these moments, things easily could have gone some other way. I might still have been an academic, but I probably wouldn’t be heading into a very nice tenure-track position at a research university. And there’s a very good chance I would have left academia for good, whether to teach high school math or to work in the tech industry. For all of the success I’ve had due to my hard work and “talent”, there are people who were equally “talented” and worked just as hard — if not harder — but haven’t been recognized or rewarded. Still other people would have been just as “talented” and worked just as hard, but were never given the chance. I’ll happily take your congratulations, but please keep in mind the people who weren’t lucky enough to get the kinds of opportunities that have come my way.</p>
-
-
-
- ]]></description>
-  <guid>https://dhicks.github.io/posts/2019-05-30-luck-and-the-academic-job-market.html</guid>
-  <pubDate>Thu, 30 May 2019 07:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
