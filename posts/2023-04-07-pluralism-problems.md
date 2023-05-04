@@ -4,6 +4,9 @@ date: 2023-04-07
 bibliography: "2023-04-07-pluralism-problems.yaml"
 ---
 
+::: {.callout-note}
+Matt Brown has some commentary [here](https://www.facebook.com/hicks.daniel.j/posts/pfbid0Z31gfZEy2EgeYCGyBdD3XXfLVUQHJXW2gjjE1jwFQWQmuWQSCmRTtMon6PRDx4Q8l?comment_id=1392646594824355&notif_id=1680900361004955&notif_t=feed_comment&ref=notif).
+:::
 
 I've been invited to give [a keynote](https://values.utdallas.edu/2022/12/20/2023-conference/) on Matt Brown's work at the UT Dallas conference in May.  @BrownDemocraticControlScientific2013 fits with my current project (as seen in the recent blog posts), so this post is maybe the first of a sub-series of posts on his paper.  All headless citations are to @BrownDemocraticControlScientific2013. 
 

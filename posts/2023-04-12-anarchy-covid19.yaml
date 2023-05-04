@@ -1,0 +1,268 @@
+---
+references:
+- id: BrownExpertiseLessonFeyerabend2021
+  abstract: >-
+    As my title suggests, I will examine a lesson from Feyerabend’s
+    controversial work, Science in a Free Society: that free societies should
+    not invest scientific experts with special epistemic or social authority. At
+    least, I will ask, should we take this claim from Feyerabend as a lesson? In
+    particular, I see Feyerabend’s argument about expert authority as a
+    substantive challenge to a central commitment of many philosophers of
+    science who reject the ideal of value-free science, a commitment to the
+    ineliminability of expert judgment. An argument against this principle is
+    articulated clearly and forcefully, if somewhat roughly, in both his Science
+    in a Free Society (1978, hereafter SFS) and a related article, “How to
+    Defend Society against Science,” originally published in Radical Philosophy
+    (1975c, hereafter HDSS).
+  accessed:
+    - year: 2023
+      month: 4
+      day: 10
+  author:
+    - family: Brown
+      given: Matthew J.
+  citation-key: BrownExpertiseLessonFeyerabend2021
+  container-title: 'Interpreting Feyerabend: Critical Essays'
+  DOI: 10.1017/9781108575102.011
+  editor:
+    - family: Shaw
+      given: Jamie
+    - family: Bschir
+      given: Karim
+  event-place: Cambridge
+  ISBN: 978-1-108-47199-2
+  issued:
+    - year: 2021
+  page: 191-212
+  publisher: Cambridge University Press
+  publisher-place: Cambridge
+  source: Cambridge University Press
+  title: 'Against Expertise: A Lesson from Feyerabend’s Science in a Free Society?'
+  title-short: Against Expertise
+  type: chapter
+  URL: >-
+    https://www.cambridge.org/core/books/interpreting-feyerabend/against-expertise/CBB1804DFBBA04F81218C944FA36CCA1
+
+- id: EpsteinImpureScience1996
+  abstract: >-
+    Epstein shows the extent to which AIDS research has been a social and
+    political phenomenon and how the AIDS movement has transformed biomedical
+    research practices through its capacity to garner credibility by novel
+    strategies.
+  author:
+    - family: Epstein
+      given: Steven
+  citation-key: EpsteinImpureScience1996
+  collection-title: AIDS, Activism, and the Politics of Knowledge
+  event-place: Berkeley, Los Angeles, and Oxford
+  ISBN: 978-0-520-21445-3
+  issued:
+    - year: 1996
+  number-of-pages: '466'
+  publisher: University of California Press
+  publisher-place: Berkeley, Los Angeles, and Oxford
+  title: Impure Science
+  type: book
+  URL: >-
+    http://books.google.ca/books?id=kZOso0FMsrMC&pg=PA39&dq=intitle:Impure+Science+inauthor:epstein&hl=&cd=1&source=gbs_api
+
+- id: FeyerabendHowDefendSociety1975
+  author:
+    - family: Feyerabend
+      given: Paul
+  citation-key: FeyerabendHowDefendSociety1975
+  container-title: Radical Philosophy
+  issue: '011'
+  issued:
+    - year: 1975
+      season: 2
+  language: en
+  page: 3-8
+  source: Zotero
+  title: How to Defend Society Against Science
+  type: article-journal
+
+- id: FeyerabendScienceFreeSociety2017
+  abstract: >-
+    No study in the philosophy of science created such controversy in the
+    seventies as Paul Feyerabend's Against Method. In this work, Feyerabend
+    reviews that controversy, and extends his critique beyond the problem of
+    scientific rules and methods, to the social function and direction of
+    science today.In the first part of the book, he launches a sustained and
+    irreverent attack on the prestige of science in the West. The lofty
+    authority of the "expert" claimed by scientists is, he argues, incompatible
+    with any genuine democracy, and often merely serves to conceal entrenched
+    prejudices and divided opinions with the scientific community itself.
+    Feyerabend insists that these can and should be subjected to the arbitration
+    of the lay population, whose closes interests they constantly affect-as
+    struggles over atomic energy programs so powerfully attest.Calling for far
+    greater diversity in the content of education to facilitate democratic
+    decisions over such issues, Feyerabend recounts the origin and development
+    of his own ideas-successively engaged by Brecht, Ehrenhaft, Popper, Mill and
+    Lakatos-in a spirited intellectual self-portrait. Science in a Free Society
+    is a striking intervention into one of the most topical debates in
+    contemporary culture and politics.
+  author:
+    - family: Feyerabend
+      given: Paul
+  citation-key: FeyerabendScienceFreeSociety2017
+  ISBN: 978-1-78873-192-8
+  issued:
+    - year: 2017
+      month: 11
+      day: 10
+  language: en
+  number-of-pages: '306'
+  publisher: Verso Books
+  source: Google Books
+  title: Science in a Free Society
+  type: book
+
+- id: LeeViralVisualizationsHow2021
+  abstract: >-
+    Controversial understandings of the coronavirus pandemic have turned data
+    visualizations into a battleground. Defying public health officials,
+    coronavirus skeptics on US social media spent much of 2020 creating data
+    visualizations showing that the government's pandemic response was excessive
+    and that the crisis was over. This paper investigates how pandemic
+    visualizations circulated on social media, and shows that people who
+    mistrust the scientific establishment often deploy the same rhetorics of
+    data-driven decision-making used by experts, but to advocate for radical
+    policy changes. Using a quantitative analysis of how visualizations spread
+    on Twitter and an ethnographic approach to analyzing conversations about
+    COVID data on Facebook, we document an epistemological gap that leads pro-
+    and anti-mask groups to draw drastically different inferences from similar
+    data. Ultimately, we argue that the deployment of COVID data visualizations
+    reflect a deeper sociopolitical rift regarding the place of science in
+    public life.
+  accessed:
+    - year: 2021
+      month: 5
+      day: 16
+  author:
+    - family: Lee
+      given: Crystal
+    - family: Yang
+      given: Tanya
+    - family: Inchoco
+      given: Gabrielle
+    - family: Jones
+      given: Graham M.
+    - family: Satyanarayan
+      given: Arvind
+  citation-key: LeeViralVisualizationsHow2021
+  container-title: Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems
+  DOI: 10.1145/3411764.3445211
+  issued:
+    - year: 2021
+      month: 5
+      day: 6
+  page: 1-18
+  source: arXiv.org
+  title: >-
+    Viral Visualizations: How Coronavirus Skeptics Use Orthodox Data Practices
+    to Promote Unorthodox Science Online
+  title-short: Viral Visualizations
+  type: article-journal
+  URL: http://arxiv.org/abs/2101.07993
+
+- id: OttingerTechnoscienceEnvironmentalJustice2011
+  call-number: TD194 .T43 2011
+  citation-key: OttingerTechnoscienceEnvironmentalJustice2011
+  collection-title: Urban and industrial environments
+  contributor:
+    - family: Frickel
+      given: Scott
+    - family: Hoffman
+      given: Karen
+    - family: Delborne
+      given: Jason
+    - family: Galusky
+      given: Wyatt
+    - family: Morello-Frosch
+      given: Rachel
+    - family: Brown
+      given: Phil
+    - family: Brody
+      given: Julia Green
+    - family: Altman
+      given: Rebecca Gasior
+    - family: Rudel
+      given: Ruthann A.
+    - family: Zota
+      given: Ami
+    - family: Pérez
+      given: Carla
+    - family: Nieusma
+      given: Dean
+    - family: Powell
+      given: Maria
+    - family: Powell
+      given: Jim
+    - family: Johnson
+      given: Jaclyn R.
+    - family: Ranco
+      given: Darren J.
+    - family: Liévanos
+      given: Raoul S.
+    - family: London
+      given: Jonathan K.
+    - family: Sze
+      given: Julie
+    - family: Ottinger
+      given: Gwen
+    - family: Fortun
+      given: Kim
+  editor:
+    - family: Ottinger
+      given: Gwen
+    - family: Cohen
+      given: Benjamin R.
+  event-place: Cambridge, Mass
+  ISBN: 978-0-262-01579-0 978-0-262-51618-1
+  issued:
+    - year: 2011
+  language: en
+  note: 'OCLC: ocn692084754'
+  number-of-pages: '298'
+  publisher: MIT Press
+  publisher-place: Cambridge, Mass
+  source: Library of Congress ISBN
+  title: >-
+    Technoscience and environmental justice: expert cultures in a grassroots
+    movement
+  title-short: Technoscience and environmental justice
+  type: book
+
+- id: WylieComingTermsValues2007
+  abstract: >-
+    It has long been thought that science is our best hope for realizing
+    objective knowledge, but that, to deliver on this promise, it must be value
+    free. Things are not so simple, however, as recent work in science studies
+    makes clear. The contributors to this volume investigate where and how
+    values are involved in science, and examine the implications of this
+    involvement for ideals of objectivity.
+  author:
+    - family: Wylie
+      given: Alison
+    - family: Hankinson Nelson
+      given: Lynn
+  citation-key: WylieComingTermsValues2007
+  container-title: Value-free science?
+  editor:
+    - family: Kincaid
+      given: Harold
+    - family: Dupré
+      given: John
+    - family: Wylie
+      given: Alison
+  issued:
+    - year: 2007
+  page: 58-86
+  publisher: Oxford University Press
+  title: >-
+    Coming to terms with the values of science: Insights from feminist science
+    studies scholarship
+  type: chapter
+  URL: http://books.google.com/books?id=9Nqppv6uq7oC
+...

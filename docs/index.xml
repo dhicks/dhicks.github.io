@@ -10,7 +10,118 @@
 <atom:link href="https://dhicks.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Website description</description>
 <generator>quarto-1.2.280</generator>
-<lastBuildDate>Fri, 07 Apr 2023 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 04 May 2023 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Anarchy and Covid-19</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2023-04-12-anarchy-covid19.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I started working on this two or three weeks ago, got about 1500 words in, and then had to shelve it to deal with a minor deluge of grading and some other things. I thought I would be able to pick it back up, but I’ve lost the thread. In the “writer’s notebook” spirit of this project, I’m just going to post it.</p>
+</div>
+</div>
+<p>In our Facebook discussion of <a href="2023-04-07-pluralism-problems">my last post</a>, Matt Brown referred to me a more recent paper of his on Feyerabend <span class="citation" data-cites="BrownExpertiseLessonFeyerabend2021">(Brown 2021)</span>. I really like this paper, and want to focus on it instead of the older one.</p>
+<p>Brown discusses Feyerabend’s critique of expertise from “How to Defend Society against Science” <span class="citation" data-cites="FeyerabendHowDefendSociety1975">(Feyerabend 1975)</span> and <em>Science in a Free Society</em> [<span class="citation" data-cites="FeyerabendScienceFreeSociety2017">Feyerabend (2017)</span>; originally published 1978 . After tying Feyerabend’s critique to the current literature on science, values, and policy, and noting that Feyerabend had some overly simplistic political philosophy in the ’70s (which don’t really impact the argument Brown is interested in), Brown summarizes the critique of expertise as a sequence of “four increasingly radical claims about science and its place in society that, together, point toward a decentering of experts in society and a rejection of expert authority” (195).</p>
+<p>In this post, I want to read these four claims together with <span class="citation" data-cites="LeeViralVisualizationsHow2021">Lee et al. (2021)</span>, a fantastic study of the data analysis practices of Covid-19 skeptics. If you haven’t read this paper before, I can’t recommend it enough. <span class="citation" data-cites="LeeViralVisualizationsHow2021">Lee et al. (2021)</span> challenge the widespread (among natural scientists and public health official) deficit model of public scientific controversies, which blames controversies on public ignorance. Examining social media communications from 2020, <span class="citation" data-cites="LeeViralVisualizationsHow2021">Lee et al. (2021)</span> show that “anti-mask groups on Twitter often create polished counter-visualizations that would not be out of place in scientific papers, health department reports, and publications like the Financial Times” and that “these groups leverage the language of scientific rigor—being critical about data sources, explicitly stating analytical limitations of specific models, and more—in order to support ending public health restrictions despite the consensus of the scientific establishment” <span class="citation" data-cites="LeeViralVisualizationsHow2021">(Lee et al. 2021, 1–2)</span>. I think this is a useful test case for distinguishing my own views from those of both Feyerabend and Brown.</p>
+<section id="citizens-can-and-should-evaluate-expert-opinion" class="level1">
+<h1>Citizens can and should evaluate expert opinion</h1>
+<p>Brown discusses three arguments that Feyerabend gives for this first claim. I agree with this claim, and find the second and third argument most compelling.<sup>1</sup></p>
+<p>The second argument is that public<sup>2</sup> evaluation of expert opinion will “contribute to … the development of a mature democratic citizenry” and that “the learning and maturation necessary for citizens to become wise or skillful public participants requires … that they be allowed to try and, perhaps, do poorly” (196). I actually don’t have much to say about this here; I’m noting it because I think it fits well with the broader project on experts as epistemic representatives, where part of the good of representation is actually promoting the democratic capacities of the constituency.</p>
+<p>The third argument is that “motivated ‘laymen,’ in fact, can be competent enough to make good decisions regarding scientific information: ‘science is not beyond the natural shrewdness of the human race’” (196, quoting Feyerabend). This is something I emphasize with my students: that members of the general public are capable of getting together, educating themselves (collectively — this will be important later), and developing incisive technical critiques of credentialed expertise. My standard examples are ACT-UP <span class="citation" data-cites="EpsteinImpureScience1996">(Epstein 1996)</span> and environmental justice movements <span class="citation" data-cites="OttingerTechnoscienceEnvironmentalJustice2011">(Ottinger and Cohen 2011)</span>. <span class="citation" data-cites="LeeViralVisualizationsHow2021">Lee et al. (2021)</span> find that members of the Covid-19 skeptic movement “provide[d] numerous tutorials on how to access government health data” and construct visualizations and perform analyses in ways that “encourage[d] … [social media] followers to begin their own data analysis projects” (11).</p>
+</section>
+<section id="citizens-can-and-should-supervise-science" class="level1">
+<h1>Citizens can and should supervise science</h1>
+<p>I don’t like the word “supervise” here; Brown discusses an important ambiguity in this term later (201). Brown gives a more precise gloss on the second claim, albeit in a way that won’t work as a section header: “According to Feyerabend, we should elect committees of non-experts to regularly subject scientists and their work to review before it is put to social use” (197).</p>
+<p>The primary argument for this second claim comes from a view that Feyerabend shares with Kuhn and Lakatos, that “science contains some necessarily presumptive, dogmatic element that both makes scientific progress possible” but that also obstructs what Feyerabend calls “unchained curiosity” (198). As philosophers of science understand this thought today, scientific practice requires background assumptions, conceptual frameworks, and methodological standards that are often arbitrary, unjustified, left implicit, and/or known to be false. This epistemic infrastructure is all but necessary even to pose research questions and design data collection plans, and so well-functioning scientific communities have norms and enforcement mechanisms (often implicit) that compel their members to accept it. But there is a risk of mismatch, between the epistemic infrastructure developed by a group of experts to address the concerns they find interesting, and the practical needs of policymakers and publics. Feyerabend emphasizes the role of iconoclasts and outsiders in challenging the adequacy of the epistemic infrastructure of the scientific establishment.</p>
+<p><span class="citation" data-cites="LeeViralVisualizationsHow2021">Lee et al. (2021)</span> provide an example of this with</p>
+<blockquote class="blockquote">
+<p>an ongoing animated debate within these groups about which metrics matter. Some users contend that deaths, not cases, should be the ultimate arbiter in policy decisions, since case rates are easily “manipulated” (e.g., with increased testing) and do not necessarily signal severe health problems (people can be asymptomatic). (11)</p>
+</blockquote>
+<p>One might argue that case rates are an appropriate metric for the health care system, insofar as a rise in case rates is a leading indicator of a rise of hospital admissions a week or two into the future. This assumes that some significant fraction of cases will be sufficiently severe to lead to hospital admissions. But Covid-19 skeptics are skeptical of exactly this fraction. In their eyes, the central question is whether Covid-19 is as severe as the scientific establishment claims. Since death is an unambiguous measure of severity, arguably death rates are a better metric for what they see as the central question. So here we might be able to see a mismatch between the epistemic infrastructure of the experts and that of (the Covid-19 skeptical section of) the public.</p>
+<p>In <a href="2023-04-07-pluralism-problems">my last post</a> I made some points about reliability vs.&nbsp;relevance. Even if the methods used by the scientific community are highly reliable (truth-apt, for some non-pragmatic correspondence conception of truth), they’re not necessarily relevant to the epistemic and practical needs of the broader public(s). <span class="citation" data-cites="LeeViralVisualizationsHow2021">Lee et al. (2021)</span> also have a few examples of Covid-19 skeptics challenging the reliability of the scientific establishment. They quote one skeptic:</p>
+<blockquote class="blockquote">
+<p>You can’t simply subtract the current death tally from the typical value for this time of year and attribute the difference to Covid,” a user wrote. “Because of the actions of our governments, we are actually causing excess deaths. Want to kill an old person quickly? Take away their human interaction and contact.</p>
+</blockquote>
+<p>This skeptic is arguing that <a href="https://kieranhealy.org/blog/archives/2020/10/01/walk-the-walk/">simple calculations of excess deaths due to the pandemic</a> cannot distinguish deaths due to Covid-19 and deaths due to Covid-19 mitigation policies, and thus these methods are not reliable for estimating deaths due to Covid-19. I suspect almost all public health officials already understood this problem. But I would agree with Feyerabend that it’s appropriate for members of the public to ask public health officials whether and how they’ve taken this confounding into account.</p>
+</section>
+<section id="science-is-just-another-ideology-or-interest-group" class="level1">
+<h1>Science Is Just Another Ideology or Interest Group</h1>
+<p>This is where I start to diverge from Feyerabend and the Covid-19 skeptics. <span class="citation" data-cites="LeeViralVisualizationsHow2021">Lee et al. (2021)</span> argue that Covid-19 skeptics “seek to identify bias by being critical about specific profit motives that come from releasing (or suppressing) specific kinds of information,” (12) especially the interests of the pharmaceutical industry (12) and state authorities (11). That is, they see public health officials and the mainstream scientific community as corrupted, pursuing power and wealth rather than truth and health. But this is not a rejection of science as such: Covid-19 skeptics “use ‘data-driven’ narratives to justify their heterodox beliefs” (10), creating data visualizations, appealing to mainstream epistemic values such as data validation, data quality, and the need for control groups, and touting their own formal scientific credentials (10-12). As <span class="citation" data-cites="LeeViralVisualizationsHow2021">Lee et al. (2021)</span> put it, “their approach to the pandemic is grounded in a more scientific rigor, not less,”</p>
+<p>Brown’s discussion of Feyerabend’s view is biographical:</p>
+<blockquote class="blockquote">
+<p>Feyerabend taught at the University of California, Berkeley during the desegregation of public education in the United States and the attendant increase in non-white enrollments at Berkeley …. He came to see his educational role as essentially oppressive, pushing “reflections of the conceit of a small group who had succeeded in enslaving everyone else with their ideas,” and to find the very idea revolting …. The problem was that the ideology of the privileged remained centered. (199)</p>
+</blockquote>
+<p>And in <a href="2023-04-07-pluralism-problems">my last post</a> I wrote</p>
+<blockquote class="blockquote">
+<p>In other words, the “we” who find ourselves in a problematic situation can often be diverse in ways that lead “us” to different ways of understanding the nature of the problem. Giving “science” priority or greater standing over other considerations amounts to giving one group or perspective priority over the others.</p>
+</blockquote>
+<p>I even cited “How to Defend Society against Science” here. So why do I say that I diverge from Feyerabend and the Covid-19 skeptics here?</p>
+<p>Feminist scientists and HPSTSers have long held a nuanced attitude towards science, which I some gloss as “<em>exactly</em> one and a half cheers for science.”</p>
+<blockquote class="blockquote">
+<p>In exposing widespread, largely unremarked androcentric and sexist bias, feminists demonstrate that good science, even our best science, can be deeply structured by the values and interests of its makers …. Feminists engage the sciences not only as critics of bias and partiality but also as practitioners who recognize that systematic empirical inquiry has an indispensable role to play in understanding and changing oppressive conditions …. [T]he goal of understanding and changing conditions of life that disadvantage women requires as much empirical accuracy and explanatory precision as scientific inquiry can afford. <span class="citation" data-cites="WylieComingTermsValues2007">(Wylie and Hankinson Nelson 2007, 59)</span></p>
+</blockquote>
+<p>On the one hand, science has often been (and continues to be) a powerful tool of oppression, wielded against women and other oppressed groups. On the other hand, science can also be a powerful tool of justice, especially when those same groups find ways to turn the methods of scientific inquiry back on themselves, systematically studying systems of oppression and the role that science has played in them. (This — presented in Deweyan terms — is how I proposed to avoid anything-goes relativism in the previous post.)</p>
+<p>Feyerabend was evidently sensitive to the first point here. But it seems to me that he missed the second point, falling into an irremediable cynicism about science and its role(s) in society.</p>
+</section>
+<section id="science-should-be-separated-from-the-state" class="level1">
+<h1>Science Should Be Separated from the State</h1>
+<p>Building off the previous point, Feyerabend’s argument here is an analogy with religion. Science, like religion, is just another interest group or ideology; respecting the fact of reasonable pluralism, liberal democracies formally separate religion and state power; and therefore liberal democracies should formally separate science and state power. Science should have no special standing or influence in policymaking, but also should be protected from excessive state interference.</p>
+<p>At this point Brown revisits the notion of “supervise” from the second claim, that the public should supervise science. If “supervise” is interpreted as regulatory oversight and the exercise of state authority, then there’s a tension between the second claim and the idea that science, like religion, is a private activity and as such the state shouldn’t interfere with it. But if “supervise” is interpreted as “elect[ing] committees of non-experts to regularly subject scientists and their work to review <em>before it is put to social use</em>” (197, my emphasis) then there’s no tension. The public supervises the moment at which scientific findings are communicated to policymakers as advice. Scientists can do whatever they want on their side of the science-policy wall; it’s passage through the wall that’s subject to formal scrutiny and review.</p>
+<p>This picture becomes much more complicated when the scientists in question are government employees, such as public health officials managing the collection, transmission, and publication of pandemic data. But perhaps Feyerabend’s view is that government employees shouldn’t be doing this kind of work. Managing public health is no more the state’s business than managing spiritual health. In this way, Feyerabend’s epistemic anarchism would seem to lead to political anarchism.</p>
+<hr>
+<p>I teach <span class="citation" data-cites="LeeViralVisualizationsHow2021">Lee et al. (2021)</span> in a data science course open to any graduate student in quantitative social science. A couple of years ago, one of the students noted that Covid-19 skeptics have an “individualistic epistemology.” As <span class="citation" data-cites="LeeViralVisualizationsHow2021">Lee et al. (2021)</span> put it, “anti-maskers value unmediated access to information and privilege personal research and direct reading over ‘expert’ interpretations.” I would suggest that this reflects an ideal from (right-) libertarian political philosophy, of self-reliance and independence (non-dependence) on others.</p>
+<p>But this ideal is incompatible with the way the community of Covid-19 skeptics actually operates. Community members teach each other how to find and work with data, reinforce perceptions of state and scientific corruption, develop shared interpretations of their custom visualizations, and promote counterexperts (credentialed or not) with favorable views.</p>
+
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-BrownExpertiseLessonFeyerabend2021" class="csl-entry">
+Brown, Matthew J. 2021. <span>“Against Expertise: A Lesson from Feyerabend’s Science in a Free Society?”</span> In <em>Interpreting Feyerabend: Critical Essays</em>, edited by Jamie Shaw and Karim Bschir, 191–212. Cambridge: Cambridge University Press. <a href="https://doi.org/10.1017/9781108575102.011">https://doi.org/10.1017/9781108575102.011</a>.
+</div>
+<div id="ref-EpsteinImpureScience1996" class="csl-entry">
+Epstein, Steven. 1996. <em>Impure Science</em>. AIDS, Activism, and the Politics of Knowledge. Berkeley, Los Angeles, and Oxford: University of California Press. <a href="http://books.google.ca/books?id=kZOso0FMsrMC&amp;pg=PA39&amp;dq=intitle:Impure+Science+inauthor:epstein&amp;hl=&amp;cd=1&amp;source=gbs_api">http://books.google.ca/books?id=kZOso0FMsrMC&amp;pg=PA39&amp;dq=intitle:Impure+Science+inauthor:epstein&amp;hl=&amp;cd=1&amp;source=gbs_api</a>.
+</div>
+<div id="ref-FeyerabendHowDefendSociety1975" class="csl-entry">
+Feyerabend, Paul. 1975. <span>“How to Defend Society Against Science.”</span> <em>Radical Philosophy</em>, no. 011 (Summer): 3–8.
+</div>
+<div id="ref-FeyerabendScienceFreeSociety2017" class="csl-entry">
+———. 2017. <em>Science in a Free Society</em>. Verso Books.
+</div>
+<div id="ref-LeeViralVisualizationsHow2021" class="csl-entry">
+Lee, Crystal, Tanya Yang, Gabrielle Inchoco, Graham M. Jones, and Arvind Satyanarayan. 2021. <span>“Viral Visualizations: How Coronavirus Skeptics Use Orthodox Data Practices to Promote Unorthodox Science Online.”</span> <em>Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems</em>, May, 1–18. <a href="https://doi.org/10.1145/3411764.3445211">https://doi.org/10.1145/3411764.3445211</a>.
+</div>
+<div id="ref-OttingerTechnoscienceEnvironmentalJustice2011" class="csl-entry">
+Ottinger, Gwen, and Benjamin R. Cohen, eds. 2011. <em>Technoscience and Environmental Justice: Expert Cultures in a Grassroots Movement</em>. Urban and Industrial Environments. Cambridge, Mass: MIT Press.
+</div>
+<div id="ref-WylieComingTermsValues2007" class="csl-entry">
+Wylie, Alison, and Lynn Hankinson Nelson. 2007. <span>“Coming to Terms with the Values of Science: Insights from Feminist Science Studies Scholarship.”</span> In <em>Value-Free Science?</em>, edited by Harold Kincaid, John Dupré, and Alison Wylie, 58–86. Oxford University Press. <a href="http://books.google.com/books?id=9Nqppv6uq7oC">http://books.google.com/books?id=9Nqppv6uq7oC</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>The first is based on Mill’s argument in chapter 2 of <em>On Liberty</em>. My thoughts about this argument are complex and not what I’m interested in here.↩︎</p></li>
+<li id="fn2"><p>Brown uses “citizen” 45 times in the paper, compared to 28 uses of “public.” I’m guessing this is following Feyerabend. But because of my location in California’s Central Valley, with its large population of migrant and often undocumented farmworkers, I prefer the broader term.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <guid>https://dhicks.github.io/posts/2023-04-12-anarchy-covid19.html</guid>
+  <pubDate>Thu, 04 May 2023 07:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Pluralism about problematic situations</title>
   <dc:creator>Dan Hicks</dc:creator>
@@ -20,6 +131,19 @@
 
 
 
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Matt Brown has some commentary <a href="https://www.facebook.com/hicks.daniel.j/posts/pfbid0Z31gfZEy2EgeYCGyBdD3XXfLVUQHJXW2gjjE1jwFQWQmuWQSCmRTtMon6PRDx4Q8l?comment_id=1392646594824355&amp;notif_id=1680900361004955&amp;notif_t=feed_comment&amp;ref=notif">here</a>.</p>
+</div>
+</div>
 <p>I’ve been invited to give <a href="https://values.utdallas.edu/2022/12/20/2023-conference/">a keynote</a> on Matt Brown’s work at the UT Dallas conference in May. <span class="citation" data-cites="BrownDemocraticControlScientific2013">Brown (2013)</span> fits with my current project (as seen in the recent blog posts), so this post is maybe the first of a sub-series of posts on his paper. All headless citations are to <span class="citation" data-cites="BrownDemocraticControlScientific2013">Brown (2013)</span>.</p>
 <p>Brown first argues that there is a tension between the autonomy (lack of accountability) of science and its social and political authority in a democratic society. He quotes Douglas:</p>
 <blockquote class="blockquote">
@@ -1034,26 +1158,6 @@ Stapleford, Thomas A. 2009. <em>The Cost of Living in America: A Political Histo
  ]]></description>
   <guid>https://dhicks.github.io/posts/2019-12-06-White-supremacy-and-evolutionary-games.html</guid>
   <pubDate>Fri, 06 Dec 2019 08:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Paper: Network analysis to evaluate the impact of research funding on research community consolidation</title>
-  <dc:creator>Dan Hicks</dc:creator>
-  <link>https://dhicks.github.io/posts/2019-06-18-network-analysis-to-evaluate.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>A <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0218273">new paper</a> by myself and three UC Davis collaborators (David Coil, Carl Stahmer, and Jonathan Eisen), “Network analysis to evaluate the impact of research funding on research community consolidation,” has just been published in <em>PLOS One</em>. This paper will most be of interest to the science policy, science of team science, and bibliometrics communities.</p>
-<p><strong>Abstract</strong>:</p>
-<p>In 2004, the Alfred P. Sloan Foundation launched a new program focused on incubating a new field, “Microbiology of the Built Environment” (MoBE). By the end of 2017, the program had supported the publication of hundreds of scholarly works, but it was unclear to what extent it had stimulated the development of a new research community. We identified 307 works funded by the MoBE program, as well as a comparison set of 698 authors who published in the same journals during the same period of time but were not part of the Sloan Foundation-funded collaboration. Our analysis of collaboration networks for both groups of authors suggests that the Sloan Foundation’s program resulted in a more consolidated community of researchers, specifically in terms of number of components, diameter, density, and transitivity of the coauthor networks. In addition to highlighting the success of this particular program, our method could be applied to other fields to examine the impact of funding programs and other large-scale initiatives on the formation of research communities.</p>
-<p><a href="https://doi.org/10.1371/journal.pone.0218273" class="uri">https://doi.org/10.1371/journal.pone.0218273</a></p>
-
-
-
- ]]></description>
-  <guid>https://dhicks.github.io/posts/2019-06-18-network-analysis-to-evaluate.html</guid>
-  <pubDate>Tue, 18 Jun 2019 07:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
