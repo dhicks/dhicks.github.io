@@ -1,0 +1,405 @@
+---
+references:
+- id: AlcoffCommentaryElizabethAnderson2006
+  accessed:
+    - year: 2022
+      month: 10
+      day: 8
+  author:
+    - family: Alcoff
+      given: Linda Martín
+  citation-key: AlcoffCommentaryElizabethAnderson2006
+  container-title: Symposia on Gender, Race and Philosophy
+  issue: '1'
+  issued:
+    - year: 2006
+      month: 1
+  title: Commentary on Elizabeth Anderson’s “Uses of Value Judgments in Science”
+  type: article-journal
+  URL: https://sgrponline.files.wordpress.com/2019/07/alcoff0106-1.pdf
+  volume: '2'
+
+- id: DouglasDifferentiatingScientificInquiry2023
+  abstract: >-
+    Protecting science from politicization is an ongoing concern in contemporary
+    society. Yet some political influences on science (e.g., setting public
+    funding amounts) are fully legitimate. We need to have a clear account of
+    when a political influence is politicization (an illegitimate political
+    influence) in order to properly detect and address the problem. I argue in
+    this paper that understanding how the space of scientific inquiry is
+    distinctive from democratic politics can be the basis for defining
+    politicization. Similarities between inquiry and democratic politics have
+    long been noted, but there are important differences as well. I describe
+    four norms that are importantly distinct for inquiry when compared with
+    democratic politics, even if they can be seen as roughly similar. Although
+    there are parallels between democratic political norms and norms for
+    scientific inquiry, there are crucial differences as well. Eliding these
+    differences creates politicization of inquiry. Even as we understand
+    scientific inquiry as pursued within society and responsible to society, we
+    pursue it in a distinctive space, guided by distinctive norms and practices.
+  accessed:
+    - year: 2023
+      month: 6
+      day: 1
+  author:
+    - family: Douglas
+      given: Heather
+  citation-key: DouglasDifferentiatingScientificInquiry2023
+  container-title: Philosophy
+  DOI: 10.1017/S0031819122000432
+  ISSN: 0031-8191, 1469-817X
+  issue: '2'
+  issued:
+    - year: 2023
+      month: 4
+  language: en
+  page: 123-146
+  publisher: Cambridge University Press
+  source: Cambridge University Press
+  title: Differentiating Scientific Inquiry and Politics
+  type: article-journal
+  URL: >-
+    https://www.cambridge.org/core/journals/philosophy/article/differentiating-scientific-inquiry-and-politics/2876A8C325C1EBC02E81F7F831A6DD52
+  volume: '98'
+
+- id: DownesChangesHeritabilityUnpredictable2022
+  abstract: >-
+    We argue that heritability estimates cannot be used to make informed
+    judgments about the populations from which they are drawn. Furthermore,
+    predicting changes in heritability from population changes is likely
+    impossible, and of limited value. We add that the attempt to separate human
+    environments into cultural and non-cultural components does not advance our
+    understanding of the environmental multiplier effect.
+  accessed:
+    - year: 2023
+      month: 6
+      day: 7
+  author:
+    - family: Downes
+      given: Stephen M.
+    - family: Kaplan
+      given: Jonathan Michael
+  citation-key: DownesChangesHeritabilityUnpredictable2022
+  container-title: Behavioral and Brain Sciences
+  DOI: 10.1017/S0140525X2100159X
+  ISSN: 0140-525X, 1469-1825
+  issued:
+    - year: 2022
+      month: 1
+  language: en
+  page: e159
+  publisher: Cambridge University Press
+  source: Cambridge University Press
+  title: 'Changes in heritability: Unpredictable and of limited use'
+  title-short: Changes in heritability
+  type: article-journal
+  URL: >-
+    https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/changes-in-heritability-unpredictable-and-of-limited-use/DDE5247B6DE5A5821ABC449D9CF276C1
+  volume: '45'
+
+- id: HicksLonginoConceptionObjectivity2011
+  author:
+    - family: Hicks
+      given: Daniel J.
+  citation-key: HicksLonginoConceptionObjectivity2011
+  container-title: 'Hypatia: A Journal of Feminist Philosophy'
+  container-title-short: Hypatia
+  DOI: 10.1111/j.1527-2001.2010.01160.x
+  issue: '2'
+  issued:
+    - year: 2011
+  page: 333-351
+  title: Is Longino's Conception of Objectivity Feminist?
+  type: article-journal
+  URL: http://doi.wiley.com/10.1111/j.1527-2001.2010.01160.x
+  volume: '26'
+
+- id: HicksWhenVirtuesAre2022
+  abstract: >-
+    <p>Since at least the mid-2000s, political commentators, environmental
+    advocates, and scientists have raised concerns about an “anti-science”
+    approach to environmental policymaking in conservative governments in the US
+    and Canada. This paper explores and resolves a paradox surrounding at least
+    some uses of the “anti-science” epithet. I examine two cases of such
+    “anti-science” environmental policy, both of which involve appeals to
+    epistemic values that are widely endorsed by both scientists and
+    philosophers of science. It seems paradoxical to call an appeal to epistemic
+    values “anti-science.” I develop an analysis that, I argue, can resolve this
+    paradox. This analysis is a version of the “aims approach” to science and
+    values, drawing on ideas from axiology and virtue ethics. I characterize the
+    paradox in terms of conflicts or tensions between epistemic and pragmatic
+    aims, and argue that there is a key asymmetry between them: epistemic aims
+    are valuable, in part, because they are useful for pursuing pragmatic aims.
+    Thus, when epistemic and pragmatic aims conflict, epistemic aims need to be
+    reconceptualized in order to reconcile them to pragmatic aims. When this is
+    done, in the “anti-science” cases, the epistemic values are scientific vices
+    rather than virtues. Thus the “anti-science” epithet is apt.</p>
+  accessed:
+    - year: 2022
+      month: 4
+      day: 28
+  author:
+    - family: Hicks
+      given: Daniel J.
+  citation-key: HicksWhenVirtuesAre2022
+  container-title: Philosophy, Theory, and Practice in Biology
+  DOI: 10.3998/.2629
+  ISSN: 2475-3025
+  issue: '0'
+  issued:
+    - year: 2022
+      month: 4
+      day: 28
+  language: eng
+  license: All rights reserved
+  number: '0'
+  publisher: Michigan Publishing
+  source: journals.publishing.umich.edu
+  title: >-
+    When Virtues are Vices: 'Anti-Science' Epistemic Values in Environmental
+    Politics
+  title-short: When Virtues are Vices
+  type: article-journal
+  URL: https://journals.publishing.umich.edu/ptpbio/article/id/2629/
+  volume: '14'
+
+- id: PanofskyMisbehavingScienceControversy2014
+  abstract: "Behavior genetics has always been a breeding ground for controversies. From the “criminal chromosome” to the “gay gene,” claims about the influence of genes like these have led to often vitriolic national debates about race, class, and inequality. Many behavior geneticists have encountered accusations of racism and have had their scientific authority and credibility questioned, ruining reputations, and threatening their access to coveted resources. \_ In\_Misbehaving Science,\_Aaron Panofsky traces the field of behavior genetics back to its origins in the 1950s, telling the story through close looks at five major controversies. In the process, Panofsky argues that persistent, ungovernable controversy in behavior genetics is due to the broken hierarchies within the field. All authority and scientific norms are questioned, while the absence of unanimously accepted methods and theories leaves a foundationless field, where disorder is ongoing. Critics charge behavior geneticists with political motivations; champions say they merely follow the data where they lead. But Panofsky shows how pragmatic coping with repeated controversies drives their scientific actions. Ironically, behavior geneticists’ struggles for scientific authority and efforts to deal with the threats to their legitimacy and autonomy have made controversy inevitable—and in some ways essential—to the study of behavior genetics."
+  accessed:
+    - year: 2021
+      month: 11
+      day: 24
+  author:
+    - family: Panofsky
+      given: Aaron
+  citation-key: PanofskyMisbehavingScienceControversy2014
+  event-place: Chicago, IL
+  ISBN: 978-0-226-05845-0
+  issued:
+    - year: 2014
+      month: 7
+  language: en
+  number-of-pages: '320'
+  publisher: University of Chicago Press
+  publisher-place: Chicago, IL
+  source: University of Chicago Press
+  title: 'Misbehaving Science: Controversy and the Development of Behavior Genetics'
+  title-short: Misbehaving Science
+  type: book
+  URL: https://press.uchicago.edu/ucp/books/book/chicago/M/bo16124298.html
+
+- id: ReiheldGimletEyeJournal2018
+  abstract: >-
+    A Gimlet Eye: The Journal of Controversial Ideas and Jonathan Anomaly’s
+    “Defending Eugenics” Guest post by Alison Reiheld* On November 12, a slew of
+    articles hit the internet announcing the formation of Journal of
+    Controversial Ideas, a future journal that will be dedicated to, well,
+    publishing cross-disciplinary controversial ideas and...
+  accessed:
+    - year: 2018
+      month: 11
+      day: 20
+  author:
+    - family: Reiheld
+      given: Alison
+  citation-key: ReiheldGimletEyeJournal2018
+  container-title: Discrimination and Disadvantage
+  issued:
+    - year: 2018
+      month: 11
+      day: 16
+  title: >-
+    A Gimlet Eye: The Journal of Controversial Ideas and Jonathan Anomaly’s
+    “Defending Eugenics” (guest post)
+  title-short: A Gimlet Eye
+  type: webpage
+  URL: >-
+    https://web.archive.org/web/20210227220754/https://philosophycommons.typepad.com/disability_and_disadvanta/2018/11/a-gimlet-eye-a-journal-of-controversial-ideas-and-jonathon-anomalys-defending-eugenics.html
+
+- id: RobinCriticClownTale2017
+  accessed:
+    - year: 2017
+      month: 9
+      day: 11
+  author:
+    - family: Robin
+      given: Corey
+  citation-key: RobinCriticClownTale2017
+  issued:
+    - year: 2017
+      month: 9
+      day: 11
+  title: 'The Critic and the Clown: A Tale of Free Speech at Berkeley'
+  title-short: The Critic and the Clown
+  type: post-weblog
+  URL: >-
+    http://coreyrobin.com/2017/09/11/the-critic-and-the-clown-a-tale-of-free-speech-at-berkeley/
+
+- id: RolinCanSocialDiversity2017
+  author:
+    - family: Rolin
+      given: Kristina
+  citation-key: RolinCanSocialDiversity2017
+  container-title: Current Controversies in Values and Science
+  edition: 1 edition
+  editor:
+    - family: Elliott
+      given: Kevin C.
+    - family: Steel
+      given: Daniel
+  ISBN: 978-1-138-19328-4
+  issued:
+    - year: 2017
+      month: 3
+      day: 21
+  language: English
+  page: 113-129
+  publisher: Routledge
+  source: Amazon
+  title: >-
+    Can Social Diversity Be Best Incorporated into Science by Adopting the
+    Social Value Management Ideal?
+  type: chapter
+
+- id: SchroederLimitsDemocratizingScience2022
+  abstract: >-
+    Scientists are frequently called upon to “democratize” science, by bringing
+    the public into scientific research. One appealing point for public
+    involvement concerns the nonepistemic values involved in science. Suppose,
+    though, a scientist invites the public to participate in making such
+    value-laden determinations but finds that the public holds values the
+    scientist considers morally unacceptable. Does the argument for
+    democratizing science commit the scientist to accepting the public’s
+    objectionable values, or may she veto them? I argue that there are a limited
+    set of cases in which scientists can, consistently with a commitment to
+    democratized science, set aside the public’s judgments.
+  accessed:
+    - year: 2023
+      month: 6
+      day: 7
+  author:
+    - family: Schroeder
+      given: S. Andrew
+  citation-key: SchroederLimitsDemocratizingScience2022
+  container-title: Philosophy of Science
+  DOI: 10.1017/psa.2022.54
+  ISSN: 0031-8248, 1539-767X
+  issue: '5'
+  issued:
+    - year: 2022
+      month: 12
+  language: en
+  page: 1034-1043
+  publisher: Cambridge University Press
+  source: Cambridge University Press
+  title: >-
+    The Limits of Democratizing Science: When Scientists Should Ignore the
+    Public
+  title-short: The Limits of Democratizing Science
+  type: article-journal
+  URL: >-
+    https://www.cambridge.org/core/journals/philosophy-of-science/article/limits-of-democratizing-science-when-scientists-should-ignore-the-public/0722C3510F730BA972AAC17FE53CFFE8
+  volume: '89'
+
+- id: TaylorFreeSpeechHypocrisy2018
+  abstract: >-
+    Conservatives are obsessed with protecting “free speech,” but only the kind
+    they agree with.
+  accessed:
+    - year: 2018
+      month: 9
+      day: 3
+  author:
+    - family: Taylor
+      given: Keeanga-Yamahtta
+  citation-key: TaylorFreeSpeechHypocrisy2018
+  container-title: The New York Times
+  ISSN: 0362-4331
+  issued:
+    - year: 2018
+      month: 1
+      day: 20
+  language: en-US
+  section: Opinion
+  source: NYTimes.com
+  title: The ‘Free Speech’ Hypocrisy of Right-Wing Media
+  type: article-newspaper
+  URL: >-
+    https://www.nytimes.com/2017/08/14/opinion/the-free-speech-hypocrisy-of-right-wing-media.html
+
+- id: TurkheimerThisTimeMean2022
+  abstract: >-
+    The target article is skeptical of the heritability concept while
+    maintaining an old-fashioned point of view about it. As a descriptive
+    statistic, it is to be expected that heritability goes up and down in
+    different circumstances, but the relationship between heritability
+    coefficients and the biological processes that underlie them is difficult to
+    specify, and may be impossible in humans.
+  accessed:
+    - year: 2023
+      month: 6
+      day: 7
+  author:
+    - family: Turkheimer
+      given: Eric
+  citation-key: TurkheimerThisTimeMean2022
+  container-title: Behavioral and Brain Sciences
+  DOI: 10.1017/S0140525X21001771
+  ISSN: 0140-525X, 1469-1825
+  issued:
+    - year: 2022
+      month: 1
+  language: en
+  page: e177
+  publisher: Cambridge University Press
+  source: Cambridge University Press
+  title: 'This time I mean it: The nature–nurture debate is over'
+  title-short: This time I mean it
+  type: article-journal
+  URL: >-
+    https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/this-time-i-mean-it-the-naturenurture-debate-is-over/C7821543145B470D6AE8B77948AD51A5
+  volume: '45'
+
+- id: YapFeministRadicalEmpiricism2015
+  abstract: >-
+    Feminist epistemologies consider ways in which gender (among other social
+    factors) influences knowledge. In this article, I want to consider a
+    particular kind of feminist empiricism that has been called feminist radical
+    empiricism (where the empiricism, not the feminism, is radical). I am
+    particularly interested in this view's treatment of values as empirical, and
+    consequently up for revision on the basis of empirical evidence. Proponents
+    of this view cite the fact that it allows us to talk about certain things
+    such as racial and gender equality as objective facts: not just whether we
+    have achieved said equality in our society, but whether we are, in fact, all
+    equal. I will raise the concern that the way in which they model the role of
+    values in epistemology may be a problematic idealization of the
+    open-mindedness of human agents. In some cases, resistance to value-change
+    cannot be diagnosed as a failure to respond adequately to evidence. If so,
+    the strategy of empirically testing our values that some feminist radical
+    empiricists suggest may not be as useful a tool for social change as they
+    think.
+  accessed:
+    - year: 2015
+      month: 11
+      day: 6
+  author:
+    - family: Yap
+      given: Audrey
+  citation-key: YapFeministRadicalEmpiricism2015
+  container-title: Hypatia
+  container-title-short: Hypatia
+  DOI: 10.1111/hypa.12221
+  ISSN: 1527-2001
+  issued:
+    - year: 2015
+      month: 11
+      day: 1
+  language: en
+  license: © by Hypatia, Inc.
+  page: n/a-n/a
+  source: Wiley Online Library
+  title: Feminist Radical Empiricism, Values, and Evidence
+  type: article-journal
+  URL: >-
+    https://www.cambridge.org/core/journals/hypatia/article/abs/feminist-radical-empiricism-values-and-evidence/011BD053CABFAA81484D9F54D7134175
+...
