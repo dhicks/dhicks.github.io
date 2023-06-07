@@ -268,46 +268,44 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>✔ ggplot2 3.4.0      ✔ purrr   1.0.0 
-✔ tibble  3.1.8      ✔ dplyr   1.0.10
-✔ tidyr   1.2.1      ✔ stringr 1.5.0 
-✔ readr   2.1.3      ✔ forcats 0.5.2 </code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.2     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.0
+✔ ggplot2   3.4.2     ✔ tibble    3.2.1
+✔ lubridate 1.9.2     ✔ tidyr     1.3.0
+✔ purrr     1.0.1     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
 ✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()</code></pre>
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidytext)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>post_folder <span class="ot">=</span> <span class="fu">getwd</span>()  <span class="co"># Just `_posts/` in the actual script</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>post_files <span class="ot">=</span> <span class="fu">list.files</span>(post_folder, <span class="at">pattern =</span> <span class="st">'</span><span class="sc">\\</span><span class="st">.q?md'</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">file.path</span>(post_folder, .)</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>dataf <span class="ot">=</span> <span class="fu">tibble</span>(<span class="at">path =</span> post_files) <span class="sc">%&gt;%</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">post_id =</span> <span class="fu">row_number</span>()) <span class="sc">%&gt;%</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rowwise</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">raw_text =</span> <span class="fu">read_file</span>(path)) <span class="sc">%&gt;%</span></span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ungroup</span>()</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(dataf)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidytext)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>post_folder <span class="ot">=</span> <span class="fu">getwd</span>()  <span class="co"># Just `_posts/` in the actual script</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>post_files <span class="ot">=</span> <span class="fu">list.files</span>(post_folder, <span class="at">pattern =</span> <span class="st">'</span><span class="sc">\\</span><span class="st">.q?md'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">file.path</span>(post_folder, .)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>dataf <span class="ot">=</span> <span class="fu">tibble</span>(<span class="at">path =</span> post_files) <span class="sc">%&gt;%</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">post_id =</span> <span class="fu">row_number</span>()) <span class="sc">%&gt;%</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rowwise</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">raw_text =</span> <span class="fu">read_file</span>(path)) <span class="sc">%&gt;%</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ungroup</span>()</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(dataf)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>tibble [67 × 3] (S3: tbl_df/tbl/data.frame)
- $ path    : chr [1:67] "/Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-friedersdorf-the-sex-friendly-case-against-free-bi"| __truncated__ "/Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-friedersdorf-the-sex-friendly-case-against-free-bi"| __truncated__ "/Users/danhicks/Google Drive/Coding/website/posts/2012-04-21-the-agroecological-argument-for-eating-meat.md" "/Users/danhicks/Google Drive/Coding/website/posts/2012-05-23-fetishism-and-innate-differences.md" ...
- $ post_id : int [1:67] 1 2 3 4 5 6 7 8 9 10 ...
- $ raw_text: chr [1:67] "---\ntitle: \"Friedersdorf: The Sex-Friendly Case Against Free Birth Control, part I\"\ndate: \"2012-03-14\"\nc"| __truncated__ "---\nlayout: post\ntitle: \"Friedersdorf: The Sex-Friendly Case Against Free Birth Control, part II\"\ndate: \""| __truncated__ "---\nlayout: post\ntitle: \"The Agroecological Argument for Eating Meat\"\ndate: \"2012-04-21\"\ncategories: [d"| __truncated__ "---\nlayout: post\ntitle: \"Fetishism and Innate Differences\"\ndate: \"2012-05-23\"\n---\n\n\n(Going through m"| __truncated__ ...</code></pre>
+<pre><code>tibble [70 × 3] (S3: tbl_df/tbl/data.frame)
+ $ path    : chr [1:70] "/Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-friedersdorf-the-sex-friendly-case-against-free-bi"| __truncated__ "/Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-friedersdorf-the-sex-friendly-case-against-free-bi"| __truncated__ "/Users/danhicks/Google Drive/Coding/website/posts/2012-04-21-the-agroecological-argument-for-eating-meat.md" "/Users/danhicks/Google Drive/Coding/website/posts/2012-05-23-fetishism-and-innate-differences.md" ...
+ $ post_id : int [1:70] 1 2 3 4 5 6 7 8 9 10 ...
+ $ raw_text: chr [1:70] "---\ntitle: \"Friedersdorf: The Sex-Friendly Case Against Free Birth Control, part I\"\ndate: \"2012-03-14\"\nc"| __truncated__ "---\nlayout: post\ntitle: \"Friedersdorf: The Sex-Friendly Case Against Free Birth Control, part II\"\ndate: \""| __truncated__ "---\nlayout: post\ntitle: \"The Agroecological Argument for Eating Meat\"\ndate: \"2012-04-21\"\ncategories: [d"| __truncated__ "---\nlayout: post\ntitle: \"Fetishism and Innate Differences\"\ndate: \"2012-05-23\"\n---\n\n\n(Going through m"| __truncated__ ...</code></pre>
 </div>
 </div>
 <p>Next we use <code>tidytext</code> to parse the text of each post into individual terms or tokens.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>tokens_df <span class="ot">=</span> <span class="fu">unnest_tokens</span>(dataf, token, raw_text)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>tokens_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>tokens_df <span class="ot">=</span> <span class="fu">unnest_tokens</span>(dataf, token, raw_text)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>tokens_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 82,060 × 3
+<pre><code># A tibble: 85,925 × 3
    path                                                            post_id token
    &lt;chr&gt;                                                             &lt;int&gt; &lt;chr&gt;
  1 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 title
@@ -320,7 +318,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
  8 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 free 
  9 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 birth
 10 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 cont…
-# … with 82,050 more rows</code></pre>
+# ℹ 85,915 more rows</code></pre>
 </div>
 </div>
 <p>To develop tags, we want to identify “highly meaningful terms” across the cropus of parsed blog posts. In text mining, a measure called <em>TF-IDF</em> is frequently used for this task. TF-IDF is calculated for each term-document combination. The TF-IDF of term <span class="math display">\[i\]</span> in document <span class="math display">\[j\]</span> is - the number of times <span class="math display">\[i\]</span> occurs in <span class="math display">\[j\]</span> (the <em>term frequency</em>), divided by - the (log) number of documents in which <span class="math display">\[i\]</span> occurs at least once (the <em>document frequency</em>).</p>
@@ -335,38 +333,38 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>To calculate an overall score for each term, we multiply <span class="math display">\[\Delta H\]</span> by the (log) total times the term occurs across the entire corpus. Suppose “virtue” occurs 100 times across all blog posts, and has an information gain of 3 bits. Then we have <span class="math display">\[\log_{10} n \times \Delta H = 2 \times 3 = 6\]</span>. The units here are <em>orders of magnitude-bits</em>. An increase of 1 of these units means that a word occurs <span class="math display">\[10\times\]</span> as frequently or provides 1 added bit of information. I call the resulting measure <span class="math display">\[n\Delta H\]</span> (not writing the log for readability).</p>
 <p>The following block calculates <span class="math display">\[H\]</span> for the distribution <span class="math display">\[p(doc)\]</span>, as <code>baseline</code>, then calculates the information gain and <span class="math display">\[n\Delta H\]</span>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>baseline <span class="ot">=</span> <span class="fu">log2</span>(<span class="fu">nrow</span>(dataf))</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>info_df <span class="ot">=</span> tokens_df <span class="sc">%&gt;%</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">count</span>(token, post_id) <span class="sc">%&gt;%</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(token) <span class="sc">%&gt;%</span></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(token) <span class="sc">%&gt;%</span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">p =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n), </span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>           <span class="at">H_term =</span> <span class="sc">-</span>p<span class="sc">*</span><span class="fu">log2</span>(p)) <span class="sc">%&gt;%</span></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarize</span>(<span class="at">n =</span> <span class="fu">sum</span>(n), </span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>              <span class="at">H =</span> <span class="fu">sum</span>(H_term), </span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>              <span class="at">delta_H =</span> baseline <span class="sc">-</span> H,</span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>              <span class="at">ndH =</span> <span class="fu">log10</span>(n)<span class="sc">*</span>delta_H)</span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(info_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>baseline <span class="ot">=</span> <span class="fu">log2</span>(<span class="fu">nrow</span>(dataf))</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>info_df <span class="ot">=</span> tokens_df <span class="sc">%&gt;%</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">count</span>(token, post_id) <span class="sc">%&gt;%</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(token) <span class="sc">%&gt;%</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(token) <span class="sc">%&gt;%</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">p =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n), </span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>           <span class="at">H_term =</span> <span class="sc">-</span>p<span class="sc">*</span><span class="fu">log2</span>(p)) <span class="sc">%&gt;%</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarize</span>(<span class="at">n =</span> <span class="fu">sum</span>(n), </span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>              <span class="at">H =</span> <span class="fu">sum</span>(H_term), </span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>              <span class="at">delta_H =</span> baseline <span class="sc">-</span> H,</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>              <span class="at">ndH =</span> <span class="fu">log10</span>(n)<span class="sc">*</span>delta_H)</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(info_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>tibble [8,498 × 5] (S3: tbl_df/tbl/data.frame)
- $ token  : chr [1:8498] "__squarespace_cacheversion" "_data" "_jmp0_" "_market" ...
- $ n      : int [1:8498] 1 1 1 1 1 1 1 17 1 1 ...
- $ H      : num [1:8498] 0 0 0 0 0 ...
- $ delta_H: num [1:8498] 6.07 6.07 6.07 6.07 6.07 ...
- $ ndH    : num [1:8498] 0 0 0 0 0 ...</code></pre>
+<pre><code>tibble [8,752 × 5] (S3: tbl_df/tbl/data.frame)
+ $ token  : chr [1:8752] "0" "0.0" "0.009" "0.037" ...
+ $ n      : int [1:8752] 17 1 1 1 1 1 1 1 4 1 ...
+ $ H      : num [1:8752] 2.17 0 0 0 0 ...
+ $ delta_H: num [1:8752] 3.96 6.13 6.13 6.13 6.13 ...
+ $ ndH    : num [1:8752] 4.87 0 0 0 0 ...</code></pre>
 </div>
 </div>
 <p>This next block isn’t included in the script; it generates a plot showing the distribution of <span class="math display">\[n\Delta H\]</span> scores for a sample of 500 terms. Each point represents a single term; the x-axis is the (log) number of total occurrences across the corpus, color indicates the information gain <span class="math display">\[\Delta H\]</span>, and the y-axis is the overall <span class="math display">\[n \Delta H\]</span> score.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">2018-10-25</span>)</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>info_df <span class="sc">%&gt;%</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sample_n</span>(<span class="dv">500</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="fu">log10</span>(n), <span class="at">color =</span> delta_H, </span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>                                ndH, <span class="at">label =</span> token)) <span class="sc">+</span></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_text</span>() <span class="sc">+</span></span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">2018-10-25</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>info_df <span class="sc">%&gt;%</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sample_n</span>(<span class="dv">500</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="fu">log10</span>(n), <span class="at">color =</span> delta_H, </span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>                                ndH, <span class="at">label =</span> token)) <span class="sc">+</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_text</span>() <span class="sc">+</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="2018-10-25-autotag_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
 </div>
@@ -377,68 +375,68 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The last step in the script is to select a vocabulary of terms to use as tags, identify them in the posts, and write the tags into the Markdown files.</p>
 <p>To select the vocabulary, we simply take the terms with the highest <span class="math display">\[n \Delta H\]</span> scores. Because the blog is fairly small, it’s not unreasonable to take as many terms as there are blog posts (42 tags <span class="math display">\[\to\]</span> 42 tags). As the blog grows, I’ll probably want to trim this down to set a hard cap. Alternatively, I might want to select a number of tags such that each post has at least 1 tag and no post has more than, say, 5 tags. For now, though, I’ll just use the simpler logic of the top 42 terms.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>vocab <span class="ot">=</span>  <span class="fu">top_n</span>(info_df, <span class="fu">nrow</span>(dataf), ndH)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>vocab <span class="ot">=</span>  <span class="fu">top_n</span>(info_df, <span class="fu">nrow</span>(dataf), ndH)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Then we’ll filter the list of tokens down to these tags, collapse the tags into a list, and convert the list into the string that will go in the header of the Markdown files.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>tags_df <span class="ot">=</span> tokens_df <span class="sc">%&gt;%</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(token <span class="sc">%in%</span> vocab<span class="sc">$</span>token) <span class="sc">%&gt;%</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">count</span>(path, post_id, token) <span class="sc">%&gt;%</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(path, post_id) <span class="sc">%&gt;%</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarize</span>(<span class="at">tags =</span> <span class="fu">list</span>(token)) <span class="sc">%&gt;%</span></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">tags_str =</span> <span class="fu">map_chr</span>(tags, str_c, <span class="at">collapse =</span> <span class="st">','</span>), </span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>           <span class="at">tags_str =</span> <span class="fu">str_c</span>(<span class="st">'categories: ['</span>, tags_str, <span class="st">']'</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ungroup</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>tags_df <span class="ot">=</span> tokens_df <span class="sc">%&gt;%</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(token <span class="sc">%in%</span> vocab<span class="sc">$</span>token) <span class="sc">%&gt;%</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">count</span>(path, post_id, token) <span class="sc">%&gt;%</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(path, post_id) <span class="sc">%&gt;%</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarize</span>(<span class="at">tags =</span> <span class="fu">list</span>(token)) <span class="sc">%&gt;%</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">tags_str =</span> <span class="fu">map_chr</span>(tags, str_c, <span class="at">collapse =</span> <span class="st">','</span>), </span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>           <span class="at">tags_str =</span> <span class="fu">str_c</span>(<span class="st">'categories: ['</span>, tags_str, <span class="st">']'</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ungroup</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`summarise()` has grouped output by 'path'. You can override using the
 `.groups` argument.</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(tags_df, <span class="at">max.level =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(tags_df, <span class="at">max.level =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>tibble [56 × 4] (S3: tbl_df/tbl/data.frame)</code></pre>
+<pre><code>tibble [61 × 4] (S3: tbl_df/tbl/data.frame)</code></pre>
 </div>
 </div>
 <p>Finally we’ll write these files back to disk. Each post has a header section that looks something like this:</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Post title goes here"</span></span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">style</span><span class="kw">:</span><span class="at"> post</span></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">monkey</span><span class="kw">,</span><span class="at">zoo</span><span class="kw">]</span></span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Post title goes here"</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">style</span><span class="kw">:</span><span class="at"> post</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">monkey</span><span class="kw">,</span><span class="at">zoo</span><span class="kw">]</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>We’ll separate this header section from the body by searching for the <code>---</code>, add the tags, then put everything back together and write to disk. (Except we won’t actually write the results out to disk here.)</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">right_join</span>(dataf, tags_df) <span class="sc">%&gt;%</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">separate</span>(raw_text, <span class="at">into =</span> <span class="fu">c</span>(<span class="st">'null'</span>, <span class="st">'header'</span>, <span class="st">'body'</span>), </span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>             <span class="at">sep =</span> <span class="st">'---'</span>, <span class="at">extra =</span> <span class="st">'merge'</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    <span class="do">## Remove old tags</span></span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">header =</span> <span class="fu">str_replace</span>(header, </span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>                                <span class="st">'categories: </span><span class="sc">\\</span><span class="st">[[^</span><span class="sc">\\</span><span class="st">]]+</span><span class="sc">\\</span><span class="st">]'</span>, </span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>                                <span class="st">''</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">combined =</span> <span class="fu">str_c</span>(<span class="st">'---'</span>, </span>
-<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>                            header, </span>
-<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>                            tags_str, <span class="st">'</span><span class="sc">\n</span><span class="st">'</span>,</span>
-<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>                            <span class="st">'---'</span>, </span>
-<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>                            body)) <span class="sc">%&gt;%</span></span>
-<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># pull(combined) %&gt;% {cat(.[[1]])}</span></span>
-<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rowwise</span>() <span class="co">#%&gt;%</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">right_join</span>(dataf, tags_df) <span class="sc">%&gt;%</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">separate</span>(raw_text, <span class="at">into =</span> <span class="fu">c</span>(<span class="st">'null'</span>, <span class="st">'header'</span>, <span class="st">'body'</span>), </span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>             <span class="at">sep =</span> <span class="st">'---'</span>, <span class="at">extra =</span> <span class="st">'merge'</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    <span class="do">## Remove old tags</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">header =</span> <span class="fu">str_replace</span>(header, </span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>                                <span class="st">'categories: </span><span class="sc">\\</span><span class="st">[[^</span><span class="sc">\\</span><span class="st">]]+</span><span class="sc">\\</span><span class="st">]'</span>, </span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>                                <span class="st">''</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">combined =</span> <span class="fu">str_c</span>(<span class="st">'---'</span>, </span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>                            header, </span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>                            tags_str, <span class="st">'</span><span class="sc">\n</span><span class="st">'</span>,</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>                            <span class="st">'---'</span>, </span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>                            body)) <span class="sc">%&gt;%</span></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># pull(combined) %&gt;% {cat(.[[1]])}</span></span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rowwise</span>() <span class="co">#%&gt;%</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Joining, by = c("path", "post_id")</code></pre>
+<pre><code>Joining with `by = join_by(path, post_id)`</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 56 × 8
+<pre><code># A tibble: 61 × 8
 # Rowwise: 
-   path                         post_id null  header body  tags  tags_…¹ combi…²
-   &lt;chr&gt;                          &lt;int&gt; &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt; &lt;lis&gt; &lt;chr&gt;   &lt;chr&gt;  
- 1 /Users/danhicks/Google Driv…       1 ""    "\nti… "\n\… &lt;chr&gt; catego… "---\n…
- 2 /Users/danhicks/Google Driv…       2 ""    "\nla… "\n\… &lt;chr&gt; catego… "---\n…
- 3 /Users/danhicks/Google Driv…       3 ""    "\nla… "\n\… &lt;chr&gt; catego… "---\n…
- 4 /Users/danhicks/Google Driv…       5 ""    "\nla… "\n\… &lt;chr&gt; catego… "---\n…
- 5 /Users/danhicks/Google Driv…       6 ""    "\nla… "\n\… &lt;chr&gt; catego… "---\n…
- 6 /Users/danhicks/Google Driv…       7 ""    "\nla… "\n\… &lt;chr&gt; catego… "---\n…
- 7 /Users/danhicks/Google Driv…       8 ""    "\nla… "\n\… &lt;chr&gt; catego… "---\n…
- 8 /Users/danhicks/Google Driv…       9 ""    "\nla… "\n\… &lt;chr&gt; catego… "---\n…
- 9 /Users/danhicks/Google Driv…      10 ""    "\nla… "\n\… &lt;chr&gt; catego… "---\n…
-10 /Users/danhicks/Google Driv…      11 ""    "\nla… "\n\… &lt;chr&gt; catego… "---\n…
-# … with 46 more rows, and abbreviated variable names ¹​tags_str, ²​combined</code></pre>
+   path                       post_id null  header body  tags  tags_str combined
+   &lt;chr&gt;                        &lt;int&gt; &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt; &lt;lis&gt; &lt;chr&gt;    &lt;chr&gt;   
+ 1 /Users/danhicks/Google Dr…       1 ""    "\nti… "\n\… &lt;chr&gt; categor… "---\nt…
+ 2 /Users/danhicks/Google Dr…       2 ""    "\nla… "\n\… &lt;chr&gt; categor… "---\nl…
+ 3 /Users/danhicks/Google Dr…       3 ""    "\nla… "\n\… &lt;chr&gt; categor… "---\nl…
+ 4 /Users/danhicks/Google Dr…       5 ""    "\nla… "\n\… &lt;chr&gt; categor… "---\nl…
+ 5 /Users/danhicks/Google Dr…       6 ""    "\nla… "\n\… &lt;chr&gt; categor… "---\nl…
+ 6 /Users/danhicks/Google Dr…       7 ""    "\nla… "\n\… &lt;chr&gt; categor… "---\nl…
+ 7 /Users/danhicks/Google Dr…       8 ""    "\nla… "\n\… &lt;chr&gt; categor… "---\nl…
+ 8 /Users/danhicks/Google Dr…       9 ""    "\nla… "\n\… &lt;chr&gt; categor… "---\nl…
+ 9 /Users/danhicks/Google Dr…      10 ""    "\nla… "\n\… &lt;chr&gt; categor… "---\nl…
+10 /Users/danhicks/Google Dr…      11 ""    "\nla… "\n\… &lt;chr&gt; categor… "---\nl…
+# ℹ 51 more rows</code></pre>
 </div>
 </div>
 <pre><code>    #mutate(written = map2(combined, path, write_lines))</code></pre>
