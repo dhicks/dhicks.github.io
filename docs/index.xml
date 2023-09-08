@@ -9,8 +9,53 @@
 <link>https://dhicks.github.io/index.html</link>
 <atom:link href="https://dhicks.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Website description</description>
-<generator>quarto-1.2.280</generator>
-<lastBuildDate>Wed, 07 Jun 2023 07:00:00 GMT</lastBuildDate>
+<generator>quarto-1.3.433</generator>
+<lastBuildDate>Fri, 08 Sep 2023 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Misinformation and trustworthiness: Frenemies in the analysis of public scientific controversies</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2023-09-08-misinfo.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><span class="citation" data-cites="LewandowskyWhenScienceBecomes2022">Lewandowsky et al. (2022)</span> examine public scientific controversies through two contrasting “lenses” or analytical frameworks, using Covid-19 as their primary case study. The first lens, “science denial,” is pretty explicitly scientistic: in cases such as “the link between AIDS and HIV, climate change, evolution, and other clearly established scientific facts,”</p>
+<blockquote class="blockquote">
+<p>absent new evidence, dissent from the scientifically accepted position cannot be supported by legitimate evidence and theorizing but must necessarily—that is, in virtually all instances—involve misleading or flawed argumentation. <span class="citation" data-cites="LewandowskyWhenScienceBecomes2022">(Lewandowsky et al. 2022, 31)</span></p>
+</blockquote>
+<p>There are some qualifiers in this particular quotation — “absent new evidence” and “<em>virtually</em> all instances” — but in other places these are dropped: “The rules of scientific evidence formation and argumentation are inescapable and cannot be discarded or side-stepped for political expediency” <span class="citation" data-cites="LewandowskyWhenScienceBecomes2022">(Lewandowsky et al. 2022, 32)</span> This lens explains public scientific controversies by appealing to a combination of irrationality and disinformation/propaganda.</p>
+<p><span class="citation" data-cites="LewandowskyWhenScienceBecomes2022">Lewandowsky et al. (2022)</span> recognize the technocratic implications of the “science denial” lens:</p>
+<blockquote class="blockquote">
+<p>this insistence on quality of argumentation may seemingly curtail the public’s involvement in any scientifically informed debate. After all, members of the public are often nonexperts on topics and issues whose outcomes affect their lives. <span class="citation" data-cites="LewandowskyWhenScienceBecomes2022">(Lewandowsky et al. 2022, 32)</span></p>
+</blockquote>
+<p>Their first “solution” to this problem is to communicate “scientific issues” using “stories or pictures” <span class="citation" data-cites="LewandowskyWhenScienceBecomes2022">(Lewandowsky et al. 2022, 32)</span>. The second “solution” is a segue into the second lens.</p>
+<hr>
+<p>The “trust” lens explains controversies by appealing to the ways that “people differ in how much trust they put on various information sources (e.g., scientists vs.&nbsp;their neighbor on social media)” <span class="citation" data-cites="LewandowskyWhenScienceBecomes2022">(Lewandowsky et al. 2022, 33)</span>. Further, the lens recognizes that differences in trust can be due to differences in <em>trustworthiness</em>.</p>
+<blockquote class="blockquote">
+<p>Ethnic minorities, for example, have historically been discriminated against in the health care system. Western countries, especially those with colonial histo- ries, have also damaged people’s trust in medical treatments through their previ- ous mistreatment of indigenous populations (Lowes and Montero 2021) and misuse of vaccination centers, for example, by the CIA in its hunt for Osama bin Laden (Reardon 2011). <strong>It is unsurprising that people would question scientific evidence communicated by the same institutions that caused them harm or deceived them in the past</strong> (Jamison, Quinn, and Freimuth 2019). <span class="citation" data-cites="LewandowskyWhenScienceBecomes2022">(Lewandowsky et al. 2022, 33, my emphasis)</span></p>
+</blockquote>
+<p>To elaborate this a little more, it might be helpful to make a three-way distinction, between (a) (occurrent) trust, (b) perceived trustworthiness, and (c) actual trustworthiness. A potential trustee might satisfy criteria for trustworthiness, but be incorrectly perceived to be untrustworthy by the potential trustor. For example, under the influence of politicization campaigns, many US conservatives might incorrectly believe climate scientists to be more interested in their own careers than the public interest, and thus incorrectly perceive climate scientists to be untrustworthy.</p>
+<p>The “trust” lens implies that “appreciation of why evidence is mistrusted in these communities is essential” and the importance of “regain[ing] trust rather than dismiss[ing] beliefs based on lived experience as simple denialism” <span class="citation" data-cites="LewandowskyWhenScienceBecomes2022">(Lewandowsky et al. 2022, 33)</span>.</p>
+<p><span class="citation" data-cites="LewandowskyWhenScienceBecomes2022">Lewandowsky et al. (2022)</span> attempt to bring these two lenses together. Understanding why a group’s “cultural background or lived experience” undermines the trustworthiness of mainstream institutions “can provide pointers as to why [they] engage[] in (or fall[] for)” irrationality and disinformation <span class="citation" data-cites="LewandowskyWhenScienceBecomes2022">(Lewandowsky et al. 2022, 34)</span>. In addition (or perhaps “specifically”), understanding the causes of trustworthiness failures “can reveal shortcomings in the scientific process or evidence base …. analysis of those arguments can provide valuable pointers to underlying issues—such as lacking representation in medical research—that can be addressed by suitable policies or remedial research” <span class="citation" data-cites="LewandowskyWhenScienceBecomes2022">(Lewandowsky et al. 2022, 34)</span>.</p>
+<p>I would add that the example of incorrectly perceiving climate scientists to be untrustworthy suggests that perceived untrustworthiness and misinformation can be co-producing. Climate propagandists have not only promulgated “first order” misinformation about climate change (“it’s all natural variation”) but also “second order” misinformation about climate <em>scientists</em> (“they’ll say whatever it takes to get published”).</p>
+<hr>
+<p>Unfortunately, in their final section, “Recommendations,” <span class="citation" data-cites="LewandowskyWhenScienceBecomes2022">Lewandowsky et al. (2022)</span> seem to revert back to the “science denial” lens alone. Their two primary recommendations are that “misleading and inappropriate argumentation must be identified” and that “when misleading arguments have been identified, they can be used to ‘inoculate’ the public against their ill effects” <span class="citation" data-cites="LewandowskyWhenScienceBecomes2022">(Lewandowsky et al. 2022, 35)</span>. The “trust” lens’ emphasis on understanding why scientific institutions might not be (perceived to be) trustworthy has all but disappeared. The “trust” lens does get one paragraph, arguing that “Policies that take into account the reasons underlying misleading arguments can be more effective than those agnostic about these reasons” and that emphasizing “‘winning’ an argument” is unlikely to be successful” <span class="citation" data-cites="LewandowskyWhenScienceBecomes2022">(Lewandowsky et al. 2022, 35)</span>. But the final sentence asserts that deliberation “can be achieved” “only when misleading arguments can be identified and rejected” <span class="citation" data-cites="LewandowskyWhenScienceBecomes2022">(Lewandowsky et al. 2022, 35)</span>, that is, only when “science” wins the argument.</p>
+<hr>
+<p>I really like the way this piece contrasts two common frameworks for understanding public scientific controversies. The scientistic and technocratic implications of the “science denial”/misinformation framework are on full display, which is useful for illustrating why I typically dislike this framework and find it, at best, incomplete. And the attempt to synthesize the two frameworks is useful: as you can see, it prompted me to think about how I understand the role of propaganda and misinformation in my analysis of controversies.</p>
+<p>But that “Recommendations” section. To me, the paper reads like there were two sets of authors here. One set working with the misinfo framework, the other with the trustworthiness framework. The trustworthiness folks made a reasonable effort to integrate trustworthiness and misinformation in their section. But the misinfo folks ignored this, relying just on their framework to write the concluding section.</p>
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-LewandowskyWhenScienceBecomes2022" class="csl-entry">
+Lewandowsky, Stephan, Konstantinos Armaos, Hendrik Bruns, Philipp Schmid, Dawn Liu Holford, Ulrike Hahn, Ahmed Al-Rawi, Sunita Sah, and John Cook. 2022. <span>“When Science Becomes Embroiled in Conflict: Recognizing the Public’s Need for Debate While Combating Conspiracies and Misinformation.”</span> <em>The ANNALS of the American Academy of Political and Social Science</em> 700 (1): 26–40. <a href="https://doi.org/10.1177/00027162221084663">https://doi.org/10.1177/00027162221084663</a>.
+</div>
+</div></section></div> ]]></description>
+  <guid>https://dhicks.github.io/posts/2023-09-08-misinfo.html</guid>
+  <pubDate>Fri, 08 Sep 2023 07:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Revisiting the Nazi Problem</title>
   <dc:creator>Dan Hicks</dc:creator>
@@ -126,12 +171,12 @@ Yap, Audrey. 2015. <span>“Feminist Radical Empiricism, Values, and Evidence.�
 
 
 
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -237,12 +282,12 @@ Wylie, Alison, and Lynn Hankinson Nelson. 2007. <span>“Coming to Terms with th
 
 
 
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -386,7 +431,7 @@ Supran, Geoffrey, and Naomi Oreskes. 2017. <span>“Assessing ExxonMobil’s Cli
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://dhicks.github.io/posts/https:/media.nature.com/lw767/magazine-assets/d41586-023-00799-3/d41586-023-00799-3_24644262.png?as=webp" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">The headline finding of <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span>: Trump voters who saw the <em>Nature</em> endorsement summary in the experiment rated <em>Nature</em> editors as much less informed and much more biased. I can’t get over how awful this visualization is. Source: <span class="citation" data-cites="LupiaPoliticalEndorsementsCan2023">Lupia (2023)</span></figcaption><p></p>
+<figcaption class="figure-caption">The headline finding of <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span>: Trump voters who saw the <em>Nature</em> endorsement summary in the experiment rated <em>Nature</em> editors as much less informed and much more biased. I can’t get over how awful this visualization is. Source: <span class="citation" data-cites="LupiaPoliticalEndorsementsCan2023">Lupia (2023)</span></figcaption>
 </figure>
 </div>
 <p>Much of the commentary around <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> is generalizing this headline finding, to a claim that the endorsement undermined trust in science generally. <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> did examine this generalization, and did find statistically significant results for Trump voters. However, these effects were much smaller in magnitude, about 0.15 on the five-point Likert scale. This means that a few Trump voters saw science generally as a little less trustworthy after seeing the endorsement, but overall this effect is negligible. An old complaint in statistics is that “practical significance is different from statistical significance.”</p>
@@ -420,7 +465,7 @@ Supran, Geoffrey, and Naomi Oreskes. 2017. <span>“Assessing ExxonMobil’s Cli
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://dhicks.github.io/posts/https:/www.frontiersin.org/files/Articles/1017362/fcomm-07-1017362-HTML/image_m/fcomm-07-1017362-g006.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">A key finding from <span class="citation" data-cites="HicksValuesDisclosuresTrust2022">Hicks and Lobato (2022)</span>: There is no shared values effect, but instead a “scientist values” effect: a scientist who values public health is perceived as more trustworthy than one who values economic growth, even by participants who value economic growth. Panels correspond to participant values (relatively few participants valued economic growth), and columns within panels correspond to scientist values. In red, the vertical bars indicate the mean and 95% confidence interval, and comparisons between scientist value conditions are connected with a thin line. The “scientist values” effect is shown by the increase in the thin line. This is a much better data visualization: better contrast with the background, showing the individual observations, and highlighting the comparison of interest.</figcaption><p></p>
+<figcaption class="figure-caption">A key finding from <span class="citation" data-cites="HicksValuesDisclosuresTrust2022">Hicks and Lobato (2022)</span>: There is no shared values effect, but instead a “scientist values” effect: a scientist who values public health is perceived as more trustworthy than one who values economic growth, even by participants who value economic growth. Panels correspond to participant values (relatively few participants valued economic growth), and columns within panels correspond to scientist values. In red, the vertical bars indicate the mean and 95% confidence interval, and comparisons between scientist value conditions are connected with a thin line. The “scientist values” effect is shown by the increase in the thin line. This is a much better data visualization: better contrast with the background, showing the individual observations, and highlighting the comparison of interest.</figcaption>
 </figure>
 </div>
 <p>Because the Riley Spence design can separate shared and partisan values, while the design in <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> cannot, I think the Riley Spence design provides much more relevant and reliable evidence regarding a shared values VFI model. And so I think the findings from <span class="citation" data-cites="ElliottValuesEnvironmentalResearch2017">Elliott et al. (2017)</span> and <span class="citation" data-cites="HicksValuesDisclosuresTrust2022">Hicks and Lobato (2022)</span> are a major challenge to that model.</p>
@@ -494,7 +539,6 @@ Zhang, Floyd Jiuyun. 2023. <span>“Political Endorsement by Nature and Trust in
 </section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2023-03-22-endorsement.html</guid>
   <pubDate>Wed, 22 Mar 2023 07:00:00 GMT</pubDate>
-  <media:content url="https://media.nature.com/lw767/magazine-assets/d41586-023-00799-3/d41586-023-00799-3_24644262.png?as=webp" medium="image"/>
 </item>
 <item>
   <title>Constructivist accounts of representation, in science and politics</title>
@@ -1124,7 +1168,6 @@ Stapleford, Thomas A. 2009. <em>The Cost of Living in America: A Political Histo
  ]]></description>
   <guid>https://dhicks.github.io/posts/2020-05-04-chlorpyrifos-paper.html</guid>
   <pubDate>Mon, 04 May 2020 07:00:00 GMT</pubDate>
-  <media:content url="https://dhicks.github.io/img/03_chlor_use.png" medium="image" type="image/png" height="168" width="144"/>
 </item>
 <item>
   <title>A “Toolbox-lite” for the First Day of Philosophy of Science</title>
@@ -1184,29 +1227,6 @@ Stapleford, Thomas A. 2009. <em>The Cost of Living in America: A Political Histo
  ]]></description>
   <guid>https://dhicks.github.io/posts/2020-01-21-toolbox-lite.html</guid>
   <pubDate>Tue, 21 Jan 2020 08:00:00 GMT</pubDate>
-  <media:content url="https://dhicks.github.io/img/2020-01-21-q2.png" medium="image" type="image/png" height="58" width="144"/>
-</item>
-<item>
-  <title>Radical Immanent Critique</title>
-  <dc:creator>Dan Hicks</dc:creator>
-  <link>https://dhicks.github.io/posts/2020-01-19-radical-immanent-critique.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>My general approach to philosophy might be characterized as <em>radical immanent critique</em>. This might seem paradoxical. The goal of this blog post is to resolve this apparent paradox.</p>
-<p>Let’s start at the end. My approach is critical. By this I mean that my approach is evaluative, not purely descriptive; and that my evaluations are frequently negative. Things are going wrong; things aren’t working. This might be because the means aren’t appropriate to the ends, or it might be because the ends are bad ones.</p>
-<p>My critique is radical. By this I mean that it targets deep assumptions of the scientific practices I study (and critique). The value-free ideal, and related concepts such as objectivity and partisan neutrality, is a good example here. The value-free ideal (for science) is widely assumed by scientists, policymakers, and members of the general public. It is also rarely questioned or put up for debate. This ideal has a profound influence on the way we organize scientific institutions and integrate them into our systems of public decisionmaking. In these ways, the value-free ideal is a deep assumption of science in our society. And it is an assumption I am sharply critical of. I don’t just think it’s mistaken; I think it’s pernicious. By criticizing this deep assumption, my work becomes radical.</p>
-<p>But my critique is also immanent. This means that it is addressed to the social practices that I think should change — scientific research and policymaking — framed in terms that they can understand, and argued by appealing to premises that they accept. (This is also why I’ve published so much of my work in venues like <em>Environmental Health Perspectives</em> or <em>Risk Analysis</em>.) My basic argument against the value-free ideal is that it prevents scientists from doing the very things that they claim to be trying to do. For example, environmental health scientists characteristically want to produce knowledge that will be useful for protecting human health and the environment. I didn’t make up the phrase “protect human health and the environment”; it’s from the mission statement of US EPA. The value-free ideal prevents them from pursuing this goal when it’s used to portray and dismiss their research as “biased” and to justify excessively skeptical standards of evidence.</p>
-<p>The sense of paradox in “radical immanent critique” comes from the fact that, on the one hand, I appeal to deep assumptions of scientific practices while also, on the other hand, criticizing deep assumptions of these same practices. How can I both appeal to and criticize an assumption?</p>
-<p>The solution is that I’m appealing to some deep assumptions to criticize other ones. The aim of protecting human health and the environment is a deep assumption of environmental health science; my argument points out that this assumption is incompatible with another deep assumption, the value-free ideal. We might distinguish between <em>radical</em> critique and <em>Cartesian</em> critique. Radical critique targets deep assumptions of a social practice; but not necessarily every assumption. Only Cartesian critique attempts to target every assumption of a social practice at once. Cartesian immanent critique would be paradoxical; but there’s no logical problem with non-Cartesian radical immanent critique.</p>
-
-
-
- ]]></description>
-  <guid>https://dhicks.github.io/posts/2020-01-19-radical-immanent-critique.html</guid>
-  <pubDate>Sun, 19 Jan 2020 08:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

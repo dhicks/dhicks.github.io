@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.280">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,14 +19,15 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -40,8 +41,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -80,14 +80,15 @@ div.csl-indent {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Dan Hicks - Pluralism about problematic situations">
-<meta property="og:description" content="I’ve been invited to give a keynote on Matt Brown’s work at the UT Dallas conference in May.">
+<meta property="og:description" content="">
 <meta property="og:site-name" content="Dan Hicks ">
 </head>
 
@@ -102,64 +103,66 @@ div.csl-indent {
     <span class="navbar-title">Dan Hicks</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about.html">
+    <a class="nav-link" href="../about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../research.html">
+    <a class="nav-link" href="../research.html" rel="" target="">
  <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
  <span class="menu-text">Teaching</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
         <li>
-    <a class="dropdown-item" href="https://data-science-methods.github.io/">
+    <a class="dropdown-item" href="https://data-science-methods.github.io/" rel="" target="">
  <span class="dropdown-text">Methods of Data Science</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="https://orcid.org/0000-0001-7945-4416">
+    <a class="nav-link" href="https://orcid.org/0000-0001-7945-4416" rel="" target="">
  <span class="menu-text"><i class="fa-brands fa-orcid" aria-label="orcid"></i></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://scholar.google.com/citations?user=XvkwYZsAAAAJ&amp;hl=en">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=XvkwYZsAAAAJ&amp;hl=en" rel="" target="">
  <span class="menu-text"><i class="ai  ai-google-scholar" title="" style="color:"></i></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://dhicks.github.io/cv">
+    <a class="nav-link" href="https://dhicks.github.io/cv" rel="" target="">
  <span class="menu-text"><i class="ai  ai-cv" title="" style="color:"></i></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/dhicks/"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/dhicks/" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://mastodon.social/@danhicks"><i class="bi bi-mastodon" role="img">
+    <a class="nav-link" href="https://mastodon.social/(danhicks?)" rel="" target=""><i class="bi bi-mastodon" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:dhicks4@ucmerced.edu"><i class="bi bi-envelope" role="img">
+    <a class="nav-link" href="mailto:dhicks4@ucmerced.edu" rel="" target=""><i class="bi bi-envelope" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="../index.xml"><i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../index.xml" rel="" target=""><i class="bi bi-rss" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -203,12 +206,12 @@ div.csl-indent {
 
 
 
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -234,65 +237,65 @@ Note
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
-<div id="ref-BolsenCitizensScientistsPolicy2015" class="csl-entry" role="doc-biblioentry">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-BolsenCitizensScientistsPolicy2015" class="csl-entry" role="listitem">
 Bolsen, Toby, James N. Druckman, and Fay Lomax Cook. 2015. <span>“Citizens’, Scientists’, and Policy Advisors’ Beliefs about Global Warming.”</span> <em>The ANNALS of the American Academy of Political and Social Science</em> 658 (1): 271–95. <a href="https://doi.org/10.1177/0002716214558393">https://doi.org/10.1177/0002716214558393</a>.
 </div>
-<div id="ref-BrownDemocraticControlScientific2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-BrownDemocraticControlScientific2013" class="csl-entry" role="listitem">
 Brown, Matthew J. 2013. <span>“The Democratic Control of the Scientific Control of Politics.”</span> In <em>The European Philosophy of Science Association Proceedings</em>, edited by Vassilios Karakostas and Dennis Dieks, 2:479–91. Springer International Publishing. <a href="http://dx.doi.org/10.1007/978-3-319-01306-0_39">http://dx.doi.org/10.1007/978-3-319-01306-0_39</a>.
 </div>
-<div id="ref-CartwrightEvidenceBasedPolicyPractical2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-CartwrightEvidenceBasedPolicyPractical2012" class="csl-entry" role="listitem">
 Cartwright, Nancy, and Jeremy Hardie. 2012. <em>Evidence-Based Policy: A Practical Guide to Doing It Better</em>. Oxford University Press. <a href="http://books.google.ca/books?id=kN3OdpkUyTcC&amp;printsec=frontcover&amp;dq=intitle:Evidence+Based+Policy+A+Practical+Guide+to+Doing+It+Better&amp;hl=&amp;cd=1&amp;source=gbs_api">http://books.google.ca/books?id=kN3OdpkUyTcC&amp;printsec=frontcover&amp;dq=intitle:Evidence+Based+Policy+A+Practical+Guide+to+Doing+It+Better&amp;hl=&amp;cd=1&amp;source=gbs_api</a>.
 </div>
-<div id="ref-DouglasSciencePolicyValuefree2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-DouglasSciencePolicyValuefree2009" class="csl-entry" role="listitem">
 Douglas, Heather E. 2009. <em>Science, Policy, and the Value-Free Ideal</em>. Pittsburgh, Pa: University of Pittsburgh Press.
 </div>
-<div id="ref-FeyerabendHowDefendSociety1975" class="csl-entry" role="doc-biblioentry">
+<div id="ref-FeyerabendHowDefendSociety1975" class="csl-entry" role="listitem">
 Feyerabend, Paul. 1975. <span>“How to Defend Society Against Science.”</span> <em>Radical Philosophy</em>, no. 011 (Summer): 3–8.
 </div>
-<div id="ref-Hertel-FernandezLegislativeStaffRepresentation2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Hertel-FernandezLegislativeStaffRepresentation2019" class="csl-entry" role="listitem">
 Hertel-Fernandez, Alexander, Matto Mildenberger, and Leah C. Stokes. 2019. <span>“Legislative Staff and Representation in Congress.”</span> <em>American Political Science Review</em> 113 (1): 1–18. <a href="https://doi.org/10.1017/S0003055418000606">https://doi.org/10.1017/S0003055418000606</a>.
 </div>
-<div id="ref-HicksEpistemologicalDepthGM2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-HicksEpistemologicalDepthGM2015" class="csl-entry" role="listitem">
 Hicks, Daniel J. 2015. <span>“Epistemological Depth in a GM Crops Controversy.”</span> <em>Studies in History and Philosophy of Science Part C: Studies in History and Philosophy of Biological and Biomedical Sciences</em> 50 (April): 1–12. <a href="https://doi.org/10.1016/j.shpsc.2015.02.002">https://doi.org/10.1016/j.shpsc.2015.02.002</a>.
 </div>
-<div id="ref-HicksGeneticallyModifiedCrops2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-HicksGeneticallyModifiedCrops2017" class="csl-entry" role="listitem">
 ———. 2017. <span>“Genetically Modified Crops, Inclusion, and Democracy.”</span> <em>Perspectives on Science</em> 25 (4): 488–520. <a href="https://doi.org/10.1162/POSC_a_00251">https://doi.org/10.1162/POSC_a_00251</a>.
 </div>
-<div id="ref-LaceyScientificResearchTechnological2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-LaceyScientificResearchTechnological2014" class="csl-entry" role="listitem">
 Lacey, Hugh. 2014. <span>“Scientific Research, Technological Innovation and the Agenda of Social Justice, Democratic Participation and Sustainability.”</span> <em>Scientiae Studia</em> 12 (SPE): 37–55. <a href="https://doi.org/10.1590/S1678-31662014000400003">https://doi.org/10.1590/S1678-31662014000400003</a>.
 </div>
-<div id="ref-LeiserowitzGlobalWarmingSix2021" class="csl-entry" role="doc-biblioentry">
+<div id="ref-LeiserowitzGlobalWarmingSix2021" class="csl-entry" role="listitem">
 Leiserowitz, Anthony, Connie Roser-Renouf, Jennifer Marlon, and Edward Maibach. 2021. <span>“Global Warming’s Six Americas: A Review and Recommendations for Climate Change Communication.”</span> <em>Current Opinion in Behavioral Sciences</em>, Human Response to Climate Change: From Neurons to Collective Action, 42 (December): 97–103. <a href="https://doi.org/10.1016/j.cobeha.2021.04.007">https://doi.org/10.1016/j.cobeha.2021.04.007</a>.
 </div>
-<div id="ref-LewandowskyAliceWonderlandMechanics2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-LewandowskyAliceWonderlandMechanics2016" class="csl-entry" role="listitem">
 Lewandowsky, Stephan, John Cook, and Elisabeth Lloyd. 2016. <span>“The <span>‘Alice in Wonderland’</span> Mechanics of the Rejection of (Climate) Science: Simulating Coherence by Conspiracism.”</span> <em>Synthese</em>, September, 1–22. <a href="https://doi.org/10.1007/s11229-016-1198-6">https://doi.org/10.1007/s11229-016-1198-6</a>.
 </div>
-<div id="ref-LloydModelRobustnessConfirmatory2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-LloydModelRobustnessConfirmatory2015" class="csl-entry" role="listitem">
 Lloyd, Elisabeth A. 2015. <span>“Model Robustness as a Confirmatory Virtue: The Case of Climate Science.”</span> <em>Studies in History and Philosophy of Science Part A</em> 49 (February): 58–68. <a href="https://doi.org/10.1016/j.shpsa.2014.12.002">https://doi.org/10.1016/j.shpsa.2014.12.002</a>.
 </div>
-<div id="ref-LonginoCanThereBe1987" class="csl-entry" role="doc-biblioentry">
+<div id="ref-LonginoCanThereBe1987" class="csl-entry" role="listitem">
 Longino, Helen E. 1987. <span>“Can There Be A Feminist Science?”</span> <em>Hypatia</em> 2 (3): 51–64. <a href="https://doi.org/10.1111/j.1527-2001.1987.tb01341.x">https://doi.org/10.1111/j.1527-2001.1987.tb01341.x</a>.
 </div>
-<div id="ref-LuskPoliticalLegitimacyDemocratic2020" class="csl-entry" role="doc-biblioentry">
+<div id="ref-LuskPoliticalLegitimacyDemocratic2020" class="csl-entry" role="listitem">
 Lusk, Greg. 2020. <span>“Political Legitimacy in the Democratic View: The Case of Climate Services.”</span> <em>Philosophy of Science</em>, July. <a href="https://doi.org/10.1086/710803">https://doi.org/10.1086/710803</a>.
 </div>
-<div id="ref-OreskesMerchantsDoubtHow2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-OreskesMerchantsDoubtHow2011" class="csl-entry" role="listitem">
 Oreskes, Naomi, and Erik M. Conway. 2011. <em>Merchants of Doubt: How a Handful of Scientists Obscured the Truth on Issues from Tobacco Smoke to Global Warming</em>. New York, NY, USA: Bloomsbury.
 </div>
-<div id="ref-ParkerIncorporatingUserValues2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ParkerIncorporatingUserValues2019" class="csl-entry" role="listitem">
 Parker, Wendy S., and Greg Lusk. 2019. <span>“Incorporating User Values into Climate Services.”</span> <em>Bulletin of the American Meteorological Society</em> 100 (9): 1643–50. <a href="https://doi.org/10.1175/BAMS-D-17-0325.1">https://doi.org/10.1175/BAMS-D-17-0325.1</a>.
 </div>
-<div id="ref-SarewitzHowScienceMakes2004" class="csl-entry" role="doc-biblioentry">
+<div id="ref-SarewitzHowScienceMakes2004" class="csl-entry" role="listitem">
 Sarewitz, Daniel. 2004. <span>“How Science Makes Environmental Controversies Worse.”</span> <em>Environmental Science and Policy</em> 7 (5): 385–403. <a href="https://doi.org/10.1016/j.envsci.2004.06.001">https://doi.org/10.1016/j.envsci.2004.06.001</a>.
 </div>
-<div id="ref-SicotteWillGreenNew2021" class="csl-entry" role="doc-biblioentry">
+<div id="ref-SicotteWillGreenNew2021" class="csl-entry" role="listitem">
 Sicotte, Diane. 2021. <span>“Will the Green New Deal Bring About a <span>‘Just Transition,’</span> or Just Transition? - American Sociological Association.”</span> Summer 2021. <a href="https://www.asanet.org/footnotes-article/will-green-new-deal-bring-about-just-transition-or-just-transition/">https://www.asanet.org/footnotes-article/will-green-new-deal-bring-about-just-transition-or-just-transition/</a>.
 </div>
-<div id="ref-SparkmanAmericansExperienceFalse2022" class="csl-entry" role="doc-biblioentry">
+<div id="ref-SparkmanAmericansExperienceFalse2022" class="csl-entry" role="listitem">
 Sparkman, Gregg, Nathan Geiger, and Elke U. Weber. 2022. <span>“Americans Experience a False Social Reality by Underestimating Popular Climate Policy Support by Nearly Half.”</span> <em>Nature Communications</em> 13 (1): 4779. <a href="https://doi.org/10.1038/s41467-022-32412-y">https://doi.org/10.1038/s41467-022-32412-y</a>.
 </div>
-<div id="ref-SupranAssessingExxonMobilClimate2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-SupranAssessingExxonMobilClimate2017" class="csl-entry" role="listitem">
 Supran, Geoffrey, and Naomi Oreskes. 2017. <span>“Assessing ExxonMobil’s Climate Change Communications (1977–2014).”</span> <em>Environmental Research Letters</em> 12 (8): 084019. <a href="https://doi.org/10.1088/1748-9326/aa815f">https://doi.org/10.1088/1748-9326/aa815f</a>.
 </div>
 </div></section></div></main> <!-- /main -->
@@ -323,9 +326,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -390,6 +407,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {

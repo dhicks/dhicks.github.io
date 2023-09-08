@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.280">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -61,7 +61,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script>
@@ -95,6 +96,7 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
@@ -113,64 +115,66 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Dan Hicks</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="./about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html">
+    <a class="nav-link" href="./research.html" rel="" target="">
  <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
  <span class="menu-text">Teaching</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
         <li>
-    <a class="dropdown-item" href="https://data-science-methods.github.io/">
+    <a class="dropdown-item" href="https://data-science-methods.github.io/" rel="" target="">
  <span class="dropdown-text">Methods of Data Science</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="https://orcid.org/0000-0001-7945-4416">
+    <a class="nav-link" href="https://orcid.org/0000-0001-7945-4416" rel="" target="">
  <span class="menu-text"><i class="fa-brands fa-orcid" aria-label="orcid"></i></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://scholar.google.com/citations?user=XvkwYZsAAAAJ&amp;hl=en">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=XvkwYZsAAAAJ&amp;hl=en" rel="" target="">
  <span class="menu-text"><i class="ai  ai-google-scholar" title="" style="color:"></i></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://dhicks.github.io/cv">
+    <a class="nav-link" href="https://dhicks.github.io/cv" rel="" target="">
  <span class="menu-text"><i class="ai  ai-cv" title="" style="color:"></i></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/dhicks/"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/dhicks/" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://mastodon.social/@danhicks"><i class="bi bi-mastodon" role="img">
+    <a class="nav-link" href="https://mastodon.social/@danhicks" rel="" target=""><i class="bi bi-mastodon" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:dhicks4@ucmerced.edu"><i class="bi bi-envelope" role="img">
+    <a class="nav-link" href="mailto:dhicks4@ucmerced.edu" rel="" target=""><i class="bi bi-envelope" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml"><i class="bi bi-rss" role="img">
+    <a class="nav-link" href="./index.xml" rel="" target=""><i class="bi bi-rss" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -197,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(70)</span></div><div class="category" data-category="adversarial">adversarial <span class="quarto-category-count">(1)</span></div><div class="category" data-category="automated">automated <span class="quarto-category-count">(3)</span></div><div class="category" data-category="birth">birth <span class="quarto-category-count">(4)</span></div><div class="category" data-category="citation">citation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="citations">citations <span class="quarto-category-count">(3)</span></div><div class="category" data-category="compassion">compassion <span class="quarto-category-count">(1)</span></div><div class="category" data-category="creativity">creativity <span class="quarto-category-count">(1)</span></div><div class="category" data-category="critic">critic <span class="quarto-category-count">(1)</span></div><div class="category" data-category="data">data <span class="quarto-category-count">(17)</span></div><div class="category" data-category="developing">developing <span class="quarto-category-count">(4)</span></div><div class="category" data-category="factors">factors <span class="quarto-category-count">(2)</span></div><div class="category" data-category="finnish">finnish <span class="quarto-category-count">(1)</span></div><div class="category" data-category="funding">funding <span class="quarto-category-count">(5)</span></div><div class="category" data-category="gm">gm <span class="quarto-category-count">(6)</span></div><div class="category" data-category="gmof">gmof <span class="quarto-category-count">(1)</span></div><div class="category" data-category="hypothesis">hypothesis <span class="quarto-category-count">(4)</span></div><div class="category" data-category="idf">idf <span class="quarto-category-count">(1)</span></div><div class="category" data-category="instructor">instructor <span class="quarto-category-count">(1)</span></div><div class="category" data-category="local">local <span class="quarto-category-count">(7)</span></div><div class="category" data-category="love">love <span class="quarto-category-count">(1)</span></div><div class="category" data-category="maize">maize <span class="quarto-category-count">(2)</span></div><div class="category" data-category="market">market <span class="quarto-category-count">(6)</span></div><div class="category" data-category="markets">markets <span class="quarto-category-count">(4)</span></div><div class="category" data-category="math">math <span class="quarto-category-count">(3)</span></div><div class="category" data-category="meat">meat <span class="quarto-category-count">(4)</span></div><div class="category" data-category="medicine">medicine <span class="quarto-category-count">(4)</span></div><div class="category" data-category="moocs">moocs <span class="quarto-category-count">(3)</span></div><div class="category" data-category="motivated">motivated <span class="quarto-category-count">(4)</span></div><div class="category" data-category="n">n <span class="quarto-category-count">(1)</span></div><div class="category" data-category="policy">policy <span class="quarto-category-count">(9)</span></div><div class="category" data-category="predators">predators <span class="quarto-category-count">(1)</span></div><div class="category" data-category="preventative">preventative <span class="quarto-category-count">(1)</span></div><div class="category" data-category="punishment">punishment <span class="quarto-category-count">(1)</span></div><div class="category" data-category="reasoning">reasoning <span class="quarto-category-count">(7)</span></div><div class="category" data-category="regime">regime <span class="quarto-category-count">(1)</span></div><div class="category" data-category="rights">rights <span class="quarto-category-count">(8)</span></div><div class="category" data-category="robot">robot <span class="quarto-category-count">(1)</span></div><div class="category" data-category="satz">satz <span class="quarto-category-count">(3)</span></div><div class="category" data-category="scientist">scientist <span class="quarto-category-count">(6)</span></div><div class="category" data-category="students">students <span class="quarto-category-count">(8)</span></div><div class="category" data-category="tf">tf <span class="quarto-category-count">(1)</span></div><div class="category" data-category="vegetarianism">vegetarianism <span class="quarto-category-count">(3)</span></div><div class="category" data-category="virtues">virtues <span class="quarto-category-count">(3)</span></div><div class="category" data-category="wrongdoer">wrongdoer <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(71)</span></div><div class="category" data-category="adversarial">adversarial <span class="quarto-category-count">(1)</span></div><div class="category" data-category="automated">automated <span class="quarto-category-count">(3)</span></div><div class="category" data-category="birth">birth <span class="quarto-category-count">(4)</span></div><div class="category" data-category="citation">citation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="citations">citations <span class="quarto-category-count">(3)</span></div><div class="category" data-category="compassion">compassion <span class="quarto-category-count">(1)</span></div><div class="category" data-category="creativity">creativity <span class="quarto-category-count">(1)</span></div><div class="category" data-category="critic">critic <span class="quarto-category-count">(1)</span></div><div class="category" data-category="data">data <span class="quarto-category-count">(17)</span></div><div class="category" data-category="developing">developing <span class="quarto-category-count">(4)</span></div><div class="category" data-category="factors">factors <span class="quarto-category-count">(2)</span></div><div class="category" data-category="finnish">finnish <span class="quarto-category-count">(1)</span></div><div class="category" data-category="funding">funding <span class="quarto-category-count">(5)</span></div><div class="category" data-category="gm">gm <span class="quarto-category-count">(6)</span></div><div class="category" data-category="gmof">gmof <span class="quarto-category-count">(1)</span></div><div class="category" data-category="hypothesis">hypothesis <span class="quarto-category-count">(4)</span></div><div class="category" data-category="idf">idf <span class="quarto-category-count">(1)</span></div><div class="category" data-category="instructor">instructor <span class="quarto-category-count">(1)</span></div><div class="category" data-category="local">local <span class="quarto-category-count">(7)</span></div><div class="category" data-category="love">love <span class="quarto-category-count">(1)</span></div><div class="category" data-category="maize">maize <span class="quarto-category-count">(2)</span></div><div class="category" data-category="market">market <span class="quarto-category-count">(6)</span></div><div class="category" data-category="markets">markets <span class="quarto-category-count">(4)</span></div><div class="category" data-category="math">math <span class="quarto-category-count">(3)</span></div><div class="category" data-category="meat">meat <span class="quarto-category-count">(4)</span></div><div class="category" data-category="medicine">medicine <span class="quarto-category-count">(4)</span></div><div class="category" data-category="moocs">moocs <span class="quarto-category-count">(3)</span></div><div class="category" data-category="motivated">motivated <span class="quarto-category-count">(4)</span></div><div class="category" data-category="n">n <span class="quarto-category-count">(1)</span></div><div class="category" data-category="policy">policy <span class="quarto-category-count">(9)</span></div><div class="category" data-category="predators">predators <span class="quarto-category-count">(1)</span></div><div class="category" data-category="preventative">preventative <span class="quarto-category-count">(1)</span></div><div class="category" data-category="punishment">punishment <span class="quarto-category-count">(1)</span></div><div class="category" data-category="reasoning">reasoning <span class="quarto-category-count">(7)</span></div><div class="category" data-category="regime">regime <span class="quarto-category-count">(1)</span></div><div class="category" data-category="rights">rights <span class="quarto-category-count">(8)</span></div><div class="category" data-category="robot">robot <span class="quarto-category-count">(1)</span></div><div class="category" data-category="satz">satz <span class="quarto-category-count">(3)</span></div><div class="category" data-category="scientist">scientist <span class="quarto-category-count">(6)</span></div><div class="category" data-category="students">students <span class="quarto-category-count">(8)</span></div><div class="category" data-category="tf">tf <span class="quarto-category-count">(1)</span></div><div class="category" data-category="vegetarianism">vegetarianism <span class="quarto-category-count">(3)</span></div><div class="category" data-category="virtues">virtues <span class="quarto-category-count">(3)</span></div><div class="category" data-category="wrongdoer">wrongdoer <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -211,13 +215,37 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1686121200000" data-listing-file-modified-sort="1686160068023" data-listing-reading-time-sort="7.08">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1694156400000" data-listing-file-modified-sort="1694191959786" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
 <div class="thumbnail">
-<a href="./posts/2023-06-07-nazi-problem.html">
-<div class="thumbnail-image">
+<p><a href="./posts/2023-09-08-misinfo.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="./posts/2023-09-08-misinfo.html">
+<h3 class="no-anchor listing-title">
+Misinformation and trustworthiness: Frenemies in the analysis of public scientific controversies
+</h3>
+<div class="listing-subtitle">
 
 </div>
-</a><p><a href="./posts/2023-06-07-nazi-problem.html"></a></p>
+<div class="listing-description">
+<span class="citation" data-cites="LewandowskyWhenScienceBecomes2022">Lewandowsky et al. (2022)</span> examine public scientific controversies through two contrasting “lenses” or analytical frameworks, using Covid-19 as their primary case study. The first lens, “science…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/2023-09-08-misinfo.html">
+<div class="listing-date">
+Sep 8, 2023
+</div>
+<div class="listing-author">
+Dan Hicks
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1686121200000" data-listing-file-modified-sort="1686160068023" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8">
+<div class="thumbnail">
+<p><a href="./posts/2023-06-07-nazi-problem.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2023-06-07-nazi-problem.html">
@@ -243,13 +271,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1683183600000" data-listing-file-modified-sort="1683213990690" data-listing-reading-time-sort="0.455">
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1683183600000" data-listing-file-modified-sort="1683213990690" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="thumbnail">
-<a href="./posts/2023-05-04-tmfast.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2023-05-04-tmfast.html"></a></p>
+<p><a href="./posts/2023-05-04-tmfast.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2023-05-04-tmfast.html">
@@ -275,13 +299,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1683183600000" data-listing-file-modified-sort="1683213288365" data-listing-reading-time-sort="11.515">
+<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1683183600000" data-listing-file-modified-sort="1683213288365" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12">
 <div class="thumbnail">
-<a href="./posts/2023-04-12-anarchy-covid19.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2023-04-12-anarchy-covid19.html"></a></p>
+<p><a href="./posts/2023-04-12-anarchy-covid19.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2023-04-12-anarchy-covid19.html">
@@ -307,13 +327,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1680850800000" data-listing-file-modified-sort="1681161352537" data-listing-reading-time-sort="5.37">
+<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1680850800000" data-listing-file-modified-sort="1681161352537" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
 <div class="thumbnail">
-<a href="./posts/2023-04-07-pluralism-problems.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2023-04-07-pluralism-problems.html"></a></p>
+<p><a href="./posts/2023-04-07-pluralism-problems.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2023-04-07-pluralism-problems.html">
@@ -339,9 +355,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1679468400000" data-listing-file-modified-sort="1679607587838" data-listing-reading-time-sort="19.57">
+<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1679468400000" data-listing-file-modified-sort="1679607587838" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20">
 <div class="thumbnail">
-<p><a href="./posts/2023-03-22-endorsement.html"> <img src="https://media.nature.com/lw767/magazine-assets/d41586-023-00799-3/d41586-023-00799-3_24644262.png?as=webp" class="thumnail-image"> </a></p>
+<p><a href="./posts/2023-03-22-endorsement.html"> <p class="card-img-top"><img src="https://media.nature.com/lw767/magazine-assets/d41586-023-00799-3/d41586-023-00799-3_24644262.png?as=webp"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2023-03-22-endorsement.html">
@@ -367,13 +383,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1675843200000" data-listing-file-modified-sort="1676050569609" data-listing-reading-time-sort="7.125">
+<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1675843200000" data-listing-file-modified-sort="1676050569609" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8">
 <div class="thumbnail">
-<a href="./posts/2023-02-08-demagoguery.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2023-02-08-demagoguery.html"></a></p>
+<p><a href="./posts/2023-02-08-demagoguery.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2023-02-08-demagoguery.html">
@@ -399,13 +411,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1675065600000" data-listing-file-modified-sort="1675198508537" data-listing-reading-time-sort="3.405">
+<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1675065600000" data-listing-file-modified-sort="1675198508537" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
 <div class="thumbnail">
-<a href="./posts/2023-01-30-democracy-defense.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2023-01-30-democracy-defense.html"></a></p>
+<p><a href="./posts/2023-01-30-democracy-defense.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2023-01-30-democracy-defense.html">
@@ -431,13 +439,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1674720000000" data-listing-file-modified-sort="1674927679647" data-listing-reading-time-sort="6.075">
+<div class="quarto-post image-right" data-index="8" data-listing-date-sort="1674720000000" data-listing-file-modified-sort="1674927679647" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
 <div class="thumbnail">
-<a href="./posts/2023-01-26-principle-agent.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2023-01-26-principle-agent.html"></a></p>
+<p><a href="./posts/2023-01-26-principle-agent.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2023-01-26-principle-agent.html">
@@ -463,13 +467,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-listing-date-sort="1674547200000" data-listing-file-modified-sort="1674678539089" data-listing-reading-time-sort="4.585">
+<div class="quarto-post image-right" data-index="9" data-listing-date-sort="1674547200000" data-listing-file-modified-sort="1674678539089" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
 <div class="thumbnail">
-<a href="./posts/2023-01-25-legitimacy-vfi.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2023-01-25-legitimacy-vfi.html"></a></p>
+<p><a href="./posts/2023-01-25-legitimacy-vfi.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2023-01-25-legitimacy-vfi.html">
@@ -495,13 +495,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-listing-date-sort="1624690800000" data-listing-file-modified-sort="1672347611367" data-listing-reading-time-sort="3.79">
+<div class="quarto-post image-right" data-index="10" data-listing-date-sort="1624690800000" data-listing-file-modified-sort="1672347611367" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
 <div class="thumbnail">
-<a href="./posts/2021-06-26-city-sim-dynamics.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2021-06-26-city-sim-dynamics.html"></a></p>
+<p><a href="./posts/2021-06-26-city-sim-dynamics.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2021-06-26-city-sim-dynamics.html">
@@ -527,13 +523,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-listing-date-sort="1616137200000" data-listing-file-modified-sort="1672347642825" data-listing-reading-time-sort="1.36">
+<div class="quarto-post image-right" data-index="11" data-listing-date-sort="1616137200000" data-listing-file-modified-sort="1672347642825" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <div class="thumbnail">
-<a href="./posts/2021-03-19-open-science-i.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2021-03-19-open-science-i.html"></a></p>
+<p><a href="./posts/2021-03-19-open-science-i.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2021-03-19-open-science-i.html">
@@ -559,13 +551,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-listing-date-sort="1594364400000" data-listing-file-modified-sort="1672347668440" data-listing-reading-time-sort="5.91">
+<div class="quarto-post image-right" data-index="12" data-listing-date-sort="1594364400000" data-listing-file-modified-sort="1672347668440" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
 <div class="thumbnail">
-<a href="./posts/2020-07-10-critical-thinking.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2020-07-10-critical-thinking.html"></a></p>
+<p><a href="./posts/2020-07-10-critical-thinking.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2020-07-10-critical-thinking.html">
@@ -591,13 +579,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-listing-date-sort="1594364400000" data-listing-file-modified-sort="1672347656902" data-listing-reading-time-sort="4.75">
+<div class="quarto-post image-right" data-index="13" data-listing-date-sort="1594364400000" data-listing-file-modified-sort="1672347656902" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
 <div class="thumbnail">
-<a href="./posts/2020-07-10-travis-lab-feedback.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2020-07-10-travis-lab-feedback.html"></a></p>
+<p><a href="./posts/2020-07-10-travis-lab-feedback.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2020-07-10-travis-lab-feedback.html">
@@ -623,13 +607,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="13" data-listing-date-sort="1589785200000" data-listing-file-modified-sort="1672347678250" data-listing-reading-time-sort="1.63">
+<div class="quarto-post image-right" data-index="14" data-listing-date-sort="1589785200000" data-listing-file-modified-sort="1672347678250" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <div class="thumbnail">
-<a href="./posts/2020-05-18-strengthening-transparency.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2020-05-18-strengthening-transparency.html"></a></p>
+<p><a href="./posts/2020-05-18-strengthening-transparency.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2020-05-18-strengthening-transparency.html">
@@ -655,13 +635,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="14" data-listing-date-sort="1589785200000" data-listing-file-modified-sort="1672347687995" data-listing-reading-time-sort="1.745">
+<div class="quarto-post image-right" data-index="15" data-listing-date-sort="1589785200000" data-listing-file-modified-sort="1672347687995" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <div class="thumbnail">
-<a href="./posts/2020-05-18-dayton-talk.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2020-05-18-dayton-talk.html"></a></p>
+<p><a href="./posts/2020-05-18-dayton-talk.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2020-05-18-dayton-talk.html">
@@ -687,13 +663,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="15" data-listing-date-sort="1589266800000" data-listing-file-modified-sort="1672347699034" data-listing-reading-time-sort="5.425">
+<div class="quarto-post image-right" data-index="16" data-listing-date-sort="1589266800000" data-listing-file-modified-sort="1672347699034" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
 <div class="thumbnail">
-<a href="./posts/2020-05-12-covid-adaptive-management.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2020-05-12-covid-adaptive-management.html"></a></p>
+<p><a href="./posts/2020-05-12-covid-adaptive-management.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2020-05-12-covid-adaptive-management.html">
@@ -719,13 +691,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="16" data-listing-date-sort="1588921200000" data-listing-file-modified-sort="1672347708214" data-listing-reading-time-sort="5.875">
+<div class="quarto-post image-right" data-index="17" data-listing-date-sort="1588921200000" data-listing-file-modified-sort="1672347708214" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
 <div class="thumbnail">
-<a href="./posts/2020-05-08-no-hug.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2020-05-08-no-hug.html"></a></p>
+<p><a href="./posts/2020-05-08-no-hug.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2020-05-08-no-hug.html">
@@ -751,9 +719,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="17" data-listing-date-sort="1588575600000" data-listing-file-modified-sort="1672347724264" data-listing-reading-time-sort="2.27">
+<div class="quarto-post image-right" data-index="18" data-listing-date-sort="1588575600000" data-listing-file-modified-sort="1672347724264" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
 <div class="thumbnail">
-<p><a href="./posts/2020-05-04-chlorpyrifos-paper.html"> <img src="./img/03_chlor_use.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2020-05-04-chlorpyrifos-paper.html"> <p class="card-img-top"><img src="img/03_chlor_use.png" alt="A map of California, showing the study area of the Central Valley in blue. Chlorpyrifos use is indicated by a cloud of redish points; the cloud is densest in the San Joaquin Valley."  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2020-05-04-chlorpyrifos-paper.html">
@@ -779,9 +747,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="18" data-listing-date-sort="1579593600000" data-listing-file-modified-sort="1672347734599" data-listing-reading-time-sort="5.575">
+<div class="quarto-post image-right" data-index="19" data-listing-date-sort="1579593600000" data-listing-file-modified-sort="1672347734599" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
 <div class="thumbnail">
-<p><a href="./posts/2020-01-21-toolbox-lite.html"> <img src="./img/2020-01-21-q2.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2020-01-21-toolbox-lite.html"> <p class="card-img-top"><img src="img/2020-01-21-q2.png" alt="bar chart of responses to block 1"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2020-01-21-toolbox-lite.html">
@@ -807,13 +775,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="19" data-listing-date-sort="1579420800000" data-listing-file-modified-sort="1672347742859" data-listing-reading-time-sort="2.77">
+<div class="quarto-post image-right" data-index="20" data-listing-date-sort="1579420800000" data-listing-file-modified-sort="1672347742859" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
 <div class="thumbnail">
-<a href="./posts/2020-01-19-radical-immanent-critique.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2020-01-19-radical-immanent-critique.html"></a></p>
+<p><a href="./posts/2020-01-19-radical-immanent-critique.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2020-01-19-radical-immanent-critique.html">
@@ -839,13 +803,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="20" data-listing-date-sort="1578297600000" data-listing-file-modified-sort="1672347752441" data-listing-reading-time-sort="0.755">
+<div class="quarto-post image-right" data-index="21" data-listing-date-sort="1578297600000" data-listing-file-modified-sort="1672347752441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="thumbnail">
-<a href="./posts/2020-01-06-macgillivray-commentary.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2020-01-06-macgillivray-commentary.html"></a></p>
+<p><a href="./posts/2020-01-06-macgillivray-commentary.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2020-01-06-macgillivray-commentary.html">
@@ -871,13 +831,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="21" data-listing-date-sort="1575619200000" data-listing-file-modified-sort="1672347766294" data-listing-reading-time-sort="9.555">
+<div class="quarto-post image-right" data-index="22" data-listing-date-sort="1575619200000" data-listing-file-modified-sort="1672347766294" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
 <div class="thumbnail">
-<a href="./posts/2019-12-06-White-supremacy-and-evolutionary-games.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2019-12-06-White-supremacy-and-evolutionary-games.html"></a></p>
+<p><a href="./posts/2019-12-06-White-supremacy-and-evolutionary-games.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2019-12-06-White-supremacy-and-evolutionary-games.html">
@@ -903,13 +859,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="22" data-listing-date-sort="1560841200000" data-listing-file-modified-sort="1672347777393" data-listing-reading-time-sort="1.14">
+<div class="quarto-post image-right" data-index="23" data-listing-date-sort="1560841200000" data-listing-file-modified-sort="1672347777393" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <div class="thumbnail">
-<a href="./posts/2019-06-18-network-analysis-to-evaluate.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2019-06-18-network-analysis-to-evaluate.html"></a></p>
+<p><a href="./posts/2019-06-18-network-analysis-to-evaluate.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2019-06-18-network-analysis-to-evaluate.html">
@@ -935,13 +887,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="23" data-listing-date-sort="1559199600000" data-listing-file-modified-sort="1672347785975" data-listing-reading-time-sort="8.28">
+<div class="quarto-post image-right" data-index="24" data-listing-date-sort="1559199600000" data-listing-file-modified-sort="1672347785975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
 <div class="thumbnail">
-<a href="./posts/2019-05-30-luck-and-the-academic-job-market.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2019-05-30-luck-and-the-academic-job-market.html"></a></p>
+<p><a href="./posts/2019-05-30-luck-and-the-academic-job-market.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2019-05-30-luck-and-the-academic-job-market.html">
@@ -967,13 +915,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="24" data-listing-date-sort="1552546800000" data-listing-file-modified-sort="1672347794394" data-listing-reading-time-sort="1.715">
+<div class="quarto-post image-right" data-index="25" data-listing-date-sort="1552546800000" data-listing-file-modified-sort="1672347794394" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <div class="thumbnail">
-<a href="./posts/2019-03-14-legitimizing-values.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2019-03-14-legitimizing-values.html"></a></p>
+<p><a href="./posts/2019-03-14-legitimizing-values.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2019-03-14-legitimizing-values.html">
@@ -999,13 +943,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="25" data-listing-date-sort="1549008000000" data-listing-file-modified-sort="1672347806947" data-listing-reading-time-sort="0.775">
+<div class="quarto-post image-right" data-index="26" data-listing-date-sort="1549008000000" data-listing-file-modified-sort="1672347806947" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="thumbnail">
-<a href="./posts/2019-02-01-explainable-machine-learning.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2019-02-01-explainable-machine-learning.html"></a></p>
+<p><a href="./posts/2019-02-01-explainable-machine-learning.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2019-02-01-explainable-machine-learning.html">
@@ -1031,13 +971,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="26" data-listing-date-sort="1541491200000" data-listing-file-modified-sort="1672347818359" data-listing-reading-time-sort="2.71">
+<div class="quarto-post image-right" data-index="27" data-listing-date-sort="1541491200000" data-listing-file-modified-sort="1672347818359" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
 <div class="thumbnail">
-<a href="./posts/2018-11-06-why-baier.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2018-11-06-why-baier.html"></a></p>
+<p><a href="./posts/2018-11-06-why-baier.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2018-11-06-why-baier.html">
@@ -1063,13 +999,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="27" data-categories="data,developing,idf,local,market,meat,rights,students,tf,vegetarianism" data-listing-date-sort="1540450800000" data-listing-file-modified-sort="1672350064723" data-listing-reading-time-sort="10.09">
+<div class="quarto-post image-right" data-index="28" data-categories="data,developing,idf,local,market,meat,rights,students,tf,vegetarianism" data-listing-date-sort="1540450800000" data-listing-file-modified-sort="1672350064723" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11">
 <div class="thumbnail">
-<a href="./posts/2018-10-25-autotag.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2018-10-25-autotag.html"></a></p>
+<p><a href="./posts/2018-10-25-autotag.html"> <p class="card-img-top"><img data-src="posts/2018-10-25-autotag_files/figure-html/unnamed-chunk-4-1.png"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2018-10-25-autotag.html">
@@ -1129,13 +1061,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="28" data-categories="math" data-listing-date-sort="1540278000000" data-listing-file-modified-sort="1672350064722" data-listing-reading-time-sort="2.105">
+<div class="quarto-post image-right" data-index="29" data-categories="math" data-listing-date-sort="1540278000000" data-listing-file-modified-sort="1672350064722" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
 <div class="thumbnail">
-<a href="./posts/2018-10-23-poster-contributions-of-women.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2018-10-23-poster-contributions-of-women.html"></a></p>
+<p><a href="./posts/2018-10-23-poster-contributions-of-women.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2018-10-23-poster-contributions-of-women.html">
@@ -1168,13 +1096,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="29" data-categories="data" data-listing-date-sort="1539154800000" data-listing-file-modified-sort="1672350064721" data-listing-reading-time-sort="1.78">
+<div class="quarto-post image-right" data-index="30" data-categories="data" data-listing-date-sort="1539154800000" data-listing-file-modified-sort="1672350064721" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <div class="thumbnail">
-<a href="./posts/2018-10-10-did.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2018-10-10-did.html"></a></p>
+<p><a href="./posts/2018-10-10-did.html"> <p class="card-img-top"><img data-src="posts/2018-10-10-did_files/figure-html/unnamed-chunk-4-1.png"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2018-10-10-did.html">
@@ -1207,13 +1131,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="30" data-categories="data,scientist,students" data-listing-date-sort="1519804800000" data-listing-file-modified-sort="1672350064721" data-listing-reading-time-sort="10.03">
+<div class="quarto-post image-right" data-index="31" data-categories="data,scientist,students" data-listing-date-sort="1519804800000" data-listing-file-modified-sort="1672350064721" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11">
 <div class="thumbnail">
-<a href="./posts/2018-02-28-care-ethics-for-data-science.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2018-02-28-care-ethics-for-data-science.html"></a></p>
+<p><a href="./posts/2018-02-28-care-ethics-for-data-science.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2018-02-28-care-ethics-for-data-science.html">
@@ -1252,13 +1172,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="31" data-categories="n" data-listing-date-sort="1514793600000" data-listing-file-modified-sort="1672350064720" data-listing-reading-time-sort="2.525">
+<div class="quarto-post image-right" data-index="32" data-categories="n" data-listing-date-sort="1514793600000" data-listing-file-modified-sort="1672350064720" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
 <div class="thumbnail">
-<a href="./posts/2018-01-01-old-posts.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2018-01-01-old-posts.html"></a></p>
+<p><a href="./posts/2018-01-01-old-posts.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2018-01-01-old-posts.html">
@@ -1291,13 +1207,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="32" data-categories="reasoning" data-listing-date-sort="1514361600000" data-listing-file-modified-sort="1672350064720" data-listing-reading-time-sort="2.19">
+<div class="quarto-post image-right" data-index="33" data-categories="reasoning" data-listing-date-sort="1514361600000" data-listing-file-modified-sort="1672350064720" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
 <div class="thumbnail">
-<a href="./posts/2017-12-27-problems-with-trolley-problems.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2017-12-27-problems-with-trolley-problems.html"></a></p>
+<p><a href="./posts/2017-12-27-problems-with-trolley-problems.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2017-12-27-problems-with-trolley-problems.html">
@@ -1330,13 +1242,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="33" data-categories="data,gm,policy,reasoning" data-listing-date-sort="1464246000000" data-listing-file-modified-sort="1672350064719" data-listing-reading-time-sort="7.56">
+<div class="quarto-post image-right" data-index="34" data-categories="data,gm,policy,reasoning" data-listing-date-sort="1464246000000" data-listing-file-modified-sort="1672350064719" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8">
 <div class="thumbnail">
-<a href="./posts/2016-05-26-no-psychologists-haven-t-shown-that-gmo-opponents-don-t-care-about-evidence.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2016-05-26-no-psychologists-haven-t-shown-that-gmo-opponents-don-t-care-about-evidence.html"></a></p>
+<p><a href="./posts/2016-05-26-no-psychologists-haven-t-shown-that-gmo-opponents-don-t-care-about-evidence.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2016-05-26-no-psychologists-haven-t-shown-that-gmo-opponents-don-t-care-about-evidence.html">
@@ -1378,13 +1286,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="34" data-categories="hypothesis,policy" data-listing-date-sort="1440140400000" data-listing-file-modified-sort="1672350064718" data-listing-reading-time-sort="5.255">
+<div class="quarto-post image-right" data-index="35" data-categories="hypothesis,policy" data-listing-date-sort="1440140400000" data-listing-file-modified-sort="1672350064718" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
 <div class="thumbnail">
-<a href="./posts/2015-08-21-against-science-based-policy-.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2015-08-21-against-science-based-policy-.html"></a></p>
+<p><a href="./posts/2015-08-21-against-science-based-policy-.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2015-08-21-against-science-based-policy-.html">
@@ -1420,13 +1324,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="35" data-categories="funding" data-listing-date-sort="1439967600000" data-listing-file-modified-sort="1672350064718" data-listing-reading-time-sort="4.585">
+<div class="quarto-post image-right" data-index="36" data-categories="funding" data-listing-date-sort="1439967600000" data-listing-file-modified-sort="1672350064718" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
 <div class="thumbnail">
-<a href="./posts/2015-08-19-industry-funded-research-and-publishing-independence.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2015-08-19-industry-funded-research-and-publishing-independence.html"></a></p>
+<p><a href="./posts/2015-08-19-industry-funded-research-and-publishing-independence.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2015-08-19-industry-funded-research-and-publishing-independence.html">
@@ -1459,9 +1359,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="36" data-categories="data" data-listing-date-sort="1436425200000" data-listing-file-modified-sort="1672350064717" data-listing-reading-time-sort="4.695">
+<div class="quarto-post image-right" data-index="37" data-categories="data" data-listing-date-sort="1436425200000" data-listing-file-modified-sort="1672350064717" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
 <div class="thumbnail">
-<p><a href="./posts/2015-07-09-statistical-essentialism.html"> <img data-src="./img/2015-07-09-essentialism.png" class="thumnail-image"> </a></p>
+<p><a href="./posts/2015-07-09-statistical-essentialism.html"> <p class="card-img-top"><img data-src="img/2015-07-09-essentialism.png" alt="Scatterplots of simulated data. Group means are statistically significantly different, but there is substantial overlap between the two groups."  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2015-07-09-statistical-essentialism.html">
@@ -1494,13 +1394,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="37" data-categories="data,developing,policy,scientist,students" data-listing-date-sort="1429772400000" data-listing-file-modified-sort="1672350064717" data-listing-reading-time-sort="4.885">
+<div class="quarto-post image-right" data-index="38" data-categories="data,developing,policy,scientist,students" data-listing-date-sort="1429772400000" data-listing-file-modified-sort="1672350064717" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
 <div class="thumbnail">
-<a href="./posts/2015-04-23-public-policy-what-philosophers-of-science-can-contribute.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2015-04-23-public-policy-what-philosophers-of-science-can-contribute.html"></a></p>
+<p><a href="./posts/2015-04-23-public-policy-what-philosophers-of-science-can-contribute.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2015-04-23-public-policy-what-philosophers-of-science-can-contribute.html">
@@ -1545,13 +1441,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="38" data-categories="funding,gm,local,market,markets,regime" data-listing-date-sort="1418025600000" data-listing-file-modified-sort="1672350064716" data-listing-reading-time-sort="4.19">
+<div class="quarto-post image-right" data-index="39" data-categories="funding,gm,local,market,markets,regime" data-listing-date-sort="1418025600000" data-listing-file-modified-sort="1672350064716" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
 <div class="thumbnail">
-<a href="./posts/2014-12-08-when-feeding-the-world-doesn-t-mean-feeding-the-world-.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2014-12-08-when-feeding-the-world-doesn-t-mean-feeding-the-world-.html"></a></p>
+<p><a href="./posts/2014-12-08-when-feeding-the-world-doesn-t-mean-feeding-the-world-.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2014-12-08-when-feeding-the-world-doesn-t-mean-feeding-the-world-.html">
@@ -1599,13 +1491,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="39" data-categories="medicine,scientist" data-listing-date-sort="1416988800000" data-listing-file-modified-sort="1672350064716" data-listing-reading-time-sort="5.58">
+<div class="quarto-post image-right" data-index="40" data-categories="medicine,scientist" data-listing-date-sort="1416988800000" data-listing-file-modified-sort="1672350064716" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
 <div class="thumbnail">
-<a href="./posts/2014-11-26-feminism-and-science-frenemies-.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2014-11-26-feminism-and-science-frenemies-.html"></a></p>
+<p><a href="./posts/2014-11-26-feminism-and-science-frenemies-.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2014-11-26-feminism-and-science-frenemies-.html">
@@ -1641,13 +1529,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="40" data-categories="data,policy" data-listing-date-sort="1416556800000" data-listing-file-modified-sort="1672350064715" data-listing-reading-time-sort="6.28">
+<div class="quarto-post image-right" data-index="41" data-categories="data,policy" data-listing-date-sort="1416556800000" data-listing-file-modified-sort="1672350064715" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
 <div class="thumbnail">
-<a href="./posts/2014-11-21-regulatory-science-reform-.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2014-11-21-regulatory-science-reform-.html"></a></p>
+<p><a href="./posts/2014-11-21-regulatory-science-reform-.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2014-11-21-regulatory-science-reform-.html">
@@ -1683,13 +1567,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="41" data-categories="data,motivated,reasoning" data-listing-date-sort="1415952000000" data-listing-file-modified-sort="1672350064715" data-listing-reading-time-sort="6.155">
+<div class="quarto-post image-right" data-index="42" data-categories="data,motivated,reasoning" data-listing-date-sort="1415952000000" data-listing-file-modified-sort="1672350064715" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
 <div class="thumbnail">
-<a href="./posts/2014-11-14-hss-reflection-practices-science-and-criticism.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2014-11-14-hss-reflection-practices-science-and-criticism.html"></a></p>
+<p><a href="./posts/2014-11-14-hss-reflection-practices-science-and-criticism.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2014-11-14-hss-reflection-practices-science-and-criticism.html">
@@ -1728,13 +1608,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="42" data-categories="automated,love,moocs" data-listing-date-sort="1413183600000" data-listing-file-modified-sort="1672350064714" data-listing-reading-time-sort="3.73">
+<div class="quarto-post image-right" data-index="43" data-categories="automated,love,moocs" data-listing-date-sort="1413183600000" data-listing-file-modified-sort="1672350064714" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
 <div class="thumbnail">
-<a href="./posts/2014-10-13-work-and-hackwork.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2014-10-13-work-and-hackwork.html"></a></p>
+<p><a href="./posts/2014-10-13-work-and-hackwork.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2014-10-13-work-and-hackwork.html">
@@ -1773,13 +1649,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="43" data-categories="automated,creativity,data,rights,robot" data-listing-date-sort="1403074800000" data-listing-file-modified-sort="1672350064713" data-listing-reading-time-sort="9.275">
+<div class="quarto-post image-right" data-index="44" data-categories="automated,creativity,data,rights,robot" data-listing-date-sort="1403074800000" data-listing-file-modified-sort="1672350064713" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
 <div class="thumbnail">
-<a href="./posts/2014-06-18-virtue-ethics-for-robots.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2014-06-18-virtue-ethics-for-robots.html"></a></p>
+<p><a href="./posts/2014-06-18-virtue-ethics-for-robots.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2014-06-18-virtue-ethics-for-robots.html">
@@ -1824,13 +1696,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="44" data-categories="funding" data-listing-date-sort="1399359600000" data-listing-file-modified-sort="1672350064713" data-listing-reading-time-sort="4.605">
+<div class="quarto-post image-right" data-index="45" data-categories="funding" data-listing-date-sort="1399359600000" data-listing-file-modified-sort="1672350064713" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
 <div class="thumbnail">
-<a href="./posts/2014-05-06-thoughts-on-first.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2014-05-06-thoughts-on-first.html"></a></p>
+<p><a href="./posts/2014-05-06-thoughts-on-first.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2014-05-06-thoughts-on-first.html">
@@ -1863,13 +1731,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="45" data-categories="factors,finnish,policy" data-listing-date-sort="1395298800000" data-listing-file-modified-sort="1672350064712" data-listing-reading-time-sort="5.65">
+<div class="quarto-post image-right" data-index="46" data-categories="factors,finnish,policy" data-listing-date-sort="1395298800000" data-listing-file-modified-sort="1672350064712" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
 <div class="thumbnail">
-<a href="./posts/2014-03-20-is-the-finnish-model-irrelevant-to-north-america-.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2014-03-20-is-the-finnish-model-irrelevant-to-north-america-.html"></a></p>
+<p><a href="./posts/2014-03-20-is-the-finnish-model-irrelevant-to-north-america-.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2014-03-20-is-the-finnish-model-irrelevant-to-north-america-.html">
@@ -1908,13 +1772,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="46" data-categories="local,punishment,rights,students,wrongdoer" data-listing-date-sort="1394780400000" data-listing-file-modified-sort="1672350064711" data-listing-reading-time-sort="8.035">
+<div class="quarto-post image-right" data-index="47" data-categories="local,punishment,rights,students,wrongdoer" data-listing-date-sort="1394780400000" data-listing-file-modified-sort="1672350064711" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
 <div class="thumbnail">
-<a href="./posts/2014-03-14-notes-for-an-ethics-of-community-interventions.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2014-03-14-notes-for-an-ethics-of-community-interventions.html"></a></p>
+<p><a href="./posts/2014-03-14-notes-for-an-ethics-of-community-interventions.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2014-03-14-notes-for-an-ethics-of-community-interventions.html">
@@ -1959,13 +1819,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="47" data-categories="critic,hypothesis,motivated,policy,reasoning,scientist" data-listing-date-sort="1394607600000" data-listing-file-modified-sort="1672350064710" data-listing-reading-time-sort="7.385">
+<div class="quarto-post image-right" data-index="48" data-categories="critic,hypothesis,motivated,policy,reasoning,scientist" data-listing-date-sort="1394607600000" data-listing-file-modified-sort="1672350064710" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8">
 <div class="thumbnail">
-<a href="./posts/2014-03-12-is-motivated-reasoning-bad-reasoning-iii.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2014-03-12-is-motivated-reasoning-bad-reasoning-iii.html"></a></p>
+<p><a href="./posts/2014-03-12-is-motivated-reasoning-bad-reasoning-iii.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2014-03-12-is-motivated-reasoning-bad-reasoning-iii.html">
@@ -2013,13 +1869,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="48" data-categories="hypothesis,motivated,reasoning" data-listing-date-sort="1394521200000" data-listing-file-modified-sort="1672350064709" data-listing-reading-time-sort="8.585">
+<div class="quarto-post image-right" data-index="49" data-categories="hypothesis,motivated,reasoning" data-listing-date-sort="1394521200000" data-listing-file-modified-sort="1672350064709" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
 <div class="thumbnail">
-<a href="./posts/2014-03-11-is-motivated-reasoning-bad-reasoning-ii.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2014-03-11-is-motivated-reasoning-bad-reasoning-ii.html"></a></p>
+<p><a href="./posts/2014-03-11-is-motivated-reasoning-bad-reasoning-ii.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2014-03-11-is-motivated-reasoning-bad-reasoning-ii.html">
@@ -2058,9 +1910,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="49" data-categories="data,gm,motivated,reasoning" data-listing-date-sort="1394434800000" data-listing-file-modified-sort="1672350064708" data-listing-reading-time-sort="4.22">
+<div class="quarto-post image-right" data-index="50" data-categories="data,gm,motivated,reasoning" data-listing-date-sort="1394434800000" data-listing-file-modified-sort="1672350064708" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
 <div class="thumbnail">
-<p><a href="./posts/2014-03-10-is-motivated-reasoning-bad-reasoning-i.html"> <img data-src="http://www.culturalcognition.net/storage/polinc.png?__SQUARESPACE_CACHEVERSION=1392075594686" class="thumnail-image"> </a></p>
+<p><a href="./posts/2014-03-10-is-motivated-reasoning-bad-reasoning-i.html"> <p class="card-img-top"><img data-src="http://www.culturalcognition.net/storage/polinc.png?__SQUARESPACE_CACHEVERSION=1392075594686" alt="polarization increases with science comprehension"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2014-03-10-is-motivated-reasoning-bad-reasoning-i.html">
@@ -2102,13 +1954,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="50" data-categories="students" data-listing-date-sort="1386403200000" data-listing-file-modified-sort="1672350064708" data-listing-reading-time-sort="5.655">
+<div class="quarto-post image-right" data-index="51" data-categories="students" data-listing-date-sort="1386403200000" data-listing-file-modified-sort="1672350064708" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
 <div class="thumbnail">
-<a href="./posts/2013-12-07-diversity-and-the-philosophical-tradition.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2013-12-07-diversity-and-the-philosophical-tradition.html"></a></p>
+<p><a href="./posts/2013-12-07-diversity-and-the-philosophical-tradition.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2013-12-07-diversity-and-the-philosophical-tradition.html">
@@ -2141,13 +1989,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="51" data-categories="virtues" data-listing-date-sort="1385971200000" data-listing-file-modified-sort="1672350064707" data-listing-reading-time-sort="6.495">
+<div class="quarto-post image-right" data-index="52" data-categories="virtues" data-listing-date-sort="1385971200000" data-listing-file-modified-sort="1672350064707" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
 <div class="thumbnail">
-<a href="./posts/2013-12-02-sexism-philosophy-and-the-reciprocity-of-virtue.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2013-12-02-sexism-philosophy-and-the-reciprocity-of-virtue.html"></a></p>
+<p><a href="./posts/2013-12-02-sexism-philosophy-and-the-reciprocity-of-virtue.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2013-12-02-sexism-philosophy-and-the-reciprocity-of-virtue.html">
@@ -2180,13 +2024,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="52" data-categories="data,factors" data-listing-date-sort="1380265200000" data-listing-file-modified-sort="1672350064707" data-listing-reading-time-sort="4.785">
+<div class="quarto-post image-right" data-index="53" data-categories="data,factors" data-listing-date-sort="1380265200000" data-listing-file-modified-sort="1672350064707" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
 <div class="thumbnail">
-<a href="./posts/2013-09-27-the-climate-debate-ignorance-and-or-complexity-.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2013-09-27-the-climate-debate-ignorance-and-or-complexity-.html"></a></p>
+<p><a href="./posts/2013-09-27-the-climate-debate-ignorance-and-or-complexity-.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2013-09-27-the-climate-debate-ignorance-and-or-complexity-.html">
@@ -2222,13 +2062,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="53" data-categories="citations,gm,local,maize,policy" data-listing-date-sort="1378450800000" data-listing-file-modified-sort="1672350064706" data-listing-reading-time-sort="8.655">
+<div class="quarto-post image-right" data-index="54" data-categories="citations,gm,local,maize,policy" data-listing-date-sort="1378450800000" data-listing-file-modified-sort="1672350064706" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
 <div class="thumbnail">
-<a href="./posts/2013-09-06-objectivity-is-a-unicorn.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2013-09-06-objectivity-is-a-unicorn.html"></a></p>
+<p><a href="./posts/2013-09-06-objectivity-is-a-unicorn.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2013-09-06-objectivity-is-a-unicorn.html">
@@ -2273,13 +2109,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="54" data-categories="citation,citations,data,gm,gmof,maize,policy,scientist" data-listing-date-sort="1378278000000" data-listing-file-modified-sort="1672350064706" data-listing-reading-time-sort="8.755">
+<div class="quarto-post image-right" data-index="55" data-categories="citation,citations,data,gm,gmof,maize,policy,scientist" data-listing-date-sort="1378278000000" data-listing-file-modified-sort="1672350064706" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
 <div class="thumbnail">
-<a href="./posts/2013-09-04-how-to-use-citations-to-create-ignorance.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2013-09-04-how-to-use-citations-to-create-ignorance.html"></a></p>
+<p><a href="./posts/2013-09-04-how-to-use-citations-to-create-ignorance.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2013-09-04-how-to-use-citations-to-create-ignorance.html">
@@ -2333,9 +2165,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="55" data-categories="data,math,moocs" data-listing-date-sort="1374390000000" data-listing-file-modified-sort="1672350064705" data-listing-reading-time-sort="11.3">
+<div class="quarto-post image-right" data-index="56" data-categories="data,math,moocs" data-listing-date-sort="1374390000000" data-listing-file-modified-sort="1672350064705" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12">
 <div class="thumbnail">
-<p><a href="./posts/2013-07-21-the-history-of-philosophy-as-a-social-network.html"> <img data-src="http://farm8.staticflickr.com/7365/9336101438_06260af210.jpg" class="thumnail-image"> </a></p>
+<p><a href="./posts/2013-07-21-the-history-of-philosophy-as-a-social-network.html"> <p class="card-img-top"><img data-src="http://farm8.staticflickr.com/7365/9336101438_06260af210.jpg"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2013-07-21-the-history-of-philosophy-as-a-social-network.html">
@@ -2374,13 +2206,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="56" data-categories="automated,data,instructor,math,moocs,students" data-listing-date-sort="1370329200000" data-listing-file-modified-sort="1672350064704" data-listing-reading-time-sort="11.005">
+<div class="quarto-post image-right" data-index="57" data-categories="automated,data,instructor,math,moocs,students" data-listing-date-sort="1370329200000" data-listing-file-modified-sort="1672350064704" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12">
 <div class="thumbnail">
-<a href="./posts/2013-06-04-moocs-do-not-make-for-successful-math-classes.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2013-06-04-moocs-do-not-make-for-successful-math-classes.html"></a></p>
+<p><a href="./posts/2013-06-04-moocs-do-not-make-for-successful-math-classes.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2013-06-04-moocs-do-not-make-for-successful-math-classes.html">
@@ -2428,13 +2256,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="57" data-categories="adversarial,birth,data,reasoning,rights" data-listing-date-sort="1369724400000" data-listing-file-modified-sort="1672350064704" data-listing-reading-time-sort="3.175">
+<div class="quarto-post image-right" data-index="58" data-categories="adversarial,birth,data,reasoning,rights" data-listing-date-sort="1369724400000" data-listing-file-modified-sort="1672350064704" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
 <div class="thumbnail">
-<a href="./posts/2013-05-28-the-adversarial-method-where-s-moulton-.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2013-05-28-the-adversarial-method-where-s-moulton-.html"></a></p>
+<p><a href="./posts/2013-05-28-the-adversarial-method-where-s-moulton-.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2013-05-28-the-adversarial-method-where-s-moulton-.html">
@@ -2479,13 +2303,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="58" data-categories="developing,local" data-listing-date-sort="1365922800000" data-listing-file-modified-sort="1672350064704" data-listing-reading-time-sort="6.28">
+<div class="quarto-post image-right" data-index="59" data-categories="developing,local" data-listing-date-sort="1365922800000" data-listing-file-modified-sort="1672350064704" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
 <div class="thumbnail">
-<a href="./posts/2013-04-14-local-food-global-justice.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2013-04-14-local-food-global-justice.html"></a></p>
+<p><a href="./posts/2013-04-14-local-food-global-justice.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2013-04-14-local-food-global-justice.html">
@@ -2521,13 +2341,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="59" data-categories="developing,funding,market,markets,medicine,satz,scientist" data-listing-date-sort="1361779200000" data-listing-file-modified-sort="1672350064703" data-listing-reading-time-sort="12.53">
+<div class="quarto-post image-right" data-index="60" data-categories="developing,funding,market,markets,medicine,satz,scientist" data-listing-date-sort="1361779200000" data-listing-file-modified-sort="1672350064703" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13">
 <div class="thumbnail">
-<a href="./posts/2013-02-25-the-funding-effect-and-noxious-markets-weak-agency.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2013-02-25-the-funding-effect-and-noxious-markets-weak-agency.html"></a></p>
+<p><a href="./posts/2013-02-25-the-funding-effect-and-noxious-markets-weak-agency.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2013-02-25-the-funding-effect-and-noxious-markets-weak-agency.html">
@@ -2578,13 +2394,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="60" data-categories="local,virtues" data-listing-date-sort="1361606400000" data-listing-file-modified-sort="1672350064703" data-listing-reading-time-sort="5.2">
+<div class="quarto-post image-right" data-index="61" data-categories="local,virtues" data-listing-date-sort="1361606400000" data-listing-file-modified-sort="1672350064703" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
 <div class="thumbnail">
-<a href="./posts/2013-02-23-why-local-.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2013-02-23-why-local-.html"></a></p>
+<p><a href="./posts/2013-02-23-why-local-.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2013-02-23-why-local-.html">
@@ -2620,13 +2432,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="61" data-categories="birth,meat,students" data-listing-date-sort="1361347200000" data-listing-file-modified-sort="1672350064702" data-listing-reading-time-sort="3.9">
+<div class="quarto-post image-right" data-index="62" data-categories="birth,meat,students" data-listing-date-sort="1361347200000" data-listing-file-modified-sort="1672350064702" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
 <div class="thumbnail">
-<a href="./posts/2013-02-20-the-tangled-food-web-we-weave.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2013-02-20-the-tangled-food-web-we-weave.html"></a></p>
+<p><a href="./posts/2013-02-20-the-tangled-food-web-we-weave.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2013-02-20-the-tangled-food-web-we-weave.html">
@@ -2665,13 +2473,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="62" data-categories="data,funding,gm,hypothesis,local,market,markets,medicine,rights,satz" data-listing-date-sort="1359532800000" data-listing-file-modified-sort="1672350082139" data-listing-reading-time-sort="8.865">
+<div class="quarto-post image-right" data-index="63" data-categories="data,funding,gm,hypothesis,local,market,markets,medicine,rights,satz" data-listing-date-sort="1359532800000" data-listing-file-modified-sort="1672350082139" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
 <div class="thumbnail">
-<a href="./posts/2013-01-30-the-funding-effect.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2013-01-30-the-funding-effect.html"></a></p>
+<p><a href="./posts/2013-01-30-the-funding-effect.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2013-01-30-the-funding-effect.html">
@@ -2731,13 +2535,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="63" data-categories="compassion,meat,predators,rights,vegetarianism,virtues" data-listing-date-sort="1358064000000" data-listing-file-modified-sort="1672350048745" data-listing-reading-time-sort="16.145">
+<div class="quarto-post image-right" data-index="64" data-categories="compassion,meat,predators,rights,vegetarianism,virtues" data-listing-date-sort="1358064000000" data-listing-file-modified-sort="1672350048745" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="17">
 <div class="thumbnail">
-<a href="./posts/2013-01-13-notes-on-predators-and-animal-ethics.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2013-01-13-notes-on-predators-and-animal-ethics.html"></a></p>
+<p><a href="./posts/2013-01-13-notes-on-predators-and-animal-ethics.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2013-01-13-notes-on-predators-and-animal-ethics.html">
@@ -2785,13 +2585,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="64" data-categories="citations,market,markets,rights,satz" data-listing-date-sort="1357891200000" data-listing-file-modified-sort="1672350047853" data-listing-reading-time-sort="17.97">
+<div class="quarto-post image-right" data-index="65" data-categories="citations,market,markets,rights,satz" data-listing-date-sort="1357891200000" data-listing-file-modified-sort="1672350047853" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18">
 <div class="thumbnail">
-<a href="./posts/2013-01-11-satz-account-of-noxious-markets.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2013-01-11-satz-account-of-noxious-markets.html"></a></p>
+<p><a href="./posts/2013-01-11-satz-account-of-noxious-markets.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2013-01-11-satz-account-of-noxious-markets.html">
@@ -2836,13 +2632,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="65" data-categories="market,rights" data-listing-date-sort="1343026800000" data-listing-file-modified-sort="1672350046993" data-listing-reading-time-sort="7.695">
+<div class="quarto-post image-right" data-index="66" data-categories="market,rights" data-listing-date-sort="1343026800000" data-listing-file-modified-sort="1672350046993" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8">
 <div class="thumbnail">
-<a href="./posts/2012-07-23-two-conceptions-of-human-nature.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2012-07-23-two-conceptions-of-human-nature.html"></a></p>
+<p><a href="./posts/2012-07-23-two-conceptions-of-human-nature.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2012-07-23-two-conceptions-of-human-nature.html">
@@ -2878,13 +2670,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="66" data-listing-date-sort="1337756400000" data-listing-file-modified-sort="1672349029354" data-listing-reading-time-sort="5.805">
+<div class="quarto-post image-right" data-index="67" data-listing-date-sort="1337756400000" data-listing-file-modified-sort="1672349029354" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
 <div class="thumbnail">
-<a href="./posts/2012-05-23-fetishism-and-innate-differences.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2012-05-23-fetishism-and-innate-differences.html"></a></p>
+<p><a href="./posts/2012-05-23-fetishism-and-innate-differences.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2012-05-23-fetishism-and-innate-differences.html">
@@ -2910,13 +2698,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="67" data-categories="data,meat,students,vegetarianism" data-listing-date-sort="1334991600000" data-listing-file-modified-sort="1672350045666" data-listing-reading-time-sort="6.25">
+<div class="quarto-post image-right" data-index="68" data-categories="data,meat,students,vegetarianism" data-listing-date-sort="1334991600000" data-listing-file-modified-sort="1672350045666" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
 <div class="thumbnail">
-<a href="./posts/2012-04-21-the-agroecological-argument-for-eating-meat.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2012-04-21-the-agroecological-argument-for-eating-meat.html"></a></p>
+<p><a href="./posts/2012-04-21-the-agroecological-argument-for-eating-meat.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2012-04-21-the-agroecological-argument-for-eating-meat.html">
@@ -2958,13 +2742,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="68" data-categories="birth,medicine,preventative" data-listing-date-sort="1331708400000" data-listing-file-modified-sort="1672350044675" data-listing-reading-time-sort="5.225">
+<div class="quarto-post image-right" data-index="69" data-categories="birth,medicine,preventative" data-listing-date-sort="1331708400000" data-listing-file-modified-sort="1672350044675" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
 <div class="thumbnail">
-<a href="./posts/2012-03-14-friedersdorf-the-sex-friendly-case-against-free-birth-control-part-ii.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2012-03-14-friedersdorf-the-sex-friendly-case-against-free-birth-control-part-ii.html"></a></p>
+<p><a href="./posts/2012-03-14-friedersdorf-the-sex-friendly-case-against-free-birth-control-part-ii.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2012-03-14-friedersdorf-the-sex-friendly-case-against-free-birth-control-part-ii.html">
@@ -3003,13 +2783,9 @@ Dan Hicks
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="69" data-categories="birth,policy" data-listing-date-sort="1331708400000" data-listing-file-modified-sort="1672349983790" data-listing-reading-time-sort="5.11">
+<div class="quarto-post image-right" data-index="70" data-categories="birth,policy" data-listing-date-sort="1331708400000" data-listing-file-modified-sort="1672349983790" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
 <div class="thumbnail">
-<a href="./posts/2012-03-14-friedersdorf-the-sex-friendly-case-against-free-birth-control-part-i.html">
-<div class="thumbnail-image">
-
-</div>
-</a><p><a href="./posts/2012-03-14-friedersdorf-the-sex-friendly-case-against-free-birth-control-part-i.html"></a></p>
+<p><a href="./posts/2012-03-14-friedersdorf-the-sex-friendly-case-against-free-birth-control-part-i.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2012-03-14-friedersdorf-the-sex-friendly-case-against-free-birth-control-part-i.html">
@@ -3080,9 +2856,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -3147,6 +2937,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {

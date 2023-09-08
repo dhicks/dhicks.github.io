@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.280">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,14 +19,15 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -40,8 +41,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -80,14 +80,15 @@ div.csl-indent {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Dan Hicks - Revisiting the Nazi Problem">
-<meta property="og:description" content="In theory this will be a quick post. In theory.">
+<meta property="og:description" content="">
 <meta property="og:site-name" content="Dan Hicks ">
 </head>
 
@@ -102,64 +103,66 @@ div.csl-indent {
     <span class="navbar-title">Dan Hicks</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about.html">
+    <a class="nav-link" href="../about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../research.html">
+    <a class="nav-link" href="../research.html" rel="" target="">
  <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
  <span class="menu-text">Teaching</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
         <li>
-    <a class="dropdown-item" href="https://data-science-methods.github.io/">
+    <a class="dropdown-item" href="https://data-science-methods.github.io/" rel="" target="">
  <span class="dropdown-text">Methods of Data Science</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="https://orcid.org/0000-0001-7945-4416">
+    <a class="nav-link" href="https://orcid.org/0000-0001-7945-4416" rel="" target="">
  <span class="menu-text"><i class="fa-brands fa-orcid" aria-label="orcid"></i></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://scholar.google.com/citations?user=XvkwYZsAAAAJ&amp;hl=en">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=XvkwYZsAAAAJ&amp;hl=en" rel="" target="">
  <span class="menu-text"><i class="ai  ai-google-scholar" title="" style="color:"></i></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://dhicks.github.io/cv">
+    <a class="nav-link" href="https://dhicks.github.io/cv" rel="" target="">
  <span class="menu-text"><i class="ai  ai-cv" title="" style="color:"></i></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/dhicks/"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/dhicks/" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://mastodon.social/@danhicks"><i class="bi bi-mastodon" role="img">
+    <a class="nav-link" href="https://mastodon.social/(danhicks?)" rel="" target=""><i class="bi bi-mastodon" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:dhicks4@ucmerced.edu"><i class="bi bi-envelope" role="img">
+    <a class="nav-link" href="mailto:dhicks4@ucmerced.edu" rel="" target=""><i class="bi bi-envelope" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="../index.xml"><i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../index.xml" rel="" target=""><i class="bi bi-rss" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -227,44 +230,44 @@ div.csl-indent {
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
-<div id="ref-AlcoffCommentaryElizabethAnderson2006" class="csl-entry" role="doc-biblioentry">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-AlcoffCommentaryElizabethAnderson2006" class="csl-entry" role="listitem">
 Alcoff, Linda Martín. 2006. <span>“Commentary on Elizabeth Anderson’s <span>‘Uses of Value Judgments in Science’</span>.”</span> <em>Symposia on Gender, Race and Philosophy</em> 2 (1). <a href="https://sgrponline.files.wordpress.com/2019/07/alcoff0106-1.pdf">https://sgrponline.files.wordpress.com/2019/07/alcoff0106-1.pdf</a>.
 </div>
-<div id="ref-DouglasDifferentiatingScientificInquiry2023" class="csl-entry" role="doc-biblioentry">
+<div id="ref-DouglasDifferentiatingScientificInquiry2023" class="csl-entry" role="listitem">
 Douglas, Heather. 2023. <span>“Differentiating Scientific Inquiry and Politics.”</span> <em>Philosophy</em> 98 (2): 123–46. <a href="https://doi.org/10.1017/S0031819122000432">https://doi.org/10.1017/S0031819122000432</a>.
 </div>
-<div id="ref-DownesChangesHeritabilityUnpredictable2022" class="csl-entry" role="doc-biblioentry">
+<div id="ref-DownesChangesHeritabilityUnpredictable2022" class="csl-entry" role="listitem">
 Downes, Stephen M., and Jonathan Michael Kaplan. 2022. <span>“Changes in Heritability: Unpredictable and of Limited Use.”</span> <em>Behavioral and Brain Sciences</em> 45 (January): e159. <a href="https://doi.org/10.1017/S0140525X2100159X">https://doi.org/10.1017/S0140525X2100159X</a>.
 </div>
-<div id="ref-HicksLonginoConceptionObjectivity2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-HicksLonginoConceptionObjectivity2011" class="csl-entry" role="listitem">
 Hicks, Daniel J. 2011. <span>“Is Longino’s Conception of Objectivity Feminist?”</span> <em>Hypatia: A Journal of Feminist Philosophy</em> 26 (2): 333–51. <a href="https://doi.org/10.1111/j.1527-2001.2010.01160.x">https://doi.org/10.1111/j.1527-2001.2010.01160.x</a>.
 </div>
-<div id="ref-HicksWhenVirtuesAre2022" class="csl-entry" role="doc-biblioentry">
+<div id="ref-HicksWhenVirtuesAre2022" class="csl-entry" role="listitem">
 ———. 2022. <span>“When Virtues are Vices: <span>‘Anti-Science’</span> Epistemic Values in Environmental Politics.”</span> <em>Philosophy, Theory, and Practice in Biology</em> 14 (0). <a href="https://doi.org/10.3998/.2629">https://doi.org/10.3998/.2629</a>.
 </div>
-<div id="ref-PanofskyMisbehavingScienceControversy2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-PanofskyMisbehavingScienceControversy2014" class="csl-entry" role="listitem">
 Panofsky, Aaron. 2014. <em>Misbehaving Science: Controversy and the Development of Behavior Genetics</em>. Chicago, IL: University of Chicago Press. <a href="https://press.uchicago.edu/ucp/books/book/chicago/M/bo16124298.html">https://press.uchicago.edu/ucp/books/book/chicago/M/bo16124298.html</a>.
 </div>
-<div id="ref-ReiheldGimletEyeJournal2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ReiheldGimletEyeJournal2018" class="csl-entry" role="listitem">
 Reiheld, Alison. 2018. <span>“A Gimlet Eye: The Journal of Controversial Ideas and Jonathan Anomaly’s <span>‘Defending Eugenics’</span> (Guest Post).”</span> Discrimination and Disadvantage. November 16, 2018. <a href="https://web.archive.org/web/20210227220754/https://philosophycommons.typepad.com/disability_and_disadvanta/2018/11/a-gimlet-eye-a-journal-of-controversial-ideas-and-jonathon-anomalys-defending-eugenics.html">https://web.archive.org/web/20210227220754/https://philosophycommons.typepad.com/disability_and_disadvanta/2018/11/a-gimlet-eye-a-journal-of-controversial-ideas-and-jonathon-anomalys-defending-eugenics.html</a>.
 </div>
-<div id="ref-RobinCriticClownTale2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RobinCriticClownTale2017" class="csl-entry" role="listitem">
 Robin, Corey. 2017. <span>“The Critic and the Clown: A Tale of Free Speech at Berkeley.”</span> September 11, 2017. <a href="http://coreyrobin.com/2017/09/11/the-critic-and-the-clown-a-tale-of-free-speech-at-berkeley/">http://coreyrobin.com/2017/09/11/the-critic-and-the-clown-a-tale-of-free-speech-at-berkeley/</a>.
 </div>
-<div id="ref-RolinCanSocialDiversity2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-RolinCanSocialDiversity2017" class="csl-entry" role="listitem">
 Rolin, Kristina. 2017. <span>“Can Social Diversity Be Best Incorporated into Science by Adopting the Social Value Management Ideal?”</span> In <em>Current Controversies in Values and Science</em>, edited by Kevin C. Elliott and Daniel Steel, 1 edition, 113–29. Routledge.
 </div>
-<div id="ref-SchroederLimitsDemocratizingScience2022" class="csl-entry" role="doc-biblioentry">
+<div id="ref-SchroederLimitsDemocratizingScience2022" class="csl-entry" role="listitem">
 Schroeder, S. Andrew. 2022. <span>“The Limits of Democratizing Science: When Scientists Should Ignore the Public.”</span> <em>Philosophy of Science</em> 89 (5): 1034–43. <a href="https://doi.org/10.1017/psa.2022.54">https://doi.org/10.1017/psa.2022.54</a>.
 </div>
-<div id="ref-TaylorFreeSpeechHypocrisy2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-TaylorFreeSpeechHypocrisy2018" class="csl-entry" role="listitem">
 Taylor, Keeanga-Yamahtta. 2018. <span>“The <span>‘Free Speech’</span> Hypocrisy of Right-Wing Media.”</span> <em>The New York Times</em>, January 20, 2018, sec. Opinion. <a href="https://www.nytimes.com/2017/08/14/opinion/the-free-speech-hypocrisy-of-right-wing-media.html">https://www.nytimes.com/2017/08/14/opinion/the-free-speech-hypocrisy-of-right-wing-media.html</a>.
 </div>
-<div id="ref-TurkheimerThisTimeMean2022" class="csl-entry" role="doc-biblioentry">
+<div id="ref-TurkheimerThisTimeMean2022" class="csl-entry" role="listitem">
 Turkheimer, Eric. 2022. <span>“This Time I Mean It: The Nature–Nurture Debate Is Over.”</span> <em>Behavioral and Brain Sciences</em> 45 (January): e177. <a href="https://doi.org/10.1017/S0140525X21001771">https://doi.org/10.1017/S0140525X21001771</a>.
 </div>
-<div id="ref-YapFeministRadicalEmpiricism2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-YapFeministRadicalEmpiricism2015" class="csl-entry" role="listitem">
 Yap, Audrey. 2015. <span>“Feminist Radical Empiricism, Values, and Evidence.”</span> <em>Hypatia</em>, November, n/a–. <a href="https://doi.org/10.1111/hypa.12221">https://doi.org/10.1111/hypa.12221</a>.
 </div>
 </div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
@@ -303,9 +306,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -370,6 +387,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
