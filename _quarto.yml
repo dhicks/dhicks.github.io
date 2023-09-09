@@ -24,8 +24,8 @@ website:
         href: https://github.com/dhicks/
 #       - icon: twitter
 #         href: https://twitter.com/danieljhicks/
-      - icon: mastodon
-        href: https://mastodon.social/@danhicks
+#       - icon: mastodon
+#         href: https://mastodon.social/@danhicks
       - icon: envelope
         href: mailto:dhicks4@ucmerced.edu
       - icon: rss
