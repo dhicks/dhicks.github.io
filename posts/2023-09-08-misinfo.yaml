@@ -1,0 +1,60 @@
+---
+references:
+- id: LewandowskyWhenScienceBecomes2022
+  abstract: >-
+    We explore the common attributes of political conflicts in which scientific
+    findings have a central role, using the COVID-19 pandemic as a case study,
+    but also drawing on long-standing conflicts over climate change and
+    vaccinations. We analyze situations in which the systematic spread of
+    disinformation or conspiracy theories undermines public trust in the work of
+    scientists and prevents policy from being informed by the best available
+    evidence. We also examine instances in which public opposition to
+    scientifically grounded policy arises from legitimate value judgments and
+    lived experience. We argue for the public benefit of quick identification of
+    politically motivated science denial, and inoculation of the public against
+    its ill effects.
+  accessed:
+    - year: 2022
+      month: 6
+      day: 9
+  author:
+    - family: Lewandowsky
+      given: Stephan
+    - family: Armaos
+      given: Konstantinos
+    - family: Bruns
+      given: Hendrik
+    - family: Schmid
+      given: Philipp
+    - family: Holford
+      given: Dawn Liu
+    - family: Hahn
+      given: Ulrike
+    - family: Al-Rawi
+      given: Ahmed
+    - family: Sah
+      given: Sunita
+    - family: Cook
+      given: John
+  citation-key: LewandowskyWhenScienceBecomes2022
+  container-title: The ANNALS of the American Academy of Political and Social Science
+  container-title-short: The ANNALS of the American Academy of Political and Social Science
+  DOI: 10.1177/00027162221084663
+  ISSN: 0002-7162
+  issue: '1'
+  issued:
+    - year: 2022
+      month: 3
+      day: 1
+  language: en
+  page: 26-40
+  publisher: SAGE Publications Inc
+  source: SAGE Journals
+  title: >-
+    When Science Becomes Embroiled in Conflict: Recognizing the Public’s Need
+    for Debate while Combating Conspiracies and Misinformation
+  title-short: When Science Becomes Embroiled in Conflict
+  type: article-journal
+  URL: https://doi.org/10.1177/00027162221084663
+  volume: '700'
+...
