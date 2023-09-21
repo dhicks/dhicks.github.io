@@ -10,7 +10,91 @@
 <atom:link href="https://dhicks.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Website description</description>
 <generator>quarto-1.3.433</generator>
-<lastBuildDate>Fri, 08 Sep 2023 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 20 Sep 2023 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Do scientists have power? Does science?</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2023-09-20-power.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I recently read (most of) <span class="citation" data-cites="LukesPowerRadicalView2005">Lukes (2005)</span>. Lukes offers an influential account of (political) power, and I wanted to see if it would be useful for answering a question that came up in a discussion with (IIRC) Heather Douglas and Matt Brown quite a while ago: Do scientists have power?</p>
+<p>Lukes identifies three “faces” of power. Unless I missed something, his definitions for these “faces” aren’t very clear; they’re often demonstrative or negative. And he doesn’t label them. So here’s a quick attempt at labeled, positive definitions:</p>
+<dl>
+<dt>coercive</dt>
+<dd>
+This is what we usually think of as political power: comply or you will be harmed.
+</dd>
+<dt>prioritizing</dt>
+<dd>
+Influencing whose interests have priority, are seen as important and should be protected or promoted. Lukes talks about this with respect to agenda-setting, as in whose complaints show up on the agenda.
+</dd>
+<dt>ideological</dt>
+<dd>
+Influencing how interests are recognized and understood. In terms of Brown’s Deweyan model of inquiry <span class="citation" data-cites="BrownScienceMoralImagination2020">(Brown 2020)</span>, ideological power shapes not only how a problem is framed, but potentially also <em>whether a situation is experienced as indeterminate or problematic in the first place</em>.
+</dd>
+</dl>
+<hr>
+<p>Given these definitions, do scientists have power?</p>
+<p>As posed, the question is ambiguous, between individualistic and corporate readings of “scientists.” Let’s use “scientists” for the individualistic reading (do certain particular scientists have power?) and “science” for the corporate reading (does science as an institution have power?)</p>
+<p>Individual scientists basically never have coercive power. Even when a scientist, qua scientist, works for the state, the role of scientist doesn’t come with law enforcement powers or some other entitlement to coercive power.</p>
+<p>On the other hand, individual scientists can have prioritizing and ideological power. In the risk assessment framework, the first phase is “problem formulation and scoping,” which is supposed to be on the “politics” side of the science/politics dichotomy. But typically risk assessment is initiated in response to scientific findings — findings made, communicated, and taken up by certain particular scientists, qua scientists — that indicate a problem and its potential severity.</p>
+<p>In these kinds of cases, individual scientists generally won’t have <em>exclusive</em> prioritizing and ideological power. At EPA or other regulatory agencies, certain particular political appointees and “regulatory” (as opposed to “scientific”) staff will also exercise these forms of power.</p>
+<p>And, outside of regulatory agencies, individual scientists often do not have any more prioritizing or ideological power than any other member of the public. Well-connected faculty at prestigious universities might be able to exercise this kind of power. (I’m thinking of Scott Atlas, a Hoover Institution fellow who was on Trump’s Coronavirus Task Force, or the psychologist Arthur Jensen, who was a professor at Berkeley and became well-know to the public for his race science views.)</p>
+<p>So, academic scientists, <em>as individuals</em>, generally don’t have much of any of the three forms of power.</p>
+<hr>
+<p>Turn now to science in the corporate sense, and specifically institutions that are taken to speak on behalf of science: EPA, IPCC, the National Academies, AAAS.</p>
+<p>Regulatory agencies, like EPA, do have coercive power. Though the prioritizing and ideological power of regulated industries means that EPA doesn’t exercise that coercive power as much as I would like. Still, insofar as EPA is a representative of “science,” and does exercise coercive power, we can understand this as science exercising (and therefore having) coercive power.</p>
+<p>The other science institutions that I listed above don’t have coercive power. But they do have substantial prioritizing and ideological power. The National Academies basically made up the risk assessment framework, which is a fundamental component of how environmental health threats are understood and prioritized. Indeed, even the category label “environmental health threats” adopts some assumptions of the risk assessment framework. Opponents of genetically modified foods have a number of concerns that aren’t related to health and safety <span class="citation" data-cites="HicksGMOsNonhealthIssues2016">(Hicks and Millstein 2016)</span> and are therefore systematically ignored by regulatory agencies <span class="citation" data-cites="HicksGeneticallyModifiedCrops2017">(Hicks 2017)</span>.</p>
+<p>Using Lukes’ terminology, a whole strain of STS is devoted to studying the prioritizing and ideological power of scientism: on the assumption that only “scientific” evidence counts as evidence, claims that a situation is problematic, is sufficiently severe and warrants action, and that the key cause of the problem is such-and-such, all need to be justified by “scientific” evidence <span class="citation" data-cites="WynneSheepfarmingChernobylCase1989 EpsteinImpureScience1996 FrickelUndoneScienceCharting2010 KleinmanHoneyBeesThreat2013 SuryanarayananVanishingBeesScience2016">(Wynne 1989; Epstein 1996; Frickel et al. 2010; Kleinman and Suryanarayanan 2013; Suryanarayanan and Kleinman 2016)</span>.</p>
+<p>Scientism has this power because it serves the interests of multiple groups. Most obviously it bolsters the status of scientists. It was taken up by regulatory agencies as a strategy to maintain legitimacy in the face of opposition from regulated industries <span class="citation" data-cites="JasanoffFifthBranchScience1998">(Jasanoff 1998)</span>. But, at the same time, regulated industries have used it to dismiss criticism and block or delay regulation <span class="citation" data-cites="MichaelsDoubtTheirProduct2008">(Michaels 2008)</span>.</p>
+<hr>
+<p>If we think of political power only in coercive terms, then it’s difficult to come up with examples of the political power of science beyond agencies like EPA. <span class="citation" data-cites="LukesPowerRadicalView2005">Lukes (2005)</span> is explicitly challenging a parallel situation in mid-century political science: a line of research that studied “power,” but understood it only as coercive power, and generally came to the conclusion that there are not significant concentrations of power in American politics. He identified prioritization power in some previous research, and proposed ideological power as all but completely overlooked by empirical political scientists.</p>
+<p>When we follow Lukes in thinking of power in terms of shaping the agenda and framing the recognition and understanding of problematic situations, then it’s much easier to articulate the political power of science. Science has power not because it can threaten you with imprisonment, but rather because problems that aren’t articulated and diagnosed “scientifically” are systematically ignored.</p>
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-BrownScienceMoralImagination2020" class="csl-entry">
+Brown, Matthew. 2020. <em>Science and Moral Imagination: A New Ideal for Values in Science</em>. University of Pittsburgh Press.
+</div>
+<div id="ref-EpsteinImpureScience1996" class="csl-entry">
+Epstein, Steven. 1996. <em>Impure Science</em>. AIDS, Activism, and the Politics of Knowledge. Berkeley, Los Angeles, and Oxford: University of California Press. <a href="http://books.google.ca/books?id=kZOso0FMsrMC&amp;pg=PA39&amp;dq=intitle:Impure+Science+inauthor:epstein&amp;hl=&amp;cd=1&amp;source=gbs_api">http://books.google.ca/books?id=kZOso0FMsrMC&amp;pg=PA39&amp;dq=intitle:Impure+Science+inauthor:epstein&amp;hl=&amp;cd=1&amp;source=gbs_api</a>.
+</div>
+<div id="ref-FrickelUndoneScienceCharting2010" class="csl-entry">
+Frickel, S., S. Gibbon, J. Howard, J. Kempner, G. Ottinger, and D. J. Hess. 2010. <span>“Undone Science: Charting Social Movement and Civil Society Challenges to Research Agenda Setting.”</span> <em>Science, Technology &amp; Human Values</em> 35 (4): 444–73. <a href="https://doi.org/10.1177/0162243909345836">https://doi.org/10.1177/0162243909345836</a>.
+</div>
+<div id="ref-HicksGeneticallyModifiedCrops2017" class="csl-entry">
+Hicks, Daniel J. 2017. <span>“Genetically Modified Crops, Inclusion, and Democracy.”</span> <em>Perspectives on Science</em> 25 (4): 488–520. <a href="https://doi.org/10.1162/POSC_a_00251">https://doi.org/10.1162/POSC_a_00251</a>.
+</div>
+<div id="ref-HicksGMOsNonhealthIssues2016" class="csl-entry">
+Hicks, Daniel J., and Roberta L. Millstein. 2016. <span>“GMOs: Non-Health Issues.”</span> In <em>Encyclopedia of Food and Agricultural Ethics</em>, edited by Paul B. Thompson and David M. Kaplan, 1–11. Springer Netherlands. <a href="https://doi.org/10.1007/978-94-007-6167-4_545-1">https://doi.org/10.1007/978-94-007-6167-4_545-1</a>.
+</div>
+<div id="ref-JasanoffFifthBranchScience1998" class="csl-entry">
+Jasanoff, Sheila. 1998. <em>The Fifth Branch: Science Advisers as Policymakers</em>. Harvard University Press.
+</div>
+<div id="ref-KleinmanHoneyBeesThreat2013" class="csl-entry">
+Kleinman, Daniel Lee, and Sainath Suryanarayanan. 2013. <span>“Honey Bees Under Threat: A Political Pollinator Crisis.”</span> <em>The Guardian</em>, May 8, 2013, sec. Science. <a href="http://www.theguardian.com/science/political-science/2013/may/08/honey-bees-threat-political-pollinator-crisis">http://www.theguardian.com/science/political-science/2013/may/08/honey-bees-threat-political-pollinator-crisis</a>.
+</div>
+<div id="ref-LukesPowerRadicalView2005" class="csl-entry">
+Lukes, Steven. 2005. <em>Power: A Radical View, Second Edition</em>. Palgrave Macmillan.
+</div>
+<div id="ref-MichaelsDoubtTheirProduct2008" class="csl-entry">
+Michaels, David. 2008. <em>Doubt is their product how industry’s assault on science threatens your health</em>. Oxford: Oxford Univ. Press.
+</div>
+<div id="ref-SuryanarayananVanishingBeesScience2016" class="csl-entry">
+Suryanarayanan, Sainath, and Daniel Lee Kleinman. 2016. <em>Vanishing Bees: Science, Politics, and Honeybee Health</em>. Rutgers University Press.
+</div>
+<div id="ref-WynneSheepfarmingChernobylCase1989" class="csl-entry">
+Wynne, Brian. 1989. <span>“Sheepfarming After Chernobyl: A Case Study in Communicating Scientific Information.”</span> <em>Environment: Science and Policy for Sustainable Development</em> 31 (2): 10–39. <a href="https://doi.org/10.1080/00139157.1989.9928930">https://doi.org/10.1080/00139157.1989.9928930</a>.
+</div>
+</div></section></div> ]]></description>
+  <guid>https://dhicks.github.io/posts/2023-09-20-power.html</guid>
+  <pubDate>Wed, 20 Sep 2023 07:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Misinformation and trustworthiness: Frenemies in the analysis of public scientific controversies</title>
   <dc:creator>Dan Hicks</dc:creator>
@@ -1168,65 +1252,6 @@ Stapleford, Thomas A. 2009. <em>The Cost of Living in America: A Political Histo
  ]]></description>
   <guid>https://dhicks.github.io/posts/2020-05-04-chlorpyrifos-paper.html</guid>
   <pubDate>Mon, 04 May 2020 07:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>A “Toolbox-lite” for the First Day of Philosophy of Science</title>
-  <dc:creator>Dan Hicks</dc:creator>
-  <link>https://dhicks.github.io/posts/2020-01-21-toolbox-lite.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>This semester I get to teach an undergraduate philosophy of science course for the first time ever, and today was the first meeting of the class. I’ve always struggled with first days. You can’t get students to do any work beforehand, which makes it really hard to have a substantive discussion. So you call roll to check the roster and then you go over the syllabus, which is somewhat useful but very boring. And because my preferred teaching style involves as little lecturing as possible, me reading through the syllabus also radically misrepresents the feel of every other meeting of the class.</p>
-<p>Last fall, I had the idea of adapting the workshop format from the <a href="http://tdi.msu.edu/">Toolbox Dialogue Intiative</a> at Michigan State. The Toolbox workshops were originally developed for interdisciplinary team science groups. During the workshop, the members of the group first complete <a href="https://i2s.anu.edu.au/wp-content/uploads/2014/02/ScientificResearch-Toolbox-SciTS-042512.pdf">a survey on their views about science</a>; then the workshop facilitator runs a philosophical discussion of points of agreement and disagreement among the group members.</p>
-<p>In the plan I conceived last fall, my students would engage with the Toolbox format twice: once as participants in class and then as facilitators, running a version of the workshop with lab groups across campus. The students wouldn’t need any particular preparation for the survey, it would help preview the main topics of the course, and it would give us a good starting point for the kind of open-ended discussion that characterizes my preferred teaching style. So it would work well as an activity for the first class meeting. As facilitators, students would be organized into groups of 3 and each group would be assigned a lab or other research group on campus. During the final week of classes, each group would give a presentation on highlights of their workshop discussion. This would allow them to directly tie the class content into active scientific research across campus, which is one of the four <a href="http://philo.ucmerced.edu/PLO.html">program learning outcomes</a> for our philosophy major.</p>
-<p>Unfortunately the second part didn’t work out. I have 35 students registered, meaning I’d need to recruit 12 research groups on campus as participants for my students’ workshops. After just one semester at UC Merced, I do know at least a dozen other faculty; but not enough well enough to get them to sacrifice one of their lab meetings. The standard Toolbox workshop is most of a day; I felt like I could shorten it to 90 minutes or 2 hours while still keeping enough of the workshop to be useful for my students. But that would still be a significant ask from people whom I barely know.</p>
-<p>But I was able to incorporate a “Toolbox-lite” into the first meeting of my class. Starting with the Scientific Research Toolbox Instrument (linked above), I selected a few questions that were immediately relevant to my course, and wrote a few more. While we’re not talking directly about the definition of science or the demarcation problem (which I think is a pseudo-problem), I decided to add a set of questions about whether specific fields are sciences. The resulting list was below; students responded on a 3-point Likert scale, with anchors at “agree” and “disagree” and the middle option unmarked.</p>
-<ul>
-<li>All fields of science use the same basic scientific method.</li>
-<li>Scientific research primarily uses experimental methods.</li>
-<li>Scientific research primarily uses quantitative methods.</li>
-<li>There are strict requirements for determining when empirical data confirm a tested hypothesis.</li>
-<li>Scientific research aims to identify truths about a world independent of the investigators.</li>
-<li>Good scientists let the data speak for themselves.</li>
-<li>Scientific research reveals the laws that govern how the world operates.</li>
-<li>The world is fully explicable as the assembly of its constituent parts.</li>
-<li>The principal value of research stems from the potential application of the knowledge gained.</li>
-<li>Allowing values to influence research is unscientific.</li>
-<li>When it comes to making public policy, scientific facts are more important than people’s feelings.</li>
-<li>Members of the general public shouldn’t question scientific findings.</li>
-<li>Are these academic fields sciences?
-<ul>
-<li>Evolutionary biology</li>
-<li>Agriculture</li>
-<li>Public health</li>
-<li>Chemical engineering</li>
-<li>Particle physics</li>
-<li>Climate science</li>
-<li>Literature</li>
-<li>History</li>
-<li>Psychology</li>
-<li>Economics</li>
-<li>Anthropology</li>
-<li>Sociology</li>
-<li>Philosophy</li>
-</ul></li>
-</ul>
-<p>I had the students fill this out on Qualtrics while I was passing out the hard copies of the syllabus. I wrote a little dashboard in R to retrieve the responses from Qualtrics and display summary plots.</p>
-<p>Here are the results.</p>
-<p><img src="https://dhicks.github.io/img/2020-01-21-q2.png" class="img-fluid" alt="bar chart of responses to block 1"> <img src="https://dhicks.github.io/img/2020-01-21-q3.png" class="img-fluid" alt="bar chart of responses to block 1"> <img src="https://dhicks.github.io/img/2020-01-21-q4.png" class="img-fluid" alt="bar chart of responses to block 1"> <img src="https://dhicks.github.io/img/2020-01-21-q5.png" class="img-fluid" alt="bar chart of responses to block 1"></p>
-<p>I had the students divide into small groups, introduce themselves to their group members, and then discuss “Scientific research primarily uses quantitative methods” for about 10 minutes. Then we came back together, I solicited a few highlights from these discussions, and then we had a short class discussion (maybe another 10 minutes) on “Allowing values to influence research is unscientific.”</p>
-<p>The discussions were lively. I heard a few students relating their views to their majors (the most popular major among registrants is cognitive science, followed by psychology and economics), which I think is really key to the way philosophy of science can engage students without much philosophy background.</p>
-<p>I think these results are really interesting. The students generally agree with each other on a few points, but most prompts have a mix of responses. The majority disagreement on “Allowing values to influence research is unscientific” and “Members of the general public shouldn’t question scientific findings” are especially interesting. We’re talking about feminist philosophy of science, race (in) science, and values in science in the middle of the term; I’m looking forward to see what the students have to say about those topics.</p>
-<p>The field responses were also really interesting. For every field, even Literature and History, a majority of students said the field is a science. Philosophy gets treated more like a social science than the other two humanities fields, with a supermajority thinking that it is a science but a few students having doubts. (As a registration requirement, all of the students had to have taken an intro-level philosophy course; but only one or two are philosophy majors.) Unfortunately we didn’t have any time to talk about these responses.</p>
-<p>All together, these responses and the discussions made me even more excited for this course. The students are already thoughtful about what science is and how it works, and I think every one will have their views challenged by their classmates and readings at some point.</p>
-
-
-
- ]]></description>
-  <guid>https://dhicks.github.io/posts/2020-01-21-toolbox-lite.html</guid>
-  <pubDate>Tue, 21 Jan 2020 08:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

@@ -1,0 +1,415 @@
+---
+references:
+- id: BrownScienceMoralImagination2020
+  abstract: >-
+    The idea that science is or should be value-free, and that values are or
+    should be formed independently of science, has been under fire by
+    philosophers of science for decades. Science and Moral Imagination directly
+    challenges the idea that science and values cannot and should not influence
+    each other. Matthew J. Brown argues that science and values mutually
+    influence and implicate one another, that the influence of values on science
+    is pervasive and must be responsibly managed, and that science can and
+    should have an influence on our values. This interplay, he explains, must be
+    guided by accounts of scientific inquiry and value judgment that are
+    sensitive to the complexities of their interactions. Brown presents
+    scientific inquiry and value judgment as types of problem-solving practices
+    and provides a new framework for thinking about how we might ethically
+    evaluate episodes and decisions in science, while offering guidance for
+    scientific practitioners and institutions about how they can incorporate
+    value judgments into their work. His framework, dubbed "the ideal of moral
+    imagination," emphasizes the role of imagination in value judgment and the
+    positive role that value judgment plays in science.
+  author:
+    - family: Brown
+      given: Matthew
+  citation-key: BrownScienceMoralImagination2020
+  ISBN: 978-0-8229-4626-7
+  issued:
+    - year: 2020
+      month: 10
+      day: 27
+  language: en
+  number-of-pages: '296'
+  publisher: University of Pittsburgh Press
+  source: Google Books
+  title: 'Science and Moral Imagination: A New Ideal for Values in Science'
+  title-short: Science and Moral Imagination
+  type: book
+
+- id: EpsteinImpureScience1996
+  abstract: >-
+    Epstein shows the extent to which AIDS research has been a social and
+    political phenomenon and how the AIDS movement has transformed biomedical
+    research practices through its capacity to garner credibility by novel
+    strategies.
+  author:
+    - family: Epstein
+      given: Steven
+  citation-key: EpsteinImpureScience1996
+  collection-title: AIDS, Activism, and the Politics of Knowledge
+  event-place: Berkeley, Los Angeles, and Oxford
+  ISBN: 978-0-520-21445-3
+  issued:
+    - year: 1996
+  number-of-pages: '466'
+  publisher: University of California Press
+  publisher-place: Berkeley, Los Angeles, and Oxford
+  title: Impure Science
+  type: book
+  URL: >-
+    http://books.google.ca/books?id=kZOso0FMsrMC&pg=PA39&dq=intitle:Impure+Science+inauthor:epstein&hl=&cd=1&source=gbs_api
+
+- id: FrickelUndoneScienceCharting2010
+  accessed:
+    - year: 2016
+      month: 10
+      day: 23
+  author:
+    - family: Frickel
+      given: S.
+    - family: Gibbon
+      given: S.
+    - family: Howard
+      given: J.
+    - family: Kempner
+      given: J.
+    - family: Ottinger
+      given: G.
+    - family: Hess
+      given: D. J.
+  citation-key: FrickelUndoneScienceCharting2010
+  container-title: Science, Technology & Human Values
+  DOI: 10.1177/0162243909345836
+  ISSN: 0162-2439, 1552-8251
+  issue: '4'
+  issued:
+    - year: 2010
+      month: 7
+      day: 1
+  language: en
+  page: 444-473
+  source: CrossRef
+  title: >-
+    Undone Science: Charting Social Movement and Civil Society Challenges to
+    Research Agenda Setting
+  title-short: Undone Science
+  type: article-journal
+  URL: http://sth.sagepub.com/cgi/doi/10.1177/0162243909345836
+  volume: '35'
+
+- id: HicksGeneticallyModifiedCrops2017
+  abstract: >-
+    The public controversy over genetically modified (GM) crops is predominantly
+    framed in terms of health and safety risks to humans and the environment.
+    However, opponents of GM crops are motivated by a wide variety of other
+    social, political, and economic concerns. In this paper, I critically assess
+    the predominance of the health and safety framing in terms of Iris Young’s
+    model of communicative democracy. I argue that the health and safety framing
+    leads to the marginalization of the social, political, and economic concerns
+    of GM opponents, within both public discourse and government, and is
+    therefore democratically illegitimate.
+  author:
+    - family: Hicks
+      given: Daniel J.
+  citation-key: HicksGeneticallyModifiedCrops2017
+  container-title: Perspectives on Science
+  container-title-short: Perspectives on Science
+  DOI: 10.1162/POSC_a_00251
+  ISSN: 1063-6145
+  issue: '4'
+  issued:
+    - year: 2017
+      month: 7
+    - year: 2017
+      month: 8
+  page: 488-520
+  source: MIT Press Journals
+  title: Genetically Modified Crops, Inclusion, and Democracy
+  type: article-journal
+  URL: http://dx.doi.org/10.1162/POSC_a_00251
+  volume: '25'
+
+- id: HicksGMOsNonhealthIssues2016
+  abstract: >-
+    SynonymsEffects on ecosystems; Effects on nonhuman animals; Feeding the
+    world; Gene flow; GMOs; Indirect harm; Intellectual property; Patents; Percy
+    Schmeiser; Pesticide and herbicide use; Pesticide tolerance; Research
+    restrictionsIntroductionThe controversy over genetically modified [GM]
+    organisms is often framed in terms of possible hazards for human health.
+    Entries in a previous volume of this encyclopedia give a general overview of
+    GM crops (Mulvaney 2014) and specifically examine human health (Nordgard et
+    al. 2014) and label (Bruton 2014) issues surrounding GM organisms. This
+    entry explores several other aspects of the controversy: environmental
+    concerns, political and legal disputes, and the aim of “feeding the world”
+    and promoting food security. Rather than discussing abstract, hypothetical
+    GM organisms, this entry explores the consequences of the GM organisms that
+    have actually been deployed in the particular contexts that they have been
+    deployed, on the belief that there is li ...
+  accessed:
+    - year: 2016
+      month: 11
+      day: 1
+  author:
+    - family: Hicks
+      given: Daniel J.
+    - family: Millstein
+      given: Roberta L.
+  citation-key: HicksGMOsNonhealthIssues2016
+  container-title: Encyclopedia of Food and Agricultural Ethics
+  DOI: 10.1007/978-94-007-6167-4_545-1
+  editor:
+    - family: Thompson
+      given: Paul B.
+    - family: Kaplan
+      given: David M.
+  ISBN: 978-94-007-6167-4
+  issued:
+    - year: 2016
+  language: en
+  license: ©2016 Springer Science+Business Media Dordrecht
+  page: 1-11
+  publisher: Springer Netherlands
+  source: link.springer.com
+  title: 'GMOs: Non-health Issues'
+  title-short: GMOs
+  type: chapter
+  URL: http://link.springer.com/referenceworkentry/10.1007/978-94-007-6167-4_545-1
+
+- id: JasanoffFifthBranchScience1998
+  abstract: >-
+    How can decisionmakers charged with protecting the environment and the
+    public's health and safety steer clear of false and misleading scientific
+    research? Is it possible to give scientists a stronger voice in regulatory
+    processes without yielding too much control over policy, and how can this be
+    harmonized with democratic values? These are just some of the many
+    controversial and timely questions that Sheila Jasanoff asks in this study
+    of the way science advisers shape federal policy. In their expanding role as
+    advisers, scientists have emerged as a formidable fifth branch of
+    government. But even though the growing dependence of regulatory agencies on
+    scientific and technical information has granted scientists a greater
+    influence on public policy, opinions differ as to how those contributions
+    should be balanced against other policy concerns. More important, who should
+    define what counts as good science when all scientific claims incorporate
+    social factors and are subject to negotiation? Jasanoff begins by describing
+    some significant failures--such as nitrites, Love Canal, and alar--in
+    administrative and judicial decisionmaking that fed the demand for more peer
+    review of regulatory science. In analyzing the nature of scientific claims
+    and methods used in policy decisions, she draws comparisons with the
+    promises and limitations of peer review in scientific organizations
+    operating outside the regulatory context. The discussion of advisory
+    mechanisms draws on the author's close scrutiny of two highly visible
+    federal agencies--the Environmental Protection Agency and the Food and Drug
+    Administration. Here we see the experts in action as they deliberate on
+    critical issues such as clean air, pesticide regulation, and the safety of
+    pharmaceuticals and food additives. Jasanoff deftly merges legal and
+    institutional analysis with social studies of science and presents a strong
+    case for procedural reforms. In so doing, she articulates a
+    social-construction model that is intended to buttress the effectiveness of
+    the fifth branch.
+  author:
+    - family: Jasanoff
+      given: Sheila
+  citation-key: JasanoffFifthBranchScience1998
+  ISBN: 978-0-674-03911-7
+  issued:
+    - year: 1998
+      month: 8
+      day: 19
+  language: en
+  number-of-pages: '322'
+  publisher: Harvard University Press
+  source: Google Books
+  title: 'The Fifth Branch: Science Advisers as Policymakers'
+  title-short: The Fifth Branch
+  type: book
+
+- id: JasanoffStatesKnowledge2004
+  abstract: >-
+    The authors demonstrate that the idiom of co-production importantly extends
+    the vocabulary of the traditional social sciences, offering fresh analytic
+    perspectives on the nexus of science, power and culture.
+  citation-key: JasanoffStatesKnowledge2004
+  collection-editor:
+    - family: Jasanoff
+      given: Sheila
+  collection-title: The Co-Production of Science and the Social Order
+  contributor:
+    - family: Jasanoff
+      given: Sheila
+    - family: Miller
+      given: Clark
+    - family: Thompson
+      given: Charis
+    - family: Waterton
+      given: Claire
+    - family: Wynne
+      given: Brian
+    - family: Storey
+      given: William
+    - family: Hilgartner
+      given: Stephen
+    - family: Raberharisoa
+      given: Vololona
+    - family: Callon
+      given: Michel
+    - family: Lynch
+      given: Michael
+    - family: Carson
+      given: John
+    - family: Dear
+      given: Peter
+    - family: Dennis
+      given: Michael Aaron
+    - family: Ezrahi
+      given: Yaron
+  editor:
+    - family: Jasanoff
+      given: Sheila
+  ISBN: 1-134-32833-8
+  issued:
+    - year: 2004
+  number-of-pages: '336'
+  publisher: Routledge
+  title: States of Knowledge
+  type: book
+  URL: >-
+    http://books.google.ca/books?id=IYQArKR0ETwC&printsec=frontcover&dq=intitle:States+of+Knowledge&hl=&cd=1&source=gbs_api
+
+- id: KleinmanHoneyBeesThreat2013
+  abstract: >-
+    Daniel Lee Kleinman and Sainath Suryanarayanan: Recent controversies over
+    honey bees remind us of their environmental and economic importance, but
+    should also prompt us to reflect upon the structures of expertise we rely
+    upon
+  accessed:
+    - year: 2015
+      month: 11
+      day: 4
+  author:
+    - family: Kleinman
+      given: Daniel Lee
+    - family: Suryanarayanan
+      given: Sainath
+  citation-key: KleinmanHoneyBeesThreat2013
+  container-title: The Guardian
+  ISSN: 0261-3077
+  issued:
+    - year: 2013
+      month: 5
+      day: 8
+  language: en-GB
+  section: Science
+  source: The Guardian
+  title: 'Honey bees under threat: a political pollinator crisis'
+  title-short: Honey bees under threat
+  type: article-newspaper
+  URL: >-
+    http://www.theguardian.com/science/political-science/2013/may/08/honey-bees-threat-political-pollinator-crisis
+
+- id: LukesPowerRadicalView2005
+  abstract: >-
+    Steven Lukes' Power: A Radical View is a seminal work still widely used some
+    30 years after publication. The second edition includes the complete
+    original text alongside two major new essays. One assesses the main debates
+    about how to conceptualize and study power, including the influential
+    contributions of Michel Foucault. The other reconsiders Steven Lukes' own
+    views in light of these debates and of criticisms of his original argument.
+    With a new introduction and bibliographical essay, this book will
+    consolidate its reputation as a classic work and a major reference point
+    within social and political theory.
+  author:
+    - family: Lukes
+      given: Steven
+  citation-key: LukesPowerRadicalView2005
+  ISBN: 978-0-333-42092-8
+  issued:
+    - year: 2005
+      month: 1
+      day: 15
+  language: en
+  number-of-pages: '200'
+  publisher: Palgrave Macmillan
+  source: Google Books
+  title: 'Power: A Radical View, Second Edition'
+  title-short: Power, Second Edition
+  type: book
+
+- id: MachamerThinkingMechanisms2000
+  author:
+    - family: Machamer
+      given: Peter
+    - family: Darden
+      given: Lindley
+    - family: Craver
+      given: Carl F.
+  citation-key: MachamerThinkingMechanisms2000
+  container-title: Philosophy of Science
+  container-title-short: Phil Sci
+  issue: '1'
+  issued:
+    - year: 2000
+  page: 1-25
+  title: Thinking about Mechanisms
+  type: article-journal
+  URL: http://www.jstor.org/stable/188611
+  volume: '67'
+
+- id: MichaelsDoubtTheirProduct2008
+  author:
+    - family: Michaels
+      given: David
+  citation-key: MichaelsDoubtTheirProduct2008
+  event-place: Oxford
+  ISBN: 978-0-19-530067-3 0-19-530067-X 978-0-19-530067-3
+  issued:
+    - year: 2008
+  language: eng
+  number-of-pages: '372'
+  publisher: Oxford Univ. Press
+  publisher-place: Oxford
+  source: Gemeinsamer Bibliotheksverbund ISBN
+  title: >-
+    Doubt is their product how industry's assault on science threatens your
+    health
+  type: book
+
+- id: SuryanarayananVanishingBeesScience2016
+  abstract: "In 2005, beekeepers in the United States began observing a mysterious and disturbing phenomenon: once-healthy colonies of bees were suddenly collapsing, leaving behind empty hives full of honey and pollen. Over the following decade, widespread honeybee deaths—some of which have come to be called Colony Collapse Disorder (CCD)—have continued to bedevil beekeepers and threaten the agricultural industries that rely on bees for pollination. Scientists continue to debate the causes of CCD, yet there is no clear consensus on how to best solve the problem.\_\_Vanishing Bees takes us inside the debates over widespread honeybee deaths, introducing the various groups with a stake in solving the mystery of CCD, including beekeepers, entomologists, growers, agrichemical companies, and government regulators. Drawing from extensive interviews and first-hand observations, Sainath Suryanarayanan and Daniel Lee Kleinman examine how members of each group have acquired, disseminated, and evaluated knowledge about CCD. In addition, they explore the often-contentious interactions among different groups, detailing how they assert authority, gain trust, and build alliances.\_As it explores the contours of the CCD crisis, Vanishing Bees considers an equally urgent question: what happens when farmers, scientists, beekeepers, corporations, and federal agencies approach the problem from different vantage points and cannot see eye-to-eye? The answer may have profound consequences for every person who wants to keep fresh food on the table."
+  author:
+    - family: Suryanarayanan
+      given: Sainath
+    - family: Kleinman
+      given: Daniel Lee
+  citation-key: SuryanarayananVanishingBeesScience2016
+  ISBN: 978-0-8135-7461-5
+  issued:
+    - year: 2016
+      month: 11
+      day: 29
+  language: en
+  number-of-pages: '175'
+  publisher: Rutgers University Press
+  source: Google Books
+  title: 'Vanishing Bees: Science, Politics, and Honeybee Health'
+  title-short: Vanishing Bees
+  type: book
+
+- id: WynneSheepfarmingChernobylCase1989
+  author:
+    - family: Wynne
+      given: Brian
+  citation-key: WynneSheepfarmingChernobylCase1989
+  container-title: 'Environment: Science and Policy for Sustainable Development'
+  container-title-short: 'Environment: Science and Policy for Sustainable Development'
+  DOI: 10.1080/00139157.1989.9928930
+  issue: '2'
+  issued:
+    - year: 1989
+  page: 10-39
+  title: >-
+    Sheepfarming after Chernobyl: A Case Study in Communicating Scientific
+    Information
+  type: article-journal
+  URL: http://www.tandfonline.com/doi/abs/10.1080/00139157.1989.9928930
+  volume: '31'
+...

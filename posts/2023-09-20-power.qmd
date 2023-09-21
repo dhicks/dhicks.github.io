@@ -1,0 +1,52 @@
+---
+title: "Do scientists have power? Does science?"
+date: "2023-09-20"
+bibliography: "2023-09-20-power.yaml"
+---
+
+I recently read (most of) @LukesPowerRadicalView2005.  Lukes offers an influential account of (political) power, and I wanted to see if it would be useful for answering a question that came up in a discussion with (IIRC) Heather Douglas and Matt Brown quite a while ago: Do scientists have power?  
+
+Lukes identifies three "faces" of power.  Unless I missed something, his definitions for these "faces" aren't very clear; they're often demonstrative or negative.  And he doesn't label them.  So here's a quick attempt at labeled, positive definitions:  
+
+coercive
+  ~ This is what we usually think of as political power: comply or you will be harmed.  
+  
+prioritizing
+  ~ Influencing whose interests have priority, are seen as important and should be protected or promoted.  Lukes talks about this with respect to agenda-setting, as in whose complaints show up on the agenda.  
+  
+ideological
+  ~ Influencing how interests are recognized and understood.  In terms of Brown's Deweyan model of inquiry [@BrownScienceMoralImagination2020], ideological power shapes not only how a problem is framed, but potentially also *whether a situation is experienced as indeterminate or problematic in the first place*.  
+  
+---
+
+Given these definitions, do scientists have power? 
+
+As posed, the question is ambiguous, between individualistic and corporate readings of "scientists."  Let's use "scientists" for the individualistic reading (do certain particular scientists have power?) and "science" for the corporate reading (does science as an institution have power?) 
+
+Individual scientists basically never have coercive power.  Even when a scientist, qua scientist, works for the state, the role of scientist doesn't come with law enforcement powers or some other entitlement to coercive power.  
+
+On the other hand, individual scientists can have prioritizing and ideological power.  In the risk assessment framework, the first phase is "problem formulation and scoping," which is supposed to be on the "politics" side of the science/politics dichotomy.  But typically risk assessment is initiated in response to scientific findings — findings made, communicated, and taken up by certain particular scientists, qua scientists — that indicate a problem and its potential severity.  
+
+In these kinds of cases, individual scientists generally won't have *exclusive* prioritizing and ideological power.  At EPA or other regulatory agencies, certain particular political appointees and "regulatory" (as opposed to "scientific") staff will also exercise these forms of power.  
+
+And, outside of regulatory agencies, individual scientists often do not have any more prioritizing or ideological power than any other member of the public.  Well-connected faculty at prestigious universities might be able to exercise this kind of power. (I'm thinking of Scott Atlas, a Hoover Institution fellow who was on Trump's Coronavirus Task Force, or the psychologist Arthur Jensen, who was a professor at Berkeley and became well-know to the public for his race science views.)  
+
+So, academic scientists, *as individuals*, generally don't have much of any of the three forms of power.  
+
+---
+
+Turn now to science in the corporate sense, and specifically institutions that are taken to speak on behalf of science:  EPA, IPCC, the National Academies, AAAS.  
+
+Regulatory agencies, like EPA, do have coercive power.  Though the prioritizing and ideological power of regulated industries means that EPA doesn't exercise that coercive power as much as I would like.  Still, insofar as EPA is a representative of "science," and does exercise coercive power, we can understand this as science exercising (and therefore having) coercive power.  
+
+The other science institutions that I listed above don't have coercive power.  But they do have substantial prioritizing and ideological power.  The National Academies basically made up the risk assessment framework, which is a fundamental component of how environmental health threats are understood and prioritized.  Indeed, even the category label "environmental health threats" adopts some assumptions of the risk assessment framework.  Opponents of genetically modified foods have a number of concerns that aren't related to health and safety [@HicksGMOsNonhealthIssues2016] and are therefore systematically ignored by regulatory agencies [@HicksGeneticallyModifiedCrops2017].  
+
+Using Lukes' terminology, a whole strain of STS is devoted to studying the prioritizing and ideological power of scientism:  on the assumption that only "scientific" evidence counts as evidence, claims that a situation is problematic, is sufficiently severe and warrants action, and that the key cause of the problem is such-and-such, all need to be justified by "scientific" evidence [@WynneSheepfarmingChernobylCase1989; @EpsteinImpureScience1996; @FrickelUndoneScienceCharting2010; @KleinmanHoneyBeesThreat2013; @SuryanarayananVanishingBeesScience2016].  
+
+Scientism has this power because it serves the interests of multiple groups.   Most obviously it bolsters the status of scientists.  It was taken up by regulatory agencies as a strategy to maintain legitimacy in the face of opposition from regulated industries [@JasanoffFifthBranchScience1998].  But, at the same time, regulated industries have used it to dismiss criticism and block or delay regulation [@MichaelsDoubtTheirProduct2008].  
+
+---
+
+If we think of political power only in coercive terms, then it's difficult to come up with examples of the political power of science beyond agencies like EPA.  @LukesPowerRadicalView2005 is explicitly challenging a parallel situation in mid-century political science: a line of research that studied "power," but understood it only as coercive power, and generally came to the conclusion that there are not significant concentrations of power in American politics.  He identified prioritization power in some previous research, and proposed ideological power as all but completely overlooked by empirical political scientists.  
+
+When we follow Lukes in thinking of power in terms of shaping the agenda and framing the recognition and understanding of problematic situations, then it's much easier to articulate the political power of science.  Science has power not because it can threaten you with imprisonment, but rather because problems that aren't articulated and diagnosed "scientifically" are systematically ignored.  
