@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dan Hicks">
-<meta name="dcterms.date" content="2018-10-10">
+<meta name="dcterms.date" content="2023-09-25">
 
-<title>Dan Hicks - Difference-in-differences in R</title>
+<title>Dan Hicks - Teaching ethics of expertise in Critical Thinking</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,41 +22,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
 }
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
 }
-</style>
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -100,16 +85,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Dan Hicks - Difference-in-differences in R">
+<meta property="og:title" content="Dan Hicks - Teaching ethics of expertise in Critical Thinking">
 <meta property="og:description" content="">
-<meta property="og:image" content="https://dhicks.github.io/posts/2018-10-10-did_files/figure-html/unnamed-chunk-4-1.png">
 <meta property="og:site-name" content="Dan Hicks ">
-<meta property="og:image:height" content="960">
-<meta property="og:image:width" content="1344">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -186,11 +166,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Difference-in-differences in R</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">data</div>
-              </div>
-                  </div>
+      <h1 class="title">Teaching ethics of expertise in Critical Thinking</h1>
+                      </div>
   </div>
     
   
@@ -206,7 +183,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">October 10, 2018</p>
+        <p class="date">September 25, 2023</p>
       </div>
     </div>
     
@@ -224,208 +201,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>This post recreates <a href="https://the-tarzan.com/2011/06/20/differences-in-differences-estimation-in-r-and-stata/">this post</a> with proper formatting, syntax highlighting, etc.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.2     ✔ readr     2.1.4
-✔ forcats   1.0.0     ✔ stringr   1.5.0
-✔ ggplot2   3.4.2     ✔ tibble    3.2.1
-✔ lubridate 1.9.2     ✔ tidyr     1.3.0
-✔ purrr     1.0.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(skimr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>First we’ll load the data (download if necessary). I just started playing around with <code>skimr::skim()</code> to generate nice summaries. (<code>digits</code> doesn’t seem to do anything, though?)</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>data_file <span class="ot">=</span> <span class="st">'../_data/did_data.dta'</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">file.exists</span>(data_file)) {</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">download.file</span>(<span class="at">url =</span> <span class="st">'https://drive.google.com/uc?authuser=0&amp;id=0B0iAUHM7ljQ1cUZvRWxjUmpfVXM&amp;export=download'</span>, </span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>                  <span class="at">destfile =</span> data_file)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>dataf <span class="ot">=</span> haven<span class="sc">::</span><span class="fu">read_dta</span>(data_file)</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="fu">skim</span>(dataf, work, year, children)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<table class="table table-sm table-striped small">
-<caption>Data summary</caption>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Name</td>
-<td style="text-align: left;">dataf</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Number of rows</td>
-<td style="text-align: left;">13746</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Number of columns</td>
-<td style="text-align: left;">11</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">_______________________</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Column type frequency:</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">numeric</td>
-<td style="text-align: left;">3</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">________________________</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Group variables</td>
-<td style="text-align: left;">None</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Variable type: numeric</strong></p>
-<table class="table table-sm table-striped small">
-<colgroup>
-<col style="width: 17%">
-<col style="width: 12%">
-<col style="width: 17%">
-<col style="width: 9%">
-<col style="width: 6%">
-<col style="width: 6%">
-<col style="width: 6%">
-<col style="width: 6%">
-<col style="width: 6%">
-<col style="width: 6%">
-<col style="width: 7%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">skim_variable</th>
-<th style="text-align: right;">n_missing</th>
-<th style="text-align: right;">complete_rate</th>
-<th style="text-align: right;">mean</th>
-<th style="text-align: right;">sd</th>
-<th style="text-align: right;">p0</th>
-<th style="text-align: right;">p25</th>
-<th style="text-align: right;">p50</th>
-<th style="text-align: right;">p75</th>
-<th style="text-align: right;">p100</th>
-<th style="text-align: left;">hist</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">work</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0.51</td>
-<td style="text-align: right;">0.50</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">▇▁▁▁▇</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">year</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1993.35</td>
-<td style="text-align: right;">1.70</td>
-<td style="text-align: right;">1991</td>
-<td style="text-align: right;">1992</td>
-<td style="text-align: right;">1993</td>
-<td style="text-align: right;">1995</td>
-<td style="text-align: right;">1996</td>
-<td style="text-align: left;">▇▃▃▃▃</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">children</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1.19</td>
-<td style="text-align: right;">1.38</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: left;">▇▃▁▁▁</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p>Following the old post, we need to construct dummy variables for (a) before-and-after the EITC takes effect in 1994 and (b) the treatment group (1 or more children). We’ll keep these as logicals (rather than the numerics in the old post).</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>dataf <span class="ot">=</span> dataf <span class="sc">%&gt;%</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">post93 =</span> year <span class="sc">&gt;=</span> <span class="dv">1994</span>, </span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">anykids =</span> children <span class="sc">&gt;=</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>The regression equation is</p>
-<p><span class="math display">\[ work = \beta_0 + \delta_0 post93 + \beta_1 anykids + \delta_1 (anykids \times post93) + \varepsilon. \]</span></p>
-<p>The “difference-in-differences coefficient” is <span class="math display">\[\delta_1\]</span>, which indicates how the effect of kids changed after the EITC went into effect. Let’s take a second to plot this.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(dataf, <span class="fu">aes</span>(post93, work, <span class="at">color =</span> anykids)) <span class="sc">+</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_jitter</span>() <span class="sc">+</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<p><img src="2018-10-10-did_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-<p>Okay, so the scatterplot version, like, isn’t perspicuous. How about the un-dummied variables, and just the mean?</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(dataf, <span class="fu">aes</span>(year, work, <span class="at">color =</span> anykids)) <span class="sc">+</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stat_summary</span>(<span class="at">geom =</span> <span class="st">'line'</span>) <span class="sc">+</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">1994</span>) <span class="sc">+</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>No summary function supplied, defaulting to `mean_se()`</code></pre>
-</div>
-<div class="cell-output-display">
-<p><img src="2018-10-10-did_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-<p>The parallel trends assumption looks good, at least qualitatively. (Remember this only applies prior to the intervention.) However, the parallel trends are nonlinear, which maybe is why the example uses the dummied variable.</p>
-<p>Anyway, on to the regression. Which, hey, is a <a href="https://en.wikipedia.org/wiki/Linear_probability_model">linear probability model</a> because econometricians are funny like that.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>model <span class="ot">=</span> <span class="fu">lm</span>(work <span class="sc">~</span> anykids<span class="sc">*</span>post93, <span class="at">data =</span> dataf)</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-Call:
-lm(formula = work ~ anykids * post93, data = dataf)
-
-Residuals:
-    Min      1Q  Median      3Q     Max 
--0.5755 -0.4908  0.4245  0.5092  0.5540 
-
-Coefficients:
-                        Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept)             0.575460   0.008845  65.060  &lt; 2e-16 ***
-anykidsTRUE            -0.129498   0.011676 -11.091  &lt; 2e-16 ***
-post93TRUE             -0.002074   0.012931  -0.160  0.87261    
-anykidsTRUE:post93TRUE  0.046873   0.017158   2.732  0.00631 ** 
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-
-Residual standard error: 0.4967 on 13742 degrees of freedom
-Multiple R-squared:  0.0126,    Adjusted R-squared:  0.01238 
-F-statistic: 58.45 on 3 and 13742 DF,  p-value: &lt; 2.2e-16</code></pre>
-</div>
-</div>
-<p>This indicates that the EITC increased <code>work</code> (workforce participation? whether someone was employed?) by 5% among families with at least 1 child. In the second plot, the blue line goes from about 45% prior to 1994 to about 50% afterwards.</p>
+<p>I’m teaching expertise and appeals to authority in Critical Thinking about a month, and start to wrestle yet again with how to approach this.</p>
+<p>The textbook I use — like pretty much all of them? — takes the “believe the impartial sources who have the right credentials” approach. Completely out of touch with five decades of feminist philosophy and STS.</p>
+<p>I want to start by talking about multiple sources of expertise (credentials, but also lived experience), then Baier’s conception of trust and subsequent work on the ethics+epistemology of trust. Using Baier’s conception suggests two relatively clear criteria for a trustworthy expert:</p>
+<dl>
+<dt>competence</dt>
+<dd>
+On the topic in question, the expert is likely to have true beliefs.
+</dd>
+<dt>responsiveness</dt>
+<dd>
+“[T]hey have encapsulated my interests: the trusted party pursues or protects particular interests, at least in part, because they are the trusted party’s interests …. the expectation that the [expert] will be directly and favorably moved by the thought that we are counting on her” <span class="citation" data-cites="AlmassiRelationallyResponsiveExpert2022">(<a href="#ref-AlmassiRelationallyResponsiveExpert2022" role="doc-biblioref">Almassi 2022, 578</a>)</span>
+</dd>
+</dl>
+<p>From here we can talk about why different groups of people can reasonably assess the trustworthiness of experts differently. And <span class="citation" data-cites="AlmassiRelationallyResponsiveExpert2022">Almassi (<a href="#ref-AlmassiRelationallyResponsiveExpert2022" role="doc-biblioref">2022</a>)</span> has a really nice argument that “owning the libs” — communicating that one is actively hostile towards an outgroup — isn’t actually evidence that they’re interested in promoting the ingroup’s interests, and thus does not make them more trustworthy for members of the ingroup. Which will nicely fit into our discussion, over the subsequent two weeks, of the SIFT method for assessing online information sources and then whether ChatGPT is trustworthy (spoiler alert: it is not).</p>
+<p>So class time looks good. Where I’m feeling uncertainty is in assessment.</p>
+<p>In this class, the discrete course units are assessed using a weekly quiz. The quiz has a simple format: students are given an argument as a paragraph of prose, and then have to answer a series of short response questions that walk them through analyzing the argument. The short response questions are explicitly tied to “rules” that the textbook gives for assessing that type of argument. In theory, this direct line between assessments and course content will help students study. For example, last year’s course used this question to get at competence:</p>
+<blockquote class="blockquote">
+<p>What is the source’s area of expertise? Is this credentialed or experiential expertise? (Rule 14)</p>
+<p>Expectations: 1 sentence characterizing area and source of expertise.</p>
+</blockquote>
+<p>A typical prompt/argument to analyze for this unit goes like this:</p>
+<blockquote class="blockquote">
+<p>Massimiliano Vasile, an aerospace engineer at the University of Glasgow, spent two years comparing nine different technologies that could be used if an asteroid were on a collision course with Earth. Dr.&nbsp;Vasile’s study revealed that it would be a bad idea to blow up an incoming asteroid with nuclear weapons. Thus, blowing up Earth-bound asteroids with nuclear weapons is a bad idea. <span class="small">(Adapted from: Lia Miller, “The Best Way to Deflect an Asteroid,” New York Times Magazine, December 9, 2007, &lt;http://www.nytimes.com/2007/12/09/magazine/ 09_5_asteroid.html&gt;)</span></p>
+</blockquote>
+<p>Prompts like this contain no useful information for assessing responsiveness. Examples of appeal to expertise like this “seem to treat our communities of inquirers rather generically …. experts’ particular relationship to us … is elided, treated as irrelevant to the question at hand” <span class="citation" data-cites="AlmassiRelationallyResponsiveExpert2022">(<a href="#ref-AlmassiRelationallyResponsiveExpert2022" role="doc-biblioref">Almassi 2022, 578</a>)</span>.</p>
+<p>Some prompts do give negative information, indications that the expert is not responsive to our interests, in the form of indicators that the source has a financial conflict of interest, “four out of five doctors smoke Camels.” That’s something, but I don’t want to reduce responsiveness to a question about conflicts of interest.</p>
+<p>I need 7 of these prompts (there’s a new quiz each week, so students can re-take them until they pass). Scrapping them all — or almost all of them — and writing whole new ones would be a lot of work. If I have to go actively looking, it can take 60-90 minutes to find a good example — usually from a piece of science journalism — and distill it into a single, undergrad-accessible paragraph.</p>
+<p>My dilemma is this: Stick with an inadequate approach to expertise, or put in an extra 7-10 hours of work to rewrite the quizzes?</p>
 
 
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-AlmassiRelationallyResponsiveExpert2022" class="csl-entry" role="listitem">
+Almassi, Ben. 2022. <span>“Relationally Responsive Expert Trustworthiness.”</span> <em>Social Epistemology</em> 36 (5): 576–85. <a href="https://doi.org/10.1080/02691728.2022.2103475">https://doi.org/10.1080/02691728.2022.2103475</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

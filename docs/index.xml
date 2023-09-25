@@ -10,7 +10,56 @@
 <atom:link href="https://dhicks.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Website description</description>
 <generator>quarto-1.3.433</generator>
-<lastBuildDate>Wed, 20 Sep 2023 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 25 Sep 2023 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Teaching ethics of expertise in Critical Thinking</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2023-09-25-teaching-expertise.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I’m teaching expertise and appeals to authority in Critical Thinking about a month, and start to wrestle yet again with how to approach this.</p>
+<p>The textbook I use — like pretty much all of them? — takes the “believe the impartial sources who have the right credentials” approach. Completely out of touch with five decades of feminist philosophy and STS.</p>
+<p>I want to start by talking about multiple sources of expertise (credentials, but also lived experience), then Baier’s conception of trust and subsequent work on the ethics+epistemology of trust. Using Baier’s conception suggests two relatively clear criteria for a trustworthy expert:</p>
+<dl>
+<dt>competence</dt>
+<dd>
+On the topic in question, the expert is likely to have true beliefs.
+</dd>
+<dt>responsiveness</dt>
+<dd>
+“[T]hey have encapsulated my interests: the trusted party pursues or protects particular interests, at least in part, because they are the trusted party’s interests …. the expectation that the [expert] will be directly and favorably moved by the thought that we are counting on her” <span class="citation" data-cites="AlmassiRelationallyResponsiveExpert2022">(Almassi 2022, 578)</span>
+</dd>
+</dl>
+<p>From here we can talk about why different groups of people can reasonably assess the trustworthiness of experts differently. And <span class="citation" data-cites="AlmassiRelationallyResponsiveExpert2022">Almassi (2022)</span> has a really nice argument that “owning the libs” — communicating that one is actively hostile towards an outgroup — isn’t actually evidence that they’re interested in promoting the ingroup’s interests, and thus does not make them more trustworthy for members of the ingroup. Which will nicely fit into our discussion, over the subsequent two weeks, of the SIFT method for assessing online information sources and then whether ChatGPT is trustworthy (spoiler alert: it is not).</p>
+<p>So class time looks good. Where I’m feeling uncertainty is in assessment.</p>
+<p>In this class, the discrete course units are assessed using a weekly quiz. The quiz has a simple format: students are given an argument as a paragraph of prose, and then have to answer a series of short response questions that walk them through analyzing the argument. The short response questions are explicitly tied to “rules” that the textbook gives for assessing that type of argument. In theory, this direct line between assessments and course content will help students study. For example, last year’s course used this question to get at competence:</p>
+<blockquote class="blockquote">
+<p>What is the source’s area of expertise? Is this credentialed or experiential expertise? (Rule 14)</p>
+<p>Expectations: 1 sentence characterizing area and source of expertise.</p>
+</blockquote>
+<p>A typical prompt/argument to analyze for this unit goes like this:</p>
+<blockquote class="blockquote">
+<p>Massimiliano Vasile, an aerospace engineer at the University of Glasgow, spent two years comparing nine different technologies that could be used if an asteroid were on a collision course with Earth. Dr.&nbsp;Vasile’s study revealed that it would be a bad idea to blow up an incoming asteroid with nuclear weapons. Thus, blowing up Earth-bound asteroids with nuclear weapons is a bad idea. <span class="small">(Adapted from: Lia Miller, “The Best Way to Deflect an Asteroid,” New York Times Magazine, December 9, 2007, &lt;http://www.nytimes.com/2007/12/09/magazine/ 09_5_asteroid.html&gt;)</span></p>
+</blockquote>
+<p>Prompts like this contain no useful information for assessing responsiveness. Examples of appeal to expertise like this “seem to treat our communities of inquirers rather generically …. experts’ particular relationship to us … is elided, treated as irrelevant to the question at hand” <span class="citation" data-cites="AlmassiRelationallyResponsiveExpert2022">(Almassi 2022, 578)</span>.</p>
+<p>Some prompts do give negative information, indications that the expert is not responsive to our interests, in the form of indicators that the source has a financial conflict of interest, “four out of five doctors smoke Camels.” That’s something, but I don’t want to reduce responsiveness to a question about conflicts of interest.</p>
+<p>I need 7 of these prompts (there’s a new quiz each week, so students can re-take them until they pass). Scrapping them all — or almost all of them — and writing whole new ones would be a lot of work. If I have to go actively looking, it can take 60-90 minutes to find a good example — usually from a piece of science journalism — and distill it into a single, undergrad-accessible paragraph.</p>
+<p>My dilemma is this: Stick with an inadequate approach to expertise, or put in an extra 7-10 hours of work to rewrite the quizzes?</p>
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-AlmassiRelationallyResponsiveExpert2022" class="csl-entry">
+Almassi, Ben. 2022. <span>“Relationally Responsive Expert Trustworthiness.”</span> <em>Social Epistemology</em> 36 (5): 576–85. <a href="https://doi.org/10.1080/02691728.2022.2103475">https://doi.org/10.1080/02691728.2022.2103475</a>.
+</div>
+</div></section></div> ]]></description>
+  <guid>https://dhicks.github.io/posts/2023-09-25-teaching-expertise.html</guid>
+  <pubDate>Mon, 25 Sep 2023 07:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Do scientists have power? Does science?</title>
   <dc:creator>Dan Hicks</dc:creator>
@@ -1229,29 +1278,6 @@ Stapleford, Thomas A. 2009. <em>The Cost of Living in America: A Political Histo
  ]]></description>
   <guid>https://dhicks.github.io/posts/2020-05-08-no-hug.html</guid>
   <pubDate>Fri, 08 May 2020 07:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Paper: Census Demographics and Chlorpyrifos Use in California’s Central Valley, 2011–15: A Distributional Environmental Justice Analysis</title>
-  <dc:creator>Dan Hicks</dc:creator>
-  <link>https://dhicks.github.io/posts/2020-05-04-chlorpyrifos-paper.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>In Spring 2018, I audited a spatial data analysis class taught by Noli Brazil at UC Davis. The pesticide chlorpyrifos had been in the news for the past year, as one of the first things Scott Pruitt did at EPA in 2017 was to deny a petition to revoke all tolerances for the pesticide (effectively banning it in the US). For my project for the class, I decided to apply some spatial regression techniques to understand where chlorpyrifos is used in California’s central valley. The initial results were quite compelling, indicating that Hispanic communities are potentially exposed to quite a bit more chlorpyrifos than White communities. I also developed what seems to be a novel way to account for measurement error in the American Community Survey’s public data.</p>
-<p>A few years later I finally found time to finish writing things up, and <a href="https://doi.org/10.3390/ijerph17072593">the paper</a> was recently published in the <em>International Journal of Environmental Research and Public Health</em>. (Incidentally, I was impressed at the fact that the journal got a pair of pretty decent reviews back in just a few weeks. In philosophy of science, a fast turnaround time for reviews is 2-3 months.)</p>
-<p>Here’s figure 1 of the paper, showing the study area in terms of census tracts (blue) and places (yellow) and where chlorpyrifos is used (red dots; more saturation = more chlorpyrifos).</p>
-<p><img src="https://dhicks.github.io/img/03_chlor_use.png" class="img-fluid" alt="A map of California, showing the study area of the Central Valley in blue. Chlorpyrifos use is indicated by a cloud of redish points; the cloud is densest in the San Joaquin Valley.">{:width=“50%”}</p>
-<p><strong>Abstract</strong>:</p>
-<p>Chlorpyrifos is one of the most widely-used pesticides in the world, and is generally recognized to be a moderate neurotoxin. This paper reports a distributional environmental justice (dEJ) analysis of chlorpyrifos use in California’s Central Valley, examining the way distributions of environmental risks are associated with race, ethnicity, class, gender, and other systems of structural oppression. Spatial data on chlorpyrifos use were retrieved from California’s Department of Pesticide Registration (DPR) public pesticide use records (PUR) for 2011-2015. These data were combined with demographic data for the Central Valley from the American Community Survey (ACS). Spatial regression models were used to estimate effects of demographic covariates on local chlorpyrifos use. A novel bootstrap method was used to account for measurement error in the ACS estimates. There is consistent evidence that Hispanic population proportion is associated with increased local chlorpyrifos use. A 10-point increase in Hispanic proportion is associated with an estimated 1.05-1.4-fold increase in local chlorpyrifos use across Census tract models. By contrast, effects of agricultural employment and poverty on local chlorpyrifos use are ambiguous and inconsistent between Census tracts and Census-designated places.</p>
-<p><a href="https://doi.org/10.3390/ijerph17072593" class="uri">https://doi.org/10.3390/ijerph17072593</a></p>
-
-
-
- ]]></description>
-  <guid>https://dhicks.github.io/posts/2020-05-04-chlorpyrifos-paper.html</guid>
-  <pubDate>Mon, 04 May 2020 07:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
