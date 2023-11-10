@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dan Hicks">
+<meta name="dcterms.date" content="2023-11-10">
+
+<title>Dan Hicks - Fact checking ChatGPT: An activity for Critical Thinking</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Dan Hicks - Fact checking ChatGPT: An activity for Critical Thinking">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://dhicks.github.io/img/2023-11-10-ChatGPT-spreadsheet.png">
+<meta property="og:site-name" content="Dan Hicks ">
+<meta property="og:image:height" content="856">
+<meta property="og:image:width" content="2468">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Dan Hicks</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../research.html" rel="" target="">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Teaching</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
+        <li>
+    <a class="dropdown-item" href="https://data-science-methods.github.io/" rel="" target="">
+ <span class="dropdown-text">Methods of Data Science</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0001-7945-4416" rel="" target="">
+ <span class="menu-text"><i class="fa-brands fa-orcid" aria-label="orcid"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=XvkwYZsAAAAJ&amp;hl=en" rel="" target="">
+ <span class="menu-text"><i class="ai  ai-google-scholar" title="" style="color:"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://dhicks.github.io/cv" rel="" target="">
+ <span class="menu-text"><i class="ai  ai-cv" title="" style="color:"></i></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dhicks/" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:dhicks4@ucmerced.edu" rel="" target=""><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../index.xml" rel="" target=""><i class="bi bi-rss" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Fact checking ChatGPT: An activity for Critical Thinking</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Dan Hicks </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">November 10, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p>This week I did a “fact checking ChatGPT” activity with my Critical Thinking class. It has some distinct aims from other ChatGPT activities I’ve seen, and seemed to work well, so I thought I’d write it up real quick.</p>
+<p>I’ve seen lots of examples of classroom activities that explore the limitations (and strengths) of ChatGPT as a writer. Some of my students mentioned they or their friends had done things like this. For this activity, I decided to focus instead on ChatGPT as a source of information. We’ve just spent three weeks learning how to evaluate other sources: <a href="https://fairy-shrimp.netlify.app/09-expertise.html">a unit on appeals to authority</a> based on <a href="https://dhicks.github.io/posts/2023-09-25-teaching-expertise.html">feminist work on epistemic trustworthiness</a>, and then <a href="https://fairy-shrimp.netlify.app/11-SIFT-1.html">a unit on fact checking (social) media using the SIFT method</a>.</p>
+<p>To prepare for the activity, I asked students to create an OpenAI account if they didn’t already have one, and bring their laptops to class if they don’t usually do so. I also told them to read Ted Chiang’s <a href="https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web">essay</a> “ChatGPT is a Blurry JPEG of the Web,” and set up the Google Sheet that’s linked below.</p>
+<p>Then, in class, I gave students these instructions for the activity:</p>
+<ol type="1">
+<li><p>Prompt ChatGPT to write a short paper on a topic that includes citations and a bibliography: &gt; Hi ChatGPT. Can you write a short paper on the rise of college debt, including a bibliography with five recent academic citations?</p></li>
+<li><p>For each bibliography entry, use search tools to try to determine whether the item actually exists.</p>
+<ul>
+<li>Does the author list match what ChatGPT said?</li>
+<li>Was it published in the place ChatGPT said it was published?</li>
+</ul></li>
+<li><p>Record your findings on this Google Sheet: <a href="https://tinyurl.com/2xdcz7mo">tinyurl.com/2xdcz7mo</a></p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/2023-11-10-ChatGPT-spreadsheet.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">The first few rows of the spreadsheet</figcaption>
+</figure>
+</div>
+<p>The spreadsheet was set to “anyone can edit.” I filled in the first few rows myself as an example, using the citations from the essay ChatGPT generated in response to my college debt prompt. Columns C, E, and F (does the item exist, does the author list match, does the publication info match) use data validation rules, restricting the possible values. This makes it simple to set up the pivot table in the “exists?” sheet, which we use in the debrief/reflection phase.</p>
+<p>The prompt needs to request citations and a bibliography explicitly; otherwise ChatGPT doesn’t include them. This might be different if you’re using something like Microsoft Bing Chat.</p>
+<p>After walking through the instructions abstractly, I gave a short demonstration by repeating the work I’d done with the first couple of rows. This included a quick reminder of Google Scholar, which a student had mentioned a few weeks earlier when we were discussing expertise.</p>
+<p>Students spent about 40 minutes working on this activity, mostly in pairs or individually. I said explicitly that I wanted to get as large a sample of bib items as possible, and so didn’t want them to work in their table-groups (5-8 students). It was a nice, chill, student-oriented class session: I just wandered around, answering questions, helping with the rare tricky case, and chatting with students.</p>
+<p>To close out the activity, I spent 15 minutes on a whole-class discussion of three questions:</p>
+<ol type="1">
+<li><p>How frequently did ChatGPT manufacture citations?</p></li>
+<li><p>How does this relate to Chiang’s essay, “ChatGPT Is a Blurry JPEG of the Web”?</p></li>
+<li><p>What implications does this have for using LLMs like ChatGPT</p>
+<ul>
+<li>To write papers?</li>
+<li>As information sources (Google Bard, Microsoft Bing Chat)?</li>
+</ul></li>
+</ol>
+<p>Question 1 was easy to answer with the pivot table. In our case, ChatGPT manufactured 38% of citations (counting only the ones that do not exist at all) or 58% (including the ones that exist but have metadata errors). A few students said this is what they expected to see — based on doing some similar experiments on their own — but I and other students expected the rate of manufactured citations to be somewhat higher.</p>
+<p>Not many of the students had really digested Chiang’s essay, so this turned into an impromptu lecture. We’re covering argument by analogy next week, so I’ll probably use Chiang’s analogy as a recurrent example.</p>
+<p>Students were pretty thoughtful about the implications. We talked about how faculty are experts, and can instantly recognize manufactured citations in our areas of expertise. Students were a little uncertain about how to regard the citations that actually existed. Some felt these were reliable, but others made the inference that you’d have to actually go and read the paper itself to figure out whether it made the claims ChatGPT was attributing to it. In their one-minute papers, lots of students indicated that they no longer trust ChatGPT as a source of information.</p>
+<p>All together, this activity went really well: students were very engaged, and came away with a healthy skepticism of LLMs. Next time, I might make the spreadsheet-filling itself homework rather than an in-class activity. Specifically, I might devote the last 15-20 minutes of the previous session to getting student started on filling in the spreadsheet, then have them complete it (for two different prompts) before the next session. Then, in “the ChatGPT session proper,” we’d start with 10 minutes or so on any tricky references, and have about an hour for the reflective discussion. This would give us lots of time to unpack Chinag’s essay and relate it to the results of the fact check.</p>
+<hr>
+<p>Coincidentally, this morning <em>Nature</em> published a very nice Perspective piece that proposes two non-anthropomorphic conceptual frameworks for thinking about the behavior of LLMs <span class="citation" data-cites="ShanahanRolePlayLarge2023">(<a href="#ref-ShanahanRolePlayLarge2023" role="doc-biblioref">Shanahan, McDonell, and Reynolds 2023</a>)</span>. Their second framework is a bit technical for the typical first-year undergrad. But the first framework is very accessible: LLMs as role-playing, or specifically as actors in an improv show.</p>
+<blockquote class="blockquote">
+<p>If the model has generalized well from the training data, the most plausible continuation [of the prompt text] will be a response to the user that conforms to the expectations we would have of someone who fits the description in the preamble. In other words, the dialogue agent will do its best to role-play the character of a dialogue agent as portrayed in the dialogue prompt ….</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>What sorts of roles might the agent begin to take on? This is determined in part, of course, by the tone and subject matter of the ongoing conversation. But it is also determined, in large part, by the panoply of characters that feature in the training set, which encompasses a multitude of novels, screenplays, biographies, interview transcripts, newspaper articles and so on. In effect, the training set provisions the language model with a vast repertoire of archetypes and a rich trove of narrative structure on which to draw as it ‘chooses’ how to continue a conversation, refining the role it is playing as it goes, while staying in character.</p>
+</blockquote>
+<p>Like an experienced improv actor, a LLM is able to adopt the distinctive behaviors of the role they’re playing, making the role very convincing. But — when playing the role of an expert — this doesn’t come with the competence required for actual expertise. An actor can play an expert in starship engineering, for example, saying the kinds of things we’d expect starship engineers to say (based on decades of fiction featuring starship engineer characters), without any actual knowledge of starship engineering. Similarly, a LLM can convincingly say the kinds of things that we expect student loan experts to say — including producing the kinds of citations that student loan experts use in their papers — without any actual knowledge of student loans.</p>
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-ShanahanRolePlayLarge2023" class="csl-entry" role="listitem">
+Shanahan, Murray, Kyle McDonell, and Laria Reynolds. 2023. <span>“Role Play with Large Language Models.”</span> <em>Nature</em>, November, 1–6. <a href="https://doi.org/10.1038/s41586-023-06647-8">https://doi.org/10.1038/s41586-023-06647-8</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

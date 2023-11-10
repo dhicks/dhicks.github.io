@@ -1,0 +1,40 @@
+---
+references:
+- id: ShanahanRolePlayLarge2023
+  abstract: >-
+    As dialogue agents become increasingly human-like in their performance, we
+    must develop effective ways to describe their behaviour in high-level terms
+    without falling into the trap of anthropomorphism. Here we foreground the
+    concept of role play. Casting dialogue-agent behaviour in terms of role play
+    allows us to draw on familiar folk psychological terms, without ascribing
+    human characteristics to language models that they in fact lack. Two
+    important cases of dialogue-agent behaviour are addressed this way, namely,
+    (apparent) deception and (apparent) self-awareness.
+  accessed:
+    - year: 2023
+      month: 11
+      day: 10
+  author:
+    - family: Shanahan
+      given: Murray
+    - family: McDonell
+      given: Kyle
+    - family: Reynolds
+      given: Laria
+  citation-key: ShanahanRolePlayLarge2023
+  container-title: Nature
+  DOI: 10.1038/s41586-023-06647-8
+  ISSN: 1476-4687
+  issued:
+    - year: 2023
+      month: 11
+      day: 8
+  language: en
+  license: 2023 Springer Nature Limited
+  page: 1-6
+  publisher: Nature Publishing Group
+  source: www.nature.com
+  title: Role play with large language models
+  type: article-journal
+  URL: https://www.nature.com/articles/s41586-023-06647-8
+...

@@ -10,7 +10,74 @@
 <atom:link href="https://dhicks.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Website description</description>
 <generator>quarto-1.3.433</generator>
-<lastBuildDate>Mon, 25 Sep 2023 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 10 Nov 2023 08:00:00 GMT</lastBuildDate>
+<item>
+  <title>Fact checking ChatGPT: An activity for Critical Thinking</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2023-11-10-ChatGPT.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>This week I did a “fact checking ChatGPT” activity with my Critical Thinking class. It has some distinct aims from other ChatGPT activities I’ve seen, and seemed to work well, so I thought I’d write it up real quick.</p>
+<p>I’ve seen lots of examples of classroom activities that explore the limitations (and strengths) of ChatGPT as a writer. Some of my students mentioned they or their friends had done things like this. For this activity, I decided to focus instead on ChatGPT as a source of information. We’ve just spent three weeks learning how to evaluate other sources: <a href="https://fairy-shrimp.netlify.app/09-expertise.html">a unit on appeals to authority</a> based on <a href="https://dhicks.github.io/posts/2023-09-25-teaching-expertise.html">feminist work on epistemic trustworthiness</a>, and then <a href="https://fairy-shrimp.netlify.app/11-SIFT-1.html">a unit on fact checking (social) media using the SIFT method</a>.</p>
+<p>To prepare for the activity, I asked students to create an OpenAI account if they didn’t already have one, and bring their laptops to class if they don’t usually do so. I also told them to read Ted Chiang’s <a href="https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web">essay</a> “ChatGPT is a Blurry JPEG of the Web,” and set up the Google Sheet that’s linked below.</p>
+<p>Then, in class, I gave students these instructions for the activity:</p>
+<ol type="1">
+<li><p>Prompt ChatGPT to write a short paper on a topic that includes citations and a bibliography: &gt; Hi ChatGPT. Can you write a short paper on the rise of college debt, including a bibliography with five recent academic citations?</p></li>
+<li><p>For each bibliography entry, use search tools to try to determine whether the item actually exists.</p>
+<ul>
+<li>Does the author list match what ChatGPT said?</li>
+<li>Was it published in the place ChatGPT said it was published?</li>
+</ul></li>
+<li><p>Record your findings on this Google Sheet: <a href="https://tinyurl.com/2xdcz7mo">tinyurl.com/2xdcz7mo</a></p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://dhicks.github.io/img/2023-11-10-ChatGPT-spreadsheet.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">The first few rows of the spreadsheet</figcaption>
+</figure>
+</div>
+<p>The spreadsheet was set to “anyone can edit.” I filled in the first few rows myself as an example, using the citations from the essay ChatGPT generated in response to my college debt prompt. Columns C, E, and F (does the item exist, does the author list match, does the publication info match) use data validation rules, restricting the possible values. This makes it simple to set up the pivot table in the “exists?” sheet, which we use in the debrief/reflection phase.</p>
+<p>The prompt needs to request citations and a bibliography explicitly; otherwise ChatGPT doesn’t include them. This might be different if you’re using something like Microsoft Bing Chat.</p>
+<p>After walking through the instructions abstractly, I gave a short demonstration by repeating the work I’d done with the first couple of rows. This included a quick reminder of Google Scholar, which a student had mentioned a few weeks earlier when we were discussing expertise.</p>
+<p>Students spent about 40 minutes working on this activity, mostly in pairs or individually. I said explicitly that I wanted to get as large a sample of bib items as possible, and so didn’t want them to work in their table-groups (5-8 students). It was a nice, chill, student-oriented class session: I just wandered around, answering questions, helping with the rare tricky case, and chatting with students.</p>
+<p>To close out the activity, I spent 15 minutes on a whole-class discussion of three questions:</p>
+<ol type="1">
+<li><p>How frequently did ChatGPT manufacture citations?</p></li>
+<li><p>How does this relate to Chiang’s essay, “ChatGPT Is a Blurry JPEG of the Web”?</p></li>
+<li><p>What implications does this have for using LLMs like ChatGPT</p>
+<ul>
+<li>To write papers?</li>
+<li>As information sources (Google Bard, Microsoft Bing Chat)?</li>
+</ul></li>
+</ol>
+<p>Question 1 was easy to answer with the pivot table. In our case, ChatGPT manufactured 38% of citations (counting only the ones that do not exist at all) or 58% (including the ones that exist but have metadata errors). A few students said this is what they expected to see — based on doing some similar experiments on their own — but I and other students expected the rate of manufactured citations to be somewhat higher.</p>
+<p>Not many of the students had really digested Chiang’s essay, so this turned into an impromptu lecture. We’re covering argument by analogy next week, so I’ll probably use Chiang’s analogy as a recurrent example.</p>
+<p>Students were pretty thoughtful about the implications. We talked about how faculty are experts, and can instantly recognize manufactured citations in our areas of expertise. Students were a little uncertain about how to regard the citations that actually existed. Some felt these were reliable, but others made the inference that you’d have to actually go and read the paper itself to figure out whether it made the claims ChatGPT was attributing to it. In their one-minute papers, lots of students indicated that they no longer trust ChatGPT as a source of information.</p>
+<p>All together, this activity went really well: students were very engaged, and came away with a healthy skepticism of LLMs. Next time, I might make the spreadsheet-filling itself homework rather than an in-class activity. Specifically, I might devote the last 15-20 minutes of the previous session to getting student started on filling in the spreadsheet, then have them complete it (for two different prompts) before the next session. Then, in “the ChatGPT session proper,” we’d start with 10 minutes or so on any tricky references, and have about an hour for the reflective discussion. This would give us lots of time to unpack Chinag’s essay and relate it to the results of the fact check.</p>
+<hr>
+<p>Coincidentally, this morning <em>Nature</em> published a very nice Perspective piece that proposes two non-anthropomorphic conceptual frameworks for thinking about the behavior of LLMs <span class="citation" data-cites="ShanahanRolePlayLarge2023">(Shanahan, McDonell, and Reynolds 2023)</span>. Their second framework is a bit technical for the typical first-year undergrad. But the first framework is very accessible: LLMs as role-playing, or specifically as actors in an improv show.</p>
+<blockquote class="blockquote">
+<p>If the model has generalized well from the training data, the most plausible continuation [of the prompt text] will be a response to the user that conforms to the expectations we would have of someone who fits the description in the preamble. In other words, the dialogue agent will do its best to role-play the character of a dialogue agent as portrayed in the dialogue prompt ….</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>What sorts of roles might the agent begin to take on? This is determined in part, of course, by the tone and subject matter of the ongoing conversation. But it is also determined, in large part, by the panoply of characters that feature in the training set, which encompasses a multitude of novels, screenplays, biographies, interview transcripts, newspaper articles and so on. In effect, the training set provisions the language model with a vast repertoire of archetypes and a rich trove of narrative structure on which to draw as it ‘chooses’ how to continue a conversation, refining the role it is playing as it goes, while staying in character.</p>
+</blockquote>
+<p>Like an experienced improv actor, a LLM is able to adopt the distinctive behaviors of the role they’re playing, making the role very convincing. But — when playing the role of an expert — this doesn’t come with the competence required for actual expertise. An actor can play an expert in starship engineering, for example, saying the kinds of things we’d expect starship engineers to say (based on decades of fiction featuring starship engineer characters), without any actual knowledge of starship engineering. Similarly, a LLM can convincingly say the kinds of things that we expect student loan experts to say — including producing the kinds of citations that student loan experts use in their papers — without any actual knowledge of student loans.</p>
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-ShanahanRolePlayLarge2023" class="csl-entry">
+Shanahan, Murray, Kyle McDonell, and Laria Reynolds. 2023. <span>“Role Play with Large Language Models.”</span> <em>Nature</em>, November, 1–6. <a href="https://doi.org/10.1038/s41586-023-06647-8">https://doi.org/10.1038/s41586-023-06647-8</a>.
+</div>
+</div></section></div> ]]></description>
+  <guid>https://dhicks.github.io/posts/2023-11-10-ChatGPT.html</guid>
+  <pubDate>Fri, 10 Nov 2023 08:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Teaching ethics of expertise in Critical Thinking</title>
   <dc:creator>Dan Hicks</dc:creator>
@@ -1249,35 +1316,6 @@ Stapleford, Thomas A. 2009. <em>The Cost of Living in America: A Political Histo
  ]]></description>
   <guid>https://dhicks.github.io/posts/2020-05-12-covid-adaptive-management.html</guid>
   <pubDate>Tue, 12 May 2020 07:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Why I won’t give you a hug</title>
-  <dc:creator>Dan Hicks</dc:creator>
-  <link>https://dhicks.github.io/posts/2020-05-08-no-hug.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Dear family member,</p>
-<p>I understand your perspective. The rural Californian county where you live — like mine — has had a few dozen confirmed cases of COVID-19, and no deaths. You talked to another member of our extended family, in an even more remote and rural county; he told you that he, his family, and his buddies all had something that sounds a lot like COVID-19, back in February. He couldn’t get tested at that point, of course, but they had all the symptoms: dry cough, fever, body aches. You’ve read a couple of news stories, saying that we know COVID-19 was in the state in February, and that a lot more people had antibodies for the disease than we first suspected (though, in our state, this is maybe as high as 4%, not 40%).</p>
-<p>Meanwhile, due to health issues in your household, you’ve been under quarantine since the first of March. You missed one family birthday gathering — the last family gathering of any kind — in the first week of March, not long before the whole state went into quarantine. That’s exhausting. Lots of small business owners in your community haven’t been eligible to apply for unemployment. Some of your neighbors have gotten their relief checks — a single check, that can cover some fraction of one month’s rent, their only income over the past six weeks. Others — especially older folks who don’t do their taxes online — are still waiting for their checks. You retired recently, and right now your primary income is rent from a small cottage on your property. But you’re not entirely sure whether the family living in the cottage is working right now. If they can’t pay their rent, you’re not quite sure how you’ll be able to pay the electric bill and get groceries.</p>
-<p>It’s not that you want to open the doors wide across the state. The outbreak in the Bay Area, about two hours from both of us, is still simmering. And things are still quite bad in LA. But, you think, rural counties like ours, with just a few dozen confirmed cases and no deaths, we should be able to open things back up. For our communities, the treatment seems to be worse than the disease.</p>
-<p>That’s your perspective, and I can understand and respect why you think that. It would be great for people to go back to work, for the state and national parks to reopen, for our family to get together again for food and hugs.</p>
-<p>But I have a different perspective. In major epidemics this one, outbreaks and quarantines tend to come in cycles. Things start to get bad, quarantine is imposed until they simmer down again, things open up, and then things start to get bad again. And because COVID-19 is so sneaky, it’s incredibly easy for things to get bad again, incredibly quickly. <a href="https://erinbromage.wixsite.com/covid19/post/the-risks-know-them-avoid-them">In Chicago</a>, in a series of family get-togethers, one infected person unwittingly spread the disease to 16 other people. Three of those people died, and several went on to infect further people, all within a few weeks. While things are quiet in our rural counties now, just fewer than 10 active, confirmed cases, I worry that opening things up too quickly will lead to 100 cases, then 500, and then our small rural hospitals will be overwhelmed.</p>
-<p>To prevent another bad way of cases, we need to be able to do the two things that the CDC has recommended since January: lots of testing, and rapid contact tracing. In California, the latest recommendation is that we should be able to do <a href="https://www.npr.org/sections/health-shots/2020/05/07/851610771/u-s-coronavirus-testing-still-falls-short-hows-your-state-doing">108 tests per 100,000 people</a>. (This is actually lower than the <a href="https://www.nytimes.com/interactive/2020/04/17/us/coronavirus-testing-states.html">recommendation of 152 tests per 100,000 people</a> from mid-April.) But currently we’re only doing <a href="https://www.npr.org/sections/health-shots/2020/05/07/851610771/u-s-coronavirus-testing-still-falls-short-hows-your-state-doing">74 tests per 100,000 people</a>. We’ve expanded our testing capacity, but we’ve still got a ways to go. Things are even worse in most other states.</p>
-<p>I know you don’t like to talk about politics. But for me the crisis is unavoidably political, in terms of both the disease itself as well as the economic effects of the quarantine. <a href="https://www.washingtonpost.com/national-security/us-intelligence-reports-from-january-and-february-warned-about-a-likely-pandemic/2020/03/20/299d8cda-6ad5-11ea-b5f1-a5a804158597_story.html">As the epidemic unfolded in Asia in January and February, Trump was repeatedly warned that it would be here and that we needed to prepare.</a> The Defense Production Act gives Trump the authority to order manufacturers to produce essential goods — like protective equipment for doctors and the swabs and chemicals needed for testing. <a href="https://www.vox.com/2020/5/6/21249233/coronavirus-defense-production-act-ppe-tests-trump">He’s barely used it, which is part of the reason why our testing capacity is still so far below where it needs to be.</a></p>
-<p>On the economic side, some of the effects of the quarantine are unavoidable. Shutting down the economy for 6 weeks or longer means that some economic pain is unavoidable. But we’re not distributing this pain fairly. Restaurant servers and kitchen staff are getting that one check, plus a little bump in unemployment benefits. <a href="https://www.ainonline.com/aviation-news/business-aviation/2020-03-26/us-relief-bill-sets-aside-billions-aviation-industry">The airline industry is getting tens of billions of dollars</a>, and <a href="https://www.washingtonpost.com/opinions/2020/04/14/trump-kushner-could-reap-pandemic-windfall/">real estate investors — including Trump and his family — are getting $170 billion</a>.</p>
-<p>When we talked the other day, I told you about Germany’s approach to the crisis, where <a href="https://www.washingtonpost.com/world/europe/how-europe-manages-to-keep-a-lid-on-coronavirus-unemployment-while-it-spikes-in-the-us/2020/04/11/29b23c90-7b4f-11ea-a311-adb1344719a9_story.html">the government covers workers’ salaries</a>, avoiding the disastrous spike in unemployment that we’ve seen in the US. You asked me how we could possibly pay for such a program. For the past few years, <a href="https://www.snopes.com/fact-check/amazon-no-income-taxes-2018/">Amazon has made billions of dollars of profits, but paid no federal income tax, and even received refunds of more than $100 million</a>. In part, this is due to <a href="https://finance.yahoo.com/news/amazon-taxes-zero-180337770.html">Trump’s 2017 corporate tax cut</a>. Since March, Amazon’s stock price has increased <a href="https://www.nasdaq.com/market-activity/stocks/amzn">about 25%</a>, as customers shift from brick-and-mortar stores to shopping online during the pandemic. Even if you don’t agree with me that a substantial general increase in taxes on the wealthy and large corporations is a good idea, couldn’t we agree that a one-time tax on windfall profits would be fair?</p>
-<p>I hope that I’m wrong about what’s going to happen over the next few weeks. Like you, I think it would be wonderful if most people had already been exposed, that cases don’t rise as we reopen the economy, and that the emergency field hospitals and testing sites we’ve built over the last six weeks turn out to be unnecessary. I want to go backpacking, enjoy a latte on a Saturday afternoon before going to the movies, and most importantly get together with you and everyone else for a family dinner. But we’re far from certain that this best-case scenario is what’s going to happen. From my perspective, we need to move slowly, and be prepared for the worst case.</p>
-<p>I love you. But I won’t hug you. Not until June.</p>
-<p>Dan</p>
-
-
-
- ]]></description>
-  <guid>https://dhicks.github.io/posts/2020-05-08-no-hug.html</guid>
-  <pubDate>Fri, 08 May 2020 07:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
