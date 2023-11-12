@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dan Hicks">
+<meta name="dcterms.date" content="2023-11-12">
+
+<title>Dan Hicks - Epistemic interdependence or epistemic hierarchy</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Dan Hicks - Epistemic interdependence or epistemic hierarchy">
+<meta property="og:description" content="">
+<meta property="og:site-name" content="Dan Hicks ">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Dan Hicks</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../research.html" rel="" target="">
+ <span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Teaching</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
+        <li>
+    <a class="dropdown-item" href="https://data-science-methods.github.io/" rel="" target="">
+ <span class="dropdown-text">Methods of Data Science</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0001-7945-4416" rel="" target="">
+ <span class="menu-text"><i class="fa-brands fa-orcid" aria-label="orcid"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=XvkwYZsAAAAJ&amp;hl=en" rel="" target="">
+ <span class="menu-text"><i class="ai  ai-google-scholar" title="" style="color:"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://dhicks.github.io/cv" rel="" target="">
+ <span class="menu-text"><i class="ai  ai-cv" title="" style="color:"></i></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dhicks/" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:dhicks4@ucmerced.edu" rel="" target=""><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../index.xml" rel="" target=""><i class="bi bi-rss" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Epistemic interdependence or epistemic hierarchy</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Dan Hicks </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">November 12, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p>Given my intests in public scientific controversies and the politics of expertise, it might be a little surprising that I don’t really find much of interest in the social epistemology literature on expertise. I was reading a social epistemology paper yesterday that helped me articulate one reason for this: how we frame the need for expertise.</p>
+<hr>
+<p>I frame this need in terms of <em>epistemic interdependence</em>. For example, when we started a unit on appeal to authority <a href="https://fairy-shrimp.netlify.app/09-expertise.html#epistemic-interdependence">in Critical Reasoning this semester</a>, I first estimated that</p>
+<blockquote class="blockquote">
+<p>it would take you about 17 million minutes, or about 287,000 hours, to read the entirety of Wikipedia. Working 24/7/365.26, that’s a bit less than 33 years. Working full time (40 hours/week for 50 weeks per year) it’s 143 years.</p>
+<p>And that’s just for the brief, nontechnical summary of collective human knowledge in a single language.</p>
+<p>Humans depend on each other in a variety of ways. We need others to take care of us when we’re young, sick, and elderly. We distribute the work of making useful things across different job categories and industries, along with the work of getting useful things from the places they’re made to the places where they’re used. We’re also <strong>epistemically interdependent</strong>: we rely on each other to produce and circulate knowledge about the world.</p>
+</blockquote>
+<p>Basically, there’s so much to know that one person can’t do it all. We need other people to know things on our behalf. Experts are the people to whom we entrust this knowing. I go on to introduce <a href="https://fairy-shrimp.netlify.app/09-expertise.html#two-sources-of-expertise">two sources of expertise</a>, formal education or training and lived experience. Taking into account lived experience, most people have expertise in something, though often the scope is very local. I give the example of one of the nieces, who has expertise in the social groups of her high school. One student suggested that her mom has expertise in the mystery novels written by her favorite author. I also talk about ACT-UP and environmental justice movements, as examples of marginalized people — generally completely lacking formal training in science — who became scientific experts.</p>
+<p>The examples of ACT-UP and environmental justice also motivate a key distinction in feminist accounts of trustworthiness <span class="citation" data-cites="AlmassiRelationallyResponsiveExpert2022">(<a href="#ref-AlmassiRelationallyResponsiveExpert2022" role="doc-biblioref">Almassi 2022</a>)</span>, between <a href="https://fairy-shrimp.netlify.app/09-expertise.html#act-up-and-unresponsive-experts">competence and responsiveness</a>: during the HIV-AIDS crisis, public health authorities were entirely competent credentialed experts, but were unresponsive to the concerns of ACT-UP and consequently were not trustworthy. We can same basically the same thing about EPA and environmental justice communities.</p>
+<p>In this framing, I’m assuming that most people have more or less the same potential or “innate capacity” for expertise. The difference between credentialed experts and groups like ACT-UP is primarily the accident of privilege vs.&nbsp;marginalization, and even marginalized groups can successfully challenge credentialed experts in highly technical domains — though this probably requires a lot of organization and hard work, and will be of very restricted scope.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<hr>
+<p>By contrast, here’s how <span class="citation" data-cites="GrundmannFacingEpistemicAuthorities2021">Grundmann (<a href="#ref-GrundmannFacingEpistemicAuthorities2021" role="doc-biblioref">2021</a>)</span> frames expertise:</p>
+<blockquote class="blockquote">
+<p>Epistemic abilities are unequally distributed in society. Not everyone has the same cognitive competences. Some people stand out by being much more reliable than average …. Epistemic superiority is the product of two independent factors: the available body of evidence and one’s reasoning competences …. Some people have a more reliable judgment than others because they are more clever in drawing rational inferences from the shared body of evidence. This is, e.g., the case when Sherlock Holmes outperforms Watson in his judgments about who was the murderer. <span class="citation" data-cites="GrundmannFacingEpistemicAuthorities2021">(<a href="#ref-GrundmannFacingEpistemicAuthorities2021" role="doc-biblioref">Grundmann 2021, 138–39</a>)</span></p>
+</blockquote>
+<p>Call this framing <em>epistemic hierarchy</em>. Given a set of evidence, this framing suggests that we can rank people in order of their “cognitive competences,” and the experts are the ones with the best/most/greatest cognitive competence. This hierarchical framing is reinforced by referring to non-experts as “laypeople,” evoking the formal hierarchy of the Catholic church.</p>
+<p>Grundmann does qualify this hierarchical framing, noting that “epistemic superiority … is always relative to a domain of expertise” (ibid.), and of course often some people will have access to more or better evidence than others. But these qualifications are often quietly dropped or bracketed. Grundmann defines “epistemic authority” with respect to domain D; but then refers to “superior reasoning competences” simpliciter, that is, not <em>domain-specific</em> reasoning competences. The definition also requires that the candidate authority “has very likely considered all of [the trustor’s] relevant evidence” (ibid.) By dropping these qualifications — and using Sherlock Holmes as the paradigm of an expert — this framing tends to suggest that expertise is primarily a matter of cognitive competence. And, further, seeing cognitive competence as “unequally distributed in society” suggests to me that cognitive competence — and thus expertise — is primarily a matter of innate “general intelligence.”<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> In short, with this framing, it seems to me quite easy to slide from domain-specific and dynamic comparisons that might not form a total order (A has better evidence, B has better domain-specific reasoning) to a domain-general epistemic hierarchy based on an innate ability.</p>
+<p>Working with the epistemic hierarchy framing, <span class="citation" data-cites="GrundmannFacingEpistemicAuthorities2021">Grundmann (<a href="#ref-GrundmannFacingEpistemicAuthorities2021" role="doc-biblioref">2021</a>)</span> goes on to argue for the “Preemption View” of “layperson”-expert relations:</p>
+<blockquote class="blockquote">
+<p>When we discover that an epistemic authority believes that p, we should not make any more use of our own reasoning about p as evidence for or against p.&nbsp;The use of our own reasoning concerning p is to be bracketed. <span class="citation" data-cites="GrundmannFacingEpistemicAuthorities2021">(<a href="#ref-GrundmannFacingEpistemicAuthorities2021" role="doc-biblioref">Grundmann 2021, 140</a>)</span></p>
+</blockquote>
+<p>In short, the “layperson” should defer to the expert’s judgment, and in particular should not challenge the expert’s reasoning, because of the expert’s superior cognitive capabilities (within the domain, and given that the expert has a superset of the layperson’s evidence). I didn’t read the rest of the paper carefully, but from here <span class="citation" data-cites="GrundmannFacingEpistemicAuthorities2021">Grundmann (<a href="#ref-GrundmannFacingEpistemicAuthorities2021" role="doc-biblioref">2021</a>)</span> seems to argue that a failure to follow the Preemption View explains why we have a problem with conspiracy theories and rampant misinformation.</p>
+<p>It’s hard to read the cases of ACT-UP, environmental justice, or feminist history of science into this analysis. I suppose one could say that the marginalized groups in each case had access to evidence that the purported authority did not, or the purported authorities neglected relevant evidence, or something like this; and thus they were not actually authorities. But then the whole analysis of <span class="citation" data-cites="GrundmannFacingEpistemicAuthorities2021">Grundmann (<a href="#ref-GrundmannFacingEpistemicAuthorities2021" role="doc-biblioref">2021</a>)</span> is irrelevant, in a strictly logical sense: an early premise in the big argument (145) is false and so we get no particular guidance on these kinds of cases.</p>
+<hr>
+<p>One additional contrast between these framings seems noteworthy. Epistemic interdependence lends itself to posing the “question of expertise” in terms of trust: who should I trust (or) who is trustworthy? Starting by asking about trust, and reflecting on trust and vulnerability — in the footsteps of feminist philosophers — can lead us to a conception of trustworthiness that requires responsiveness along with (epistemic) competence. Expertise is a power relation, and the people with power (experts) can cause great harm when they abuse this power or use it to perpetrate injustice.</p>
+<p>The epistemic hierarchy framing seems to understand the “question of expertise” in terms of the doxastic attitude that an (abstracted) agent should take towards an (abstracted) proposition: should S believe that p? Specifically, should S believe that p on the grounds that this other person A says so? Insofar as the ultimate virtue of belief is truth, the ultimate virtue of an expert is whether their claims are more likely to be true. Unless they can be reframed in terms of truth,<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> questions of power, vulnerability, and justice are lost in the brilliant glare cast by truth.</p>
+<p>So this is one major reason why so much of the social epistemology literature leaves me cold. Not only does it deploy a rival framing of the question of expertise — with some implicatures that I find highly disagreeable — but, within this framing, it’s difficult to explore the kinds of cases that motivate me and ask the kinds of questions that I want to ask.</p>
+
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-AlmassiRelationallyResponsiveExpert2022" class="csl-entry" role="listitem">
+Almassi, Ben. 2022. <span>“Relationally Responsive Expert Trustworthiness.”</span> <em>Social Epistemology</em> 36 (5): 576–85. <a href="https://doi.org/10.1080/02691728.2022.2103475">https://doi.org/10.1080/02691728.2022.2103475</a>.
+</div>
+<div id="ref-GrundmannFacingEpistemicAuthorities2021" class="csl-entry" role="listitem">
+Grundmann, Thomas. 2021. <span>“Facing Epistemic Authorities: Where Democratic Ideals and Critical Thinking Mislead Cognition.”</span> In <em>The Epistemology of Fake News</em>, edited by Sven Bernecker, Amy K. Flowerree, and Thomas Grundmann, 0. Oxford University Press. <a href="https://doi.org/10.1093/oso/9780198863977.003.0007">https://doi.org/10.1093/oso/9780198863977.003.0007</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>This point didn’t come up in class, but we could also say that queer communities often had expertise in <em>what it’s like to life with HIV-AIDS</em> that public health authorities generally lacked. The epistemic interdependence runs both ways; no party has uniformly better knowledge than any other party.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>A dedicated Holmes fan might object that Holmes’ abilities were much more dependent on domain-specific reasoning and a vast mental storehouse of esoteric evidence than “innate general intelligence.” This is correct; I vaguely recall a scene in which Watson is surprised that Holmes doesn’t know some commonplace fact (maybe Holmes doesn’t recognize the name of a popular opera singer?), and Holmes explains that he is intentionally ignorant of basically everything that’s not relevant to solving crime. But I would argue that Doyle also portrays Holmes’ capabilities as a matter of innate general intelligence — for example, his brother Mycroft has the same innate genius, just applied to national security and espionage — and the <em>popular</em> understanding of Holmes emphasizes his supposed innate general intelligence.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>I’ve also spent a lot of time the last 2-1/2 year working on a project on race science, which might make me oversensitive to the possibility that ideas of innate general intelligence are waiting just offstage.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>I think the “epistemic injustice” literature is often trying to do this, which is probably why I don’t find that literature particularly engaging either.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

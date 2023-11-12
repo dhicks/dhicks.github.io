@@ -1,0 +1,88 @@
+---
+references:
+- id: AlmassiRelationallyResponsiveExpert2022
+  abstract: >-
+    Social epistemologists often operationalize the task of indirectly assessing
+    experts’ trustworthiness to identifying whose beliefs are more reliably true
+    on matters in an area of expertise. Not only does this neglect the
+    philosophically rich space between belief formation and testimonial
+    utterances, it also reduces trustworthiness to reliability. In ethics of
+    trust, by contrast, explicitly relational views of trust include things like
+    good will and responsiveness. One might think that relational aspects can be
+    safely set aside for social epistemology of trust in experts, that such
+    considerations may be relevant for personal relationships but not for expert
+    trustworthiness. Against these claims I argue for the social-epistemic
+    relevance of relational aspects of trust in experts, and to that end I
+    discuss three sorts of considerations – responsively positive, neutral, and
+    negative factors – that can make a difference for expert trustworthiness.
+  accessed:
+    - year: 2022
+      month: 10
+      day: 8
+  author:
+    - family: Almassi
+      given: Ben
+  citation-key: AlmassiRelationallyResponsiveExpert2022
+  container-title: Social Epistemology
+  DOI: 10.1080/02691728.2022.2103475
+  ISSN: 0269-1728
+  issue: '5'
+  issued:
+    - year: 2022
+      month: 9
+      day: 3
+  page: 576-585
+  publisher: Routledge
+  source: Taylor and Francis+NEJM
+  title: Relationally Responsive Expert Trustworthiness
+  type: article-journal
+  URL: https://doi.org/10.1080/02691728.2022.2103475
+  volume: '36'
+
+- id: GrundmannFacingEpistemicAuthorities2021
+  abstract: >-
+    Disrespect for the truth, the rise of conspiracy thinking, and a pervasive
+    distrust in experts are widespread features of the post-truth condition in
+    current politics and public opinion. Among the many good explanations of
+    these phenomena there is one that is only rarely discussed: that something
+    is wrong with our deeply entrenched intellectual standards of (i) using our
+    own critical thinking without any restriction and (ii) respecting the
+    judgment of every rational agent as epistemically relevant. This chapter
+    argues that these two Enlightenment principles—the Principle of Unrestricted
+    Critical Thinking and the Principle of Democratic Reason—not only conflict
+    with what is rationally required from a purely epistemic point of view, but
+    also further the spread of conspiracy theories and undermine trust in
+    experts. As a result, we should typically defer to experts without using any
+    of our own reasons regarding the subject matter
+  accessed:
+    - year: 2023
+      month: 11
+      day: 10
+  author:
+    - family: Grundmann
+      given: Thomas
+  citation-key: GrundmannFacingEpistemicAuthorities2021
+  container-title: The Epistemology of Fake News
+  DOI: 10.1093/oso/9780198863977.003.0007
+  editor:
+    - family: Bernecker
+      given: Sven
+    - family: Flowerree
+      given: Amy K.
+    - family: Grundmann
+      given: Thomas
+  ISBN: 978-0-19-886397-7
+  issued:
+    - year: 2021
+      month: 6
+      day: 10
+  page: '0'
+  publisher: Oxford University Press
+  source: Silverchair
+  title: >-
+    Facing Epistemic Authorities: Where Democratic Ideals and Critical Thinking
+    Mislead Cognition
+  title-short: Facing Epistemic Authorities
+  type: chapter
+  URL: https://doi.org/10.1093/oso/9780198863977.003.0007
+...

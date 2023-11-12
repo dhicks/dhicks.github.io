@@ -10,7 +10,68 @@
 <atom:link href="https://dhicks.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Website description</description>
 <generator>quarto-1.3.433</generator>
-<lastBuildDate>Fri, 10 Nov 2023 08:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 12 Nov 2023 08:00:00 GMT</lastBuildDate>
+<item>
+  <title>Epistemic interdependence or epistemic hierarchy</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2023-11-12-epistemic-interdependence.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Given my intests in public scientific controversies and the politics of expertise, it might be a little surprising that I don’t really find much of interest in the social epistemology literature on expertise. I was reading a social epistemology paper yesterday that helped me articulate one reason for this: how we frame the need for expertise.</p>
+<hr>
+<p>I frame this need in terms of <em>epistemic interdependence</em>. For example, when we started a unit on appeal to authority <a href="https://fairy-shrimp.netlify.app/09-expertise.html#epistemic-interdependence">in Critical Reasoning this semester</a>, I first estimated that</p>
+<blockquote class="blockquote">
+<p>it would take you about 17 million minutes, or about 287,000 hours, to read the entirety of Wikipedia. Working 24/7/365.26, that’s a bit less than 33 years. Working full time (40 hours/week for 50 weeks per year) it’s 143 years.</p>
+<p>And that’s just for the brief, nontechnical summary of collective human knowledge in a single language.</p>
+<p>Humans depend on each other in a variety of ways. We need others to take care of us when we’re young, sick, and elderly. We distribute the work of making useful things across different job categories and industries, along with the work of getting useful things from the places they’re made to the places where they’re used. We’re also <strong>epistemically interdependent</strong>: we rely on each other to produce and circulate knowledge about the world.</p>
+</blockquote>
+<p>Basically, there’s so much to know that one person can’t do it all. We need other people to know things on our behalf. Experts are the people to whom we entrust this knowing. I go on to introduce <a href="https://fairy-shrimp.netlify.app/09-expertise.html#two-sources-of-expertise">two sources of expertise</a>, formal education or training and lived experience. Taking into account lived experience, most people have expertise in something, though often the scope is very local. I give the example of one of the nieces, who has expertise in the social groups of her high school. One student suggested that her mom has expertise in the mystery novels written by her favorite author. I also talk about ACT-UP and environmental justice movements, as examples of marginalized people — generally completely lacking formal training in science — who became scientific experts.</p>
+<p>The examples of ACT-UP and environmental justice also motivate a key distinction in feminist accounts of trustworthiness <span class="citation" data-cites="AlmassiRelationallyResponsiveExpert2022">(Almassi 2022)</span>, between <a href="https://fairy-shrimp.netlify.app/09-expertise.html#act-up-and-unresponsive-experts">competence and responsiveness</a>: during the HIV-AIDS crisis, public health authorities were entirely competent credentialed experts, but were unresponsive to the concerns of ACT-UP and consequently were not trustworthy. We can same basically the same thing about EPA and environmental justice communities.</p>
+<p>In this framing, I’m assuming that most people have more or less the same potential or “innate capacity” for expertise. The difference between credentialed experts and groups like ACT-UP is primarily the accident of privilege vs.&nbsp;marginalization, and even marginalized groups can successfully challenge credentialed experts in highly technical domains — though this probably requires a lot of organization and hard work, and will be of very restricted scope.<sup>1</sup></p>
+<hr>
+<p>By contrast, here’s how <span class="citation" data-cites="GrundmannFacingEpistemicAuthorities2021">Grundmann (2021)</span> frames expertise:</p>
+<blockquote class="blockquote">
+<p>Epistemic abilities are unequally distributed in society. Not everyone has the same cognitive competences. Some people stand out by being much more reliable than average …. Epistemic superiority is the product of two independent factors: the available body of evidence and one’s reasoning competences …. Some people have a more reliable judgment than others because they are more clever in drawing rational inferences from the shared body of evidence. This is, e.g., the case when Sherlock Holmes outperforms Watson in his judgments about who was the murderer. <span class="citation" data-cites="GrundmannFacingEpistemicAuthorities2021">(Grundmann 2021, 138–39)</span></p>
+</blockquote>
+<p>Call this framing <em>epistemic hierarchy</em>. Given a set of evidence, this framing suggests that we can rank people in order of their “cognitive competences,” and the experts are the ones with the best/most/greatest cognitive competence. This hierarchical framing is reinforced by referring to non-experts as “laypeople,” evoking the formal hierarchy of the Catholic church.</p>
+<p>Grundmann does qualify this hierarchical framing, noting that “epistemic superiority … is always relative to a domain of expertise” (ibid.), and of course often some people will have access to more or better evidence than others. But these qualifications are often quietly dropped or bracketed. Grundmann defines “epistemic authority” with respect to domain D; but then refers to “superior reasoning competences” simpliciter, that is, not <em>domain-specific</em> reasoning competences. The definition also requires that the candidate authority “has very likely considered all of [the trustor’s] relevant evidence” (ibid.) By dropping these qualifications — and using Sherlock Holmes as the paradigm of an expert — this framing tends to suggest that expertise is primarily a matter of cognitive competence. And, further, seeing cognitive competence as “unequally distributed in society” suggests to me that cognitive competence — and thus expertise — is primarily a matter of innate “general intelligence.”<sup>2</sup><sup>3</sup> In short, with this framing, it seems to me quite easy to slide from domain-specific and dynamic comparisons that might not form a total order (A has better evidence, B has better domain-specific reasoning) to a domain-general epistemic hierarchy based on an innate ability.</p>
+<p>Working with the epistemic hierarchy framing, <span class="citation" data-cites="GrundmannFacingEpistemicAuthorities2021">Grundmann (2021)</span> goes on to argue for the “Preemption View” of “layperson”-expert relations:</p>
+<blockquote class="blockquote">
+<p>When we discover that an epistemic authority believes that p, we should not make any more use of our own reasoning about p as evidence for or against p.&nbsp;The use of our own reasoning concerning p is to be bracketed. <span class="citation" data-cites="GrundmannFacingEpistemicAuthorities2021">(Grundmann 2021, 140)</span></p>
+</blockquote>
+<p>In short, the “layperson” should defer to the expert’s judgment, and in particular should not challenge the expert’s reasoning, because of the expert’s superior cognitive capabilities (within the domain, and given that the expert has a superset of the layperson’s evidence). I didn’t read the rest of the paper carefully, but from here <span class="citation" data-cites="GrundmannFacingEpistemicAuthorities2021">Grundmann (2021)</span> seems to argue that a failure to follow the Preemption View explains why we have a problem with conspiracy theories and rampant misinformation.</p>
+<p>It’s hard to read the cases of ACT-UP, environmental justice, or feminist history of science into this analysis. I suppose one could say that the marginalized groups in each case had access to evidence that the purported authority did not, or the purported authorities neglected relevant evidence, or something like this; and thus they were not actually authorities. But then the whole analysis of <span class="citation" data-cites="GrundmannFacingEpistemicAuthorities2021">Grundmann (2021)</span> is irrelevant, in a strictly logical sense: an early premise in the big argument (145) is false and so we get no particular guidance on these kinds of cases.</p>
+<hr>
+<p>One additional contrast between these framings seems noteworthy. Epistemic interdependence lends itself to posing the “question of expertise” in terms of trust: who should I trust (or) who is trustworthy? Starting by asking about trust, and reflecting on trust and vulnerability — in the footsteps of feminist philosophers — can lead us to a conception of trustworthiness that requires responsiveness along with (epistemic) competence. Expertise is a power relation, and the people with power (experts) can cause great harm when they abuse this power or use it to perpetrate injustice.</p>
+<p>The epistemic hierarchy framing seems to understand the “question of expertise” in terms of the doxastic attitude that an (abstracted) agent should take towards an (abstracted) proposition: should S believe that p? Specifically, should S believe that p on the grounds that this other person A says so? Insofar as the ultimate virtue of belief is truth, the ultimate virtue of an expert is whether their claims are more likely to be true. Unless they can be reframed in terms of truth,<sup>4</sup> questions of power, vulnerability, and justice are lost in the brilliant glare cast by truth.</p>
+<p>So this is one major reason why so much of the social epistemology literature leaves me cold. Not only does it deploy a rival framing of the question of expertise — with some implicatures that I find highly disagreeable — but, within this framing, it’s difficult to explore the kinds of cases that motivate me and ask the kinds of questions that I want to ask.</p>
+
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-AlmassiRelationallyResponsiveExpert2022" class="csl-entry">
+Almassi, Ben. 2022. <span>“Relationally Responsive Expert Trustworthiness.”</span> <em>Social Epistemology</em> 36 (5): 576–85. <a href="https://doi.org/10.1080/02691728.2022.2103475">https://doi.org/10.1080/02691728.2022.2103475</a>.
+</div>
+<div id="ref-GrundmannFacingEpistemicAuthorities2021" class="csl-entry">
+Grundmann, Thomas. 2021. <span>“Facing Epistemic Authorities: Where Democratic Ideals and Critical Thinking Mislead Cognition.”</span> In <em>The Epistemology of Fake News</em>, edited by Sven Bernecker, Amy K. Flowerree, and Thomas Grundmann, 0. Oxford University Press. <a href="https://doi.org/10.1093/oso/9780198863977.003.0007">https://doi.org/10.1093/oso/9780198863977.003.0007</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>This point didn’t come up in class, but we could also say that queer communities often had expertise in <em>what it’s like to life with HIV-AIDS</em> that public health authorities generally lacked. The epistemic interdependence runs both ways; no party has uniformly better knowledge than any other party.↩︎</p></li>
+<li id="fn2"><p>A dedicated Holmes fan might object that Holmes’ abilities were much more dependent on domain-specific reasoning and a vast mental storehouse of esoteric evidence than “innate general intelligence.” This is correct; I vaguely recall a scene in which Watson is surprised that Holmes doesn’t know some commonplace fact (maybe Holmes doesn’t recognize the name of a popular opera singer?), and Holmes explains that he is intentionally ignorant of basically everything that’s not relevant to solving crime. But I would argue that Doyle also portrays Holmes’ capabilities as a matter of innate general intelligence — for example, his brother Mycroft has the same innate genius, just applied to national security and espionage — and the <em>popular</em> understanding of Holmes emphasizes his supposed innate general intelligence.↩︎</p></li>
+<li id="fn3"><p>I’ve also spent a lot of time the last 2-1/2 year working on a project on race science, which might make me oversensitive to the possibility that ideas of innate general intelligence are waiting just offstage.↩︎</p></li>
+<li id="fn4"><p>I think the “epistemic injustice” literature is often trying to do this, which is probably why I don’t find that literature particularly engaging either.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <guid>https://dhicks.github.io/posts/2023-11-12-epistemic-interdependence.html</guid>
+  <pubDate>Sun, 12 Nov 2023 08:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Fact checking ChatGPT: An activity for Critical Thinking</title>
   <dc:creator>Dan Hicks</dc:creator>
@@ -1282,40 +1343,6 @@ Stapleford, Thomas A. 2009. <em>The Cost of Living in America: A Political Histo
  ]]></description>
   <guid>https://dhicks.github.io/posts/2020-05-18-dayton-talk.html</guid>
   <pubDate>Mon, 18 May 2020 07:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>COVID-19 needs adaptive management</title>
-  <dc:creator>Dan Hicks</dc:creator>
-  <link>https://dhicks.github.io/posts/2020-05-12-covid-adaptive-management.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p><em>[I wrote this general-audience piece during the last week of April and first few days of May. I pitched it to a few popular outlets, but couldn’t find it a home.]</em></p>
-<p>What is the infection fatality rate for COVID-19? What groups of people are at greater risk, and what treatments are effective for lowering that risk? How many people have already been infected, and how many of them would be immune to reinfection? Which businesses are safe to reopen now, without triggering a second wave of infections, and under what guidelines? How can we conduct mass testing and contract tracing in a just and ethical way? What will the cultural and political fallout of this pandemic be for our society?</p>
-<p>In the first days of May 2020, we know two things for certain about the answers to all of these questions. First, that almost nothing in certain. The data are incomplete, or unreliable, or simply won’t exist for months or years. Different models reach different conclusions, even when they use basically the same data and only subtly different methods. Preprints are available immediately, but haven’t been vetted by peer review, and may be retracted just as quickly. For any given study, it’s not hard to find a PhD on Twitter who has some scathing (and witty) criticism.</p>
-<p>The other thing we know for certain is that we can’t wait until we’re certain. Policymakers at all levels — from Congress and FDA, through governors and state public health officials, down to mayors and ICU clinicians — need to make decisions now. Even inaction is a kind of action, as we’ve learned over the last three months from the contrasting cases of China and South Korea, New York and California. Any decision we make relies on answers to these questions, either implicit or explicitly.</p>
-<p>A traditional view of the relationship between science and policy has two distinct steps. First scientists produce knowledge. Then policymakers pick up that knowledge and use it to make decisions. This view is simple and clean. Scientists have their job; policymakers have theirs. But it requires science to be <em>finished</em> before policymakers can <em>act</em>. We need an alternative, one that enables science to inform policy even as it tries to reduce uncertainty. Adaptive management provides exactly this alternative.</p>
-<p>Adaptive management was originally developed in natural resources management and conservation biology. Ecosystems, such as forests and fisheries, are extremely complex systems. Organisms interact with each other and their environments in complex ways, and data are often indirect and patchy. Consequently, one forest may not react the same as any other forest in response to the same policy, and these differences can be all but impossible to predict in advance.</p>
-<p>Adaptive management responds to this uncertainty by treat policies as science and science as policy. Like good experiments, good adaptive management policies compare interventions to control areas and systematically collect data. It’s important to identify the major outcomes of interest, while also being on the lookout for signs of unanticipated side-effects are “unknown unknowns.” Managers may even formulate precise hypotheses, and design policies that carefully test those hypotheses. Critically, as circumstances change and understanding improves, the knowledge produced by this scientific research is used to update and adapt policies. This requires ongoing, close collaboration between policymakers, researchers, and people on the ground in the area of interest, such as workers and local residents.</p>
-<p>This does not mean that adaptive management is easy. It challenges deep-seated assumptions about both good policy and good science. On the policy side, stakeholders — often relevant businesses — push for “regulatory certainty,” meaning a stable policy landscape without economic surprises. In part for this reason, Fischman and Ruhl found that US federal agencies often practice “adaptive management lite,” which includes data collection but does not have any way for policies to adapt to improved scientific understanding. On the science side, some standards of “good science” — such as the slow process of peer review — might need to be adjusted or even sacrificed for the sake of rapidly informing policy. And the close collaboration with policymakers on controversial issues risks the accusation that science has been “politicized.” These challenges may explain why adaptive management has not been widely discussed outside of natural resources management policy. Nonetheless, DeFries and Nagendra include control of infectious disease as an area where adaptive management and related approaches can be especially valuable.</p>
-<p>What would an adaptive management approach to lifting stay-at-home orders look like? First, data collection is essential. Communities must be able to know immediately when covid-19 appears in their area, and be able to respond rapidly using measures such as contact tracing. Second, policy changes might be patchy and staggered. Restrictions might be eased in one area a week or two before other areas. Some lessons learned in the early-open area might change the way opening is done elsewhere. Third, research ethics must be respected. Individual residents can’t give their consent to participating in policy experiments. But individuals can be informed about why policies are patchy, or might suddenly change. And individuals can also be given a chance to participate in making democratic policy-science. For example, town halls might be used to give residents an opportunity to share their experiences (data), interpret the most recent findings (science), and recommend courses of action (democracy). Similarly, policies must respect justice, recognizing for example that the burdens of the pandemic have fallen heavily on low-income communities of color.</p>
-<p>Uncertainty does not need to be debilitating. But it does require thinking about policy as science and science as policy. And this, in turn, requires policymakers, researchers, and the public to work together.</p>
-<section id="suggested-readings" class="level1">
-<h1>Suggested Readings</h1>
-<p>DeFries, Ruth, and Harini Nagendra. 2017. “Ecosystem Management as a Wicked Problem.” Science 356 (6335): 265–70. <a href="https://doi.org/10.1126/science.aal1950" class="uri">https://doi.org/10.1126/science.aal1950</a>.</p>
-<p>Fischman, Robert L., and J.b. Ruhl. 2015. “Judging Adaptive Management Practices of U.S. Agencies.” Conservation Biology 30 (2): 268–75. <a href="https://doi.org/10.1111/cobi.12616" class="uri">https://doi.org/10.1111/cobi.12616</a>.</p>
-<p>Mitchell, Sandra D. 2009. Unsimple Truths. Science, Complexity, and Policy. University of Chicago Press.</p>
-<p>Norton, Bryan G. 2005. Sustainability: A Philosophy of Adaptive Ecosystem Management. Chicago: University of Chicago Press.</p>
-<p>Westgate, Martin J., Gene E. Likens, and David B. Lindenmayer. 2013. “Adaptive Management of Biological Systems: A Review.” Biological Conservation 158 (February): 128–39. <a href="https://doi.org/10.1016/j.biocon.2012.08.016" class="uri">https://doi.org/10.1016/j.biocon.2012.08.016</a>.</p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://dhicks.github.io/posts/2020-05-12-covid-adaptive-management.html</guid>
-  <pubDate>Tue, 12 May 2020 07:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
