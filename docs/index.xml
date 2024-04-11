@@ -9,8 +9,30 @@
 <link>https://dhicks.github.io/index.html</link>
 <atom:link href="https://dhicks.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Website description</description>
-<generator>quarto-1.3.433</generator>
-<lastBuildDate>Sun, 12 Nov 2023 08:00:00 GMT</lastBuildDate>
+<generator>quarto-1.3.450</generator>
+<lastBuildDate>Fri, 05 Apr 2024 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Defusing the Democracy Defense: Scientists as Epistemic Representatives</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2024-04-05-dewey-center-talk.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I gave a talk at the Center for Dewey Studies in Carbondale on April 4. Slides are <a href="https://epistemic-rep.netlify.app/">here</a>, the recording is <a href="https://www.youtube.com/watch?v=1tKTnaKNt0Y">here</a>, and the abstract is below.</p>
+<blockquote class="blockquote">
+<p>For decades, traditional notions of objectivity and ideals of politically neutral, “value-free” science have been challenged by the history, philosophy, and social studies of science. For most scholars in these fields, science is unavoidably “shot through with values,” and value-laden decisions appear throughout the “nooks and crannies” of everyday scientific research. But some have pushed back, arguing that accepting value-ladenness would allow scientists to undemocratically impose their values on everyone else. This is the “democracy defense” of value-free science.</p>
+<p>One line of response to the democracy defense appeals to ideas of deliberative democracy, imagining increased public participation in science-based policymaking. But deliberative democratic approaches have difficulty reaching into the “nooks and crannies” of scientific research itself, where it would be impractical for scientists to consult with the public.</p>
+<p>In this talk, I consider whether the theory of political representation might be useful for thinking about when and how the judgment of a select few can democratically represent the general public. In other words, can we think of scientists as epistemic representatives, more or less the way politicians serve as political representatives? I suggest that recent work in political theory, on informal representation and systems of democratic representation, are promising for such an approach.</p>
+</blockquote>
+
+
+
+ ]]></description>
+  <guid>https://dhicks.github.io/posts/2024-04-05-dewey-center-talk.html</guid>
+  <pubDate>Fri, 05 Apr 2024 07:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Epistemic interdependence or epistemic hierarchy</title>
   <dc:creator>Dan Hicks</dc:creator>
@@ -1317,32 +1339,6 @@ Stapleford, Thomas A. 2009. <em>The Cost of Living in America: A Political Histo
 
  ]]></description>
   <guid>https://dhicks.github.io/posts/2020-05-18-strengthening-transparency.html</guid>
-  <pubDate>Mon, 18 May 2020 07:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Talk: “When Virtues are Vices: The Weaponization of Scientific Norms”</title>
-  <dc:creator>Dan Hicks</dc:creator>
-  <link>https://dhicks.github.io/posts/2020-05-18-dayton-talk.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Back in March, I was supposed to present at a <a href="https://udayton.edu/artssciences/academics/philosophy/science-and-values/index.php">colloquium at the University of Dayton</a> on “Doing Science in a Pluralistic Society.” Due to the pandemic, the colloquium was turned into a virtual conference over two Fridays in April. The recording of my talk is now <a href="https://www.youtube.com/watch?v=R4-nOlvOhq4">on Youtube</a> and at the bottom of this post.</p>
-<section id="when-virtues-are-vices-the-weaponization-of-scientific-norms" class="level2">
-<h2 class="anchored" data-anchor-id="when-virtues-are-vices-the-weaponization-of-scientific-norms">When Virtues are Vices: The Weaponization of Scientific Norms</h2>
-<p>Conservative critics of mainstream climate science and environmental health science often “weaponize” traditional scientific virtues to manufacture doubt and slow the regulatory process. For example, climate skeptics appeal to Popperian falsifiability and Mertonian norms such as organized skepticism, arguing that mainstream climate science is unfalsifiable and propped up through closed scientific communities. The “Secret Science Reform Act,” which was passed by the US House of Representatives in both 2014 and 2015, would have prohibited US EPA from using “scientific technical information” unless it was “publicly available online in a manner that is sufficient for independent analysis and substantial reproduction of research results.”</p>
-<p>These rhetorical appeal to traditional scientific virtues make it difficult to dismiss these anti-environmentalists as “anti-science.” Indeed, the effect of these appeals is to represent anti-environmentalists as defenders of science from the threats of politicization.</p>
-<p>I first argue that this kind of appeal to scientific virtues depends on a “narrowly epistemic” conception of the aims of scientific research. On this conception, the sole constitutive aim of science is to produce impartial knowledge. Other aims — such as protecting human health and the environment — are less important. The traditional scientific virtues reflect this strict separation of constitutive epistemic aims and practical uses of science.</p>
-<p>I go on to propose an alternative conception of the aims of scientific research, according to which epistemic and pragmatic aims of science can be equally important and mutually influencing. This view of the aims of science supports an alternative understanding of scientific virtues. On this understanding, when traditional scientific “virtues” are weaponized by conservative anti-environmentalists — when they are used to delay protective regulation, frustrating the constitutive pragmatic aims of a scientific field — they are actually vices rather than virtues.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/R4-nOlvOhq4" frameborder="0" allow="picture-in-picture" allowfullscreen="">
-</iframe>
-
-
-</section>
-
- ]]></description>
-  <guid>https://dhicks.github.io/posts/2020-05-18-dayton-talk.html</guid>
   <pubDate>Mon, 18 May 2020 07:00:00 GMT</pubDate>
 </item>
 </channel>
