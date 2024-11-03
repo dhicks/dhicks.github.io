@@ -15,18 +15,15 @@ about:
       href: https://github.com/dhicks/
 #     - icon: twitter
 #       href: https://twitter.com/danieljhicks/
-    - icon: mastodon
-      text: Mastodon
-      href: https://mastodon.social/@danhicks
     - icon: envelope
       text: Email
-      href: mailto:dhicks4@ucmerced.edu
+      href: mailto:danhicks@ucmerced.edu
 
 ---
 
-I am a philosopher of science, data scientist, and science policy researcher.  My primary academic research focuses on the role of ethical and political values in science and public scientific controversies.  I'm also interested in bibliometrics, the use of statistics in scientific practice, and data ethics.  As a data scientist, much of my current work involves text and bibliometric data.  
+I am a philosopher of science, computational social scientist, and science policy researcher.  My primary academic research focuses on public scientific controversies, and related issues such as the role of ethical and political values in science, and trust in science.  I also have interests in the use of statistics in scientific practice,  computational methods in HPSTS (primarily empirical methods such as text mining, rather than purely simulation-based methods), and philosophy of data science.  
 
-My pronouns are they/them/their.  Since 2019 I've been a faculty member at UC Merced. 
+My pronouns are they/them/their.  Since 2019 I've been a faculty member at UC Merced, and received tenure in 2023.  
 
 <details>
 
