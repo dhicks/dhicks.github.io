@@ -10,7 +10,30 @@
 <atom:link href="https://dhicks.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Website description</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Fri, 04 Oct 2024 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 08 Nov 2024 08:00:00 GMT</lastBuildDate>
+<item>
+  <title>The parable of fire ecology</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2024-11-08-fire-ecology.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><em>On Wednesday, after the election, I experienced a minor depressive episode: anhedonia, insomnia, loss of appetite, GI weirdness. I cleared the few remaining things on my schedule and went up to Ahwahne — Yosemite Valley — for the day. In my Environmental Philosophy and Politics class, we’ve been talking a fair amount about prescribed burning, and even took a field trip to Yosemite NP a few weeks ago to examine the fire landscape of the park in person. This inspired the following parable.</em></p>
+<p>We Californians live in a landscape that is prone to catastrophic megafires. This was not intentional. No one set about trying to make our forest ecosystems as fire-prone as possible. Indeed, the intention was the opposite: to eliminate fire, in order to maximize the exploitation of the land for people and profit (with a subtle but very real emphasis on the second part). But it turns out that a landscape that’s very suitable for intense exploitation is also very suitable for intense conflagration.</p>
+<p>The good news is that this problem is fixable. We can restore the landscape, cleaning up the accumulated debris and ladder fuels that turn ordinary sparks and healthy low-intensity fires into mass destruction events. We don’t necessarily understand all of the things that we need to do. But some initial steps are pretty clear.</p>
+<p>That’s the good news. There’s also bad news. The work is hard, extensive, and slow. It took decades to create our current landscape, and it will be decades to restore it. We will see progress over the course of our lifetimes — but probably only fairly modest progress. The work that needs to be done is also controversial, with opposition from both those who benefit from an exploitable landscape and those who, operating under dated ideologies of “let nature run its course,” see the work that needs to be done as immoral.</p>
+<p>What can we do? Pick a patch and get to work. Don’t forget about the forest, but focusing your attention on one stand of trees will let you make a visible difference on a human timescale. And work in solidarity. The work needs different skills, capacities, and resources. No one person can do everything that needs to be done, and we all can contribute in our own way.</p>
+<p>Above all, remember that a better world is possible, and we are the ones we’ve been waiting for.</p>
+
+
+
+ ]]></description>
+  <guid>https://dhicks.github.io/posts/2024-11-08-fire-ecology.html</guid>
+  <pubDate>Fri, 08 Nov 2024 08:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Writing a draft is sketching, not vomiting</title>
   <dc:creator>Dan Hicks</dc:creator>
@@ -1293,28 +1316,6 @@ Stapleford, Thomas A. 2009. <em>The Cost of Living in America: A Political Histo
  ]]></description>
   <guid>https://dhicks.github.io/posts/2021-06-26-city-sim-dynamics.html</guid>
   <pubDate>Sat, 26 Jun 2021 07:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Talk: Open science can’t solve the replication crisis</title>
-  <dc:creator>Dan Hicks</dc:creator>
-  <link>https://dhicks.github.io/posts/2021-03-19-open-science-i.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>I gave this talk yesterday at the <a href="https://pencelab.be/events/ds2-2021/">Digital Studies for Digital Science (DS2)</a> online conference. You can watch the recording <a href="https://www.youtube.com/watch?v=uheU_W7_oz8">on YouTube</a>.</p>
-<section id="open-science-cant-solve-the-replication-crisis" class="level2">
-<h2 class="anchored" data-anchor-id="open-science-cant-solve-the-replication-crisis">Open science can’t solve the replication crisis</h2>
-<p>In the last few years, concerns about the replication crisis in biomedicine and social psychology have bolstered the open science movement, and played a significant role in arguing for open science requirements at scholarly journals and even government agencies — as in the case of the US Environmental Protection Agency’s “Strengthening Transparency in Regulatory Science” proposed rule. However, the discourse surrounding the replication crisis frequently conflates two very distinct desiderata of experimental-computational science, namely, replicability and reproducibility. Following definitions proposed by the US National Academies, <em>reproducibility</em> is a purely computational notation: the ability of an independent researcher to produce <em>numerically identical</em> output from an analysis, using the <em>same</em> data and analysis code. By contrast, <em>replicability</em> is the ability of an independent researcher to reach <em>qualitatively similar</em> conclusions by repeating an experiment, using the same analytical approach but collecting <em>different</em> data. I first argue that reproducibility has minimal (but non-zero) epistemic value, comparable to mere logical consistency. Next I survey a variety of proposed causes for the replication crisis: p-hacking, publication bias, insufficient statistical power, unrepresentative samples, publish-or-perish incentive structures, noisy measurement, underspecified phenomena, imprecise theory, data mismanagement, software bugs, and fraud. I argue that open science requirements effective promotely reproducibility, but promote replicability only insofar as replication failures are due to causes that leave traces (as in historical science) in data and code. Because very few of the proposed causes leave such traces, open science cannot solve the replication crisis.</p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://dhicks.github.io/posts/2021-03-19-open-science-i.html</guid>
-  <pubDate>Fri, 19 Mar 2021 07:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
