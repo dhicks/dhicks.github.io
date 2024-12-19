@@ -10,7 +10,55 @@
 <atom:link href="https://dhicks.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Website description</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Fri, 08 Nov 2024 08:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 17 Dec 2024 08:00:00 GMT</lastBuildDate>
+<item>
+  <title>How I’m handling LLMs (Fall 2024 edition)</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2024-12-17-LLMs.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>With the Fall term wrapping up in Northern American higher ed, a lot of my fellow humanities professors are reflecting on the way they feel forced to change their writing assignments to respond to LLMs. A lot of people are moving to only doing in-class writing — and bemoaning the loss of longer, more involved paper assignments.</p>
+<p>This semester I taught an upper-division undergrad course that satisfied a “Writing in the Discipline” GE requirement, for which students are supposed to write roughly 5,000 words. So, to pass the class with a B,<sup>1</sup> this semester my students needed to write four short papers (highly structured, 4 paragraphs, 300-400 words each), revise two of those short papers based on my feedback, revise and expand one into a mid-length paper (about 1k words), and then revise and expand it again into a “full paper” (about 2k words). To get an A, in addition they needed to either write a second mid-length paper or submit a draft of the “full paper” about a month early for an extra round of feedback and revision.</p>
+<p>None of this writing was done in class. Out of 24 students, I had one who used an LLM in a way that violated the class LLM policy, and that was on a single assignment. Perhaps there are a few more that I’ve missed; but I’m not seeing “they’re all cheating!” like some of my colleagues are reporting.</p>
+<p>The purpose of this post is to document what I did. Maybe I got lucky? Maybe it won’t work in the future? Or maybe it’ll work for you too?</p>
+<p>First, I had the students read <a href="https://drive.google.com/file/d/13afWz7Nw5zRL8abad4aZJM9vCCluaPus/view">a pair of essays on the value of first drafts</a>.<sup>2</sup> The first is Anne Lamont’s “Messy First Drafts,” from the ’90s; the second is a recent blog post that references the first and argues against using an LLM to write the first draft of a paper. (In the future, I plan to include <a href="https://prodev.illinoisstate.edu/ai/usage/">this taxonomy of LLM usage</a> as part of the assigned reading.)</p>
+<p>Second, I <a href="https://docs.google.com/document/d/1GbOOTYEB0G4W5dkCnbkFOOUPMH-BEopfc22OZKpX8Ng/edit?tab=t.0">anonymously collected students’ experience and thoughts on LLMs</a>. I think anonymity was important for candor here. In class, we discussed the two essays, and I had them read and react to another student’s anonymous paragraph.</p>
+<p>Third, I had the students determine our class LLM policy. The taxonomy I linked up above was really helpful for structuring this discussion and the resulting policy. The class deliberated in small groups, then collectively, and voted to accept the policy for each potential use. There was some good debate over “brainstorming” and the exact wording for “co-create and revise.” The vote was generally unanimous; for one or two levels a couple-three were opposed. This was the result, as added to the syllabus:</p>
+<blockquote class="blockquote">
+<p>In October, the class discussed the use of LLMs (large language models, such as ChatGPT) on course assignments. Using this taxonomy, we deliberated and voted to adopt the following policy. Violations are a form of academic misconduct.</p>
+<ol start="0" type="1">
+<li><p><strong>No use:</strong> Always permitted, except when a particular assignment explicitly requires use of a LLM. Except for those assignments, you’re never required to use a LLM in any way.</p></li>
+<li><p><strong>Organizational:</strong> Permitted, but you’re encouraged to check the LLM output for accuracy.</p></li>
+<li><p><strong>Brainstorming:</strong> Permitted only for developing the “big picture” of an assignment. You’re also encouraged to check the LLM output for accuracy.</p></li>
+<li><p><strong>Feedback:</strong> Permitted, but you must explicitly state that you used the LLM and note how.</p></li>
+<li><p><strong>Co-create and revise:</strong> Depends on how the LLM is used to co-create and revise your work. For developing an outline, you may use the section headings and overall structure, but not further details that the LLM provides, such as a suggested thesis or argument. For drafting the paper, LLM use is prohibited.</p></li>
+<li><p><strong>Unrestricted, attributed:</strong> Generally prohibited. Some particular assignments may explicitly permit or require using a LLM.</p></li>
+<li><p><strong>Unrestricted, unattributed:</strong> Always prohibited.</p></li>
+</ol>
+</blockquote>
+<p>Personally, I would not have permitted “brainstorming” or the outline-development use under “co-create and revise.” But I suspect respecting their autonomy — literally! — was important for the (apparent) high rate of compliance.</p>
+<p>Fourth, each writing assignment had to include a wrapper, which among other things asked what resources were used on the paper, how they were used, and which was most useful. The resources included things like meeting 1-1 with me, the Writing Center, and Grammarly, along with an LLM. Grammarly is extremely popular; most of my students reported using it. Only a few students reported using an LLM, and most often it was to help summarize a reading or other source (which falls under “organizational” use).</p>
+<p>The only violation I identified and acted upon happened a couple of weeks after the class formulated their policy. The fifth thing I did was handle this as a learning opportunity rather than the first stage of a disciplinary process. I asked the student to meet with me, and started by saying that I didn’t want this to become a disciplinary process. We talked about how they had used the LLM on the paper, and the stylistic telltales that made me suspect the policy had been violated. In particular, I explained how ChatGPT is very good at using sophisticated vocabulary and complex grammar to make very generic, shallow points. It’s not very insightful, and can’t put together a very compelling argument by philosophical standards. These points seemed to be well-taken. We also reviewed the LLM policy, and I reminded them of some elements of the class discussion behind it. After about 15 minutes of discussion, the student agreed that they had violated the policy, and accepted my offer to rewrite the paper from scratch. They did so, I gave them full credit, and we were able to move on.</p>
+<p>More generally, I think it’s important to avoid an antagonistic relationship with my students. In my view, academic misconduct has two primary causes: the intense demands on students’ time and mental health; and a purely credentialist attitude towards education, that is, an attitude that the sole value of education is a formal credential (and not even instrumentally useful skills). Increased surveillance and threats likely exacerbate the demands on students and further alienate them from their coursework. This means they’re more rather than less likely to engage in misconduct. On the other hand, accommodating students’ needs and getting them to reflect on skills like writing a first draft likely reduce the chances of misconduct.</p>
+<p>This approach requires being comfortable with “false negatives,” students who engage in misconduct — say, having ChatGPT write their papers from scratch — but aren’t caught and disciplined. Here I like the adage “You can lead a horse to water but you can’t make them drink.” Students who engage in misconduct in my classes are likely either struggling with major personal crises or have become irremediably cynical about the value of education. In both cases, they’re beyond my ability to help. That’s a sad and frustrating realization, but it’s one that allows me to devote my time and attention to teaching rather than prosecuting misconduct cases.</p>
+
+
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>A couple years ago, I switched to primarily effort-based grading, and generally only give two grades, A or B.↩︎</p></li>
+<li id="fn2"><p>“Right, like they’d actually do the reading.” I might need to write a post about this sometime, but I run my upper-division courses off of slides that students create before class meets. This has been very effective at getting them to do the reading.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <guid>https://dhicks.github.io/posts/2024-12-17-LLMs.html</guid>
+  <pubDate>Tue, 17 Dec 2024 08:00:00 GMT</pubDate>
+</item>
 <item>
   <title>The parable of fire ecology</title>
   <dc:creator>Dan Hicks</dc:creator>
@@ -1292,30 +1340,6 @@ Stapleford, Thomas A. 2009. <em>The Cost of Living in America: A Political Histo
 </div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2023-01-25-legitimacy-vfi.html</guid>
   <pubDate>Tue, 24 Jan 2023 08:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Leftist dynamics for city simulation games</title>
-  <dc:creator>Dan Hicks</dc:creator>
-  <link>https://dhicks.github.io/posts/2021-06-26-city-sim-dynamics.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>I’ve been playing <em>Cities: Skylines</em> recently, and that prompted me to go back and re-read Kevin Baker’s <a href="https://logicmag.io/play/model-metropolis/">Model Metropolis</a>, on the libertarian assumptions baked in to the dynamics of <em>SimCity</em> and its descendants, including <em>C:S</em>.</p>
-<p>City simulators aren’t static. Successive games have added new dynamics and more complex models of older dynamics. Turning all of this over, I asked myself what dynamics I would like to see in a city simulator, that would (a) mitigate or replace the libertarian assumptions Will Wright took from Forrester, and (b) would enable users/players to explore some of the pressing issues in today’s cities? I can’t claim any expertise whatsoever in urban geography, sociology, or dynamics, so I would really be interested in how folks who do have such expertise would answer these questions. For what it’s worth, here are some of the things I came up with.</p>
-<p><strong>Cost of living</strong> and <strong>land/building/business ownership</strong>. Even in rural California we have conversations about homelessness, lack of affordable housing, and the cost of living. Insofar as <em>C:S</em> has a general measure of how well your city is doing, it’s land value. But, in the real world, protecting and promoting land value reflects the interests of owners rather than renters or employees; increasing land value tends to increase the cost of living, gentrification, homelessness, and sprawl. The simulation could also explore uncommon forms of ownership, such as co-operatives and publicly-owned residences or businesses.</p>
-<p><strong>Alternative services</strong>, especially for policing and jails. Last summer the revival of the Black Lives Matter movement prompted renewed calls for abolition of policing and jails. In <em>C:S</em>, increasing police presence causes reduced crime which increases land values. There are no downsides to the expansion of police, and no way to explore non-carceral alternatives such as greater mental health and counseling services. Notably, <em>C:S</em> provides a wide range of transportation options, giving players ways to explore cities that emphasize bicycles and public transit rather than cars. It would be great to be able to do the same with policing.</p>
-<p><strong>Factions</strong> are the first of two mechanics I’d like to see adopted from <em>Stellaris</em>, a 4X strategy game developed by Paradox (Paradox is the publisher of <em>C:S</em>). Briefly, factions have a happiness score based on the policies that the player has adopted; depending on how (un)happy the faction is, and the share of the population that supports the faction, they can give bonuses or penalties to gameplay. For a city simulation, I can imagine factions based on real-world movements such as NIMBYs, YIMBYs, and social housing advocates; small businesses, unions; abolition and “law and order”; and environmental justice. While not the most sophisticated simulation of democracy, factions would bring a model of politics into a genre that’s basically autocratic on its face. Perhaps, simulating the tension between a mayor and city council, significantly powerful factions would be able to enact or retract policies against the player’s will.</p>
-<p>The need to hire <strong>managers</strong> is the other mechanic I’d like to see brought over from <em>Stellaris</em>. In <em>Stellaris</em>, you need to hire various officials to run your empire — scientists to conduct expeditions, governors of regions, military leaders. These officials bring bonuses (and sometimes penalties), and can also be allied with factions. Over time they gain experience, becoming more effective; but can also die. In a city simulation these managers would be heads of major service areas: policing, fire, education, health, sanitation, traffic, parks, etc. I can imagine complex interactions with the faction dynamics; different factions might support rival police chiefs, for example.</p>
-<p>Finally, it would be really interesting to add <strong>explicit options to explore alternative dynamics</strong>, especially for controversial processes. For example, <em>C:S</em> uses the simple model that increased police causes lower crime causes people to be happy causes property values to increase. But Marxist and critical race analyses of policing suggest a different model of the effects of policing: increasing police protects ownership, which increases property values; this makes property owners and rich (white) people happy, but increases cost of living for poor people (of color) and (also) makes them unhappy directly, while increasing crime (as it’s measured by arrests and other data produced by the police), which can increase support for “law and order” factions. <em>C:S</em> already supports <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2025147082">mods that change the population dynamics</a>, and it’s easy to turn these on and off to compare different dynamics.</p>
-
-
-
- ]]></description>
-  <guid>https://dhicks.github.io/posts/2021-06-26-city-sim-dynamics.html</guid>
-  <pubDate>Sat, 26 Jun 2021 07:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
