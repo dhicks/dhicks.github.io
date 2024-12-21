@@ -38,6 +38,7 @@ format:
   html:
     theme: yeti
     css: styles.css
-
+    copyright: "Dan Hicks"
+    license: CC BY-NC
 
 
