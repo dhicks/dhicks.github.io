@@ -10,7 +10,139 @@
 <atom:link href="https://dhicks.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Website description</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Tue, 17 Dec 2024 08:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 21 Dec 2024 08:00:00 GMT</lastBuildDate>
+<item>
+  <title>Weaponizing Value Freedom in Defense of Race Science</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2024-12-22-weaponizing-value-freedom.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>The aim of this blog post is to illustrate the ways value freedom is weaponized in defense of race science by <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span>.</p>
+<p>Following the definitions in <span class="citation" data-cites="HicksRaceScienceMainstream2024">Hicks and Lobato (2024)</span>, I understand <em>scientific racism</em> as the social practice of purporting to justify racial inequality and colonialism by appealing to the epistemic authority of science. And <em>race science</em> refers to scientific and/or pseudoscientific research, including research products (journal articles, etc.), that can be utilized for scientific racism.</p>
+<p><span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> is one of a pair of articles replying to <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span>. <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span> offer a critique of <em>racial hereditarianism research</em> (RHR), which they characterize as research products that</p>
+<blockquote class="blockquote">
+<p>claim that folk racial classifications are biologically meaningful categories and that racial differences in intelligence test scores, educational attainment, income, and crime partly or even primarily originate from genetic differences between races. (497)</p>
+</blockquote>
+<p>I understand RHR as a specific line of race science.</p>
+<p>A real paper would give more context to the exchange of papers between these two groups of authors here.</p>
+<p>I argue that <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> weaponize value-freedom in a number of ways (to be discussed below), claiming that <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span> violate value-freedom and therefore their critique of RHR/race science can be dismissed.</p>
+<p>I first make some preliminary remarks on value-freedom, as I use the term here. Next I assess <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span>’s appeal to Robert Merton’s norms of science. I discuss the importance of implicature in the relationship between race science and scientific racism, and conclude by reflecting on the way a “value freedom tu quoque” are used to deflect charges of violating value freedom.</p>
+<section id="value-freedom" class="level1">
+<h1>Value freedom</h1>
+<p>In this post, I use the term “value freedom,” rather than the more common term in philosophy of science, “the value-free ideal” or VFI. Philosophers’ understanding of VFI has a narrow scope: it prohibits only the influence of non-epistemic values in a particular “core,” “epistemic” “stage” of scientific inquiry. <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> do not appear to use such a narrowly-scoped idea; instead they appeal to a conceptual separation between research and its application and the political motivations of their interlocutors independent of “stages” of inquiry.</p>
+<p>These ideas — VFI, the research/application distinction, and motivations in general — are related, but logically distinct. <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> do not appeal to VFI, in the strict sense; but they do appeal to a cluster of related ideas, that can be usefully grouped under the general heading of “value freedom.”</p>
+<p>The research/application distinction can be seen in the way <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> respond to the argument that the Buffalo mass shooter’s cited race science research in his manifesto. They argue that this critique is “somewhat like demanding that chemistry be outlawed and its practitioners smeared as having blood on their hands, just because some terrorists use chemistry to make poisons or explosives that kill people” (2).<sup>1</sup> Later, they provide quotations from earlier papers that recognize “that more must be done to avoid politicized misuse of socially salient research” because “a tendency for some of our ideas to be misappropriated by highly politically motivated individuals online,” and so “we have failed to make sufficient efforts to clearly disconnect our work from political ideologies” (4). In the immediately following paragraph, they complain that “despite this apparent candor and restraint, such researchers somehow still are cast as shouldering responsibility whenever some disturbed individual misappropriates some of their ideas” (4).</p>
+<p>In these passages, <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> separate race science research from its (harmful) downstream application. The chemical weapons analogy and the final quotation from page 4 claim that race scientists are not responsible for these applications. The “failed to make sufficient efforts” quotation accepts responsibility — but apparently only for insufficient value freedom <em>within</em> their research. Their responsibility does not extend to the distinct act of “misappropriat[ion].”<sup>2</sup></p>
+<p>Near the end of §3, <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> claim that “BJ&amp;W’s real motivation is their political ideology … rather than any balanced appraisal of the costs and benefits to society of” race science (3). From here, they assert that race science is opposed because it “contradict[s] the sacred values of political groups,” evoke the Lysenko affair, claim that “the radical left” does not distinguish between “RHR, genetics, evolutionary psychology, eugenics, systemic racism and sexism, IQ testing, and, indeed, Mertonian norms of science themselves,” and conclude that <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span>’s policy proposals would lead down a slippery slope to broad censorship (4-5). This line of thought alleges that <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span> are violating value freedom, but not (merely) in the “core” stage of gathering evidence and evaluating hypotheses, i.e., within the scope of VFI. The violation appears to be either holding left-wing values itself or — to be charitable to <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> — perhaps using left-wing values as premises in policy arguments.</p>
+</section>
+<section id="mertonian-and-anti-mertonian-norms" class="level1">
+<h1>Mertonian and Anti-Mertonian Norms</h1>
+<p>The title and §1 claim that <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span> are proposing to replace the “Mertonian norms” — the “ethos of science” described by sociologist Robert Merton — with a set of “anti-Mertonian norms.”</p>
+<p>If this were a real paper, I would summarize the “anti-Mertonian norms” here. I would also note that <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> misquote <span class="citation" data-cites="MertonNoteScienceDemocracy1942">Robert K. Merton (1942)</span> (121), renaming the norm of communism as “communality.”</p>
+<p>The appeal to Merton to defend value freedom is ironic, because Merton presented the “ethos of science” as an explicitly ideological argument against fascism — especially in Germany, and especially race science — and for liberal democracy <span class="citation" data-cites="MertonScienceSocialOrder1938 MertonNoteScienceDemocracy1942">(Robert K. Merton 1938; Robert K. Merton 1942)</span>.<sup>3</sup></p>
+<p><span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> cite <span class="citation" data-cites="MitroffNormsCounterNormsSelect1974">Mitroff (1974)</span> as a reference for the concept of “anti-norms” (Mitroff’s term is “counter-norms”) but miss the significance of not only Mitroff’s paper but also Merton’s later work on norms of science as summarized on the first few pages of Mitroff’s paper. In Merton’s later work, in any complex social practice such as science, the “dominant [norms] alone would not be flexible enough to provide for the endlessly varying contingencies of social relations” <span class="citation" data-cites="MitroffNormsCounterNormsSelect1974">(Merton and Barber as quoted by Mitroff 1974, 579)</span>. Contrasting, “subsidiary counter-norms” develop to enable this necessary flexibility. For example, sociologists and philosophers — including Merton himself — have long recognized that, along with and in contrast to communism, scientists are often motivated by self-interest, chasing credit and prestige, under the “priority rule” that the first to publish a significant new discovery receives all the credit for it <span class="citation" data-cites="StrevensRolePriorityRule2003">(Strevens and Journal of Philosophy, Inc. 2003)</span>.</p>
+<p>In this light, even as characterized by <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span>, the “counter-norms” proposed by <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span> can be seen as giving useful flexibility to an excessively narrow reading of Merton’s norms:</p>
+<ul>
+<li><em>secrecy</em> recognizes that some scientific evidence or even findings are too sensitive and potentially dangerous to publish (locations of endangered species that might be targeted by poachers; Indigenous sacred sites that also carry Traditional Ecological Knowledge; instructions for producing weapons of mass destruction)</li>
+<li><em>particularism</em> recognizes that the work of scientific bad actors should receive, at a minimum, heightened scrutiny (individuals who have committed serious research misconduct; cranks who refuse to respect the uptake norm requiring response to criticism)</li>
+<li><em>interested</em> recognizes that, when scientific research carries elevated risk for harmful downstream social consequences, it is appropriate to require a more demanding standard of evidence <span class="citation" data-cites="KitcherArgumentFreeInquiry1997 HavstadSensationalScienceArchaic2021 MeyerWrestlingSocialBehavioral2023">(Kitcher 1997; Havstad 2021; Meyer et al. 2023)</span></li>
+<li><em>organized dogmatism</em> designates certain questions as so thoroughly studied and rival research programs so degenerate <span class="citation" data-cites="LakatosFalsificationMethodologyScientific2004">(Lakatos 2004)</span> that there is no expected value in continuing to regard those questions as open and those rival research programs as pursuitworthy (anthropogenic climate change)</li>
+</ul>
+<p>In other words, taking the Mertonian norms as the exclusive norms for a scientific community would be corrosive, as it would leave the community vulnerable to cranks, fraudsters, and merchants of doubt.</p>
+<p>Both Merton’s norms and the “<span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span> counter-norms” require the exercise of judgment. When exactly does a norm apply, what exactly does it require or prohibit, and how should it be balanced against other, conflicting norms? Scientists are likely to disagree about such questions, and scientific communities must necessarily engage in internal politics to establish the bounds of reasonable disagreement over the answers. Both <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> and <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span> should be read as salvos in a political conflict unfolding within contemporary psychology.</p>
+</section>
+<section id="implicature-and-the-denial-of-responsibility" class="level1">
+<h1>Implicature and the Denial of Responsibility</h1>
+<p>The concept of implicature was developed by the philosopher of language Paul Grice to characterize the way in which language often communicates meaning beyond its explicit content and strict deductive entailments. An example comes from §1 of <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> itself. At no point do <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> say explicitly that the “anti-Mertonian norms” they attribute to <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span> will be corrosive, destructive, or otherwise bad. Instead, they argue that the Mertonian norms “embody centuries of research experience, and reflect a long-established consensus among academic scientists about ways of doing research that tend to promote the highest rate of scientific progress” (2). Taken literally, this argument does not entail anything whatsoever about the “anti-Mertonian norms”; strictly speaking, it is logically irrelevant to the latter norms. But the implicature is that the latter norms will tradition, reject consensus, and will frustrate rather than promote scientific progress.<sup>4</sup></p>
+<p>Implicature is crucial to the phenomenon of racial dogwhistles. Phrases like “wolf pack” and “welfare mothers” do not explicitly refer or deductively entail anything about African Americans, and thus allow their users to deflect charges of racism. But in the US political context these phrases readily communicate pernicious stereotypes that young Black men are dangerous, subhuman criminals and Black women are lazy abusers of the social safety net.</p>
+<p>Implicature is context-dependent. These particular racial dogwhistles are likely to be less effective outside the US.</p>
+<p>Implicature can also be independent of the speaker’s communicative intent. Someone can invoke racial stereotypes without realizing they are doing so, and indeed even when they would explicitly reject these stereotypes.</p>
+<p>I propose that implicature is often what connects race science to scientific racism. A piece of research can be taken up and used to purportedly justify racial inequality <em>not</em> because of the researcher’s own racist intentions (indeed, they might explicitly denounce such intentions) or its explicit conclusions (indeed, the research might not say anything explicit about race at all) but because <em>in a certain context</em> it is amenable to being interpreted as providing such a justification. <span class="citation" data-cites="WillsAreClustersRaces2017">(For analysis of an example from human genomics, see Wills 2017.)</span></p>
+<p>The idea of “misuse” or “misappropriation” is crucial to the way <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> deny responsibility for scientific racist use of race science research, as in their responses to the Buffalo shooter manifesto. “Misuse” appears six times in the five-page paper, and “misappropriation” three times (all on page 4).</p>
+<p>But implicature significantly complicates the idea of “misuse” or “misappropriation” of scientific research. Because implicature extends beyond the speaker’s intention, a simplistic conception of misuse — in terms of how a researcher intended their research to be used — is inapt, and provides the same rhetorical cover that dogwhistles provide race-baiting politicians and “just asking questions” provides conspiracy theorists.<sup>5</sup> A more robust approach might come from the law of torts, and the notion of “reasonable foresight,” that is, whether a “reasonable scientist” could have foreseen this application of their research and its consequences <span class="citation" data-cites="DouglasSciencePolicyValuefree2009">(Douglas 2009 ch.&nbsp;4)</span>. As with norms and counter-norms, the bounds of what counts as a “reasonable scientist” and what they can foresee are necessarily a political issue.</p>
+<p>Again, implicatures are context-dependent, and <span class="citation" data-cites="KitcherArgumentFreeInquiry1997">Kitcher (1997)</span> identified some key features of contemporary Anglophone societies that support scientific racist implicatures. Briefly, these features are asymmetries in the uptake of racial differences research: research that supports scientific racism will be taken up and the degree of support exaggerated, while research that challenges scientific racism will be rejected (not taken up) and its degree of challenge downplayed.</p>
+<p><span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> claim that <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span>’s proposals would “backfire” with three kinds of “unintended consequences” (3): blocking research that uncovers evidence supporting “racial environmentalist hypotheses”; blocking research that challenges views that circulate among white nationalists,<sup>6</sup> and third, these proposals “would also apply very broadly to all of ‘mainstream human genetics’” (4).</p>
+<p>The first two unintended consequences founder on Kitcher’s asymmetries. Insofar as they obtain, both kinds of research would tend to be rejected and their degree of challenge to scientific racism downplayed.</p>
+<p>In addition, both kinds of research carry scientific racist implicatures, namely, that it is an open and scientifically legitimate possibility that there is a “natural” racial hierarchy based on differences in “innate” ability. Even research that is intended to undermine racial hierarchy, is expected to produce evidence challenging scientific racism, and actually does produce such evidence, assumes that the question of “natural” racial hierarchy remains unanswered.</p>
+</section>
+<section id="weaponizing-value-freedom-to-deflect-charges-of-violating-value-freedom" class="level1">
+<h1>Weaponizing value freedom to deflect charges of violating value freedom</h1>
+<p>A core element of <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span>’s critique is that race science promotes the pernicious and morally noxious worldview of scientific racism. This critique does not need to assume value freedom: one can regard scientific racism as pernicious and morally noxious without assume that science should be, in some general sense or another, value free. But it can be read through the lens of value freedom: race science promotes non-neutral values and therefore race science should be avoided. <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span> occasionally use something like this framing: “we dispute claims of ‘value neutrality’ for this research” (498); “These conclusions are not value-free or ideologically neutral” (499).</p>
+<p>A major thread of <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span>’s reply is a tu quoque that <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span> have violated value freedom, in the ways discussed above. This argument strategy has a long history in responses to critiques that science promotes racism, sexism, or other forms of injustice. In the “science wars” of the 1990s it was used against feminist critiques of sexist science <span class="citation" data-cites="LloydObjectivityDoubleStandard1995 LloydScienceAntiScienceObjectivity1997">(E. A. Lloyd 1995; E. Lloyd 1997)</span>. It is deployed today in rants that claim DEI initiatives undermine “merit in science.”</p>
+<p>Such arguments are often logically irrelevant, in two ways. First, they do not provide any reason or evidence to think that race scientists have not violated value freedom. Even if we accept that <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span> violated value freedom, this does not give us a reason to think that, say, Richard Lynn did not violate value freedom. Second, these arguments are often made against interlocutors who do not accept value freedom, do think that science should necessarily be value free. (The difference between rejecting race science on the basis of value freedom and rejecting it on the basis of antiracist values.) So the tu quoque does not show that the interlocutor is being inconsistent or hypocritical, endorsing a principle while also violating it.</p>
+<p>These arguments often have other problems, like the ones I’ve identified here: based on a superficial misreading of source material, applied inconsistently or without thinking through the logical implications of a position, and so on.</p>
+<p>Nonetheless, these arguments can be rhetorically effective, insofar as they shift the focus of debate from race science to its critics, DARVO-style, and insofar as the audience does accept value freedom and consequently regards the critics as discredited and not worth engaging.</p>
+<p>In this sense, these arguments weaponize value freedom to deflect charges of violations of value freedom.</p>
+
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-BirdConfrontingScientificRacism2024" class="csl-entry">
+Bird, Kevin A., John P. Jackson Jr., and Andrew S. Winston. 2024. <span>“Confronting Scientific Racism in Psychology: Lessons from Evolutionary Biology and Genetics.”</span> <em>American Psychologist</em> 79 (4): 497–508. <a href="https://doi.org/10.1037/amp0001228">https://doi.org/10.1037/amp0001228</a>.
+</div>
+<div id="ref-DouglasSciencePolicyValuefree2009" class="csl-entry">
+Douglas, Heather E. 2009. <em>Science, Policy, and the Value-Free Ideal</em>. Pittsburgh, Pa: University of Pittsburgh Press.
+</div>
+<div id="ref-HavstadSensationalScienceArchaic2021" class="csl-entry">
+Havstad, Joyce C. 2021. <span>“Sensational Science, Archaic Hominin Genetics, and Amplified Inductive Risk.”</span> <em>Canadian Journal of Philosophy</em>, July, 1–26. <a href="https://doi.org/10.1017/can.2021.15">https://doi.org/10.1017/can.2021.15</a>.
+</div>
+<div id="ref-HicksRaceScienceMainstream2024" class="csl-entry">
+Hicks, Daniel, and Emilio Jon Christopher Lobato. 2024. <span>“Race Science in Mainstream Psychology, 1960-2010.”</span> OSF. <a href="https://doi.org/10.31234/osf.io/y8hr3">https://doi.org/10.31234/osf.io/y8hr3</a>.
+</div>
+<div id="ref-KitcherArgumentFreeInquiry1997" class="csl-entry">
+Kitcher, Philip. 1997. <span>“An Argument About Free Inquiry.”</span> <em>Noûs</em> 31 (3): 279–306. <a href="https://www.jstor.org/stable/2216207">https://www.jstor.org/stable/2216207</a>.
+</div>
+<div id="ref-LakatosFalsificationMethodologyScientific2004" class="csl-entry">
+Lakatos, I. 2004. <span>“Falsification and the Methodology of Scientific Research Programmes.”</span> <em>Karl Popper: Critical Assessments of Leading Philosophers</em>. <a href="http://books.google.com/books?hl=en&amp;lr=&amp;ie=UTF-8&amp;id=yajVRpMVzLgC&amp;oi=fnd&amp;pg=PA295-IA9&amp;dq=%22lakatos%22+%22scientific+research+programmes%22&amp;ots=nV87et3QUT&amp;sig=DwK1x8Gvh1tOFiR-LZ694ihXNl8">http://books.google.com/books?hl=en&amp;lr=&amp;ie=UTF-8&amp;id=yajVRpMVzLgC&amp;oi=fnd&amp;pg=PA295-IA9&amp;dq=%22lakatos%22+%22scientific+research+programmes%22&amp;ots=nV87et3QUT&amp;sig=DwK1x8Gvh1tOFiR-LZ694ihXNl8</a>.
+</div>
+<div id="ref-LloydScienceAntiScienceObjectivity1997" class="csl-entry">
+Lloyd, Elisabeth. 1997. <span>“Science and Anti-Science: Objectivity and Its Enemies.”</span> In <em>Feminism, Science, and the Philosophy of Science</em>, edited by Lynn Hankinson Nelson and Jack Nelson. Springer. <a href="http://books.google.ca/books?id=dbrQ4R7zWpwC&amp;pg=PA121&amp;dq=intitle:FEMINISM+SCIENCE+AND+THE+PHILOSOPHY+OF+SCIEN&amp;hl=&amp;cd=1&amp;source=gbs_api">http://books.google.ca/books?id=dbrQ4R7zWpwC&amp;pg=PA121&amp;dq=intitle:FEMINISM+SCIENCE+AND+THE+PHILOSOPHY+OF+SCIEN&amp;hl=&amp;cd=1&amp;source=gbs_api</a>.
+</div>
+<div id="ref-LloydObjectivityDoubleStandard1995" class="csl-entry">
+Lloyd, Elisabeth A. 1995. <span>“Objectivity and the Double Standard for Feminist Epistemologies.”</span> <em>Synthese</em> 104 (3): 351–81. <a href="http://www.jstor.org/stable/20117438">http://www.jstor.org/stable/20117438</a>.
+</div>
+<div id="ref-MertonScienceSocialOrder1938" class="csl-entry">
+Merton, Robert K. 1938. <span>“Science and the Social Order.”</span> <em>Philosophy of Science</em> 5 (3): 321–37. <a href="http://www.jstor.org/stable/184838">http://www.jstor.org/stable/184838</a>.
+</div>
+<div id="ref-MertonNoteScienceDemocracy1942" class="csl-entry">
+Merton, Robert K. 1942. <span>“A Note on Science and Democracy.”</span> <em>Journal of Legal and Political Sociology</em> 1: 115. <a href="http://heinonline.org/HOL/Page?handle=hein.journals/jolegpo1&amp;id=115&amp;div=10&amp;collection=usjournals">http://heinonline.org/HOL/Page?handle=hein.journals/jolegpo1&amp;id=115&amp;div=10&amp;collection=usjournals</a>.
+</div>
+<div id="ref-MeyerWrestlingSocialBehavioral2023" class="csl-entry">
+Meyer, Michelle N., Paul S. Appelbaum, Daniel J. Benjamin, Shawneequa L. Callier, Nathaniel Comfort, Dalton Conley, Jeremy Freese, et al. 2023. <span>“Wrestling with Social and Behavioral Genomics: Risks, Potential Benefits, and Ethical Responsibility.”</span> <em>Hastings Center Report</em> 53 (S1): S2–49. <a href="https://doi.org/10.1002/hast.1477">https://doi.org/10.1002/hast.1477</a>.
+</div>
+<div id="ref-MitroffNormsCounterNormsSelect1974" class="csl-entry">
+Mitroff, Ian I. 1974. <span>“Norms and Counter-Norms in a Select Group of the Apollo Moon Scientists: A Case Study of the Ambivalence of Scientists.”</span> <em>American Sociological Review</em> 39 (4): 579–95. <a href="http://www.jstor.org/stable/2094423">http://www.jstor.org/stable/2094423</a>.
+</div>
+<div id="ref-StrevensRolePriorityRule2003" class="csl-entry">
+Strevens, Michael, and Journal of Philosophy, Inc. 2003. <span>“The Role of the Priority Rule in Science:”</span> <em>Journal of Philosophy</em> 100 (2): 55–79. <a href="https://doi.org/10.5840/jphil2003100224">https://doi.org/10.5840/jphil2003100224</a>.
+</div>
+<div id="ref-WillsAreClustersRaces2017" class="csl-entry">
+Wills, Melissa. 2017. <span>“Are Clusters Races? A Discussion of the Rhetorical Appropriation of Rosenberg Et Al.’s <span>‘Genetic Structure of Human Populations’</span>.”</span> <em>Philosophy &amp; Theory in Biology</em> 9. <a href="https://doi.org/10.3998/ptb.6959004.0009.012">https://doi.org/10.3998/ptb.6959004.0009.012</a>.
+</div>
+<div id="ref-WoodleyOfMenieAntiMertonianNormsUndermine2025" class="csl-entry">
+Woodley Of Menie, Michael A., Mateo Peñaherrera-Aguirre, Aurelio-José Figueredo, Geoffrey F. Miller, Thomas R. Coyle, Noah Carl, Fróði Debes, et al. 2025. <span>“Anti-Mertonian Norms Undermine the Scientific Ethos: A Critique of Bird, Jackson Jr., and Winston’s Policy Proposals and Associated Justification.”</span> <em>Intelligence</em> 108 (January): 101879. <a href="https://doi.org/10.1016/j.intell.2024.101879">https://doi.org/10.1016/j.intell.2024.101879</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Notably, the American Chemical Society has a page on chemical weapons research that explicitly calls for national and international regulation on such research and the manufacture and circulation of potentially dangerous materials: <a href="https://www.acs.org/policy/publicpolicies/science-policy/preventing-chemical-weapons.html" class="uri">https://www.acs.org/policy/publicpolicies/science-policy/preventing-chemical-weapons.html</a>.↩︎</p></li>
+<li id="fn2"><p>This distinction — and the consequent denial of responsibility for application — is applied inconsistently. Shortly after the chemical weapons analogy, <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> offer a second, tu quoque reply: “BJ&amp;W do not discuss cases in which left-wing scholarship, beliefs, and research may have influenced violent criminals” (2).↩︎</p></li>
+<li id="fn3"><p>It’s an interesting question whether Merton ever said anything about the Lysenko affair, which peaked starting in 1948.↩︎</p></li>
+<li id="fn4"><p>Note the irony that <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> are attempting to challenge “organized dogmatism” by appeal to tradition and consensus, and defend universalism by appeal to the judgment of the select group of “academic scientists.”↩︎</p></li>
+<li id="fn5"><p>“RHR proponents often assert that no racial inferiority is implied by claims of evolved smaller brains, lower intelligence, and greater propensity for violence in people of African descent, and therefore such claims are not ‘racist’ (see Carl, 2019, p.&nbsp;271; Gottfredson, 2013)” <span class="citation" data-cites="BirdConfrontingScientificRacism2024">(Bird, Jackson Jr., and Winston 2024, 505)</span>.↩︎</p></li>
+<li id="fn6"><p>The example given is evidence that Ashkenazi Jews have a greater average IQ than non-Jewish individuals of European descent and that this purportedly explains the “disproportionate Jewish influence in politics, finance, science, and media” (3).↩︎</p></li>
+</ol>
+</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+  <guid>https://dhicks.github.io/posts/2024-12-22-weaponizing-value-freedom.html</guid>
+  <pubDate>Sat, 21 Dec 2024 08:00:00 GMT</pubDate>
+</item>
 <item>
   <title>How I’m handling LLMs (Fall 2024 edition)</title>
   <dc:creator>Dan Hicks</dc:creator>
@@ -1261,85 +1393,6 @@ Wilholt, Torsten. 2022. <span>“Epistemic Interests and the Objectivity of Inqu
 </section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2023-01-26-principle-agent.html</guid>
   <pubDate>Thu, 26 Jan 2023 08:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Technocratic legitimacy and the value-free ideal</title>
-  <dc:creator>Dan Hicks</dc:creator>
-  <link>https://dhicks.github.io/posts/2023-01-25-legitimacy-vfi.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><span class="citation" data-cites="HolmanNewDemarcationProblem2022">Holman and Wilholt (2022)</span> argue that, as philosophers of science work to dismantle the value-free ideal, it is important to understand the function that the ideal played. Quoting Chesterton, they write</p>
-<blockquote class="blockquote">
-<p>only when one understands how an institution arose and what purposes it was intended to serve, is one in a position to say “they were bad purposes, or they have since become bad purposes, or that they are purposes which are no longer being served.” <span class="citation" data-cites="HolmanNewDemarcationProblem2022">(Holman and Wilholt 2022, 214)</span></p>
-</blockquote>
-<p>Consequently,</p>
-<blockquote class="blockquote">
-<p>if one rejects a purpose which motivated the adoption of the value-free ideal, then one must have a convincing answer as to why it should never have been endorsed, why it should no longer be endorsed, or at least show that the value-free ideal fails to serve the intended purpose. <span class="citation" data-cites="HolmanNewDemarcationProblem2022">(Holman and Wilholt 2022, 215)</span></p>
-</blockquote>
-<p>Holman and Wilholt identify three functions for the value-free ideal:</p>
-<dl>
-<dt>veracity</dt>
-<dd>
-science pursues truth and avoids error
-</dd>
-<dt>universality</dt>
-<dd>
-scientific results are useable by anyone, whether they share scientists’ personal value-judgments or not
-</dd>
-<dt>authority</dt>
-<dd>
-science provides “a trustworthy body of knowledge that has broadly recognized social legitimacy” <span class="citation" data-cites="HolmanNewDemarcationProblem2022">(Holman and Wilholt 2022, 214)</span>
-</dd>
-</dl>
-<p>In the brief discussion that follows, Holman and Wilholt tie this sense of authority to questions of political legitimacy. In this post, I want to argue that the value-free ideal plays an important role in legitimizing the progressive, technocratic state, as illustrated in two historic moments where the value-free ideal was articulated.</p>
-<p>The first moment was the Progressive Era of the late nineteenth and early twentieth centuries. The Progressive movement proposed that management of social-biological systems by credentialed, scientific experts would ensure prosperity and social peace, in areas including public health <span class="citation" data-cites="KriegerEpidemiologyPeopleHealth2011">(Krieger 2011 ch.&nbsp;4)</span>, the economy <span class="citation" data-cites="StaplefordCostLivingAmerica2009">(Stapleford 2009)</span>, and natural resources (Gifford Pinchot), but also the human gene pool (eugenics). Versions of the value-free ideal were developed around the same time, most famously by Weber.</p>
-<p>The second moment was the emergence of the risk management state in the 1970s-1980s <span class="citation" data-cites="BeckRiskSocietyNew1992">(Beck 1992)</span>. Just as the Progressive movement was a technocratic response to the social and public health crises of the late nineteenth century, the risk management state was a technocratic response to the environmental and consumer safety crises of the 1950s-1960s. The primary methodology of the risk management state, risk assessment, institutionalized the value-free ideal, with (in principle) a strict demarcation between risk analysis — the scientific task of quantitatively determining the probability and magnitude of hazard — and risk management — the political task of designing and implementing policies to prevent and mitigate risk <span class="citation" data-cites="FernandezPintoLegitimizingValuesRegulatory2019">(Fernández Pinto and Hicks 2019)</span>.</p>
-<p>In both moments, the value-free ideal enabled supporters of the technocratic state to de-politicize technocratic management, by distinguishing the realm of rational, expert decisionmaking — as “science” — from the realm of emotional, public “politics.” To reconcile technocracy with democracy — at least in the US — expert managers were placed under the authority of political appointees, who in turn were appointed and approved by elected officials. In other words, two forms of legitimacy were used to support the technocratic state. Democratic legitimacy was nominally top-down, from the voters electing politicians, who then delegate authority to experts in the executive branch agencies. While technocratic legitimacy was nominally bottom-up, depending on credentials and demonstrated competence as experts rose through the meritocratic hierarchy of those agencies. These two systems of legitimacy are not obviously compatible; consider today’s debates between epistocrats and democrats. The value-free ideal offers a solution, creating non-overlapping magisteria <span class="citation" data-cites="GouldRocksAgesScience2011">(Gould 2011)</span>: the systems do not come into conflict because potentially controversial values do not play a role in the experts’ work.</p>
-<p>Unfortunately, in this role the value-free ideal is self-defeating <span class="citation" data-cites="FernandezPintoLegitimizingValuesRegulatory2019">(Fernández Pinto and Hicks 2019)</span>. The problem is not so much that properly assessing the downstream risk of error requires appeal to potentially controversial political and ethical values, as per the argument from inductive risk <span class="citation" data-cites="ElliottExploringInductiveRisk2017">(Elliott and Richards 2017)</span>. In the context of risk assessment, both scientists and policymakers have maintained the façade of value-freedom by, basically, pretending that all consideration of downstream consequences can be isolated on the political, risk management side of things.</p>
-<p>Instead, the value-free ideal is self-defeating because of the <em>fact of reasonable scientific pluralism</em>. In almost any case, it’s possible to construct a reasonable, technically sophisticated argument in favor of a different methodology, more and better data, an overlooked possibility, or an alternative explanation. Given resources and connections, parties with an interest in a certain policy outcome can pretty much always find at least one credentialed expert who will not only make an apparently reasonable, highly technical case for a preferred interpretation of “the science,” but also will castigate opposing experts as “biased” or following “an agenda.” The STS scholar Dan Sarewitz called this scenario “an excess of objectivity” <span class="citation" data-cites="SarewitzScienceEnvironmentalPolicy2000 SarewitzHowScienceMakes2004">(Sarewitz 2000, 2004)</span> and I’ve referred to it as “Scientific Controversies as Proxy Politics” <span class="citation" data-cites="HicksScientificControversiesProxy2017">(Hicks 2017)</span>.</p>
-<p>Given this analysis, what should a replacement for the value-free ideal attempt to do? One option would be something like “provide an alternative basis for the legitimacy of the technocratic state, more or less as it exists now.” I think many philosophers of science would support this sort of project. But to me this is not an attractive project — and I say this as someone who would probably be working for the US Environmental Protection Agency today if Clinton had won the 2016 election. Instead, I suggest that <strong>a replacement for the value-free ideal should help us democratize the technocratic state</strong>.</p>
-
-
-
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
-<div id="ref-BeckRiskSocietyNew1992" class="csl-entry">
-Beck, Ulrich. 1992. <em>Risk society: towards a new modernity</em>. Theory, culture &amp; society. London ; Newbury Park, Calif: Sage Publications.
-</div>
-<div id="ref-ElliottExploringInductiveRisk2017" class="csl-entry">
-Elliott, Kevin C., and Ted Richards, eds. 2017. <em>Exploring Inductive Risk: Case Studies of Values in Science</em>. New York: Oxford University Press.
-</div>
-<div id="ref-FernandezPintoLegitimizingValuesRegulatory2019" class="csl-entry">
-Fernández Pinto, Manuela, and Daniel J. Hicks. 2019. <span>“Legitimizing Values in Regulatory Science.”</span> <em>Environmental Health Perspectives</em> 127 (3): 035001. <a href="https://doi.org/10.1289/EHP3317">https://doi.org/10.1289/EHP3317</a>.
-</div>
-<div id="ref-GouldRocksAgesScience2011" class="csl-entry">
-Gould, Stephen Jay. 2011. <em>Rocks of Ages: Science and Religion in the Fullness of Life</em>. Random House Publishing Group.
-</div>
-<div id="ref-HicksScientificControversiesProxy2017" class="csl-entry">
-Hicks, Daniel J. 2017. <span>“Scientific Controversies as Proxy Politics.”</span> <em>Issues in Science and Technology</em>, January 2017. <a href="https://www.jstor.org/stable/24891967">https://www.jstor.org/stable/24891967</a>.
-</div>
-<div id="ref-HolmanNewDemarcationProblem2022" class="csl-entry">
-Holman, Bennett, and Torsten Wilholt. 2022. <span>“The New Demarcation Problem.”</span> <em>Studies in History and Philosophy of Science</em> 91 (February): 211–20. <a href="https://doi.org/10.1016/j.shpsa.2021.11.011">https://doi.org/10.1016/j.shpsa.2021.11.011</a>.
-</div>
-<div id="ref-KriegerEpidemiologyPeopleHealth2011" class="csl-entry">
-Krieger, Nancy. 2011. <em>Epidemiology and the People’s Health: Theory and Context</em>. New York: Oxford University Press.
-</div>
-<div id="ref-SarewitzScienceEnvironmentalPolicy2000" class="csl-entry">
-Sarewitz, Daniel. 2000. <span>“Science and Environmental Policy: An Excess of Objectivity.”</span> In <em>Earth Matters:&nbsp; The Earth Sciences, Philosophy, and the Claims of Community</em>, edited by Robert Frodeman, 79–98. Prentice Hall. <a href="http://www.cspo.org/_old_ourlibrary/ScienceandEnvironmentalPolicy.htm">http://www.cspo.org/_old_ourlibrary/ScienceandEnvironmentalPolicy.htm</a>.
-</div>
-<div id="ref-SarewitzHowScienceMakes2004" class="csl-entry">
-———. 2004. <span>“How Science Makes Environmental Controversies Worse.”</span> <em>Environmental Science and Policy</em> 7 (5): 385–403. <a href="https://doi.org/10.1016/j.envsci.2004.06.001">https://doi.org/10.1016/j.envsci.2004.06.001</a>.
-</div>
-<div id="ref-StaplefordCostLivingAmerica2009" class="csl-entry">
-Stapleford, Thomas A. 2009. <em>The Cost of Living in America: A Political History of Economic Statistics, 1880-2000</em>. Cambridge University Press.
-</div>
-</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
-  <guid>https://dhicks.github.io/posts/2023-01-25-legitimacy-vfi.html</guid>
-  <pubDate>Tue, 24 Jan 2023 08:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

@@ -1,0 +1,579 @@
+---
+references:
+- id: BirdConfrontingScientificRacism2024
+  abstract: >-
+    Although the American Psychological Association has taken a strong
+    antiracism stance, scientific racism continues to be published in psychology
+    journals and scholarly books. Recent articles claim that the folk categories
+    of race are genetically meaningful divisions and that evolved genetic
+    differences among races and nations are important for explaining immutable
+    differences in cognitive ability, educational attainment, crime, sexual
+    behavior, and wealth; all claims that are opposed by a strong scientific
+    consensus to the contrary. These claims remain a serious source of harm
+    through the naturalization of inequality and through support for the work of
+    racial extremists. Contemporary “racial hereditarian research” claims to
+    rest on modern genetics and evolutionary biology and to draw on their
+    methods, such as genome-wide association studies. These new arguments fail
+    to meet the evidentiary and ethical standards of these disciplines for the
+    study of human variation. If psychology adopted standards from genetics and
+    evolutionary biology, the current racial hereditarian work would be
+    ineligible for publication. Actions that the American Psychological
+    Association can take to deal with scientific racism are described. (PsycInfo
+    Database Record (c) 2024 APA, all rights reserved)
+  author:
+    - family: Bird
+      given: Kevin A.
+    - family: Jackson Jr.
+      given: John P.
+    - family: Winston
+      given: Andrew S.
+  citation-key: BirdConfrontingScientificRacism2024
+  container-title: American Psychologist
+  DOI: 10.1037/amp0001228
+  event-place: US
+  ISSN: 1935-990X
+  issue: '4'
+  issued:
+    - year: 2024
+  page: 497-508
+  publisher: American Psychological Association
+  publisher-place: US
+  source: APA PsycNet
+  title: >-
+    Confronting scientific racism in psychology: Lessons from evolutionary
+    biology and genetics
+  title-short: Confronting scientific racism in psychology
+  type: article-journal
+  volume: '79'
+
+- id: DouglasSciencePolicyValuefree2009
+  author:
+    - family: Douglas
+      given: Heather E.
+  call-number: Q175.5 .D68 2009
+  citation-key: DouglasSciencePolicyValuefree2009
+  event-place: Pittsburgh, Pa
+  ISBN: 978-0-8229-6026-3
+  issued:
+    - year: 2009
+  number-of-pages: '210'
+  publisher: University of Pittsburgh Press
+  publisher-place: Pittsburgh, Pa
+  source: Library of Congress ISBN
+  title: Science, policy, and the value-free ideal
+  type: book
+
+- id: HavstadSensationalScienceArchaic2021
+  abstract: >-
+    More than a decade of exacting scientific research involving paleontological
+    fragments and ancient DNA has lately produced a series of pronouncements
+    about a purportedly novel population of archaic hominins dubbed “the
+    Denisova.” The science involved in these matters is both technically
+    stunning and, socially, at times a bit reckless. Here I discuss the
+    responsibilities which scientists incur when they make inductively risky
+    pronouncements about the different relative contributions by Denisovans to
+    genomes of members of apparent subpopulations of current humans (i.e., the
+    so-called “races”). This science is sensational: it is science which
+    empirically speculates, to the public delight’s and entertainment, about
+    scintillating topics such as when humans evolved, where we came from, and
+    who else we were having sex with during our early hominin history. An
+    initial characterization of sensational science emerges from my discussion
+    of the case, as well as a diagnosis of an interactive phenomenon termed
+    amplified inductive risk.
+  accessed:
+    - year: 2022
+      month: 3
+      day: 12
+  author:
+    - family: Havstad
+      given: Joyce C.
+  citation-key: HavstadSensationalScienceArchaic2021
+  container-title: Canadian Journal of Philosophy
+  DOI: 10.1017/can.2021.15
+  ISSN: 0045-5091, 1911-0820
+  issued:
+    - year: 2021
+      month: 7
+      day: 22
+  language: en
+  page: 1-26
+  publisher: Cambridge University Press
+  source: Cambridge University Press
+  title: Sensational Science, Archaic Hominin Genetics, and Amplified Inductive Risk
+  type: article-journal
+  URL: >-
+    https://www.cambridge.org/core/journals/canadian-journal-of-philosophy/article/sensational-science-archaic-hominin-genetics-and-amplified-inductive-risk/80675A1A574D9BD78A6B7ECA045DC2AC
+
+- id: HicksImpactingCapabilitiesConceptual2018
+  abstract: >-
+    There is widespread interest in evaluating the social impacts of research
+    and other scholarly activities. Conventional metrics for social impacts
+    focus on economics or wealth creation, such as patents or technology
+    transfer. These kinds of metrics are less appropriate for many scholarly
+    fields, and miss the specific social concerns or needs that researchers aim
+    to address. In this paper, drawing on ideas from ethics and development
+    economics, we develop a conceptual framework for characterizing the social
+    goals of research. We first distinguish resources — such as wealth and
+    intellectual credit — from the goals of scholarship, and further distinguish
+    inward- and outward-facing goals. Outward-facing goals refer to the intended
+    social impacts of research. Next we introduce the Capabilities Approach, a
+    conceptual framework for human well-being developed by ethicists and
+    economists over the last 40 years. This Approach focuses on basic human
+    needs, rather than wealth, and we draw specifically on a list of central
+    human capabilities developed by philosopher Martha Nussbaum. We propose that
+    the items on this list provide a useful starting point for articulating the
+    specific social aims of research. We argue that the Capabilities Approach
+    can facilitate research communication and improve the recognition of public
+    engagement in academic and funding institutions. Familiar bibliographic data
+    and text mining methods can be used in a capabilities-inspired portfolio
+    analysis, and modest changes to existing data collection systems — for
+    tenure and promotion, or research funding applications — could support the
+    development of even richer capabilities-inspired metrics and incentive
+    systems.
+  accessed:
+    - year: 2018
+      month: 8
+      day: 28
+  author:
+    - family: Hicks
+      given: Daniel J.
+    - family: Stahmer
+      given: Carl
+    - family: Smith
+      given: MacKenzie
+  citation-key: HicksImpactingCapabilitiesConceptual2018
+  container-title: Frontiers in Research Metrics and Analytics
+  container-title-short: Front. Res. Metr. Anal.
+  DOI: 10.3389/frma.2018.00024
+  ISSN: 2504-0537
+  issued:
+    - year: 2018
+  language: English
+  source: Frontiers
+  title: >-
+    Impacting Capabilities: A Conceptual Framework for the Social Value of
+    Research
+  title-short: Impacting Capabilities
+  type: article-journal
+  URL: https://www.frontiersin.org/articles/10.3389/frma.2018.00024/full
+
+- id: HicksRaceScienceMainstream2024
+  abstract: >-
+    Anthropologists and human geneticists have long rejected race science,
+    research that can be utilized to purportedly justify racial inequality and
+    colonialism.  But race science has persisted, at the very least on the
+    margins of the mainstream scientific community.  In this study,
+    scientometric and text mining methods were used to trace the appearance of
+    race science discourse in both mainstream behavioral science journals and
+    the parascholarly journal *Mankind Quarterly* from 1960 to 2010.  Our
+    analysis found two distinguishable lines of race science discourse.  One is
+    strongly associated with *Mankind Quarterly*, while the other — emphasizing
+    race and intelligence — is more prevalent with mainstream psychology
+    journals, especially *Intelligence* and *Personality and Individual
+    Differences*.  We compare psychology's response to race science to those of
+    other fields, and discuss the social responsibility of scientists with
+    respect to race science.
+  accessed:
+    - year: 2024
+      month: 8
+      day: 8
+  author:
+    - family: Hicks
+      given: Daniel
+    - family: Lobato
+      given: Emilio Jon Christopher
+  citation-key: HicksRaceScienceMainstream2024
+  DOI: 10.31234/osf.io/y8hr3
+  issued:
+    - year: 2024
+      month: 8
+      day: 8
+  language: en-us
+  license: All rights reserved
+  publisher: OSF
+  source: OSF Preprints
+  title: Race Science in Mainstream Psychology, 1960-2010
+  type: article
+  URL: https://osf.io/y8hr3
+
+- id: KitcherArgumentFreeInquiry1997
+  accessed:
+    - year: 2022
+      month: 1
+      day: 19
+  author:
+    - family: Kitcher
+      given: Philip
+  citation-key: KitcherArgumentFreeInquiry1997
+  container-title: Noûs
+  ISSN: 0029-4624
+  issue: '3'
+  issued:
+    - year: 1997
+  page: 279-306
+  publisher: Wiley
+  source: JSTOR
+  title: An Argument About Free Inquiry
+  type: article-journal
+  URL: https://www.jstor.org/stable/2216207
+  volume: '31'
+
+- id: LakatosFalsificationMethodologyScientific2004
+  abstract: >-
+    34 FALSIFICATION AND THE METHODOLOGY OF    1 Imre Lakatos Source: I. Lakatos
+    and A. Musgrave (eds), Criticism and the Growth
+  author:
+    - family: Lakatos
+      given: I
+  citation-key: LakatosFalsificationMethodologyScientific2004
+  container-title: 'Karl Popper: Critical Assessments of Leading Philosophers'
+  container-title-short: 'Karl Popper: Critical Assessments of Leading Philosophers'
+  issued:
+    - year: 2004
+  title: Falsification and the Methodology of Scientific Research Programmes
+  type: article-journal
+  URL: >-
+    http://books.google.com/books?hl=en&lr=&ie=UTF-8&id=yajVRpMVzLgC&oi=fnd&pg=PA295-IA9&dq=%22lakatos%22+%22scientific+research+programmes%22&ots=nV87et3QUT&sig=DwK1x8Gvh1tOFiR-LZ694ihXNl8
+
+- id: LakatosMethodologyScientificResearch1978
+  abstract: >-
+    Imre Lakatos' philosophical and scientific papers are published here in two
+    volumes. Volume I brings together his very influential but scattered papers
+    on the philosophy of the physical sciences, and includes one important
+    unpublished essay on the effect of Newton's scientific achievement. Volume
+    II presents his work on the philosophy of mathematics (much of it
+    unpublished), together with some critical essays on contemporary
+    philosophers of science and some famous polemical writings on political and
+    educational issues. Imre Lakatos had an influence out of all proportion to
+    the length of his philosophical career. This collection exhibits and
+    confirms the originality, range and the essential unity of his work. It
+    demonstrates too the force and spirit he brought to every issue with which
+    he engaged, from his most abstract mathematical work to his passionate
+    'Letter to the director of the LSE'. Lakatos' ideas are now the focus of
+    widespread and increasing interest, and these volumes should make possible
+    for the first time their study as a whole and their proper assessment.
+  author:
+    - family: Lakatos
+      given: Imre
+  citation-key: LakatosMethodologyScientificResearch1978
+  collection-title: Philosophical Papers
+  ISBN: 978-0-521-28031-0
+  issued:
+    - year: 1978
+  number-of-pages: '260'
+  publisher: Cambridge University Press
+  title: 'The Methodology of Scientific Research Programmes: Volume 1'
+  type: book
+  URL: >-
+    http://books.google.com/books?id=RRniFBI8Gi4C&pg=PA8&dq=intitle:the+methodology+of+scientific+research+programmes+inauthor:Lakatos+Imre&hl=&cd=1&source=gbs_api
+
+- id: LloydObjectivityDoubleStandard1995
+  abstract: >-
+    The emphasis on the limitations of objectivity, in specific guises and
+    networks, has been a continuing theme of contemporary analytic philosophy
+    for the past few decades. The popular sport of baiting feminist philosophers
+    -- into pointing to what's left out of objective knowledge, or into
+    describing what methods, exactly, they would offer to replace the powerful
+    "objective" methods grounding scientific knowledge -- embodies a blatant
+    double standard which has the effect of constantly putting feminist
+    epistemologists on the defensive, on the fringes, on the run. This strategy
+    can only work if 'objectivity' is transparent, simple, stable, and clear in
+    its meaning. It most certainly is not. In fact, taking 'objectivity' as a
+    sort of beautiful primitive, self-evident in its value, and all-powerful in
+    its revelatory power, requires careless philosophy, and the best workers in
+    metaphysics, epistemology, and philosophy of science have made reworked
+    definitions of 'objectivity' absolutely central to their own projects. In
+    fact, classic feminist concerns with exploring the impact of sex and gender
+    on knowledge, understanding, and other relations between human beings and
+    the rest of the world fall squarely within the sort of human and social
+    settings that are already considered central in most current analytic
+    metaphysics, episteomology, and philosophy of science. I argue that the
+    burden of proof is clearly on those who wish to reject the centrality and
+    relevance of sex and gender to our most fundamental philosophical work on
+    knowledge and reality.
+  accessed:
+    - year: 2017
+      month: 12
+      day: 2
+  author:
+    - family: Lloyd
+      given: Elisabeth A.
+  citation-key: LloydObjectivityDoubleStandard1995
+  container-title: Synthese
+  ISSN: 0039-7857
+  issue: '3'
+  issued:
+    - year: 1995
+  page: 351-381
+  source: JSTOR
+  title: Objectivity and the Double Standard for Feminist Epistemologies
+  type: article-journal
+  URL: http://www.jstor.org/stable/20117438
+  volume: '104'
+
+- id: LloydScienceAntiScienceObjectivity1997
+  abstract: >-
+    Feminism, Science, and the Philosophy of Science brings together original
+    essays by both feminist and mainstream philosophers of science that examine
+    issues at the intersections of feminism, science, and the philosophy of
+    science. Contributors explore parallels and tensions between feminist
+    approaches to science and other approaches in the philosophy of science and
+    more general science studies. In so doing, they explore notions at the heart
+    of the philosophy of science, including the nature of objectivity, truth,
+    evidence, cognitive agency, scientific method, and the relationship between
+    science and values.
+  author:
+    - family: Lloyd
+      given: Elisabeth
+  citation-key: LloydScienceAntiScienceObjectivity1997
+  container-title: Feminism, Science, and the Philosophy of Science
+  editor:
+    - family: Hankinson Nelson
+      given: Lynn
+    - family: Nelson
+      given: Jack
+  ISBN: 978-0-7923-4611-1
+  issued:
+    - year: 1997
+  publisher: Springer
+  title: 'Science and Anti-Science: Objectivity and its Enemies'
+  type: chapter
+  URL: >-
+    http://books.google.ca/books?id=dbrQ4R7zWpwC&pg=PA121&dq=intitle:FEMINISM+SCIENCE+AND+THE+PHILOSOPHY+OF+SCIEN&hl=&cd=1&source=gbs_api
+
+- id: MertonNoteScienceDemocracy1942
+  author:
+    - family: Merton
+      given: Robert K.
+  citation-key: MertonNoteScienceDemocracy1942
+  container-title: Journal of Legal and Political Sociology
+  container-title-short: J. Legal & Pol. Soc.
+  issued:
+    - year: 1942
+  page: '115'
+  title: A Note on Science and Democracy
+  type: article-journal
+  URL: >-
+    http://heinonline.org/HOL/Page?handle=hein.journals/jolegpo1&id=115&div=10&collection=usjournals
+  volume: '1'
+
+- id: MertonScienceSocialOrder1938
+  abstract: >-
+    All Journals > Philosophy of Science > July 1938 >     . Philosophy of
+    Science      . Robert K. Merton. Cited by.
+  author:
+    - family: Merton
+      given: Robert K
+  citation-key: MertonScienceSocialOrder1938
+  container-title: Philosophy of Science
+  container-title-short: Phil Sci
+  issue: '3'
+  issued:
+    - year: 1938
+  page: 321-337
+  title: Science and the Social Order
+  type: article-journal
+  URL: http://www.jstor.org/stable/184838
+  volume: '5'
+
+- id: MeyerWrestlingSocialBehavioral2023
+  abstract: >-
+    In this consensus report by a diverse group of academics who conduct and/or
+    are concerned about social and behavioral genomics (SBG) research, the
+    authors recount the often-ugly history of scientific attempts to understand
+    the genetic contributions to human behaviors and social outcomes. They then
+    describe what the current science—including genomewide association studies
+    and polygenic indexes—can and cannot tell us, as well as its risks and
+    potential benefits. They conclude with a discussion of responsible behavior
+    in the context of SBG research. SBG research that compares individuals
+    within a group according to a “sensitive” phenotype requires extra attention
+    to responsible conduct and to responsible communication about the research
+    and its findings. SBG research (1) on sensitive phenotypes that (2) compares
+    two or more groups defined by (a) race, (b) ethnicity, or (c) genetic
+    ancestry (where genetic ancestry could easily be misunderstood as race or
+    ethnicity) requires a compelling justification to be conducted, funded, or
+    published. All authors agree that this justification at least requires a
+    convincing argument that a study's design could yield scientifically valid
+    results; some authors would additionally require the study to have a
+    socially favorable risk-benefit profile.
+  accessed:
+    - year: 2023
+      month: 5
+      day: 1
+  author:
+    - family: Meyer
+      given: Michelle N.
+    - family: Appelbaum
+      given: Paul S.
+    - family: Benjamin
+      given: Daniel J.
+    - family: Callier
+      given: Shawneequa L.
+    - family: Comfort
+      given: Nathaniel
+    - family: Conley
+      given: Dalton
+    - family: Freese
+      given: Jeremy
+    - family: Garrison
+      given: Nanibaa' A.
+    - family: Hammonds
+      given: Evelynn M.
+    - family: Harden
+      given: K. Paige
+    - family: Lee
+      given: Sandra Soo-Jin
+    - family: Martin
+      given: Alicia R.
+    - family: Martschenko
+      given: Daphne Oluwaseun
+    - family: Neale
+      given: Benjamin M.
+    - family: Palmer
+      given: Rohan H. C.
+    - family: Tabery
+      given: James
+    - family: Turkheimer
+      given: Eric
+    - family: Turley
+      given: Patrick
+    - family: Parens
+      given: Erik
+  citation-key: MeyerWrestlingSocialBehavioral2023
+  container-title: Hastings Center Report
+  DOI: 10.1002/hast.1477
+  ISSN: 1552-146X
+  issue: S1
+  issued:
+    - year: 2023
+  language: en
+  page: S2-S49
+  source: Wiley Online Library
+  title: >-
+    Wrestling with Social and Behavioral Genomics: Risks, Potential Benefits,
+    and Ethical Responsibility
+  title-short: Wrestling with Social and Behavioral Genomics
+  type: article-journal
+  URL: https://onlinelibrary.wiley.com/doi/abs/10.1002/hast.1477
+  volume: '53'
+
+- id: MitroffNormsCounterNormsSelect1974
+  abstract: >-
+    This paper describes a three and a half year study conducted over the course
+    of the Apollo lunar missions with forty-two of the most prestigious
+    scientists who studied the lunar rocks. The paper supports the Merton-E.
+    Barber concept of sociological ambivalence, that social institutions reflect
+    potentially conflicting sets of norms. The paper offers a set of
+    counter-norms for science, arguing that if the norm of universalism is
+    rooted in the impersonal character of science, an opposing counter-norm is
+    rooted in the personal character of science. The paper also argues that not
+    only is sociological ambivalence a characteristic of science, but it seems
+    necessary for the existence and ultimate rationality of science.
+  author:
+    - family: Mitroff
+      given: Ian I
+  citation-key: MitroffNormsCounterNormsSelect1974
+  container-title: American Sociological Review
+  container-title-short: American Sociological Review
+  issue: '4'
+  issued:
+    - year: 1974
+  page: 579-595
+  title: >-
+    Norms and Counter-Norms in a Select Group of the Apollo Moon Scientists: A
+    Case Study of the Ambivalence of Scientists
+  type: article-journal
+  URL: http://www.jstor.org/stable/2094423
+  volume: '39'
+
+- id: StrevensRolePriorityRule2003
+  accessed:
+    - year: 2024
+      month: 12
+      day: 21
+  author:
+    - family: Strevens
+      given: Michael
+    - literal: Journal of Philosophy, Inc.
+  citation-key: StrevensRolePriorityRule2003
+  container-title: Journal of Philosophy
+  DOI: 10.5840/jphil2003100224
+  ISSN: 0022-362X
+  issue: '2'
+  issued:
+    - year: 2003
+  page: 55-79
+  source: DOI.org (Crossref)
+  title: 'The Role of the Priority Rule in Science:'
+  title-short: The Role of the Priority Rule in Science
+  type: article-journal
+  URL: >-
+    http://www.pdcnet.org/oom/service?url_ver=Z39.88-2004&rft_val_fmt=&rft.imuse_id=jphil_2003_0100_0002_0055_0079&svc_id=info:www.pdcnet.org/collection
+  volume: '100'
+
+- id: WillsAreClustersRaces2017
+  author:
+    - family: Wills
+      given: Melissa
+  citation-key: WillsAreClustersRaces2017
+  container-title: Philosophy & Theory in Biology
+  DOI: 10.3998/ptb.6959004.0009.012
+  ISSN: 1949-0739
+  issued:
+    - year: 2017
+  title: >-
+    Are Clusters Races? A Discussion of the Rhetorical Appropriation of
+    Rosenberg et al.'s “Genetic Structure of Human Populations”
+  title-short: Are Clusters Races?
+  type: article-journal
+  URL: http://hdl.handle.net/2027/spo.6959004.0009.012
+  volume: '9'
+
+- id: WoodleyOfMenieAntiMertonianNormsUndermine2025
+  accessed:
+    - year: 2024
+      month: 12
+      day: 20
+  author:
+    - family: Woodley Of Menie
+      given: Michael A.
+    - family: Peñaherrera-Aguirre
+      given: Mateo
+    - family: Figueredo
+      given: Aurelio-José
+    - family: Miller
+      given: Geoffrey F.
+    - family: Coyle
+      given: Thomas R.
+    - family: Carl
+      given: Noah
+    - family: Debes
+      given: Fróði
+    - family: Frisby
+      given: Craig L.
+    - family: Léon
+      given: Federico R.
+    - family: Madison
+      given: Guy
+    - family: Rindermann
+      given: Heiner
+  citation-key: WoodleyOfMenieAntiMertonianNormsUndermine2025
+  container-title: Intelligence
+  container-title-short: Intelligence
+  DOI: 10.1016/j.intell.2024.101879
+  ISSN: '01602896'
+  issued:
+    - year: 2025
+      month: 1
+  language: en
+  page: '101879'
+  publisher: JAI
+  source: DOI.org (Crossref)
+  title: >-
+    Anti-Mertonian norms undermine the scientific ethos: A critique of Bird,
+    Jackson Jr., and Winston's policy proposals and associated justification
+  title-short: Anti-Mertonian norms undermine the scientific ethos
+  type: article-journal
+  URL: https://linkinghub.elsevier.com/retrieve/pii/S0160289624000734
+  volume: '108'
+...
