@@ -314,7 +314,7 @@ window.Quarto = {
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>tokens_df <span class="ot">=</span> <span class="fu">unnest_tokens</span>(dataf, token, raw_text)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>tokens_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 97,572 × 3
+<pre><code># A tibble: 97,589 × 3
    path                                                            post_id token
    &lt;chr&gt;                                                             &lt;int&gt; &lt;chr&gt;
  1 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 title
@@ -327,7 +327,7 @@ window.Quarto = {
  8 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 free 
  9 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 birth
 10 /Users/danhicks/Google Drive/Coding/website/posts/2012-03-14-f…       1 cont…
-# ℹ 97,562 more rows</code></pre>
+# ℹ 97,579 more rows</code></pre>
 </div>
 </div>
 <p>To develop tags, we want to identify “highly meaningful terms” across the cropus of parsed blog posts. In text mining, a measure called <em>TF-IDF</em> is frequently used for this task. TF-IDF is calculated for each term-document combination. The TF-IDF of term <span class="math display">\[i\]</span> in document <span class="math display">\[j\]</span> is - the number of times <span class="math display">\[i\]</span> occurs in <span class="math display">\[j\]</span> (the <em>term frequency</em>), divided by - the (log) number of documents in which <span class="math display">\[i\]</span> occurs at least once (the <em>document frequency</em>).</p>

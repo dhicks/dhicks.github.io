@@ -95,6 +95,6 @@ Such arguments are often logically irrelevant, in two ways.  First, they do not 
 
 These arguments often have other problems, like the ones I've identified here:  based on a superficial misreading of source material, applied inconsistently or without thinking through the logical implications of a position, and so on. 
 
-Nonetheless, these arguments can be rhetorically effective, insofar as they shift the focus of debate from race science to its critics, DARVO-style, and insofar as the audience does accept value freedom and consequently regards the critics as discredited and not worth engaging.  
+Nonetheless, these arguments can be rhetorically effective, insofar as they shift the focus of debate from race science to its critics, DARVO-style, and insofar as the audience does accept value freedom and consequently regards the critics as discredited and not worth engaging.  And many scientists and members of the general public do think that science should be value free.   
 
 In this sense, these arguments weaponize value freedom to deflect charges of violations of value freedom. 
