@@ -10,7 +10,54 @@
 <atom:link href="https://dhicks.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Website description</description>
 <generator>quarto-1.7.13</generator>
-<lastBuildDate>Sat, 21 Dec 2024 08:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 14 Feb 2025 08:00:00 GMT</lastBuildDate>
+<item>
+  <title>Weaponized metascience</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2025-01-14-weaponized-metascience.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>A couple days ago, Senator Ted Cruz (R-TX) <a href="https://www.commerce.senate.gov/2025/2/cruz-led-investigation-uncovers-2-billion-in-woke-dei-grants-at-nsf-releases-full-database">released</a> a spreadsheet of about 3.5k “woke DEI grants” made by NSF. This spreadsheet was the basis for <a href="https://www.commerce.senate.gov/services/files/4BD2D522-2092-4246-91A5-58EEF99750BC">a report</a> released last October by the minority of the Senate Commerce, Science, and Transportation committee (of which Cruz was the minority chair). Congressional Republicans have a long history of complaining that NSF funds “wasteful” or “silly” projects, and this report and spreadsheet continue that tradition, using the anti-DEI framing that happens to be popular today.</p>
+<p>As a computational social scientist and philosopher of science, one thing that struck me about the report was a “methods section,” a pair of appendices that narrated the text mining methods used by congressional staff to assemble the list of awards and apply labels such as “social justice.” Staff used “N-gram analysis” to find “the most-often-used terms and phrases” across about 30,000 NSF award abstracts, then “parsed those terms for DEI keywords and phrases,” “using over 800,000 variations and combinations.” The second appendix is a series of term lists — one for each of the five labels — with a total of about 750 words or short phrases. The authors of the report used multiple rounds of filtering, “a categorization ‘qualifier’ tagging formula in Excel,” and three rounds of manual review, to arrive at the final list of about 3.5k awards and the five labels.</p>
+<p>At this level of description, the methods used to assemble this report are similar to methods my research group uses in our own text mining projects. For example, in a paper currently under review, using the fulltext of tens of thousands of journal articles we trace the presence of race science across mainstream and fringe scientific journals over the second half of the twentieth century. Such work is often grouped under the interdisciplinary heading of “metascience,” utilizing scientific methods to better understand scientific research processes and communities.</p>
+<p>In this sense, Senator Cruz is engaged in <strong>weaponized metascience</strong>: using metascience in an attempt to undermine the political and cultural standing of scientific research.</p>
+<p>Like congressional complaints about NSF, weaponized metascience is not new. During the first Trump administration, the Environmental Protection Agency proposed (and briefly adopted) a rule, originally called “Strengthening Transparency in Regulatory Science,” that appealed to concerns about a widespread replication crisis and the open science movement in an effort to undermine the use of public health research at the agency. Numerous scientists and advocacy organizations criticized the rule as “anti-science,” without noting that it appealed to widespread sentiments within the scientific community itself <span class="citation" data-cites="HicksWhenVirtuesAre2022 HicksOpenScienceReplication2023">(D. J. Hicks 2022b, 2023)</span>.</p>
+<hr>
+<p>It should not be surprising that the quality of weaponized metascience is often low by the standards of academic research. In text mining, one way to avoid “false positives” is to filter out documents that only match a single keyword. This filter is idempotent, meaning that it has no effect after being run once: all of the single-match documents are removed on the first pass. Nonetheless, the “methods section” of the Cruz report says that this filter was applied twice, at two different stages of review. The first pass removed 3,118 awards; and, somehow, the second removed 5,715. At best, this is a serious misreporting error, perhaps if the second pass involved a much larger keyword list; at worst it indicates a severe error in the analysis scripts.</p>
+<p>The report also makes claims that these methods, and the resulting database, cannot possibly support. For example, the report claims that “Instead of identifying the best or most talented scientists, NSF funded researchers who prioritized filling out research teams and programs based on ethnicity, cultural background, or political perspectives.”</p>
+<p>Most of the researchers funded by NSF grants — students, postdoctoral researchers, professional research staff — are hired by the universities that receive the awards, not NSF. Some personnel are named in the initial grant application, but otherwise universities don’t notify NSF who they hire using NSF-awarded funds, much less report them for release in a public database. The particular data portal used by Cruz’ staff does not even contain the names of the primary investigator for each award (though these names are available through NSF’s award search portal). And, of course, even if Cruz’ staff did somehow know the <em>names</em> of the members of the research teams, they still wouldn’t know their qualifications, ethnicity, cultural backgrounds, or political perspectives, much less what role these factors played in the hiring decisions.</p>
+<p>Similarly, a distinguished statistician — a fellow of both the American Statistical Association and the American Association for the Advancement of Science, and a member of EPA’s Science Advisory Board during the first Trump administration — published numerous papers using a fundamentally flawed statistical methodology <span class="citation" data-cites="HicksValuePlotDoes2022">(D. J. Hicks 2022a)</span>. Many of these papers claimed to show that research misconduct was widespread in air pollution epidemiology. At least some were funded by the American Petroleum Institute <span class="citation" data-cites="HicksYoungsPValuePlot2022">(D. Hicks 2022)</span>.</p>
+<p>As a final example, recently the Trump administration attempted to unilaterally impose a cap of 15% on indirect costs for NIH-funded awards. Reporters at Wired <span class="citation" data-cites="ReynoldsNIHFundingCuts">(Reynolds n.d.)</span> traced this policy to a <a href="https://www.heritage.org/education/report/indirect-costs-how-taxpayers-subsidize-university-nonsense">report</a> by two affiliates of the Heritage Foundation, which alleged that indirect costs were used to “subsidize the agenda of the political left through funding its research agendas and Diversity, Equity, and Inclusion (DEI) staff on university campuses.” The primary evidence for this claim was a collection of simple univariable regressions of the number of “DEI staff” against indirect costs for 82 universities. The authors of the report made no effort whatsoever to adjust for potential confounders in this regression — despite the lead author being a former Distinguished Professor and education researcher at the University of Arkansas.</p>
+<hr>
+<p>But the low quality of weaponized metascience is beside the point. The purpose of weaponized metascience is to <em>appear</em> scientific, to adopt the trappings of science in order to discredit science. Over the past 150 years or so, our society has become deeply “scientistic,” holding up science (or things that look like science) as the best and most reliable source of knowledge. Science and its defenders need to understand that, by and large, the contemporary far right and its allies are not interested in challenging this scientism. Project 2025 doesn’t say anything about replacing evolution with intelligent design in schools, for example. Instead the goal is to turn science into a tool of their political and cultural project, dominated by conservative, nationalistic, straight white men. To Make Science Great Again.</p>
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-HicksYoungsPValuePlot2022" class="csl-entry">
+Hicks, Dan. 2022. <span>“Young’s P-Value Plot as an Agnogenic Technique, Dan Hicks.”</span> Social Epistemology Review and Reply Collective. March 16, 2022. <a href="https://social-epistemology.com/2022/03/16/youngs-p-value-plot-as-an-agnogenic-technique-dan-hicks/">https://social-epistemology.com/2022/03/16/youngs-p-value-plot-as-an-agnogenic-technique-dan-hicks/</a>.
+</div>
+<div id="ref-HicksValuePlotDoes2022" class="csl-entry">
+Hicks, Daniel J. 2022a. <span>“The P Value Plot Does Not Provide Evidence Against Air Pollution Hazards.”</span> <em>Environmental Epidemiology</em> 6 (2): e198. <a href="https://doi.org/10.1097/EE9.0000000000000198">https://doi.org/10.1097/EE9.0000000000000198</a>.
+</div>
+<div id="ref-HicksWhenVirtuesAre2022" class="csl-entry">
+———. 2022b. <span>“When Virtues are Vices: <span>‘Anti-Science’</span> Epistemic Values in Environmental Politics.”</span> <em>Philosophy, Theory, and Practice in Biology</em> 14 (0). <a href="https://doi.org/10.3998/.2629">https://doi.org/10.3998/.2629</a>.
+</div>
+<div id="ref-HicksOpenScienceReplication2023" class="csl-entry">
+———. 2023. <span>“Open Science, the Replication Crisis, and Environmental Public Health.”</span> <em>Accountability in Research</em> 30 (1): 34–62. <a href="https://doi.org/10.1080/08989621.2021.1962713">https://doi.org/10.1080/08989621.2021.1962713</a>.
+</div>
+<div id="ref-ReynoldsNIHFundingCuts" class="csl-entry">
+Reynolds, Matt. n.d. <span>“NIH Funding Cuts Appear to Draw on Heritage Foundation Report That Blasts <span>‘DEI Staff’</span>.”</span> <em>Wired</em>. Accessed February 11, 2025. <a href="https://www.wired.com/story/nih-indirect-funding-cuts-heritage-foundation/">https://www.wired.com/story/nih-indirect-funding-cuts-heritage-foundation/</a>.
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+  <guid>https://dhicks.github.io/posts/2025-01-14-weaponized-metascience.html</guid>
+  <pubDate>Fri, 14 Feb 2025 08:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Weaponizing Value Freedom in Defense of Race Science</title>
   <dc:creator>Dan Hicks</dc:creator>
@@ -1281,118 +1328,6 @@ Lusk, Greg. 2021. <span>“Does Democracy Require Value-Neutral Science? Analyzi
 </section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2023-01-30-democracy-defense.html</guid>
   <pubDate>Mon, 30 Jan 2023 08:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>The presence-absence model and epistemic representation</title>
-  <dc:creator>Dan Hicks</dc:creator>
-  <link>https://dhicks.github.io/posts/2023-01-26-principle-agent.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>In 2015-16 I was working for<sup>1</sup> the US Environmental Protection Agency. My work colleagues were technocratic managers, most of whom had PhDs and were professionalized as scientists (even when they were on the policymaking, risk management side of things). Because the concept of “legitimacy” in questions about “the legitimate roles for values in science” comes from <em>political</em> legitimacy — at least, it does for me — I started to ruminate on the idea of <strong>scientists as representatives</strong>, in close analogy to elected political representatives. Manuela Fernández-Pinto and I included a few of these ideas in <span class="citation" data-cites="FernandezPintoLegitimizingValuesRegulatory2019">Fernández Pinto and Hicks (2019)</span>. But I haven’t taken the time to develop the analogy further.</p>
-<p>Among political theorists, a key work on political representation is Hanna Pitkin’s <em>The Concept of Representation</em> <span class="citation" data-cites="PitkinConceptRepresentation1967">(Pitkin 1967)</span>. While I haven’t read it myself, my understanding is that Pitkin developed an account of representation in terms of presence and absence. As Mark Warren puts it, “representatives stand in, speak, or act for the represented <em>in their absence</em>: they are <em>represented in</em> the spaces and activities where they cannot be” <span class="citation" data-cites="WarrenHowRepresentationEnables2018">(Warren 2018, 39, Warren’s emphasis)</span>. This way of thinking about representation goes back at least to Hobbes, where the relationship between the people and the sovereign is literally a principal-agent contract <span class="citation" data-cites="BrownScienceDemocracyExpertise2009">(Brown 2009 ch.&nbsp;5)</span>. In this line of political thought, the represented are absent primarily for logistical reasons: it’s impractical to have thousands (or millions) of people in one place all talking to each other and coming to agreement.</p>
-<p>This model is simplistic, and in later posts I’ll start to explore its limits and follow the intellectual trails constructed by political theorists. But, just as this is a useful first model for political representation, I want to argue that it’s a useful first model for <strong>scientists as epistemic representatives</strong>. Namely: scientists stand in, speak, or act <em>epistemically</em> for the general public in their absence. Scientists are often epistemic agents on behalf of the public, who are generally absent from the space of technocratic decisionmaking.<sup>2</sup></p>
-<p>The public are typically absent from these spaces for the same logistical reasons that they are typically absent from spaces of political decisionmaking. But also for two other, more interesting reasons. First, the public lacks the credentials of scientists, the diplomas and work history that are taken as evidence that someone has relevant knowledge and skill. And second, the public often lack relevant knowledge and skill.</p>
-<p>When I talk about expertise in my undergraduate Critical Reasoning course, I like to illustrate the difference between credentials and actual expertise with the examples of ACT UP and the environmental justice movement <span class="citation" data-cites="EpsteinImpureScience1996 PauliFlintFightsBack2019">(Epstein 1996; Pauli 2019)</span>. <em>[Say more here in the actual paper]</em></p>
-<p>However, on any given topic, most people have only very limited knowledge and skill. We are radically epistemically interdependent beings, relying on others with actual expertise to develop knowledge that promotes our epistemic interests <span class="citation" data-cites="WilholtEpistemicInterestsObjectivity2022">(Wilholt 2022)</span>. I suggest that this point corresponds to political theorists’ distinction between <em>preferences</em> and <em>interests</em> <span class="citation" data-cites="WarrenHowRepresentationEnables2018">(Warren 2018, 41)</span>. A good political representative acts to promote the considered interests of the constituency — the things they would want if they had the time and resources to engage in thoughtful deliberation — even if those interests don’t align with what they prefer in the moment. Similarly, scientists as epistemic representatives are responsible for producing the knowledge that we would produce if we had the time and resources to do so.</p>
-<p>Following Warren’s discussion, we run into a problem:</p>
-<blockquote class="blockquote">
-<p>without more analysis, the formulation can tacitly legitimize paternalistic claims by representatives to know what is best for their constituents’ interests, often despite their preferences. At some limit, this formulation merges with Burke’s conception of elected representatives as <em>trustees</em> who substitute their (better) judgment for those of their relatively uninformed constituents. <span class="citation" data-cites="WarrenHowRepresentationEnables2018">(Warren 2018, 42, Warren’s emphasis)</span></p>
-</blockquote>
-<p>The use of “paternalism” here is notable, because feminist philosophy of science was born out of feminist critics of paternalistic, patriarchal science, especially (but not only) biomedical science. It’s therefore tempting to say that this same paternalism is a key problem for the legitimacy of the technocratic state today. Consider the backlash to lockdown approaches to Covid-19 <span class="citation" data-cites="HarvardValueJudgmentsCOVID192021 HarvardCausalInferenceMoral2021 LeeViralVisualizationsHow2021">(Harvard et al. 2021; Harvard and Winsberg 2021; Lee et al. 2021)</span>.</p>
-<p>But let’s follow the political theorists for one more dialectical step. Warren fends off the spectre of Burke by offering “two loci of judgment [that] must be robust for <em>democratic</em> representation to occur:”</p>
-<blockquote class="blockquote">
-<ul>
-<li>The representative must be responsive to the represented, which involves judgments about their interests as affected by a relevant collectivity.</li>
-<li>The represented must judge in what ways and how well they are represented by a representative, especially insofar as their interests are affected by a relevant collectivity. <span class="citation" data-cites="WarrenHowRepresentationEnables2018">(Warren 2018, 43)</span></li>
-</ul>
-</blockquote>
-<p>In other words, democratic representation requires continuous, reciprocal exchange between representatives and their constituents. Representatives might make decisions that contradict the constituents’ preferences. But they will need to be able to justify those decisions in terms that the constituents recognize as their interests. And the constituents will need to engage in quasi-public deliberation and remonstration, and ultimately decide whether or not to accept the claimed interests as theirs <span class="citation" data-cites="WarrenHowRepresentationEnables2018">(Warren 2018, 45)</span>.</p>
-<p>On this analysis, the problem with the technocratic management state is that it lacks institutions — or even informal effective processes — for the necessary continuous reciprocal exchange.<sup>3</sup> And, per my last blog post, this reflects the value-free ideal.</p>
-<p>A responsive, reciprocal relationship between scientists as representatives and their constituents can also help to address the gap between credentials and actual expertise. In environmental justice contexts, one important role of credentialed expert allies is to translate the expertise of community members and activists into the idiom of the technocratic management state <span class="citation" data-cites="OttingerTechnoscienceEnvironmentalJustice2011">(Ottinger and Cohen 2011, 7–8)</span>. Activists might also be included more directly in policymaking, as with ACT-UP <span class="citation" data-cites="EpsteinImpureScience1996">(Epstein 1996)</span>.</p>
-<p>All together, while it is oversimplified, this first model of representation supports an argument for incorporating more substantive opportunities for direct interaction between publics and experts in technocratic policymaking. For decades, science policy scholars and political scientists have examined a variety of institutional forms for such interactions <span class="citation" data-cites="WarrenCanDeliberativeMinipublics2015 SteelRethinkingRepresentationDiversity2020 KaplanDesigningParticipatoryTechnology2021">(Warren and Gastil 2015; Steel et al. 2020; Kaplan et al. 2021)</span>. However, it’s worth noting that some European studies have found that deliberative minipublics do not improve legitimacy <span class="citation" data-cites="JacobsRightKindParticipation2021 GoldbergCatchingDeliberativeWave2022">(Jacobs and Kaufmann 2021; Goldberg and Bächtiger 2022)</span>.</p>
-
-
-
-
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
-<div id="ref-BrownScienceDemocracyExpertise2009" class="csl-entry">
-Brown, Mark B. 2009. <em>Science in Democracy: Expertise, Institutions, and Representation</em>. Cambridge, Mass: MIT Press.
-</div>
-<div id="ref-CostaPublicCommentsInfluence2019" class="csl-entry">
-Costa, Mia, Bruce A. Desmarais, and John A. Hird. 2019. <span>“Public Comments’ Influence on Science Use in U.S. Rulemaking: The Case of EPA’s National Emission Standards.”</span> <em>The American Review of Public Administration</em> 49 (1): 36–50. <a href="https://doi.org/10.1177/0275074018795287">https://doi.org/10.1177/0275074018795287</a>.
-</div>
-<div id="ref-EpsteinImpureScience1996" class="csl-entry">
-Epstein, Steven. 1996. <em>Impure Science</em>. AIDS, Activism, and the Politics of Knowledge. Berkeley, Los Angeles, and Oxford: University of California Press. <a href="http://books.google.ca/books?id=kZOso0FMsrMC&amp;pg=PA39&amp;dq=intitle:Impure+Science+inauthor:epstein&amp;hl=&amp;cd=1&amp;source=gbs_api">http://books.google.ca/books?id=kZOso0FMsrMC&amp;pg=PA39&amp;dq=intitle:Impure+Science+inauthor:epstein&amp;hl=&amp;cd=1&amp;source=gbs_api</a>.
-</div>
-<div id="ref-FernandezPintoLegitimizingValuesRegulatory2019" class="csl-entry">
-Fernández Pinto, Manuela, and Daniel J. Hicks. 2019. <span>“Legitimizing Values in Regulatory Science.”</span> <em>Environmental Health Perspectives</em> 127 (3): 035001. <a href="https://doi.org/10.1289/EHP3317">https://doi.org/10.1289/EHP3317</a>.
-</div>
-<div id="ref-GillamQuestionsEPAMonsantoCollusion2017" class="csl-entry">
-Gillam, Carey. 2017. <span>“Questions about EPA-Monsanto Collusion Raised in Cancer Lawsuits.”</span> HuffPost. February 13, 2017. <a href="https://www.huffpost.com/entry/questions-about-epa-monsa_b_14727648">https://www.huffpost.com/entry/questions-about-epa-monsa_b_14727648</a>.
-</div>
-<div id="ref-GoldbergCatchingDeliberativeWave2022" class="csl-entry">
-Goldberg, Saskia, and André Bächtiger. 2022. <span>“Catching the <span>‘Deliberative Wave’</span>? How (Disaffected) Citizens Assess Deliberative Citizen Forums.”</span> <em>British Journal of Political Science</em>, March, 1–9. <a href="https://doi.org/10.1017/S0007123422000059">https://doi.org/10.1017/S0007123422000059</a>.
-</div>
-<div id="ref-HaederInfluenceAdministrativeProcess2015" class="csl-entry">
-Haeder, Simon F., and Susan Webb Yackee. 2015. <span>“Influence and the Administrative Process: Lobbying the U.S. President’s Office of Management and Budget.”</span> <em>American Political Science Review</em> 109 (3): 507–22. <a href="https://doi.org/10.1017/S0003055415000246">https://doi.org/10.1017/S0003055415000246</a>.
-</div>
-<div id="ref-HaederPresidentiallyDirectedPolicy2018" class="csl-entry">
-Haeder, Simon F, and Susan Webb Yackee. 2018. <span>“Presidentially Directed Policy Change: The Office of Information and Regulatory Affairs as Partisan or Moderator?”</span> <em>Journal of Public Administration Research and Theory</em> 28 (4): 475–88. <a href="https://doi.org/10.1093/jopart/muy033">https://doi.org/10.1093/jopart/muy033</a>.
-</div>
-<div id="ref-HarvardCausalInferenceMoral2021" class="csl-entry">
-Harvard, Stephanie, and Eric Winsberg. 2021. <span>“Causal Inference, Moral Intuition, and Modeling in a Pandemic.”</span> <em>Philosophy of Medicine</em> 2 (2). <a href="https://doi.org/10.5195/philmed.2021.70">https://doi.org/10.5195/philmed.2021.70</a>.
-</div>
-<div id="ref-HarvardValueJudgmentsCOVID192021" class="csl-entry">
-Harvard, Stephanie, Eric Winsberg, John Symons, and Amin Adibi. 2021. <span>“Value Judgments in a COVID-19 Vaccination Model: A Case Study in the Need for Public Involvement in Health-Oriented Modelling.”</span> <em>Social Science &amp; Medicine</em> 286 (October): 114323. <a href="https://doi.org/10.1016/j.socscimed.2021.114323">https://doi.org/10.1016/j.socscimed.2021.114323</a>.
-</div>
-<div id="ref-JacobsRightKindParticipation2021" class="csl-entry">
-Jacobs, Daan, and Wesley Kaufmann. 2021. <span>“The Right Kind of Participation? The Effect of a Deliberative Mini-Public on the Perceived Legitimacy of Public Decision-Making.”</span> <em>Public Management Review</em> 23 (1): 91–111. <a href="https://doi.org/10.1080/14719037.2019.1668468">https://doi.org/10.1080/14719037.2019.1668468</a>.
-</div>
-<div id="ref-KaplanDesigningParticipatoryTechnology2021" class="csl-entry">
-Kaplan, Leah R., Mahmud Farooque, Daniel Sarewitz, and David Tomblin. 2021. <span>“Designing Participatory Technology Assessments: A Reflexive Method for Advancing the Public Role in Science Policy Decision-Making.”</span> <em>Technological Forecasting and Social Change</em> 171 (October): 120974. <a href="https://doi.org/10.1016/j.techfore.2021.120974">https://doi.org/10.1016/j.techfore.2021.120974</a>.
-</div>
-<div id="ref-LeeViralVisualizationsHow2021" class="csl-entry">
-Lee, Crystal, Tanya Yang, Gabrielle Inchoco, Graham M. Jones, and Arvind Satyanarayan. 2021. <span>“Viral Visualizations: How Coronavirus Skeptics Use Orthodox Data Practices to Promote Unorthodox Science Online.”</span> <em>Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems</em>, May, 1–18. <a href="https://doi.org/10.1145/3411764.3445211">https://doi.org/10.1145/3411764.3445211</a>.
-</div>
-<div id="ref-OttingerTechnoscienceEnvironmentalJustice2011" class="csl-entry">
-Ottinger, Gwen, and Benjamin R. Cohen, eds. 2011. <em>Technoscience and Environmental Justice: Expert Cultures in a Grassroots Movement</em>. Urban and Industrial Environments. Cambridge, Mass: MIT Press.
-</div>
-<div id="ref-PauliFlintFightsBack2019" class="csl-entry">
-Pauli, Benjamin J. 2019. <em>Flint Fights Back: Environmental Justice and Democracy in the Flint Water Crisis</em>. MIT Press.
-</div>
-<div id="ref-PitkinConceptRepresentation1967" class="csl-entry">
-Pitkin, Hanna F. 1967. <em>The Concept of Representation</em>. University of California Press.
-</div>
-<div id="ref-RichardsonAdministrativePolicymakingRule1999" class="csl-entry">
-Richardson, Henry. 1999. <span>“Administrative Policy-Making: Rule of Law or Bureaucracy?”</span> In <em>Recrafting the Rule of Law: The Limits of Legal Order</em>, edited by David Dyzenhaus, 309–30. Oxford and Portland, Oregon: Hart Publishing.
-</div>
-<div id="ref-SteelRethinkingRepresentationDiversity2020" class="csl-entry">
-Steel, Daniel, Naseeb Bolduc, Kristina Jenei, and Michael Burgess. 2020. <span>“Rethinking Representation and Diversity in Deliberative Minipublics.”</span> <em>Journal of Deliberative Democracy</em> 16 (1): 46–57. <a href="https://doi.org/10.16997/jdd.398">https://doi.org/10.16997/jdd.398</a>.
-</div>
-<div id="ref-WarrenHowRepresentationEnables2018" class="csl-entry">
-Warren, Mark E. 2018. <span>“How Representation Enables Democratic Citizenship.”</span> In <em>Creating Political Presence: The New Politics of Democratic Representation</em>, edited by Dario Castiglione and Johannes Pollak, 39–60. Chicago, IL: University of Chicago Press. <a href="https://press.uchicago.edu/ucp/books/book/chicago/C/bo29203064.html">https://press.uchicago.edu/ucp/books/book/chicago/C/bo29203064.html</a>.
-</div>
-<div id="ref-WarrenCanDeliberativeMinipublics2015" class="csl-entry">
-Warren, Mark E., and John Gastil. 2015. <span>“Can Deliberative Minipublics Address the Cognitive Challenges of Democratic Citizenship?”</span> <em>The Journal of Politics</em> 77 (2): 562–74. <a href="https://doi.org/10.1086/680078">https://doi.org/10.1086/680078</a>.
-</div>
-<div id="ref-WilholtEpistemicInterestsObjectivity2022" class="csl-entry">
-Wilholt, Torsten. 2022. <span>“Epistemic Interests and the Objectivity of Inquiry.”</span> <em>Studies in History and Philosophy of Science</em> 91 (February): 86–93. <a href="https://doi.org/10.1016/j.shpsa.2021.11.009">https://doi.org/10.1016/j.shpsa.2021.11.009</a>.
-</div>
-</div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Technically, I was working for AAAS, as a Science and Technology Policy Fellow, and “hosted by” EPA.↩︎</p></li>
-<li id="fn2"><p>Note that I intend to use “epistemic agent” in exactly the same way as feminist social epistemologists.↩︎</p></li>
-<li id="fn3"><p>This is incorrect as stated. Agencies like EPA have at least two such processes. However, one is formal and ineffective, while the other is effective but fails criteria of democratic inclusion and justice. First, the formal notice-and-comment system solicits feedback from the general public on proposed regulation. But agency staff merely have to provide pro forma responses to these comments, giving the public very little effective political agency in this process <span class="citation" data-cites="RichardsonAdministrativePolicymakingRule1999 HaederInfluenceAdministrativeProcess2015 HaederPresidentiallyDirectedPolicy2018 CostaPublicCommentsInfluence2019">(Richardson 1999; Simon F. Haeder and Yackee 2015; Simon F. Haeder and Yackee 2018; Costa, Desmarais, and Hird 2019)</span>. Second, regulatory agency staff often have informal interactions with various “stakeholders,” providing opportunities for much more effective reciprocal exchange. But typically the only stakeholders included in these interactions are regulated industries <span class="citation" data-cites="GillamQuestionsEPAMonsantoCollusion2017">(eg, Gillam 2017)</span>. Environmental justice communities, for example, are unlikely to be included in these interactions, making these interactions both exclusionary and injust.↩︎</p></li>
-</ol>
-</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
-  <guid>https://dhicks.github.io/posts/2023-01-26-principle-agent.html</guid>
-  <pubDate>Thu, 26 Jan 2023 08:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

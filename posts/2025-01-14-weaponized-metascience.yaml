@@ -1,0 +1,171 @@
+---
+references:
+- id: HicksOpenScienceReplication2023
+  abstract: >-
+    Concerns about a crisis of mass irreplicability across scientific fields
+    (“the replication crisis”) have stimulated a movement for open science,
+    encouraging or even requiring researchers to publish their raw data and
+    analysis code. Recently, a rule at the US Environmental Protection Agency
+    (US EPA) would have imposed a strong open data requirement. The rule
+    prompted significant public discussion about whether open science practices
+    are appropriate for fields of environmental public health. The aims of this
+    paper are to assess (1) whether the replication crisis extends to fields of
+    environmental public health; and (2) in general whether open science
+    requirements can address the replication crisis. There is little empirical
+    evidence for or against mass irreplicability in environmental public health
+    specifically. Without such evidence, strong claims about whether the
+    replication crisis extends to environmental public health — or not — seem
+    premature. By distinguishing three concepts — reproducibility,
+    replicability, and robustness — it is clear that open data initiatives can
+    promote reproducibility and robustness but do little to promote
+    replicability. I conclude by reviewing some of the other benefits of open
+    science, and offer some suggestions for funding streams to mitigate the
+    costs of adoption of open science practices in environmental public health.
+  accessed:
+    - year: 2021
+      month: 7
+      day: 31
+  author:
+    - family: Hicks
+      given: Daniel J.
+  citation-key: HicksOpenScienceReplication2023
+  container-title: Accountability in Research
+  DOI: 10.1080/08989621.2021.1962713
+  ISSN: 0898-9621
+  issue: '1'
+  issued:
+    - year: 2023
+  license: All rights reserved
+  page: 34-62
+  PMID: '34330172'
+  publisher: Taylor & Francis
+  source: Taylor and Francis+NEJM
+  title: Open science, the replication crisis, and environmental public health
+  type: article-journal
+  URL: https://doi.org/10.1080/08989621.2021.1962713
+  volume: '30'
+
+- id: HicksValuePlotDoes2022
+  abstract: "Background:\_\n        A number of papers by Young and collaborators have criticized epidemiological studies and meta-analyses of air pollution hazards using a graphical method that the authors call a P value plot, claiming to find zero effects, heterogeneity, and P hacking. However, the P value plot method has not been validated in a peer-reviewed publication. The aim of this study was to investigate the statistical and evidentiary properties of this method.\n        Methods:\_\n        A simulation was developed to create studies and meta-analyses with known real effects δδ<math display=\"inline\" overflow=\"scroll\"><mi>δ</mi></math>, integrating two quantifiable conceptions of evidence from the philosophy of science literature. The simulation and analysis is publicly available and automatically reproduced.\n        Results:\_\n        In this simulation, the plot did not provide evidence for heterogeneity or P hacking with respect to any condition. Under the right conditions, the plot can provide evidence of zero effects; but these conditions are not satisfied in any actual use by Young and collaborators.\n        Conclusion:\_\n        The P value plot does not provide evidence to support the skeptical claims about air pollution hazards made by Young and collaborators."
+  accessed:
+    - year: 2022
+      month: 2
+      day: 22
+  author:
+    - family: Hicks
+      given: Daniel J.
+  citation-key: HicksValuePlotDoes2022
+  container-title: Environmental Epidemiology
+  DOI: 10.1097/EE9.0000000000000198
+  issue: '2'
+  issued:
+    - year: 2022
+      month: 4
+  language: en-US
+  license: All rights reserved
+  page: e198
+  source: journals.lww.com
+  title: The P value plot does not provide evidence against air pollution hazards
+  type: article-journal
+  URL: >-
+    https://journals.lww.com/environepidem/Fulltext/2022/04000/The_P_value_plot_does_not_provide_evidence_against.4.aspx
+  volume: '6'
+
+- id: HicksWhenVirtuesAre2022
+  abstract: >-
+    <p>Since at least the mid-2000s, political commentators, environmental
+    advocates, and scientists have raised concerns about an “anti-science”
+    approach to environmental policymaking in conservative governments in the US
+    and Canada. This paper explores and resolves a paradox surrounding at least
+    some uses of the “anti-science” epithet. I examine two cases of such
+    “anti-science” environmental policy, both of which involve appeals to
+    epistemic values that are widely endorsed by both scientists and
+    philosophers of science. It seems paradoxical to call an appeal to epistemic
+    values “anti-science.” I develop an analysis that, I argue, can resolve this
+    paradox. This analysis is a version of the “aims approach” to science and
+    values, drawing on ideas from axiology and virtue ethics. I characterize the
+    paradox in terms of conflicts or tensions between epistemic and pragmatic
+    aims, and argue that there is a key asymmetry between them: epistemic aims
+    are valuable, in part, because they are useful for pursuing pragmatic aims.
+    Thus, when epistemic and pragmatic aims conflict, epistemic aims need to be
+    reconceptualized in order to reconcile them to pragmatic aims. When this is
+    done, in the “anti-science” cases, the epistemic values are scientific vices
+    rather than virtues. Thus the “anti-science” epithet is apt.</p>
+  accessed:
+    - year: 2022
+      month: 4
+      day: 28
+  author:
+    - family: Hicks
+      given: Daniel J.
+  citation-key: HicksWhenVirtuesAre2022
+  container-title: Philosophy, Theory, and Practice in Biology
+  DOI: 10.3998/.2629
+  ISSN: 2475-3025
+  issue: '0'
+  issued:
+    - year: 2022
+      month: 4
+      day: 28
+  language: eng
+  license: All rights reserved
+  number: '0'
+  publisher: Michigan Publishing
+  source: journals.publishing.umich.edu
+  title: >-
+    When Virtues are Vices: 'Anti-Science' Epistemic Values in Environmental
+    Politics
+  title-short: When Virtues are Vices
+  type: article-journal
+  URL: https://journals.publishing.umich.edu/ptpbio/article/id/2629/
+  volume: '14'
+
+- id: HicksYoungsPValuePlot2022
+  abstract: >-
+    In a recent paper in the journal Environmental Epidemiology (Hicks 2022), I
+    examined the statistical-evidential properties of Young’s p-value plot, a
+    method used by the biostatistician S.
+  accessed:
+    - year: 2022
+      month: 3
+      day: 16
+  author:
+    - family: Hicks
+      given: Dan
+  citation-key: HicksYoungsPValuePlot2022
+  container-title: Social Epistemology Review and Reply Collective
+  issued:
+    - year: 2022
+      month: 3
+      day: 16
+  language: en-US
+  license: All rights reserved
+  title: Young’s P-Value Plot as an Agnogenic Technique, Dan Hicks
+  type: webpage
+  URL: >-
+    https://social-epistemology.com/2022/03/16/youngs-p-value-plot-as-an-agnogenic-technique-dan-hicks/
+
+- id: ReynoldsNIHFundingCuts
+  abstract: >-
+    In its notice outlining the large cut in university funding, the US National
+    Institutes of Health seems to draw on a report from a conservative think
+    tank that denounces the “political left.”
+  accessed:
+    - year: 2025
+      month: 2
+      day: 11
+  author:
+    - family: Reynolds
+      given: Matt
+  citation-key: ReynoldsNIHFundingCuts
+  container-title: Wired
+  ISSN: 1059-1028
+  language: en-US
+  section: tags
+  source: www.wired.com
+  title: >-
+    NIH Funding Cuts Appear to Draw on Heritage Foundation Report That Blasts
+    ‘DEI Staff’
+  type: article-magazine
+  URL: https://www.wired.com/story/nih-indirect-funding-cuts-heritage-foundation/
+...
