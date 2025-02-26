@@ -10,7 +10,28 @@
 <atom:link href="https://dhicks.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Website description</description>
 <generator>quarto-1.7.13</generator>
-<lastBuildDate>Fri, 14 Feb 2025 08:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 26 Feb 2025 08:00:00 GMT</lastBuildDate>
+<item>
+  <title>Is this how you think DEI works at colleges and universities? (rejected from r/AskTrumpSupporters)</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2025-02-26-DEI.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Bringing this question over from <a href="https://bsky.app/profile/nathanielcgreen.bsky.social/post/3liz5pbiges2f">Bluesky</a>, where I first saw it reposted. It’s based on a tweet (post?) on X by an account I don’t know.</p>
+<p>Paraphrasing the tweet, “DEI is a novel bureaucracy that had been created within the college system, which represented neither the faculty nor the students, and it was starting to act like many faculty members’ direct supervisor and telling them how to teach.”</p>
+<p>My question: Does this explanation fit with how you think DEI works at colleges and universities?</p>
+<p>(Just to be clear, in my experience this is not at all how it works. I’m a college professor, a social scientist, and I’ve taught at six different schools over the past 20+ years. I’ve never had anyone audit my syllabus or tell me what I should or shouldn’t teach. A few years ago the faculty in my department did an exercise in diversifying the authors on our syllabi. This was entirely voluntary; we decided as a department to do it, some of us made no changes, and some of us made big changes. We’re interested in hiring someone who specializes in our field’s version of critical race theory, because our student body is majority Hispanic and they’re really interested in taking those classes. If we or the students had different priorities, we’d be trying to hire in another area instead. The DEI office at my current school mostly puts on events and organizes mentoring programs.)</p>
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+  <guid>https://dhicks.github.io/posts/2025-02-26-DEI.html</guid>
+  <pubDate>Wed, 26 Feb 2025 08:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Weaponized metascience</title>
   <dc:creator>Dan Hicks</dc:creator>
@@ -1270,64 +1291,6 @@ Young, Iris Marion. 2000. <em>Inclusion and Democracy</em>. Oxford University Pr
 </section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2023-02-08-demagoguery.html</guid>
   <pubDate>Wed, 08 Feb 2023 08:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Undue influence of epistemic values</title>
-  <dc:creator>Dan Hicks</dc:creator>
-  <link>https://dhicks.github.io/posts/2023-01-30-democracy-defense.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>[We discussed this post <a href="https://www.facebook.com/hicks.daniel.j/posts/pfbid0UYjAapCWUSVvtfqg5bM5viGYJ3fCR9XU5DGLBkAcGn1u6cEoCrAymY2nRBbBtqqxl?comment_id=1342087143214313&amp;notif_id=1675111791180975&amp;notif_t=feed_comment&amp;ref=notif">on Facebook</a>.]</p>
-<p><span class="citation" data-cites="LuskDoesDemocracyRequire2021">Lusk (2021)</span> examines <em>the political legitimacy argument for the value free ideal</em>; elsewhere collaborators and I have called this the “democracy defense” <span class="citation" data-cites="FernandezPintoLegitimizingValuesRegulatory2019 HicksInductiveRiskScience2020">(Fernández Pinto and Hicks 2019; Hicks, Magnus, and Wright 2020)</span>. Here’s Lusk’s reconstruction of the argument <span class="citation" data-cites="LuskDoesDemocracyRequire2021">(Lusk 2021, 104; edited down a bit further by me)</span>:</p>
-<ol type="1">
-<li><strong>Legitimacy Premise</strong>: No set of non-epistemic values should have an undue influence in coercive democratic political decisions.</li>
-<li><strong>Infiltration Premise</strong>: If non-epistemic values play a role in the empirical justification of political decisions, then those values have an undue influence.</li>
-<li>Therefore, non-epistemic values should not play a role in empirical justification of political decisions.</li>
-</ol>
-<p>Lusk focuses on the Infiltration Premise, arguing that institutions for deliberative democracy can “generate [democratically] acceptable sets of values for use in scientific methodology” <span class="citation" data-cites="LuskDoesDemocracyRequire2021">(Lusk 2021, 215)</span>; influences of these values would therefore not be undue, and so the Infiltration Premise would be false.</p>
-<p>I was actually more interested in the Legitimacy Premise. Lusk gives it a brief defense:</p>
-<blockquote class="blockquote">
-<p>The legitimacy premise follows from liberal democratic principles. One of the core ideals of liberal democracy is that the democratic state should be <em>neutral</em> with regard to the different values and desires held by citizens; the state should not play favorites. <span class="citation" data-cites="LuskDoesDemocracyRequire2021">(Lusk 2021, 214, my emphasis)</span></p>
-</blockquote>
-<p>The Legitimacy Premise implicates — though does not logically entail — a difference in status between epistemic and non-epistemic values<sup>1</sup>. Specifically, the Legitimacy Premise picks out non-epistemic values as specifically problematic or worrisome if they play a role in political decisionmaking; epistemic values are not regarded as problematic or worrisome.</p>
-<p>But epistemic values can have influences that undermine (descriptive) legitimacy. Consider <em>Strengthening Transparency in Regulatory Science</em>, a rule proposed and (very briefly) adopted by the US EPA under the Trump administration <span class="citation" data-cites="HicksWhenVirtuesAre2022 HicksOpenScienceReplication2023">(Hicks 2022, 2023)</span>. The rule restricted the science that EPA could use to justify regulation, effectively imposing a strong open data requirement on environmental public health research. The rule was (publicly) justified by an appeal to epistemic values, namely, that open science practices will make the underlying science more reliable and reduce the rate/influence of false positive results. The rule received on the order of a million public comments, the vast majority of which were sharply negative. One of the most common criticisms was that the rule would undermine and delay regulation necessary to protect human health and the environment.</p>
-<p>In other words, <em>Strengthening Transparency</em> was widely regarded as illegitimate because it prioritized an epistemic value (avoiding false positives) over a non-epistemic value (protecting human health and the environment).</p>
-<p>I suggest that the Legitimacy Premise relies on a pair of assumptions, namely, that epistemic values are politically neutral while non-epistemic values are politically controversial. Consider the block quotation from Lusk above. A principle of state neutrality only justifies excluding non-epistemic values insofar as they are controversial (ie, not neutral), and would also apply to controversial epistemic values. In the case of <em>Strengthening Transparency</em>, the non-epistemic value of protecting human health and the environment was, mostly, politically neutral; it was the epistemic value of eliminating false positives that was controversial.</p>
-<p>The ideal of state neutrality is an ideal of depoliticization: that we can somehow get beyond the implacable chaos of power hierarchies, deep disagreement, sophistry, and naked (or artfully clothed) self-interest. The attraction of technocracy is that it purports to move us closer to this ideal, at least in the realm of the administrative state.</p>
-<p>So it seems to me there is a deep irony within the “democracy defense” of the value-free ideal. Proponents of this argument present themselves as defending democracy from technocrats run amock. But the conceptual framework and institutional forms assumed by the argument function to carve out a depoliticized, technocratic realm that is protected from democratic accountability.</p>
-
-
-
-
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
-<div id="ref-FernandezPintoLegitimizingValuesRegulatory2019" class="csl-entry">
-Fernández Pinto, Manuela, and Daniel J. Hicks. 2019. <span>“Legitimizing Values in Regulatory Science.”</span> <em>Environmental Health Perspectives</em> 127 (3): 035001. <a href="https://doi.org/10.1289/EHP3317">https://doi.org/10.1289/EHP3317</a>.
-</div>
-<div id="ref-HicksWhenVirtuesAre2022" class="csl-entry">
-Hicks, Daniel J. 2022. <span>“When Virtues are Vices: <span>‘Anti-Science’</span> Epistemic Values in Environmental Politics.”</span> <em>Philosophy, Theory, and Practice in Biology</em> 14 (0). <a href="https://doi.org/10.3998/.2629">https://doi.org/10.3998/.2629</a>.
-</div>
-<div id="ref-HicksOpenScienceReplication2023" class="csl-entry">
-———. 2023. <span>“Open Science, the Replication Crisis, and Environmental Public Health.”</span> <em>Accountability in Research</em> 30 (1): 34–62. <a href="https://doi.org/10.1080/08989621.2021.1962713">https://doi.org/10.1080/08989621.2021.1962713</a>.
-</div>
-<div id="ref-HicksInductiveRiskScience2020" class="csl-entry">
-Hicks, Daniel J., P. D. Magnus, and Jessey Wright. 2020. <span>“Inductive Risk, Science, and Values: A Reply to MacGillivray.”</span> <em>Risk Analysis</em> 40 (4): 667–73. <a href="https://doi.org/10.1111/risa.13434">https://doi.org/10.1111/risa.13434</a>.
-</div>
-<div id="ref-LuskDoesDemocracyRequire2021" class="csl-entry">
-Lusk, Greg. 2021. <span>“Does Democracy Require Value-Neutral Science? Analyzing the Legitimacy of Scientific Information in the Political Sphere.”</span> <em>Studies in History and Philosophy of Science Part A</em> 90 (December): 102–10. <a href="https://doi.org/10.1016/j.shpsa.2021.08.009">https://doi.org/10.1016/j.shpsa.2021.08.009</a>.
-</div>
-</div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Many authors in the SVP literature use “non-epistemic” values as synonymous with social, ethical, and political values. However, if epistemic values are defined as features of scientific practice or its products that promote the attainment of truth, then paradigm “non-epistemic” values can be truth-promoting.↩︎</p></li>
-</ol>
-</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
-  <guid>https://dhicks.github.io/posts/2023-01-30-democracy-defense.html</guid>
-  <pubDate>Mon, 30 Jan 2023 08:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
