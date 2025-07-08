@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dan Hicks">
+<meta name="dcterms.date" content="2025-07-08">
+
+<title>Concerns with bibliometrics in resource allocation decisions – Dan Hicks</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-cf3f2c26eef976f46b51aa29f3e196e4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Concerns with bibliometrics in resource allocation decisions – Dan Hicks">
+<meta property="og:description" content="Website description">
+<meta property="og:site_name" content="Dan Hicks ">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Dan Hicks</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Teaching</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
+        <li>
+    <a class="dropdown-item" href="https://data-science-methods.github.io/">
+ <span class="dropdown-text">Methods of Data Science</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://fairy-shrimp.netlify.app/">
+ <span class="dropdown-text">Notes for Critical Reasoning</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0001-7945-4416"> 
+<span class="menu-text"><i class="fa-brands fa-orcid" aria-label="orcid"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=XvkwYZsAAAAJ&amp;hl=en"> 
+<span class="menu-text"><i class="ai  ai-google-scholar" title="" style="color:"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://dhicks.github.io/cv"> 
+<span class="menu-text"><i class="ai  ai-cv" title="" style="color:"></i></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dhicks/"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:dhicks4@ucmerced.edu"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../index.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Concerns with bibliometrics in resource allocation decisions</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Dan Hicks </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">July 8, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#executive-summary" id="toc-executive-summary" class="nav-link active" data-scroll-target="#executive-summary">Executive summary</a>
+  <ul class="collapse">
+  <li><a href="#professional-consensus" id="toc-professional-consensus" class="nav-link" data-scroll-target="#professional-consensus">Professional consensus</a></li>
+  <li><a href="#key-technical-problems" id="toc-key-technical-problems" class="nav-link" data-scroll-target="#key-technical-problems">Key technical problems</a></li>
+  <li><a href="#systemic-bias-concerns" id="toc-systemic-bias-concerns" class="nav-link" data-scroll-target="#systemic-bias-concerns">Systemic bias concerns</a></li>
+  <li><a href="#failure-to-avoid-controversy" id="toc-failure-to-avoid-controversy" class="nav-link" data-scroll-target="#failure-to-avoid-controversy">Failure to avoid controversy</a></li>
+  <li><a href="#recommendations" id="toc-recommendations" class="nav-link" data-scroll-target="#recommendations">Recommendations</a></li>
+  </ul></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#bibliometrics-and-scientometrics" id="toc-bibliometrics-and-scientometrics" class="nav-link" data-scroll-target="#bibliometrics-and-scientometrics">Bibliometrics and scientometrics</a></li>
+  <li><a href="#my-background" id="toc-my-background" class="nav-link" data-scroll-target="#my-background">My background</a></li>
+  <li><a href="#the-dora-statement-and-leiden-manifesto" id="toc-the-dora-statement-and-leiden-manifesto" class="nav-link" data-scroll-target="#the-dora-statement-and-leiden-manifesto">The DORA Statement and Leiden Manifesto</a></li>
+  </ul></li>
+  <li><a href="#outputs-outcomes-and-impacts" id="toc-outputs-outcomes-and-impacts" class="nav-link" data-scroll-target="#outputs-outcomes-and-impacts">Outputs, outcomes, and impacts</a></li>
+  <li><a href="#incommensurability-of-research-outputs-and-outcomes" id="toc-incommensurability-of-research-outputs-and-outcomes" class="nav-link" data-scroll-target="#incommensurability-of-research-outputs-and-outcomes">Incommensurability of research outputs and outcomes</a></li>
+  <li><a href="#the-reference-class-problem" id="toc-the-reference-class-problem" class="nav-link" data-scroll-target="#the-reference-class-problem">The reference class problem</a></li>
+  <li><a href="#tradeoffs-between-data-coverage-and-data-quality" id="toc-tradeoffs-between-data-coverage-and-data-quality" class="nav-link" data-scroll-target="#tradeoffs-between-data-coverage-and-data-quality">Tradeoffs between data coverage and data quality</a></li>
+  <li><a href="#gender-and-racialethnic-bias" id="toc-gender-and-racialethnic-bias" class="nav-link" data-scroll-target="#gender-and-racialethnic-bias">Gender and racial/ethnic bias</a></li>
+  <li><a href="#quantification-as-depoliticization" id="toc-quantification-as-depoliticization" class="nav-link" data-scroll-target="#quantification-as-depoliticization">Quantification as depoliticization</a></li>
+  <li><a href="#recommendations-1" id="toc-recommendations-1" class="nav-link" data-scroll-target="#recommendations-1">Recommendations</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="2025-07-08-research-metrics.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="2025-07-08-research-metrics.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is an HTML version of a document that I wrote for Leonardo Arriola, Dean of Social Sciences, Humanities, and Arts at UC Merced. There’s a PDF version linked in the sidebar.</p>
+</div>
+</div>
+<section id="executive-summary" class="level1">
+<h1>Executive summary</h1>
+<p>The UC Merced administration is working to develop a set of “principles and metrics” to be used to make or inform the allocation of faculty lines to departments. This document provides a review of the limitations and problems associated with using publication-based metrics (bibliometrics) for faculty resource allocation decisions. Drawing on my work experience in research evaluation and the established consensus among professionals in that field, I argue that bibliometrics are not fit for purpose for making hiring, tenure, promotion, and faculty line allocation decisions.</p>
+<section id="professional-consensus" class="level2">
+<h2 class="anchored" data-anchor-id="professional-consensus">Professional consensus</h2>
+<p>This position is consistent with major professional statements in the field of research evaluation, including the San Francisco Declaration on Research Assessment (DORA) and the Leiden Manifesto, both of which explicitly warn against using journal-based metrics and similar bibliometric measures for personnel decisions. DORA specifically states: “Do not use journal-based metrics, such as Journal Impact Factors, as a surrogate measure of the quality of individual research articles, to assess an individual scientist’s contributions, or in hiring, promotion, or funding decisions.”</p>
+</section>
+<section id="key-technical-problems" class="level2">
+<h2 class="anchored" data-anchor-id="key-technical-problems">Key technical problems</h2>
+<p>I review several technical problems with bibliometrics as measures of research quality:</p>
+<dl>
+<dt>Proxy Limitations:</dt>
+<dd>
+These metrics are at best crude proxies for research quality and impact, measuring outputs and outcomes rather than actual scholarly or social impacts.
+</dd>
+<dt>Incommensurability:</dt>
+<dd>
+Different types of research outputs are fundamentally incommensurable: there is no meaningful way to compare a historical monograph to a biomedical journal article on a single scale.
+</dd>
+<dt>Reference Class Problem:</dt>
+<dd>
+Academic disciplines have porous boundaries and individual researchers typically work across multiple communities, making it impossible to accurately normalize metrics across fields.
+</dd>
+<dt>Data Quality Issues:</dt>
+<dd>
+A fundamental tradeoff exists between data coverage and quality—comprehensive databases suffer from poor data quality and manipulation vulnerabilities, while selective databases systematically underrepresent social sciences and humanities.
+</dd>
+</dl>
+</section>
+<section id="systemic-bias-concerns" class="level2">
+<h2 class="anchored" data-anchor-id="systemic-bias-concerns">Systemic bias concerns</h2>
+<p>Extensive research demonstrates that bibliometric systems systematically disadvantage women and racial/ethnic minorities through lower citation rates, publication barriers, and exclusionary networks. Rather than providing objective assessment, these systems risk exacerbating existing inequities.</p>
+</section>
+<section id="failure-to-avoid-controversy" class="level2">
+<h2 class="anchored" data-anchor-id="failure-to-avoid-controversy">Failure to avoid controversy</h2>
+<p>Bibliometrics are attractive because they appear to depoliticize controversial resource allocation decisions. But this appearance is incorrect. Instead, they shift political controversies to the kinds of technical implementation issues identified above, creating new sources of institutional conflict while failing to address underlying disagreements about priorities and values.</p>
+</section>
+<section id="recommendations" class="level2">
+<h2 class="anchored" data-anchor-id="recommendations">Recommendations</h2>
+<p>As an alternative to bibliometrics, I recommend taking an approach to faculty hiring decisions that starts by articulating campus-levels aims for hiring; approaches hiring requests as program impact plans — also known as theories of change and logic models — to explicitly connect proposed hires to those campus-level aims; and incorporates faculty voice through a peer review process, similar to the approaches already used for curricular changes on campus and by research funding agencies.</p>
+</section>
+</section>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Since last semester, the UC Merced administration has been discussing the development of a set of “principles and metrics” to be used to make or inform the allocation of faculty lines to departments. In SSHA, faculty have participated in these discussions via meetings of the department chairs and Executive Committee, with multiple rounds of feedback on lists of proposed principles and opportunities.</p>
+<p>Publication-based metrics have come up repeatedly in these discussions, with both support and criticism from various faculty members. As I explain below, I have some work experience and scholarly expertise on the uses and limitations of bibliometrics. Following the lead of professionals in the relevant fields, I do not believe these metrics are fit for purpose in making hiring, tenure, and promotion decisions, including decisions about how to allocate faculty lines.</p>
+<p>In discussions and in writing, I have previously shared brief statements of common technical concerns about bibliometrics with Dean Arriola. The purpose of this document is to provide a more detailed version of these concerns, showing that they are grounded in relevant scholarship and expertise.</p>
+<p>In the remainder of this introduction, I first clarify the terms “bibliometrics” and “scientometrics,” summarize my background in this area, and review two prominent statements on bibliometrics by research assessment professionals. In the following sections, I argue that bibliometrics are at best crude proxies for the things we academics are trying to do with our scholarship; that research outputs and outcomes are incommensurable in ways that violate the assumptions used to calculate bibliometrics; that bibliometrics are confounded by the “reference class problem”; that there is a sharp tradeoff between bibliometric data coverage and data quality; that bibliometrics can reflect systematic gender and racial/ethnic bias; and finally that they do not serve their broader function of quieting fraught controversies. I close with some procedural recommendations that, I think, would keep controversies from becoming too heated and avoid the favoritism and patronage of the current system.</p>
+<section id="bibliometrics-and-scientometrics" class="level2">
+<h2 class="anchored" data-anchor-id="bibliometrics-and-scientometrics">Bibliometrics and scientometrics</h2>
+<p>Among specialists, “bibliometrics” refers to “bibliography-derived” measures of scientific productivity and impact, including publication and citation counts as well as impact factors<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> and the h-index<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. “Scientometrics” is a more general term, covering measures based on patent citations <span class="citation" data-cites="FunkDynamicNetworkMeasure2016">(e.g., <a href="#ref-FunkDynamicNetworkMeasure2016" role="doc-biblioref">Funk and Owen-Smith 2016</a>)</span>, coauthor network statistics <span class="citation" data-cites="ZengDifferencesCollaborationPatterns2016">(<a href="#ref-ZengDifferencesCollaborationPatterns2016" role="doc-biblioref">Zeng et al. 2016</a>)</span>, semantic novelty <span class="citation" data-cites="HePredictiveEffectsNovelty2018 PetersenEvolutionBiomedicalInnovation2022">(<a href="#ref-HePredictiveEffectsNovelty2018" role="doc-biblioref">He and Chen 2018</a>; <a href="#ref-PetersenEvolutionBiomedicalInnovation2022" role="doc-biblioref">Petersen 2022</a>)</span>, or indeed any other quantitative attempt to understand scientific productivity and social impact.</p>
+<p>“Scientometrics” is also used as the name of a research field — the scholarly side of the practice of research assessment or research evaluation — that operates at the intersection of science and technology studies, science policy, library and information sciences, and sociology. As a research field, research evaluation/scientometrics has obvious conceptual and methodological ties to science-of-science and metascience. Unlike these other two fields, research evaluation tends to focus more on supporting decisionmaking by funding bodies and research organizations.</p>
+</section>
+<section id="my-background" class="level2">
+<h2 class="anchored" data-anchor-id="my-background">My background</h2>
+<p>From 2015-2017 I served as an AAAS Science and Technology Policy fellow, hosted by the EPA Office of Research and Development’s Chemical Safety for Sustainability program (first year) and then by NSF’s National Robotics Initiative (second year). In both positions my responsibilities included developing and conducting evaluation projects for the research done (EPA) or funded (NSF) by my host office. Two of these evaluation projects were published and appear on my CV <span class="citation" data-cites="HicksBibliometricsSocialValidation2016 HicksNationalRoboticsInitiative2019">(<a href="#ref-HicksBibliometricsSocialValidation2016" role="doc-biblioref">Daniel J. Hicks 2016</a>; <a href="#ref-HicksNationalRoboticsInitiative2019" role="doc-biblioref">D. Hicks and Simmons 2019</a>)</span>.</p>
+<p>From 2017-2019 I was a postdoctoral researcher at the Data Science Initiative (now known as DataLab: Data Science and Informatics) at UC Davis. My position was funded by Elsevier<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> and the general aim of the postdoc was to develop new approaches to scientometrics that avoided common criticisms of bibliometrics (as discussed in the rest of this document). In this role I had opportunities to meet with deans and campus-level administrators to develop projects, and worked closely with both faculty and staff. Again, some of these projects were published and appear on my CV <span class="citation" data-cites="HicksImpactingCapabilitiesConceptual2018 HicksNetworkAnalysisEvaluate2019 HicksProductivityInterdisciplinaryImpacts2021">(<a href="#ref-HicksImpactingCapabilitiesConceptual2018" role="doc-biblioref">Daniel J. Hicks, Stahmer, and Smith 2018</a>; <a href="#ref-HicksNetworkAnalysisEvaluate2019" role="doc-biblioref">Daniel J. Hicks et al. 2019</a>; <a href="#ref-HicksProductivityInterdisciplinaryImpacts2021" role="doc-biblioref">Daniel J. Hicks 2021</a>)</span>.</p>
+</section>
+<section id="the-dora-statement-and-leiden-manifesto" class="level2">
+<h2 class="anchored" data-anchor-id="the-dora-statement-and-leiden-manifesto">The DORA Statement and Leiden Manifesto</h2>
+<p>Bibliometrics have played a significant and highly contested role in faculty hiring, tenure, and promotion decisions in a number of countries for several decades, though less so in the United States. In this context, research evaluation experts have released multiple statements providing guidance and criticizing certain uses of bibliometrics. I review two especially influential statements, the San Francisco Declaration on Research Assessment <span class="citation" data-cites="CaganSanFranciscoDeclaration2013">(DORA, published in multiple venues including <a href="#ref-CaganSanFranciscoDeclaration2013" role="doc-biblioref">Cagan 2013</a>)</span> and the Leiden Manifesto for Research Metrics <span class="citation" data-cites="HicksLeidenManifestoResearch2015">(<a href="#ref-HicksLeidenManifestoResearch2015" role="doc-biblioref">Diana Hicks et al. 2015</a>)</span>.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<p>DORA first offers a number of criticisms of the impact factor: that it was originally created to help librarians make purchasing decisions, not assess research; that means are misleading measures of central tendency for highly skewed distributions such as citation counts; that it fails to distinguish different kinds of articles (commentaries from primary research from reviews) and neglects differences across research fields; and that the data used to calculate impact factors are generally neither public nor subject to peer review. It then lists 18 recommended practices for research assessment, the first of which is</p>
+<blockquote class="blockquote">
+<p>Do not use journal-based metrics, such as Journal Impact Factors, as a surrogate measure of the quality of individual research articles, to assess an individual scientist’s contributions, or in hiring, promotion, or funding decisions.</p>
+</blockquote>
+<p>For institutions specifically, recommendation 5 states:</p>
+<blockquote class="blockquote">
+<p>For the purposes of research assessment, consider the value and impact of all research outputs (including datasets and software) in addition to research publications, and consider a broad range of impact measures including qualitative indicators of research impact, such as influence on policy and practice.</p>
+</blockquote>
+<p>The Leiden Manifesto is motivated by a concern that research evaluation and metric development is “usually well intentioned, not always well informed, often ill applied …. by organizations without knowledge of, or advice on, good practice and interpretation.” The Manifesto offers a “distillation of best practice in metrics-based research assessment,” in the form ten principles. Some of these principles include:</p>
+<ol type="1">
+<li><em>Quantitative evaluation should support qualitative, expert assessment</em> …. assessors must not be tempted to cede decision-making to the numbers.</li>
+<li><em>Measure performance against the research missions of the institution, group or researcher.</em> Programme goals should be stated at the start, and the indicators used to evaluate performance should relate clearly to those goals.</li>
+<li><em>Allow those evaluated to verify data and analysis.</em> To ensure data quality, all researchers included in bibliometric studies should be able to check that their outputs have been correctly identified.</li>
+<li><em>Account for variation by field in publication and citation practices.</em> Best practice is to select a suite of possible indicators and allow fields to choose among them.</li>
+<li><em>Avoid misplaced concreteness and false precision.</em> Science and technology indicators are prone to conceptual ambiguity and uncertainty and require strong assumptions that are not universally accepted.</li>
+<li><em>Recognize the systemic effects of assessment and indicators</em> …. a suite of indicators is always preferable — a single one will invite gaming and goal displacement (in which the measurement becomes the goal).</li>
+</ol>
+<p>These points imply important limitations and concerns about bibliometrics that will be echoed below: the need to base the choice of metrics on organizational goals rather than what’s convenient to measure; significant variation in data coverage and quality; and variations across fields. Point nine is also known as “Goodheart’s Law”: “when a measure becomes a target, it ceases to be a good measure.” Tying resource allocations to publication counts encourages “salami slicing,” the rapid publication of many minimally-informative or low-quality (or even fraudulent) papers; while using citation counts incentivizes the formation of “citation cartels” <span class="citation" data-cites="KojakuDetectingAnomalousCitation2021">(<a href="#ref-KojakuDetectingAnomalousCitation2021" role="doc-biblioref">Kojaku, Livan, and Masuda 2021</a>)</span> or even manufacturing fake papers to inflate citation counts <span class="citation" data-cites="IbrahimGoogleScholarManipulatable2024">(<a href="#ref-IbrahimGoogleScholarManipulatable2024" role="doc-biblioref">Ibrahim et al. 2024</a>)</span>.</p>
+</section>
+</section>
+<section id="outputs-outcomes-and-impacts" class="level1">
+<h1>Outputs, outcomes, and impacts</h1>
+<p>In program evaluation, there’s a useful distinction between outputs, outcomes, and impacts. <em>Outputs</em> are the direct products of the program’s activities, and the things the program has most control over. For research organizations, outcomes include things like scholarly publications, grey literature reports, social media posts by the organization or its members, grant applications submitted, and public-facing events. <em>Outcomes</em> are the short-term consequences that follow from those outputs: citations to publications, policymakers and advocates referencing reports, social and traditional media coverage, grant awards, attendance at public events. <em>Impacts</em> are the longer-term goals that the organization hopes to achieve by way of its outputs and outcomes. <span class="citation" data-cites="HicksImpactingCapabilitiesConceptual2018">Daniel J. Hicks, Stahmer, and Smith (<a href="#ref-HicksImpactingCapabilitiesConceptual2018" role="doc-biblioref">2018</a>)</span> further distinguish between inward-facing goals (“the value of research for the relevant scholarly community, in terms of the further production of new knowledge”) and outward-facing goals (“the value of research for other social practices …. [such as] broader social efforts to protect biodiversity and preserve natural or undeveloped spaces”).</p>
+<p>These distinctions make it clear that bibliometrics — publication and citation counts, impact factors — are outputs and outcomes, rather than impacts. At best, these metrics are proxies for impacts, and indeed only proxies for inward-facing impacts. They provide at most limited insight into the scholarly impact of research, and none into social impact.</p>
+<p>Despite being proxies, bibliometrics (incorrectly) appear to be useful for research assessment because impacts are often implicit, poorly defined, or difficult to measure, especially outward-facing social impacts. For example, in UC Merced’s 2021-2030 strategic plan, the first goal is to “Engage Our World and Region Through Discovery and the Advancement of Knowledge.” This is explained as including “interdisciplinary and transformational research that supports equity and prosperity globally and locally, with particular sensitivity for the San Joaquin Valley.” “Support[ing] equity and prosperity” is an outward-facing impact. It is appealing, but also so vague that the proposed measures don’t even try to operationalize it. Instead, the strategic plan lists various output measures (tenure rates, research spending) and a vague bibliometric item (“number of impactful papers,” with “[specific] measures to be developed”).</p>
+<p>This is why the Leiden Manifesto states that “Programme goals should be stated at the start, and the indicators used to evaluate performance should relate clearly to those goals.” Without clear impacts it’s impossible to develop measures of progress or achievement with respect to those impacts.</p>
+</section>
+<section id="incommensurability-of-research-outputs-and-outcomes" class="level1">
+<h1>Incommensurability of research outputs and outcomes</h1>
+<p>In discussions at the SSHA department chairs and Executive Committee meetings, a repeated point has been that the outputs and outcomes are generally incommensurable. There is no meaningful, all-inclusive, unidimensional scale with which to compare a book written by a historian to a journal article written by a psychologist to a systematic review conducted by a team of biomedical researchers.</p>
+<p>One aspect of incommensurability in this example is incommensurability by type of research output. Academic researchers produce numerous different kinds of outputs: monographs, anthologies, textbooks and other teaching materials; “original research” journal articles, reviews, theoretical papers, commentaries; white papers, policy reports; blog posts, opinion columns and letters, edutainment podcasts and videos, interactive websites, media interviews; conference presentations, keynotes and invited talks, flash talks, posters; artistic exhibitions and performances; workshops and conferences; public events.</p>
+<p>These different kinds of outputs require not just different amounts of work, but different kinds of work and are anticipated to have qualitatively different kinds of outcomes and impacts. Even within a given field, an archive-based historical monograph is intended to do something very different from a short conference presentation or a public-facing website. It therefore does not make sense to ask how much “more” the monograph should “count” than the presentation or the website.</p>
+<p>Research outcomes associated with a given type of output can also be incommensurable across fields. It is a commonplace in bibliometrics that the average citation rate differs across fields; for this reason, bibliometrics data providers such as Clarivate (Web of Science) and Elsevier (Scopus) provide “field-weighted” or “normalized” citation statistics.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> One common explanation is differences in publication rates and citation practices. For example, in philosophy, a tenure-track assistant professor who publishes more than one paper per year (in “good journals”) would be considered highly productive; while a typical mid-sized biomedical lab might publish a dozen papers a year. Some fields, such as history, are expected to have lengthy and comprehensive bibliographies; while others, such as biomedicine, typically have short and selective bibliographies (except for systematic reviews, which are expected to be comprehensive, etc.). In line with this, <span class="citation" data-cites="RadicchiUniversalityCitationDistributions2008">Radicchi, Fortunato, and Castellano (<a href="#ref-RadicchiUniversalityCitationDistributions2008" role="doc-biblioref">2008</a>)</span> argue that there is a “universal,” cross-field lognormal distribution of <em>relative</em> citations, that is, the number of citations received by a paper divided by the average number of citations received by all papers published in the same field and year. However, subsequent work on the “universal” citation distribution has not produced a consensus on the functional form it should take — lognormal, power-law, exponential, negative binomial, etc. — how it should be parameterized, and what underlying mechanisms might produce it <span class="citation" data-cites="GolosovskyUniversalityCitationDistributions2021">(<a href="#ref-GolosovskyUniversalityCitationDistributions2021" role="doc-biblioref">Golosovsky 2021</a>)</span>. Indeed, <span class="citation" data-cites="MarxCausesSubjectspecificCitation2015">Marx and Bornmann (<a href="#ref-MarxCausesSubjectspecificCitation2015" role="doc-biblioref">2015</a>)</span> argue that data quality plays a major role in cross-field differences, and in particular the poor coverage of the humanities by databases such as Web of Science.</p>
+<p>For these reasons, “field-weighted” adjustments to citation counts have, at best, speculative and controversial theoretical support.</p>
+</section>
+<section id="the-reference-class-problem" class="level1">
+<h1>The reference class problem</h1>
+<p>Attempts to adjust bibliometrics for differences across fields also run into a significant theoretical problem, which <span class="citation" data-cites="LeeReferenceClassProblem2020">C. J. Lee (<a href="#ref-LeeReferenceClassProblem2020" role="doc-biblioref">2020</a>)</span> calls “<em>the reference class problem for credit valuation in science</em>: to which of the agent’s communities—which reference class—should credit valuations be indexed when determining the amount of credit the agent accrues …?” (1029, emphasis in original).</p>
+<p>Academic fields are often thought of as clearly-bounded, discrete entities, reflecting the administrative division of universities into schools and departments. But reality is much messier than this: consider research areas such as quantum chemistry (operating across the boundaries between physics and chemistry), bioinformatics (molecular biology — itself biology and chemistry — and computer science), or behavioral economics (psychology and economics). Or indeed “interdisciplines” such as material science or cognitive science. Even within distinct fields, there can be radical differences in research questions, methods, and norms, as in anthropology (often divided into something like biological, cultural, archaeology, linguistics, and primatology), physics (experimental, theoretical, and cosmology), or philosophy (analytic, continental, and philosophy of science).</p>
+<p>Because the boundaries within and between academic fields are so porous, a particular research project usually cannot be firmly located within a single research community, and an individual researcher or administrative unit will have a complex portfolio of projects spanning numerous different communities. For example, my Web of Science author profile<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> classifies me as working in History &amp; Philosophy of Science; Philosophy; Public, Environmental &amp; Occupational Health; Environmental Sciences &amp; Ecology; and Science &amp; Technology - Other Topics. This leaves out several areas under which I could be categorized, such as gender studies, science communication, science policy, and statistics. And there are potentially important differences at lower levels of classification; for example, publishing and citation practices between historians and philosophers of science are quite different. In practice, there are perhaps a dozen different fields — and thus <em>no</em> field — against which the citations to my research can be normed.</p>
+<p>Bibliometrics databases attempt to avoid this problem using multicategory classifications, which are often imprecise. For example, in Scopus’ All Science Journal Classification (ASJC) system<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>, <em>Nature Human Behavior</em> is classified as Psychology: Experimental and Cognitive Psychology, Psychology: Social Psychology, and Neuroscience: Behavioral Neuroscience;<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> this journal also regularly publishes work in archaeology, cognitive science, and other fields across the social sciences. Across the 47,000 journals indexed by Scopus, the median journal has 2 ASJC codes, and more than 2,600 journals have 5 or more codes.</p>
+</section>
+<section id="tradeoffs-between-data-coverage-and-data-quality" class="level1">
+<h1>Tradeoffs between data coverage and data quality</h1>
+<p>A number of services provide bibliometric data. Web of Science and Scopus are commercial services; our campus subscribes to Web of Science. Google Scholar and Semantic Scholar are free. Web of Science and Scopus are not intended to cover every academic journal or book publisher, but instead the “highest impact journals” (<a href="https://webofscience.help.clarivate.com/Content/wos-core-collection/wos-core-collection.htm" class="uri">https://webofscience.help.clarivate.com/Content/wos-core-collection/wos-core-collection.htm</a>). Semantic Scholar and, especially, Google Scholar aim to be more comprehensive; users of Google Scholar will be familiar with search results including master’s theses, conference programs, preprints, grey literature reports, and other documents that don’t necessarily count as scholarly publications.</p>
+<p>These differences in coverage partially explain why different services provide different values for standard bibliometrics such as publication count, citation count, and the h-index. <a href="#tbl-databases" class="quarto-xref">Table&nbsp;1</a> compares results for my author profile across these four platforms and my personally maintained CV.</p>
+<div id="tbl-databases" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-databases-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Comparison of publication counts, citation counts, and h-index from my author profile on four database services, and my CV, as of 2025-07-01. Web of Science lists 22 documents in the “core collection,” and 2 additional “non-indexed documents.” Publications on my CV are divided into “peer-reviewed publications,” “other scholarly products” (primarily preprints and book reviews), and “general interest publications.” Sources: <a href="https://scholar.google.com/citations?user=XvkwYZsAAAAJ&amp;hl=en">Google Scholar profile</a>; <a href="https://www.scopus.com/authid/detail.uri?authorId=48361474800">Scopus profile</a>; <a href="https://www.semanticscholar.org/author/Daniel-J.-Hicks/143675235">Semantic Scholar profile</a>; <a href="https://www.webofscience.com/wos/author/record/973913?authorIds=973913&amp;state=%7B%7D">Web of Science profile</a>; <a href="https://dhicks.github.io/cv/">CV</a>.
+</figcaption>
+<div aria-describedby="tbl-databases-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>publications</th>
+<th>citations</th>
+<th>h-index</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Google Scholar</td>
+<td>40</td>
+<td>678</td>
+<td>14</td>
+</tr>
+<tr class="even">
+<td>Scopus</td>
+<td>25</td>
+<td>309</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>Semantic Scholar</td>
+<td>37</td>
+<td>352</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>Web of Science</td>
+<td>22+2</td>
+<td>237</td>
+<td>9</td>
+</tr>
+<tr class="odd">
+<td>CV</td>
+<td>23+15+4</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>For me, Google Scholar lists nearly twice as many publications as Web of Science, and 2.9 times as many citations. Scopus reports a few more publications than Web of Science (14%), but 30% more citations. Semantic Scholar has almost as many publications as Google Scholar, but barely half as many citations. None of these include every publication listed on my CV.</p>
+<p>The results for my author profile generalize: <span class="citation" data-cites="Martin-MartinGoogleScholarWeb2018">Martín-Martín et al. (<a href="#ref-Martin-MartinGoogleScholarWeb2018" role="doc-biblioref">2018</a>)</span> found that Google Scholar reported nearly all citations found by Scopus and Web of Science, along with a large number of other citations, especially from “non-journal sources (48%-65%), including theses, books, conference papers, and unpublished materials” (1). In addition, a companion piece by the same authors, <span class="citation" data-cites="Martin-MartinCoverageHighlycitedDocuments2018">Martín-Martín, Orduna-Malea, and López-Cózar (<a href="#ref-Martin-MartinCoverageHighlycitedDocuments2018" role="doc-biblioref">2018</a>)</span>, finds evidence that Web of Science and Scopus inclusion criteria are biased against social sciences and humanities: “a large fraction of highly-cited documents [according to Google Scholar] in the Social Sciences and Humanities (8.6–28.2%) are invisible to Web of Science and Scopus. In the Natural, Life, and Health Sciences the proportion of missing highly-cited documents in Web of Science and Scopus is much lower.”</p>
+<p>However, the broad coverage of Google Scholar comes with a critical tradeoff: poor data quality. My informal understanding is that Google has never employed professional librarians in the Scholar project, and relies almost entirely on machine learning to parse citations. While authors can edit the metadata on publications on their profile, there is no way to flag erroneous or questionable citations. <span class="citation" data-cites="SimontonGoogleScholarCitations">Simonton (<a href="#ref-SimontonGoogleScholarCitations" role="doc-biblioref">n.d.</a>)</span> chronicles severe metadata errors and erratic changes in citation counts on their Google Scholar profile. In a small study, <span class="citation" data-cites="SauvayreTypesErrorsHiding2022">Sauvayre (<a href="#ref-SauvayreTypesErrorsHiding2022" role="doc-biblioref">2022</a>)</span> found that only two out of 281 purported citations to two source articles did not contain errors. <span class="citation" data-cites="IbrahimGoogleScholarManipulatable2024">Ibrahim et al. (<a href="#ref-IbrahimGoogleScholarManipulatable2024" role="doc-biblioref">2024</a>)</span> show that citation counts on Google Scholar can easily be inflated by using an LLM to generate fake papers and posting them on preprint servers.</p>
+<p>Semantic Scholar is not as widely-used as Google Scholar, and has not received the same kind of attention from scientometricians as a potential bibliometrics source. However, it also relies heavily on machine learning, may or may not employ librarians, and also has noticeable error rates. For example, while working on this document I realized that Semantic Scholar had conflated <em>Philosophy of Science</em> — the flagship journal in the field, published by CUP on behalf of my professional association, the US-based Philosophy of Science Association<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> — with <em>Philosophia Scientiæ</em> — a small journal, primarily in French, and published by the Université de Lorraine<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>.</p>
+<p>All together, to my knowledge there is no source of bibliometrics that can be considered to have both reliable coverage of the humanities and social sciences and reliable citation data.</p>
+</section>
+<section id="gender-and-racialethnic-bias" class="level1">
+<h1>Gender and racial/ethnic bias</h1>
+<p>There is a substantial literature examining gender and racial/ethnic bias in bibliometric and other measures of research productivity (e.g., grant application and funding rates). This literature consistently shows that women and racial/ethnic minorities are systematically disadvantaged from resource allocation through the publication process and on to citation rates, across fields. <span class="citation" data-cites="DaviesPromotingInclusiveMetrics2021">Davies et al. (<a href="#ref-DaviesPromotingInclusiveMetrics2021" role="doc-biblioref">2021</a>)</span> provide a relatively recent review covering 43 different studies and reviews (pp 3-5). They argue that problems of underrepresentation by gender and race/ethnicity are “self-perpetuating due to reliance on citation metrics, which reflect deeply entrenched biases and exclusionary networks that disadvantage systemically marginalized groups, and these citation metric biases continue to rise globally” (4). Some specific notable findings include:</p>
+<ul>
+<li>“the citation gap between genders was found to be as large as 30% across 13 Science, Technology, Engineering, Mathematics, and Medicine (STEMM) disciplines”</li>
+<li>“women receive more manuscript rejections … are less likely to be published in prestigious journals (which typically have high citation rates) …, and are less likely to be invited to write commentaries”</li>
+<li>“racially and/or ethnically diverse scientific teams … experience more than 5% lower acceptance rates and fewer citations than less diverse author teams”</li>
+<li>“Citational segregation—where authors prefer citing authors from the same racial/ethnic group(s)—has been demonstrated with white authors citing other white authors more frequently”</li>
+<li>“gender and racial citation biases remain stable or have even worsened over the last half century” <span class="citation" data-cites="DaviesPromotingInclusiveMetrics2021">(<a href="#ref-DaviesPromotingInclusiveMetrics2021" role="doc-biblioref">Davies et al. 2021, 3–5</a>)</span></li>
+</ul>
+<p><span class="citation" data-cites="GintherRaceEthnicityNIH2011">Ginther et al. (<a href="#ref-GintherRaceEthnicityNIH2011" role="doc-biblioref">2011</a>)</span> found that Black and Asian applicants for NIH funding are significantly less likely to receive awards, even after controlling for factors such as educational background, prior awards, and publication records. They attributed some of this disparity to topic choice, with lower award rates for community and population-level research vs.&nbsp;“basic” or “fundamental” research. <span class="citation" data-cites="HofstraDiversityInnovationParadox2020">Hofstra et al. (<a href="#ref-HofstraDiversityInnovationParadox2020" role="doc-biblioref">2020</a>)</span> find that “underrepresented groups produce higher rates of scientific novelty” but “novel contributions by gender and racial minorities are taken up at lower rates” than majorities. By combining text analysis with metadata and bibliometrics, <span class="citation" data-cites="HengelAreWomenHeld2022">Hengel (<a href="#ref-HengelAreWomenHeld2022" role="doc-biblioref">2022</a>)</span> compares preprints to published versions of journal articles, arguing that women authors are held to higher standards than men and that this explains numerous gendered disparities in academic publishing: longer review times, lower acceptance rates, lower publication rates in the most prestigious journals, and lower submission rates. <span class="citation" data-cites="Masters-WaageUnderrepresentedMinorityFaculty2024">Masters-Waage et al. (<a href="#ref-Masters-WaageUnderrepresentedMinorityFaculty2024" role="doc-biblioref">2024</a>)</span> find similar traces of bias in promotion and tenure decisions. Looking across fields, <span class="citation" data-cites="SugimotoEquityWomenScience2023">Sugimoto and Larivière (<a href="#ref-SugimotoEquityWomenScience2023" role="doc-biblioref">2023</a>)</span> argues that “Disciplines with parity (or those dominated by women) tend to be lower cited and relegated to the bottom tiers of the academic hierarchy.”</p>
+<p>An important proviso with virtually all of these studies is that they use automated demographic imputation, that is, imputing authors’ gender and race/ethnicity based on their names. <span class="citation" data-cites="LockhartNamebasedDemographicInference2023">Lockhart, King, and Munsch (<a href="#ref-LockhartNamebasedDemographicInference2023" role="doc-biblioref">2023</a>)</span> shows that these methods are less accurate for both gender and racial/ethnicity minorities, which generally results in misclassifying members of minority groups as members of majorities. In general, measurement error on the independent variable produces <em>regression dilution</em>, in which estimated correlations/regression coefficients are biased towards 0. That is, all else being equal, automated demographic imputation would be expected to yield underestimations of the magnitude of gender and racial/ethnic bias.</p>
+</section>
+<section id="quantification-as-depoliticization" class="level1">
+<h1>Quantification as depoliticization</h1>
+<p>Thus far, I have offered “technical” critiques of bibliometrics, showing limitations in their fit for purpose as measures of research quality. But it is important to recognize that, in the context of decisions such as how to allocate faculty lines, bibliometrics also have a broader function, as what we might call a <em>depoliticization strategy</em>.</p>
+<p>STS scholars argue that quantification or <em>scientization</em> — replacing explicitly political decisionmaking processes with expert or “data-driven” processes — is a key legitimizing strategy used by modern states and other political and social authorities <span class="citation" data-cites="JasanoffFifthBranchScience1990 PorterTrustNumbersPursuit1995 SarewitzScienceEnvironmentalPolicy2000">(<a href="#ref-JasanoffFifthBranchScience1990" role="doc-biblioref">Jasanoff 1990</a>; <a href="#ref-PorterTrustNumbersPursuit1995" role="doc-biblioref">Porter 1995</a>; <a href="#ref-SarewitzScienceEnvironmentalPolicy2000" role="doc-biblioref">Sarewitz 2000</a>)</span>. This strategy was on display in 2020, when political leaders presented themselves as “following the science.” Even Covid skeptics made their arguments in terms of quantified evidence and data visualizations <span class="citation" data-cites="LeeViralVisualizationsHow2021">(<a href="#ref-LeeViralVisualizationsHow2021" role="doc-biblioref">C. Lee et al. 2021</a>)</span>. On an individual level, many students in my Critical Thinking course come in thinking that using numbers is enough to make an argument valid — without regard to how those numbers were produced and whether they have anything to do with the conclusion the argument is attempting to support.</p>
+<p>Broadly, in our society quantified evidence is treated as extra-political — existing outside or beyond (political) controversy — and therefore super-political — taking precedence over and even shutting down (political) controversy. Quantification is thereby appealing when political controversies seem to be heated and intractable, appearing to give us (that is, whoever has the power to impose a particular system of quantification) a way to end debate and resolve the issue, moving it outside or beyond politics. Thus, “depoliticization.”</p>
+<p>Allocating extremely scarce resources such as faculty lines is already a touchy issue. Doing so under conditions of existential uncertainty for American higher ed, impending demographic decline, and pre-existing structural deficits only makes the controversy more fraught. In this context, bibliometrics appear to provide an “objective,” depoliticizing solution.</p>
+<p>However, the “technical” critiques I have offered show that the promise of using bibliometrics to depoliticize decisions about faculty lines is a mirage. Any attempt to operationalize bibliometrics for decisionmaking requires prior decisions, about how to compare incommensurable research outputs, how to assign departmental research portfolios to fields and adjust for differences between fields, which source(s) of bibliometrics data to use and how to manage the corresponding tradeoffs between coverage and data quality, and how to mitigate rather than exacerbate the influence of deep structural biases. Rather than depoliticizing, bibliometrics would simply become a new arena for political controversy <span class="citation" data-cites="HicksScientificControversiesProxy2017 HicksSafetyAutonomousVehicles2018">(<a href="#ref-HicksScientificControversiesProxy2017" role="doc-biblioref">Daniel J. Hicks 2017</a>; <a href="#ref-HicksSafetyAutonomousVehicles2018" role="doc-biblioref">D. J. Hicks 2018</a>)</span>, as different interests across campus push for different ways of resolving these prior decisions that happen to benefit their particular group.</p>
+</section>
+<section id="recommendations-1" class="level1">
+<h1>Recommendations</h1>
+<p>Bibliometrics are neither fit for purpose as measures of research quality nor strategically useful for cooling heated controversies. As an alternative, I would recommend adopting a process with the following features, based on general best practices in research assessment/evaluation and points from the Leiden Manifesto in particular:</p>
+<ol type="1">
+<li><p>Start by articulating aims</p>
+<p>Faculty hires can serve many different kinds of goals, both inward-facing (scholarly) and outward-facing (social or community): growing (or maintaining) enrollments, developing a unit’s existing research strengths, broadening a unit’s coverage, fostering interdisciplinary research, attracting external funding, addressing a significant social issue, supporting a certain local community, and so on. The campus should develop specific versions of these or other goals, as the primary basis on which hiring decisions will be made.</p></li>
+<li><p>Approach hiring requests as program impact plans</p>
+<p>Program impact plans — also known as theories of change and logic models — describe how an organization believes that a certain course of action does (or will) lead to certain outputs, and thereby downstream outcomes and impacts that ultimately promote the organization’s aims. For example, given an aim of strengthening ties between engineers and social scientists in robotics research, a NSF funding program might devote 20% of its funds to a solicitation that requires two PIs, one from each area. The program impact plan would identify, as an output, more funding to interdisciplinary teams; as outcomes, funded researchers publishing in a wider variety of journals than they would have otherwise and an increased presence of social scientists at (engineering-oriented) robotics conferences; and as an impact, incorporation of social science research findings into engineering research.</p>
+<p>Departments wishing to hire faculty could take a similar approach, preparing short statements (say, capped at 1,000 words) that explain, for example, how a new hire in a particular area would enable them to add an attractive emphasis track to their major and regularly offer a popular elective course for another major (outputs); how this would make the campus more competitive for potential students in both majors (outcomes); and thereby promote enrollment growth (or counteract trends in declining enrollment; impacts).</p>
+<p>These program impact plans should follow the warning of the Leiden Manifesto, and avoid misplaced concreteness and false precision: quantitative enrollment estimates are much more uncertain than they might appear to be. It is also important to recognize the possibility of bias in qualitative assessment; for example, STEM majors as such are not necessarily more popular with students than humanities majors. Nonetheless, both faculty and campus administrators can assess whether a given hiring proposal might plausibly lead to the anticipated outputs, outcomes, and impacts.</p></li>
+<li><p>Faculty provide peer review</p>
+<p>While it is impossible to completely depoliticize high-stakes resource allocations decisions, it is worth considering peer review — especially for research funding — as a familiar model of political decisionmaking that does not often erupt into intractable, heated controversy. I have seen firsthand how SSHA’s Curriculum Committee throughly but constructively scrutinizes proposals for new majors. UC Merced might take a similar approach to hiring faculty: departments could prepare hiring proposals — in the form of program impact plans — which would be reviewed by school Executive Committees, and then by CAPRA and/or other Senate committees. Reviewing committees could provide both qualitative evaluations and rubric-based assessments of each proposal, along the lines of NSF and NIH.</p>
+<p>While far from perfect, distributing power over faculty hires and incorporating accountability/transparency would be preferable to the current system, which often relies heavily on patronage relations among individual faculty, deans, and the provost.</p></li>
+</ol>
+</section>
+<section id="references" class="level1">
+
+
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-CaganSanFranciscoDeclaration2013" class="csl-entry" role="listitem">
+Cagan, Ross. 2013. <span>“The San Francisco Declaration on Research Assessment.”</span> <em>Disease Models &amp; Mechanisms</em> 6 (4): 869–70. <a href="https://doi.org/10.1242/dmm.012955">https://doi.org/10.1242/dmm.012955</a>.
+</div>
+<div id="ref-DaviesPromotingInclusiveMetrics2021" class="csl-entry" role="listitem">
+Davies, Sarah W., Hollie M. Putnam, Tracy Ainsworth, Julia K. Baum, Colleen B. Bove, Sarah C. Crosby, Isabelle M. Côté, et al. 2021. <span>“Promoting Inclusive Metrics of Success and Impact to Dismantle a Discriminatory Reward System in Science.”</span> <em>PLOS Biology</em> 19 (6): e3001282. <a href="https://doi.org/10.1371/journal.pbio.3001282">https://doi.org/10.1371/journal.pbio.3001282</a>.
+</div>
+<div id="ref-FunkDynamicNetworkMeasure2016" class="csl-entry" role="listitem">
+Funk, Russell J., and Jason Owen-Smith. 2016. <span>“A Dynamic Network Measure of Technological Change.”</span> <em>Management Science</em> 63 (3): 791–817. <a href="https://doi.org/10.1287/mnsc.2015.2366">https://doi.org/10.1287/mnsc.2015.2366</a>.
+</div>
+<div id="ref-GintherRaceEthnicityNIH2011" class="csl-entry" role="listitem">
+Ginther, Donna K., Walter T. Schaffer, Joshua Schnell, Beth Masimore, Faye Liu, Laurel L. Haak, and Raynard Kington. 2011. <span>“Race, Ethnicity, and NIH Research Awards.”</span> <em>Science</em> 333 (6045): 1015–19. <a href="https://doi.org/10.1126/science.1196783">https://doi.org/10.1126/science.1196783</a>.
+</div>
+<div id="ref-GolosovskyUniversalityCitationDistributions2021" class="csl-entry" role="listitem">
+Golosovsky, Michael. 2021. <span>“Universality of Citation Distributions: A New Understanding.”</span> <em>Quantitative Science Studies</em> 2 (2): 527–43. <a href="https://doi.org/10.1162/qss_a_00127">https://doi.org/10.1162/qss_a_00127</a>.
+</div>
+<div id="ref-HePredictiveEffectsNovelty2018" class="csl-entry" role="listitem">
+He, Jiangen, and Chaomei Chen. 2018. <span>“Predictive Effects of Novelty Measured by Temporal Embeddings on the Growth of Scientific Literature.”</span> <em>Frontiers in Research Metrics and Analytics</em> 3. <a href="https://doi.org/10.3389/frma.2018.00009">https://doi.org/10.3389/frma.2018.00009</a>.
+</div>
+<div id="ref-HengelAreWomenHeld2022" class="csl-entry" role="listitem">
+Hengel, Erin. 2022. <span>“Are Women Held to Higher Standards? Evidence from Peer Review.”</span> <em>The Economic Journal</em>, May, ueac032. <a href="https://doi.org/10.1093/ej/ueac032">https://doi.org/10.1093/ej/ueac032</a>.
+</div>
+<div id="ref-HicksSafetyAutonomousVehicles2018" class="csl-entry" role="listitem">
+Hicks, D. J. 2018. <span>“The Safety of Autonomous Vehicles: Lessons from Philosophy of Science.”</span> <em>IEEE Technology and Society Magazine</em> 37 (1): 62–69. <a href="https://doi.org/10.1109/MTS.2018.2795123">https://doi.org/10.1109/MTS.2018.2795123</a>.
+</div>
+<div id="ref-HicksBibliometricsSocialValidation2016" class="csl-entry" role="listitem">
+Hicks, Daniel J. 2016. <span>“Bibliometrics for Social Validation.”</span> <em>PLOS ONE</em> 11 (12): e0168597. <a href="https://doi.org/10.1371/journal.pone.0168597">https://doi.org/10.1371/journal.pone.0168597</a>.
+</div>
+<div id="ref-HicksScientificControversiesProxy2017" class="csl-entry" role="listitem">
+———. 2017. <span>“Scientific Controversies as Proxy Politics.”</span> <em>Issues in Science and Technology</em>, January 2017. <a href="https://www.jstor.org/stable/24891967">https://www.jstor.org/stable/24891967</a>.
+</div>
+<div id="ref-HicksProductivityInterdisciplinaryImpacts2021" class="csl-entry" role="listitem">
+———. 2021. <span>“Productivity and Interdisciplinary Impacts of Organized Research Units.”</span> <em>Quantitative Science Studies</em> 2 (3): 990–1022. <a href="https://doi.org/10.1162/qss_a_00150">https://doi.org/10.1162/qss_a_00150</a>.
+</div>
+<div id="ref-HicksNetworkAnalysisEvaluate2019" class="csl-entry" role="listitem">
+Hicks, Daniel J., David A. Coil, Carl G. Stahmer, and Jonathan A. Eisen. 2019. <span>“Network Analysis to Evaluate the Impact of Research Funding on Research Community Consolidation.”</span> <em>PLOS ONE</em> 14 (6): e0218273. <a href="https://doi.org/10.1371/journal.pone.0218273">https://doi.org/10.1371/journal.pone.0218273</a>.
+</div>
+<div id="ref-HicksImpactingCapabilitiesConceptual2018" class="csl-entry" role="listitem">
+Hicks, Daniel J., Carl Stahmer, and MacKenzie Smith. 2018. <span>“Impacting Capabilities: A Conceptual Framework for the Social Value of Research.”</span> <em>Frontiers in Research Metrics and Analytics</em>. <a href="https://doi.org/10.3389/frma.2018.00024">https://doi.org/10.3389/frma.2018.00024</a>.
+</div>
+<div id="ref-HicksLeidenManifestoResearch2015" class="csl-entry" role="listitem">
+Hicks, Diana, Paul Wouters, Ludo Waltman, Sarah De Rijcke, and Ismael Rafols. 2015. <span>“The Leiden Manifesto for Research Metrics.”</span> <em>Nature</em> 520 (7548): 429. <a href="https://doi.org/10.1038/520429a">https://doi.org/10.1038/520429a</a>.
+</div>
+<div id="ref-HicksNationalRoboticsInitiative2019" class="csl-entry" role="listitem">
+Hicks, D., and R. Simmons. 2019. <span>“The National Robotics Initiative: A Five-Year Retrospective.”</span> <em>IEEE Robotics Automation Magazine</em> 26 (3): 2–9. <a href="https://doi.org/10.1109/MRA.2019.2912860">https://doi.org/10.1109/MRA.2019.2912860</a>.
+</div>
+<div id="ref-HofstraDiversityInnovationParadox2020" class="csl-entry" role="listitem">
+Hofstra, Bas, Vivek V. Kulkarni, Sebastian Munoz-Najar Galvez, Bryan He, Dan Jurafsky, and Daniel A. McFarland. 2020. <span>“The Diversity–Innovation Paradox in Science.”</span> <em>Proceedings of the National Academy of Sciences</em>, April, 201915378. <a href="https://doi.org/10.1073/pnas.1915378117">https://doi.org/10.1073/pnas.1915378117</a>.
+</div>
+<div id="ref-IbrahimGoogleScholarManipulatable2024" class="csl-entry" role="listitem">
+Ibrahim, Hazem, Fengyuan Liu, Yasir Zaki, and Talal Rahwan. 2024. <span>“Google Scholar Is Manipulatable.”</span> arXiv. <a href="https://doi.org/10.48550/arXiv.2402.04607">https://doi.org/10.48550/arXiv.2402.04607</a>.
+</div>
+<div id="ref-JasanoffFifthBranchScience1990" class="csl-entry" role="listitem">
+Jasanoff, Sheila. 1990. <em>The Fifth Branch: Science Advisers as Policymakers</em>. Harvard University Press.
+</div>
+<div id="ref-KojakuDetectingAnomalousCitation2021" class="csl-entry" role="listitem">
+Kojaku, Sadamori, Giacomo Livan, and Naoki Masuda. 2021. <span>“Detecting Anomalous Citation Groups in Journal Networks.”</span> <em>Scientific Reports</em> 11 (1): 14524. <a href="https://doi.org/10.1038/s41598-021-93572-3">https://doi.org/10.1038/s41598-021-93572-3</a>.
+</div>
+<div id="ref-LeeReferenceClassProblem2020" class="csl-entry" role="listitem">
+Lee, Carole J. 2020. <span>“The Reference Class Problem for Credit Valuation in Science.”</span> <em>Philosophy of Science</em> 87 (5): 1026–36. <a href="https://doi.org/10.1086/710615">https://doi.org/10.1086/710615</a>.
+</div>
+<div id="ref-LeeViralVisualizationsHow2021" class="csl-entry" role="listitem">
+Lee, Crystal, Tanya Yang, Gabrielle Inchoco, Graham M. Jones, and Arvind Satyanarayan. 2021. <span>“Viral Visualizations: How Coronavirus Skeptics Use Orthodox Data Practices to Promote Unorthodox Science Online.”</span> <em>Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems</em>, May, 1–18. <a href="https://doi.org/10.1145/3411764.3445211">https://doi.org/10.1145/3411764.3445211</a>.
+</div>
+<div id="ref-LockhartNamebasedDemographicInference2023" class="csl-entry" role="listitem">
+Lockhart, Jeffrey W., Molly M. King, and Christin Munsch. 2023. <span>“Name-Based Demographic Inference and the Unequal Distribution of Misrecognition.”</span> <em>Nature Human Behaviour</em>, April, 1–12. <a href="https://doi.org/10.1038/s41562-023-01587-9">https://doi.org/10.1038/s41562-023-01587-9</a>.
+</div>
+<div id="ref-Martin-MartinCoverageHighlycitedDocuments2018" class="csl-entry" role="listitem">
+Martín-Martín, Alberto, Enrique Orduna-Malea, and Emilio Delgado López-Cózar. 2018. <span>“Coverage of Highly-Cited Documents in Google Scholar, Web of Science, and Scopus: A Multidisciplinary Comparison.”</span> <em>Scientometrics</em>, June, 1–14. <a href="https://doi.org/10.1007/s11192-018-2820-9">https://doi.org/10.1007/s11192-018-2820-9</a>.
+</div>
+<div id="ref-Martin-MartinGoogleScholarWeb2018" class="csl-entry" role="listitem">
+Martín-Martín, Alberto, Enrique Orduna-Malea, Mike Thelwall, and Emilio Delgado López-Cózar. 2018. <span>“Google Scholar, Web of Science, and Scopus: A Systematic Comparison of Citations in 252 Subject Categories.”</span> <em>Journal of Informetrics</em> 12 (4): 1160–77. <a href="https://doi.org/10.1016/j.joi.2018.09.002">https://doi.org/10.1016/j.joi.2018.09.002</a>.
+</div>
+<div id="ref-MarxCausesSubjectspecificCitation2015" class="csl-entry" role="listitem">
+Marx, Werner, and Lutz Bornmann. 2015. <span>“On the Causes of Subject-Specific Citation Rates in Web of Science.”</span> <em>Scientometrics</em> 102 (2): 1823–27. <a href="https://doi.org/10.1007/s11192-014-1499-9">https://doi.org/10.1007/s11192-014-1499-9</a>.
+</div>
+<div id="ref-Masters-WaageUnderrepresentedMinorityFaculty2024" class="csl-entry" role="listitem">
+Masters-Waage, Theodore, Christiane Spitzmueller, Ebenezer Edema-Sillo, Ally St.&nbsp;Aubin, Michelle Penn-Marshall, Erika Henderson, Peggy Lindner, Cynthia Werner, Tracey Rizzuto, and Juan Madera. 2024. <span>“Underrepresented Minority Faculty in the USA Face a Double Standard in Promotion and Tenure Decisions.”</span> <em>Nature Human Behaviour</em>, October, 1–12. <a href="https://doi.org/10.1038/s41562-024-01977-7">https://doi.org/10.1038/s41562-024-01977-7</a>.
+</div>
+<div id="ref-PetersenEvolutionBiomedicalInnovation2022" class="csl-entry" role="listitem">
+Petersen, Alexander M. 2022. <span>“Evolution of Biomedical Innovation Quantified via Billions of Distinct Article-Level MeSH Keyword Combinations.”</span> <em>Advances in Complex Systems</em> 25 (1). <a href="https://doi.org/10.1142/S0219525921500168">https://doi.org/10.1142/S0219525921500168</a>.
+</div>
+<div id="ref-PorterTrustNumbersPursuit1995" class="csl-entry" role="listitem">
+Porter, Theodore M. 1995. <em>Trust in Numbers: The Pursuit of Objectivity in Science and Public Life</em>. Princeton, N.J: Princeton University Press.
+</div>
+<div id="ref-RadicchiUniversalityCitationDistributions2008" class="csl-entry" role="listitem">
+Radicchi, Filippo, Santo Fortunato, and Claudio Castellano. 2008. <span>“Universality of Citation Distributions: Toward an Objective Measure of Scientific Impact.”</span> <em>Proceedings of the National Academy of Sciences</em> 105 (45): 17268–72. <a href="https://doi.org/10.1073/pnas.0806977105">https://doi.org/10.1073/pnas.0806977105</a>.
+</div>
+<div id="ref-SarewitzScienceEnvironmentalPolicy2000" class="csl-entry" role="listitem">
+Sarewitz, Daniel. 2000. <span>“Science and Environmental Policy: An Excess of Objectivity.”</span> In <em>Earth Matters:&nbsp; The Earth Sciences, Philosophy, and the Claims of Community</em>, edited by Robert Frodeman, 79–98. Prentice Hall. <a href="http://www.cspo.org/_old_ourlibrary/ScienceandEnvironmentalPolicy.htm">http://www.cspo.org/_old_ourlibrary/ScienceandEnvironmentalPolicy.htm</a>.
+</div>
+<div id="ref-SauvayreTypesErrorsHiding2022" class="csl-entry" role="listitem">
+Sauvayre, Romy. 2022. <span>“Types of Errors Hiding in Google Scholar Data.”</span> <em>Journal of Medical Internet Research</em> 24 (5): e28354. <a href="https://doi.org/10.2196/28354">https://doi.org/10.2196/28354</a>.
+</div>
+<div id="ref-SimontonGoogleScholarCitations" class="csl-entry" role="listitem">
+Simonton, Dean Keith. n.d. <span>“Google Scholar Citations: Serious Errors.”</span> Accessed July 1, 2025. <a href="https://simonton.faculty.ucdavis.edu/research/google-scholar-citations-serious-errors/">https://simonton.faculty.ucdavis.edu/research/google-scholar-citations-serious-errors/</a>.
+</div>
+<div id="ref-SugimotoEquityWomenScience2023" class="csl-entry" role="listitem">
+Sugimoto, Cassidy R., and Vincent Larivière. 2023. <em>Equity for Women in Science: Dismantling Systemic Barriers to Advancement</em>. Harvard University Press.
+</div>
+<div id="ref-ZengDifferencesCollaborationPatterns2016" class="csl-entry" role="listitem">
+Zeng, Xiao Han T., Jordi Duch, Marta Sales-Pardo, João A. G. Moreira, Filippo Radicchi, Haroldo V. Ribeiro, Teresa K. Woodruff, and Luís A. Nunes Amaral. 2016. <span>“Differences in Collaboration Patterns Across Discipline, Career Stage, and Gender.”</span> <em>PLOS Biology</em> 14 (11): e1002573. <a href="https://doi.org/10.1371/journal.pbio.1002573">https://doi.org/10.1371/journal.pbio.1002573</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Impact factors are usually calculated for journals, not individual researchers, and are defined as the total number of citations to items in the journal divided by the number of items published, over some period of time.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>The h-index is used more widely than impact factor, and is defined for some portfolio of publications as the largest number <span class="math inline">\(h\)</span> such that <span class="math inline">\(h\)</span> publications have at least <span class="math inline">\(h\)</span> citations.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>I wasn’t aware of this when I accepted the offer, and had no contact with Elsevier representatives during the last eight months or so of the postdoc, or since.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Note that Diana Hicks is a prominent scholar in this field. We have never met, and are not related.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>For example: <a href="https://service.elsevier.com/app/answers/detail/a_id/14894/supporthub/scopus/related/1/" class="uri">https://service.elsevier.com/app/answers/detail/a_id/14894/supporthub/scopus/related/1/</a><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p><a href="https://www.webofscience.com/wos/author/record/973913?authorIds=973913&amp;state=%7B%7D" class="uri">https://www.webofscience.com/wos/author/record/973913?authorIds=973913&amp;state=%7B%7D</a><a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p><a href="https://service.elsevier.com/app/answers/detail/a_id/15181/supporthub/scopus/" class="uri">https://service.elsevier.com/app/answers/detail/a_id/15181/supporthub/scopus/</a><a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p><a href="https://www.scopus.com/sourceid/21100838541" class="uri">https://www.scopus.com/sourceid/21100838541</a><a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p><a href="https://www.cambridge.org/core/journals/philosophy-of-science" class="uri">https://www.cambridge.org/core/journals/philosophy-of-science</a><a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p><a href="https://journals.openedition.org/philosophiascientiae/635" class="uri">https://journals.openedition.org/philosophiascientiae/635</a><a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/dhicks\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

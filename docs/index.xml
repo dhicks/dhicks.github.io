@@ -9,8 +9,360 @@
 <link>https://dhicks.github.io/</link>
 <atom:link href="https://dhicks.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Website description</description>
-<generator>quarto-1.7.13</generator>
-<lastBuildDate>Wed, 26 Feb 2025 08:00:00 GMT</lastBuildDate>
+<generator>quarto-1.7.32</generator>
+<lastBuildDate>Tue, 08 Jul 2025 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Concerns with bibliometrics in resource allocation decisions</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2025-07-08-research-metrics.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is an HTML version of a document that I wrote for Leonardo Arriola, Dean of Social Sciences, Humanities, and Arts at UC Merced. There’s a PDF version linked in the sidebar.</p>
+</div>
+</div>
+<section id="executive-summary" class="level1">
+<h1>Executive summary</h1>
+<p>The UC Merced administration is working to develop a set of “principles and metrics” to be used to make or inform the allocation of faculty lines to departments. This document provides a review of the limitations and problems associated with using publication-based metrics (bibliometrics) for faculty resource allocation decisions. Drawing on my work experience in research evaluation and the established consensus among professionals in that field, I argue that bibliometrics are not fit for purpose for making hiring, tenure, promotion, and faculty line allocation decisions.</p>
+<section id="professional-consensus" class="level2">
+<h2 class="anchored" data-anchor-id="professional-consensus">Professional consensus</h2>
+<p>This position is consistent with major professional statements in the field of research evaluation, including the San Francisco Declaration on Research Assessment (DORA) and the Leiden Manifesto, both of which explicitly warn against using journal-based metrics and similar bibliometric measures for personnel decisions. DORA specifically states: “Do not use journal-based metrics, such as Journal Impact Factors, as a surrogate measure of the quality of individual research articles, to assess an individual scientist’s contributions, or in hiring, promotion, or funding decisions.”</p>
+</section>
+<section id="key-technical-problems" class="level2">
+<h2 class="anchored" data-anchor-id="key-technical-problems">Key technical problems</h2>
+<p>I review several technical problems with bibliometrics as measures of research quality:</p>
+<dl>
+<dt>Proxy Limitations:</dt>
+<dd>
+These metrics are at best crude proxies for research quality and impact, measuring outputs and outcomes rather than actual scholarly or social impacts.
+</dd>
+<dt>Incommensurability:</dt>
+<dd>
+Different types of research outputs are fundamentally incommensurable: there is no meaningful way to compare a historical monograph to a biomedical journal article on a single scale.
+</dd>
+<dt>Reference Class Problem:</dt>
+<dd>
+Academic disciplines have porous boundaries and individual researchers typically work across multiple communities, making it impossible to accurately normalize metrics across fields.
+</dd>
+<dt>Data Quality Issues:</dt>
+<dd>
+A fundamental tradeoff exists between data coverage and quality—comprehensive databases suffer from poor data quality and manipulation vulnerabilities, while selective databases systematically underrepresent social sciences and humanities.
+</dd>
+</dl>
+</section>
+<section id="systemic-bias-concerns" class="level2">
+<h2 class="anchored" data-anchor-id="systemic-bias-concerns">Systemic bias concerns</h2>
+<p>Extensive research demonstrates that bibliometric systems systematically disadvantage women and racial/ethnic minorities through lower citation rates, publication barriers, and exclusionary networks. Rather than providing objective assessment, these systems risk exacerbating existing inequities.</p>
+</section>
+<section id="failure-to-avoid-controversy" class="level2">
+<h2 class="anchored" data-anchor-id="failure-to-avoid-controversy">Failure to avoid controversy</h2>
+<p>Bibliometrics are attractive because they appear to depoliticize controversial resource allocation decisions. But this appearance is incorrect. Instead, they shift political controversies to the kinds of technical implementation issues identified above, creating new sources of institutional conflict while failing to address underlying disagreements about priorities and values.</p>
+</section>
+<section id="recommendations" class="level2">
+<h2 class="anchored" data-anchor-id="recommendations">Recommendations</h2>
+<p>As an alternative to bibliometrics, I recommend taking an approach to faculty hiring decisions that starts by articulating campus-levels aims for hiring; approaches hiring requests as program impact plans — also known as theories of change and logic models — to explicitly connect proposed hires to those campus-level aims; and incorporates faculty voice through a peer review process, similar to the approaches already used for curricular changes on campus and by research funding agencies.</p>
+</section>
+</section>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Since last semester, the UC Merced administration has been discussing the development of a set of “principles and metrics” to be used to make or inform the allocation of faculty lines to departments. In SSHA, faculty have participated in these discussions via meetings of the department chairs and Executive Committee, with multiple rounds of feedback on lists of proposed principles and opportunities.</p>
+<p>Publication-based metrics have come up repeatedly in these discussions, with both support and criticism from various faculty members. As I explain below, I have some work experience and scholarly expertise on the uses and limitations of bibliometrics. Following the lead of professionals in the relevant fields, I do not believe these metrics are fit for purpose in making hiring, tenure, and promotion decisions, including decisions about how to allocate faculty lines.</p>
+<p>In discussions and in writing, I have previously shared brief statements of common technical concerns about bibliometrics with Dean Arriola. The purpose of this document is to provide a more detailed version of these concerns, showing that they are grounded in relevant scholarship and expertise.</p>
+<p>In the remainder of this introduction, I first clarify the terms “bibliometrics” and “scientometrics,” summarize my background in this area, and review two prominent statements on bibliometrics by research assessment professionals. In the following sections, I argue that bibliometrics are at best crude proxies for the things we academics are trying to do with our scholarship; that research outputs and outcomes are incommensurable in ways that violate the assumptions used to calculate bibliometrics; that bibliometrics are confounded by the “reference class problem”; that there is a sharp tradeoff between bibliometric data coverage and data quality; that bibliometrics can reflect systematic gender and racial/ethnic bias; and finally that they do not serve their broader function of quieting fraught controversies. I close with some procedural recommendations that, I think, would keep controversies from becoming too heated and avoid the favoritism and patronage of the current system.</p>
+<section id="bibliometrics-and-scientometrics" class="level2">
+<h2 class="anchored" data-anchor-id="bibliometrics-and-scientometrics">Bibliometrics and scientometrics</h2>
+<p>Among specialists, “bibliometrics” refers to “bibliography-derived” measures of scientific productivity and impact, including publication and citation counts as well as impact factors<sup>1</sup> and the h-index<sup>2</sup>. “Scientometrics” is a more general term, covering measures based on patent citations <span class="citation" data-cites="FunkDynamicNetworkMeasure2016">(e.g., Funk and Owen-Smith 2016)</span>, coauthor network statistics <span class="citation" data-cites="ZengDifferencesCollaborationPatterns2016">(Zeng et al. 2016)</span>, semantic novelty <span class="citation" data-cites="HePredictiveEffectsNovelty2018 PetersenEvolutionBiomedicalInnovation2022">(He and Chen 2018; Petersen 2022)</span>, or indeed any other quantitative attempt to understand scientific productivity and social impact.</p>
+<p>“Scientometrics” is also used as the name of a research field — the scholarly side of the practice of research assessment or research evaluation — that operates at the intersection of science and technology studies, science policy, library and information sciences, and sociology. As a research field, research evaluation/scientometrics has obvious conceptual and methodological ties to science-of-science and metascience. Unlike these other two fields, research evaluation tends to focus more on supporting decisionmaking by funding bodies and research organizations.</p>
+</section>
+<section id="my-background" class="level2">
+<h2 class="anchored" data-anchor-id="my-background">My background</h2>
+<p>From 2015-2017 I served as an AAAS Science and Technology Policy fellow, hosted by the EPA Office of Research and Development’s Chemical Safety for Sustainability program (first year) and then by NSF’s National Robotics Initiative (second year). In both positions my responsibilities included developing and conducting evaluation projects for the research done (EPA) or funded (NSF) by my host office. Two of these evaluation projects were published and appear on my CV <span class="citation" data-cites="HicksBibliometricsSocialValidation2016 HicksNationalRoboticsInitiative2019">(Daniel J. Hicks 2016; D. Hicks and Simmons 2019)</span>.</p>
+<p>From 2017-2019 I was a postdoctoral researcher at the Data Science Initiative (now known as DataLab: Data Science and Informatics) at UC Davis. My position was funded by Elsevier<sup>3</sup> and the general aim of the postdoc was to develop new approaches to scientometrics that avoided common criticisms of bibliometrics (as discussed in the rest of this document). In this role I had opportunities to meet with deans and campus-level administrators to develop projects, and worked closely with both faculty and staff. Again, some of these projects were published and appear on my CV <span class="citation" data-cites="HicksImpactingCapabilitiesConceptual2018 HicksNetworkAnalysisEvaluate2019 HicksProductivityInterdisciplinaryImpacts2021">(Daniel J. Hicks, Stahmer, and Smith 2018; Daniel J. Hicks et al. 2019; Daniel J. Hicks 2021)</span>.</p>
+</section>
+<section id="the-dora-statement-and-leiden-manifesto" class="level2">
+<h2 class="anchored" data-anchor-id="the-dora-statement-and-leiden-manifesto">The DORA Statement and Leiden Manifesto</h2>
+<p>Bibliometrics have played a significant and highly contested role in faculty hiring, tenure, and promotion decisions in a number of countries for several decades, though less so in the United States. In this context, research evaluation experts have released multiple statements providing guidance and criticizing certain uses of bibliometrics. I review two especially influential statements, the San Francisco Declaration on Research Assessment <span class="citation" data-cites="CaganSanFranciscoDeclaration2013">(DORA, published in multiple venues including Cagan 2013)</span> and the Leiden Manifesto for Research Metrics <span class="citation" data-cites="HicksLeidenManifestoResearch2015">(Diana Hicks et al. 2015)</span>.<sup>4</sup></p>
+<p>DORA first offers a number of criticisms of the impact factor: that it was originally created to help librarians make purchasing decisions, not assess research; that means are misleading measures of central tendency for highly skewed distributions such as citation counts; that it fails to distinguish different kinds of articles (commentaries from primary research from reviews) and neglects differences across research fields; and that the data used to calculate impact factors are generally neither public nor subject to peer review. It then lists 18 recommended practices for research assessment, the first of which is</p>
+<blockquote class="blockquote">
+<p>Do not use journal-based metrics, such as Journal Impact Factors, as a surrogate measure of the quality of individual research articles, to assess an individual scientist’s contributions, or in hiring, promotion, or funding decisions.</p>
+</blockquote>
+<p>For institutions specifically, recommendation 5 states:</p>
+<blockquote class="blockquote">
+<p>For the purposes of research assessment, consider the value and impact of all research outputs (including datasets and software) in addition to research publications, and consider a broad range of impact measures including qualitative indicators of research impact, such as influence on policy and practice.</p>
+</blockquote>
+<p>The Leiden Manifesto is motivated by a concern that research evaluation and metric development is “usually well intentioned, not always well informed, often ill applied …. by organizations without knowledge of, or advice on, good practice and interpretation.” The Manifesto offers a “distillation of best practice in metrics-based research assessment,” in the form ten principles. Some of these principles include:</p>
+<ol type="1">
+<li><em>Quantitative evaluation should support qualitative, expert assessment</em> …. assessors must not be tempted to cede decision-making to the numbers.</li>
+<li><em>Measure performance against the research missions of the institution, group or researcher.</em> Programme goals should be stated at the start, and the indicators used to evaluate performance should relate clearly to those goals.</li>
+<li><em>Allow those evaluated to verify data and analysis.</em> To ensure data quality, all researchers included in bibliometric studies should be able to check that their outputs have been correctly identified.</li>
+<li><em>Account for variation by field in publication and citation practices.</em> Best practice is to select a suite of possible indicators and allow fields to choose among them.</li>
+<li><em>Avoid misplaced concreteness and false precision.</em> Science and technology indicators are prone to conceptual ambiguity and uncertainty and require strong assumptions that are not universally accepted.</li>
+<li><em>Recognize the systemic effects of assessment and indicators</em> …. a suite of indicators is always preferable — a single one will invite gaming and goal displacement (in which the measurement becomes the goal).</li>
+</ol>
+<p>These points imply important limitations and concerns about bibliometrics that will be echoed below: the need to base the choice of metrics on organizational goals rather than what’s convenient to measure; significant variation in data coverage and quality; and variations across fields. Point nine is also known as “Goodheart’s Law”: “when a measure becomes a target, it ceases to be a good measure.” Tying resource allocations to publication counts encourages “salami slicing,” the rapid publication of many minimally-informative or low-quality (or even fraudulent) papers; while using citation counts incentivizes the formation of “citation cartels” <span class="citation" data-cites="KojakuDetectingAnomalousCitation2021">(Kojaku, Livan, and Masuda 2021)</span> or even manufacturing fake papers to inflate citation counts <span class="citation" data-cites="IbrahimGoogleScholarManipulatable2024">(Ibrahim et al. 2024)</span>.</p>
+</section>
+</section>
+<section id="outputs-outcomes-and-impacts" class="level1">
+<h1>Outputs, outcomes, and impacts</h1>
+<p>In program evaluation, there’s a useful distinction between outputs, outcomes, and impacts. <em>Outputs</em> are the direct products of the program’s activities, and the things the program has most control over. For research organizations, outcomes include things like scholarly publications, grey literature reports, social media posts by the organization or its members, grant applications submitted, and public-facing events. <em>Outcomes</em> are the short-term consequences that follow from those outputs: citations to publications, policymakers and advocates referencing reports, social and traditional media coverage, grant awards, attendance at public events. <em>Impacts</em> are the longer-term goals that the organization hopes to achieve by way of its outputs and outcomes. <span class="citation" data-cites="HicksImpactingCapabilitiesConceptual2018">Daniel J. Hicks, Stahmer, and Smith (2018)</span> further distinguish between inward-facing goals (“the value of research for the relevant scholarly community, in terms of the further production of new knowledge”) and outward-facing goals (“the value of research for other social practices …. [such as] broader social efforts to protect biodiversity and preserve natural or undeveloped spaces”).</p>
+<p>These distinctions make it clear that bibliometrics — publication and citation counts, impact factors — are outputs and outcomes, rather than impacts. At best, these metrics are proxies for impacts, and indeed only proxies for inward-facing impacts. They provide at most limited insight into the scholarly impact of research, and none into social impact.</p>
+<p>Despite being proxies, bibliometrics (incorrectly) appear to be useful for research assessment because impacts are often implicit, poorly defined, or difficult to measure, especially outward-facing social impacts. For example, in UC Merced’s 2021-2030 strategic plan, the first goal is to “Engage Our World and Region Through Discovery and the Advancement of Knowledge.” This is explained as including “interdisciplinary and transformational research that supports equity and prosperity globally and locally, with particular sensitivity for the San Joaquin Valley.” “Support[ing] equity and prosperity” is an outward-facing impact. It is appealing, but also so vague that the proposed measures don’t even try to operationalize it. Instead, the strategic plan lists various output measures (tenure rates, research spending) and a vague bibliometric item (“number of impactful papers,” with “[specific] measures to be developed”).</p>
+<p>This is why the Leiden Manifesto states that “Programme goals should be stated at the start, and the indicators used to evaluate performance should relate clearly to those goals.” Without clear impacts it’s impossible to develop measures of progress or achievement with respect to those impacts.</p>
+</section>
+<section id="incommensurability-of-research-outputs-and-outcomes" class="level1">
+<h1>Incommensurability of research outputs and outcomes</h1>
+<p>In discussions at the SSHA department chairs and Executive Committee meetings, a repeated point has been that the outputs and outcomes are generally incommensurable. There is no meaningful, all-inclusive, unidimensional scale with which to compare a book written by a historian to a journal article written by a psychologist to a systematic review conducted by a team of biomedical researchers.</p>
+<p>One aspect of incommensurability in this example is incommensurability by type of research output. Academic researchers produce numerous different kinds of outputs: monographs, anthologies, textbooks and other teaching materials; “original research” journal articles, reviews, theoretical papers, commentaries; white papers, policy reports; blog posts, opinion columns and letters, edutainment podcasts and videos, interactive websites, media interviews; conference presentations, keynotes and invited talks, flash talks, posters; artistic exhibitions and performances; workshops and conferences; public events.</p>
+<p>These different kinds of outputs require not just different amounts of work, but different kinds of work and are anticipated to have qualitatively different kinds of outcomes and impacts. Even within a given field, an archive-based historical monograph is intended to do something very different from a short conference presentation or a public-facing website. It therefore does not make sense to ask how much “more” the monograph should “count” than the presentation or the website.</p>
+<p>Research outcomes associated with a given type of output can also be incommensurable across fields. It is a commonplace in bibliometrics that the average citation rate differs across fields; for this reason, bibliometrics data providers such as Clarivate (Web of Science) and Elsevier (Scopus) provide “field-weighted” or “normalized” citation statistics.<sup>5</sup> One common explanation is differences in publication rates and citation practices. For example, in philosophy, a tenure-track assistant professor who publishes more than one paper per year (in “good journals”) would be considered highly productive; while a typical mid-sized biomedical lab might publish a dozen papers a year. Some fields, such as history, are expected to have lengthy and comprehensive bibliographies; while others, such as biomedicine, typically have short and selective bibliographies (except for systematic reviews, which are expected to be comprehensive, etc.). In line with this, <span class="citation" data-cites="RadicchiUniversalityCitationDistributions2008">Radicchi, Fortunato, and Castellano (2008)</span> argue that there is a “universal,” cross-field lognormal distribution of <em>relative</em> citations, that is, the number of citations received by a paper divided by the average number of citations received by all papers published in the same field and year. However, subsequent work on the “universal” citation distribution has not produced a consensus on the functional form it should take — lognormal, power-law, exponential, negative binomial, etc. — how it should be parameterized, and what underlying mechanisms might produce it <span class="citation" data-cites="GolosovskyUniversalityCitationDistributions2021">(Golosovsky 2021)</span>. Indeed, <span class="citation" data-cites="MarxCausesSubjectspecificCitation2015">Marx and Bornmann (2015)</span> argue that data quality plays a major role in cross-field differences, and in particular the poor coverage of the humanities by databases such as Web of Science.</p>
+<p>For these reasons, “field-weighted” adjustments to citation counts have, at best, speculative and controversial theoretical support.</p>
+</section>
+<section id="the-reference-class-problem" class="level1">
+<h1>The reference class problem</h1>
+<p>Attempts to adjust bibliometrics for differences across fields also run into a significant theoretical problem, which <span class="citation" data-cites="LeeReferenceClassProblem2020">C. J. Lee (2020)</span> calls “<em>the reference class problem for credit valuation in science</em>: to which of the agent’s communities—which reference class—should credit valuations be indexed when determining the amount of credit the agent accrues …?” (1029, emphasis in original).</p>
+<p>Academic fields are often thought of as clearly-bounded, discrete entities, reflecting the administrative division of universities into schools and departments. But reality is much messier than this: consider research areas such as quantum chemistry (operating across the boundaries between physics and chemistry), bioinformatics (molecular biology — itself biology and chemistry — and computer science), or behavioral economics (psychology and economics). Or indeed “interdisciplines” such as material science or cognitive science. Even within distinct fields, there can be radical differences in research questions, methods, and norms, as in anthropology (often divided into something like biological, cultural, archaeology, linguistics, and primatology), physics (experimental, theoretical, and cosmology), or philosophy (analytic, continental, and philosophy of science).</p>
+<p>Because the boundaries within and between academic fields are so porous, a particular research project usually cannot be firmly located within a single research community, and an individual researcher or administrative unit will have a complex portfolio of projects spanning numerous different communities. For example, my Web of Science author profile<sup>6</sup> classifies me as working in History &amp; Philosophy of Science; Philosophy; Public, Environmental &amp; Occupational Health; Environmental Sciences &amp; Ecology; and Science &amp; Technology - Other Topics. This leaves out several areas under which I could be categorized, such as gender studies, science communication, science policy, and statistics. And there are potentially important differences at lower levels of classification; for example, publishing and citation practices between historians and philosophers of science are quite different. In practice, there are perhaps a dozen different fields — and thus <em>no</em> field — against which the citations to my research can be normed.</p>
+<p>Bibliometrics databases attempt to avoid this problem using multicategory classifications, which are often imprecise. For example, in Scopus’ All Science Journal Classification (ASJC) system<sup>7</sup>, <em>Nature Human Behavior</em> is classified as Psychology: Experimental and Cognitive Psychology, Psychology: Social Psychology, and Neuroscience: Behavioral Neuroscience;<sup>8</sup> this journal also regularly publishes work in archaeology, cognitive science, and other fields across the social sciences. Across the 47,000 journals indexed by Scopus, the median journal has 2 ASJC codes, and more than 2,600 journals have 5 or more codes.</p>
+</section>
+<section id="tradeoffs-between-data-coverage-and-data-quality" class="level1">
+<h1>Tradeoffs between data coverage and data quality</h1>
+<p>A number of services provide bibliometric data. Web of Science and Scopus are commercial services; our campus subscribes to Web of Science. Google Scholar and Semantic Scholar are free. Web of Science and Scopus are not intended to cover every academic journal or book publisher, but instead the “highest impact journals” (<a href="https://webofscience.help.clarivate.com/Content/wos-core-collection/wos-core-collection.htm" class="uri">https://webofscience.help.clarivate.com/Content/wos-core-collection/wos-core-collection.htm</a>). Semantic Scholar and, especially, Google Scholar aim to be more comprehensive; users of Google Scholar will be familiar with search results including master’s theses, conference programs, preprints, grey literature reports, and other documents that don’t necessarily count as scholarly publications.</p>
+<p>These differences in coverage partially explain why different services provide different values for standard bibliometrics such as publication count, citation count, and the h-index. Table&nbsp;1 compares results for my author profile across these four platforms and my personally maintained CV.</p>
+<div id="tbl-databases" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-databases-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Comparison of publication counts, citation counts, and h-index from my author profile on four database services, and my CV, as of 2025-07-01. Web of Science lists 22 documents in the “core collection,” and 2 additional “non-indexed documents.” Publications on my CV are divided into “peer-reviewed publications,” “other scholarly products” (primarily preprints and book reviews), and “general interest publications.” Sources: <a href="https://scholar.google.com/citations?user=XvkwYZsAAAAJ&amp;hl=en">Google Scholar profile</a>; <a href="https://www.scopus.com/authid/detail.uri?authorId=48361474800">Scopus profile</a>; <a href="https://www.semanticscholar.org/author/Daniel-J.-Hicks/143675235">Semantic Scholar profile</a>; <a href="https://www.webofscience.com/wos/author/record/973913?authorIds=973913&amp;state=%7B%7D">Web of Science profile</a>; <a href="https://dhicks.github.io/cv/">CV</a>.
+</figcaption>
+<div aria-describedby="tbl-databases-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>publications</th>
+<th>citations</th>
+<th>h-index</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Google Scholar</td>
+<td>40</td>
+<td>678</td>
+<td>14</td>
+</tr>
+<tr class="even">
+<td>Scopus</td>
+<td>25</td>
+<td>309</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>Semantic Scholar</td>
+<td>37</td>
+<td>352</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>Web of Science</td>
+<td>22+2</td>
+<td>237</td>
+<td>9</td>
+</tr>
+<tr class="odd">
+<td>CV</td>
+<td>23+15+4</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>For me, Google Scholar lists nearly twice as many publications as Web of Science, and 2.9 times as many citations. Scopus reports a few more publications than Web of Science (14%), but 30% more citations. Semantic Scholar has almost as many publications as Google Scholar, but barely half as many citations. None of these include every publication listed on my CV.</p>
+<p>The results for my author profile generalize: <span class="citation" data-cites="Martin-MartinGoogleScholarWeb2018">Martín-Martín et al. (2018)</span> found that Google Scholar reported nearly all citations found by Scopus and Web of Science, along with a large number of other citations, especially from “non-journal sources (48%-65%), including theses, books, conference papers, and unpublished materials” (1). In addition, a companion piece by the same authors, <span class="citation" data-cites="Martin-MartinCoverageHighlycitedDocuments2018">Martín-Martín, Orduna-Malea, and López-Cózar (2018)</span>, finds evidence that Web of Science and Scopus inclusion criteria are biased against social sciences and humanities: “a large fraction of highly-cited documents [according to Google Scholar] in the Social Sciences and Humanities (8.6–28.2%) are invisible to Web of Science and Scopus. In the Natural, Life, and Health Sciences the proportion of missing highly-cited documents in Web of Science and Scopus is much lower.”</p>
+<p>However, the broad coverage of Google Scholar comes with a critical tradeoff: poor data quality. My informal understanding is that Google has never employed professional librarians in the Scholar project, and relies almost entirely on machine learning to parse citations. While authors can edit the metadata on publications on their profile, there is no way to flag erroneous or questionable citations. <span class="citation" data-cites="SimontonGoogleScholarCitations">Simonton (n.d.)</span> chronicles severe metadata errors and erratic changes in citation counts on their Google Scholar profile. In a small study, <span class="citation" data-cites="SauvayreTypesErrorsHiding2022">Sauvayre (2022)</span> found that only two out of 281 purported citations to two source articles did not contain errors. <span class="citation" data-cites="IbrahimGoogleScholarManipulatable2024">Ibrahim et al. (2024)</span> show that citation counts on Google Scholar can easily be inflated by using an LLM to generate fake papers and posting them on preprint servers.</p>
+<p>Semantic Scholar is not as widely-used as Google Scholar, and has not received the same kind of attention from scientometricians as a potential bibliometrics source. However, it also relies heavily on machine learning, may or may not employ librarians, and also has noticeable error rates. For example, while working on this document I realized that Semantic Scholar had conflated <em>Philosophy of Science</em> — the flagship journal in the field, published by CUP on behalf of my professional association, the US-based Philosophy of Science Association<sup>9</sup> — with <em>Philosophia Scientiæ</em> — a small journal, primarily in French, and published by the Université de Lorraine<sup>10</sup>.</p>
+<p>All together, to my knowledge there is no source of bibliometrics that can be considered to have both reliable coverage of the humanities and social sciences and reliable citation data.</p>
+</section>
+<section id="gender-and-racialethnic-bias" class="level1">
+<h1>Gender and racial/ethnic bias</h1>
+<p>There is a substantial literature examining gender and racial/ethnic bias in bibliometric and other measures of research productivity (e.g., grant application and funding rates). This literature consistently shows that women and racial/ethnic minorities are systematically disadvantaged from resource allocation through the publication process and on to citation rates, across fields. <span class="citation" data-cites="DaviesPromotingInclusiveMetrics2021">Davies et al. (2021)</span> provide a relatively recent review covering 43 different studies and reviews (pp 3-5). They argue that problems of underrepresentation by gender and race/ethnicity are “self-perpetuating due to reliance on citation metrics, which reflect deeply entrenched biases and exclusionary networks that disadvantage systemically marginalized groups, and these citation metric biases continue to rise globally” (4). Some specific notable findings include:</p>
+<ul>
+<li>“the citation gap between genders was found to be as large as 30% across 13 Science, Technology, Engineering, Mathematics, and Medicine (STEMM) disciplines”</li>
+<li>“women receive more manuscript rejections … are less likely to be published in prestigious journals (which typically have high citation rates) …, and are less likely to be invited to write commentaries”</li>
+<li>“racially and/or ethnically diverse scientific teams … experience more than 5% lower acceptance rates and fewer citations than less diverse author teams”</li>
+<li>“Citational segregation—where authors prefer citing authors from the same racial/ethnic group(s)—has been demonstrated with white authors citing other white authors more frequently”</li>
+<li>“gender and racial citation biases remain stable or have even worsened over the last half century” <span class="citation" data-cites="DaviesPromotingInclusiveMetrics2021">(Davies et al. 2021, 3–5)</span></li>
+</ul>
+<p><span class="citation" data-cites="GintherRaceEthnicityNIH2011">Ginther et al. (2011)</span> found that Black and Asian applicants for NIH funding are significantly less likely to receive awards, even after controlling for factors such as educational background, prior awards, and publication records. They attributed some of this disparity to topic choice, with lower award rates for community and population-level research vs.&nbsp;“basic” or “fundamental” research. <span class="citation" data-cites="HofstraDiversityInnovationParadox2020">Hofstra et al. (2020)</span> find that “underrepresented groups produce higher rates of scientific novelty” but “novel contributions by gender and racial minorities are taken up at lower rates” than majorities. By combining text analysis with metadata and bibliometrics, <span class="citation" data-cites="HengelAreWomenHeld2022">Hengel (2022)</span> compares preprints to published versions of journal articles, arguing that women authors are held to higher standards than men and that this explains numerous gendered disparities in academic publishing: longer review times, lower acceptance rates, lower publication rates in the most prestigious journals, and lower submission rates. <span class="citation" data-cites="Masters-WaageUnderrepresentedMinorityFaculty2024">Masters-Waage et al. (2024)</span> find similar traces of bias in promotion and tenure decisions. Looking across fields, <span class="citation" data-cites="SugimotoEquityWomenScience2023">Sugimoto and Larivière (2023)</span> argues that “Disciplines with parity (or those dominated by women) tend to be lower cited and relegated to the bottom tiers of the academic hierarchy.”</p>
+<p>An important proviso with virtually all of these studies is that they use automated demographic imputation, that is, imputing authors’ gender and race/ethnicity based on their names. <span class="citation" data-cites="LockhartNamebasedDemographicInference2023">Lockhart, King, and Munsch (2023)</span> shows that these methods are less accurate for both gender and racial/ethnicity minorities, which generally results in misclassifying members of minority groups as members of majorities. In general, measurement error on the independent variable produces <em>regression dilution</em>, in which estimated correlations/regression coefficients are biased towards 0. That is, all else being equal, automated demographic imputation would be expected to yield underestimations of the magnitude of gender and racial/ethnic bias.</p>
+</section>
+<section id="quantification-as-depoliticization" class="level1">
+<h1>Quantification as depoliticization</h1>
+<p>Thus far, I have offered “technical” critiques of bibliometrics, showing limitations in their fit for purpose as measures of research quality. But it is important to recognize that, in the context of decisions such as how to allocate faculty lines, bibliometrics also have a broader function, as what we might call a <em>depoliticization strategy</em>.</p>
+<p>STS scholars argue that quantification or <em>scientization</em> — replacing explicitly political decisionmaking processes with expert or “data-driven” processes — is a key legitimizing strategy used by modern states and other political and social authorities <span class="citation" data-cites="JasanoffFifthBranchScience1990 PorterTrustNumbersPursuit1995 SarewitzScienceEnvironmentalPolicy2000">(Jasanoff 1990; Porter 1995; Sarewitz 2000)</span>. This strategy was on display in 2020, when political leaders presented themselves as “following the science.” Even Covid skeptics made their arguments in terms of quantified evidence and data visualizations <span class="citation" data-cites="LeeViralVisualizationsHow2021">(C. Lee et al. 2021)</span>. On an individual level, many students in my Critical Thinking course come in thinking that using numbers is enough to make an argument valid — without regard to how those numbers were produced and whether they have anything to do with the conclusion the argument is attempting to support.</p>
+<p>Broadly, in our society quantified evidence is treated as extra-political — existing outside or beyond (political) controversy — and therefore super-political — taking precedence over and even shutting down (political) controversy. Quantification is thereby appealing when political controversies seem to be heated and intractable, appearing to give us (that is, whoever has the power to impose a particular system of quantification) a way to end debate and resolve the issue, moving it outside or beyond politics. Thus, “depoliticization.”</p>
+<p>Allocating extremely scarce resources such as faculty lines is already a touchy issue. Doing so under conditions of existential uncertainty for American higher ed, impending demographic decline, and pre-existing structural deficits only makes the controversy more fraught. In this context, bibliometrics appear to provide an “objective,” depoliticizing solution.</p>
+<p>However, the “technical” critiques I have offered show that the promise of using bibliometrics to depoliticize decisions about faculty lines is a mirage. Any attempt to operationalize bibliometrics for decisionmaking requires prior decisions, about how to compare incommensurable research outputs, how to assign departmental research portfolios to fields and adjust for differences between fields, which source(s) of bibliometrics data to use and how to manage the corresponding tradeoffs between coverage and data quality, and how to mitigate rather than exacerbate the influence of deep structural biases. Rather than depoliticizing, bibliometrics would simply become a new arena for political controversy <span class="citation" data-cites="HicksScientificControversiesProxy2017 HicksSafetyAutonomousVehicles2018">(Daniel J. Hicks 2017; D. J. Hicks 2018)</span>, as different interests across campus push for different ways of resolving these prior decisions that happen to benefit their particular group.</p>
+</section>
+<section id="recommendations-1" class="level1">
+<h1>Recommendations</h1>
+<p>Bibliometrics are neither fit for purpose as measures of research quality nor strategically useful for cooling heated controversies. As an alternative, I would recommend adopting a process with the following features, based on general best practices in research assessment/evaluation and points from the Leiden Manifesto in particular:</p>
+<ol type="1">
+<li><p>Start by articulating aims</p>
+<p>Faculty hires can serve many different kinds of goals, both inward-facing (scholarly) and outward-facing (social or community): growing (or maintaining) enrollments, developing a unit’s existing research strengths, broadening a unit’s coverage, fostering interdisciplinary research, attracting external funding, addressing a significant social issue, supporting a certain local community, and so on. The campus should develop specific versions of these or other goals, as the primary basis on which hiring decisions will be made.</p></li>
+<li><p>Approach hiring requests as program impact plans</p>
+<p>Program impact plans — also known as theories of change and logic models — describe how an organization believes that a certain course of action does (or will) lead to certain outputs, and thereby downstream outcomes and impacts that ultimately promote the organization’s aims. For example, given an aim of strengthening ties between engineers and social scientists in robotics research, a NSF funding program might devote 20% of its funds to a solicitation that requires two PIs, one from each area. The program impact plan would identify, as an output, more funding to interdisciplinary teams; as outcomes, funded researchers publishing in a wider variety of journals than they would have otherwise and an increased presence of social scientists at (engineering-oriented) robotics conferences; and as an impact, incorporation of social science research findings into engineering research.</p>
+<p>Departments wishing to hire faculty could take a similar approach, preparing short statements (say, capped at 1,000 words) that explain, for example, how a new hire in a particular area would enable them to add an attractive emphasis track to their major and regularly offer a popular elective course for another major (outputs); how this would make the campus more competitive for potential students in both majors (outcomes); and thereby promote enrollment growth (or counteract trends in declining enrollment; impacts).</p>
+<p>These program impact plans should follow the warning of the Leiden Manifesto, and avoid misplaced concreteness and false precision: quantitative enrollment estimates are much more uncertain than they might appear to be. It is also important to recognize the possibility of bias in qualitative assessment; for example, STEM majors as such are not necessarily more popular with students than humanities majors. Nonetheless, both faculty and campus administrators can assess whether a given hiring proposal might plausibly lead to the anticipated outputs, outcomes, and impacts.</p></li>
+<li><p>Faculty provide peer review</p>
+<p>While it is impossible to completely depoliticize high-stakes resource allocations decisions, it is worth considering peer review — especially for research funding — as a familiar model of political decisionmaking that does not often erupt into intractable, heated controversy. I have seen firsthand how SSHA’s Curriculum Committee throughly but constructively scrutinizes proposals for new majors. UC Merced might take a similar approach to hiring faculty: departments could prepare hiring proposals — in the form of program impact plans — which would be reviewed by school Executive Committees, and then by CAPRA and/or other Senate committees. Reviewing committees could provide both qualitative evaluations and rubric-based assessments of each proposal, along the lines of NSF and NIH.</p>
+<p>While far from perfect, distributing power over faculty hires and incorporating accountability/transparency would be preferable to the current system, which often relies heavily on patronage relations among individual faculty, deans, and the provost.</p></li>
+</ol>
+</section>
+<section id="references" class="level1">
+
+
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-CaganSanFranciscoDeclaration2013" class="csl-entry">
+Cagan, Ross. 2013. <span>“The San Francisco Declaration on Research Assessment.”</span> <em>Disease Models &amp; Mechanisms</em> 6 (4): 869–70. <a href="https://doi.org/10.1242/dmm.012955">https://doi.org/10.1242/dmm.012955</a>.
+</div>
+<div id="ref-DaviesPromotingInclusiveMetrics2021" class="csl-entry">
+Davies, Sarah W., Hollie M. Putnam, Tracy Ainsworth, Julia K. Baum, Colleen B. Bove, Sarah C. Crosby, Isabelle M. Côté, et al. 2021. <span>“Promoting Inclusive Metrics of Success and Impact to Dismantle a Discriminatory Reward System in Science.”</span> <em>PLOS Biology</em> 19 (6): e3001282. <a href="https://doi.org/10.1371/journal.pbio.3001282">https://doi.org/10.1371/journal.pbio.3001282</a>.
+</div>
+<div id="ref-FunkDynamicNetworkMeasure2016" class="csl-entry">
+Funk, Russell J., and Jason Owen-Smith. 2016. <span>“A Dynamic Network Measure of Technological Change.”</span> <em>Management Science</em> 63 (3): 791–817. <a href="https://doi.org/10.1287/mnsc.2015.2366">https://doi.org/10.1287/mnsc.2015.2366</a>.
+</div>
+<div id="ref-GintherRaceEthnicityNIH2011" class="csl-entry">
+Ginther, Donna K., Walter T. Schaffer, Joshua Schnell, Beth Masimore, Faye Liu, Laurel L. Haak, and Raynard Kington. 2011. <span>“Race, Ethnicity, and NIH Research Awards.”</span> <em>Science</em> 333 (6045): 1015–19. <a href="https://doi.org/10.1126/science.1196783">https://doi.org/10.1126/science.1196783</a>.
+</div>
+<div id="ref-GolosovskyUniversalityCitationDistributions2021" class="csl-entry">
+Golosovsky, Michael. 2021. <span>“Universality of Citation Distributions: A New Understanding.”</span> <em>Quantitative Science Studies</em> 2 (2): 527–43. <a href="https://doi.org/10.1162/qss_a_00127">https://doi.org/10.1162/qss_a_00127</a>.
+</div>
+<div id="ref-HePredictiveEffectsNovelty2018" class="csl-entry">
+He, Jiangen, and Chaomei Chen. 2018. <span>“Predictive Effects of Novelty Measured by Temporal Embeddings on the Growth of Scientific Literature.”</span> <em>Frontiers in Research Metrics and Analytics</em> 3. <a href="https://doi.org/10.3389/frma.2018.00009">https://doi.org/10.3389/frma.2018.00009</a>.
+</div>
+<div id="ref-HengelAreWomenHeld2022" class="csl-entry">
+Hengel, Erin. 2022. <span>“Are Women Held to Higher Standards? Evidence from Peer Review.”</span> <em>The Economic Journal</em>, May, ueac032. <a href="https://doi.org/10.1093/ej/ueac032">https://doi.org/10.1093/ej/ueac032</a>.
+</div>
+<div id="ref-HicksSafetyAutonomousVehicles2018" class="csl-entry">
+Hicks, D. J. 2018. <span>“The Safety of Autonomous Vehicles: Lessons from Philosophy of Science.”</span> <em>IEEE Technology and Society Magazine</em> 37 (1): 62–69. <a href="https://doi.org/10.1109/MTS.2018.2795123">https://doi.org/10.1109/MTS.2018.2795123</a>.
+</div>
+<div id="ref-HicksBibliometricsSocialValidation2016" class="csl-entry">
+Hicks, Daniel J. 2016. <span>“Bibliometrics for Social Validation.”</span> <em>PLOS ONE</em> 11 (12): e0168597. <a href="https://doi.org/10.1371/journal.pone.0168597">https://doi.org/10.1371/journal.pone.0168597</a>.
+</div>
+<div id="ref-HicksScientificControversiesProxy2017" class="csl-entry">
+———. 2017. <span>“Scientific Controversies as Proxy Politics.”</span> <em>Issues in Science and Technology</em>, January 2017. <a href="https://www.jstor.org/stable/24891967">https://www.jstor.org/stable/24891967</a>.
+</div>
+<div id="ref-HicksProductivityInterdisciplinaryImpacts2021" class="csl-entry">
+———. 2021. <span>“Productivity and Interdisciplinary Impacts of Organized Research Units.”</span> <em>Quantitative Science Studies</em> 2 (3): 990–1022. <a href="https://doi.org/10.1162/qss_a_00150">https://doi.org/10.1162/qss_a_00150</a>.
+</div>
+<div id="ref-HicksNetworkAnalysisEvaluate2019" class="csl-entry">
+Hicks, Daniel J., David A. Coil, Carl G. Stahmer, and Jonathan A. Eisen. 2019. <span>“Network Analysis to Evaluate the Impact of Research Funding on Research Community Consolidation.”</span> <em>PLOS ONE</em> 14 (6): e0218273. <a href="https://doi.org/10.1371/journal.pone.0218273">https://doi.org/10.1371/journal.pone.0218273</a>.
+</div>
+<div id="ref-HicksImpactingCapabilitiesConceptual2018" class="csl-entry">
+Hicks, Daniel J., Carl Stahmer, and MacKenzie Smith. 2018. <span>“Impacting Capabilities: A Conceptual Framework for the Social Value of Research.”</span> <em>Frontiers in Research Metrics and Analytics</em>. <a href="https://doi.org/10.3389/frma.2018.00024">https://doi.org/10.3389/frma.2018.00024</a>.
+</div>
+<div id="ref-HicksLeidenManifestoResearch2015" class="csl-entry">
+Hicks, Diana, Paul Wouters, Ludo Waltman, Sarah De Rijcke, and Ismael Rafols. 2015. <span>“The Leiden Manifesto for Research Metrics.”</span> <em>Nature</em> 520 (7548): 429. <a href="https://doi.org/10.1038/520429a">https://doi.org/10.1038/520429a</a>.
+</div>
+<div id="ref-HicksNationalRoboticsInitiative2019" class="csl-entry">
+Hicks, D., and R. Simmons. 2019. <span>“The National Robotics Initiative: A Five-Year Retrospective.”</span> <em>IEEE Robotics Automation Magazine</em> 26 (3): 2–9. <a href="https://doi.org/10.1109/MRA.2019.2912860">https://doi.org/10.1109/MRA.2019.2912860</a>.
+</div>
+<div id="ref-HofstraDiversityInnovationParadox2020" class="csl-entry">
+Hofstra, Bas, Vivek V. Kulkarni, Sebastian Munoz-Najar Galvez, Bryan He, Dan Jurafsky, and Daniel A. McFarland. 2020. <span>“The Diversity–Innovation Paradox in Science.”</span> <em>Proceedings of the National Academy of Sciences</em>, April, 201915378. <a href="https://doi.org/10.1073/pnas.1915378117">https://doi.org/10.1073/pnas.1915378117</a>.
+</div>
+<div id="ref-IbrahimGoogleScholarManipulatable2024" class="csl-entry">
+Ibrahim, Hazem, Fengyuan Liu, Yasir Zaki, and Talal Rahwan. 2024. <span>“Google Scholar Is Manipulatable.”</span> arXiv. <a href="https://doi.org/10.48550/arXiv.2402.04607">https://doi.org/10.48550/arXiv.2402.04607</a>.
+</div>
+<div id="ref-JasanoffFifthBranchScience1990" class="csl-entry">
+Jasanoff, Sheila. 1990. <em>The Fifth Branch: Science Advisers as Policymakers</em>. Harvard University Press.
+</div>
+<div id="ref-KojakuDetectingAnomalousCitation2021" class="csl-entry">
+Kojaku, Sadamori, Giacomo Livan, and Naoki Masuda. 2021. <span>“Detecting Anomalous Citation Groups in Journal Networks.”</span> <em>Scientific Reports</em> 11 (1): 14524. <a href="https://doi.org/10.1038/s41598-021-93572-3">https://doi.org/10.1038/s41598-021-93572-3</a>.
+</div>
+<div id="ref-LeeReferenceClassProblem2020" class="csl-entry">
+Lee, Carole J. 2020. <span>“The Reference Class Problem for Credit Valuation in Science.”</span> <em>Philosophy of Science</em> 87 (5): 1026–36. <a href="https://doi.org/10.1086/710615">https://doi.org/10.1086/710615</a>.
+</div>
+<div id="ref-LeeViralVisualizationsHow2021" class="csl-entry">
+Lee, Crystal, Tanya Yang, Gabrielle Inchoco, Graham M. Jones, and Arvind Satyanarayan. 2021. <span>“Viral Visualizations: How Coronavirus Skeptics Use Orthodox Data Practices to Promote Unorthodox Science Online.”</span> <em>Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems</em>, May, 1–18. <a href="https://doi.org/10.1145/3411764.3445211">https://doi.org/10.1145/3411764.3445211</a>.
+</div>
+<div id="ref-LockhartNamebasedDemographicInference2023" class="csl-entry">
+Lockhart, Jeffrey W., Molly M. King, and Christin Munsch. 2023. <span>“Name-Based Demographic Inference and the Unequal Distribution of Misrecognition.”</span> <em>Nature Human Behaviour</em>, April, 1–12. <a href="https://doi.org/10.1038/s41562-023-01587-9">https://doi.org/10.1038/s41562-023-01587-9</a>.
+</div>
+<div id="ref-Martin-MartinCoverageHighlycitedDocuments2018" class="csl-entry">
+Martín-Martín, Alberto, Enrique Orduna-Malea, and Emilio Delgado López-Cózar. 2018. <span>“Coverage of Highly-Cited Documents in Google Scholar, Web of Science, and Scopus: A Multidisciplinary Comparison.”</span> <em>Scientometrics</em>, June, 1–14. <a href="https://doi.org/10.1007/s11192-018-2820-9">https://doi.org/10.1007/s11192-018-2820-9</a>.
+</div>
+<div id="ref-Martin-MartinGoogleScholarWeb2018" class="csl-entry">
+Martín-Martín, Alberto, Enrique Orduna-Malea, Mike Thelwall, and Emilio Delgado López-Cózar. 2018. <span>“Google Scholar, Web of Science, and Scopus: A Systematic Comparison of Citations in 252 Subject Categories.”</span> <em>Journal of Informetrics</em> 12 (4): 1160–77. <a href="https://doi.org/10.1016/j.joi.2018.09.002">https://doi.org/10.1016/j.joi.2018.09.002</a>.
+</div>
+<div id="ref-MarxCausesSubjectspecificCitation2015" class="csl-entry">
+Marx, Werner, and Lutz Bornmann. 2015. <span>“On the Causes of Subject-Specific Citation Rates in Web of Science.”</span> <em>Scientometrics</em> 102 (2): 1823–27. <a href="https://doi.org/10.1007/s11192-014-1499-9">https://doi.org/10.1007/s11192-014-1499-9</a>.
+</div>
+<div id="ref-Masters-WaageUnderrepresentedMinorityFaculty2024" class="csl-entry">
+Masters-Waage, Theodore, Christiane Spitzmueller, Ebenezer Edema-Sillo, Ally St.&nbsp;Aubin, Michelle Penn-Marshall, Erika Henderson, Peggy Lindner, Cynthia Werner, Tracey Rizzuto, and Juan Madera. 2024. <span>“Underrepresented Minority Faculty in the USA Face a Double Standard in Promotion and Tenure Decisions.”</span> <em>Nature Human Behaviour</em>, October, 1–12. <a href="https://doi.org/10.1038/s41562-024-01977-7">https://doi.org/10.1038/s41562-024-01977-7</a>.
+</div>
+<div id="ref-PetersenEvolutionBiomedicalInnovation2022" class="csl-entry">
+Petersen, Alexander M. 2022. <span>“Evolution of Biomedical Innovation Quantified via Billions of Distinct Article-Level MeSH Keyword Combinations.”</span> <em>Advances in Complex Systems</em> 25 (1). <a href="https://doi.org/10.1142/S0219525921500168">https://doi.org/10.1142/S0219525921500168</a>.
+</div>
+<div id="ref-PorterTrustNumbersPursuit1995" class="csl-entry">
+Porter, Theodore M. 1995. <em>Trust in Numbers: The Pursuit of Objectivity in Science and Public Life</em>. Princeton, N.J: Princeton University Press.
+</div>
+<div id="ref-RadicchiUniversalityCitationDistributions2008" class="csl-entry">
+Radicchi, Filippo, Santo Fortunato, and Claudio Castellano. 2008. <span>“Universality of Citation Distributions: Toward an Objective Measure of Scientific Impact.”</span> <em>Proceedings of the National Academy of Sciences</em> 105 (45): 17268–72. <a href="https://doi.org/10.1073/pnas.0806977105">https://doi.org/10.1073/pnas.0806977105</a>.
+</div>
+<div id="ref-SarewitzScienceEnvironmentalPolicy2000" class="csl-entry">
+Sarewitz, Daniel. 2000. <span>“Science and Environmental Policy: An Excess of Objectivity.”</span> In <em>Earth Matters:&nbsp; The Earth Sciences, Philosophy, and the Claims of Community</em>, edited by Robert Frodeman, 79–98. Prentice Hall. <a href="http://www.cspo.org/_old_ourlibrary/ScienceandEnvironmentalPolicy.htm">http://www.cspo.org/_old_ourlibrary/ScienceandEnvironmentalPolicy.htm</a>.
+</div>
+<div id="ref-SauvayreTypesErrorsHiding2022" class="csl-entry">
+Sauvayre, Romy. 2022. <span>“Types of Errors Hiding in Google Scholar Data.”</span> <em>Journal of Medical Internet Research</em> 24 (5): e28354. <a href="https://doi.org/10.2196/28354">https://doi.org/10.2196/28354</a>.
+</div>
+<div id="ref-SimontonGoogleScholarCitations" class="csl-entry">
+Simonton, Dean Keith. n.d. <span>“Google Scholar Citations: Serious Errors.”</span> Accessed July 1, 2025. <a href="https://simonton.faculty.ucdavis.edu/research/google-scholar-citations-serious-errors/">https://simonton.faculty.ucdavis.edu/research/google-scholar-citations-serious-errors/</a>.
+</div>
+<div id="ref-SugimotoEquityWomenScience2023" class="csl-entry">
+Sugimoto, Cassidy R., and Vincent Larivière. 2023. <em>Equity for Women in Science: Dismantling Systemic Barriers to Advancement</em>. Harvard University Press.
+</div>
+<div id="ref-ZengDifferencesCollaborationPatterns2016" class="csl-entry">
+Zeng, Xiao Han T., Jordi Duch, Marta Sales-Pardo, João A. G. Moreira, Filippo Radicchi, Haroldo V. Ribeiro, Teresa K. Woodruff, and Luís A. Nunes Amaral. 2016. <span>“Differences in Collaboration Patterns Across Discipline, Career Stage, and Gender.”</span> <em>PLOS Biology</em> 14 (11): e1002573. <a href="https://doi.org/10.1371/journal.pbio.1002573">https://doi.org/10.1371/journal.pbio.1002573</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Impact factors are usually calculated for journals, not individual researchers, and are defined as the total number of citations to items in the journal divided by the number of items published, over some period of time.↩︎</p></li>
+<li id="fn2"><p>The h-index is used more widely than impact factor, and is defined for some portfolio of publications as the largest number <img src="https://latex.codecogs.com/png.latex?h"> such that <img src="https://latex.codecogs.com/png.latex?h"> publications have at least <img src="https://latex.codecogs.com/png.latex?h"> citations.↩︎</p></li>
+<li id="fn3"><p>I wasn’t aware of this when I accepted the offer, and had no contact with Elsevier representatives during the last eight months or so of the postdoc, or since.↩︎</p></li>
+<li id="fn4"><p>Note that Diana Hicks is a prominent scholar in this field. We have never met, and are not related.↩︎</p></li>
+<li id="fn5"><p>For example: <a href="https://service.elsevier.com/app/answers/detail/a_id/14894/supporthub/scopus/related/1/" class="uri">https://service.elsevier.com/app/answers/detail/a_id/14894/supporthub/scopus/related/1/</a>↩︎</p></li>
+<li id="fn6"><p><a href="https://www.webofscience.com/wos/author/record/973913?authorIds=973913&amp;state=%7B%7D" class="uri">https://www.webofscience.com/wos/author/record/973913?authorIds=973913&amp;state=%7B%7D</a>↩︎</p></li>
+<li id="fn7"><p><a href="https://service.elsevier.com/app/answers/detail/a_id/15181/supporthub/scopus/" class="uri">https://service.elsevier.com/app/answers/detail/a_id/15181/supporthub/scopus/</a>↩︎</p></li>
+<li id="fn8"><p><a href="https://www.scopus.com/sourceid/21100838541" class="uri">https://www.scopus.com/sourceid/21100838541</a>↩︎</p></li>
+<li id="fn9"><p><a href="https://www.cambridge.org/core/journals/philosophy-of-science" class="uri">https://www.cambridge.org/core/journals/philosophy-of-science</a>↩︎</p></li>
+<li id="fn10"><p><a href="https://journals.openedition.org/philosophiascientiae/635" class="uri">https://journals.openedition.org/philosophiascientiae/635</a>↩︎</p></li>
+</ol>
+</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+  <guid>https://dhicks.github.io/posts/2025-07-08-research-metrics.html</guid>
+  <pubDate>Tue, 08 Jul 2025 07:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Is this how you think DEI works at colleges and universities? (rejected from r/AskTrumpSupporters)</title>
   <dc:creator>Dan Hicks</dc:creator>
@@ -1211,86 +1563,6 @@ Zhang, Floyd Jiuyun. 2023. <span>“Political Endorsement by Nature and Trust in
 </section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2023-03-22-endorsement.html</guid>
   <pubDate>Wed, 22 Mar 2023 07:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Constructivist accounts of representation, in science and politics</title>
-  <dc:creator>Dan Hicks</dc:creator>
-  <link>https://dhicks.github.io/posts/2023-02-08-demagoguery.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>Political theorists developed a <em>constructivist</em> approach to political representation around 2010; <span class="citation" data-cites="SawardRepresentativeClaim2010">Saward (2010)</span> seems to be the canonical citation for this approach, but I think <span class="citation" data-cites="BrownScienceDemocracyExpertise2009">M. B. Brown (2009)</span> is doing something quite similar. Prior to 2010, work by political theorists on representation focused on either (a) formal procedures of elections and voting or (b) deliberative practices, either in civil society (that is, outside of government) or in boundary institutions that connected public deliberation to policymakers. Recently several philosophers of science have picked up ideas from the latter (citations in <a href="2023-01-30-democracy-defense.html">a previous post</a>).</p>
-<p>Constructivists challenge an implicit assumption of these approaches, namely, the there is a constituency or public that exists prior to representation and has more-or-less well-defined interests or preferences. This assumption might (<em>might</em>) make sense when we’re talking about legislative districts: the State of California existed before Diane Feinstein was first elected Senator in 1992. But it doesn’t work as well for less formal types of representation, for example, Martin Luther King, Jr., or Greta Thunberg as representatives of social movements.</p>
-<p><span class="citation" data-cites="SawardRepresentativeClaim2010">Saward (2010)</span> apparently (I haven’t actually read the book) draws on Gricean philosophy of language that will be familiar to most philosophers today. Specifically, <span class="citation" data-cites="SawardRepresentativeClaim2010">Saward (2010)</span> examines representative claims as speech acts, claims that the speaker represents a certain public or constituency to an audience in a certain context and that this constituency believes or wants or does something. These acts are successful insofar as they are taken up by the audience. In other words, to be a representative for a constituency is nothing more or less than to be taken as a representative for that constituency.</p>
-<p>Importantly, the constituency does not need to exist for a representative claim to be successful. One practical <em>effect</em> of the speech act might be that the constituency comes into existence as members of the audience identify themselves as members of that constituency. For example, what we now call the “MAGA movement” or “MAGA Republicans” didn’t exist until after Trump presented himself as a representative for that then-unnamed constituency in 2015. Drawing on Hobbes, <span class="citation" data-cites="BrownScienceDemocracyExpertise2009">M. B. Brown (2009)</span> calls this <em>virtual representation</em><sup>1</sup>, and he uses it to develop an account of (natural) scientists as representatives of nature in policy contexts. Even if it makes sense to talk about “nature” as a single coherent entity, that entity can’t do something like authorize a scientist as its representative through a formal election or have beliefs or interests that are accurately or inaccurately represented by a scientist’s representative claims.</p>
-<p><span class="citation" data-cites="UrbinatiJudgmentAloneCloven2018">Urbinati (2018)</span> discusses this constructivist approach to political representation. I found her writing somewhat difficult to follow, so I’m not going to try to fully reconstruct her views. But she does seem to present three objections to constructivism:</p>
-<ol type="1">
-<li>It neglects inequalities in who will make representative claims and whose representative claims will be taken up.<br>
-</li>
-<li>The representative is accountable to the audience rather than the constituency.<br>
-</li>
-<li>There’s no reason to think that successful representative claims (as constructivists understand that success) will have any effects on policy. <span class="citation" data-cites="UrbinatiJudgmentAloneCloven2018">(Urbinati 2018, 74ff)</span></li>
-</ol>
-<p>The first objection echoes <span class="citation" data-cites="YoungInclusionDemocracy2000">Young (2000)</span>’s critique of deliberative democracy, which (prior to Young’s critique) tended to focus on idealized deliberative scenarios and norms of deliberation that favored highly educated white men. The third objection seems to provide the best support for <span class="citation" data-cites="UrbinatiJudgmentAloneCloven2018">Urbinati (2018)</span>’s “diarchic” approach, which emphasizes the relationship between formal institutions of political power and the open-ended deliberation of civil society. (I suspect some of the later contributions to this collection will do this as well.)</p>
-<p>On the “pre-constructivist” models of representation, representatives are primarily accountable to the constituency that they represent. This might be done formally — the representative needs to stand for (re)election — or it might happen informally — as constituents call representatives to give an account of their actions qua representatives.<sup>2</sup> Urbinati’s point seems to be that, by basing legitimacy on audience uptake, constructivists lose the demand for democratic accountability. Audience uptake matters, and representative and constituency co-construct each other (again, consider Trump), but <em>good</em> representatives must still represent their constituents <em>accurately</em>.</p>
-<p>For <span class="citation" data-cites="BrownScienceDemocracyExpertise2009">M. B. Brown (2009)</span>, a constructivist account of scientific representation (scientists as representatives of nature) is attractive because democratic accountability to “nature” seems to be nonsensical.<sup>3</sup> So if scientists are to be held accountable to anyone besides themselves, the audience seems to be the only option.</p>
-<p>In the context of Brown’s account, we might understand Urbinati’s second concern as a critique of “wishful thinking” or “anything-goes” relativism: nothing seems to be stopping the audience from rejecting scientists whose claims are inconvenient or unfavorable (no matter how well-supported), and accepting scientists whose claims are convenient and favorable (no matter how flimsy) <span class="citation" data-cites="SarewitzHowScienceMakes2004 SteelQualifiedEpistemicPriority2017 LichtensteinInconvenientTruthInductive2022">(Sarewitz 2004; Steel 2017; Lichtenstein 2022)</span>.</p>
-<p>One constructivist response to this critique might be to reject the notion of accuracy, as in the formulation “good representatives must still represent their constituents accurately.” Such a constructivist might argue that “accuracy” assumes a pre-existing constituency; but representative claims are prior to constituencies, etc. On the science side, this leads to the interminable and fatally abstract debates over “realism” of the 1970s and ’80s.</p>
-<p>An alternative approach might draw on Dewey’s account of inquiry, specifically as articulated by <span class="citation" data-cites="BrownScienceMoralImagination2020">M. Brown (2020)</span>. On this account, inquiry starts with a problematic situation — things aren’t working — and inquiry is successful insofar as it resolves the situation — develops alternative things that do work. Importantly, “working” here has both “realist” and “constructivist” aspects. It’s realist insofar as the agent can <em>incorrectly</em> believe that a certain alternative will work when “in fact” it will not. But it’s also constructivist insofar as one tactic to resolve the situation is for the agent to change their understanding of the activity and its goals, and resolving the situation does not require a “true” representation of the world (in a classical correspondence sense).<sup>4</sup></p>
-<p>I suggest we can view political representation as “inquiry” using this account. The problematic situation is that some people<sup>5</sup> have some felt dissatisfaction with the status quo. A representative claim is then a hypothesis that there is a group (the constituency) whose interests are not being served by the policy status quo (the diagnosis), and that adopting a different policy will resolve the problematic situation (the remedy).</p>
-<p>On this model, a representative claim will have locutionary success criteria, that is, it needs to be taken up by the audience, especially people with the power to enact the proposed policy. And the constituency can be constructed by the representative claim, insofar as the “some people” subsequently decide that they are indeed members of the group and their interests are not being served by the status quo. But <strong>the representative claim also has pragmatic success criteria</strong>: would the remedy actually resolve the problematic situation as characterized by the diagnosis? This is unlikely to be the case if, for example, there is good evidence that the felt dissatisfaction experienced by group members is not caused by the factors identified in the diagnosis.</p>
-<p>Consider how this model might work for Trump’s 2016 campaign. We can reconstruct the central representative claim of Trump’s campaign as something like the hypothesis that rural poverty is caused by mass undocumented immigration and so strong immigration restrictions will solve this problem. This claim was taken up by the media, who did numerous profiles of “Trump voters” (the newly-constructed constituency) in impoverished rural areas and their attitudes towards immigration. So it was evidently a locutionary success. But its pragmatic success is tenuous at best; agricultural consolidation and demographic shifts (depopulation and aging as young adults go to college and move to urban areas) are probably much more important causes of rural poverty than immigration, undocumented or otherwise.</p>
-
-
-
-
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
-<div id="ref-BrownScienceDemocracyExpertise2009" class="csl-entry">
-Brown, Mark B. 2009. <em>Science in Democracy: Expertise, Institutions, and Representation</em>. Cambridge, Mass: MIT Press.
-</div>
-<div id="ref-BrownScienceMoralImagination2020" class="csl-entry">
-Brown, Matthew. 2020. <em>Science and Moral Imagination: A New Ideal for Values in Science</em>. University of Pittsburgh Press.
-</div>
-<div id="ref-LiboironPollutionColonialism2021" class="csl-entry">
-Liboiron, Max. 2021. <em>Pollution Is Colonialism</em>. Duke University Press.
-</div>
-<div id="ref-LichtensteinInconvenientTruthInductive2022" class="csl-entry">
-Lichtenstein, Eli I. 2022. <span>“Inconvenient Truth and Inductive Risk in Covid-19 Science.”</span> <em>Philosophy of Medicine</em> 3 (1). <a href="https://doi.org/10.5195/pom.2022.132">https://doi.org/10.5195/pom.2022.132</a>.
-</div>
-<div id="ref-SarewitzHowScienceMakes2004" class="csl-entry">
-Sarewitz, Daniel. 2004. <span>“How Science Makes Environmental Controversies Worse.”</span> <em>Environmental Science and Policy</em> 7 (5): 385–403. <a href="https://doi.org/10.1016/j.envsci.2004.06.001">https://doi.org/10.1016/j.envsci.2004.06.001</a>.
-</div>
-<div id="ref-SawardRepresentativeClaim2010" class="csl-entry">
-Saward, Michael. 2010. <em>The Representative Claim</em>. OUP Oxford.
-</div>
-<div id="ref-SimpsonLandPedagogyNishnaabeg2014" class="csl-entry">
-Simpson, Leanne Betasamosake. 2014. <span>“Land as Pedagogy: Nishnaabeg Intelligence and Rebellious Transformation.”</span> <em>Decolonization: Indigeneity, Education &amp; Society</em> 3 (3). <a href="https://jps.library.utoronto.ca/index.php/des/article/view/22170">https://jps.library.utoronto.ca/index.php/des/article/view/22170</a>.
-</div>
-<div id="ref-SteelQualifiedEpistemicPriority2017" class="csl-entry">
-Steel, Daniel. 2017. <span>“Qualified Epistemic Priority.”</span> In <em>Current Controversies in Values and Science</em>, edited by Kevin C. Elliott and Daniel Steel, 49–63. New York and London: Routledge.
-</div>
-<div id="ref-UrbinatiJudgmentAloneCloven2018" class="csl-entry">
-Urbinati, Nadia. 2018. <span>“Judgment Alone: Cloven Citizenship in the Era of the Internet.”</span> In <em>Creating Political Presence: The New Politics of Democratic Representation</em>, edited by Dario Castiglione and Johannes Pollak. Chicago, IL: University of Chicago Press. <a href="https://press.uchicago.edu/ucp/books/book/chicago/C/bo29203064.html">https://press.uchicago.edu/ucp/books/book/chicago/C/bo29203064.html</a>.
-</div>
-<div id="ref-YoungInclusionDemocracy2000" class="csl-entry">
-Young, Iris Marion. 2000. <em>Inclusion and Democracy</em>. Oxford University Press. <a href="http://books.google.ca/books?id=Gonp8GXTxb0C&amp;pg=PA18&amp;dq=intitle:INCLUSION+AND+DEMOCRACY+inauthor:young&amp;hl=&amp;cd=1&amp;source=gbs_api">http://books.google.ca/books?id=Gonp8GXTxb0C&amp;pg=PA18&amp;dq=intitle:INCLUSION+AND+DEMOCRACY+inauthor:young&amp;hl=&amp;cd=1&amp;source=gbs_api</a>.
-</div>
-</div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Or maybe “fictional representation”? Need to check.↩︎</p></li>
-<li id="fn2"><p>Young cite here?↩︎</p></li>
-<li id="fn3"><p>Yesterday I was preparing <span class="citation" data-cites="SimpsonLandPedagogyNishnaabeg2014">Simpson (2014)</span> as a reading on Indigenous epistemology and land relations for the Environmental Philosophy course that I’m teaching this semester. From the perspective of Indigenous land relations, accountability to “nature” — or rather, nonhuman agents — does make sense. Indeed, as presented by various Indigenous authors <span class="citation" data-cites="SimpsonLandPedagogyNishnaabeg2014 LiboironPollutionColonialism2021">(Simpson 2014; Liboiron 2021)</span> a key idea in Indigenous knowledge-making practices is consent and collaboration with nonhuman agents. I’m going to bracket this thought for the purposes of this post.↩︎</p></li>
-<li id="fn4"><p>Sorry Matt Brown, nobody else thinks Dewey was a correspondence theorist.↩︎</p></li>
-<li id="fn5"><p>This should be understood as a Boolosean plural quantifier: “there are some <img src="https://latex.codecogs.com/png.latex?x">s,” rather than “there is a set <img src="https://latex.codecogs.com/png.latex?X">.”↩︎</p></li>
-</ol>
-</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
-  <guid>https://dhicks.github.io/posts/2023-02-08-demagoguery.html</guid>
-  <pubDate>Wed, 08 Feb 2023 08:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

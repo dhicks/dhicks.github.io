@@ -1,0 +1,1459 @@
+---
+references:
+- id: CaganSanFranciscoDeclaration2013
+  abstract: >-
+    On December 16, 2012, a group of editors and publishers of scholarly
+    journals, including representatives from The Company of Biologists (COB),
+    publisher of Disease Models & Mechanisms , gathered at the Annual Meeting of
+    The American Society for Cell Biology in San Francisco, CA, USA to discuss
+  accessed:
+    - year: 2016
+      month: 12
+      day: 31
+  author:
+    - family: Cagan
+      given: Ross
+  citation-key: CaganSanFranciscoDeclaration2013
+  container-title: Disease Models & Mechanisms
+  DOI: 10.1242/dmm.012955
+  ISSN: 1754-8403, 1754-8411
+  issue: '4'
+  issued:
+    - year: 2013
+      month: 7
+      day: 1
+  language: en
+  license: >-
+    © 2013. Published by The Company of Biologists Ltd.  This is an Open Access
+    article distributed under the terms of the Creative Commons Attribution
+    License (http://creativecommons.org/licenses/by/3.0), which permits
+    unrestricted use, distribution and reproduction in any medium provided that
+    the original work is properly attributed.
+  page: 869-870
+  PMID: '23690539'
+  source: dmm.biologists.org
+  title: The San Francisco Declaration on Research Assessment
+  type: article-journal
+  URL: http://dmm.biologists.org/content/6/4/869
+  volume: '6'
+
+- id: DaviesPromotingInclusiveMetrics2021
+  abstract: >-
+    Success and impact metrics in science are based on a system that perpetuates
+    sexist and racist “rewards” by prioritizing citations and impact factors.
+    These metrics are flawed and biased against already marginalized groups and
+    fail to accurately capture the breadth of individuals’ meaningful scientific
+    impacts. We advocate shifting this outdated value system to advance science
+    through principles of justice, equity, diversity, and inclusion. We outline
+    pathways for a paradigm shift in scientific values based on multidimensional
+    mentorship and promoting mentee well-being. These actions will require
+    collective efforts supported by academic leaders and administrators to drive
+    essential systemic change.
+  accessed:
+    - year: 2021
+      month: 6
+      day: 16
+  author:
+    - family: Davies
+      given: Sarah W.
+    - family: Putnam
+      given: Hollie M.
+    - family: Ainsworth
+      given: Tracy
+    - family: Baum
+      given: Julia K.
+    - family: Bove
+      given: Colleen B.
+    - family: Crosby
+      given: Sarah C.
+    - family: Côté
+      given: Isabelle M.
+    - family: Duplouy
+      given: Anne
+    - family: Fulweiler
+      given: Robinson W.
+    - family: Griffin
+      given: Alyssa J.
+    - family: Hanley
+      given: Torrance C.
+    - family: Hill
+      given: Tessa
+    - family: Humanes
+      given: Adriana
+    - family: Mangubhai
+      given: Sangeeta
+    - family: Metaxas
+      given: Anna
+    - family: Parker
+      given: Laura M.
+    - family: Rivera
+      given: Hanny E.
+    - family: Silbiger
+      given: Nyssa J.
+    - family: Smith
+      given: Nicola S.
+    - family: Spalding
+      given: Ana K.
+    - family: Traylor-Knowles
+      given: Nikki
+    - family: Weigel
+      given: Brooke L.
+    - family: Wright
+      given: Rachel M.
+    - family: Bates
+      given: Amanda E.
+  citation-key: DaviesPromotingInclusiveMetrics2021
+  container-title: PLOS Biology
+  container-title-short: PLOS Biology
+  DOI: 10.1371/journal.pbio.3001282
+  ISSN: 1545-7885
+  issue: '6'
+  issued:
+    - year: 2021
+      month: 6
+      day: 15
+  language: en
+  page: e3001282
+  publisher: Public Library of Science
+  source: PLoS Journals
+  title: >-
+    Promoting inclusive metrics of success and impact to dismantle a
+    discriminatory reward system in science
+  type: article-journal
+  URL: >-
+    https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001282
+  volume: '19'
+
+- id: FunkDynamicNetworkMeasure2016
+  abstract: >-
+    This article outlines a network approach to the study of technological
+    change. We propose that new inventions reshape networks of interlinked
+    technologies by shifting inventors’ attention to or away from the knowledge
+    on which those inventions build. Using this approach, we develop novel
+    indexes of the extent to which a new invention consolidates or destabilizes
+    existing technology streams. We apply these indexes in analyses of
+    university research commercialization and find that, although federal
+    research funding pushes campuses to create inventions that are more
+    destabilizing, deeper commercial ties lead them to produce technologies that
+    consolidate the status quo. By quantifying the effects that new technologies
+    have on their predecessors, the indexes we propose allow patent-based
+    studies of innovation to capture conceptually important phenomena that are
+    not detectable with established measures. The measurement approach presented
+    here offers empirical insights that support theoretical development in
+    studies of innovation, entrepreneurship, technology strategy, science
+    policy, and social network theory.This paper was accepted by Lee Fleming,
+    entrepreneurship and innovation.
+  accessed:
+    - year: 2019
+      month: 2
+      day: 14
+  author:
+    - family: Funk
+      given: Russell J.
+    - family: Owen-Smith
+      given: Jason
+  citation-key: FunkDynamicNetworkMeasure2016
+  container-title: Management Science
+  container-title-short: Management Science
+  DOI: 10.1287/mnsc.2015.2366
+  ISSN: 0025-1909
+  issue: '3'
+  issued:
+    - year: 2016
+      month: 3
+      day: 22
+  page: 791-817
+  source: pubsonline.informs.org (Atypon)
+  title: A Dynamic Network Measure of Technological Change
+  type: article-journal
+  URL: https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2015.2366
+  volume: '63'
+
+- id: GintherRaceEthnicityNIH2011
+  abstract: >-
+    We investigated the association between a U.S. National Institutes of Health
+    (NIH) R01 applicant’s self-identified race or ethnicity and the probability
+    of receiving an award by using data from the NIH IMPAC II grant database,
+    the Thomson Reuters Web of Science, and other sources. Although proposals
+    with strong priority scores were equally likely to be funded regardless of
+    race, we find that Asians are 4 percentage points and black or
+    African-American applicants are 13 percentage points less likely to receive
+    NIH investigator-initiated research funding compared with whites. After
+    controlling for the applicant’s educational background, country of origin,
+    training, previous research awards, publication record, and employer
+    characteristics, we find that black applicants remain 10 percentage points
+    less likely than whites to be awarded NIH research funding. Our results
+    suggest some leverage points for policy intervention.
+
+    NIH research project grants from 2000 to 2006 show evidence of racial/ethnic
+    disparities in the probability of receiving an award.
+
+    NIH research project grants from 2000 to 2006 show evidence of racial/ethnic
+    disparities in the probability of receiving an award.
+  accessed:
+    - year: 2018
+      month: 2
+      day: 26
+  author:
+    - family: Ginther
+      given: Donna K.
+    - family: Schaffer
+      given: Walter T.
+    - family: Schnell
+      given: Joshua
+    - family: Masimore
+      given: Beth
+    - family: Liu
+      given: Faye
+    - family: Haak
+      given: Laurel L.
+    - family: Kington
+      given: Raynard
+  citation-key: GintherRaceEthnicityNIH2011
+  container-title: Science
+  DOI: 10.1126/science.1196783
+  ISSN: 0036-8075, 1095-9203
+  issue: '6045'
+  issued:
+    - year: 2011
+      month: 8
+      day: 19
+  language: en
+  license: Copyright © 2011, American Association for the Advancement of Science
+  page: 1015-1019
+  PMID: '21852498'
+  source: science.sciencemag.org
+  title: Race, Ethnicity, and NIH Research Awards
+  type: article-journal
+  URL: http://science.sciencemag.org/content/333/6045/1015
+  volume: '333'
+
+- id: GolosovskyUniversalityCitationDistributions2021
+  abstract: >-
+    Universality of scaled citation distributions was claimed a decade ago but
+    its theoretical justification has been lacking so far. Here, we study
+    citation distributions for three disciplines—Physics, Economics, and
+    Mathematics—and assess them using our explanatory model of citation
+    dynamics. The model posits that the citation count of a paper is determined
+    by its fitness: the attribute, which, for most papers, is set at the moment
+    of publication. In addition, the papers’ citation count is related to the
+    process by which the knowledge about this paper propagates in the scientific
+    community. Our measurements indicate that the fitness distribution for
+    different disciplines is nearly identical and can be approximated by the
+    log-normal distribution, while the viral propagation process is discipline
+    specific. The model explains which sets of citation distributions can be
+    scaled and which cannot. In particular, we show that the near-universal
+    shape of the citation distributions for different disciplines and for
+    different citation years traces its origin to the nearly universal fitness
+    distribution, while deviations from this shape are associated with the
+    discipline-specific citation dynamics of papers.
+  accessed:
+    - year: 2025
+      month: 6
+      day: 30
+  author:
+    - family: Golosovsky
+      given: Michael
+  citation-key: GolosovskyUniversalityCitationDistributions2021
+  container-title: Quantitative Science Studies
+  container-title-short: Quantitative Science Studies
+  DOI: 10.1162/qss_a_00127
+  ISSN: 2641-3337
+  issue: '2'
+  issued:
+    - year: 2021
+      month: 7
+      day: 15
+  page: 527-543
+  source: Silverchair
+  title: 'Universality of citation distributions: A new understanding'
+  title-short: Universality of citation distributions
+  type: article-journal
+  URL: https://doi.org/10.1162/qss_a_00127
+  volume: '2'
+
+- id: HengelAreWomenHeld2022
+  abstract: |-
+    Abstract
+                Female authors are underrepresented in top economics journals. In this paper, I investigate whether higher writing standards contribute to the problem. I find: (i) female-authored papers are 1–6 percent better written than equivalent papers by men; (ii) the gap widens during peer review; (iii) women improve their writing as they publish more papers (but men do not); (iv) female-authored papers take longer under review. Using a subjective expected utility framework, I argue that higher writing standards for women are consistent with these stylised facts. A counterfactual analysis suggests senior female economists may, as a result, write at least five percent more clearly than they otherwise would. As a final exercise, I show tentative evidence that women adapt to biased treatment in ways that may disguise it as voluntary choice.
+  accessed:
+    - year: 2022
+      month: 8
+      day: 18
+  author:
+    - family: Hengel
+      given: Erin
+  citation-key: HengelAreWomenHeld2022
+  container-title: The Economic Journal
+  DOI: 10.1093/ej/ueac032
+  ISSN: 0013-0133, 1468-0297
+  issued:
+    - year: 2022
+      month: 5
+      day: 16
+  language: en
+  page: ueac032
+  source: DOI.org (Crossref)
+  title: Are Women Held to Higher Standards? Evidence from Peer Review
+  title-short: Are Women Held to Higher Standards?
+  type: article-journal
+  URL: https://academic.oup.com/ej/advance-article/doi/10.1093/ej/ueac032/6586337
+
+- id: HePredictiveEffectsNovelty2018
+  abstract: >-
+    Novel scientiﬁc knowledge is constantly produced by the scientiﬁc community.
+    Understanding the level of novelty characterized by scientiﬁc literature is
+    key for modeling scientiﬁc dynamics and analyzing the growth mechanisms of
+    scientiﬁc knowledge. Metrics derived from bibliometrics and citation
+    analysis were effectively used to characterize the novelty in scientiﬁc
+    development. However, time is required before we can observe links between
+    documents such as citation links or patterns derived from the links, which
+    makes these techniques more effective for retrospective analysis than
+    predictive analysis. In this study, we present a new approach to measuring
+    the novelty of a research topic in a scientiﬁc community over a speciﬁc
+    period by tracking semantic changes of the terms and characterizing the
+    research topic in their usage context. The semantic changes are derived from
+    the text data of scientiﬁc literature by temporal embedding learning
+    techniques. We validated the effects of the proposed novelty metric on
+    predicting the future growth of scientiﬁc publications and investigated the
+    relations between novelty and growth by panel data analysis applied in a
+    large-scale publication dataset (MEDLINE/PubMed). Key ﬁndings based on the
+    statistical investigation indicate that the novelty metric has signiﬁcant
+    predictive effects on the growth of scientiﬁc literature and the predictive
+    effects may last for more than ten years. We demonstrated the effectiveness
+    and practical implications of the novelty metric in three case studies.
+  accessed:
+    - year: 2018
+      month: 3
+      day: 16
+  author:
+    - family: He
+      given: Jiangen
+    - family: Chen
+      given: Chaomei
+  citation-key: HePredictiveEffectsNovelty2018
+  container-title: Frontiers in Research Metrics and Analytics
+  container-title-short: Front. Res. Metr. Anal.
+  DOI: 10.3389/frma.2018.00009
+  ISSN: 2504-0537
+  issued:
+    - year: 2018
+  language: English
+  source: Frontiers
+  title: >-
+    Predictive Effects of Novelty Measured by Temporal Embeddings on the Growth
+    of Scientific Literature
+  type: article-journal
+  URL: https://www.frontiersin.org/articles/10.3389/frma.2018.00009/full
+  volume: '3'
+
+- id: HicksBibliometricsSocialValidation2016
+  abstract: >-
+    This paper introduces a bibliometric, citation network-based method for
+    assessing the social validation of novel research, and applies this method
+    to the development of high-throughput toxicology research at the US
+    Environmental Protection Agency. Social validation refers to the acceptance
+    of novel research methods by a relevant scientific community; it is formally
+    independent of the technical validation of methods, and is frequently
+    studied in history, philosophy, and social studies of science using
+    qualitative methods. The quantitative methods introduced here find that
+    high-throughput toxicology methods are spread throughout a large and
+    well-connected research community, which suggests high social validation.
+    Further assessment of social validation involving mixed qualitative and
+    quantitative methods are discussed in the conclusion.
+  accessed:
+    - year: 2017
+      month: 1
+      day: 4
+  author:
+    - family: Hicks
+      given: Daniel J.
+  citation-key: HicksBibliometricsSocialValidation2016
+  container-title: PLOS ONE
+  container-title-short: PLOS ONE
+  DOI: 10.1371/journal.pone.0168597
+  ISSN: 1932-6203
+  issue: '12'
+  issued:
+    - year: 2016
+      month: 12
+      day: 22
+  page: e0168597
+  source: PLoS Journals
+  title: Bibliometrics for Social Validation
+  type: article-journal
+  URL: http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0168597
+  volume: '11'
+
+- id: HicksImpactingCapabilitiesConceptual2018
+  abstract: >-
+    There is widespread interest in evaluating the social impacts of research
+    and other scholarly activities. Conventional metrics for social impacts
+    focus on economics or wealth creation, such as patents or technology
+    transfer. These kinds of metrics are less appropriate for many scholarly
+    fields, and miss the specific social concerns or needs that researchers aim
+    to address. In this paper, drawing on ideas from ethics and development
+    economics, we develop a conceptual framework for characterizing the social
+    goals of research. We first distinguish resources — such as wealth and
+    intellectual credit — from the goals of scholarship, and further distinguish
+    inward- and outward-facing goals. Outward-facing goals refer to the intended
+    social impacts of research. Next we introduce the Capabilities Approach, a
+    conceptual framework for human well-being developed by ethicists and
+    economists over the last 40 years. This Approach focuses on basic human
+    needs, rather than wealth, and we draw specifically on a list of central
+    human capabilities developed by philosopher Martha Nussbaum. We propose that
+    the items on this list provide a useful starting point for articulating the
+    specific social aims of research. We argue that the Capabilities Approach
+    can facilitate research communication and improve the recognition of public
+    engagement in academic and funding institutions. Familiar bibliographic data
+    and text mining methods can be used in a capabilities-inspired portfolio
+    analysis, and modest changes to existing data collection systems — for
+    tenure and promotion, or research funding applications — could support the
+    development of even richer capabilities-inspired metrics and incentive
+    systems.
+  accessed:
+    - year: 2018
+      month: 8
+      day: 28
+  author:
+    - family: Hicks
+      given: Daniel J.
+    - family: Stahmer
+      given: Carl
+    - family: Smith
+      given: MacKenzie
+  citation-key: HicksImpactingCapabilitiesConceptual2018
+  container-title: Frontiers in Research Metrics and Analytics
+  container-title-short: Front. Res. Metr. Anal.
+  DOI: 10.3389/frma.2018.00024
+  ISSN: 2504-0537
+  issued:
+    - year: 2018
+  language: English
+  source: Frontiers
+  title: >-
+    Impacting Capabilities: A Conceptual Framework for the Social Value of
+    Research
+  title-short: Impacting Capabilities
+  type: article-journal
+  URL: https://www.frontiersin.org/articles/10.3389/frma.2018.00024/full
+
+- id: HicksLeidenManifestoResearch2015
+  accessed:
+    - year: 2017
+      month: 9
+      day: 9
+  author:
+    - family: Hicks
+      given: Diana
+    - family: Wouters
+      given: Paul
+    - family: Waltman
+      given: Ludo
+    - family: De Rijcke
+      given: Sarah
+    - family: Rafols
+      given: Ismael
+  citation-key: HicksLeidenManifestoResearch2015
+  container-title: Nature
+  DOI: 10.1038/520429a
+  issue: '7548'
+  issued:
+    - year: 2015
+  page: '429'
+  source: Google Scholar
+  title: The Leiden Manifesto for research metrics
+  type: article-journal
+  volume: '520'
+
+- id: HicksNationalRoboticsInitiative2019
+  abstract: >-
+    The U.S. National Science Foundation (NSF), together with other federal
+    agencies, launched the National Robotics Initiative (NRI) program in 2011.
+    The aim of the NRI is to accelerate the development and use of collaborative
+    robots (corobots), which work beside or cooperatively with people. To date,
+    the NRI program has involved multiple directorates of the NSF (Computer and
+    Information Science and Engineering; Engineering; Social, Behavioral, and
+    Economic Sciences; and Education and Human Resources) and several other
+    federal research funding agencies [the U.S. Department of Agriculture
+    (USDA), the National Institutes of Health (NIH), the U.S. Department of
+    Energy (DOE), NASA, and the U.S. Department of Defense (DOD)]. As the
+    program prepared to announce its sixth round of awards in the summer of
+    2017, we took the opportunity to reflect on the impacts of the first five
+    years of NRI funding.
+  author:
+    - family: Hicks
+      given: D.
+    - family: Simmons
+      given: R.
+  citation-key: HicksNationalRoboticsInitiative2019
+  container-title: IEEE Robotics Automation Magazine
+  DOI: 10.1109/MRA.2019.2912860
+  ISSN: 1070-9932
+  issue: '3'
+  issued:
+    - year: 2019
+  page: 2-9
+  source: IEEE Xplore
+  title: 'The National Robotics Initiative: A Five-Year Retrospective'
+  title-short: The National Robotics Initiative
+  type: article-journal
+  URL: https://ieeexplore.ieee.org/document/8762223
+  volume: '26'
+
+- id: HicksNetworkAnalysisEvaluate2019
+  abstract: >-
+    In 2004, the Alfred P. Sloan Foundation launched a new program focused on
+    incubating a new field, “Microbiology of the Built Environment” (MoBE). By
+    the end of 2017, the program had supported the publication of hundreds of
+    scholarly works, but it was unclear to what extent it had stimulated the
+    development of a new research community. We identified 307 works funded by
+    the MoBE program, as well as a comparison set of 698 authors who published
+    in the same journals during the same period of time but were not part of the
+    Sloan Foundation-funded collaboration. Our analysis of collaboration
+    networks for both groups of authors suggests that the Sloan Foundation’s
+    program resulted in a more consolidated community of researchers,
+    specifically in terms of number of components, diameter, density, and
+    transitivity of the coauthor networks. In addition to highlighting the
+    success of this particular program, our method could be applied to other
+    fields to examine the impact of funding programs and other large-scale
+    initiatives on the formation of research communities.
+  accessed:
+    - year: 2019
+      month: 6
+      day: 18
+  author:
+    - family: Hicks
+      given: Daniel J.
+    - family: Coil
+      given: David A.
+    - family: Stahmer
+      given: Carl G.
+    - family: Eisen
+      given: Jonathan A.
+  citation-key: HicksNetworkAnalysisEvaluate2019
+  container-title: PLOS ONE
+  container-title-short: PLOS ONE
+  DOI: 10.1371/journal.pone.0218273
+  ISSN: 1932-6203
+  issue: '6'
+  issued:
+    - year: 2019
+      month: 6
+      day: 18
+  language: en
+  license: All rights reserved
+  page: e0218273
+  source: PLoS Journals
+  title: >-
+    Network analysis to evaluate the impact of research funding on research
+    community consolidation
+  type: article-journal
+  URL: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0218273
+  volume: '14'
+
+- id: HicksProductivityInterdisciplinaryImpacts2021
+  abstract: >-
+    Organized Research Units (ORUs) are nondepartmental units utilized by U.S.
+    research universities to support interdisciplinary research initiatives,
+    among other goals. This study examined the impacts of ORUs at one large
+    public research university, the University of California, Davis (UC Davis),
+    using a large corpus of journal article metadata and abstracts for both
+    faculty affiliated with UCD ORUs and a comparison set of other faculty.
+    Using regression analysis, I find that ORUs appeared to increase the number
+    of coauthors of affiliated faculty, but did not appear to directly affect
+    publication or citation counts. Next, I frame interdisciplinarity in terms
+    of a notion of discursive space, and use a topic model approach to situate
+    researchers within this discursive space. The evidence generally indicates
+    that ORUs promoted multidisciplinarity rather than interdisciplinarity. In
+    the conclusion, drawing on work in philosophy of science on inter- and
+    multidisciplinarity, I argue that multidisciplinarity is not necessarily
+    inferior to interdisciplinarity.
+  accessed:
+    - year: 2021
+      month: 8
+      day: 25
+  author:
+    - family: Hicks
+      given: Daniel J.
+  citation-key: HicksProductivityInterdisciplinaryImpacts2021
+  container-title: Quantitative Science Studies
+  container-title-short: Quantitative Science Studies
+  DOI: 10.1162/qss_a_00150
+  ISSN: 2641-3337
+  issue: '3'
+  issued:
+    - year: 2021
+      month: 11
+      day: 5
+  license: All rights reserved
+  page: 990-1022
+  source: Silverchair
+  title: Productivity and interdisciplinary impacts of Organized Research Units
+  type: article-journal
+  URL: https://doi.org/10.1162/qss_a_00150
+  volume: '2'
+
+- id: HicksSafetyAutonomousVehicles2018
+  abstract: >-
+    The safety argument is perhaps the most widely cited argument in favor of
+    the rapid development and widespread adoption of automated vehicles (AVs).
+    Versions of this argument promote the development and use of AVs on the
+    grounds that these vehicles will have much lower crash, injury, or fatality
+    rates than human drivers. (Throughout this essay, I assume that AVs are
+    designed to respond to malfunctions and hazards without human intervention,
+    corresponding to level 4 or 5 automation [1].) For example, the U.S.
+    National Highway Traffic Safety Administration's (NHTSA) Federal Automated
+    Vehicles Policy, announced in September 2016, gives the safety argument as
+    its first, and most well-developed, argument in support of AVs
+  author:
+    - family: Hicks
+      given: D. J.
+  citation-key: HicksSafetyAutonomousVehicles2018
+  container-title: IEEE Technology and Society Magazine
+  DOI: 10.1109/MTS.2018.2795123
+  ISSN: 0278-0097
+  issue: '1'
+  issued:
+    - year: 2018
+      month: 3
+  page: 62-69
+  source: IEEE Xplore
+  title: 'The Safety of Autonomous Vehicles: Lessons from Philosophy of Science'
+  title-short: The Safety of Autonomous Vehicles
+  type: article-journal
+  URL: http://ieeexplore.ieee.org/document/8307143/
+  volume: '37'
+
+- id: HicksScientificControversiesProxy2017
+  accessed:
+    - year: 2017
+      month: 3
+      day: 20
+  author:
+    - family: Hicks
+      given: Daniel J.
+  citation-key: HicksScientificControversiesProxy2017
+  container-title: Issues in Science and Technology
+  issue: Winter 2017
+  issued:
+    - year: 2017
+      month: 1
+  page: 67-72
+  title: Scientific Controversies as Proxy Politics
+  type: article-magazine
+  URL: https://www.jstor.org/stable/24891967
+  volume: '33'
+
+- id: HofstraDiversityInnovationParadox2020
+  abstract: >-
+    Prior work finds a diversity paradox: Diversity breeds innovation, yet
+    underrepresented groups that diversify organizations have less successful
+    careers within them. Does the diversity paradox hold for scientists as well?
+    We study this by utilizing a near-complete population of ∼1.2 million US
+    doctoral recipients from 1977 to 2015 and following their careers into
+    publishing and faculty positions. We use text analysis and machine learning
+    to answer a series of questions: How do we detect scientific innovations?
+    Are underrepresented groups more likely to generate scientific innovations?
+    And are the innovations of underrepresented groups adopted and rewarded? Our
+    analyses show that underrepresented groups produce higher rates of
+    scientific novelty. However, their novel contributions are devalued and
+    discounted: For example, novel contributions by gender and racial minorities
+    are taken up by other scholars at lower rates than novel contributions by
+    gender and racial majorities, and equally impactful contributions of gender
+    and racial minorities are less likely to result in successful scientific
+    careers than for majority groups. These results suggest there may be
+    unwarranted reproduction of stratification in academic careers that
+    discounts diversity’s role in innovation and partly explains the
+    underrepresentation of some groups in academia.
+  accessed:
+    - year: 2020
+      month: 4
+      day: 15
+  author:
+    - family: Hofstra
+      given: Bas
+    - family: Kulkarni
+      given: Vivek V.
+    - family: Munoz-Najar Galvez
+      given: Sebastian
+    - family: He
+      given: Bryan
+    - family: Jurafsky
+      given: Dan
+    - family: McFarland
+      given: Daniel A.
+  citation-key: HofstraDiversityInnovationParadox2020
+  container-title: Proceedings of the National Academy of Sciences
+  container-title-short: PNAS
+  DOI: 10.1073/pnas.1915378117
+  ISBN: '9781915378118'
+  ISSN: 0027-8424, 1091-6490
+  issued:
+    - year: 2020
+      month: 4
+      day: 14
+  language: en
+  page: '201915378'
+  publisher: National Academy of Sciences
+  section: Social Sciences
+  source: DOI.org (Crossref)
+  title: The Diversity–Innovation Paradox in Science
+  type: article-journal
+  URL: http://www.pnas.org/lookup/doi/10.1073/pnas.1915378117
+
+- id: IbrahimGoogleScholarManipulatable2024
+  abstract: >-
+    Citations are widely considered in scientists' evaluation. As such,
+    scientists may be incentivized to inflate their citation counts. While
+    previous literature has examined self-citations and citation cartels, it
+    remains unclear whether scientists can purchase citations. Here, we compile
+    a dataset of ~1.6 million profiles on Google Scholar to examine instances of
+    citation fraud on the platform. We survey faculty at highly-ranked
+    universities, and confirm that Google Scholar is widely used when evaluating
+    scientists. Intrigued by a citation-boosting service that we unravelled
+    during our investigation, we contacted the service while undercover as a
+    fictional author, and managed to purchase 50 citations. These findings
+    provide conclusive evidence that citations can be bought in bulk, and
+    highlight the need to look beyond citation counts.
+  accessed:
+    - year: 2025
+      month: 7
+      day: 1
+  author:
+    - family: Ibrahim
+      given: Hazem
+    - family: Liu
+      given: Fengyuan
+    - family: Zaki
+      given: Yasir
+    - family: Rahwan
+      given: Talal
+  citation-key: IbrahimGoogleScholarManipulatable2024
+  DOI: 10.48550/arXiv.2402.04607
+  issued:
+    - year: 2024
+      month: 2
+      day: 7
+  number: arXiv:2402.04607
+  publisher: arXiv
+  source: arXiv.org
+  title: Google Scholar is manipulatable
+  type: article
+  URL: http://arxiv.org/abs/2402.04607
+
+- id: JasanoffFifthBranchScience1990
+  abstract: >-
+    How can decisionmakers charged with protecting the environment and the
+    public's health and safety steer clear of false and misleading scientific
+    research? Is it possible to give scientists a stronger voice in regulatory
+    processes without yielding too much control over policy, and how can this be
+    harmonized with democratic values? These are just some of the many
+    controversial and timely questions that Sheila Jasanoff asks in this study
+    of the way science advisers shape federal policy. In their expanding role as
+    advisers, scientists have emerged as a formidable fifth branch of
+    government. But even though the growing dependence of regulatory agencies on
+    scientific and technical information has granted scientists a greater
+    influence on public policy, opinions differ as to how those contributions
+    should be balanced against other policy concerns. More important, who should
+    define what counts as good science when all scientific claims incorporate
+    social factors and are subject to negotiation? Jasanoff begins by describing
+    some significant failures--such as nitrites, Love Canal, and alar--in
+    administrative and judicial decisionmaking that fed the demand for more peer
+    review of regulatory science. In analyzing the nature of scientific claims
+    and methods used in policy decisions, she draws comparisons with the
+    promises and limitations of peer review in scientific organizations
+    operating outside the regulatory context. The discussion of advisory
+    mechanisms draws on the author's close scrutiny of two highly visible
+    federal agencies--the Environmental Protection Agency and the Food and Drug
+    Administration. Here we see the experts in action as they deliberate on
+    critical issues such as clean air, pesticide regulation, and the safety of
+    pharmaceuticals and food additives. Jasanoff deftly merges legal and
+    institutional analysis with social studies of science and presents a strong
+    case for procedural reforms. In so doing, she articulates a
+    social-construction model that is intended to buttress the effectiveness of
+    the fifth branch.
+  author:
+    - family: Jasanoff
+      given: Sheila
+  citation-key: JasanoffFifthBranchScience1990
+  ISBN: 978-0-674-03911-7
+  issued:
+    - year: 1990
+  language: en
+  number-of-pages: '322'
+  publisher: Harvard University Press
+  source: Google Books
+  title: 'The Fifth Branch: Science Advisers as Policymakers'
+  title-short: The Fifth Branch
+  type: book
+
+- id: KojakuDetectingAnomalousCitation2021
+  abstract: >-
+    The ever-increasing competitiveness in the academic publishing market
+    incentivizes journal editors to pursue higher impact factors. This
+    translates into journals becoming more selective, and, ultimately, into
+    higher publication standards. However, the fixation on higher impact factors
+    leads some journals to artificially boost impact factors through the
+    coordinated effort of a “citation cartel” of journals. “Citation cartel”
+    behavior has become increasingly common in recent years, with several
+    instances being reported. Here, we propose an algorithm—named CIDRE—to
+    detect anomalous groups of journals that exchange citations at excessively
+    high rates when compared against a null model that accounts for scientific
+    communities and journal size. CIDRE detects more than half of the journals
+    suspended from Journal Citation Reports due to anomalous citation behavior
+    in the year of suspension or in advance. Furthermore, CIDRE detects many new
+    anomalous groups, where the impact factors of the member journals are lifted
+    substantially higher by the citations from other member journals. We
+    describe a number of such examples in detail and discuss the implications of
+    our findings with regard to the current academic climate.
+  accessed:
+    - year: 2024
+      month: 3
+      day: 6
+  author:
+    - family: Kojaku
+      given: Sadamori
+    - family: Livan
+      given: Giacomo
+    - family: Masuda
+      given: Naoki
+  citation-key: KojakuDetectingAnomalousCitation2021
+  container-title: Scientific Reports
+  container-title-short: Sci Rep
+  DOI: 10.1038/s41598-021-93572-3
+  ISSN: 2045-2322
+  issue: '1'
+  issued:
+    - year: 2021
+      month: 7
+      day: 15
+  language: en
+  license: 2021 The Author(s)
+  page: '14524'
+  publisher: Nature Publishing Group
+  source: www.nature.com
+  title: Detecting anomalous citation groups in journal networks
+  type: article-journal
+  URL: https://www.nature.com/articles/s41598-021-93572-3
+  volume: '11'
+
+- id: LeeReferenceClassProblem2020
+  abstract: >-
+    Scholars belong to multiple communities of credit simultaneously. When these
+    communities disagree about a scholarly achievement’s credit assignment, this
+    raises a puzzle for decision and game theoretic models of credit seeking in
+    science. The reference class problem for credit valuation in science is the
+    problem of determining to which of an agent’s communities—which reference
+    class—credit determinations should be indexed for an act under some state of
+    nature. Solving this problem requires developing rich, mutually informed
+    theories of community and credit that are sensitive to the structure and
+    status systems of complex, heterogeneous scholarly networks.
+  accessed:
+    - year: 2021
+      month: 1
+      day: 27
+  author:
+    - family: Lee
+      given: Carole J.
+  citation-key: LeeReferenceClassProblem2020
+  container-title: Philosophy of Science
+  container-title-short: Philosophy of Science
+  DOI: 10.1086/710615
+  ISSN: 0031-8248
+  issue: '5'
+  issued:
+    - year: 2020
+      month: 7
+      day: 10
+  page: 1026-1036
+  publisher: The University of Chicago Press
+  source: journals.uchicago.edu (Atypon)
+  title: The Reference Class Problem for Credit Valuation in Science
+  type: article-journal
+  URL: https://www.journals.uchicago.edu/doi/full/10.1086/710615
+  volume: '87'
+
+- id: LeeViralVisualizationsHow2021
+  abstract: >-
+    Controversial understandings of the coronavirus pandemic have turned data
+    visualizations into a battleground. Defying public health officials,
+    coronavirus skeptics on US social media spent much of 2020 creating data
+    visualizations showing that the government's pandemic response was excessive
+    and that the crisis was over. This paper investigates how pandemic
+    visualizations circulated on social media, and shows that people who
+    mistrust the scientific establishment often deploy the same rhetorics of
+    data-driven decision-making used by experts, but to advocate for radical
+    policy changes. Using a quantitative analysis of how visualizations spread
+    on Twitter and an ethnographic approach to analyzing conversations about
+    COVID data on Facebook, we document an epistemological gap that leads pro-
+    and anti-mask groups to draw drastically different inferences from similar
+    data. Ultimately, we argue that the deployment of COVID data visualizations
+    reflect a deeper sociopolitical rift regarding the place of science in
+    public life.
+  accessed:
+    - year: 2021
+      month: 5
+      day: 16
+  author:
+    - family: Lee
+      given: Crystal
+    - family: Yang
+      given: Tanya
+    - family: Inchoco
+      given: Gabrielle
+    - family: Jones
+      given: Graham M.
+    - family: Satyanarayan
+      given: Arvind
+  citation-key: LeeViralVisualizationsHow2021
+  container-title: Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems
+  DOI: 10.1145/3411764.3445211
+  issued:
+    - year: 2021
+      month: 5
+      day: 6
+  page: 1-18
+  source: arXiv.org
+  title: >-
+    Viral Visualizations: How Coronavirus Skeptics Use Orthodox Data Practices
+    to Promote Unorthodox Science Online
+  title-short: Viral Visualizations
+  type: article-journal
+  URL: http://arxiv.org/abs/2101.07993
+
+- id: LockhartNamebasedDemographicInference2023
+  abstract: >-
+    Academics and companies increasingly draw on large datasets to understand
+    the social world, and name-based demographic ascription tools are widespread
+    for imputing information that is often missing from these large datasets.
+    These approaches have drawn criticism on ethical, empirical and theoretical
+    grounds. Using a survey of all authors listed on articles in sociology,
+    economics and communication journals in Web of Science between 2015 and
+    2020, we compared self-identified demographics with name-based imputations
+    of gender and race/ethnicity for 19,924 scholars across four gender
+    ascription tools and four race/ethnicity ascription tools. We found
+    substantial inequalities in how these tools misgender and misrecognize the
+    race/ethnicity of authors, distributing erroneous ascriptions unevenly among
+    other demographic traits. Because of the empirical and ethical consequences
+    of these errors, scholars need to be cautious with the use of demographic
+    imputation. We recommend five principles for the responsible use of
+    name-based demographic inference. Algorithmic gender and race/ethnicity
+    inference tools based on author names have very high error rates in
+    marginalized communities. This may result in misleading results in many
+    computational social science and sociology projects.
+  accessed:
+    - year: 2023
+      month: 4
+      day: 17
+  author:
+    - family: Lockhart
+      given: Jeffrey W.
+    - family: King
+      given: Molly M.
+    - family: Munsch
+      given: Christin
+  citation-key: LockhartNamebasedDemographicInference2023
+  container-title: Nature Human Behaviour
+  container-title-short: Nat Hum Behav
+  DOI: 10.1038/s41562-023-01587-9
+  ISSN: 2397-3374
+  issued:
+    - year: 2023
+      month: 4
+      day: 17
+  language: en
+  license: 2023 The Author(s), under exclusive licence to Springer Nature Limited
+  page: 1-12
+  publisher: Nature Publishing Group
+  source: www.nature.com
+  title: >-
+    Name-based demographic inference and the unequal distribution of
+    misrecognition
+  type: article-journal
+  URL: https://www.nature.com/articles/s41562-023-01587-9
+
+- id: Martin-MartinCoverageHighlycitedDocuments2018
+  abstract: >-
+    This study explores the extent to which bibliometric indicators based on
+    counts of highly-cited documents could be affected by the choice of data
+    source. The initial hypothesis is that databases that rely on journal
+    selection criteria for their document coverage may not necessarily provide
+    an accurate representation of highly-cited documents across all subject
+    areas, while inclusive databases, which give each document the chance to
+    stand on its own merits, might be better suited to identify highly-cited
+    documents. To test this hypothesis, an analysis of 2515 highly-cited
+    documents published in 2006 that Google Scholar displays in its Classic
+    Papers product is carried out at the level of broad subject categories,
+    checking whether these documents are also covered in Web of Science and
+    Scopus, and whether the citation counts offered by the different sources are
+    similar. The results show that a large fraction of highly-cited documents in
+    the Social Sciences and Humanities (8.6–28.2%) are invisible to Web of
+    Science and Scopus. In the Natural, Life, and Health Sciences the proportion
+    of missing highly-cited documents in Web of Science and Scopus is much
+    lower. Furthermore, in all areas, Spearman correlation coefficients of
+    citation counts in Google Scholar, as compared to Web of Science and Scopus
+    citation counts, are remarkably strong (.83–.99). The main conclusion is
+    that the data about highly-cited documents available in the inclusive
+    database Google Scholar does indeed reveal significant coverage deficiencies
+    in Web of Science and Scopus in several areas of research. Therefore, using
+    these selective databases to compute bibliometric indicators based on counts
+    of highly-cited documents might produce biased assessments in poorly covered
+    areas.
+  accessed:
+    - year: 2018
+      month: 6
+      day: 26
+  author:
+    - family: Martín-Martín
+      given: Alberto
+    - family: Orduna-Malea
+      given: Enrique
+    - family: López-Cózar
+      given: Emilio Delgado
+  citation-key: Martin-MartinCoverageHighlycitedDocuments2018
+  container-title: Scientometrics
+  container-title-short: Scientometrics
+  DOI: 10.1007/s11192-018-2820-9
+  ISSN: 0138-9130, 1588-2861
+  issued:
+    - year: 2018
+      month: 6
+      day: 26
+  language: en
+  page: 1-14
+  source: link.springer.com
+  title: >-
+    Coverage of highly-cited documents in Google Scholar, Web of Science, and
+    Scopus: a multidisciplinary comparison
+  title-short: >-
+    Coverage of highly-cited documents in Google Scholar, Web of Science, and
+    Scopus
+  type: article-journal
+  URL: https://link.springer.com/article/10.1007/s11192-018-2820-9
+
+- id: Martin-MartinGoogleScholarWeb2018
+  abstract: >-
+    Despite citation counts from Google Scholar (GS), Web of Science (WoS), and
+    Scopus being widely consulted by researchers and sometimes used in research
+    evaluations, there is no recent or systematic evidence about the differences
+    between them. In response, this paper investigates 2,448,055 citations to
+    2,299 English-language highly-cited documents from 252 GS subject categories
+    published in 2006, comparing GS, the WoS Core Collection, and Scopus. GS
+    consistently found the largest percentage of citations across all areas
+    (93%-96%), far ahead of Scopus (35%-77%) and WoS (27%-73%). GS found nearly
+    all the WoS (95%) and Scopus (92%) citations. Most citations found only by
+    GS were from non-journal sources (48%-65%), including theses, books,
+    conference papers, and unpublished materials. Many were non-English
+    (19%38%), and they tended to be much less cited than citing sources that
+    were also in Scopus or WoS. Despite the many unique GS citing sources,
+    Spearman correlations between citation counts in GS and WoS or Scopus are
+    high (0.78-0.99). They are lower in the Humanities, and lower between GS and
+    WoS than between GS and Scopus. The results suggest that in all areas GS
+    citation data is essentially a superset of WoS and Scopus, with substantial
+    extra coverage.
+  accessed:
+    - year: 2021
+      month: 1
+      day: 8
+  author:
+    - family: Martín-Martín
+      given: Alberto
+    - family: Orduna-Malea
+      given: Enrique
+    - family: Thelwall
+      given: Mike
+    - family: Delgado López-Cózar
+      given: Emilio
+  citation-key: Martin-MartinGoogleScholarWeb2018
+  container-title: Journal of Informetrics
+  container-title-short: Journal of Informetrics
+  DOI: 10.1016/j.joi.2018.09.002
+  ISSN: '17511577'
+  issue: '4'
+  issued:
+    - year: 2018
+      month: 11
+  language: en
+  page: 1160-1177
+  source: DOI.org (Crossref)
+  title: >-
+    Google Scholar, Web of Science, and Scopus: A systematic comparison of
+    citations in 252 subject categories
+  title-short: Google Scholar, Web of Science, and Scopus
+  type: article-journal
+  URL: https://linkinghub.elsevier.com/retrieve/pii/S1751157718303249
+  volume: '12'
+
+- id: MarxCausesSubjectspecificCitation2015
+  abstract: >-
+    It is well known in bibliometrics that the average number of citations per
+    paper differs greatly between the various disciplines. The differing
+    citation culture (in particular the different average number of references
+    per paper and thereby the different probability of being cited) is widely
+    seen as the cause of this variation. Based on all Web of Science (WoS)
+    records published in 1990, 1995, 2000, 2005, and 2010 we demonstrate that
+    almost all disciplines show similar numbers of references in the appendices
+    of their papers. Our results suggest that the average citation rate is far
+    more influenced by the extent to which the papers (cited as references) are
+    included in WoS as linked database records. For example, the comparatively
+    low citation rates in the humanities are not at all the result of a lower
+    average number of references per paper but are caused by the low fraction of
+    linked references which refer to papers published in the core journals
+    covered by WoS.
+  accessed:
+    - year: 2025
+      month: 6
+      day: 30
+  author:
+    - family: Marx
+      given: Werner
+    - family: Bornmann
+      given: Lutz
+  citation-key: MarxCausesSubjectspecificCitation2015
+  container-title: Scientometrics
+  container-title-short: Scientometrics
+  DOI: 10.1007/s11192-014-1499-9
+  ISSN: 1588-2861
+  issue: '2'
+  issued:
+    - year: 2015
+      month: 2
+      day: 1
+  language: en
+  page: 1823-1827
+  source: Springer Link
+  title: On the causes of subject-specific citation rates in Web of Science
+  type: article-journal
+  URL: https://doi.org/10.1007/s11192-014-1499-9
+  volume: '102'
+
+- id: Masters-WaageUnderrepresentedMinorityFaculty2024
+  abstract: >-
+    Underrepresented minority (URM) faculty face challenges in many domains of
+    academia, from university admissions to grant applications. We examine
+    whether this translates to promotion and tenure (P&T) decisions. Data from
+    five US universities on 1,571 faculty members’ P&T decisions show that URM
+    faculty received 7% more negative votes and were 44% less likely to receive
+    unanimous votes from P&T committees. A double standard in how scholarly
+    productivity is rewarded is also observed, with below-average h-indexes
+    being judged more harshly for URM faculty than for non-URM faculty. This
+    relationship is amplified for faculty with intersectional backgrounds,
+    especially URM women. The differential treatment of URM women was mitigated
+    when external reviewers highlighted candidates’ scholarship more in their
+    review letters. In sum, the results support the double standard hypothesis
+    and provide evidence that different outcomes in P&T decision-making
+    processes contribute to the sustained underrepresentation of URM faculty in
+    tenured faculty positions.
+  accessed:
+    - year: 2024
+      month: 10
+      day: 6
+  author:
+    - family: Masters-Waage
+      given: Theodore
+    - family: Spitzmueller
+      given: Christiane
+    - family: Edema-Sillo
+      given: Ebenezer
+    - family: St. Aubin
+      given: Ally
+    - family: Penn-Marshall
+      given: Michelle
+    - family: Henderson
+      given: Erika
+    - family: Lindner
+      given: Peggy
+    - family: Werner
+      given: Cynthia
+    - family: Rizzuto
+      given: Tracey
+    - family: Madera
+      given: Juan
+  citation-key: Masters-WaageUnderrepresentedMinorityFaculty2024
+  container-title: Nature Human Behaviour
+  container-title-short: Nat Hum Behav
+  DOI: 10.1038/s41562-024-01977-7
+  ISSN: 2397-3374
+  issued:
+    - year: 2024
+      month: 10
+      day: 4
+  language: en
+  license: 2024 The Author(s)
+  page: 1-12
+  publisher: Nature Publishing Group
+  source: www.nature.com
+  title: >-
+    Underrepresented minority faculty in the USA face a double standard in
+    promotion and tenure decisions
+  type: article-journal
+  URL: https://www.nature.com/articles/s41562-024-01977-7
+
+- id: PetersenEvolutionBiomedicalInnovation2022
+  abstract: >-
+    ACS is an international, peer-reviewed journal, uniquely publishing in
+    multidisciplinary approaches, either empirical or theoretical, to the study
+    of complex systems.
+  accessed:
+    - year: 2025
+      month: 7
+      day: 2
+  archive_location: world
+  author:
+    - family: Petersen
+      given: Alexander M.
+  citation-key: PetersenEvolutionBiomedicalInnovation2022
+  container-title: Advances in Complex Systems
+  DOI: 10.1142/S0219525921500168
+  issue: '1'
+  issued:
+    - year: 2022
+      month: 7
+      day: 6
+  language: en
+  publisher: World Scientific Publishing Company
+  source: www.worldscientific.com
+  title: >-
+    Evolution of Biomedical Innovation Quantified via Billions of Distinct
+    Article-Level MeSH Keyword Combinations
+  type: article-journal
+  URL: https://www.worldscientific.com/worldscinet/acs
+  volume: '25'
+
+- id: PorterTrustNumbersPursuit1995
+  author:
+    - family: Porter
+      given: Theodore M.
+  call-number: Q175.5 .P67 1995
+  citation-key: PorterTrustNumbersPursuit1995
+  event-place: Princeton, N.J
+  ISBN: 978-0-691-03776-9
+  issued:
+    - year: 1995
+  number-of-pages: '310'
+  publisher: Princeton University Press
+  publisher-place: Princeton, N.J
+  source: Library of Congress ISBN
+  title: 'Trust in numbers: the pursuit of objectivity in science and public life'
+  title-short: Trust in numbers
+  type: book
+
+- id: RadicchiUniversalityCitationDistributions2008
+  abstract: >-
+    We study the distributions of citations received by a single publication
+    within several disciplines, spanning broad areas of science. We show that
+    the probability that an article is cited c times has large variations
+    between different disciplines, but all distributions are rescaled on a
+    universal curve when the relative indicator cf = c/c0 is considered, where
+    c0 is the average number of citations per article for the discipline. In
+    addition we show that the same universal behavior occurs when citation
+    distributions of articles published in the same field, but in different
+    years, are compared. These findings provide a strong validation of cf as an
+    unbiased indicator for citation performance across disciplines and years.
+    Based on this indicator, we introduce a generalization of the h index
+    suitable for comparing scientists working in different fields.
+  accessed:
+    - year: 2018
+      month: 3
+      day: 7
+  author:
+    - family: Radicchi
+      given: Filippo
+    - family: Fortunato
+      given: Santo
+    - family: Castellano
+      given: Claudio
+  citation-key: RadicchiUniversalityCitationDistributions2008
+  container-title: Proceedings of the National Academy of Sciences
+  container-title-short: PNAS
+  DOI: 10.1073/pnas.0806977105
+  ISSN: 0027-8424, 1091-6490
+  issue: '45'
+  issued:
+    - year: 2008
+      month: 11
+      day: 11
+  language: en
+  license: © 2008 by The National Academy of Sciences of the USA
+  page: 17268-17272
+  PMID: '18978030'
+  source: www.pnas.org
+  title: >-
+    Universality of citation distributions: Toward an objective measure of
+    scientific impact
+  title-short: Universality of citation distributions
+  type: article-journal
+  URL: http://www.pnas.org/content/105/45/17268
+  volume: '105'
+
+- id: SarewitzScienceEnvironmentalPolicy2000
+  author:
+    - family: Sarewitz
+      given: Daniel
+  citation-key: SarewitzScienceEnvironmentalPolicy2000
+  container-title: "Earth Matters:\_ The Earth Sciences, Philosophy, and the Claims of Community"
+  editor:
+    - family: Frodeman
+      given: Robert
+  issued:
+    - year: 2000
+  page: 79-98
+  publisher: Prentice Hall
+  title: 'Science and Environmental Policy: An Excess of Objectivity'
+  type: chapter
+  URL: http://www.cspo.org/_old_ourlibrary/ScienceandEnvironmentalPolicy.htm
+
+- id: SauvayreTypesErrorsHiding2022
+  abstract: >-
+    Google Scholar (GS) is a free tool that may be used by researchers to
+    analyze citations; find appropriate literature; or evaluate the quality of
+    an author or a contender for tenure, promotion, a faculty position, funding,
+    or research grants. GS has become a major bibliographic and citation
+    database. For assessing the literature, databases, such as PubMed, PsycINFO,
+    Scopus, and Web of Science, can be used in place of GS because they are more
+    reliable. The aim of this study was to examine the accuracy of citation data
+    collected from GS and provide a comprehensive description of the errors and
+    miscounts identified. For this purpose, 281 documents that cited 2 specific
+    works were retrieved via Publish or Perish software (PoP) and were examined.
+    This work studied the false-positive issue inherent in the analysis of
+    neuroimaging data. The results revealed an unprecedented error rate, with
+    279 of 281 (99.3%) examined references containing at least one error.
+    Nonacademic documents tended to contain more errors than academic
+    publications (U=5117.0; P&lt;.001). This viewpoint article, based on a case
+    study examining GS data accuracy, shows that GS data not only fail to be
+    accurate but also potentially expose researchers, who would use these data
+    without verification, to substantial biases in their analyses and results.
+    Further work must be conducted to assess the consequences of using GS data
+    extracted by PoP.
+  accessed:
+    - year: 2025
+      month: 7
+      day: 1
+  author:
+    - family: Sauvayre
+      given: Romy
+  citation-key: SauvayreTypesErrorsHiding2022
+  container-title: Journal of Medical Internet Research
+  DOI: 10.2196/28354
+  issue: '5'
+  issued:
+    - year: 2022
+      month: 5
+      day: 27
+  language: EN
+  page: e28354
+  publisher: JMIR Publications Inc., Toronto, Canada
+  source: www.jmir.org
+  title: Types of Errors Hiding in Google Scholar Data
+  type: article-journal
+  URL: https://www.jmir.org/2022/5/e28354
+  volume: '24'
+
+- id: SimontonGoogleScholarCitations
+  accessed:
+    - year: 2025
+      month: 7
+      day: 1
+  author:
+    - family: Simonton
+      given: Dean Keith
+  citation-key: SimontonGoogleScholarCitations
+  language: en-US
+  title: 'Google Scholar Citations: Serious Errors'
+  title-short: Google Scholar Citations
+  type: post-weblog
+  URL: >-
+    https://simonton.faculty.ucdavis.edu/research/google-scholar-citations-serious-errors/
+
+- id: SugimotoEquityWomenScience2023
+  abstract: >-
+    The first large-scale empirical analysis of the gender gap in science,
+    showing how the structure of scientific labor and rewards—publications,
+    citations, funding—systematically obstructs women’s career advancement.If
+    current trends continue, women and men will be equally represented in the
+    field of biology in 2069. In physics, math, and engineering, women should
+    not expect to reach parity for more than a century. The gender gap in
+    science and technology is narrowing, but at a decidedly unimpressive pace.
+    And even if parity is achievable, what about equity?Equity for Women in
+    Science, the first large-scale empirical analysis of the global gender gap
+    in science, provides strong evidence that the structures of scientific
+    production and reward impede women’s career advancement. To make their case,
+    Cassidy R. Sugimoto and Vincent Larivière have conducted scientometric
+    analyses using millions of published papers across disciplines. The data
+    show that women are systematically denied the chief currencies of scientific
+    credit: publications and citations. The rising tide of collaboration only
+    exacerbates disparities, with women unlikely to land coveted leadership
+    positions or gain access to global networks. The findings are unequivocal:
+    when published, men are positioned as key contributors and women are
+    relegated to low-visibility technical roles. The intersecting disparities in
+    labor, reward, and resources contribute to cumulative disadvantages for the
+    advancement of women in science.Alongside their eye-opening analyses,
+    Sugimoto and Larivière offer solutions. The data themselves point the way,
+    showing where existing institutions fall short. A fair and equitable
+    research ecosystem is possible, but the scientific community must first
+    disrupt its own pervasive patterns of gatekeeping.
+  author:
+    - family: Sugimoto
+      given: Cassidy R.
+    - family: Larivière
+      given: Vincent
+  citation-key: SugimotoEquityWomenScience2023
+  ISBN: 978-0-674-29290-1
+  issued:
+    - year: 2023
+      month: 3
+      day: 21
+  language: en
+  number-of-pages: '273'
+  publisher: Harvard University Press
+  source: Google Books
+  title: 'Equity for Women in Science: Dismantling Systemic Barriers to Advancement'
+  title-short: Equity for Women in Science
+  type: book
+
+- id: ZengDifferencesCollaborationPatterns2016
+  abstract: >-
+    An empirical analysis of researchers’ publications reveals that females have
+    fewer distinct coauthors yet have a lower chance of repeating previous
+    coauthors than their male counterparts.
+  accessed:
+    - year: 2017
+      month: 3
+      day: 7
+  author:
+    - family: Zeng
+      given: Xiao Han T.
+    - family: Duch
+      given: Jordi
+    - family: Sales-Pardo
+      given: Marta
+    - family: Moreira
+      given: João A. G.
+    - family: Radicchi
+      given: Filippo
+    - family: Ribeiro
+      given: Haroldo V.
+    - family: Woodruff
+      given: Teresa K.
+    - family: Amaral
+      given: Luís A. Nunes
+  citation-key: ZengDifferencesCollaborationPatterns2016
+  container-title: PLOS Biology
+  container-title-short: PLOS Biology
+  DOI: 10.1371/journal.pbio.1002573
+  ISSN: 1545-7885
+  issue: '11'
+  issued:
+    - year: 2016
+      month: 11
+      day: 4
+  page: e1002573
+  source: PLoS Journals
+  title: >-
+    Differences in Collaboration Patterns across Discipline, Career Stage, and
+    Gender
+  type: article-journal
+  URL: http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002573
+  volume: '14'
+...
