@@ -10,7 +10,1191 @@
 <atom:link href="https://dhicks.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Website description</description>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Tue, 08 Jul 2025 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 12 Jul 2025 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>When might there be a diversity-merit tradeoff?</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2025-07-12-diversity-merit.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>This morning I was reading <a href="https://www.tandfonline.com/doi/full/10.1080/08989621.2024.2423358">this paper</a> (sorry I’m too lazy to set up a bibliography file on top of the simulation), which quotes a researcher raising a familiar argument against diversity efforts:</p>
+<blockquote class="blockquote">
+<p>We start employing people based on any criteria other than competency, well, then, of course we’re going to get a … A … A poorer outcome. Competency should be … Ability should be the sole criterion.</p>
+</blockquote>
+<p>To adjust the terminology slightly, according to this argument there’s a tradeoff between diversity and merit, such that if we take contributions to diversity into account (in hiring, research awards, tenure, etc.) the result will be an overall loss of “merit” or “quality”.</p>
+<p>As the scare quotes suggest, there are some fundamental conceptual problem with this argument. No one knows what the hell “merit” is, much less how to accurately measure it when making decisions about hiring, etc.; and at best it can mean a wide variety of things, and indeed among these things might be contributions to diversity.</p>
+<p>But in this post I want to consider instead the tradeoff assumption itself. If we grant to the conservative<sup>1</sup> that there is such a thing as “merit,” that it can be accurately measured, it has a unidimensional structure, and that maximizing it is among the most important goals of hiring, it still doesn’t necessarily follow that giving increased weight to diversity (also assumed to be accurately measurable and unidimensional) will significantly reduce merit. Under some circumstances it might do so; but if, say, merit and diversity are correlated, it might not make much of a difference.</p>
+<p>So my question here is not <em>whether</em> there’s a diversity-merit tradeoff, but <em>under what conditions</em> there’s a tradeoff.</p>
+<section id="defining-the-simulation" class="level1">
+<h1>Defining the simulation</h1>
+<p>To investigate question of the conditions for a diversity-merit tradeoff, we’ll set up a very simple simulation of a hiring scenario. We’ll need the following packages:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(tidyverse)</span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">theme_set</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">theme_bw</span>())</span>
+<span id="cb1-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(purrr) <span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## &gt;= 1.1 for parallel processing</span></span>
+<span id="cb1-4"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(mirai) <span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## for parallel processing</span></span>
+<span id="cb1-5">max_daemons <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span> <span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## be sure to adjust for your particular machine</span></span>
+<span id="cb1-6"></span>
+<span id="cb1-7"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(MASS) <span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## multivariate Gaussian samples</span></span>
+<span id="cb1-8"></span>
+<span id="cb1-9"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## utilities</span></span>
+<span id="cb1-10"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(tictoc)</span>
+<span id="cb1-11"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(assertthat)</span></code></pre></div>
+</div>
+<p>We start with a pool of potential researchers, each of whom has a merit score and a (contributions to) diversity score. For simplicity, each score will follow a Gaussian (normal) distribution with mean 0 and standard deviation 1. But merit and diversity might be correlated, so we’ll use a multivariate Gaussian, with the correlation coefficient <img src="https://latex.codecogs.com/png.latex?%5Crho">/<code>rho</code> as one parameter that can be adjusted in the simulation. This will range from 1 (perfect correlation between diversity and merit: the meritorious are also the “most diversity”) to -1 (perfect <em>anti</em>correlation between diversity and merit: the meritorious are the “least diverse”). In <code>simulate</code> below, this step is accomplished by the nested function <code>draw_pool</code>.</p>
+<p>To hire out of the pool, we next calculate a score for each individual in the pool, a weighted sum of merit and diversity:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%20%5Ctextrm%7Bscore%7D_%5Calpha%20=%20%5Calpha%20%5Ctimes%20%5Ctextrm%7Bdiversity%7D%20+%20(1%20-%20%7C%5Calpha%7C)%20%5Ctimes%20%5Ctextrm%7Bmerit%7D%20"> We’ll consider weights ranging from 1 (only considering diversity) to 0 (only considering merit) and down to -1 (which amounts to discriminating against diversity, without any consideration for merit).<sup>2</sup> This step is done using <code>score_pool</code> below.</p>
+<p>The top individuals, by score, will be hired. We’ll consider three different hiring scenarios, where the top 10%, 25%, and 50% are hired. You can think of this as “selectivity,” but I’m thinking of it as “austerity.” While we expect average merit to be greater under greater selectivity, it also means there are many fewer researchers hired, and consequently probably much less research “productivity.”</p>
+<p>We’ll look at two outputs from this simulation: mean merit, and “productivity.” We’ll operationalize the latter as the sum of merit across the hired researchers.</p>
+<p>These final steps — hiring the top researchers from the pool and calculating their mean merit and productivity — are done by the <code>hire</code> function.</p>
+<p>A single iteration of the simulation is handled by the following function:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## n: number of researchers in the pool</span></span>
+<span id="cb2-2"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## hiring: a vector of the fraction of researchers to hire</span></span>
+<span id="cb2-3">simulate <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">function</span>(rho, diversity_weight, hiring, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">n =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">50</span>) {</span>
+<span id="cb2-4">    draw_pool <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">function</span>(rho, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">n =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">50</span>) {</span>
+<span id="cb2-5">        Sigma <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">diag</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> rho) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> rho</span>
+<span id="cb2-6">        sample <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> MASS<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mvrnorm</span>(n, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mu =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Sigma =</span> Sigma)</span>
+<span id="cb2-7">        <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">colnames</span>(sample) <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'merit'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'diversity'</span>)</span>
+<span id="cb2-8">        <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">return</span>(sample)</span>
+<span id="cb2-9">    }</span>
+<span id="cb2-10">    </span>
+<span id="cb2-11">    score_pool <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">function</span>(pool, alpha) {</span>
+<span id="cb2-12">        score <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> alpha <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> pool[,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'diversity'</span>] <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">abs</span>(alpha)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> pool[,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'merit'</span>]</span>
+<span id="cb2-13">        pool <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">cbind</span>(pool, score)</span>
+<span id="cb2-14">        <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">return</span>(pool)</span>
+<span id="cb2-15">    }</span>
+<span id="cb2-16">    </span>
+<span id="cb2-17">    hire <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">function</span>(hiring, pool) {</span>
+<span id="cb2-18">        <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(magrittr)</span>
+<span id="cb2-19">        pool[,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'score'</span>] <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb2-20">            <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">order</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">decreasing =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">TRUE</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb2-21">            {<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">head</span>(., hiring <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">length</span>(.))} <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb2-22">            {pool[.,]} <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span> </span>
+<span id="cb2-23">            {.[,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'merit'</span>]} <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span> </span>
+<span id="cb2-24">            {<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">list</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">merit =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mean</span>(.), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">prod =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sum</span>(.))}</span>
+<span id="cb2-25">    }</span>
+<span id="cb2-26">    </span>
+<span id="cb2-27">    pool <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> rho <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb2-28">        <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">draw_pool</span>(n) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb2-29">        <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">score_pool</span>(diversity_weight)</span>
+<span id="cb2-30">    </span>
+<span id="cb2-31">    tibble<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tibble</span>(rho, </span>
+<span id="cb2-32">                   diversity_weight,</span>
+<span id="cb2-33">                   hiring) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb2-34">        dplyr<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">bind_cols</span>(purrr<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">map_dfr</span>(hiring, <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">~</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">hire</span>(.x, pool)))</span>
+<span id="cb2-35">}</span></code></pre></div>
+</div>
+<p>(To take advantage of <a href="https://www.tidyverse.org/blog/2025/07/purrr-1-1-0-parallel/"><code>purrr</code>’s new parallelization feature</a>, we need to nest the functions for each step inside <code>simulate</code>, and reference package functions using <code>::</code> syntax.)</p>
+<p>We’ll wrap this in another function, <code>simulations</code>, which iterates the simulation in parallel.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">simulations <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">function</span>(N, rho, diversity_weight, hiring, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">n =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">50</span>) {</span>
+<span id="cb3-2">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">map_dfr</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span>N, </span>
+<span id="cb3-3">            <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">in_parallel</span>(\(N) </span>
+<span id="cb3-4">                        <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">simulate</span>(rho, diversity_weight, hiring, n), </span>
+<span id="cb3-5">                        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">simulate =</span> simulate, </span>
+<span id="cb3-6">                        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">rho =</span> rho, </span>
+<span id="cb3-7">                        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">diversity_weight =</span> diversity_weight, </span>
+<span id="cb3-8">                        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">hiring =</span> hiring, </span>
+<span id="cb3-9">                        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">n =</span> n), </span>
+<span id="cb3-10">            <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">.id =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'iter'</span>)</span>
+<span id="cb3-11">}</span></code></pre></div>
+</div>
+</section>
+<section id="simulation-parameters" class="level1">
+<h1>Simulation parameters</h1>
+<p>The simulation parameters are defined below. We’ll use a parameter grid for <code>rho</code> and <code>diversity_weight</code>; it’s more efficient to handle <code>hiring</code> separately. While we’re here, we’ll also calculate the expected length of the output dataframe, and use this in an assertion below.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1">rho <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">seq</span>(<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">by =</span> .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>)</span>
+<span id="cb4-2">diversity_weight <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">seq</span>(<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">by =</span> .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>)</span>
+<span id="cb4-3">hiring <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(.<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">25</span>, .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>)</span>
+<span id="cb4-4">n <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">500</span> <span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## size of the hiring pool</span></span>
+<span id="cb4-5">N <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span> <span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## num. simulation runs at each parameter combo</span></span>
+<span id="cb4-6"></span>
+<span id="cb4-7">params <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">expand_grid</span>(rho, </span>
+<span id="cb4-8">                     diversity_weight)</span>
+<span id="cb4-9"></span>
+<span id="cb4-10"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## Expected number of rows in output</span></span>
+<span id="cb4-11">expect_rows <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> (<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">length</span>(rho) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">length</span>(diversity_weight) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> </span>
+<span id="cb4-12">                   <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">length</span>(hiring) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> N) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb4-13">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">as.integer</span>()</span>
+<span id="cb4-14"></span>
+<span id="cb4-15"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">message</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Expected number of output rows: '</span>, expect_rows)</span></code></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Expected number of output rows: 36300</code></pre>
+</div>
+</div>
+</section>
+<section id="run-the-simulation" class="level1">
+<h1>Run the simulation</h1>
+<p>In the development script, I nested these lines of code in braces so that I could run them all without highlighting. (This takes several seconds on my machine, so I’m caching it. Wall times might be different as a result of caching.)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1">{</span>
+<span id="cb6-2">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">set.seed</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">20250714</span>)</span>
+<span id="cb6-3">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">daemons</span>(max_daemons)</span>
+<span id="cb6-4">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tic</span>()</span>
+<span id="cb6-5">    dataf <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> params <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb6-6">        <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pmap</span>(<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">~</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">simulations</span>(N, ..<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, ..<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, hiring, n)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb6-7">        <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">bind_rows</span>()</span>
+<span id="cb6-8">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">assert_that</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">identical</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">nrow</span>(dataf), expect_rows))</span>
+<span id="cb6-9">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">toc</span>()</span>
+<span id="cb6-10">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">daemons</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>)</span>
+<span id="cb6-11">}</span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>5.624 sec elapsed</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0</code></pre>
+</div>
+</div>
+<p>Alongside the output for each iteration, it’s useful to have just the mean within each combination of parameter values.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1">dataf_sum <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> dataf <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb9-2">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">group_by</span>(rho, diversity_weight, hiring) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb9-3">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">summarize</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">N =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">n</span>(), </span>
+<span id="cb9-4">              <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">across</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(merit, prod),</span>
+<span id="cb9-5">                     <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">lst</span>(mean, sd))) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb9-6">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ungroup</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb9-7">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">merit_se =</span> merit_sd <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sqrt</span>(N), </span>
+<span id="cb9-8">           <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">prod_se =</span> prod_sd <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sqrt</span>(N))</span></code></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`summarise()` has grouped output by 'rho', 'diversity_weight'. You can override
+using the `.groups` argument.</code></pre>
+</div>
+</div>
+</section>
+<section id="analysis" class="level1">
+<h1>Analysis</h1>
+<section id="merit" class="level2">
+<h2 class="anchored" data-anchor-id="merit">Merit</h2>
+<p>This tile plot shows the average merit (<code>merit_mean</code>) for each combination of <code>rho</code> (diversity-merit tradeoff), weight <img src="https://latex.codecogs.com/png.latex?%5Calpha"> given to diversity (<code>diversity_weight</code>), and hiring scenario (the panels).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1">merit_tile <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplot</span>(dataf_sum, </span>
+<span id="cb11-2">       <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(diversity_weight, rho)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb11-3">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_raster</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">fill =</span> merit_mean)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb11-4">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">scale_fill_gradient2</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">low =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'red'</span>, </span>
+<span id="cb11-5">                         <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mid =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'white'</span>, </span>
+<span id="cb11-6">                         <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">high =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'blue'</span>, </span>
+<span id="cb11-7">                         <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">midpoint =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb11-8">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">facet_wrap</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">vars</span>(hiring)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb11-9">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">coord_equal</span>()</span>
+<span id="cb11-10">merit_tile</span></code></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://dhicks.github.io/posts/2025-07-12-diversity-merit_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>First, high austerity tends to heighten the effects of diversity weighting (or not): the difference between the maximum and minimum values of mean merit is greatest when only the top 10% are hired, and smallest when the top 50% are hired. Second, within a hiring level, mean merit appears to be maximized when diversity is given zero weight. Third, the effect of weighting diversity depends on <img src="https://latex.codecogs.com/png.latex?%5Crho">, the correlation between merit and diversity. When <img src="https://latex.codecogs.com/png.latex?%5Crho%20%3E%200">, then positively weighting diversity doesn’t appear to diminish mean merit very much; while discrimination decreases it sharply.</p>
+<p>Let’s plot “transects,” mean merit against diversity for moderate values <img src="https://latex.codecogs.com/png.latex?-0.4%20%5Cleq%20%5Crho%20%5Cleq%200.4">. We’ll go ahead and include every iteration, and GAM curves across values of <img src="https://latex.codecogs.com/png.latex?%5Crho">.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1">dataf <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb12-2">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.41</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> rho, rho <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.41</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb12-3">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplot</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(diversity_weight, merit, </span>
+<span id="cb12-4">               <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> rho)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb12-5">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_vline</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">xintercept =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'grey65'</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb12-6">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_point</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">position =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'jitter'</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">alpha =</span> .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">05</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb12-7">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_smooth</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">group =</span> rho), </span>
+<span id="cb12-8">                <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'black'</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">linewidth =</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.2</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb12-9">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_smooth</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> rho, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">group =</span> rho), </span>
+<span id="cb12-10">                <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">linewidth =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb12-11">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">scale_color_viridis_c</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">option =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'C'</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb12-12">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">facet_wrap</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">vars</span>(hiring))</span></code></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'
+`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://dhicks.github.io/posts/2025-07-12-diversity-merit_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>These confirm that more extreme weightings of diversity do indeed have less dramatic effects when they’re aligned with <img src="https://latex.codecogs.com/png.latex?%5Crho">. There’s also a “plateau,” roughly independent of <img src="https://latex.codecogs.com/png.latex?%5Crho"> and for <img src="https://latex.codecogs.com/png.latex?-0.25%20%3C%20%5Calpha%20%3C%200.25">. Giving some weight to diversity, but placing more weight on merit, has negligible effects on mean merit.</p>
+<p>It also looks like, for <img src="https://latex.codecogs.com/png.latex?%5Crho%20=%200.4">, mean merit might not be maximized right at <img src="https://latex.codecogs.com/png.latex?%5Calpha%20=%200">. Let’s zoom in on this area, and let each panel have its own y-axis scale.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1">dataf <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb14-2">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.39</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> rho, rho <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.41</span>, </span>
+<span id="cb14-3">           <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>.<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">41</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> diversity_weight, diversity_weight <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">41</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb14-4">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplot</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(diversity_weight, merit, </span>
+<span id="cb14-5">               <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> rho)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb14-6">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_vline</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">xintercept =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'grey65'</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb14-7">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_point</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">position =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'jitter'</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">alpha =</span> .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">05</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb14-8">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_smooth</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">group =</span> rho), </span>
+<span id="cb14-9">                <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'black'</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">linewidth =</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.2</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb14-10">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_smooth</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> rho, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">group =</span> rho), </span>
+<span id="cb14-11">                <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">linewidth =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb14-12">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># scale_color_viridis_c(option = 'C') +</span></span>
+<span id="cb14-13">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">facet_wrap</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">vars</span>(hiring), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">scales =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'free'</span>)</span></code></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using method = 'loess' and formula = 'y ~ x'
+`geom_smooth()` using method = 'loess' and formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://dhicks.github.io/posts/2025-07-12-diversity-merit_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>No, that suggestion appears to be incorrect. The curve is all but completely flat around <img src="https://latex.codecogs.com/png.latex?%5Calpha%20=%200">.</p>
+</section>
+<section id="productivity" class="level2">
+<h2 class="anchored" data-anchor-id="productivity">Productivity</h2>
+<p>We’ll adapt the visualizations for mean merit to productivity.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplot</span>(dataf_sum, </span>
+<span id="cb16-2">       <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(diversity_weight, rho)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb16-3">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_raster</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">fill =</span> prod_mean)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb16-4">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">scale_fill_gradient2</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">low =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'red'</span>, </span>
+<span id="cb16-5">                         <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mid =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'white'</span>, </span>
+<span id="cb16-6">                         <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">high =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'blue'</span>, </span>
+<span id="cb16-7">                         <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">midpoint =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb16-8">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">facet_wrap</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">vars</span>(hiring)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb16-9">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">coord_equal</span>()</span></code></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://dhicks.github.io/posts/2025-07-12-diversity-merit_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Productivity is much, much greater under less austere hiring; and the effects of weighting diversity or discrimination are more dramatic.</p>
+<p>Here’s the “transect” plot:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1">dataf <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb17-2">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.41</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> rho, rho <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.41</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb17-3">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplot</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(diversity_weight, prod, </span>
+<span id="cb17-4">               <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> rho)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb17-5">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_point</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">position =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'jitter'</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">alpha =</span> .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">05</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb17-6">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_smooth</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">group =</span> rho), </span>
+<span id="cb17-7">                <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'black'</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">linewidth =</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.2</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb17-8">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_smooth</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> rho, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">group =</span> rho), </span>
+<span id="cb17-9">                <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">linewidth =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb17-10">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">scale_color_viridis_c</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">option =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'C'</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb17-11">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">facet_wrap</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">vars</span>(hiring))</span></code></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'
+`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://dhicks.github.io/posts/2025-07-12-diversity-merit_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="mapping-parameters-to-political-imaginaries" class="level1">
+<h1>Mapping parameters to political imaginaries</h1>
+<p>For reference, here’s the mean merit tile plot again.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1">merit_tile <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb19-2">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">annotate</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'segment'</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">xend =</span> .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">75</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y =</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>.<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">yend =</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>.<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>, </span>
+<span id="cb19-3">             <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">arrow =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">arrow</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">length =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">unit</span>(.<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'inches'</span>))) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb19-4">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">annotate</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'text'</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x =</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.1</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y =</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>.<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">label =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'A'</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb19-5">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">annotate</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'segment'</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x =</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>.<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">xend =</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.25</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y =</span> .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">yend =</span> .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>, </span>
+<span id="cb19-6">             <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">arrow =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">arrow</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">length =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">unit</span>(.<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'inches'</span>))) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb19-7">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">annotate</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'text'</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x =</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>.<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y =</span> .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">label =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'B'</span>)</span></code></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://dhicks.github.io/posts/2025-07-12-diversity-merit_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The conservative argument — that there’s a tradeoff between diversity and merit — is strongest when</p>
+<ul>
+<li>the status quo is perfectly meritocratic (<img src="https://latex.codecogs.com/png.latex?%5Calpha%20=%200">)</li>
+<li>diversity and merit are strongly anticorrelated (<img src="https://latex.codecogs.com/png.latex?%5Crho%20%5Cll%200">)</li>
+<li>the proposal involves treating diversity as about as important as merit, if not more so (<img src="https://latex.codecogs.com/png.latex?%5Calpha%20%5Cgg%200.25">).</li>
+</ul>
+<p>I’ve added a moderate version of these conditions as arrow A on the figure. This does correspond to a notable drop in mean merit, especially under austere hiring (or when we’re only considering the “top researchers”).</p>
+<p>The contrasting “DEI argument” is strongest when</p>
+<ul>
+<li>the status quo is discriminatory (<img src="https://latex.codecogs.com/png.latex?%5Calpha%20%3C%200">)</li>
+<li>diversity and merit are strongly correlated (<img src="https://latex.codecogs.com/png.latex?%5Crho%20%5Cgg%200">)</li>
+<li>the proposal involves giving diversity some positive weight, but still placing more weight on merit (<img src="https://latex.codecogs.com/png.latex?0%20%3C%20%5Calpha%20%3C%200.25">).</li>
+</ul>
+<p>This corresponds to something like arrow B. Under these conditions, mean merit actually increases, as “diverse” researchers are no longer discriminated against.</p>
+<p>It’s striking to me how well this oversimplified model brings out the way our society talks about diversity. The conservative view — generally dominant over the last half century or so — assumes that we’ve already achieved a color-blind ideal, that diverse scholars are eo ipso worse researchers, that the proposal is to all but completely ignore any considerations of merit, and that we’re primarily interested in the “top researchers” or operating under such severe austerity that very few candidates will make the cut. While the contrasting view assumes that discrimination still exists, that “more diverse” researchers are better researchers (perhaps because diversity is considered <em>part</em> of merit), and modestly proposes to give diversity some weight while still emphasizing merit.</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>For convenience, in this post I’m going to use this label for the position that’s opposed to taking contributions to diversity into account in hiring, etc. I don’t want to use “anti-DEI” because to me that refers to a movement that’s much more angry and often more openly racist than what we see in the quotation.↩︎</p></li>
+<li id="fn2"><p>In the coefficient on merit, we use the absolute value of <img src="https://latex.codecogs.com/png.latex?%5Calpha"> to ensure symmetry between positive and negative values.↩︎</p></li>
+</ol>
+</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+  <guid>https://dhicks.github.io/posts/2025-07-12-diversity-merit.html</guid>
+  <pubDate>Sat, 12 Jul 2025 07:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Concerns with bibliometrics in resource allocation decisions</title>
   <dc:creator>Dan Hicks</dc:creator>
@@ -1400,169 +2584,6 @@ Supran, Geoffrey, and Naomi Oreskes. 2017. <span>“Assessing ExxonMobil’s Cli
 </div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2023-04-07-pluralism-problems.html</guid>
   <pubDate>Fri, 07 Apr 2023 07:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>The Nature endorsement and the value-free ideal</title>
-  <dc:creator>Dan Hicks</dc:creator>
-  <link>https://dhicks.github.io/posts/2023-03-22-endorsement.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>In October 2020, <em>Nature</em> published an editorial endorsing Joe Biden and criticizing Trump <span class="citation" data-cites="WhyNatureSupports2020">(<span>“Why Nature Supports Joe Biden for US President”</span> 2020)</span>. A few days ago, <em>Nature Human Behavior</em> published an online survey experimental study <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">(Zhang 2023)</span> that appeared to find that “some who saw the endorsement lost confidence in the journal as a result” <span class="citation" data-cites="LupiaPoliticalEndorsementsCan2023">(Lupia 2023)</span>. The study has prompted a lot of discussion on social media, especially after the editors of <em>Nature</em> stood by their decision to endorse Biden <span class="citation" data-cites="ShouldNatureEndorse2023">(<span>“Should Nature Endorse Political Candidates? Yes — When the Occasion Demands It”</span> 2023)</span> and Holden Thorp, editor-in-chief of <em>Science</em>, posted <a href="https://twitter.com/hholdenthorp/status/1638203875160104961">a short Twitter thread</a> in agreement.</p>
-<p>In many of these discussions, <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> is being interpreted in terms of <a href="https://twitter.com/KevinZollman/status/1638542905018306560">the value-free ideal (VFI)</a>. This interpretation is mistaken, because the <em>Nature</em> endorsement doesn’t violate VFI. It does violate a more general principle, but by putting <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> in the context of my own empirical research I argue that violations of this principle don’t explain the headline findings. I develop a better explanation using another branch of my research, developing the “aims approach” to values in science.</p>
-<section id="a-little-background-on-me" class="level1">
-<h1>A little background on me</h1>
-<p>Since I plan to share links to this post in social media threads with strangers, I thought it would be helpful to introduce myself and explain my expertise in this topic. I’m a philosopher of science and STS (science and technology studies) researcher at the University of California, Merced. As a philosopher of science I specialize in the subfield we call “science, values, and policy” or “science and values.” I’ve written <a href="https://orcid.org/0000-0001-7945-4416">a number of papers</a> on the value-free ideal, why almost all contemporary philosophers of science reject it, and the implications this has for policy-based science. My work experience includes two years as a AAAS Science and Technology Policy Fellow, during which I worked at<sup>1</sup> the US Environmental Protection Agency and the National Science Foundation. I also conduct empirical research, and recently published a collaboration with a cognitive psychologist that I’m going to discuss more below <span class="citation" data-cites="HicksValuesDisclosuresTrust2022">(Hicks and Lobato 2022)</span>.</p>
-</section>
-<section id="the-nature-endorsement-doesnt-violate-vfi" class="level1">
-<h1>The <em>Nature</em> endorsement doesn’t violate VFI</h1>
-<p>My first point is that neither the <em>Nature</em> endorsement nor the summary seen by the participants in <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> violates VFI. The endorsement’s argument is straightforwardly political: Trump has made bad policy decisions, and Biden will make better ones.</p>
-<blockquote class="blockquote">
-<p>No US president in recent history has so relentlessly attacked and undermined so many valuable institutions, from science agencies to the media, the courts, the Department of Justice — and even the electoral system. Trump claims to put ‘America First’. But in his response to the pandemic, Trump has put himself first, not America. <span class="citation" data-cites="WhyNatureSupports2020">(<span>“Why Nature Supports Joe Biden for US President”</span> 2020)</span></p>
-</blockquote>
-<p>Philosophers of science define the value-free ideal strictly, as a norm prohibiting the influence of non-epistemic values<sup>2</sup> in the “core” stages of scientific inquiry, especially the evaluation of hypotheses. While the <em>Nature</em> endorsement does make some claims that could be evaluated empirically as hypotheses, it’s not doing this empirical evaluation itself. Instead these claims are presented as premises in its argument that Trump has made bad policy decisions. So, there’s no violation of VFI here.</p>
-<p><span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> provided the participants (specifically, the ones in the intervention arm of the study) with this summary of the endorsement:</p>
-<blockquote class="blockquote">
-<p><strong>Scientific journal <em>Nature</em> endorsed Joe Biden</strong></p>
-<p>Weeks before the 2020 presidential election, <strong><em>Nature</em></strong>’s editorial board official endorsed Joe Biden, citing:</p>
-<ul>
-<li>Donald Trump’s pandemic response had been “disastrous”;</li>
-<li>Biden, unlike Trump, would listen to science, and thus;</li>
-<li>Biden would handle the COVID-19 pandemic better.</li>
-</ul>
-<p><strong><em>Nature</em></strong> is one of the most-cited and most prestigious peer-reviewed scientific journals in the world.</p>
-</blockquote>
-<p><span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> also included a screenshot of the endorsement headline and a link to the story. This summary also does not include a VFI violation.</p>
-</section>
-<section id="the-nature-endorsement-does-violate-value-neutrality-if-it-applies" class="level1">
-<h1>The <em>Nature</em> endorsement does violate value neutrality (if it applies)</h1>
-<p>The <em>Nature</em> endorsement doesn’t violate VFI, but it does seem to violate a more general norm, <strong>value neutrality</strong>. Havstad and Brown give a nice definition in their analysis of the IPCC’s ambition to be “policy-relevant but policy-neutral”:</p>
-<blockquote class="blockquote">
-<p>When making value judgments, parties who are objective in the sense of value-neutrality remain as neutral as possible where values are controversial, either by avoiding value judgments in that specific instance or by seeking balanced or conciliatory positions within the range of values. <span class="citation" data-cites="HavstadNeutralityRelevancePrescription2017 DouglasIrreducibleComplexityObjectivity2004">(Havstad and Brown 2017; see also H. Douglas 2004, 460)</span></p>
-</blockquote>
-<p>Endorsing a candidate in a contested election is pretty much certain to involve controversial values.<sup>3</sup> So the endorsement obviously violated this neutrality norm.</p>
-<p>However, we might question whether value neutrality applies to the <em>Nature</em> editors <em>in their role as editors</em>. I take it that many people think value neutrality applies to journalists in their role as journalists, but also that <a href="https://www.washingtonpost.com/opinions/2020/09/28/editorial-board-endorsement-joe-biden/">newspaper endorsements of candidates</a> are not regarded objectionable. This would mean that the value neutrality norm applies to journalists as journalists, but not as editors (perhaps with restrictions, for example, to clearly-labelled opinion pieces).</p>
-<p>Since <em>Nature</em> is a science journal, its editors are likely to be thought of as scientists (I’m too lazy to check to what extent its editors do in fact have scientific backgrounds, and in any case I expect editing the journal is sufficiently demanding that they’re not doing much actual research), and I take it most people think value neutrality applies to scientists. Still, for the endorsement to violate value neutrality, the scope of the norm would have to be broader for scientists than for journalists.</p>
-<p>Value neutrality might be confused for VFI because the former entails the latter, at least so long as we assume (<a href="https://dhicks.github.io/posts/2023-01-30-democracy-defense.html">incorrectly</a>) “that epistemic values are politically neutral while non-epistemic values are politically controversial” and that value neutrality applies to scientists in the “core” stages of inquiry.</p>
-<p><em>Should</em> value neutrality apply to scientists in their roles as journal editors writing a clearly-labelled opinion piece? Given that this norm doesn’t apply to newspaper editors, I can’t think of a compelling reason to apply it to scientific journal editors. There are also the critiques of neutrality given by <span class="citation" data-cites="HavstadNeutralityRelevancePrescription2017">Havstad and Brown (2017)</span>; and because value neutrality (plus assumptions) entails VFI, the many compelling arguments against VFI also apply to value neutrality (unless one tries to preserve it by rejecting some of the assumptions instead).<sup>4</sup> Though perhaps the results of <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> give us a consequentialist argument for applying the norm to scientists in their roles as journal editors: violating value neutrality undermines public trust in science.</p>
-</section>
-<section id="zhangpoliticalendorsementnature2023-findings-and-a-concern-about-generalizability" class="level1">
-<h1><span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span>: Findings and a concern about generalizability</h1>
-<p>So let’s turn to <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span>. The headline finding — as communicated with some really bad data visualization — was that Trump voters who saw the <em>Nature</em> endorsement summary in the experiment rated <em>Nature</em> editors as much less informed and much more biased, compared to Trump voters in the control condition. Treating the five-point Likert scale as a continuous one, the treatment effect was about -0.9 for informed and 0.6 for biased; that is, about a full point drop for informed and more than half a point for biased. Trump voters who saw the endorsement were also substantially less likely to get covid-19 information from <em>Nature</em>, again compared to Trump voters in the control condition.<sup>5</sup> Importantly, these effects were only observed for Trump voters. <strong>There was no sign of similar effects for Biden voters.</strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://media.nature.com/lw767/magazine-assets/d41586-023-00799-3/d41586-023-00799-3_24644262.png?as=webp" class="img-fluid figure-img"></p>
-<figcaption>The headline finding of <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span>: Trump voters who saw the <em>Nature</em> endorsement summary in the experiment rated <em>Nature</em> editors as much less informed and much more biased. I can’t get over how awful this visualization is. Source: <span class="citation" data-cites="LupiaPoliticalEndorsementsCan2023">Lupia (2023)</span></figcaption>
-</figure>
-</div>
-<p>Much of the commentary around <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> is generalizing this headline finding, to a claim that the endorsement undermined trust in science generally. <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> did examine this generalization, and did find statistically significant results for Trump voters. However, these effects were much smaller in magnitude, about 0.15 on the five-point Likert scale. This means that a few Trump voters saw science generally as a little less trustworthy after seeing the endorsement, but overall this effect is negligible. An old complaint in statistics is that “practical significance is different from statistical significance.”</p>
-<p><span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> would still be worrisome, insofar as one is worried that violations of neutrality could undermine trust in individual or well-defined groups of scientists (eg, the IPCC). But I don’t think we need to worry about the <em>Nature</em> endorsement undermining trust in science in general.</p>
-</section>
-<section id="the-zhangpoliticalendorsementnature2023-results-arent-explained-by-vfi-or-neutrality-violations" class="level1">
-<h1>The <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> results aren’t explained by VFI or neutrality violations</h1>
-<p>My overall claim in this post is that <strong>violations of neither VFI nor neutrality provide a good explanation of the findings of <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span></strong>. The first argument against VFI is that, as I discussed above, the endorsement doesn’t violate VFI. It’s hard to use a norm violation to explain these findings if the norm wasn’t violation. We could make a similar argument against a neutrality-based explanation if it turned out that most people (or Trump voters specifically) don’t think this norm applies to science journal editors when writing clearly-labelled opinion pieces.</p>
-<p>I doubt that will be a compelling argument to many readers, though. My second argument starts by noting that there was no effect for Biden voters. If VFI and/or value neutrality violations explained these findings, we would expect to see effects for both Trump and Biden voters. But we don’t, so they don’t.</p>
-<p>One potential response to this argument would be to posit an interaction model, on which the norm is evaluated differently by Trump vs.&nbsp;Biden voters. <a href="https://twitter.com/KevinZollman/status/1638542905018306560">Matt Weiner and Kevin Zollman</a> gave versions of this response on Twitter, in a thread started by João Ohara. In particular, my reading of Zollman’s version is that <em>VFI applies if and only if the scientist does not share one’s values</em>. So, for Trump voters, the <em>Nature</em> editors don’t share the participant’s values, so VFI applies, and so the <em>Nature</em> editors violated VFI. On the other hand, for Biden voters, the <em>Nature</em> editors <em>do</em> share the participant’s values, so VFI does <em>not</em> apply, and so the <em>Nature</em> editors <em>did not</em> violate VFI. Call this the <strong>shared values VFI model</strong>. (For the reasons given above, we should probably focus on a neutrality version of this explanation, rather than VFI. However, for simplicity, throughout the rest of the post I’m often going to use VFI as an umbrella term that includes neutrality.)</p>
-<p>It would be difficult to study empirically whether and how VFI was playing a role in participants’ reactions to the endorsement. It wouldn’t be enough to simply ask participants whether they accept VFI (written in a way that a general audience can understand) and then run the same experiment as <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span>, because that wouldn’t get at the question of whether and how the participants are reasoning with VFI when they encounter the endorsement. There would also be a serious risk of priming effects, whichever order the questions were presented: seeing VFI first might make participants more likely to use it to react to the endorsement, while seeing the endorsement first might change their acceptance of VFI insofar as they see it as supporting or challenging their reaction to the endorsement. Qualitative methods — having participants narrate their reasoning about the endorsement, either out loud or in writing — could actually get at whether and how VFI is playing a role without worrying about priming. Though these methods are extremely labor intensive. None of this is a reason to think the shared values VFI model is false, of course. But it is reason to think this model is not pursuitworthy, which in turn is a reason to not accept it.</p>
-</section>
-<section id="conflicting-results-from-hicksvaluesdisclosurestrust2022" class="level1">
-<h1>Conflicting results from <span class="citation" data-cites="HicksValuesDisclosuresTrust2022">Hicks and Lobato (2022)</span></h1>
-<p>Another problem with the shared values VFI model for the findings of <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> is it conflicts with the results of a pair of extremely similar studies, <span class="citation" data-cites="ElliottValuesEnvironmentalResearch2017">Elliott et al. (2017)</span> and <span class="citation" data-cites="HicksValuesDisclosuresTrust2022">Hicks and Lobato (2022)</span>. The latter paper is an independent replication of the former, using the same experimental design but a larger sample (slightly under 500 vs.&nbsp;slightly under 1,000 participants) from a more reliable pool (Amazon Mechanical Turk vs.&nbsp;a representative sample of US adults from the polling firm Prolific).</p>
-<p>In both studies, participants were told that bisphenol A (BPA) is a controversial chemical, and shown a slide attributed to a (fictional) scientist, Dr.&nbsp;Riley Spence. The contents of the side differed by condition; here’s one example:</p>
-<blockquote class="blockquote">
-<p><strong>My conclusion</strong></p>
-<ul>
-<li><strong><em>Protecting public health</em></strong> should be a top national priority.</li>
-<li>I examined the scientific evidence on potential health risks of BPA.</li>
-<li>I conclude that BPA in consumer products is <strong><em>causing harm</em></strong> to people.</li>
-</ul>
-</blockquote>
-<p>The first bullet point had three possibilities: either “protecting public health” (in this case), “promoting economic growth,” or this bullet was missing entirely. The third bullet had two possibilities, either “causing harm” (in this case) or “not causing harm.”<sup>6</sup> Participants then filled out the Muenster Epistemic Trustworthiness Inventory <span class="citation" data-cites="HendriksMeasuringLaypeopleTrust2015">(METI; Hendriks, Kienhues, and Bromme 2015)</span> to assess the perceived trustworthiness of Dr.&nbsp;Spence.<sup>7</sup> Participants were also asked for their own views on the tradeoff between public health and economic growth.</p>
-<p>Hopefully it’s obvious how similar this study design is to <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span>; they’re so similar I’m a little disappointed that neither paper was cited! Both designs have a clear violation of neutrality. <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> does have a much larger sample size (over 4,000 participants) than either of the Riley Spence design studies. But in every other respect I think the Riley Spence design is better for examining the effects of violations of VFI or neutrality: the value judgments are stated explicitly, rather than implied by partisan alignment; those values have a clear partisan valence but the topic isn’t emotionally heated (this will be important in the next section); and the conclusion is a scientific claim rather than a political one.<sup>8</sup> The one major limitation in the Riley Spence design is that this isn’t an unambiguous violation of VFI; though to me including a value statement on the concluding slide of a presentation does implicate a VFI violation. And of course the prompt in <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> doesn’t include a violation of VFI either.</p>
-<p>An additional, important advantage of the Riley Spence design is that it can distinguish shared values from the “first order” value held by the participant (whether the participant prioritizes public health or economic growth). This means this design can test a version of the shared values VFI model. We examine a “shared values” effect: given that the scientist discloses values, then “if the participant and scientist share the same values, the scientist is perceived as more trustworthy than if the participant and scientist do not share the same values” <span class="citation" data-cites="HicksValuesDisclosuresTrust2022">(Hicks and Lobato 2022, 05)</span>. This doesn’t get at <em>why</em> shared values have this different effect — whether the participant is using VFI conditional on shared values or doing something else — but it does allow us to look for a shared values effect independent of which values the participant holds. Because <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> doesn’t have a Republican values arm, it can’t separate these potential effects.</p>
-<p>Two findings of <span class="citation" data-cites="ElliottValuesEnvironmentalResearch2017">Elliott et al. (2017)</span> would seem to support <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> and the alternative explanation: they report a loss of perceived trust for a scientist who discloses values, compared to one who does not; and a shared values effect. However, <span class="citation" data-cites="HicksValuesDisclosuresTrust2022">Hicks and Lobato (2022)</span> does not find evidence for either effect, and shows that the shared values finding was an artifact of the unusual analytic approach taken by <span class="citation" data-cites="ElliottValuesEnvironmentalResearch2017 HicksValuesDisclosuresTrust2022">Elliott et al. (2017; Hicks and Lobato 2022, 10)</span>.</p>
-<p>Consider first a reduction in trust for violating neutrality and disclosing a value judgment. <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span>’s estimate for this effect (for the “informed” item) is -0.85 on a 5-point scale (95% CI roughly -0.75 to -0.95), which would be about -1.19 (-1.05 to -1.33) if we (crudely) rescaled to the 7-point scales used in both the Riley Spence papers. <span class="citation" data-cites="ElliottValuesEnvironmentalResearch2017">Elliott et al. (2017)</span>’s data gives an estimate of -0.5 (-.3, -0.8), and <span class="citation" data-cites="HicksValuesDisclosuresTrust2022">Hicks and Lobato (2022)</span> estimate (0.0, -0.3). The more careful Riley Spence design yields much smaller effects than the design in <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span>. I’ll come back to the question of how we might explain differences in these estimates in the final section.</p>
-<p>Suppose we side with <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> (despite the lower-quality design) and <span class="citation" data-cites="ElliottValuesEnvironmentalResearch2017">Elliott et al. (2017)</span> (despite the smaller and lower-quality sample) over <span class="citation" data-cites="HicksValuesDisclosuresTrust2022">Hicks and Lobato (2022)</span>, and judge that the total evidence favors an decline of trust from violating neutrality. Might an interaction between shared values and VFI be at work here? Again, <span class="citation" data-cites="ElliottValuesEnvironmentalResearch2017">Elliott et al. (2017)</span> report a shared values effect. But <span class="citation" data-cites="HicksValuesDisclosuresTrust2022">Hicks and Lobato (2022)</span> show that, when their data are re-analyzed using a more conventional method, there is no evidence of such an effect. What’s more, the data from both of these papers do support a “scientist values” effect: given that the scientist discloses values (violates neutrality), a scientist who values public health is perceived as more trustworthy than one who values economic growth, <em>even by participants who prioritize economic growth</em>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.frontiersin.org/files/Articles/1017362/fcomm-07-1017362-HTML/image_m/fcomm-07-1017362-g006.jpg" class="img-fluid figure-img"></p>
-<figcaption>A key finding from <span class="citation" data-cites="HicksValuesDisclosuresTrust2022">Hicks and Lobato (2022)</span>: There is no shared values effect, but instead a “scientist values” effect: a scientist who values public health is perceived as more trustworthy than one who values economic growth, even by participants who value economic growth. Panels correspond to participant values (relatively few participants valued economic growth), and columns within panels correspond to scientist values. In red, the vertical bars indicate the mean and 95% confidence interval, and comparisons between scientist value conditions are connected with a thin line. The “scientist values” effect is shown by the increase in the thin line. This is a much better data visualization: better contrast with the background, showing the individual observations, and highlighting the comparison of interest.</figcaption>
-</figure>
-</div>
-<p>Because the Riley Spence design can separate shared and partisan values, while the design in <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> cannot, I think the Riley Spence design provides much more relevant and reliable evidence regarding a shared values VFI model. And so I think the findings from <span class="citation" data-cites="ElliottValuesEnvironmentalResearch2017">Elliott et al. (2017)</span> and <span class="citation" data-cites="HicksValuesDisclosuresTrust2022">Hicks and Lobato (2022)</span> are a major challenge to that model.</p>
-</section>
-<section id="the-aims-of-science" class="level1">
-<h1>The aims of science</h1>
-<p>Based on study quality features, I think <span class="citation" data-cites="HicksValuesDisclosuresTrust2022">Hicks and Lobato (2022)</span> provides the strongest evidence among the three studies I’ve reviewed here; and this study finds evidence against both the “simple” VFI model and the more complex shared values VFI model. Of course I have a conflict of interest, and rather than simply declaring <span class="citation" data-cites="HicksValuesDisclosuresTrust2022">Hicks and Lobato (2022)</span> the “winner” a better approach would be to develop a model that can explain why <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> and <span class="citation" data-cites="HicksValuesDisclosuresTrust2022">Hicks and Lobato (2022)</span> produced different results <span class="citation" data-cites="DouglasWeighingComplexEvidence2012">(Heather Douglas 2012)</span>.</p>
-<p>Following the discussion in <span class="citation" data-cites="HicksValuesDisclosuresTrust2022">Hicks and Lobato (2022)</span>, I suggest that the “aims approach” to values in science can provide a model that explains all of the results. On this approach, we start by recognizing that scientific research typically has a mix of epistemic and practical aims. For example, the aim of environmental epidemiology is not just to <em>understand</em> how pollution harms human health, but also to develop <em>policies</em> that reduce pollution and its health impacts. Proponents of this approach argue that the practical aims can play legitimate roles in all stages of scientific inquiry, even when evaluating hypotheses <span class="citation" data-cites="FernandezPintoLegitimizingValuesRegulatory2019 HicksWhenVirtuesAre2022">(Fernández Pinto and Hicks 2019; Hicks 2022)</span>.</p>
-<p>In <span class="citation" data-cites="HicksValuesDisclosuresTrust2022">Hicks and Lobato (2022)</span>, we use this approach to explain the scientist values effect. We posit that almost all participants — even ones who prioritize economic growth — recognize protecting public health as one of the aims of environmental public health, while promoting economic growth is <em>not</em> among its aims. So a scientist who prioritizes public health is acting appropriately, while a scientist who prioritizes economic growth is not, regardless of the participant’s own priorities.</p>
-<p>In <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span>, I suggest that Trump and Biden voters saw the implied aims of the <em>Nature</em> editors very differently. Again, in the summary of the endorsement, the argument for endorsing Biden was that “Donald Trump’s pandemic response had been ‘disastrous’”; “Biden, unlike Trump, would listen to science”; and “Biden would handle the COVID-19 pandemic better.” I suggest that, for Biden voters, this argument communicated the legitimate scientific aim of informing public policy to promote public health. On the other hand, I suggest that many Trump voters would read this argument as scientists trying to shift blame from scientific authorities (CDC, NIH) to Trump, calling for even more power and influence than they already have, and trying to justify policies that these voters saw as creeping authoritarianism (stay-at-home orders, restrictions on restaurants and other businesses, mask and vaccination requirements). None of these are legitimate scientific aims.</p>
-<p>On this model, shared values don’t play a role in any of these studies. The participants’ values (more properly, the participants’ epistemic community and their interpretive frames) can play a role, but early on, when the participant reads the stimulus. But then it’s the scientist’s values that matter, and whether those values align or conflict with the aims of science, not whether the align or conflict with the participants’ values.</p>
-<p>And neither neutrality nor VFI play a role in this model. The aims approach has been developed as an alternative to VFI (and neutrality), to explain how scientists legitimately use non-epistemic values throughout their research.</p>
-
-
-
-</section>
-
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
-<div id="ref-DouglasIrreducibleComplexityObjectivity2004" class="csl-entry">
-Douglas, H. 2004. <span>“The Irreducible Complexity of Objectivity.”</span> <em>Synthese</em> 138 (3): 453–73. <a href="https://doi.org/10.1023/B:SYNT.0000016451.18182.91">https://doi.org/10.1023/B:SYNT.0000016451.18182.91</a>.
-</div>
-<div id="ref-DouglasWeighingComplexEvidence2012" class="csl-entry">
-Douglas, Heather. 2012. <span>“Weighing Complex Evidence in a Democratic Society.”</span> <em>Kennedy Institute of Ethics Journal</em> 22 (2).
-</div>
-<div id="ref-ElliottValuesEnvironmentalResearch2017" class="csl-entry">
-Elliott, Kevin C., Aaron M. McCright, Summer Allen, and Thomas Dietz. 2017. <span>“Values in Environmental Research: Citizens’ Views of Scientists Who Acknowledge Values.”</span> <em>PLOS ONE</em> 12 (10): e0186049. <a href="https://doi.org/10.1371/journal.pone.0186049">https://doi.org/10.1371/journal.pone.0186049</a>.
-</div>
-<div id="ref-FernandezPintoLegitimizingValuesRegulatory2019" class="csl-entry">
-Fernández Pinto, Manuela, and Daniel J. Hicks. 2019. <span>“Legitimizing Values in Regulatory Science.”</span> <em>Environmental Health Perspectives</em> 127 (3): 035001. <a href="https://doi.org/10.1289/EHP3317">https://doi.org/10.1289/EHP3317</a>.
-</div>
-<div id="ref-HavstadNeutralityRelevancePrescription2017" class="csl-entry">
-Havstad, Joyce C., and Matthew J. Brown. 2017. <span>“Neutrality, Relevance, Prescription, and the IPCC.”</span> <em>Public Affairs Quarterly</em> 31 (4): 303–24. <a href="https://www.jstor.org/stable/44732800">https://www.jstor.org/stable/44732800</a>.
-</div>
-<div id="ref-HendriksMeasuringLaypeopleTrust2015" class="csl-entry">
-Hendriks, Friederike, Dorothe Kienhues, and Rainer Bromme. 2015. <span>“Measuring Laypeople’s Trust in Experts in a Digital Age: The Muenster Epistemic Trustworthiness Inventory (METI).”</span> <em>PLOS ONE</em> 10 (10): e0139309. <a href="https://doi.org/10.1371/journal.pone.0139309">https://doi.org/10.1371/journal.pone.0139309</a>.
-</div>
-<div id="ref-HicksWhenVirtuesAre2022" class="csl-entry">
-Hicks, Daniel J. 2022. <span>“When Virtues are Vices: <span>‘Anti-Science’</span> Epistemic Values in Environmental Politics.”</span> <em>Philosophy, Theory, and Practice in Biology</em> 14 (0). <a href="https://doi.org/10.3998/.2629">https://doi.org/10.3998/.2629</a>.
-</div>
-<div id="ref-HicksValuesDisclosuresTrust2022" class="csl-entry">
-Hicks, Daniel J., and Emilio Jon Christopher Lobato. 2022. <span>“Values Disclosures and Trust in Science: A Replication Study.”</span> <em>Frontiers in Communication</em> 7. <a href="https://www.frontiersin.org/articles/10.3389/fcomm.2022.1017362">https://www.frontiersin.org/articles/10.3389/fcomm.2022.1017362</a>.
-</div>
-<div id="ref-LupiaPoliticalEndorsementsCan2023" class="csl-entry">
-Lupia, Arthur. 2023. <span>“Political Endorsements Can Affect Scientific Credibility.”</span> <em>Nature</em> 615 (7953): 590–91. <a href="https://doi.org/10.1038/d41586-023-00799-3">https://doi.org/10.1038/d41586-023-00799-3</a>.
-</div>
-<div id="ref-SchroederDemocraticValuesBetter" class="csl-entry">
-Schroeder, S. Andrew. n.d. <span>“Democratic Values: A Better Foundation for Public Trust in Science.”</span> <em>The British Journal for the Philosophy of Science</em>. Accessed June 29, 2019. <a href="https://doi.org/10.1093/bjps/axz023">https://doi.org/10.1093/bjps/axz023</a>.
-</div>
-<div id="ref-ShouldNatureEndorse2023" class="csl-entry">
-<span>“Should Nature Endorse Political Candidates? Yes — When the Occasion Demands It.”</span> 2023. <em>Nature</em> 615 (7953): 561–61. <a href="https://doi.org/10.1038/d41586-023-00789-5">https://doi.org/10.1038/d41586-023-00789-5</a>.
-</div>
-<div id="ref-WhyNatureSupports2020" class="csl-entry">
-<span>“Why Nature Supports Joe Biden for US President.”</span> 2020. <em>Nature</em> 586 (7829): 335–35. <a href="https://doi.org/10.1038/d41586-020-02852-x">https://doi.org/10.1038/d41586-020-02852-x</a>.
-</div>
-<div id="ref-ZhangPoliticalEndorsementNature2023" class="csl-entry">
-Zhang, Floyd Jiuyun. 2023. <span>“Political Endorsement by Nature and Trust in Scientific Expertise During COVID-19.”</span> <em>Nature Human Behaviour</em>, March, 1–11. <a href="https://doi.org/10.1038/s41562-023-01537-5">https://doi.org/10.1038/s41562-023-01537-5</a>.
-</div>
-</div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Technically “at,” not “for.”↩︎</p></li>
-<li id="fn2"><p>It’s common in the literature to use “non-epistemic values” interchangeably with something like “social and political values.” But I think this is incorrect, because — on my preferred definition of epistemic values, namely, features of scientific practice that promote the pursuit of epistemic aims such as truth and understanding — social and political values can sometimes be epistemic <span class="citation" data-cites="HicksWhenVirtuesAre2022">(Hicks 2022, esp.&nbsp;pages 1-2)</span>.↩︎</p></li>
-<li id="fn3"><p>This is actually tricky in the <em>Nature</em> endorsement, because their value judgments are bundled into thick claims. For example, one of their premises is that Trump’s management of the pandemic was “disastrous.” This is a <em>thick concept</em>, with both descriptive criteria for application and evaluative implications: Trump’s handling of the pandemic resulted in hundreds of thousands of preventable deaths, and this is a severely bad thing. (Note that “preventable death” is another thick concept.) The controversy here isn’t over the evaluative side, the idea that preventable deaths are bad. Instead it’s over the descriptive side: that Trump’s handling of the pandemic had these effects.↩︎</p></li>
-<li id="fn4"><p>Specifically, someone might try to concede VFI and preserve value neutrality by rejecting the alignment between epistemic/non-epistemic and neutral/controversial values. <span class="citation" data-cites="SchroederDemocraticValuesBetter">Schroeder (n.d.)</span> might potentially be read in this way: democratically-endorsed non-epistemic values are treated as not controversial, and so appealing to them does not violate neutrality.↩︎</p></li>
-<li id="fn5"><p>I’m confused by the scale used in reporting this effect, so I’m just calling it “substantial” here.↩︎</p></li>
-<li id="fn6"><p>Varying these independently means that we can distinguish any effects related to the value judgment from effects of the conclusion. The design in <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> can’t do this, because in a sense the value judgment <em>is</em> the conclusion.↩︎</p></li>
-<li id="fn7"><p>One incidental concern about <span class="citation" data-cites="ZhangPoliticalEndorsementNature2023">Zhang (2023)</span> is that they used a single item for every variable of interest. They did ask about two aspects of trustworthiness, whether the trustee was informed and whether they were biased. But that was done using exactly two questions, and responses weren’t combined. Psychologists seem to prefer multi-item instruments. For example, the METI has 14 items covering three aspects of trustworthiness: competence, benevolence, and integrity. I’m not entirely sure why psychologists prefer multi-item instruments, though, so I decided not to discuss it in the body of the post.↩︎</p></li>
-<li id="fn8"><p><span class="citation" data-cites="ElliottValuesEnvironmentalResearch2017">Elliott et al. (2017)</span> report a second study with a policy conclusion, namely, whether BPA should be regulated. Due to limited funds my collaborator and I didn’t replicate this part.↩︎</p></li>
-</ol>
-</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
-  <guid>https://dhicks.github.io/posts/2023-03-22-endorsement.html</guid>
-  <pubDate>Wed, 22 Mar 2023 07:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
