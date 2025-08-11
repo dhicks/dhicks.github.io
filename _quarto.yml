@@ -12,10 +12,12 @@ website:
       - research.md
       - text: "Teaching"
         menu:
+          - text: "Science, Technology, and Ethics"
+            href: https://fairy-shrimp.netlify.app/
+          - text: "Notes for Critical Reasoning"
+            href: https://fairy-shrimp-cr.netlify.app/
           - text: "Methods of Data Science"
             href: https://data-science-methods.github.io/
-          - text: "Notes for Critical Reasoning"
-            href: https://fairy-shrimp.netlify.app/
       - text: "{{< fa brands orcid >}}"
         href: https://orcid.org/0000-0001-7945-4416
       - text: "{{< ai google-scholar >}}"
