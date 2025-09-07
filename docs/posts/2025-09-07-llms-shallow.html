@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dan Hicks">
+<meta name="dcterms.date" content="2025-09-07">
+
+<title>LLM writing is shallow and superficial – Dan Hicks</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-cf3f2c26eef976f46b51aa29f3e196e4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="LLM writing is shallow and superficial – Dan Hicks">
+<meta property="og:description" content="Website description">
+<meta property="og:site_name" content="Dan Hicks ">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Dan Hicks</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Teaching</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
+        <li>
+    <a class="dropdown-item" href="https://fairy-shrimp.netlify.app/">
+ <span class="dropdown-text">Science, Technology, and Ethics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://fairy-shrimp-cr.netlify.app/">
+ <span class="dropdown-text">Notes for Critical Reasoning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://data-science-methods.github.io/">
+ <span class="dropdown-text">Methods of Data Science</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0001-7945-4416"> 
+<span class="menu-text"><i class="fa-brands fa-orcid" aria-label="orcid"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=XvkwYZsAAAAJ&amp;hl=en"> 
+<span class="menu-text"><i class="ai  ai-google-scholar" title="" style="color:"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://dhicks.github.io/cv"> 
+<span class="menu-text"><i class="ai  ai-cv" title="" style="color:"></i></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dhicks/"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:dhicks4@ucmerced.edu"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../index.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">LLM writing is shallow and superficial</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Dan Hicks </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">September 7, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#undue-emphasis-on-symbolism-and-importance" id="toc-undue-emphasis-on-symbolism-and-importance" class="nav-link active" data-scroll-target="#undue-emphasis-on-symbolism-and-importance">Undue emphasis on symbolism and importance</a>
+  <ul class="collapse">
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
+  </ul></li>
+  <li><a href="#promotional-language" id="toc-promotional-language" class="nav-link" data-scroll-target="#promotional-language">Promotional language</a>
+  <ul class="collapse">
+  <li><a href="#examples-1" id="toc-examples-1" class="nav-link" data-scroll-target="#examples-1">Examples</a></li>
+  </ul></li>
+  <li><a href="#editorializing" id="toc-editorializing" class="nav-link" data-scroll-target="#editorializing">Editorializing</a>
+  <ul class="collapse">
+  <li><a href="#examples-2" id="toc-examples-2" class="nav-link" data-scroll-target="#examples-2">Examples</a></li>
+  </ul></li>
+  <li><a href="#overuse-of-certain-conjunctions" id="toc-overuse-of-certain-conjunctions" class="nav-link" data-scroll-target="#overuse-of-certain-conjunctions">Overuse of certain conjunctions</a>
+  <ul class="collapse">
+  <li><a href="#examples-3" id="toc-examples-3" class="nav-link" data-scroll-target="#examples-3">Examples</a></li>
+  </ul></li>
+  <li><a href="#section-summaries" id="toc-section-summaries" class="nav-link" data-scroll-target="#section-summaries">Section summaries</a>
+  <ul class="collapse">
+  <li><a href="#examples-4" id="toc-examples-4" class="nav-link" data-scroll-target="#examples-4">Examples</a></li>
+  </ul></li>
+  <li><a href="#outline-like-conclusions-about-challenges-and-future-prospects" id="toc-outline-like-conclusions-about-challenges-and-future-prospects" class="nav-link" data-scroll-target="#outline-like-conclusions-about-challenges-and-future-prospects">Outline-like conclusions about challenges and future prospects</a>
+  <ul class="collapse">
+  <li><a href="#examples-5" id="toc-examples-5" class="nav-link" data-scroll-target="#examples-5">Examples</a></li>
+  </ul></li>
+  <li><a href="#negative-parallelisms" id="toc-negative-parallelisms" class="nav-link" data-scroll-target="#negative-parallelisms">Negative parallelisms</a>
+  <ul class="collapse">
+  <li><a href="#examples-6" id="toc-examples-6" class="nav-link" data-scroll-target="#examples-6">Examples</a></li>
+  </ul></li>
+  <li><a href="#rule-of-three" id="toc-rule-of-three" class="nav-link" data-scroll-target="#rule-of-three">Rule of three</a>
+  <ul class="collapse">
+  <li><a href="#examples-7" id="toc-examples-7" class="nav-link" data-scroll-target="#examples-7">Examples</a></li>
+  </ul></li>
+  <li><a href="#superficial-analyses" id="toc-superficial-analyses" class="nav-link" data-scroll-target="#superficial-analyses">Superficial analyses</a>
+  <ul class="collapse">
+  <li><a href="#examples-8" id="toc-examples-8" class="nav-link" data-scroll-target="#examples-8">Examples</a></li>
+  </ul></li>
+  <li><a href="#vague-attributions-of-opinion" id="toc-vague-attributions-of-opinion" class="nav-link" data-scroll-target="#vague-attributions-of-opinion">Vague attributions of opinion</a>
+  <ul class="collapse">
+  <li><a href="#examples-9" id="toc-examples-9" class="nav-link" data-scroll-target="#examples-9">Examples</a></li>
+  </ul></li>
+  <li><a href="#false-range" id="toc-false-range" class="nav-link" data-scroll-target="#false-range">False range</a>
+  <ul class="collapse">
+  <li><a href="#examples-10" id="toc-examples-10" class="nav-link" data-scroll-target="#examples-10">Examples</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The content of this post is from the Wikipedia meta page <a href="https://en.m.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing">Signs of AI Writing</a>, copied on 2025-09-07. That full page is designed to help editors reliably identify LLM-generated content on Wikipedia for removal. The “Language and Tone” section is more generally useful because it identifies some specific ways that LLMs tend to be analytically shallow and superficial. Reviewing this list could help undergrads make their own work deeper and more insightful.</p>
+<p>The original text was made available under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a> and the content of this page is available under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>.</p>
+<p>Note that links — especially to the sources of the examples — were lost when I converted this to Markdown.</p>
+</div>
+</div>
+<section id="undue-emphasis-on-symbolism-and-importance" class="level1">
+<h1>Undue emphasis on symbolism and importance</h1>
+<p><strong>Words to watch:</strong> <em>is/stands as/serves as a testament</em>, <em>plays a vital/significant role</em>, <em>underscores its importance</em>, <em>continues to captivate</em>, <em>leaves a lasting impact</em>, <em>watershed moment</em>, <em>key turning point</em>, <em>deeply rooted</em>, <em>profound heritage</em>, <em>steadfast dedication</em>, <em>stands as a</em>, <em>solidifies</em>…</p>
+<p>LLM writing often puffs up the importance of the subject matter with reminders that it represents or contributes to a broader topic. There seems to be only a small repertoire of ways that it writes these reminders, so if they are otherwise appropriate it would be best to reword them anyway.</p>
+<p>When talking about biology (e.g.&nbsp;when asked to discuss a given animal or plant species), LLMs tend to put too much emphasis on the species’ conservation status and the efforts to protect it, even if the status is unknown and no serious efforts exist.</p>
+<section id="examples" class="level2">
+<h2 class="anchored" data-anchor-id="examples">Examples</h2>
+<blockquote class="blockquote">
+<p>Douera enjoys close proximity to the capital city, Algiers, further <strong>enhancing its significance</strong> as a dynamic hub of activity and culture. With its coastal charm and convenient location, Douera <strong>captivates both residents and visitors alike</strong>[…]</p>
+</blockquote>
+<p><em>From revision to Douéra</em></p>
+<blockquote class="blockquote">
+<p>Berry Hill today <strong>stands as a symbol</strong> of community resilience, ecological renewal, and historical continuity. Its transformation from a coal-mining hub to a thriving green space <strong>reflects the evolving identity</strong> of Stoke-on-Trent.</p>
+</blockquote>
+<p><em>From Draft:Berry Hill, Stoke-on-Trent</em></p>
+</section>
+</section>
+<section id="promotional-language" class="level1">
+<h1>Promotional language</h1>
+<p><strong>Words to watch:</strong> <em>rich cultural heritage</em>, <em>rich history</em>, <em>breathtaking</em>, <em>must-visit</em>, <em>must-see</em>, <em>stunning natural beauty</em>, <em>enduring/lasting legacy</em>, <em>rich cultural tapestry</em>, <em>nestled</em>, <em>in the heart of</em>…</p>
+<p>LLMs have serious problems keeping a neutral tone, especially when writing about something that could be considered “cultural heritage”—in which case they will constantly remind the reader that it is cultural heritage.</p>
+<section id="examples-1" class="level2">
+<h2 class="anchored" data-anchor-id="examples-1">Examples</h2>
+<blockquote class="blockquote">
+<p>Nestled within the <strong>breathtaking</strong> region of Gonder in Ethiopia, Alamata Raya Kobo stands as a <strong>vibrant</strong> town with a <strong>rich cultural heritage and a significant place</strong> within the Amhara region. From its <strong>scenic landscapes</strong> to its <strong>historical landmarks</strong>, Alamata Raya Kobo offers visitors a <strong>fascinating glimpse</strong> into the <strong>diverse tapestry</strong> of Ethiopia. In this article, we will explore the <strong>unique characteristics</strong> that make Alamata Raya Kobo a town worth visiting and shed light on <strong>its significance</strong> within the Amhara region.</p>
+</blockquote>
+<p><em>From revision to Alamata (woreda)</em></p>
+<blockquote class="blockquote">
+<p>TTDC acts as the gateway to Tamil Nadu’s <strong>diverse attractions</strong>, seamlessly connecting the beginning and end of <strong>every traveller’s journey</strong>. It offers dependable, <strong>value-driven experiences</strong> that showcase the state’s <strong>rich history</strong>, spiritual heritage, and natural beauty.</p>
+</blockquote>
+<p><em>From revision to Tamil Nadu Tourism Development Corporation</em></p>
+</section>
+</section>
+<section id="editorializing" class="level1">
+<h1>Editorializing</h1>
+<p><strong>Words to watch:</strong> <em>it’s important to note/remember/consider</em>, <em>it is worth</em>, <em>no discussion would be complete without</em>, <em>this article wouldn’t exist without</em>…</p>
+<p>LLMs often introduce their own interpretation, analysis, and opinions in their writing, even when they are asked to write neutrally, violating the policy No original research. Editorializing can appear through specific words or phrases or within broader sentence structures. This indicator often overlaps with other language and tone indicators in this list. Note that humans and especially new editors often make this mistake as well.</p>
+<section id="examples-2" class="level2">
+<h2 class="anchored" data-anchor-id="examples-2">Examples</h2>
+<blockquote class="blockquote">
+<p>A <strong>defining</strong> feature of FSP models is their ability to simulate environmental interactions.</p>
+</blockquote>
+<p><em>From Draft:Functional-Structural Plant Models</em></p>
+<blockquote class="blockquote">
+<p>Their ability to simulate both form and function <strong>makes them powerful tools for</strong> understanding plant-environment interactions and optimizing performance under diverse biological and management contexts.</p>
+</blockquote>
+<p><em>From the same page</em></p>
+<p>In this case, the whole sentence comprises an original opinion:</p>
+<blockquote class="blockquote">
+<p>These partnerships reflect the company’s role in serving both corporate and community organizations in Uganda.</p>
+</blockquote>
+<p><em>From Draft:GEOWISE MEDIA</em></p>
+</section>
+</section>
+<section id="overuse-of-certain-conjunctions" class="level1">
+<h1>Overuse of certain conjunctions</h1>
+<p><strong>Words to watch:</strong> <em>on the other hand</em>, <em>moreover</em>, <em>in addition</em>, <em>furthermore</em>…</p>
+<p>While human writing obviously contains connecting words and phrases, LLMs tend to <em>overuse</em> them, in a stilted, formulaic way. This is often a byproduct of an essay-like structure that implies synthesis of facts, which is typical of LLM writing but inappropriate for Wikipedia.</p>
+<section id="examples-3" class="level2">
+<h2 class="anchored" data-anchor-id="examples-3">Examples</h2>
+<p><strong>AI-generated example:</strong></p>
+<blockquote class="blockquote">
+<p>The methodology’s strength is its grounding in iterative, mixed-method development cycles that combine theoretical analysis with practical feedback. Its emphasis on prototyping and empirical validation supports early identification of design shortcomings, while the use of scenario-based design and claims analysis helps make the rationale behind design choices explicit and testable. <strong>Furthermore</strong>, the incorporation of values—as operational design elements rather than abstract principles—helps bring ethical and societal concerns into concrete design and evaluation processes.</p>
+<p><strong>At the same time</strong>, several areas for improvement remain. <strong>For example</strong>, while the methodology supports transdisciplinary collaboration in principle, applying it effectively in large, heterogeneous teams can be challenging. Coordinating between cognitive scientists, engineers, designers, and domain experts requires careful facilitation and often additional effort in communication and documentation.</p>
+<p><strong>Another area for further development involves</strong> the scalability of design patterns and ontologies across domains. While abstraction is a key feature of the methodology, generalizing knowledge without oversimplifying context-specific constraints remains an ongoing tension. <strong>Similarly</strong>, methods for operationalizing and measuring values—especially those that are contested or context-dependent—can benefit from more robust frameworks and shared benchmarks.</p>
+<p>SCE continues to evolve in response to these challenges. Its current form provides a solid foundation for responsible system development, particularly in settings where human judgment, collaboration, and adaptation remain essential. <strong>However</strong>, its long-term value will depend on ongoing methodological refinement, empirical validation in diverse settings, and sustained attention to issues of interdisciplinary coordination and value negotiation.</p>
+</blockquote>
+<p><em>From Draft:Socio-cognitive engineering</em></p>
+<p>Compare the above with below human-written prose. Even disregarding the absence of buzzwords and general vapidness, the connecting phrases in the below excerpt are more varied and less conspicuous.</p>
+<p><strong>Human-written example:</strong></p>
+<blockquote class="blockquote">
+<p>Social heuristics can include heuristics that use social information, operate in social contexts, or both. <strong>Examples of social information include</strong> information about the behavior of a social entity or the properties of a social system, while nonsocial information is information about something physical. Contexts in which an organism may use social heuristics can include “games against nature” and “social games”. <strong>In games against nature</strong>, the organism strives to predict natural occurrences (such as the weather) or competes against other natural forces to accomplish something. <strong>In social games</strong>, the organism is making decisions in a situation that involves other social beings. <strong>Importantly</strong>, <strong>in social games</strong>, the most adaptive course of action also depends on the decisions and behavior of the other actors. <strong>For instance</strong>, the follow-the-majority heuristic uses social information as inputs but is not necessarily applied in a social context, while the equity-heuristic uses non-social information but can be applied in a social context such as the allocation of parental resources amongst offspring.</p>
+<p><strong>Within social psychology</strong>, some researchers have viewed heuristics as closely linked to cognitive biases. Others have argued that these biases result from the application of social heuristics depending on the structure of the environment that they operate in. Researchers in the latter approach treat the study of social heuristics as closely linked to social rationality, a field of research that applies the ideas of bounded rationality and heuristics to the realm of social environments. <strong>Under this view</strong>, social heuristics are seen as ecologically rational. <strong>In the context of evolution</strong>, research utilizing evolutionary simulation models has found support for the evolution of social heuristics and cooperation when the outcomes of social interactions are uncertain.</p>
+</blockquote>
+<p><em>From Social heuristics, a Good Article</em></p>
+</section>
+</section>
+<section id="section-summaries" class="level1">
+<h1>Section summaries</h1>
+<p><strong>Words to watch:</strong> <em>In summary</em>, <em>In conclusion</em>, <em>Overall</em>…</p>
+<p>LLMs will often end a paragraph or section by summarizing and restating its core idea. While this may be permitted for some scholarly writing, proper Wikipedia writing typically never summarizes the general idea of a block of article text (besides the lead section being a summary of the entire article).</p>
+<section id="examples-4" class="level2">
+<h2 class="anchored" data-anchor-id="examples-4">Examples</h2>
+<blockquote class="blockquote">
+<p><strong>In summary</strong>, the educational and training trajectory for nurse scientists typically involves a progression from a master’s degree in nursing to a Doctor of Philosophy in Nursing, followed by postdoctoral training in nursing research. This structured pathway ensures that nurse scientists acquire the necessary knowledge and skills to engage in rigorous research and contribute meaningfully to the advancement of nursing science.</p>
+</blockquote>
+<p><em>From revision in Nurse scientist</em></p>
+</section>
+</section>
+<section id="outline-like-conclusions-about-challenges-and-future-prospects" class="level1">
+<h1>Outline-like conclusions about challenges and future prospects</h1>
+<p><strong>Words to watch:</strong> <em>Despite its… faces several challenges…</em>, <em>Despite these challenges</em>, <em>Challenges and Legacy</em>, <em>Future Outlook</em>…</p>
+<p>Many LLM-generated Wikipedia articles include a “Challenges” section, which typically begins with a sentence like “Despite its [positive/promotional words], [article subject] faces challenges…” and ends with either a positive assessment of the article subject, or speculation about how ongoing or potential initiatives could benefit the subject. Such paragraphs usually appear at the end of articles with a rigid outline structure, which may also include a separate section for “Future Prospects.”</p>
+<p>Note: This sign is about the rigid formula above, not simply the mention of challenges.</p>
+<section id="examples-5" class="level2">
+<h2 class="anchored" data-anchor-id="examples-5">Examples</h2>
+<blockquote class="blockquote">
+<p><strong>Despite its industrial and residential prosperity, Korattur faces challenges</strong> typical of urban areas, including[…] With its strategic location and <strong>ongoing initiatives</strong>, Korattur <strong>continues to thrive</strong> as an integral part of the Ambattur industrial zone, embodying the synergy between industry and residential living.</p>
+</blockquote>
+<p><em>From revision to Korattur</em></p>
+<blockquote class="blockquote">
+<p><strong>Despite its success, the Panama Canal faces challenges</strong>, including[…] Future investments in technology, such as automated navigation systems, and <strong>potential further expansions could enhance the canal’s efficiency and maintain its relevance in global trade.</strong></p>
+</blockquote>
+<p><em>From revision to Panama Canal</em></p>
+<blockquote class="blockquote">
+<p><strong>Despite their promising applications, pyroelectric materials face several challenges</strong> that must be addressed for broader adoption. One key limitation is[…] <strong>Despite these challenges</strong>, the versatility of pyroelectric materials <strong>positions them as critical components</strong> for sustainable energy solutions and next-generation sensor technologies.</p>
+</blockquote>
+<p><em>From revision to Pyroelectricity</em></p>
+<blockquote class="blockquote">
+<p>The future of hydrocarbon economies <strong>faces several challenges,</strong> including resource depletion, environmental concerns, and the shift to sustainable energy sources. <strong>This section would speculate on potential developments</strong> and the changing landscape of global energy.</p>
+</blockquote>
+<p><em>From revision to Hydrocarbon economy</em></p>
+<blockquote class="blockquote">
+<p>Operating in the current Afghan media environment <strong>presents numerous challenges,</strong> including the safety of journalists and financial constraints due to the Taliban’s restrictions on independent media. <strong>Despite these challenges,</strong> Amu TV has managed to <strong>continue to provide a vital service</strong> to the Afghan population​​.</p>
+</blockquote>
+<p><em>From revision to Amu Television</em></p>
+</section>
+</section>
+<section id="negative-parallelisms" class="level1">
+<h1>Negative parallelisms</h1>
+<p>Parallel constructions involving “not”, “but”, or “however” such as “Not only … but …” or “It is not just about …, it’s …” are common in LLM writing but are often unsuitable for writing in a neutral tone.</p>
+<section id="examples-6" class="level2">
+<h2 class="anchored" data-anchor-id="examples-6">Examples</h2>
+<blockquote class="blockquote">
+<p><strong>Self-Portrait</strong> by Yayoi Kusama, executed in 2010 and currently preserved in the famous Uffizi Gallery in Florence, constitutes <strong>not only</strong> a work of self-representation, <strong>but</strong> a visual document of her obsessions, visual strategies and psychobiographical narratives.</p>
+</blockquote>
+<p><em>From revision to Self-portrait (Yayoi Kusama)</em></p>
+<blockquote class="blockquote">
+<p>It’s <strong>not just about</strong> the beat riding under the vocals; <strong>it’s</strong> part of the aggression and atmosphere.</p>
+</blockquote>
+<p><em>From revision to Draft:Critikal! The Rapper</em></p>
+<p>Here is an example of a negative parallelism across multiple sentences:</p>
+<blockquote class="blockquote">
+<p>He hailed from the esteemed Duse family, renowned for their theatrical legacy. Eugenio’s life, however, took a path that intertwined both personal ambition and familial complexities.</p>
+</blockquote>
+<p><em>From revision to Eugenio Duse</em></p>
+<p>Some parallelisms may follow the pattern of “No …, no …, just …”:</p>
+<blockquote class="blockquote">
+<p>There are <strong>no</strong> long-form profiles. <strong>No</strong> editorial insights. <strong>No</strong> coverage of her game dev career. <strong>No</strong> notable accolades. <strong>Just</strong> TikTok recaps and callouts.</p>
+</blockquote>
+<p><em>From Wikipedia:Articles for deletion/Lilly Contino</em></p>
+</section>
+</section>
+<section id="rule-of-three" class="level1">
+<h1>Rule of three</h1>
+<p>LLMs overuse the ‘rule of three’—“the good, the bad, and the ugly”. This can take different forms from “adjective, adjective, adjective” to “short phrase, short phrase, and short phrase”.</p>
+<p>While the ‘rule of three’, used sparingly, is common in creative, argumentative, or promotional writing, it is less appropriate for purely informational texts, and LLMs often use this structure to make superficial analyses appear more comprehensive.</p>
+<section id="examples-7" class="level2">
+<h2 class="anchored" data-anchor-id="examples-7">Examples</h2>
+<blockquote class="blockquote">
+<p>The Amaze Conference brings together <strong>global SEO professionals, marketing experts, and growth hackers</strong> to discuss the latest trends in digital marketing. The event features <strong>keynote sessions, panel discussions, and networking opportunities</strong>.</p>
+</blockquote>
+<p><em>From Draft:Amaze Conference</em></p>
+</section>
+</section>
+<section id="superficial-analyses" class="level1">
+<h1>Superficial analyses</h1>
+<p><strong>Words to watch:</strong> <em>ensuring …</em>, <em>highlighting …</em>, <em>emphasizing …</em>, <em>reflecting …</em></p>
+<p>AI chatbots tend to insert superficial analysis of information, often in relation to its significance, recognition, or impact. This is often done by attaching a present participle (“-ing”) phrase at the end of sentences, sometimes with vague attributions to third parties (see below). These comments are generally unhelpful as they introduce unnecessary or fictional opinions.</p>
+<section id="examples-8" class="level2">
+<h2 class="anchored" data-anchor-id="examples-8">Examples</h2>
+<blockquote class="blockquote">
+<p>In 2025, the Federation was internationally recognized and invited to participate in the Asia Pickleball Summit, <strong>highlighting Pakistan’s entry into the global pickleball community.</strong></p>
+</blockquote>
+<p><em>From revision to Draft:Pakistan Pickleball Federation</em></p>
+<blockquote class="blockquote">
+<p>Consumers benefit from the flexibility to use their preferred mobile wallet at participating merchants, <strong>improving convenience</strong>.</p>
+</blockquote>
+<p><em>From Draft:MyanmarPay MMQR</em></p>
+<blockquote class="blockquote">
+<p>These citations, spanning more than six decades and appearing in recognized academic publications, <strong>illustrate Blois’ lasting influence in computational linguistics, grammar, and neology.</strong></p>
+</blockquote>
+<p><em>From revision to Draft:Jacques Blois (linguist)</em></p>
+<blockquote class="blockquote">
+<p>The civil rights movement emerged as a powerful continuation of this struggle, <strong>emphasizing the importance of solidarity and collective action in the fight for justice</strong>.</p>
+</blockquote>
+<p><em>From revision to African-American culture</em></p>
+</section>
+</section>
+<section id="vague-attributions-of-opinion" class="level1">
+<h1>Vague attributions of opinion</h1>
+<p><strong>Words to watch:</strong> <em>Industry reports</em>, <em>Observers have cited</em>, <em>Some critics argue</em>…</p>
+<p>AI chatbots tend to attribute opinions or claims to some vague authority—a practice called weasel wording—while citing only one or two sources that may or may not actually express such view. They also tend to overgeneralize a perspective of one or few sources into that of a wider group.</p>
+<section id="examples-9" class="level2">
+<h2 class="anchored" data-anchor-id="examples-9">Examples</h2>
+<p>Here, the weasel wording implies the opinion comes from an independent source, but it actually cites Nick Ford’s own website.</p>
+<blockquote class="blockquote">
+<p>His [Nick Ford’s] compositions <strong>have been described</strong> as exploring conceptual themes and bridging the gaps between artistic media.¹</p>
+</blockquote>
+<p><em>Draft:Nick Ford (musician)</em></p>
+<p>¹ <em>Source: Nick Ford’s own website at nickfordmusic.com/About</em></p>
+<blockquote class="blockquote">
+<p>Due to its unique characteristics, the Haolai River is of interest to <strong>researchers and conservationists</strong>. Efforts are ongoing to monitor its ecological health and preserve the surrounding grassland environment, which is part of a larger initiative to protect China’s semi-arid ecosystems from degradation.</p>
+</blockquote>
+<p><em>From revision to Haolai River</em></p>
+</section>
+</section>
+<section id="false-range" class="level1">
+<h1>False range</h1>
+<p>When giving examples of items within a set, AI chatbots will often mention these items within a phrase that reads “from … to …”, which often results in a non-encyclopedic tone. This indicator is not to be confused with the prepositions’ non-figurative usage, such as in spatial or temporal contexts (e.g.&nbsp;“… went from Chicago to Los Angeles”, “… the library will be closed from Friday to Wednesday”).</p>
+<section id="examples-10" class="level2">
+<h2 class="anchored" data-anchor-id="examples-10">Examples</h2>
+<blockquote class="blockquote">
+<p>The essential components that form the foundation of Somali dishes encompass staples like rice and pasta, along with an extensive selection of meats ranging <strong>from</strong> lamb <strong>to</strong> beef and chicken.</p>
+</blockquote>
+<p><em>From revision to Somali people</em></p>
+<blockquote class="blockquote">
+<p>Our journey through the universe has taken us <strong>from</strong> the singularity of the Big Bang <strong>to</strong> the grand cosmic web, <strong>from</strong> the birth and death of stars that forge the elements of life, <strong>to</strong> the enigmatic dance of dark matter and dark energy that shape its destiny.</p>
+<p>[…]</p>
+<p>Intelligence and Creativity: <strong>From</strong> problem-solving and tool-making <strong>to</strong> scientific discovery, artistic expression, and technological innovation, human intelligence is characterized by its adaptability and capacity for novel solutions.</p>
+<p>[…]</p>
+<p>Continued Scientific Discovery: The quest to understand the universe, life, and ourselves will continue to drive scientific breakthroughs, <strong>from</strong> fundamental physics <strong>to</strong> medicine and neuroscience.</p>
+</blockquote>
+<p><em>From Draft:The Cosmos Unveiled: A Grand Tapestry of Existence</em></p>
+
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/dhicks\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
