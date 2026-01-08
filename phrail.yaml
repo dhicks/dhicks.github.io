@@ -1,0 +1,176 @@
+---
+references:
+- id: AnthonyAIBadUX2025
+  abstract: >-
+    teapot from the cover of Don Norman’s “The Design of Everyday Things”
+    clumsily ‘shopped by me "AI" means bad UX There is an emergent strain of
+    thought in...
+  accessed:
+    - year: 2025
+      month: 12
+      day: 23
+  author:
+    - family: Anthony
+      given: Sam
+  citation-key: AnthonyAIBadUX2025
+  container-title: Apperceptive
+  issued:
+    - year: 2025
+      month: 12
+      day: 22
+  language: en
+  title: '"AI" is bad UX'
+  type: webpage
+  URL: https://buttondown.com/apperceptive/archive/ai-is-bad-ux/
+
+- id: GreenWhyEveryoneWrong2025
+  abstract: >-
+    Go to https://ground.news/hank for a better way to stay informed. Subscribe
+    for 40% off unlimited access to world-wide coverage through my link.
+
+
+    You might guess that I'm a little apprehensive about this one. Any amount of
+    "actually this might not be the most important thing to focus on" can be
+    interpr
+  accessed:
+    - year: 2025
+      month: 12
+      day: 13
+  citation-key: GreenWhyEveryoneWrong2025
+  dimensions: '23:59'
+  director:
+    - family: Green
+      given: Hank
+  issued:
+    - year: 2025
+      month: 12
+      day: 8
+  source: YouTube
+  title: Why is Everyone So Wrong About AI Water Use??
+  title-short: Why is Everyone So Wrong About AI Water Use?
+  type: motion_picture
+  URL: https://www.youtube.com/watch?v=H_c6MWk7PQc
+
+- id: HicksScientificControversiesProxy2017
+  accessed:
+    - year: 2017
+      month: 3
+      day: 20
+  author:
+    - family: Hicks
+      given: Daniel J.
+  citation-key: HicksScientificControversiesProxy2017
+  container-title: Issues in Science and Technology
+  issue: Winter 2017
+  issued:
+    - year: 2017
+      month: 1
+  page: 67–72
+  title: Scientific Controversies as Proxy Politics
+  type: article-magazine
+  URL: https://www.jstor.org/stable/24891967
+  volume: '33'
+
+- id: NarayananAINormalTechnology2025
+  accessed:
+    - year: 2025
+      month: 4
+      day: 23
+  author:
+    - family: Narayanan
+      given: Arvind
+    - family: Kapoor
+      given: Sayash
+  citation-key: NarayananAINormalTechnology2025
+  issued:
+    - year: 2025
+      month: 4
+      day: 15
+  language: en
+  title: AI as Normal Technology
+  type: report
+  URL: http://knightcolumbia.org/content/ai-as-normal-technology
+
+- id: PinchSocialConstructionFacts1984
+  author:
+    - family: Pinch
+      given: Trevor J.
+    - family: Bijker
+      given: Wiebe
+  citation-key: PinchSocialConstructionFacts1984
+  container-title: Social Studies of Science
+  container-title-short: 3S
+  issue: '3'
+  issued:
+    - year: 1984
+  page: 399–441
+  title: >-
+    The Social Construction of Facts and Artefacts: Or How the Sociology of
+    Science and the Sociology of Technology Might Benefit Each Other
+  type: article-journal
+  URL: http://www.jstor.org/stable/285355
+  volume: '14'
+
+- id: SarewitzHowScienceMakes2004
+  author:
+    - family: Sarewitz
+      given: Daniel
+  citation-key: SarewitzHowScienceMakes2004
+  container-title: Environmental Science and Policy
+  container-title-short: Environmental Science and Policy
+  DOI: 10.1016/j.envsci.2004.06.001
+  issue: '5'
+  issued:
+    - year: 2004
+  page: 385–403
+  title: How science makes environmental controversies worse
+  type: article-journal
+  volume: '7'
+
+- id: TuringComputingMachineryIntelligence1950
+  accessed:
+    - year: 2017
+      month: 2
+      day: 10
+  author:
+    - family: Turing
+      given: A. M.
+  citation-key: TuringComputingMachineryIntelligence1950
+  container-title: Mind
+  ISSN: 0026-4423
+  issue: '236'
+  issued:
+    - year: 1950
+  page: 433–460
+  source: JSTOR
+  title: Computing Machinery and Intelligence
+  type: article-journal
+  URL: http://www.jstor.org.proxy1.lib.uwo.ca/stable/2251299
+  volume: '59'
+
+- id: WeizenbaumELIZAComputerProgram1966
+  accessed:
+    - year: 2025
+      month: 12
+      day: 29
+  author:
+    - family: Weizenbaum
+      given: Joseph
+  citation-key: WeizenbaumELIZAComputerProgram1966
+  container-title: Communications of the ACM
+  DOI: 10.1145/365153.365168
+  ISSN: 0001-0782
+  issue: '1'
+  issued:
+    - year: 1966
+      month: 1
+      day: 1
+  page: 36–45
+  source: ACM Digital Library
+  title: >-
+    ELIZA—a computer program for the study of natural language communication
+    between man and machine
+  type: article-journal
+  URL: https://doi.org/10.1145/365153.365168
+  volume: '9'
+...

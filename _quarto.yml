@@ -10,6 +10,8 @@ website:
     right:
       - about.qmd
       - research.md
+      - text: "PHRAIL"
+        href: phrail.md
       - text: "Teaching"
         menu:
           - text: "Science, Technology, and Ethics"
