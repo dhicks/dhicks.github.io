@@ -35,7 +35,15 @@ Excess of objectivity in environmental debates
   ~ Power and water use are two major sites of contention in the public controversy surrounding generative models. These environmental debates suffer from an "excess of objectivity" [@SarewitzHowScienceMakes2004]: because lifecycle analyses are highly dependent on a wide range of reasonable assumptions, different sides in the debate can easily come up with reasonable estimates that are orders of magnitude apart [@GreenWhyEveryoneWrong2025]. So these debates are proxies [@HicksScientificControversiesProxy2017] for the basic [emotivist](https://en.wikipedia.org/wiki/Emotivism#C._L._Stevenson) positions in the broader controversy: "I disapprove of AI; do so as well" and "I approve of AI; do so as well." 
 
 
-# Process notes
+# Activities
+
+## Phil Sci RAG
+
+In Spring 2026, we'll be starting off by experimenting with Phil Sci RAG, a [retrieval-argumented generation](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) system using Google's [NotebookLM](https://notebooklm.google.com/). The RAG contains "suggested readings" for Philosophy of Science: about 15 books or articles for each assigned reading in the course. 
+
+We'll first take some time to understand what a RAG is and how it's different from the typical chatbot interface. Our next goal will be to develop rubrics for evaluating generated summaries of academic articles, for use in one of the course assignments. 
+
+## Process notes
 
 - process notes
     - fortnightly memo to group
