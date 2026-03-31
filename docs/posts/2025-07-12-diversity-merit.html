@@ -2,15 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.9.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dan Hicks">
 <meta name="dcterms.date" content="2025-07-12">
 
-<title>When might there be a diversity-merit tradeoff? – Dan Hicks</title>
+<title>When might there be a diversity-merit tradeoff? – D. Hicks</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -73,10 +76,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-067f8ab80d092ae3595f7402c2c9b667.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-cf3f2c26eef976f46b51aa29f3e196e4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-03ebed3cc6d9517934d904b30f9ec24d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
@@ -110,7 +113,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -123,7 +126,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -140,10 +143,10 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="When might there be a diversity-merit tradeoff? – Dan Hicks">
+<meta property="og:title" content="When might there be a diversity-merit tradeoff? – D. Hicks">
 <meta property="og:description" content="Website description">
 <meta property="og:image" content="https://dhicks.github.io/posts/2025-07-12-diversity-merit_files/figure-html/unnamed-chunk-7-1.png">
-<meta property="og:site_name" content="Dan Hicks ">
+<meta property="og:site_name" content="D. Hicks">
 <meta property="og:image:height" content="960">
 <meta property="og:image:width" content="1344">
 </head>
@@ -156,7 +159,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Dan Hicks</span>
+    <span class="navbar-title">D. Hicks</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -298,7 +301,7 @@ window.Quarto = {
 <h1>Defining the simulation</h1>
 <p>To investigate question of the conditions for a diversity-merit tradeoff, we’ll set up a very simple simulation of a hiring scenario. We’ll need the following packages:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_set</span>(<span class="fu">theme_bw</span>())</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(purrr) <span class="do">## &gt;= 1.1 for parallel processing</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mirai) <span class="do">## for parallel processing</span></span>
@@ -308,7 +311,7 @@ window.Quarto = {
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="do">## utilities</span></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tictoc)</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(assertthat)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(assertthat)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>We start with a pool of potential researchers, each of whom has a merit score and a (contributions to) diversity score. For simplicity, each score will follow a Gaussian (normal) distribution with mean 0 and standard deviation 1. But merit and diversity might be correlated, so we’ll use a multivariate Gaussian, with the correlation coefficient <span class="math inline">\(\rho\)</span>/<code>rho</code> as one parameter that can be adjusted in the simulation. This will range from 1 (perfect correlation between diversity and merit: the meritorious are also the “most diversity”) to -1 (perfect <em>anti</em>correlation between diversity and merit: the meritorious are the “least diverse”). In <code>simulate</code> below, this step is accomplished by the nested function <code>draw_pool</code>.</p>
 <p>To hire out of the pool, we next calculate a score for each individual in the pool, a weighted sum of merit and diversity:</p>
@@ -318,7 +321,7 @@ window.Quarto = {
 <p>These final steps — hiring the top researchers from the pool and calculating their mean merit and productivity — are done by the <code>hire</code> function.</p>
 <p>A single iteration of the simulation is handled by the following function:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="do">## n: number of researchers in the pool</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="do">## n: number of researchers in the pool</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="do">## hiring: a vector of the fraction of researchers to hire</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>simulate <span class="ot">=</span> <span class="cf">function</span>(rho, diversity_weight, hiring, <span class="at">n =</span> <span class="dv">50</span>) {</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    draw_pool <span class="ot">=</span> <span class="cf">function</span>(rho, <span class="at">n =</span> <span class="dv">50</span>) {</span>
@@ -352,12 +355,12 @@ window.Quarto = {
 <span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>                   diversity_weight,</span>
 <span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>                   hiring) <span class="sc">|&gt;</span> </span>
 <span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">bind_cols</span>(purrr<span class="sc">::</span><span class="fu">map_dfr</span>(hiring, <span class="sc">~</span> <span class="fu">hire</span>(.x, pool)))</span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>(To take advantage of <a href="https://www.tidyverse.org/blog/2025/07/purrr-1-1-0-parallel/"><code>purrr</code>’s new parallelization feature</a>, we need to nest the functions for each step inside <code>simulate</code>, and reference package functions using <code>::</code> syntax.)</p>
 <p>We’ll wrap this in another function, <code>simulations</code>, which iterates the simulation in parallel.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>simulations <span class="ot">=</span> <span class="cf">function</span>(N, rho, diversity_weight, hiring, <span class="at">n =</span> <span class="dv">50</span>) {</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>simulations <span class="ot">=</span> <span class="cf">function</span>(N, rho, diversity_weight, hiring, <span class="at">n =</span> <span class="dv">50</span>) {</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">map_dfr</span>(<span class="dv">1</span><span class="sc">:</span>N, </span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>            <span class="fu">in_parallel</span>(\(N) </span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>                        <span class="fu">simulate</span>(rho, diversity_weight, hiring, n), </span>
@@ -367,14 +370,14 @@ window.Quarto = {
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>                        <span class="at">hiring =</span> hiring, </span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>                        <span class="at">n =</span> n), </span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>            <span class="at">.id =</span> <span class="st">'iter'</span>)</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="simulation-parameters" class="level1">
 <h1>Simulation parameters</h1>
 <p>The simulation parameters are defined below. We’ll use a parameter grid for <code>rho</code> and <code>diversity_weight</code>; it’s more efficient to handle <code>hiring</code> separately. While we’re here, we’ll also calculate the expected length of the output dataframe, and use this in an assertion below.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>rho <span class="ot">=</span> <span class="fu">seq</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">1</span>, <span class="at">by =</span> .<span class="dv">2</span>)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>rho <span class="ot">=</span> <span class="fu">seq</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">1</span>, <span class="at">by =</span> .<span class="dv">2</span>)</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>diversity_weight <span class="ot">=</span> <span class="fu">seq</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">1</span>, <span class="at">by =</span> .<span class="dv">2</span>)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>hiring <span class="ot">=</span> <span class="fu">c</span>(.<span class="dv">1</span>, .<span class="dv">25</span>, .<span class="dv">5</span>)</span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>n <span class="ot">=</span> <span class="dv">500</span> <span class="do">## size of the hiring pool</span></span>
@@ -388,7 +391,7 @@ window.Quarto = {
 <span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>                   <span class="fu">length</span>(hiring) <span class="sc">*</span> N) <span class="sc">|&gt;</span> </span>
 <span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">as.integer</span>()</span>
 <span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="fu">message</span>(<span class="st">'Expected number of output rows: '</span>, expect_rows)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="fu">message</span>(<span class="st">'Expected number of output rows: '</span>, expect_rows)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Expected number of output rows: 36300</code></pre>
 </div>
@@ -398,7 +401,7 @@ window.Quarto = {
 <h1>Run the simulation</h1>
 <p>In the development script, I nested these lines of code in braces so that I could run them all without highlighting. (This takes several seconds on my machine, so I’m caching it. Wall times might be different as a result of caching.)</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>{</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>{</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">set.seed</span>(<span class="dv">20250714</span>)</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">daemons</span>(max_daemons)</span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tic</span>()</span>
@@ -408,7 +411,7 @@ window.Quarto = {
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">assert_that</span>(<span class="fu">identical</span>(<span class="fu">nrow</span>(dataf), expect_rows))</span>
 <span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">toc</span>()</span>
 <span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">daemons</span>(<span class="dv">0</span>)</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>5.624 sec elapsed</code></pre>
 </div>
@@ -418,14 +421,14 @@ window.Quarto = {
 </div>
 <p>Alongside the output for each iteration, it’s useful to have just the mean within each combination of parameter values.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>dataf_sum <span class="ot">=</span> dataf <span class="sc">|&gt;</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>dataf_sum <span class="ot">=</span> dataf <span class="sc">|&gt;</span> </span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(rho, diversity_weight, hiring) <span class="sc">|&gt;</span> </span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarize</span>(<span class="at">N =</span> <span class="fu">n</span>(), </span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>              <span class="fu">across</span>(<span class="fu">c</span>(merit, prod),</span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>                     <span class="fu">lst</span>(mean, sd))) <span class="sc">|&gt;</span> </span>
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ungroup</span>() <span class="sc">|&gt;</span> </span>
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">merit_se =</span> merit_sd <span class="sc">/</span> <span class="fu">sqrt</span>(N), </span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>           <span class="at">prod_se =</span> prod_sd <span class="sc">/</span> <span class="fu">sqrt</span>(N))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>           <span class="at">prod_se =</span> prod_sd <span class="sc">/</span> <span class="fu">sqrt</span>(N))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`summarise()` has grouped output by 'rho', 'diversity_weight'. You can override
 using the `.groups` argument.</code></pre>
@@ -438,7 +441,7 @@ using the `.groups` argument.</code></pre>
 <h2 class="anchored" data-anchor-id="merit">Merit</h2>
 <p>This tile plot shows the average merit (<code>merit_mean</code>) for each combination of <code>rho</code> (diversity-merit tradeoff), weight <span class="math inline">\(\alpha\)</span> given to diversity (<code>diversity_weight</code>), and hiring scenario (the panels).</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>merit_tile <span class="ot">=</span> <span class="fu">ggplot</span>(dataf_sum, </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>merit_tile <span class="ot">=</span> <span class="fu">ggplot</span>(dataf_sum, </span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(diversity_weight, rho)) <span class="sc">+</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_raster</span>(<span class="fu">aes</span>(<span class="at">fill =</span> merit_mean)) <span class="sc">+</span></span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_fill_gradient2</span>(<span class="at">low =</span> <span class="st">'red'</span>, </span>
@@ -447,7 +450,7 @@ using the `.groups` argument.</code></pre>
 <span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>                         <span class="at">midpoint =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
 <span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(hiring)) <span class="sc">+</span></span>
 <span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">coord_equal</span>()</span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>merit_tile</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>merit_tile</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -459,7 +462,7 @@ using the `.groups` argument.</code></pre>
 <p>First, high austerity tends to heighten the effects of diversity weighting (or not): the difference between the maximum and minimum values of mean merit is greatest when only the top 10% are hired, and smallest when the top 50% are hired. Second, within a hiring level, mean merit appears to be maximized when diversity is given zero weight. Third, the effect of weighting diversity depends on <span class="math inline">\(\rho\)</span>, the correlation between merit and diversity. When <span class="math inline">\(\rho &gt; 0\)</span>, then positively weighting diversity doesn’t appear to diminish mean merit very much; while discrimination decreases it sharply.</p>
 <p>Let’s plot “transects,” mean merit against diversity for moderate values <span class="math inline">\(-0.4 \leq \rho \leq 0.4\)</span>. We’ll go ahead and include every iteration, and GAM curves across values of <span class="math inline">\(\rho\)</span>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>dataf <span class="sc">|&gt;</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>dataf <span class="sc">|&gt;</span> </span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="sc">-</span><span class="fl">0.41</span> <span class="sc">&lt;</span> rho, rho <span class="sc">&lt;</span> <span class="fl">0.41</span>) <span class="sc">|&gt;</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(diversity_weight, merit, </span>
 <span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>               <span class="at">color =</span> rho)) <span class="sc">+</span></span>
@@ -470,7 +473,7 @@ using the `.groups` argument.</code></pre>
 <span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_smooth</span>(<span class="fu">aes</span>(<span class="at">color =</span> rho, <span class="at">group =</span> rho), </span>
 <span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>                <span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
 <span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_color_viridis_c</span>(<span class="at">option =</span> <span class="st">'C'</span>) <span class="sc">+</span></span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(hiring))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(hiring))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'
 `geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
@@ -486,7 +489,7 @@ using the `.groups` argument.</code></pre>
 <p>These confirm that more extreme weightings of diversity do indeed have less dramatic effects when they’re aligned with <span class="math inline">\(\rho\)</span>. There’s also a “plateau,” roughly independent of <span class="math inline">\(\rho\)</span> and for <span class="math inline">\(-0.25 &lt; \alpha &lt; 0.25\)</span>. Giving some weight to diversity, but placing more weight on merit, has negligible effects on mean merit.</p>
 <p>It also looks like, for <span class="math inline">\(\rho = 0.4\)</span>, mean merit might not be maximized right at <span class="math inline">\(\alpha = 0\)</span>. Let’s zoom in on this area, and let each panel have its own y-axis scale.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>dataf <span class="sc">|&gt;</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>dataf <span class="sc">|&gt;</span> </span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="fl">0.39</span> <span class="sc">&lt;</span> rho, rho <span class="sc">&lt;</span> <span class="fl">0.41</span>, </span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>           <span class="sc">-</span>.<span class="dv">41</span> <span class="sc">&lt;</span> diversity_weight, diversity_weight <span class="sc">&lt;</span> .<span class="dv">41</span>) <span class="sc">|&gt;</span></span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(diversity_weight, merit, </span>
@@ -498,7 +501,7 @@ using the `.groups` argument.</code></pre>
 <span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_smooth</span>(<span class="fu">aes</span>(<span class="at">color =</span> rho, <span class="at">group =</span> rho), </span>
 <span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>                <span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
 <span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># scale_color_viridis_c(option = 'C') +</span></span>
-<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(hiring), <span class="at">scales =</span> <span class="st">'free'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(hiring), <span class="at">scales =</span> <span class="st">'free'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`geom_smooth()` using method = 'loess' and formula = 'y ~ x'
 `geom_smooth()` using method = 'loess' and formula = 'y ~ x'</code></pre>
@@ -517,7 +520,7 @@ using the `.groups` argument.</code></pre>
 <h2 class="anchored" data-anchor-id="productivity">Productivity</h2>
 <p>We’ll adapt the visualizations for mean merit to productivity.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(dataf_sum, </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(dataf_sum, </span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(diversity_weight, rho)) <span class="sc">+</span></span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_raster</span>(<span class="fu">aes</span>(<span class="at">fill =</span> prod_mean)) <span class="sc">+</span></span>
 <span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_fill_gradient2</span>(<span class="at">low =</span> <span class="st">'red'</span>, </span>
@@ -525,7 +528,7 @@ using the `.groups` argument.</code></pre>
 <span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>                         <span class="at">high =</span> <span class="st">'blue'</span>, </span>
 <span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>                         <span class="at">midpoint =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
 <span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(hiring)) <span class="sc">+</span></span>
-<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">coord_equal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">coord_equal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -537,7 +540,7 @@ using the `.groups` argument.</code></pre>
 <p>Productivity is much, much greater under less austere hiring; and the effects of weighting diversity or discrimination are more dramatic.</p>
 <p>Here’s the “transect” plot:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>dataf <span class="sc">|&gt;</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>dataf <span class="sc">|&gt;</span> </span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="sc">-</span><span class="fl">0.41</span> <span class="sc">&lt;</span> rho, rho <span class="sc">&lt;</span> <span class="fl">0.41</span>) <span class="sc">|&gt;</span></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(diversity_weight, prod, </span>
 <span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>               <span class="at">color =</span> rho)) <span class="sc">+</span></span>
@@ -547,7 +550,7 @@ using the `.groups` argument.</code></pre>
 <span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_smooth</span>(<span class="fu">aes</span>(<span class="at">color =</span> rho, <span class="at">group =</span> rho), </span>
 <span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>                <span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
 <span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_color_viridis_c</span>(<span class="at">option =</span> <span class="st">'C'</span>) <span class="sc">+</span></span>
-<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(hiring))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(hiring))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'
 `geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
@@ -566,13 +569,13 @@ using the `.groups` argument.</code></pre>
 <h1>Mapping parameters to political imaginaries</h1>
 <p>For reference, here’s the mean merit tile plot again.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>merit_tile <span class="sc">+</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>merit_tile <span class="sc">+</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">annotate</span>(<span class="st">'segment'</span>, <span class="at">x =</span> <span class="dv">0</span>, <span class="at">xend =</span> .<span class="dv">75</span>, <span class="at">y =</span> <span class="sc">-</span>.<span class="dv">4</span>, <span class="at">yend =</span> <span class="sc">-</span>.<span class="dv">4</span>, </span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>             <span class="at">arrow =</span> <span class="fu">arrow</span>(<span class="at">length =</span> <span class="fu">unit</span>(.<span class="dv">1</span>, <span class="st">'inches'</span>))) <span class="sc">+</span></span>
 <span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">annotate</span>(<span class="st">'text'</span>, <span class="at">x =</span> <span class="sc">-</span><span class="fl">0.1</span>, <span class="at">y =</span> <span class="sc">-</span>.<span class="dv">4</span>, <span class="at">label =</span> <span class="st">'A'</span>) <span class="sc">+</span></span>
 <span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">annotate</span>(<span class="st">'segment'</span>, <span class="at">x =</span> <span class="sc">-</span>.<span class="dv">5</span>, <span class="at">xend =</span> <span class="fl">0.25</span>, <span class="at">y =</span> .<span class="dv">4</span>, <span class="at">yend =</span> .<span class="dv">4</span>, </span>
 <span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>             <span class="at">arrow =</span> <span class="fu">arrow</span>(<span class="at">length =</span> <span class="fu">unit</span>(.<span class="dv">1</span>, <span class="st">'inches'</span>))) <span class="sc">+</span></span>
-<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">annotate</span>(<span class="st">'text'</span>, <span class="at">x =</span> <span class="sc">-</span>.<span class="dv">6</span>, <span class="at">y =</span> .<span class="dv">4</span>, <span class="at">label =</span> <span class="st">'B'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">annotate</span>(<span class="st">'text'</span>, <span class="at">x =</span> <span class="sc">-</span>.<span class="dv">6</span>, <span class="at">y =</span> .<span class="dv">4</span>, <span class="at">label =</span> <span class="st">'B'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -607,7 +610,7 @@ using the `.groups` argument.</code></pre>
 <li id="fn1"><p>For convenience, in this post I’m going to use this label for the position that’s opposed to taking contributions to diversity into account in hiring, etc. I don’t want to use “anti-DEI” because to me that refers to a movement that’s much more angry and often more openly racist than what we see in the quotation.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>In the coefficient on merit, we use the absolute value of <span class="math inline">\(\alpha\)</span> to ensure symmetry between positive and negative values.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
-</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div></main> <!-- /main -->
+</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -659,13 +662,14 @@ using the `.groups` argument.</code></pre>
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

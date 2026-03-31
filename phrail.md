@@ -39,17 +39,20 @@ Excess of objectivity in environmental debates
 
 ## Phil Sci RAG
 
-In Spring 2026, we'll be starting off by experimenting with Phil Sci RAG, a [retrieval-argumented generation](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) system using Google's [NotebookLM](https://notebooklm.google.com/). The RAG contains "suggested readings" for Philosophy of Science: about 15 books or articles for each assigned reading in the course. 
+In Spring 2026, we'll be starting off by tinkering with Phil Sci RAG, a [retrieval-argumented generation](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) system using Google's [NotebookLM](https://notebooklm.google.com/). The RAG contains 293 "suggested readings" for PHIL 106 (Philosophy of Science), identified using a semantic search system I built for my personal research library. 
 
 We'll first take some time to understand what a RAG is and how it's different from the typical chatbot interface. Our next goal will be to develop rubrics for evaluating generated summaries of academic articles, for use in one of the course assignments. 
 
+- [Phil Sci RAG](https://notebooklm.google.com/notebook/84b18dee-8e95-47f7-a72f-758336a7783f)
+- [Phil Sci RAG sources](https://drive.google.com/open?id=16uNiSZFVqnzB_qWb6AMrT65cQZWyM6mR&usp=drive_fs)
+
+
 ## Process notes
 
-- process notes
-    - fortnightly memo to group
-    - what you've been doing, reading, thinking about wrt generative systems
-    - incorporate screenshots, chat logs, 
-    - what you noticed, esp. if it conflicted with things you or others might expect
-    - questions for future thought, reading, or experimentation
 
+- fortnightly memo to group
+- what you've been doing, reading, thinking about wrt generative systems
+- incorporate screenshots, chat logs
+- what you noticed, esp. if it conflicted with things you or others might expect
+- questions for future thought, reading, or experimentation
 

@@ -5,11 +5,11 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>Dan Hicks </title>
+<title>D. Hicks </title>
 <link>https://dhicks.github.io/</link>
 <atom:link href="https://dhicks.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Website description</description>
-<generator>quarto-1.7.32</generator>
+<generator>quarto-1.9.32</generator>
 <lastBuildDate>Sun, 07 Sep 2025 07:00:00 GMT</lastBuildDate>
 <item>
   <title>LLM writing is shallow and superficial</title>
@@ -255,7 +255,7 @@ Note
 </section>
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2025-09-07-llms-shallow.html</guid>
   <pubDate>Sun, 07 Sep 2025 07:00:00 GMT</pubDate>
 </item>
@@ -281,7 +281,7 @@ Note
 <h1>Defining the simulation</h1>
 <p>To investigate question of the conditions for a diversity-merit tradeoff, we’ll set up a very simple simulation of a hiring scenario. We’ll need the following packages:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">library</span>(tidyverse)</span>
 <span id="cb1-2"><span class="fu" style="color: #4758AB;
@@ -321,7 +321,7 @@ background-color: null;
 font-style: inherit;">library</span>(tictoc)</span>
 <span id="cb1-11"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">library</span>(assertthat)</span></code></pre></div>
+font-style: inherit;">library</span>(assertthat)</span></code></pre></div></div>
 </div>
 <p>We start with a pool of potential researchers, each of whom has a merit score and a (contributions to) diversity score. For simplicity, each score will follow a Gaussian (normal) distribution with mean 0 and standard deviation 1. But merit and diversity might be correlated, so we’ll use a multivariate Gaussian, with the correlation coefficient <img src="https://latex.codecogs.com/png.latex?%5Crho">/<code>rho</code> as one parameter that can be adjusted in the simulation. This will range from 1 (perfect correlation between diversity and merit: the meritorious are also the “most diversity”) to -1 (perfect <em>anti</em>correlation between diversity and merit: the meritorious are the “least diverse”). In <code>simulate</code> below, this step is accomplished by the nested function <code>draw_pool</code>.</p>
 <p>To hire out of the pool, we next calculate a score for each individual in the pool, a weighted sum of merit and diversity:</p>
@@ -331,7 +331,7 @@ font-style: inherit;">library</span>(assertthat)</span></code></pre></div>
 <p>These final steps — hiring the top researchers from the pool and calculating their mean merit and productivity — are done by the <code>hire</code> function.</p>
 <p>A single iteration of the simulation is handled by the following function:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="do" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="do" style="color: #5E5E5E;
 background-color: null;
 font-style: italic;">## n: number of researchers in the pool</span></span>
 <span id="cb2-2"><span class="do" style="color: #5E5E5E;
@@ -529,12 +529,12 @@ background-color: null;
 font-style: inherit;">~</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">hire</span>(.x, pool)))</span>
-<span id="cb2-35">}</span></code></pre></div>
+<span id="cb2-35">}</span></code></pre></div></div>
 </div>
 <p>(To take advantage of <a href="https://www.tidyverse.org/blog/2025/07/purrr-1-1-0-parallel/"><code>purrr</code>’s new parallelization feature</a>, we need to nest the functions for each step inside <code>simulate</code>, and reference package functions using <code>::</code> syntax.)</p>
 <p>We’ll wrap this in another function, <code>simulations</code>, which iterates the simulation in parallel.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">simulations <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">simulations <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> <span class="cf" style="color: #003B4F;
 background-color: null;
@@ -577,14 +577,14 @@ background-color: null;
 font-style: inherit;">.id =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'iter'</span>)</span>
-<span id="cb3-11">}</span></code></pre></div>
+<span id="cb3-11">}</span></code></pre></div></div>
 </div>
 </section>
 <section id="simulation-parameters" class="level1">
 <h1>Simulation parameters</h1>
 <p>The simulation parameters are defined below. We’ll use a parameter grid for <code>rho</code> and <code>diversity_weight</code>; it’s more efficient to handle <code>hiring</code> separately. While we’re here, we’ll also calculate the expected length of the output dataframe, and use this in an assertion below.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1">rho <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1">rho <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -676,7 +676,7 @@ font-style: inherit;">as.integer</span>()</span>
 background-color: null;
 font-style: inherit;">message</span>(<span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'Expected number of output rows: '</span>, expect_rows)</span></code></pre></div>
+font-style: inherit;">'Expected number of output rows: '</span>, expect_rows)</span></code></pre></div></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Expected number of output rows: 36300</code></pre>
 </div>
@@ -686,7 +686,7 @@ font-style: inherit;">'Expected number of output rows: '</span>, expect_rows)</s
 <h1>Run the simulation</h1>
 <p>In the development script, I nested these lines of code in braces so that I could run them all without highlighting. (This takes several seconds on my machine, so I’m caching it. Wall times might be different as a result of caching.)</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1">{</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1">{</span>
 <span id="cb6-2">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">set.seed</span>(<span class="dv" style="color: #AD0000;
@@ -734,7 +734,7 @@ background-color: null;
 font-style: inherit;">daemons</span>(<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">0</span>)</span>
-<span id="cb6-11">}</span></code></pre></div>
+<span id="cb6-11">}</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>5.624 sec elapsed</code></pre>
 </div>
@@ -744,7 +744,7 @@ font-style: inherit;">0</span>)</span>
 </div>
 <p>Alongside the output for each iteration, it’s useful to have just the mean within each combination of parameter values.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1">dataf_sum <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1">dataf_sum <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> dataf <span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -791,7 +791,7 @@ font-style: inherit;">prod_se =</span> prod_sd <span class="sc" style="color: #5
 background-color: null;
 font-style: inherit;">/</span> <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">sqrt</span>(N))</span></code></pre></div>
+font-style: inherit;">sqrt</span>(N))</span></code></pre></div></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`summarise()` has grouped output by 'rho', 'diversity_weight'. You can override
 using the `.groups` argument.</code></pre>
@@ -804,7 +804,7 @@ using the `.groups` argument.</code></pre>
 <h2 class="anchored" data-anchor-id="merit">Merit</h2>
 <p>This tile plot shows the average merit (<code>merit_mean</code>) for each combination of <code>rho</code> (diversity-merit tradeoff), weight <img src="https://latex.codecogs.com/png.latex?%5Calpha"> given to diversity (<code>diversity_weight</code>), and hiring scenario (the panels).</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1">merit_tile <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1">merit_tile <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -857,7 +857,7 @@ font-style: inherit;">+</span></span>
 <span id="cb11-9">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">coord_equal</span>()</span>
-<span id="cb11-10">merit_tile</span></code></pre></div>
+<span id="cb11-10">merit_tile</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -869,7 +869,7 @@ font-style: inherit;">coord_equal</span>()</span>
 <p>First, high austerity tends to heighten the effects of diversity weighting (or not): the difference between the maximum and minimum values of mean merit is greatest when only the top 10% are hired, and smallest when the top 50% are hired. Second, within a hiring level, mean merit appears to be maximized when diversity is given zero weight. Third, the effect of weighting diversity depends on <img src="https://latex.codecogs.com/png.latex?%5Crho">, the correlation between merit and diversity. When <img src="https://latex.codecogs.com/png.latex?%5Crho%20%3E%200">, then positively weighting diversity doesn’t appear to diminish mean merit very much; while discrimination decreases it sharply.</p>
 <p>Let’s plot “transects,” mean merit against diversity for moderate values <img src="https://latex.codecogs.com/png.latex?-0.4%20%5Cleq%20%5Crho%20%5Cleq%200.4">. We’ll go ahead and include every iteration, and GAM curves across values of <img src="https://latex.codecogs.com/png.latex?%5Crho">.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1">dataf <span class="sc" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1">dataf <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span> </span>
 <span id="cb12-2">    <span class="fu" style="color: #4758AB;
@@ -970,7 +970,7 @@ font-style: inherit;">+</span></span>
 background-color: null;
 font-style: inherit;">facet_wrap</span>(<span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">vars</span>(hiring))</span></code></pre></div>
+font-style: inherit;">vars</span>(hiring))</span></code></pre></div></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'
 `geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
@@ -986,7 +986,7 @@ font-style: inherit;">vars</span>(hiring))</span></code></pre></div>
 <p>These confirm that more extreme weightings of diversity do indeed have less dramatic effects when they’re aligned with <img src="https://latex.codecogs.com/png.latex?%5Crho">. There’s also a “plateau,” roughly independent of <img src="https://latex.codecogs.com/png.latex?%5Crho"> and for <img src="https://latex.codecogs.com/png.latex?-0.25%20%3C%20%5Calpha%20%3C%200.25">. Giving some weight to diversity, but placing more weight on merit, has negligible effects on mean merit.</p>
 <p>It also looks like, for <img src="https://latex.codecogs.com/png.latex?%5Crho%20=%200.4">, mean merit might not be maximized right at <img src="https://latex.codecogs.com/png.latex?%5Calpha%20=%200">. Let’s zoom in on this area, and let each panel have its own y-axis scale.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1">dataf <span class="sc" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1">dataf <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span> </span>
 <span id="cb14-2">    <span class="fu" style="color: #4758AB;
@@ -1094,7 +1094,7 @@ font-style: inherit;">vars</span>(hiring), <span class="at" style="color: #65742
 background-color: null;
 font-style: inherit;">scales =</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'free'</span>)</span></code></pre></div>
+font-style: inherit;">'free'</span>)</span></code></pre></div></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`geom_smooth()` using method = 'loess' and formula = 'y ~ x'
 `geom_smooth()` using method = 'loess' and formula = 'y ~ x'</code></pre>
@@ -1113,7 +1113,7 @@ font-style: inherit;">'free'</span>)</span></code></pre></div>
 <h2 class="anchored" data-anchor-id="productivity">Productivity</h2>
 <p>We’ll adapt the visualizations for mean merit to productivity.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">ggplot</span>(dataf_sum, </span>
 <span id="cb16-2">       <span class="fu" style="color: #4758AB;
@@ -1163,7 +1163,7 @@ background-color: null;
 font-style: inherit;">+</span></span>
 <span id="cb16-9">    <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">coord_equal</span>()</span></code></pre></div>
+font-style: inherit;">coord_equal</span>()</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -1175,7 +1175,7 @@ font-style: inherit;">coord_equal</span>()</span></code></pre></div>
 <p>Productivity is much, much greater under less austere hiring; and the effects of weighting diversity or discrimination are more dramatic.</p>
 <p>Here’s the “transect” plot:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1">dataf <span class="sc" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1">dataf <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span> </span>
 <span id="cb17-2">    <span class="fu" style="color: #4758AB;
@@ -1263,7 +1263,7 @@ font-style: inherit;">+</span></span>
 background-color: null;
 font-style: inherit;">facet_wrap</span>(<span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">vars</span>(hiring))</span></code></pre></div>
+font-style: inherit;">vars</span>(hiring))</span></code></pre></div></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'
 `geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
@@ -1282,7 +1282,7 @@ font-style: inherit;">vars</span>(hiring))</span></code></pre></div>
 <h1>Mapping parameters to political imaginaries</h1>
 <p>For reference, here’s the mean merit tile plot again.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1">merit_tile <span class="sc" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1">merit_tile <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
 <span id="cb19-2">    <span class="fu" style="color: #4758AB;
@@ -1404,7 +1404,7 @@ font-style: inherit;">4</span>, <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">label =</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'B'</span>)</span></code></pre></div>
+font-style: inherit;">'B'</span>)</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -1439,7 +1439,7 @@ font-style: inherit;">'B'</span>)</span></code></pre></div>
 <li id="fn1"><p>For convenience, in this post I’m going to use this label for the position that’s opposed to taking contributions to diversity into account in hiring, etc. I don’t want to use “anti-DEI” because to me that refers to a movement that’s much more angry and often more openly racist than what we see in the quotation.↩︎</p></li>
 <li id="fn2"><p>In the coefficient on merit, we use the absolute value of <img src="https://latex.codecogs.com/png.latex?%5Calpha"> to ensure symmetry between positive and negative values.↩︎</p></li>
 </ol>
-</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2025-07-12-diversity-merit.html</guid>
   <pubDate>Sat, 12 Jul 2025 07:00:00 GMT</pubDate>
 </item>
@@ -1521,12 +1521,12 @@ A fundamental tradeoff exists between data coverage and quality—comprehensive 
 </section>
 <section id="my-background" class="level2">
 <h2 class="anchored" data-anchor-id="my-background">My background</h2>
-<p>From 2015-2017 I served as an AAAS Science and Technology Policy fellow, hosted by the EPA Office of Research and Development’s Chemical Safety for Sustainability program (first year) and then by NSF’s National Robotics Initiative (second year). In both positions my responsibilities included developing and conducting evaluation projects for the research done (EPA) or funded (NSF) by my host office. Two of these evaluation projects were published and appear on my CV <span class="citation" data-cites="HicksBibliometricsSocialValidation2016 HicksNationalRoboticsInitiative2019">(Daniel J. Hicks 2016; D. Hicks and Simmons 2019)</span>.</p>
-<p>From 2017-2019 I was a postdoctoral researcher at the Data Science Initiative (now known as DataLab: Data Science and Informatics) at UC Davis. My position was funded by Elsevier<sup>3</sup> and the general aim of the postdoc was to develop new approaches to scientometrics that avoided common criticisms of bibliometrics (as discussed in the rest of this document). In this role I had opportunities to meet with deans and campus-level administrators to develop projects, and worked closely with both faculty and staff. Again, some of these projects were published and appear on my CV <span class="citation" data-cites="HicksImpactingCapabilitiesConceptual2018 HicksNetworkAnalysisEvaluate2019 HicksProductivityInterdisciplinaryImpacts2021">(Daniel J. Hicks, Stahmer, and Smith 2018; Daniel J. Hicks et al. 2019; Daniel J. Hicks 2021)</span>.</p>
+<p>From 2015-2017 I served as an AAAS Science and Technology Policy fellow, hosted by the EPA Office of Research and Development’s Chemical Safety for Sustainability program (first year) and then by NSF’s National Robotics Initiative (second year). In both positions my responsibilities included developing and conducting evaluation projects for the research done (EPA) or funded (NSF) by my host office. Two of these evaluation projects were published and appear on my CV <span class="citation" data-cites="HicksBibliometricsSocialValidation2016 HicksNationalRoboticsInitiative2019">(Hicks 2016; Hicks and Simmons 2019)</span>.</p>
+<p>From 2017-2019 I was a postdoctoral researcher at the Data Science Initiative (now known as DataLab: Data Science and Informatics) at UC Davis. My position was funded by Elsevier<sup>3</sup> and the general aim of the postdoc was to develop new approaches to scientometrics that avoided common criticisms of bibliometrics (as discussed in the rest of this document). In this role I had opportunities to meet with deans and campus-level administrators to develop projects, and worked closely with both faculty and staff. Again, some of these projects were published and appear on my CV <span class="citation" data-cites="HicksImpactingCapabilitiesConceptual2018 HicksNetworkAnalysisEvaluate2019 HicksProductivityInterdisciplinaryImpacts2021">(Hicks et al. 2018; Hicks et al. 2019; Hicks 2021)</span>.</p>
 </section>
 <section id="the-dora-statement-and-leiden-manifesto" class="level2">
 <h2 class="anchored" data-anchor-id="the-dora-statement-and-leiden-manifesto">The DORA Statement and Leiden Manifesto</h2>
-<p>Bibliometrics have played a significant and highly contested role in faculty hiring, tenure, and promotion decisions in a number of countries for several decades, though less so in the United States. In this context, research evaluation experts have released multiple statements providing guidance and criticizing certain uses of bibliometrics. I review two especially influential statements, the San Francisco Declaration on Research Assessment <span class="citation" data-cites="CaganSanFranciscoDeclaration2013">(DORA, published in multiple venues including Cagan 2013)</span> and the Leiden Manifesto for Research Metrics <span class="citation" data-cites="HicksLeidenManifestoResearch2015">(Diana Hicks et al. 2015)</span>.<sup>4</sup></p>
+<p>Bibliometrics have played a significant and highly contested role in faculty hiring, tenure, and promotion decisions in a number of countries for several decades, though less so in the United States. In this context, research evaluation experts have released multiple statements providing guidance and criticizing certain uses of bibliometrics. I review two especially influential statements, the San Francisco Declaration on Research Assessment <span class="citation" data-cites="CaganSanFranciscoDeclaration2013">(DORA, published in multiple venues including Cagan 2013)</span> and the Leiden Manifesto for Research Metrics <span class="citation" data-cites="HicksLeidenManifestoResearch2015">(Hicks et al. 2015)</span>.<sup>4</sup></p>
 <p>DORA first offers a number of criticisms of the impact factor: that it was originally created to help librarians make purchasing decisions, not assess research; that means are misleading measures of central tendency for highly skewed distributions such as citation counts; that it fails to distinguish different kinds of articles (commentaries from primary research from reviews) and neglects differences across research fields; and that the data used to calculate impact factors are generally neither public nor subject to peer review. It then lists 18 recommended practices for research assessment, the first of which is</p>
 <blockquote class="blockquote">
 <p>Do not use journal-based metrics, such as Journal Impact Factors, as a surrogate measure of the quality of individual research articles, to assess an individual scientist’s contributions, or in hiring, promotion, or funding decisions.</p>
@@ -1544,12 +1544,12 @@ A fundamental tradeoff exists between data coverage and quality—comprehensive 
 <li><em>Avoid misplaced concreteness and false precision.</em> Science and technology indicators are prone to conceptual ambiguity and uncertainty and require strong assumptions that are not universally accepted.</li>
 <li><em>Recognize the systemic effects of assessment and indicators</em> …. a suite of indicators is always preferable — a single one will invite gaming and goal displacement (in which the measurement becomes the goal).</li>
 </ol>
-<p>These points imply important limitations and concerns about bibliometrics that will be echoed below: the need to base the choice of metrics on organizational goals rather than what’s convenient to measure; significant variation in data coverage and quality; and variations across fields. Point nine is also known as “Goodheart’s Law”: “when a measure becomes a target, it ceases to be a good measure.” Tying resource allocations to publication counts encourages “salami slicing,” the rapid publication of many minimally-informative or low-quality (or even fraudulent) papers; while using citation counts incentivizes the formation of “citation cartels” <span class="citation" data-cites="KojakuDetectingAnomalousCitation2021">(Kojaku, Livan, and Masuda 2021)</span> or even manufacturing fake papers to inflate citation counts <span class="citation" data-cites="IbrahimGoogleScholarManipulatable2024">(Ibrahim et al. 2024)</span>.</p>
+<p>These points imply important limitations and concerns about bibliometrics that will be echoed below: the need to base the choice of metrics on organizational goals rather than what’s convenient to measure; significant variation in data coverage and quality; and variations across fields. Point nine is also known as “Goodheart’s Law”: “when a measure becomes a target, it ceases to be a good measure.” Tying resource allocations to publication counts encourages “salami slicing,” the rapid publication of many minimally-informative or low-quality (or even fraudulent) papers; while using citation counts incentivizes the formation of “citation cartels” <span class="citation" data-cites="KojakuDetectingAnomalousCitation2021">(Kojaku et al. 2021)</span> or even manufacturing fake papers to inflate citation counts <span class="citation" data-cites="IbrahimGoogleScholarManipulatable2024">(Ibrahim et al. 2024)</span>.</p>
 </section>
 </section>
 <section id="outputs-outcomes-and-impacts" class="level1">
 <h1>Outputs, outcomes, and impacts</h1>
-<p>In program evaluation, there’s a useful distinction between outputs, outcomes, and impacts. <em>Outputs</em> are the direct products of the program’s activities, and the things the program has most control over. For research organizations, outcomes include things like scholarly publications, grey literature reports, social media posts by the organization or its members, grant applications submitted, and public-facing events. <em>Outcomes</em> are the short-term consequences that follow from those outputs: citations to publications, policymakers and advocates referencing reports, social and traditional media coverage, grant awards, attendance at public events. <em>Impacts</em> are the longer-term goals that the organization hopes to achieve by way of its outputs and outcomes. <span class="citation" data-cites="HicksImpactingCapabilitiesConceptual2018">Daniel J. Hicks, Stahmer, and Smith (2018)</span> further distinguish between inward-facing goals (“the value of research for the relevant scholarly community, in terms of the further production of new knowledge”) and outward-facing goals (“the value of research for other social practices …. [such as] broader social efforts to protect biodiversity and preserve natural or undeveloped spaces”).</p>
+<p>In program evaluation, there’s a useful distinction between outputs, outcomes, and impacts. <em>Outputs</em> are the direct products of the program’s activities, and the things the program has most control over. For research organizations, outcomes include things like scholarly publications, grey literature reports, social media posts by the organization or its members, grant applications submitted, and public-facing events. <em>Outcomes</em> are the short-term consequences that follow from those outputs: citations to publications, policymakers and advocates referencing reports, social and traditional media coverage, grant awards, attendance at public events. <em>Impacts</em> are the longer-term goals that the organization hopes to achieve by way of its outputs and outcomes. <span class="citation" data-cites="HicksImpactingCapabilitiesConceptual2018">Hicks et al. (2018)</span> further distinguish between inward-facing goals (“the value of research for the relevant scholarly community, in terms of the further production of new knowledge”) and outward-facing goals (“the value of research for other social practices …. [such as] broader social efforts to protect biodiversity and preserve natural or undeveloped spaces”).</p>
 <p>These distinctions make it clear that bibliometrics — publication and citation counts, impact factors — are outputs and outcomes, rather than impacts. At best, these metrics are proxies for impacts, and indeed only proxies for inward-facing impacts. They provide at most limited insight into the scholarly impact of research, and none into social impact.</p>
 <p>Despite being proxies, bibliometrics (incorrectly) appear to be useful for research assessment because impacts are often implicit, poorly defined, or difficult to measure, especially outward-facing social impacts. For example, in UC Merced’s 2021-2030 strategic plan, the first goal is to “Engage Our World and Region Through Discovery and the Advancement of Knowledge.” This is explained as including “interdisciplinary and transformational research that supports equity and prosperity globally and locally, with particular sensitivity for the San Joaquin Valley.” “Support[ing] equity and prosperity” is an outward-facing impact. It is appealing, but also so vague that the proposed measures don’t even try to operationalize it. Instead, the strategic plan lists various output measures (tenure rates, research spending) and a vague bibliometric item (“number of impactful papers,” with “[specific] measures to be developed”).</p>
 <p>This is why the Leiden Manifesto states that “Programme goals should be stated at the start, and the indicators used to evaluate performance should relate clearly to those goals.” Without clear impacts it’s impossible to develop measures of progress or achievement with respect to those impacts.</p>
@@ -1559,12 +1559,12 @@ A fundamental tradeoff exists between data coverage and quality—comprehensive 
 <p>In discussions at the SSHA department chairs and Executive Committee meetings, a repeated point has been that the outputs and outcomes are generally incommensurable. There is no meaningful, all-inclusive, unidimensional scale with which to compare a book written by a historian to a journal article written by a psychologist to a systematic review conducted by a team of biomedical researchers.</p>
 <p>One aspect of incommensurability in this example is incommensurability by type of research output. Academic researchers produce numerous different kinds of outputs: monographs, anthologies, textbooks and other teaching materials; “original research” journal articles, reviews, theoretical papers, commentaries; white papers, policy reports; blog posts, opinion columns and letters, edutainment podcasts and videos, interactive websites, media interviews; conference presentations, keynotes and invited talks, flash talks, posters; artistic exhibitions and performances; workshops and conferences; public events.</p>
 <p>These different kinds of outputs require not just different amounts of work, but different kinds of work and are anticipated to have qualitatively different kinds of outcomes and impacts. Even within a given field, an archive-based historical monograph is intended to do something very different from a short conference presentation or a public-facing website. It therefore does not make sense to ask how much “more” the monograph should “count” than the presentation or the website.</p>
-<p>Research outcomes associated with a given type of output can also be incommensurable across fields. It is a commonplace in bibliometrics that the average citation rate differs across fields; for this reason, bibliometrics data providers such as Clarivate (Web of Science) and Elsevier (Scopus) provide “field-weighted” or “normalized” citation statistics.<sup>5</sup> One common explanation is differences in publication rates and citation practices. For example, in philosophy, a tenure-track assistant professor who publishes more than one paper per year (in “good journals”) would be considered highly productive; while a typical mid-sized biomedical lab might publish a dozen papers a year. Some fields, such as history, are expected to have lengthy and comprehensive bibliographies; while others, such as biomedicine, typically have short and selective bibliographies (except for systematic reviews, which are expected to be comprehensive, etc.). In line with this, <span class="citation" data-cites="RadicchiUniversalityCitationDistributions2008">Radicchi, Fortunato, and Castellano (2008)</span> argue that there is a “universal,” cross-field lognormal distribution of <em>relative</em> citations, that is, the number of citations received by a paper divided by the average number of citations received by all papers published in the same field and year. However, subsequent work on the “universal” citation distribution has not produced a consensus on the functional form it should take — lognormal, power-law, exponential, negative binomial, etc. — how it should be parameterized, and what underlying mechanisms might produce it <span class="citation" data-cites="GolosovskyUniversalityCitationDistributions2021">(Golosovsky 2021)</span>. Indeed, <span class="citation" data-cites="MarxCausesSubjectspecificCitation2015">Marx and Bornmann (2015)</span> argue that data quality plays a major role in cross-field differences, and in particular the poor coverage of the humanities by databases such as Web of Science.</p>
+<p>Research outcomes associated with a given type of output can also be incommensurable across fields. It is a commonplace in bibliometrics that the average citation rate differs across fields; for this reason, bibliometrics data providers such as Clarivate (Web of Science) and Elsevier (Scopus) provide “field-weighted” or “normalized” citation statistics.<sup>5</sup> One common explanation is differences in publication rates and citation practices. For example, in philosophy, a tenure-track assistant professor who publishes more than one paper per year (in “good journals”) would be considered highly productive; while a typical mid-sized biomedical lab might publish a dozen papers a year. Some fields, such as history, are expected to have lengthy and comprehensive bibliographies; while others, such as biomedicine, typically have short and selective bibliographies (except for systematic reviews, which are expected to be comprehensive, etc.). In line with this, <span class="citation" data-cites="RadicchiUniversalityCitationDistributions2008">Radicchi et al. (2008)</span> argue that there is a “universal,” cross-field lognormal distribution of <em>relative</em> citations, that is, the number of citations received by a paper divided by the average number of citations received by all papers published in the same field and year. However, subsequent work on the “universal” citation distribution has not produced a consensus on the functional form it should take — lognormal, power-law, exponential, negative binomial, etc. — how it should be parameterized, and what underlying mechanisms might produce it <span class="citation" data-cites="GolosovskyUniversalityCitationDistributions2021">(Golosovsky 2021)</span>. Indeed, <span class="citation" data-cites="MarxCausesSubjectspecificCitation2015">Marx and Bornmann (2015)</span> argue that data quality plays a major role in cross-field differences, and in particular the poor coverage of the humanities by databases such as Web of Science.</p>
 <p>For these reasons, “field-weighted” adjustments to citation counts have, at best, speculative and controversial theoretical support.</p>
 </section>
 <section id="the-reference-class-problem" class="level1">
 <h1>The reference class problem</h1>
-<p>Attempts to adjust bibliometrics for differences across fields also run into a significant theoretical problem, which <span class="citation" data-cites="LeeReferenceClassProblem2020">C. J. Lee (2020)</span> calls “<em>the reference class problem for credit valuation in science</em>: to which of the agent’s communities—which reference class—should credit valuations be indexed when determining the amount of credit the agent accrues …?” (1029, emphasis in original).</p>
+<p>Attempts to adjust bibliometrics for differences across fields also run into a significant theoretical problem, which <span class="citation" data-cites="LeeReferenceClassProblem2020">Lee (2020)</span> calls “<em>the reference class problem for credit valuation in science</em>: to which of the agent’s communities—which reference class—should credit valuations be indexed when determining the amount of credit the agent accrues …?” (1029, emphasis in original).</p>
 <p>Academic fields are often thought of as clearly-bounded, discrete entities, reflecting the administrative division of universities into schools and departments. But reality is much messier than this: consider research areas such as quantum chemistry (operating across the boundaries between physics and chemistry), bioinformatics (molecular biology — itself biology and chemistry — and computer science), or behavioral economics (psychology and economics). Or indeed “interdisciplines” such as material science or cognitive science. Even within distinct fields, there can be radical differences in research questions, methods, and norms, as in anthropology (often divided into something like biological, cultural, archaeology, linguistics, and primatology), physics (experimental, theoretical, and cosmology), or philosophy (analytic, continental, and philosophy of science).</p>
 <p>Because the boundaries within and between academic fields are so porous, a particular research project usually cannot be firmly located within a single research community, and an individual researcher or administrative unit will have a complex portfolio of projects spanning numerous different communities. For example, my Web of Science author profile<sup>6</sup> classifies me as working in History &amp; Philosophy of Science; Philosophy; Public, Environmental &amp; Occupational Health; Environmental Sciences &amp; Ecology; and Science &amp; Technology - Other Topics. This leaves out several areas under which I could be categorized, such as gender studies, science communication, science policy, and statistics. And there are potentially important differences at lower levels of classification; for example, publishing and citation practices between historians and philosophers of science are quite different. In practice, there are perhaps a dozen different fields — and thus <em>no</em> field — against which the citations to my research can be normed.</p>
 <p>Bibliometrics databases attempt to avoid this problem using multicategory classifications, which are often imprecise. For example, in Scopus’ All Science Journal Classification (ASJC) system<sup>7</sup>, <em>Nature Human Behavior</em> is classified as Psychology: Experimental and Cognitive Psychology, Psychology: Social Psychology, and Neuroscience: Behavioral Neuroscience;<sup>8</sup> this journal also regularly publishes work in archaeology, cognitive science, and other fields across the social sciences. Across the 47,000 journals indexed by Scopus, the median journal has 2 ASJC codes, and more than 2,600 journals have 5 or more codes.</p>
@@ -1625,7 +1625,7 @@ Table&nbsp;1: Comparison of publication counts, citation counts, and h-index fro
 </figure>
 </div>
 <p>For me, Google Scholar lists nearly twice as many publications as Web of Science, and 2.9 times as many citations. Scopus reports a few more publications than Web of Science (14%), but 30% more citations. Semantic Scholar has almost as many publications as Google Scholar, but barely half as many citations. None of these include every publication listed on my CV.</p>
-<p>The results for my author profile generalize: <span class="citation" data-cites="Martin-MartinGoogleScholarWeb2018">Martín-Martín et al. (2018)</span> found that Google Scholar reported nearly all citations found by Scopus and Web of Science, along with a large number of other citations, especially from “non-journal sources (48%-65%), including theses, books, conference papers, and unpublished materials” (1). In addition, a companion piece by the same authors, <span class="citation" data-cites="Martin-MartinCoverageHighlycitedDocuments2018">Martín-Martín, Orduna-Malea, and López-Cózar (2018)</span>, finds evidence that Web of Science and Scopus inclusion criteria are biased against social sciences and humanities: “a large fraction of highly-cited documents [according to Google Scholar] in the Social Sciences and Humanities (8.6–28.2%) are invisible to Web of Science and Scopus. In the Natural, Life, and Health Sciences the proportion of missing highly-cited documents in Web of Science and Scopus is much lower.”</p>
+<p>The results for my author profile generalize: <span class="citation" data-cites="Martin-MartinGoogleScholarWeb2018">Martín-Martín, Orduna-Malea, Thelwall, et al. (2018)</span> found that Google Scholar reported nearly all citations found by Scopus and Web of Science, along with a large number of other citations, especially from “non-journal sources (48%-65%), including theses, books, conference papers, and unpublished materials” (1). In addition, a companion piece by the same authors, <span class="citation" data-cites="Martin-MartinCoverageHighlycitedDocuments2018">Martín-Martín, Orduna-Malea, and López-Cózar (2018)</span>, finds evidence that Web of Science and Scopus inclusion criteria are biased against social sciences and humanities: “a large fraction of highly-cited documents [according to Google Scholar] in the Social Sciences and Humanities (8.6–28.2%) are invisible to Web of Science and Scopus. In the Natural, Life, and Health Sciences the proportion of missing highly-cited documents in Web of Science and Scopus is much lower.”</p>
 <p>However, the broad coverage of Google Scholar comes with a critical tradeoff: poor data quality. My informal understanding is that Google has never employed professional librarians in the Scholar project, and relies almost entirely on machine learning to parse citations. While authors can edit the metadata on publications on their profile, there is no way to flag erroneous or questionable citations. <span class="citation" data-cites="SimontonGoogleScholarCitations">Simonton (n.d.)</span> chronicles severe metadata errors and erratic changes in citation counts on their Google Scholar profile. In a small study, <span class="citation" data-cites="SauvayreTypesErrorsHiding2022">Sauvayre (2022)</span> found that only two out of 281 purported citations to two source articles did not contain errors. <span class="citation" data-cites="IbrahimGoogleScholarManipulatable2024">Ibrahim et al. (2024)</span> show that citation counts on Google Scholar can easily be inflated by using an LLM to generate fake papers and posting them on preprint servers.</p>
 <p>Semantic Scholar is not as widely-used as Google Scholar, and has not received the same kind of attention from scientometricians as a potential bibliometrics source. However, it also relies heavily on machine learning, may or may not employ librarians, and also has noticeable error rates. For example, while working on this document I realized that Semantic Scholar had conflated <em>Philosophy of Science</em> — the flagship journal in the field, published by CUP on behalf of my professional association, the US-based Philosophy of Science Association<sup>9</sup> — with <em>Philosophia Scientiæ</em> — a small journal, primarily in French, and published by the Université de Lorraine<sup>10</sup>.</p>
 <p>All together, to my knowledge there is no source of bibliometrics that can be considered to have both reliable coverage of the humanities and social sciences and reliable citation data.</p>
@@ -1641,15 +1641,15 @@ Table&nbsp;1: Comparison of publication counts, citation counts, and h-index fro
 <li>“gender and racial citation biases remain stable or have even worsened over the last half century” <span class="citation" data-cites="DaviesPromotingInclusiveMetrics2021">(Davies et al. 2021, 3–5)</span></li>
 </ul>
 <p><span class="citation" data-cites="GintherRaceEthnicityNIH2011">Ginther et al. (2011)</span> found that Black and Asian applicants for NIH funding are significantly less likely to receive awards, even after controlling for factors such as educational background, prior awards, and publication records. They attributed some of this disparity to topic choice, with lower award rates for community and population-level research vs.&nbsp;“basic” or “fundamental” research. <span class="citation" data-cites="HofstraDiversityInnovationParadox2020">Hofstra et al. (2020)</span> find that “underrepresented groups produce higher rates of scientific novelty” but “novel contributions by gender and racial minorities are taken up at lower rates” than majorities. By combining text analysis with metadata and bibliometrics, <span class="citation" data-cites="HengelAreWomenHeld2022">Hengel (2022)</span> compares preprints to published versions of journal articles, arguing that women authors are held to higher standards than men and that this explains numerous gendered disparities in academic publishing: longer review times, lower acceptance rates, lower publication rates in the most prestigious journals, and lower submission rates. <span class="citation" data-cites="Masters-WaageUnderrepresentedMinorityFaculty2024">Masters-Waage et al. (2024)</span> find similar traces of bias in promotion and tenure decisions. Looking across fields, <span class="citation" data-cites="SugimotoEquityWomenScience2023">Sugimoto and Larivière (2023)</span> argues that “Disciplines with parity (or those dominated by women) tend to be lower cited and relegated to the bottom tiers of the academic hierarchy.”</p>
-<p>An important proviso with virtually all of these studies is that they use automated demographic imputation, that is, imputing authors’ gender and race/ethnicity based on their names. <span class="citation" data-cites="LockhartNamebasedDemographicInference2023">Lockhart, King, and Munsch (2023)</span> shows that these methods are less accurate for both gender and racial/ethnicity minorities, which generally results in misclassifying members of minority groups as members of majorities. In general, measurement error on the independent variable produces <em>regression dilution</em>, in which estimated correlations/regression coefficients are biased towards 0. That is, all else being equal, automated demographic imputation would be expected to yield underestimations of the magnitude of gender and racial/ethnic bias.</p>
+<p>An important proviso with virtually all of these studies is that they use automated demographic imputation, that is, imputing authors’ gender and race/ethnicity based on their names. <span class="citation" data-cites="LockhartNamebasedDemographicInference2023">Lockhart et al. (2023)</span> shows that these methods are less accurate for both gender and racial/ethnicity minorities, which generally results in misclassifying members of minority groups as members of majorities. In general, measurement error on the independent variable produces <em>regression dilution</em>, in which estimated correlations/regression coefficients are biased towards 0. That is, all else being equal, automated demographic imputation would be expected to yield underestimations of the magnitude of gender and racial/ethnic bias.</p>
 </section>
 <section id="quantification-as-depoliticization" class="level1">
 <h1>Quantification as depoliticization</h1>
 <p>Thus far, I have offered “technical” critiques of bibliometrics, showing limitations in their fit for purpose as measures of research quality. But it is important to recognize that, in the context of decisions such as how to allocate faculty lines, bibliometrics also have a broader function, as what we might call a <em>depoliticization strategy</em>.</p>
-<p>STS scholars argue that quantification or <em>scientization</em> — replacing explicitly political decisionmaking processes with expert or “data-driven” processes — is a key legitimizing strategy used by modern states and other political and social authorities <span class="citation" data-cites="JasanoffFifthBranchScience1990 PorterTrustNumbersPursuit1995 SarewitzScienceEnvironmentalPolicy2000">(Jasanoff 1990; Porter 1995; Sarewitz 2000)</span>. This strategy was on display in 2020, when political leaders presented themselves as “following the science.” Even Covid skeptics made their arguments in terms of quantified evidence and data visualizations <span class="citation" data-cites="LeeViralVisualizationsHow2021">(C. Lee et al. 2021)</span>. On an individual level, many students in my Critical Thinking course come in thinking that using numbers is enough to make an argument valid — without regard to how those numbers were produced and whether they have anything to do with the conclusion the argument is attempting to support.</p>
+<p>STS scholars argue that quantification or <em>scientization</em> — replacing explicitly political decisionmaking processes with expert or “data-driven” processes — is a key legitimizing strategy used by modern states and other political and social authorities <span class="citation" data-cites="JasanoffFifthBranchScience1990 PorterTrustNumbersPursuit1995 SarewitzScienceEnvironmentalPolicy2000">(Jasanoff 1990; Porter 1995; Sarewitz 2000)</span>. This strategy was on display in 2020, when political leaders presented themselves as “following the science.” Even Covid skeptics made their arguments in terms of quantified evidence and data visualizations <span class="citation" data-cites="LeeViralVisualizationsHow2021">(Lee et al. 2021)</span>. On an individual level, many students in my Critical Thinking course come in thinking that using numbers is enough to make an argument valid — without regard to how those numbers were produced and whether they have anything to do with the conclusion the argument is attempting to support.</p>
 <p>Broadly, in our society quantified evidence is treated as extra-political — existing outside or beyond (political) controversy — and therefore super-political — taking precedence over and even shutting down (political) controversy. Quantification is thereby appealing when political controversies seem to be heated and intractable, appearing to give us (that is, whoever has the power to impose a particular system of quantification) a way to end debate and resolve the issue, moving it outside or beyond politics. Thus, “depoliticization.”</p>
 <p>Allocating extremely scarce resources such as faculty lines is already a touchy issue. Doing so under conditions of existential uncertainty for American higher ed, impending demographic decline, and pre-existing structural deficits only makes the controversy more fraught. In this context, bibliometrics appear to provide an “objective,” depoliticizing solution.</p>
-<p>However, the “technical” critiques I have offered show that the promise of using bibliometrics to depoliticize decisions about faculty lines is a mirage. Any attempt to operationalize bibliometrics for decisionmaking requires prior decisions, about how to compare incommensurable research outputs, how to assign departmental research portfolios to fields and adjust for differences between fields, which source(s) of bibliometrics data to use and how to manage the corresponding tradeoffs between coverage and data quality, and how to mitigate rather than exacerbate the influence of deep structural biases. Rather than depoliticizing, bibliometrics would simply become a new arena for political controversy <span class="citation" data-cites="HicksScientificControversiesProxy2017 HicksSafetyAutonomousVehicles2018">(Daniel J. Hicks 2017; D. J. Hicks 2018)</span>, as different interests across campus push for different ways of resolving these prior decisions that happen to benefit their particular group.</p>
+<p>However, the “technical” critiques I have offered show that the promise of using bibliometrics to depoliticize decisions about faculty lines is a mirage. Any attempt to operationalize bibliometrics for decisionmaking requires prior decisions, about how to compare incommensurable research outputs, how to assign departmental research portfolios to fields and adjust for differences between fields, which source(s) of bibliometrics data to use and how to manage the corresponding tradeoffs between coverage and data quality, and how to mitigate rather than exacerbate the influence of deep structural biases. Rather than depoliticizing, bibliometrics would simply become a new arena for political controversy <span class="citation" data-cites="HicksScientificControversiesProxy2017 HicksSafetyAutonomousVehicles2018">(Hicks 2017; Hicks 2018)</span>, as different interests across campus push for different ways of resolving these prior decisions that happen to benefit their particular group.</p>
 </section>
 <section id="recommendations-1" class="level1">
 <h1>Recommendations</h1>
@@ -1674,18 +1674,18 @@ Table&nbsp;1: Comparison of publication counts, citation counts, and h-index fro
 </section>
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-CaganSanFranciscoDeclaration2013" class="csl-entry">
 Cagan, Ross. 2013. <span>“The San Francisco Declaration on Research Assessment.”</span> <em>Disease Models &amp; Mechanisms</em> 6 (4): 869–70. <a href="https://doi.org/10.1242/dmm.012955">https://doi.org/10.1242/dmm.012955</a>.
 </div>
 <div id="ref-DaviesPromotingInclusiveMetrics2021" class="csl-entry">
-Davies, Sarah W., Hollie M. Putnam, Tracy Ainsworth, Julia K. Baum, Colleen B. Bove, Sarah C. Crosby, Isabelle M. Côté, et al. 2021. <span>“Promoting Inclusive Metrics of Success and Impact to Dismantle a Discriminatory Reward System in Science.”</span> <em>PLOS Biology</em> 19 (6): e3001282. <a href="https://doi.org/10.1371/journal.pbio.3001282">https://doi.org/10.1371/journal.pbio.3001282</a>.
+Davies, Sarah W., Hollie M. Putnam, Tracy Ainsworth, et al. 2021. <span>“Promoting Inclusive Metrics of Success and Impact to Dismantle a Discriminatory Reward System in Science.”</span> <em>PLOS Biology</em> 19 (6): e3001282. <a href="https://doi.org/10.1371/journal.pbio.3001282">https://doi.org/10.1371/journal.pbio.3001282</a>.
 </div>
 <div id="ref-FunkDynamicNetworkMeasure2016" class="csl-entry">
 Funk, Russell J., and Jason Owen-Smith. 2016. <span>“A Dynamic Network Measure of Technological Change.”</span> <em>Management Science</em> 63 (3): 791–817. <a href="https://doi.org/10.1287/mnsc.2015.2366">https://doi.org/10.1287/mnsc.2015.2366</a>.
 </div>
 <div id="ref-GintherRaceEthnicityNIH2011" class="csl-entry">
-Ginther, Donna K., Walter T. Schaffer, Joshua Schnell, Beth Masimore, Faye Liu, Laurel L. Haak, and Raynard Kington. 2011. <span>“Race, Ethnicity, and NIH Research Awards.”</span> <em>Science</em> 333 (6045): 1015–19. <a href="https://doi.org/10.1126/science.1196783">https://doi.org/10.1126/science.1196783</a>.
+Ginther, Donna K., Walter T. Schaffer, Joshua Schnell, et al. 2011. <span>“Race, Ethnicity, and NIH Research Awards.”</span> <em>Science</em> 333 (6045): 1015–19. <a href="https://doi.org/10.1126/science.1196783">https://doi.org/10.1126/science.1196783</a>.
 </div>
 <div id="ref-GolosovskyUniversalityCitationDistributions2021" class="csl-entry">
 Golosovsky, Michael. 2021. <span>“Universality of Citation Distributions: A New Understanding.”</span> <em>Quantitative Science Studies</em> 2 (2): 527–43. <a href="https://doi.org/10.1162/qss_a_00127">https://doi.org/10.1162/qss_a_00127</a>.
@@ -1694,7 +1694,7 @@ Golosovsky, Michael. 2021. <span>“Universality of Citation Distributions: A Ne
 He, Jiangen, and Chaomei Chen. 2018. <span>“Predictive Effects of Novelty Measured by Temporal Embeddings on the Growth of Scientific Literature.”</span> <em>Frontiers in Research Metrics and Analytics</em> 3. <a href="https://doi.org/10.3389/frma.2018.00009">https://doi.org/10.3389/frma.2018.00009</a>.
 </div>
 <div id="ref-HengelAreWomenHeld2022" class="csl-entry">
-Hengel, Erin. 2022. <span>“Are Women Held to Higher Standards? Evidence from Peer Review.”</span> <em>The Economic Journal</em>, May, ueac032. <a href="https://doi.org/10.1093/ej/ueac032">https://doi.org/10.1093/ej/ueac032</a>.
+Hengel, Erin. 2022. <span>“Are Women Held to Higher Standards? Evidence from Peer Review.”</span> <em>The Economic Journal</em>, May 16, ueac032. <a href="https://doi.org/10.1093/ej/ueac032">https://doi.org/10.1093/ej/ueac032</a>.
 </div>
 <div id="ref-HicksSafetyAutonomousVehicles2018" class="csl-entry">
 Hicks, D. J. 2018. <span>“The Safety of Autonomous Vehicles: Lessons from Philosophy of Science.”</span> <em>IEEE Technology and Society Magazine</em> 37 (1): 62–69. <a href="https://doi.org/10.1109/MTS.2018.2795123">https://doi.org/10.1109/MTS.2018.2795123</a>.
@@ -1703,16 +1703,16 @@ Hicks, D. J. 2018. <span>“The Safety of Autonomous Vehicles: Lessons from Phil
 Hicks, Daniel J. 2016. <span>“Bibliometrics for Social Validation.”</span> <em>PLOS ONE</em> 11 (12): e0168597. <a href="https://doi.org/10.1371/journal.pone.0168597">https://doi.org/10.1371/journal.pone.0168597</a>.
 </div>
 <div id="ref-HicksScientificControversiesProxy2017" class="csl-entry">
-———. 2017. <span>“Scientific Controversies as Proxy Politics.”</span> <em>Issues in Science and Technology</em>, January 2017. <a href="https://www.jstor.org/stable/24891967">https://www.jstor.org/stable/24891967</a>.
+Hicks, Daniel J. 2017. <span>“Scientific Controversies as Proxy Politics.”</span> <em>Issues in Science and Technology</em> 33 (Winter 2017): 67–72. <a href="https://www.jstor.org/stable/24891967">https://www.jstor.org/stable/24891967</a>.
 </div>
 <div id="ref-HicksProductivityInterdisciplinaryImpacts2021" class="csl-entry">
-———. 2021. <span>“Productivity and Interdisciplinary Impacts of Organized Research Units.”</span> <em>Quantitative Science Studies</em> 2 (3): 990–1022. <a href="https://doi.org/10.1162/qss_a_00150">https://doi.org/10.1162/qss_a_00150</a>.
+Hicks, Daniel J. 2021. <span>“Productivity and Interdisciplinary Impacts of Organized Research Units.”</span> <em>Quantitative Science Studies</em> 2 (3): 990–1022. <a href="https://doi.org/10.1162/qss_a_00150">https://doi.org/10.1162/qss_a_00150</a>.
 </div>
 <div id="ref-HicksNetworkAnalysisEvaluate2019" class="csl-entry">
 Hicks, Daniel J., David A. Coil, Carl G. Stahmer, and Jonathan A. Eisen. 2019. <span>“Network Analysis to Evaluate the Impact of Research Funding on Research Community Consolidation.”</span> <em>PLOS ONE</em> 14 (6): e0218273. <a href="https://doi.org/10.1371/journal.pone.0218273">https://doi.org/10.1371/journal.pone.0218273</a>.
 </div>
 <div id="ref-HicksImpactingCapabilitiesConceptual2018" class="csl-entry">
-Hicks, Daniel J., Carl Stahmer, and MacKenzie Smith. 2018. <span>“Impacting Capabilities: A Conceptual Framework for the Social Value of Research.”</span> <em>Frontiers in Research Metrics and Analytics</em>. <a href="https://doi.org/10.3389/frma.2018.00024">https://doi.org/10.3389/frma.2018.00024</a>.
+Hicks, Daniel J., Carl Stahmer, and MacKenzie Smith. 2018. <span>“Impacting Capabilities: A Conceptual Framework for the Social Value of Research.”</span> <em>Frontiers in Research Metrics and Analytics</em>, ahead of print. <a href="https://doi.org/10.3389/frma.2018.00024">https://doi.org/10.3389/frma.2018.00024</a>.
 </div>
 <div id="ref-HicksLeidenManifestoResearch2015" class="csl-entry">
 Hicks, Diana, Paul Wouters, Ludo Waltman, Sarah De Rijcke, and Ismael Rafols. 2015. <span>“The Leiden Manifesto for Research Metrics.”</span> <em>Nature</em> 520 (7548): 429. <a href="https://doi.org/10.1038/520429a">https://doi.org/10.1038/520429a</a>.
@@ -1721,10 +1721,10 @@ Hicks, Diana, Paul Wouters, Ludo Waltman, Sarah De Rijcke, and Ismael Rafols. 20
 Hicks, D., and R. Simmons. 2019. <span>“The National Robotics Initiative: A Five-Year Retrospective.”</span> <em>IEEE Robotics Automation Magazine</em> 26 (3): 2–9. <a href="https://doi.org/10.1109/MRA.2019.2912860">https://doi.org/10.1109/MRA.2019.2912860</a>.
 </div>
 <div id="ref-HofstraDiversityInnovationParadox2020" class="csl-entry">
-Hofstra, Bas, Vivek V. Kulkarni, Sebastian Munoz-Najar Galvez, Bryan He, Dan Jurafsky, and Daniel A. McFarland. 2020. <span>“The Diversity–Innovation Paradox in Science.”</span> <em>Proceedings of the National Academy of Sciences</em>, April, 201915378. <a href="https://doi.org/10.1073/pnas.1915378117">https://doi.org/10.1073/pnas.1915378117</a>.
+Hofstra, Bas, Vivek V. Kulkarni, Sebastian Munoz-Najar Galvez, Bryan He, Dan Jurafsky, and Daniel A. McFarland. 2020. <span>“The Diversity–Innovation Paradox in Science.”</span> Social Sciences. <em>Proceedings of the National Academy of Sciences</em>, April 14, 201915378. <a href="https://doi.org/10.1073/pnas.1915378117">https://doi.org/10.1073/pnas.1915378117</a>.
 </div>
 <div id="ref-IbrahimGoogleScholarManipulatable2024" class="csl-entry">
-Ibrahim, Hazem, Fengyuan Liu, Yasir Zaki, and Talal Rahwan. 2024. <span>“Google Scholar Is Manipulatable.”</span> arXiv. <a href="https://doi.org/10.48550/arXiv.2402.04607">https://doi.org/10.48550/arXiv.2402.04607</a>.
+Ibrahim, Hazem, Fengyuan Liu, Yasir Zaki, and Talal Rahwan. 2024. <span>“Google Scholar Is Manipulatable.”</span> arXiv:2402.04607. Preprint, arXiv, February 7. <a href="https://doi.org/10.48550/arXiv.2402.04607">https://doi.org/10.48550/arXiv.2402.04607</a>.
 </div>
 <div id="ref-JasanoffFifthBranchScience1990" class="csl-entry">
 Jasanoff, Sheila. 1990. <em>The Fifth Branch: Science Advisers as Policymakers</em>. Harvard University Press.
@@ -1736,13 +1736,13 @@ Kojaku, Sadamori, Giacomo Livan, and Naoki Masuda. 2021. <span>“Detecting Anom
 Lee, Carole J. 2020. <span>“The Reference Class Problem for Credit Valuation in Science.”</span> <em>Philosophy of Science</em> 87 (5): 1026–36. <a href="https://doi.org/10.1086/710615">https://doi.org/10.1086/710615</a>.
 </div>
 <div id="ref-LeeViralVisualizationsHow2021" class="csl-entry">
-Lee, Crystal, Tanya Yang, Gabrielle Inchoco, Graham M. Jones, and Arvind Satyanarayan. 2021. <span>“Viral Visualizations: How Coronavirus Skeptics Use Orthodox Data Practices to Promote Unorthodox Science Online.”</span> <em>Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems</em>, May, 1–18. <a href="https://doi.org/10.1145/3411764.3445211">https://doi.org/10.1145/3411764.3445211</a>.
+Lee, Crystal, Tanya Yang, Gabrielle Inchoco, Graham M. Jones, and Arvind Satyanarayan. 2021. <span>“Viral Visualizations: How Coronavirus Skeptics Use Orthodox Data Practices to Promote Unorthodox Science Online.”</span> <em>Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems</em>, May 6, 1–18. <a href="https://doi.org/10.1145/3411764.3445211">https://doi.org/10.1145/3411764.3445211</a>.
 </div>
 <div id="ref-LockhartNamebasedDemographicInference2023" class="csl-entry">
-Lockhart, Jeffrey W., Molly M. King, and Christin Munsch. 2023. <span>“Name-Based Demographic Inference and the Unequal Distribution of Misrecognition.”</span> <em>Nature Human Behaviour</em>, April, 1–12. <a href="https://doi.org/10.1038/s41562-023-01587-9">https://doi.org/10.1038/s41562-023-01587-9</a>.
+Lockhart, Jeffrey W., Molly M. King, and Christin Munsch. 2023. <span>“Name-Based Demographic Inference and the Unequal Distribution of Misrecognition.”</span> <em>Nature Human Behaviour</em>, April 17, 1–12. <a href="https://doi.org/10.1038/s41562-023-01587-9">https://doi.org/10.1038/s41562-023-01587-9</a>.
 </div>
 <div id="ref-Martin-MartinCoverageHighlycitedDocuments2018" class="csl-entry">
-Martín-Martín, Alberto, Enrique Orduna-Malea, and Emilio Delgado López-Cózar. 2018. <span>“Coverage of Highly-Cited Documents in Google Scholar, Web of Science, and Scopus: A Multidisciplinary Comparison.”</span> <em>Scientometrics</em>, June, 1–14. <a href="https://doi.org/10.1007/s11192-018-2820-9">https://doi.org/10.1007/s11192-018-2820-9</a>.
+Martín-Martín, Alberto, Enrique Orduna-Malea, and Emilio Delgado López-Cózar. 2018. <span>“Coverage of Highly-Cited Documents in Google Scholar, Web of Science, and Scopus: A Multidisciplinary Comparison.”</span> <em>Scientometrics</em>, June 26, 1–14. <a href="https://doi.org/10.1007/s11192-018-2820-9">https://doi.org/10.1007/s11192-018-2820-9</a>.
 </div>
 <div id="ref-Martin-MartinGoogleScholarWeb2018" class="csl-entry">
 Martín-Martín, Alberto, Enrique Orduna-Malea, Mike Thelwall, and Emilio Delgado López-Cózar. 2018. <span>“Google Scholar, Web of Science, and Scopus: A Systematic Comparison of Citations in 252 Subject Categories.”</span> <em>Journal of Informetrics</em> 12 (4): 1160–77. <a href="https://doi.org/10.1016/j.joi.2018.09.002">https://doi.org/10.1016/j.joi.2018.09.002</a>.
@@ -1751,31 +1751,31 @@ Martín-Martín, Alberto, Enrique Orduna-Malea, Mike Thelwall, and Emilio Delgad
 Marx, Werner, and Lutz Bornmann. 2015. <span>“On the Causes of Subject-Specific Citation Rates in Web of Science.”</span> <em>Scientometrics</em> 102 (2): 1823–27. <a href="https://doi.org/10.1007/s11192-014-1499-9">https://doi.org/10.1007/s11192-014-1499-9</a>.
 </div>
 <div id="ref-Masters-WaageUnderrepresentedMinorityFaculty2024" class="csl-entry">
-Masters-Waage, Theodore, Christiane Spitzmueller, Ebenezer Edema-Sillo, Ally St.&nbsp;Aubin, Michelle Penn-Marshall, Erika Henderson, Peggy Lindner, Cynthia Werner, Tracey Rizzuto, and Juan Madera. 2024. <span>“Underrepresented Minority Faculty in the USA Face a Double Standard in Promotion and Tenure Decisions.”</span> <em>Nature Human Behaviour</em>, October, 1–12. <a href="https://doi.org/10.1038/s41562-024-01977-7">https://doi.org/10.1038/s41562-024-01977-7</a>.
+Masters-Waage, Theodore, Christiane Spitzmueller, Ebenezer Edema-Sillo, et al. 2024. <span>“Underrepresented Minority Faculty in the USA Face a Double Standard in Promotion and Tenure Decisions.”</span> <em>Nature Human Behaviour</em>, October 4, 1–12. <a href="https://doi.org/10.1038/s41562-024-01977-7">https://doi.org/10.1038/s41562-024-01977-7</a>.
 </div>
 <div id="ref-PetersenEvolutionBiomedicalInnovation2022" class="csl-entry">
-Petersen, Alexander M. 2022. <span>“Evolution of Biomedical Innovation Quantified via Billions of Distinct Article-Level MeSH Keyword Combinations.”</span> <em>Advances in Complex Systems</em> 25 (1). <a href="https://doi.org/10.1142/S0219525921500168">https://doi.org/10.1142/S0219525921500168</a>.
+Petersen, Alexander M. 2022. <span>“Evolution of Biomedical Innovation Quantified via Billions of Distinct Article-Level MeSH Keyword Combinations.”</span> <em>Advances in Complex Systems</em> 25 (1). world. <a href="https://doi.org/10.1142/S0219525921500168">https://doi.org/10.1142/S0219525921500168</a>.
 </div>
 <div id="ref-PorterTrustNumbersPursuit1995" class="csl-entry">
-Porter, Theodore M. 1995. <em>Trust in Numbers: The Pursuit of Objectivity in Science and Public Life</em>. Princeton, N.J: Princeton University Press.
+Porter, Theodore M. 1995. <em>Trust in Numbers: The Pursuit of Objectivity in Science and Public Life</em>. Princeton University Press.
 </div>
 <div id="ref-RadicchiUniversalityCitationDistributions2008" class="csl-entry">
 Radicchi, Filippo, Santo Fortunato, and Claudio Castellano. 2008. <span>“Universality of Citation Distributions: Toward an Objective Measure of Scientific Impact.”</span> <em>Proceedings of the National Academy of Sciences</em> 105 (45): 17268–72. <a href="https://doi.org/10.1073/pnas.0806977105">https://doi.org/10.1073/pnas.0806977105</a>.
 </div>
 <div id="ref-SarewitzScienceEnvironmentalPolicy2000" class="csl-entry">
-Sarewitz, Daniel. 2000. <span>“Science and Environmental Policy: An Excess of Objectivity.”</span> In <em>Earth Matters:&nbsp; The Earth Sciences, Philosophy, and the Claims of Community</em>, edited by Robert Frodeman, 79–98. Prentice Hall. <a href="http://www.cspo.org/_old_ourlibrary/ScienceandEnvironmentalPolicy.htm">http://www.cspo.org/_old_ourlibrary/ScienceandEnvironmentalPolicy.htm</a>.
+Sarewitz, Daniel. 2000. <span>“Science and Environmental Policy: An Excess of Objectivity.”</span> In <em>Earth Matters:&nbsp; The Earth Sciences, Philosophy, and the Claims of Community</em>, edited by Robert Frodeman. Prentice Hall. <a href="http://www.cspo.org/_old_ourlibrary/ScienceandEnvironmentalPolicy.htm">http://www.cspo.org/_old_ourlibrary/ScienceandEnvironmentalPolicy.htm</a>.
 </div>
 <div id="ref-SauvayreTypesErrorsHiding2022" class="csl-entry">
 Sauvayre, Romy. 2022. <span>“Types of Errors Hiding in Google Scholar Data.”</span> <em>Journal of Medical Internet Research</em> 24 (5): e28354. <a href="https://doi.org/10.2196/28354">https://doi.org/10.2196/28354</a>.
 </div>
 <div id="ref-SimontonGoogleScholarCitations" class="csl-entry">
-Simonton, Dean Keith. n.d. <span>“Google Scholar Citations: Serious Errors.”</span> Accessed July 1, 2025. <a href="https://simonton.faculty.ucdavis.edu/research/google-scholar-citations-serious-errors/">https://simonton.faculty.ucdavis.edu/research/google-scholar-citations-serious-errors/</a>.
+Simonton, Dean Keith. n.d. <em>Google Scholar Citations: Serious Errors</em>. Accessed July 1, 2025. <a href="https://simonton.faculty.ucdavis.edu/research/google-scholar-citations-serious-errors/">https://simonton.faculty.ucdavis.edu/research/google-scholar-citations-serious-errors/</a>.
 </div>
 <div id="ref-SugimotoEquityWomenScience2023" class="csl-entry">
 Sugimoto, Cassidy R., and Vincent Larivière. 2023. <em>Equity for Women in Science: Dismantling Systemic Barriers to Advancement</em>. Harvard University Press.
 </div>
 <div id="ref-ZengDifferencesCollaborationPatterns2016" class="csl-entry">
-Zeng, Xiao Han T., Jordi Duch, Marta Sales-Pardo, João A. G. Moreira, Filippo Radicchi, Haroldo V. Ribeiro, Teresa K. Woodruff, and Luís A. Nunes Amaral. 2016. <span>“Differences in Collaboration Patterns Across Discipline, Career Stage, and Gender.”</span> <em>PLOS Biology</em> 14 (11): e1002573. <a href="https://doi.org/10.1371/journal.pbio.1002573">https://doi.org/10.1371/journal.pbio.1002573</a>.
+Zeng, Xiao Han T., Jordi Duch, Marta Sales-Pardo, et al. 2016. <span>“Differences in Collaboration Patterns Across Discipline, Career Stage, and Gender.”</span> <em>PLOS Biology</em> 14 (11): e1002573. <a href="https://doi.org/10.1371/journal.pbio.1002573">https://doi.org/10.1371/journal.pbio.1002573</a>.
 </div>
 </div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
@@ -1791,7 +1791,7 @@ Zeng, Xiao Han T., Jordi Duch, Marta Sales-Pardo, João A. G. Moreira, Filippo R
 <li id="fn9"><p><a href="https://www.cambridge.org/core/journals/philosophy-of-science" class="uri">https://www.cambridge.org/core/journals/philosophy-of-science</a>↩︎</p></li>
 <li id="fn10"><p><a href="https://journals.openedition.org/philosophiascientiae/635" class="uri">https://journals.openedition.org/philosophiascientiae/635</a>↩︎</p></li>
 </ol>
-</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2025-07-08-research-metrics.html</guid>
   <pubDate>Tue, 08 Jul 2025 07:00:00 GMT</pubDate>
 </item>
@@ -1812,7 +1812,7 @@ Zeng, Xiao Han T., Jordi Duch, Marta Sales-Pardo, João A. G. Moreira, Filippo R
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2025-02-26-DEI.html</guid>
   <pubDate>Wed, 26 Feb 2025 08:00:00 GMT</pubDate>
 </item>
@@ -1836,30 +1836,30 @@ Zeng, Xiao Han T., Jordi Duch, Marta Sales-Pardo, João A. G. Moreira, Filippo R
 <p>The report also makes claims that these methods, and the resulting database, cannot possibly support. For example, the report claims that “Instead of identifying the best or most talented scientists, NSF funded researchers who prioritized filling out research teams and programs based on ethnicity, cultural background, or political perspectives.”</p>
 <p>Most of the researchers funded by NSF grants — students, postdoctoral researchers, professional research staff — are hired by the universities that receive the awards, not NSF. Some personnel are named in the initial grant application, but otherwise universities don’t notify NSF who they hire using NSF-awarded funds, much less report them for release in a public database. The particular data portal used by Cruz’ staff does not even contain the names of the primary investigator for each award (though these names are available through NSF’s award search portal). And, of course, even if Cruz’ staff did somehow know the <em>names</em> of the members of the research teams, they still wouldn’t know their qualifications, ethnicity, cultural backgrounds, or political perspectives, much less what role these factors played in the hiring decisions.</p>
 <p>Similarly, a distinguished statistician — a fellow of both the American Statistical Association and the American Association for the Advancement of Science, and a member of EPA’s Science Advisory Board during the first Trump administration — published numerous papers using a fundamentally flawed statistical methodology <span class="citation" data-cites="HicksValuePlotDoes2022">(D. J. Hicks 2022a)</span>. Many of these papers claimed to show that research misconduct was widespread in air pollution epidemiology. At least some were funded by the American Petroleum Institute <span class="citation" data-cites="HicksYoungsPValuePlot2022">(D. Hicks 2022)</span>.</p>
-<p>As a final example, recently the Trump administration attempted to unilaterally impose a cap of 15% on indirect costs for NIH-funded awards. Reporters at Wired <span class="citation" data-cites="ReynoldsNIHFundingCuts">(Reynolds n.d.)</span> traced this policy to a <a href="https://www.heritage.org/education/report/indirect-costs-how-taxpayers-subsidize-university-nonsense">report</a> by two affiliates of the Heritage Foundation, which alleged that indirect costs were used to “subsidize the agenda of the political left through funding its research agendas and Diversity, Equity, and Inclusion (DEI) staff on university campuses.” The primary evidence for this claim was a collection of simple univariable regressions of the number of “DEI staff” against indirect costs for 82 universities. The authors of the report made no effort whatsoever to adjust for potential confounders in this regression — despite the lead author being a former Distinguished Professor and education researcher at the University of Arkansas.</p>
+<p>As a final example, recently the Trump administration attempted to unilaterally impose a cap of 15% on indirect costs for NIH-funded awards. Reporters at Wired <span class="citation" data-cites="ReynoldsNIHFundingCuts">(Reynolds, n.d.)</span> traced this policy to a <a href="https://www.heritage.org/education/report/indirect-costs-how-taxpayers-subsidize-university-nonsense">report</a> by two affiliates of the Heritage Foundation, which alleged that indirect costs were used to “subsidize the agenda of the political left through funding its research agendas and Diversity, Equity, and Inclusion (DEI) staff on university campuses.” The primary evidence for this claim was a collection of simple univariable regressions of the number of “DEI staff” against indirect costs for 82 universities. The authors of the report made no effort whatsoever to adjust for potential confounders in this regression — despite the lead author being a former Distinguished Professor and education researcher at the University of Arkansas.</p>
 <hr>
 <p>But the low quality of weaponized metascience is beside the point. The purpose of weaponized metascience is to <em>appear</em> scientific, to adopt the trappings of science in order to discredit science. Over the past 150 years or so, our society has become deeply “scientistic,” holding up science (or things that look like science) as the best and most reliable source of knowledge. Science and its defenders need to understand that, by and large, the contemporary far right and its allies are not interested in challenging this scientism. Project 2025 doesn’t say anything about replacing evolution with intelligent design in schools, for example. Instead the goal is to turn science into a tool of their political and cultural project, dominated by conservative, nationalistic, straight white men. To Make Science Great Again.</p>
 
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-HicksYoungsPValuePlot2022" class="csl-entry">
-Hicks, Dan. 2022. <span>“Young’s P-Value Plot as an Agnogenic Technique, Dan Hicks.”</span> Social Epistemology Review and Reply Collective. March 16, 2022. <a href="https://social-epistemology.com/2022/03/16/youngs-p-value-plot-as-an-agnogenic-technique-dan-hicks/">https://social-epistemology.com/2022/03/16/youngs-p-value-plot-as-an-agnogenic-technique-dan-hicks/</a>.
+Hicks, Dan. 2022. <span>“Young’s P-Value Plot as an Agnogenic Technique, Dan Hicks.”</span> Social Epistemology Review and Reply Collective, March 16. <a href="https://social-epistemology.com/2022/03/16/youngs-p-value-plot-as-an-agnogenic-technique-dan-hicks/">https://social-epistemology.com/2022/03/16/youngs-p-value-plot-as-an-agnogenic-technique-dan-hicks/</a>.
 </div>
 <div id="ref-HicksValuePlotDoes2022" class="csl-entry">
 Hicks, Daniel J. 2022a. <span>“The P Value Plot Does Not Provide Evidence Against Air Pollution Hazards.”</span> <em>Environmental Epidemiology</em> 6 (2): e198. <a href="https://doi.org/10.1097/EE9.0000000000000198">https://doi.org/10.1097/EE9.0000000000000198</a>.
 </div>
 <div id="ref-HicksWhenVirtuesAre2022" class="csl-entry">
-———. 2022b. <span>“When Virtues are Vices: <span>‘Anti-Science’</span> Epistemic Values in Environmental Politics.”</span> <em>Philosophy, Theory, and Practice in Biology</em> 14 (0). <a href="https://doi.org/10.3998/.2629">https://doi.org/10.3998/.2629</a>.
+Hicks, Daniel J. 2022b. <span>“When Virtues are Vices: <span>‘Anti-Science’</span> Epistemic Values in Environmental Politics.”</span> <em>Philosophy, Theory, and Practice in Biology</em> 14 (0): 0. <a href="https://doi.org/10.3998/.2629">https://doi.org/10.3998/.2629</a>.
 </div>
 <div id="ref-HicksOpenScienceReplication2023" class="csl-entry">
-———. 2023. <span>“Open Science, the Replication Crisis, and Environmental Public Health.”</span> <em>Accountability in Research</em> 30 (1): 34–62. <a href="https://doi.org/10.1080/08989621.2021.1962713">https://doi.org/10.1080/08989621.2021.1962713</a>.
+Hicks, Daniel J. 2023. <span>“Open Science, the Replication Crisis, and Environmental Public Health.”</span> <em>Accountability in Research</em> 30 (1): 34–62. <a href="https://doi.org/10.1080/08989621.2021.1962713">https://doi.org/10.1080/08989621.2021.1962713</a>.
 </div>
 <div id="ref-ReynoldsNIHFundingCuts" class="csl-entry">
-Reynolds, Matt. n.d. <span>“NIH Funding Cuts Appear to Draw on Heritage Foundation Report That Blasts <span>‘DEI Staff’</span>.”</span> <em>Wired</em>. Accessed February 11, 2025. <a href="https://www.wired.com/story/nih-indirect-funding-cuts-heritage-foundation/">https://www.wired.com/story/nih-indirect-funding-cuts-heritage-foundation/</a>.
+Reynolds, Matt. n.d. <span>“NIH Funding Cuts Appear to Draw on Heritage Foundation Report That Blasts ‘DEI Staff’.”</span> Tags. <em>Wired</em>. Accessed February 11, 2025. <a href="https://www.wired.com/story/nih-indirect-funding-cuts-heritage-foundation/">https://www.wired.com/story/nih-indirect-funding-cuts-heritage-foundation/</a>.
 </div>
-</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2025-01-14-weaponized-metascience.html</guid>
   <pubDate>Fri, 14 Feb 2025 08:00:00 GMT</pubDate>
 </item>
@@ -1875,13 +1875,13 @@ Reynolds, Matt. n.d. <span>“NIH Funding Cuts Appear to Draw on Heritage Founda
 
 <p>The aim of this blog post is to illustrate the ways value freedom is weaponized in defense of race science by <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span>.</p>
 <p>Following the definitions in <span class="citation" data-cites="HicksRaceScienceMainstream2024">Hicks and Lobato (2024)</span>, I understand <em>scientific racism</em> as the social practice of purporting to justify racial inequality and colonialism by appealing to the epistemic authority of science. And <em>race science</em> refers to scientific and/or pseudoscientific research, including research products (journal articles, etc.), that can be utilized for scientific racism.</p>
-<p><span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> is one of a pair of articles replying to <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span>. <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span> offer a critique of <em>racial hereditarianism research</em> (RHR), which they characterize as research products that</p>
+<p><span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> is one of a pair of articles replying to <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird et al. (2024)</span>. <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird et al. (2024)</span> offer a critique of <em>racial hereditarianism research</em> (RHR), which they characterize as research products that</p>
 <blockquote class="blockquote">
 <p>claim that folk racial classifications are biologically meaningful categories and that racial differences in intelligence test scores, educational attainment, income, and crime partly or even primarily originate from genetic differences between races. (497)</p>
 </blockquote>
 <p>I understand RHR as a specific line of race science.</p>
 <p>A real paper would give more context to the exchange of papers between these two groups of authors here.</p>
-<p>I argue that <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> weaponize value-freedom in a number of ways (to be discussed below), claiming that <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span> violate value-freedom and therefore their critique of RHR/race science can be dismissed.</p>
+<p>I argue that <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> weaponize value-freedom in a number of ways (to be discussed below), claiming that <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird et al. (2024)</span> violate value-freedom and therefore their critique of RHR/race science can be dismissed.</p>
 <p>I first make some preliminary remarks on value-freedom, as I use the term here. Next I assess <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span>’s appeal to Robert Merton’s norms of science. I discuss the importance of implicature in the relationship between race science and scientific racism, and conclude by reflecting on the way a “value freedom tu quoque” are used to deflect charges of violating value freedom.</p>
 <section id="value-freedom" class="level1">
 <h1>Value freedom</h1>
@@ -1889,15 +1889,15 @@ Reynolds, Matt. n.d. <span>“NIH Funding Cuts Appear to Draw on Heritage Founda
 <p>These ideas — VFI, the research/application distinction, and motivations in general — are related, but logically distinct. <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> do not appeal to VFI, in the strict sense; but they do appeal to a cluster of related ideas, that can be usefully grouped under the general heading of “value freedom.”</p>
 <p>The research/application distinction can be seen in the way <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> respond to the argument that the Buffalo mass shooter’s cited race science research in his manifesto. They argue that this critique is “somewhat like demanding that chemistry be outlawed and its practitioners smeared as having blood on their hands, just because some terrorists use chemistry to make poisons or explosives that kill people” (2).<sup>1</sup> Later, they provide quotations from earlier papers that recognize “that more must be done to avoid politicized misuse of socially salient research” because “a tendency for some of our ideas to be misappropriated by highly politically motivated individuals online,” and so “we have failed to make sufficient efforts to clearly disconnect our work from political ideologies” (4). In the immediately following paragraph, they complain that “despite this apparent candor and restraint, such researchers somehow still are cast as shouldering responsibility whenever some disturbed individual misappropriates some of their ideas” (4).</p>
 <p>In these passages, <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> separate race science research from its (harmful) downstream application. The chemical weapons analogy and the final quotation from page 4 claim that race scientists are not responsible for these applications. The “failed to make sufficient efforts” quotation accepts responsibility — but apparently only for insufficient value freedom <em>within</em> their research. Their responsibility does not extend to the distinct act of “misappropriat[ion].”<sup>2</sup></p>
-<p>Near the end of §3, <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> claim that “BJ&amp;W’s real motivation is their political ideology … rather than any balanced appraisal of the costs and benefits to society of” race science (3). From here, they assert that race science is opposed because it “contradict[s] the sacred values of political groups,” evoke the Lysenko affair, claim that “the radical left” does not distinguish between “RHR, genetics, evolutionary psychology, eugenics, systemic racism and sexism, IQ testing, and, indeed, Mertonian norms of science themselves,” and conclude that <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span>’s policy proposals would lead down a slippery slope to broad censorship (4-5). This line of thought alleges that <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span> are violating value freedom, but not (merely) in the “core” stage of gathering evidence and evaluating hypotheses, i.e., within the scope of VFI. The violation appears to be either holding left-wing values itself or — to be charitable to <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> — perhaps using left-wing values as premises in policy arguments.</p>
+<p>Near the end of §3, <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> claim that “BJ&amp;W’s real motivation is their political ideology … rather than any balanced appraisal of the costs and benefits to society of” race science (3). From here, they assert that race science is opposed because it “contradict[s] the sacred values of political groups,” evoke the Lysenko affair, claim that “the radical left” does not distinguish between “RHR, genetics, evolutionary psychology, eugenics, systemic racism and sexism, IQ testing, and, indeed, Mertonian norms of science themselves,” and conclude that <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird et al. (2024)</span>’s policy proposals would lead down a slippery slope to broad censorship (4-5). This line of thought alleges that <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird et al. (2024)</span> are violating value freedom, but not (merely) in the “core” stage of gathering evidence and evaluating hypotheses, i.e., within the scope of VFI. The violation appears to be either holding left-wing values itself or — to be charitable to <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> — perhaps using left-wing values as premises in policy arguments.</p>
 </section>
 <section id="mertonian-and-anti-mertonian-norms" class="level1">
 <h1>Mertonian and Anti-Mertonian Norms</h1>
-<p>The title and §1 claim that <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span> are proposing to replace the “Mertonian norms” — the “ethos of science” described by sociologist Robert Merton — with a set of “anti-Mertonian norms.”</p>
-<p>If this were a real paper, I would summarize the “anti-Mertonian norms” here. I would also note that <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> misquote <span class="citation" data-cites="MertonNoteScienceDemocracy1942">Robert K. Merton (1942)</span> (121), renaming the norm of communism as “communality.”</p>
-<p>The appeal to Merton to defend value freedom is ironic, because Merton presented the “ethos of science” as an explicitly ideological argument against fascism — especially in Germany, and especially race science — and for liberal democracy <span class="citation" data-cites="MertonScienceSocialOrder1938 MertonNoteScienceDemocracy1942">(Robert K. Merton 1938; Robert K. Merton 1942)</span>.<sup>3</sup></p>
+<p>The title and §1 claim that <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird et al. (2024)</span> are proposing to replace the “Mertonian norms” — the “ethos of science” described by sociologist Robert Merton — with a set of “anti-Mertonian norms.”</p>
+<p>If this were a real paper, I would summarize the “anti-Mertonian norms” here. I would also note that <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> misquote <span class="citation" data-cites="MertonNoteScienceDemocracy1942">Merton (1942)</span> (121), renaming the norm of communism as “communality.”</p>
+<p>The appeal to Merton to defend value freedom is ironic, because Merton presented the “ethos of science” as an explicitly ideological argument against fascism — especially in Germany, and especially race science — and for liberal democracy <span class="citation" data-cites="MertonScienceSocialOrder1938 MertonNoteScienceDemocracy1942">(Merton 1938; Merton 1942)</span>.<sup>3</sup></p>
 <p><span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> cite <span class="citation" data-cites="MitroffNormsCounterNormsSelect1974">Mitroff (1974)</span> as a reference for the concept of “anti-norms” (Mitroff’s term is “counter-norms”) but miss the significance of not only Mitroff’s paper but also Merton’s later work on norms of science as summarized on the first few pages of Mitroff’s paper. In Merton’s later work, in any complex social practice such as science, the “dominant [norms] alone would not be flexible enough to provide for the endlessly varying contingencies of social relations” <span class="citation" data-cites="MitroffNormsCounterNormsSelect1974">(Merton and Barber as quoted by Mitroff 1974, 579)</span>. Contrasting, “subsidiary counter-norms” develop to enable this necessary flexibility. For example, sociologists and philosophers — including Merton himself — have long recognized that, along with and in contrast to communism, scientists are often motivated by self-interest, chasing credit and prestige, under the “priority rule” that the first to publish a significant new discovery receives all the credit for it <span class="citation" data-cites="StrevensRolePriorityRule2003">(Strevens and Journal of Philosophy, Inc. 2003)</span>.</p>
-<p>In this light, even as characterized by <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span>, the “counter-norms” proposed by <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span> can be seen as giving useful flexibility to an excessively narrow reading of Merton’s norms:</p>
+<p>In this light, even as characterized by <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span>, the “counter-norms” proposed by <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird et al. (2024)</span> can be seen as giving useful flexibility to an excessively narrow reading of Merton’s norms:</p>
 <ul>
 <li><em>secrecy</em> recognizes that some scientific evidence or even findings are too sensitive and potentially dangerous to publish (locations of endangered species that might be targeted by poachers; Indigenous sacred sites that also carry Traditional Ecological Knowledge; instructions for producing weapons of mass destruction)</li>
 <li><em>particularism</em> recognizes that the work of scientific bad actors should receive, at a minimum, heightened scrutiny (individuals who have committed serious research misconduct; cranks who refuse to respect the uptake norm requiring response to criticism)</li>
@@ -1905,11 +1905,11 @@ Reynolds, Matt. n.d. <span>“NIH Funding Cuts Appear to Draw on Heritage Founda
 <li><em>organized dogmatism</em> designates certain questions as so thoroughly studied and rival research programs so degenerate <span class="citation" data-cites="LakatosFalsificationMethodologyScientific2004">(Lakatos 2004)</span> that there is no expected value in continuing to regard those questions as open and those rival research programs as pursuitworthy (anthropogenic climate change)</li>
 </ul>
 <p>In other words, taking the Mertonian norms as the exclusive norms for a scientific community would be corrosive, as it would leave the community vulnerable to cranks, fraudsters, and merchants of doubt.</p>
-<p>Both Merton’s norms and the “<span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span> counter-norms” require the exercise of judgment. When exactly does a norm apply, what exactly does it require or prohibit, and how should it be balanced against other, conflicting norms? Scientists are likely to disagree about such questions, and scientific communities must necessarily engage in internal politics to establish the bounds of reasonable disagreement over the answers. Both <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> and <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span> should be read as salvos in a political conflict unfolding within contemporary psychology.</p>
+<p>Both Merton’s norms and the “<span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird et al. (2024)</span> counter-norms” require the exercise of judgment. When exactly does a norm apply, what exactly does it require or prohibit, and how should it be balanced against other, conflicting norms? Scientists are likely to disagree about such questions, and scientific communities must necessarily engage in internal politics to establish the bounds of reasonable disagreement over the answers. Both <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> and <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird et al. (2024)</span> should be read as salvos in a political conflict unfolding within contemporary psychology.</p>
 </section>
 <section id="implicature-and-the-denial-of-responsibility" class="level1">
 <h1>Implicature and the Denial of Responsibility</h1>
-<p>The concept of implicature was developed by the philosopher of language Paul Grice to characterize the way in which language often communicates meaning beyond its explicit content and strict deductive entailments. An example comes from §1 of <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> itself. At no point do <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> say explicitly that the “anti-Mertonian norms” they attribute to <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span> will be corrosive, destructive, or otherwise bad. Instead, they argue that the Mertonian norms “embody centuries of research experience, and reflect a long-established consensus among academic scientists about ways of doing research that tend to promote the highest rate of scientific progress” (2). Taken literally, this argument does not entail anything whatsoever about the “anti-Mertonian norms”; strictly speaking, it is logically irrelevant to the latter norms. But the implicature is that the latter norms will tradition, reject consensus, and will frustrate rather than promote scientific progress.<sup>4</sup></p>
+<p>The concept of implicature was developed by the philosopher of language Paul Grice to characterize the way in which language often communicates meaning beyond its explicit content and strict deductive entailments. An example comes from §1 of <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> itself. At no point do <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> say explicitly that the “anti-Mertonian norms” they attribute to <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird et al. (2024)</span> will be corrosive, destructive, or otherwise bad. Instead, they argue that the Mertonian norms “embody centuries of research experience, and reflect a long-established consensus among academic scientists about ways of doing research that tend to promote the highest rate of scientific progress” (2). Taken literally, this argument does not entail anything whatsoever about the “anti-Mertonian norms”; strictly speaking, it is logically irrelevant to the latter norms. But the implicature is that the latter norms will tradition, reject consensus, and will frustrate rather than promote scientific progress.<sup>4</sup></p>
 <p>Implicature is crucial to the phenomenon of racial dogwhistles. Phrases like “wolf pack” and “welfare mothers” do not explicitly refer or deductively entail anything about African Americans, and thus allow their users to deflect charges of racism. But in the US political context these phrases readily communicate pernicious stereotypes that young Black men are dangerous, subhuman criminals and Black women are lazy abusers of the social safety net.</p>
 <p>Implicature is context-dependent. These particular racial dogwhistles are likely to be less effective outside the US.</p>
 <p>Implicature can also be independent of the speaker’s communicative intent. Someone can invoke racial stereotypes without realizing they are doing so, and indeed even when they would explicitly reject these stereotypes.</p>
@@ -1917,15 +1917,15 @@ Reynolds, Matt. n.d. <span>“NIH Funding Cuts Appear to Draw on Heritage Founda
 <p>The idea of “misuse” or “misappropriation” is crucial to the way <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> deny responsibility for scientific racist use of race science research, as in their responses to the Buffalo shooter manifesto. “Misuse” appears six times in the five-page paper, and “misappropriation” three times (all on page 4).</p>
 <p>But implicature significantly complicates the idea of “misuse” or “misappropriation” of scientific research. Because implicature extends beyond the speaker’s intention, a simplistic conception of misuse — in terms of how a researcher intended their research to be used — is inapt, and provides the same rhetorical cover that dogwhistles provide race-baiting politicians and “just asking questions” provides conspiracy theorists.<sup>5</sup> A more robust approach might come from the law of torts, and the notion of “reasonable foresight,” that is, whether a “reasonable scientist” could have foreseen this application of their research and its consequences <span class="citation" data-cites="DouglasSciencePolicyValuefree2009">(Douglas 2009 ch.&nbsp;4)</span>. As with norms and counter-norms, the bounds of what counts as a “reasonable scientist” and what they can foresee are necessarily a political issue.</p>
 <p>Again, implicatures are context-dependent, and <span class="citation" data-cites="KitcherArgumentFreeInquiry1997">Kitcher (1997)</span> identified some key features of contemporary Anglophone societies that support scientific racist implicatures. Briefly, these features are asymmetries in the uptake of racial differences research: research that supports scientific racism will be taken up and the degree of support exaggerated, while research that challenges scientific racism will be rejected (not taken up) and its degree of challenge downplayed.</p>
-<p><span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> claim that <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span>’s proposals would “backfire” with three kinds of “unintended consequences” (3): blocking research that uncovers evidence supporting “racial environmentalist hypotheses”; blocking research that challenges views that circulate among white nationalists,<sup>6</sup> and third, these proposals “would also apply very broadly to all of ‘mainstream human genetics’” (4).</p>
+<p><span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> claim that <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird et al. (2024)</span>’s proposals would “backfire” with three kinds of “unintended consequences” (3): blocking research that uncovers evidence supporting “racial environmentalist hypotheses”; blocking research that challenges views that circulate among white nationalists,<sup>6</sup> and third, these proposals “would also apply very broadly to all of ‘mainstream human genetics’” (4).</p>
 <p>The first two unintended consequences founder on Kitcher’s asymmetries. Insofar as they obtain, both kinds of research would tend to be rejected and their degree of challenge to scientific racism downplayed.</p>
 <p>In addition, both kinds of research carry scientific racist implicatures, namely, that it is an open and scientifically legitimate possibility that there is a “natural” racial hierarchy based on differences in “innate” ability. Even research that is intended to undermine racial hierarchy, is expected to produce evidence challenging scientific racism, and actually does produce such evidence, assumes that the question of “natural” racial hierarchy remains unanswered.</p>
 </section>
 <section id="weaponizing-value-freedom-to-deflect-charges-of-violating-value-freedom" class="level1">
 <h1>Weaponizing value freedom to deflect charges of violating value freedom</h1>
-<p>A core element of <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span>’s critique is that race science promotes the pernicious and morally noxious worldview of scientific racism. This critique does not need to assume value freedom: one can regard scientific racism as pernicious and morally noxious without assume that science should be, in some general sense or another, value free. But it can be read through the lens of value freedom: race science promotes non-neutral values and therefore race science should be avoided. <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span> occasionally use something like this framing: “we dispute claims of ‘value neutrality’ for this research” (498); “These conclusions are not value-free or ideologically neutral” (499).</p>
-<p>A major thread of <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span>’s reply is a tu quoque that <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span> have violated value freedom, in the ways discussed above. This argument strategy has a long history in responses to critiques that science promotes racism, sexism, or other forms of injustice. In the “science wars” of the 1990s it was used against feminist critiques of sexist science <span class="citation" data-cites="LloydObjectivityDoubleStandard1995 LloydScienceAntiScienceObjectivity1997">(E. A. Lloyd 1995; E. Lloyd 1997)</span>. It is deployed today in rants that claim DEI initiatives undermine “merit in science.”</p>
-<p>Such arguments are often logically irrelevant, in two ways. First, they do not provide any reason or evidence to think that race scientists have not violated value freedom. Even if we accept that <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird, Jackson Jr., and Winston (2024)</span> violated value freedom, this does not give us a reason to think that, say, Richard Lynn did not violate value freedom. Second, these arguments are often made against interlocutors who do not accept value freedom, do think that science should necessarily be value free. (The difference between rejecting race science on the basis of value freedom and rejecting it on the basis of antiracist values.) So the tu quoque does not show that the interlocutor is being inconsistent or hypocritical, endorsing a principle while also violating it.</p>
+<p>A core element of <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird et al. (2024)</span>’s critique is that race science promotes the pernicious and morally noxious worldview of scientific racism. This critique does not need to assume value freedom: one can regard scientific racism as pernicious and morally noxious without assume that science should be, in some general sense or another, value free. But it can be read through the lens of value freedom: race science promotes non-neutral values and therefore race science should be avoided. <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird et al. (2024)</span> occasionally use something like this framing: “we dispute claims of ‘value neutrality’ for this research” (498); “These conclusions are not value-free or ideologically neutral” (499).</p>
+<p>A major thread of <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span>’s reply is a tu quoque that <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird et al. (2024)</span> have violated value freedom, in the ways discussed above. This argument strategy has a long history in responses to critiques that science promotes racism, sexism, or other forms of injustice. In the “science wars” of the 1990s it was used against feminist critiques of sexist science <span class="citation" data-cites="LloydObjectivityDoubleStandard1995 LloydScienceAntiScienceObjectivity1997">(Lloyd 1995; Lloyd 1997)</span>. It is deployed today in rants that claim DEI initiatives undermine “merit in science.”</p>
+<p>Such arguments are often logically irrelevant, in two ways. First, they do not provide any reason or evidence to think that race scientists have not violated value freedom. Even if we accept that <span class="citation" data-cites="BirdConfrontingScientificRacism2024">Bird et al. (2024)</span> violated value freedom, this does not give us a reason to think that, say, Richard Lynn did not violate value freedom. Second, these arguments are often made against interlocutors who do not accept value freedom, do think that science should necessarily be value free. (The difference between rejecting race science on the basis of value freedom and rejecting it on the basis of antiracist values.) So the tu quoque does not show that the interlocutor is being inconsistent or hypocritical, endorsing a principle while also violating it.</p>
 <p>These arguments often have other problems, like the ones I’ve identified here: based on a superficial misreading of source material, applied inconsistently or without thinking through the logical implications of a position, and so on.</p>
 <p>Nonetheless, these arguments can be rhetorically effective, insofar as they shift the focus of debate from race science to its critics, DARVO-style, and insofar as the audience does accept value freedom and consequently regards the critics as discredited and not worth engaging. And many scientists and members of the general public do think that science should be value free.</p>
 <p>In this sense, these arguments weaponize value freedom to deflect charges of violations of value freedom.</p>
@@ -1935,18 +1935,18 @@ Reynolds, Matt. n.d. <span>“NIH Funding Cuts Appear to Draw on Heritage Founda
 </section>
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-BirdConfrontingScientificRacism2024" class="csl-entry">
-Bird, Kevin A., John P. Jackson Jr., and Andrew S. Winston. 2024. <span>“Confronting Scientific Racism in Psychology: Lessons from Evolutionary Biology and Genetics.”</span> <em>American Psychologist</em> 79 (4): 497–508. <a href="https://doi.org/10.1037/amp0001228">https://doi.org/10.1037/amp0001228</a>.
+Bird, Kevin A., John P. Jackson Jr., and Andrew S. Winston. 2024. <span>“Confronting Scientific Racism in Psychology: Lessons from Evolutionary Biology and Genetics.”</span> <em>American Psychologist</em> (US) 79 (4): 497–508. <a href="https://doi.org/10.1037/amp0001228">https://doi.org/10.1037/amp0001228</a>.
 </div>
 <div id="ref-DouglasSciencePolicyValuefree2009" class="csl-entry">
-Douglas, Heather E. 2009. <em>Science, Policy, and the Value-Free Ideal</em>. Pittsburgh, Pa: University of Pittsburgh Press.
+Douglas, Heather E. 2009. <em>Science, Policy, and the Value-Free Ideal</em>. University of Pittsburgh Press.
 </div>
 <div id="ref-HavstadSensationalScienceArchaic2021" class="csl-entry">
-Havstad, Joyce C. 2021. <span>“Sensational Science, Archaic Hominin Genetics, and Amplified Inductive Risk.”</span> <em>Canadian Journal of Philosophy</em>, July, 1–26. <a href="https://doi.org/10.1017/can.2021.15">https://doi.org/10.1017/can.2021.15</a>.
+Havstad, Joyce C. 2021. <span>“Sensational Science, Archaic Hominin Genetics, and Amplified Inductive Risk.”</span> <em>Canadian Journal of Philosophy</em>, July 22, 1–26. <a href="https://doi.org/10.1017/can.2021.15">https://doi.org/10.1017/can.2021.15</a>.
 </div>
 <div id="ref-HicksRaceScienceMainstream2024" class="csl-entry">
-Hicks, Daniel, and Emilio Jon Christopher Lobato. 2024. <span>“Race Science in Mainstream Psychology, 1960-2010.”</span> OSF. <a href="https://doi.org/10.31234/osf.io/y8hr3">https://doi.org/10.31234/osf.io/y8hr3</a>.
+Hicks, Daniel, and Emilio Jon Christopher Lobato. 2024. <span>“Race Science in Mainstream Psychology, 1960-2010.”</span> Preprint, OSF, August 8. <a href="https://doi.org/10.31234/osf.io/y8hr3">https://doi.org/10.31234/osf.io/y8hr3</a>.
 </div>
 <div id="ref-KitcherArgumentFreeInquiry1997" class="csl-entry">
 Kitcher, Philip. 1997. <span>“An Argument About Free Inquiry.”</span> <em>Noûs</em> 31 (3): 279–306. <a href="https://www.jstor.org/stable/2216207">https://www.jstor.org/stable/2216207</a>.
@@ -1967,7 +1967,7 @@ Merton, Robert K. 1938. <span>“Science and the Social Order.”</span> <em>Phi
 Merton, Robert K. 1942. <span>“A Note on Science and Democracy.”</span> <em>Journal of Legal and Political Sociology</em> 1: 115. <a href="http://heinonline.org/HOL/Page?handle=hein.journals/jolegpo1&amp;id=115&amp;div=10&amp;collection=usjournals">http://heinonline.org/HOL/Page?handle=hein.journals/jolegpo1&amp;id=115&amp;div=10&amp;collection=usjournals</a>.
 </div>
 <div id="ref-MeyerWrestlingSocialBehavioral2023" class="csl-entry">
-Meyer, Michelle N., Paul S. Appelbaum, Daniel J. Benjamin, Shawneequa L. Callier, Nathaniel Comfort, Dalton Conley, Jeremy Freese, et al. 2023. <span>“Wrestling with Social and Behavioral Genomics: Risks, Potential Benefits, and Ethical Responsibility.”</span> <em>Hastings Center Report</em> 53 (S1): S2–49. <a href="https://doi.org/10.1002/hast.1477">https://doi.org/10.1002/hast.1477</a>.
+Meyer, Michelle N., Paul S. Appelbaum, Daniel J. Benjamin, et al. 2023. <span>“Wrestling with Social and Behavioral Genomics: Risks, Potential Benefits, and Ethical Responsibility.”</span> <em>Hastings Center Report</em> 53 (S1): S2–49. <a href="https://doi.org/10.1002/hast.1477">https://doi.org/10.1002/hast.1477</a>.
 </div>
 <div id="ref-MitroffNormsCounterNormsSelect1974" class="csl-entry">
 Mitroff, Ian I. 1974. <span>“Norms and Counter-Norms in a Select Group of the Apollo Moon Scientists: A Case Study of the Ambivalence of Scientists.”</span> <em>American Sociological Review</em> 39 (4): 579–95. <a href="http://www.jstor.org/stable/2094423">http://www.jstor.org/stable/2094423</a>.
@@ -1976,10 +1976,10 @@ Mitroff, Ian I. 1974. <span>“Norms and Counter-Norms in a Select Group of the 
 Strevens, Michael, and Journal of Philosophy, Inc. 2003. <span>“The Role of the Priority Rule in Science:”</span> <em>Journal of Philosophy</em> 100 (2): 55–79. <a href="https://doi.org/10.5840/jphil2003100224">https://doi.org/10.5840/jphil2003100224</a>.
 </div>
 <div id="ref-WillsAreClustersRaces2017" class="csl-entry">
-Wills, Melissa. 2017. <span>“Are Clusters Races? A Discussion of the Rhetorical Appropriation of Rosenberg Et Al.’s <span>‘Genetic Structure of Human Populations’</span>.”</span> <em>Philosophy &amp; Theory in Biology</em> 9. <a href="https://doi.org/10.3998/ptb.6959004.0009.012">https://doi.org/10.3998/ptb.6959004.0009.012</a>.
+Wills, Melissa. 2017. <span>“Are Clusters Races? A Discussion of the Rhetorical Appropriation of Rosenberg Et Al.’s “Genetic Structure of Human Populations”.”</span> <em>Philosophy &amp; Theory in Biology</em> 9. <a href="https://doi.org/10.3998/ptb.6959004.0009.012">https://doi.org/10.3998/ptb.6959004.0009.012</a>.
 </div>
 <div id="ref-WoodleyOfMenieAntiMertonianNormsUndermine2025" class="csl-entry">
-Woodley Of Menie, Michael A., Mateo Peñaherrera-Aguirre, Aurelio-José Figueredo, Geoffrey F. Miller, Thomas R. Coyle, Noah Carl, Fróði Debes, et al. 2025. <span>“Anti-Mertonian Norms Undermine the Scientific Ethos: A Critique of Bird, Jackson Jr., and Winston’s Policy Proposals and Associated Justification.”</span> <em>Intelligence</em> 108 (January): 101879. <a href="https://doi.org/10.1016/j.intell.2024.101879">https://doi.org/10.1016/j.intell.2024.101879</a>.
+Woodley Of Menie, Michael A., Mateo Peñaherrera-Aguirre, Aurelio-José Figueredo, et al. 2025. <span>“Anti-Mertonian Norms Undermine the Scientific Ethos: A Critique of Bird, Jackson Jr., and Winston’s Policy Proposals and Associated Justification.”</span> <em>Intelligence</em> 108 (January): 101879. <a href="https://doi.org/10.1016/j.intell.2024.101879">https://doi.org/10.1016/j.intell.2024.101879</a>.
 </div>
 </div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
@@ -1988,10 +1988,10 @@ Woodley Of Menie, Michael A., Mateo Peñaherrera-Aguirre, Aurelio-José Figuered
 <li id="fn2"><p>This distinction — and the consequent denial of responsibility for application — is applied inconsistently. Shortly after the chemical weapons analogy, <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> offer a second, tu quoque reply: “BJ&amp;W do not discuss cases in which left-wing scholarship, beliefs, and research may have influenced violent criminals” (2).↩︎</p></li>
 <li id="fn3"><p>It’s an interesting question whether Merton ever said anything about the Lysenko affair, which peaked starting in 1948.↩︎</p></li>
 <li id="fn4"><p>Note the irony that <span class="citation" data-cites="WoodleyOfMenieAntiMertonianNormsUndermine2025">Woodley Of Menie et al. (2025)</span> are attempting to challenge “organized dogmatism” by appeal to tradition and consensus, and defend universalism by appeal to the judgment of the select group of “academic scientists.”↩︎</p></li>
-<li id="fn5"><p>“RHR proponents often assert that no racial inferiority is implied by claims of evolved smaller brains, lower intelligence, and greater propensity for violence in people of African descent, and therefore such claims are not ‘racist’ (see Carl, 2019, p.&nbsp;271; Gottfredson, 2013)” <span class="citation" data-cites="BirdConfrontingScientificRacism2024">(Bird, Jackson Jr., and Winston 2024, 505)</span>.↩︎</p></li>
+<li id="fn5"><p>“RHR proponents often assert that no racial inferiority is implied by claims of evolved smaller brains, lower intelligence, and greater propensity for violence in people of African descent, and therefore such claims are not ‘racist’ (see Carl, 2019, p.&nbsp;271; Gottfredson, 2013)” <span class="citation" data-cites="BirdConfrontingScientificRacism2024">(Bird et al. 2024, 505)</span>.↩︎</p></li>
 <li id="fn6"><p>The example given is evidence that Ashkenazi Jews have a greater average IQ than non-Jewish individuals of European descent and that this purportedly explains the “disproportionate Jewish influence in politics, finance, science, and media” (3).↩︎</p></li>
 </ol>
-</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2024-12-22-weaponizing-value-freedom.html</guid>
   <pubDate>Sat, 21 Dec 2024 08:00:00 GMT</pubDate>
 </item>
@@ -2039,7 +2039,7 @@ Woodley Of Menie, Michael A., Mateo Peñaherrera-Aguirre, Aurelio-José Figuered
 <li id="fn1"><p>A couple years ago, I switched to primarily effort-based grading, and generally only give two grades, A or B.↩︎</p></li>
 <li id="fn2"><p>“Right, like they’d actually do the reading.” I might need to write a post about this sometime, but I run my upper-division courses off of slides that students create before class meets. This has been very effective at getting them to do the reading.↩︎</p></li>
 </ol>
-</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2024-12-17-LLMs.html</guid>
   <pubDate>Tue, 17 Dec 2024 08:00:00 GMT</pubDate>
 </item>
@@ -2062,7 +2062,7 @@ Woodley Of Menie, Michael A., Mateo Peñaherrera-Aguirre, Aurelio-José Figuered
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2024-11-08-fire-ecology.html</guid>
   <pubDate>Fri, 08 Nov 2024 08:00:00 GMT</pubDate>
 </item>
@@ -2090,7 +2090,7 @@ Woodley Of Menie, Michael A., Mateo Peñaherrera-Aguirre, Aurelio-José Figuered
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2024-10-04-writing-sketching.html</guid>
   <pubDate>Fri, 04 Oct 2024 07:00:00 GMT</pubDate>
 </item>
@@ -2118,7 +2118,7 @@ Woodley Of Menie, Michael A., Mateo Peñaherrera-Aguirre, Aurelio-José Figuered
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2024-07-14-seal-team-6.html</guid>
   <pubDate>Mon, 15 Jul 2024 07:00:00 GMT</pubDate>
 </item>
@@ -2168,7 +2168,7 @@ Note
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2024-07-14-undermine-democracy.html</guid>
   <pubDate>Sun, 14 Jul 2024 07:00:00 GMT</pubDate>
 </item>
@@ -2191,7 +2191,7 @@ Note
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2024-04-05-dewey-center-talk.html</guid>
   <pubDate>Fri, 05 Apr 2024 07:00:00 GMT</pubDate>
 </item>
@@ -2239,12 +2239,12 @@ Note
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-AlmassiRelationallyResponsiveExpert2022" class="csl-entry">
 Almassi, Ben. 2022. <span>“Relationally Responsive Expert Trustworthiness.”</span> <em>Social Epistemology</em> 36 (5): 576–85. <a href="https://doi.org/10.1080/02691728.2022.2103475">https://doi.org/10.1080/02691728.2022.2103475</a>.
 </div>
 <div id="ref-GrundmannFacingEpistemicAuthorities2021" class="csl-entry">
-Grundmann, Thomas. 2021. <span>“Facing Epistemic Authorities: Where Democratic Ideals and Critical Thinking Mislead Cognition.”</span> In <em>The Epistemology of Fake News</em>, edited by Sven Bernecker, Amy K. Flowerree, and Thomas Grundmann, 0. Oxford University Press. <a href="https://doi.org/10.1093/oso/9780198863977.003.0007">https://doi.org/10.1093/oso/9780198863977.003.0007</a>.
+Grundmann, Thomas. 2021. <span>“Facing Epistemic Authorities: Where Democratic Ideals and Critical Thinking Mislead Cognition.”</span> In <em>The Epistemology of Fake News</em>, edited by Sven Bernecker, Amy K. Flowerree, and Thomas Grundmann. Oxford University Press. <a href="https://doi.org/10.1093/oso/9780198863977.003.0007">https://doi.org/10.1093/oso/9780198863977.003.0007</a>.
 </div>
 </div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
@@ -2254,7 +2254,7 @@ Grundmann, Thomas. 2021. <span>“Facing Epistemic Authorities: Where Democratic
 <li id="fn3"><p>I’ve also spent a lot of time the last 2-1/2 year working on a project on race science, which might make me oversensitive to the possibility that ideas of innate general intelligence are waiting just offstage.↩︎</p></li>
 <li id="fn4"><p>I think the “epistemic injustice” literature is often trying to do this, which is probably why I don’t find that literature particularly engaging either.↩︎</p></li>
 </ol>
-</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2023-11-12-epistemic-interdependence.html</guid>
   <pubDate>Sun, 12 Nov 2023 08:00:00 GMT</pubDate>
 </item>
@@ -2332,7 +2332,7 @@ Note
 <p>Students were pretty thoughtful about the implications. We talked about how faculty are experts, and can instantly recognize manufactured citations in our areas of expertise. Students were a little uncertain about how to regard the citations that actually existed. Some felt these were reliable, but others made the inference that you’d have to actually go and read the paper itself to figure out whether it made the claims ChatGPT was attributing to it. In their one-minute papers, lots of students indicated that they no longer trust ChatGPT as a source of information.</p>
 <p>All together, this activity went really well: students were very engaged, and came away with a healthy skepticism of LLMs. Next time, I might make the spreadsheet-filling itself homework rather than an in-class activity. Specifically, I might devote the last 15-20 minutes of the previous session to getting student started on filling in the spreadsheet, then have them complete it (for two different prompts) before the next session. Then, in “the ChatGPT session proper,” we’d start with 10 minutes or so on any tricky references, and have about an hour for the reflective discussion. This would give us lots of time to unpack Chinag’s essay and relate it to the results of the fact check.</p>
 <hr>
-<p>Coincidentally, this morning <em>Nature</em> published a very nice Perspective piece that proposes two non-anthropomorphic conceptual frameworks for thinking about the behavior of LLMs <span class="citation" data-cites="ShanahanRolePlayLarge2023">(Shanahan, McDonell, and Reynolds 2023)</span>. Their second framework is a bit technical for the typical first-year undergrad. But the first framework is very accessible: LLMs as role-playing, or specifically as actors in an improv show.</p>
+<p>Coincidentally, this morning <em>Nature</em> published a very nice Perspective piece that proposes two non-anthropomorphic conceptual frameworks for thinking about the behavior of LLMs <span class="citation" data-cites="ShanahanRolePlayLarge2023">(Shanahan et al. 2023)</span>. Their second framework is a bit technical for the typical first-year undergrad. But the first framework is very accessible: LLMs as role-playing, or specifically as actors in an improv show.</p>
 <blockquote class="blockquote">
 <p>If the model has generalized well from the training data, the most plausible continuation [of the prompt text] will be a response to the user that conforms to the expectations we would have of someone who fits the description in the preamble. In other words, the dialogue agent will do its best to role-play the character of a dialogue agent as portrayed in the dialogue prompt ….</p>
 </blockquote>
@@ -2344,11 +2344,11 @@ Note
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-ShanahanRolePlayLarge2023" class="csl-entry">
-Shanahan, Murray, Kyle McDonell, and Laria Reynolds. 2023. <span>“Role Play with Large Language Models.”</span> <em>Nature</em>, November, 1–6. <a href="https://doi.org/10.1038/s41586-023-06647-8">https://doi.org/10.1038/s41586-023-06647-8</a>.
+Shanahan, Murray, Kyle McDonell, and Laria Reynolds. 2023. <span>“Role Play with Large Language Models.”</span> <em>Nature</em>, November 8, 1–6. <a href="https://doi.org/10.1038/s41586-023-06647-8">https://doi.org/10.1038/s41586-023-06647-8</a>.
 </div>
-</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2023-11-10-ChatGPT.html</guid>
   <pubDate>Fri, 10 Nov 2023 08:00:00 GMT</pubDate>
 </item>
@@ -2394,11 +2394,11 @@ On the topic in question, the expert is likely to have true beliefs.
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-AlmassiRelationallyResponsiveExpert2022" class="csl-entry">
 Almassi, Ben. 2022. <span>“Relationally Responsive Expert Trustworthiness.”</span> <em>Social Epistemology</em> 36 (5): 576–85. <a href="https://doi.org/10.1080/02691728.2022.2103475">https://doi.org/10.1080/02691728.2022.2103475</a>.
 </div>
-</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2023-09-25-teaching-expertise.html</guid>
   <pubDate>Mon, 25 Sep 2023 07:00:00 GMT</pubDate>
 </item>
@@ -2449,12 +2449,12 @@ Influencing how interests are recognized and understood. In terms of Brown’s D
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-BrownScienceMoralImagination2020" class="csl-entry">
 Brown, Matthew. 2020. <em>Science and Moral Imagination: A New Ideal for Values in Science</em>. University of Pittsburgh Press.
 </div>
 <div id="ref-EpsteinImpureScience1996" class="csl-entry">
-Epstein, Steven. 1996. <em>Impure Science</em>. AIDS, Activism, and the Politics of Knowledge. Berkeley, Los Angeles, and Oxford: University of California Press. <a href="http://books.google.ca/books?id=kZOso0FMsrMC&amp;pg=PA39&amp;dq=intitle:Impure+Science+inauthor:epstein&amp;hl=&amp;cd=1&amp;source=gbs_api">http://books.google.ca/books?id=kZOso0FMsrMC&amp;pg=PA39&amp;dq=intitle:Impure+Science+inauthor:epstein&amp;hl=&amp;cd=1&amp;source=gbs_api</a>.
+Epstein, Steven. 1996. <em>Impure Science</em>. AIDS, Activism, and the Politics of Knowledge. University of California Press. <a href="http://books.google.ca/books?id=kZOso0FMsrMC&amp;pg=PA39&amp;dq=intitle:Impure+Science+inauthor:epstein&amp;hl=&amp;cd=1&amp;source=gbs_api">http://books.google.ca/books?id=kZOso0FMsrMC&amp;pg=PA39&amp;dq=intitle:Impure+Science+inauthor:epstein&amp;hl=&amp;cd=1&amp;source=gbs_api</a>.
 </div>
 <div id="ref-FrickelUndoneScienceCharting2010" class="csl-entry">
 Frickel, S., S. Gibbon, J. Howard, J. Kempner, G. Ottinger, and D. J. Hess. 2010. <span>“Undone Science: Charting Social Movement and Civil Society Challenges to Research Agenda Setting.”</span> <em>Science, Technology &amp; Human Values</em> 35 (4): 444–73. <a href="https://doi.org/10.1177/0162243909345836">https://doi.org/10.1177/0162243909345836</a>.
@@ -2463,19 +2463,19 @@ Frickel, S., S. Gibbon, J. Howard, J. Kempner, G. Ottinger, and D. J. Hess. 2010
 Hicks, Daniel J. 2017. <span>“Genetically Modified Crops, Inclusion, and Democracy.”</span> <em>Perspectives on Science</em> 25 (4): 488–520. <a href="https://doi.org/10.1162/POSC_a_00251">https://doi.org/10.1162/POSC_a_00251</a>.
 </div>
 <div id="ref-HicksGMOsNonhealthIssues2016" class="csl-entry">
-Hicks, Daniel J., and Roberta L. Millstein. 2016. <span>“GMOs: Non-Health Issues.”</span> In <em>Encyclopedia of Food and Agricultural Ethics</em>, edited by Paul B. Thompson and David M. Kaplan, 1–11. Springer Netherlands. <a href="https://doi.org/10.1007/978-94-007-6167-4_545-1">https://doi.org/10.1007/978-94-007-6167-4_545-1</a>.
+Hicks, Daniel J., and Roberta L. Millstein. 2016. <span>“GMOs: Non-Health Issues.”</span> In <em>Encyclopedia of Food and Agricultural Ethics</em>, edited by Paul B. Thompson and David M. Kaplan. Springer Netherlands. <a href="https://doi.org/10.1007/978-94-007-6167-4_545-1">https://doi.org/10.1007/978-94-007-6167-4_545-1</a>.
 </div>
 <div id="ref-JasanoffFifthBranchScience1998" class="csl-entry">
 Jasanoff, Sheila. 1998. <em>The Fifth Branch: Science Advisers as Policymakers</em>. Harvard University Press.
 </div>
 <div id="ref-KleinmanHoneyBeesThreat2013" class="csl-entry">
-Kleinman, Daniel Lee, and Sainath Suryanarayanan. 2013. <span>“Honey Bees Under Threat: A Political Pollinator Crisis.”</span> <em>The Guardian</em>, May 8, 2013, sec. Science. <a href="http://www.theguardian.com/science/political-science/2013/may/08/honey-bees-threat-political-pollinator-crisis">http://www.theguardian.com/science/political-science/2013/may/08/honey-bees-threat-political-pollinator-crisis</a>.
+Kleinman, Daniel Lee, and Sainath Suryanarayanan. 2013. <span>“Honey Bees Under Threat: A Political Pollinator Crisis.”</span> Science. <em>The Guardian</em>, May 8. <a href="http://www.theguardian.com/science/political-science/2013/may/08/honey-bees-threat-political-pollinator-crisis">http://www.theguardian.com/science/political-science/2013/may/08/honey-bees-threat-political-pollinator-crisis</a>.
 </div>
 <div id="ref-LukesPowerRadicalView2005" class="csl-entry">
 Lukes, Steven. 2005. <em>Power: A Radical View, Second Edition</em>. Palgrave Macmillan.
 </div>
 <div id="ref-MichaelsDoubtTheirProduct2008" class="csl-entry">
-Michaels, David. 2008. <em>Doubt is their product how industry’s assault on science threatens your health</em>. Oxford: Oxford Univ. Press.
+Michaels, David. 2008. <em>Doubt is their product how industry’s assault on science threatens your health</em>. Oxford Univ. Press.
 </div>
 <div id="ref-SuryanarayananVanishingBeesScience2016" class="csl-entry">
 Suryanarayanan, Sainath, and Daniel Lee Kleinman. 2016. <em>Vanishing Bees: Science, Politics, and Honeybee Health</em>. Rutgers University Press.
@@ -2483,7 +2483,7 @@ Suryanarayanan, Sainath, and Daniel Lee Kleinman. 2016. <em>Vanishing Bees: Scie
 <div id="ref-WynneSheepfarmingChernobylCase1989" class="csl-entry">
 Wynne, Brian. 1989. <span>“Sheepfarming After Chernobyl: A Case Study in Communicating Scientific Information.”</span> <em>Environment: Science and Policy for Sustainable Development</em> 31 (2): 10–39. <a href="https://doi.org/10.1080/00139157.1989.9928930">https://doi.org/10.1080/00139157.1989.9928930</a>.
 </div>
-</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2023-09-20-power.html</guid>
   <pubDate>Wed, 20 Sep 2023 07:00:00 GMT</pubDate>
 </item>
@@ -2525,11 +2525,11 @@ Wynne, Brian. 1989. <span>“Sheepfarming After Chernobyl: A Case Study in Commu
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-LewandowskyWhenScienceBecomes2022" class="csl-entry">
-Lewandowsky, Stephan, Konstantinos Armaos, Hendrik Bruns, Philipp Schmid, Dawn Liu Holford, Ulrike Hahn, Ahmed Al-Rawi, Sunita Sah, and John Cook. 2022. <span>“When Science Becomes Embroiled in Conflict: Recognizing the Public’s Need for Debate While Combating Conspiracies and Misinformation.”</span> <em>The ANNALS of the American Academy of Political and Social Science</em> 700 (1): 26–40. <a href="https://doi.org/10.1177/00027162221084663">https://doi.org/10.1177/00027162221084663</a>.
+Lewandowsky, Stephan, Konstantinos Armaos, Hendrik Bruns, et al. 2022. <span>“When Science Becomes Embroiled in Conflict: Recognizing the Public’s Need for Debate While Combating Conspiracies and Misinformation.”</span> <em>The ANNALS of the American Academy of Political and Social Science</em> 700 (1): 26–40. <a href="https://doi.org/10.1177/00027162221084663">https://doi.org/10.1177/00027162221084663</a>.
 </div>
-</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2023-09-08-misinfo.html</guid>
   <pubDate>Fri, 08 Sep 2023 07:00:00 GMT</pubDate>
 </item>
@@ -2567,9 +2567,9 @@ Lewandowsky, Stephan, Konstantinos Armaos, Hendrik Bruns, Philipp Schmid, Dawn L
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-AlcoffCommentaryElizabethAnderson2006" class="csl-entry">
-Alcoff, Linda Martín. 2006. <span>“Commentary on Elizabeth Anderson’s <span>‘Uses of Value Judgments in Science’</span>.”</span> <em>Symposia on Gender, Race and Philosophy</em> 2 (1). <a href="https://sgrponline.files.wordpress.com/2019/07/alcoff0106-1.pdf">https://sgrponline.files.wordpress.com/2019/07/alcoff0106-1.pdf</a>.
+Alcoff, Linda Martín. 2006. <span>“Commentary on Elizabeth Anderson’s “Uses of Value Judgments in Science”.”</span> <em>Symposia on Gender, Race and Philosophy</em> 2 (1). <a href="https://sgrponline.files.wordpress.com/2019/07/alcoff0106-1.pdf">https://sgrponline.files.wordpress.com/2019/07/alcoff0106-1.pdf</a>.
 </div>
 <div id="ref-DouglasDifferentiatingScientificInquiry2023" class="csl-entry">
 Douglas, Heather. 2023. <span>“Differentiating Scientific Inquiry and Politics.”</span> <em>Philosophy</em> 98 (2): 123–46. <a href="https://doi.org/10.1017/S0031819122000432">https://doi.org/10.1017/S0031819122000432</a>.
@@ -2581,31 +2581,31 @@ Downes, Stephen M., and Jonathan Michael Kaplan. 2022. <span>“Changes in Herit
 Hicks, Daniel J. 2011. <span>“Is Longino’s Conception of Objectivity Feminist?”</span> <em>Hypatia: A Journal of Feminist Philosophy</em> 26 (2): 333–51. <a href="https://doi.org/10.1111/j.1527-2001.2010.01160.x">https://doi.org/10.1111/j.1527-2001.2010.01160.x</a>.
 </div>
 <div id="ref-HicksWhenVirtuesAre2022" class="csl-entry">
-———. 2022. <span>“When Virtues are Vices: <span>‘Anti-Science’</span> Epistemic Values in Environmental Politics.”</span> <em>Philosophy, Theory, and Practice in Biology</em> 14 (0). <a href="https://doi.org/10.3998/.2629">https://doi.org/10.3998/.2629</a>.
+Hicks, Daniel J. 2022. <span>“When Virtues are Vices: <span>‘Anti-Science’</span> Epistemic Values in Environmental Politics.”</span> <em>Philosophy, Theory, and Practice in Biology</em> 14 (0): 0. <a href="https://doi.org/10.3998/.2629">https://doi.org/10.3998/.2629</a>.
 </div>
 <div id="ref-PanofskyMisbehavingScienceControversy2014" class="csl-entry">
-Panofsky, Aaron. 2014. <em>Misbehaving Science: Controversy and the Development of Behavior Genetics</em>. Chicago, IL: University of Chicago Press. <a href="https://press.uchicago.edu/ucp/books/book/chicago/M/bo16124298.html">https://press.uchicago.edu/ucp/books/book/chicago/M/bo16124298.html</a>.
+Panofsky, Aaron. 2014. <em>Misbehaving Science: Controversy and the Development of Behavior Genetics</em>. University of Chicago Press. <a href="https://press.uchicago.edu/ucp/books/book/chicago/M/bo16124298.html">https://press.uchicago.edu/ucp/books/book/chicago/M/bo16124298.html</a>.
 </div>
 <div id="ref-ReiheldGimletEyeJournal2018" class="csl-entry">
-Reiheld, Alison. 2018. <span>“A Gimlet Eye: The Journal of Controversial Ideas and Jonathan Anomaly’s <span>‘Defending Eugenics’</span> (Guest Post).”</span> Discrimination and Disadvantage. November 16, 2018. <a href="https://web.archive.org/web/20210227220754/https://philosophycommons.typepad.com/disability_and_disadvanta/2018/11/a-gimlet-eye-a-journal-of-controversial-ideas-and-jonathon-anomalys-defending-eugenics.html">https://web.archive.org/web/20210227220754/https://philosophycommons.typepad.com/disability_and_disadvanta/2018/11/a-gimlet-eye-a-journal-of-controversial-ideas-and-jonathon-anomalys-defending-eugenics.html</a>.
+Reiheld, Alison. 2018. <span>“A Gimlet Eye: The Journal of Controversial Ideas and Jonathan Anomaly’s “Defending Eugenics” (Guest Post).”</span> Discrimination and Disadvantage, November 16. <a href="https://web.archive.org/web/20210227220754/https://philosophycommons.typepad.com/disability_and_disadvanta/2018/11/a-gimlet-eye-a-journal-of-controversial-ideas-and-jonathon-anomalys-defending-eugenics.html">https://web.archive.org/web/20210227220754/https://philosophycommons.typepad.com/disability_and_disadvanta/2018/11/a-gimlet-eye-a-journal-of-controversial-ideas-and-jonathon-anomalys-defending-eugenics.html</a>.
 </div>
 <div id="ref-RobinCriticClownTale2017" class="csl-entry">
-Robin, Corey. 2017. <span>“The Critic and the Clown: A Tale of Free Speech at Berkeley.”</span> September 11, 2017. <a href="http://coreyrobin.com/2017/09/11/the-critic-and-the-clown-a-tale-of-free-speech-at-berkeley/">http://coreyrobin.com/2017/09/11/the-critic-and-the-clown-a-tale-of-free-speech-at-berkeley/</a>.
+Robin, Corey. 2017. <em>The Critic and the Clown: A Tale of Free Speech at Berkeley</em>. September 11. <a href="http://coreyrobin.com/2017/09/11/the-critic-and-the-clown-a-tale-of-free-speech-at-berkeley/">http://coreyrobin.com/2017/09/11/the-critic-and-the-clown-a-tale-of-free-speech-at-berkeley/</a>.
 </div>
 <div id="ref-RolinCanSocialDiversity2017" class="csl-entry">
-Rolin, Kristina. 2017. <span>“Can Social Diversity Be Best Incorporated into Science by Adopting the Social Value Management Ideal?”</span> In <em>Current Controversies in Values and Science</em>, edited by Kevin C. Elliott and Daniel Steel, 1 edition, 113–29. Routledge.
+Rolin, Kristina. 2017. <span>“Can Social Diversity Be Best Incorporated into Science by Adopting the Social Value Management Ideal?”</span> In <em>Current Controversies in Values and Science</em>, 1 edition, edited by Kevin C. Elliott and Daniel Steel. Routledge.
 </div>
 <div id="ref-SchroederLimitsDemocratizingScience2022" class="csl-entry">
 Schroeder, S. Andrew. 2022. <span>“The Limits of Democratizing Science: When Scientists Should Ignore the Public.”</span> <em>Philosophy of Science</em> 89 (5): 1034–43. <a href="https://doi.org/10.1017/psa.2022.54">https://doi.org/10.1017/psa.2022.54</a>.
 </div>
 <div id="ref-TaylorFreeSpeechHypocrisy2018" class="csl-entry">
-Taylor, Keeanga-Yamahtta. 2018. <span>“The <span>‘Free Speech’</span> Hypocrisy of Right-Wing Media.”</span> <em>The New York Times</em>, January 20, 2018, sec. Opinion. <a href="https://www.nytimes.com/2017/08/14/opinion/the-free-speech-hypocrisy-of-right-wing-media.html">https://www.nytimes.com/2017/08/14/opinion/the-free-speech-hypocrisy-of-right-wing-media.html</a>.
+Taylor, Keeanga-Yamahtta. 2018. <span>“The ‘Free Speech’ Hypocrisy of Right-Wing Media.”</span> Opinion. <em>The New York Times</em>, January 20. <a href="https://www.nytimes.com/2017/08/14/opinion/the-free-speech-hypocrisy-of-right-wing-media.html">https://www.nytimes.com/2017/08/14/opinion/the-free-speech-hypocrisy-of-right-wing-media.html</a>.
 </div>
 <div id="ref-TurkheimerThisTimeMean2022" class="csl-entry">
 Turkheimer, Eric. 2022. <span>“This Time I Mean It: The Nature–Nurture Debate Is Over.”</span> <em>Behavioral and Brain Sciences</em> 45 (January): e177. <a href="https://doi.org/10.1017/S0140525X21001771">https://doi.org/10.1017/S0140525X21001771</a>.
 </div>
 <div id="ref-YapFeministRadicalEmpiricism2015" class="csl-entry">
-Yap, Audrey. 2015. <span>“Feminist Radical Empiricism, Values, and Evidence.”</span> <em>Hypatia</em>, November, n/a–. <a href="https://doi.org/10.1111/hypa.12221">https://doi.org/10.1111/hypa.12221</a>.
+Yap, Audrey. 2015. <span>“Feminist Radical Empiricism, Values, and Evidence.”</span> <em>Hypatia</em>, November 1, n/a–. <a href="https://doi.org/10.1111/hypa.12221">https://doi.org/10.1111/hypa.12221</a>.
 </div>
 </div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
@@ -2615,7 +2615,7 @@ Yap, Audrey. 2015. <span>“Feminist Radical Empiricism, Values, and Evidence.�
 <li id="fn3"><p>I dislike this term, because I suspect etymologically it’s entangled with anti-Catholicism.↩︎</p></li>
 <li id="fn4"><p>I include “offensive” here to leave room for views, such as those of Malcolm X and Franz Fanon, that political violence might be necessary for community self-defense against a violently oppressive state.↩︎</p></li>
 </ol>
-</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2023-06-07-nazi-problem.html</guid>
   <pubDate>Wed, 07 Jun 2023 07:00:00 GMT</pubDate>
 </item>
@@ -2637,7 +2637,7 @@ Yap, Audrey. 2015. <span>“Feminist Radical Empiricism, Values, and Evidence.�
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2023-05-04-tmfast.html</guid>
   <pubDate>Thu, 04 May 2023 07:00:00 GMT</pubDate>
 </item>
@@ -2721,27 +2721,27 @@ Note
 </section>
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-BrownExpertiseLessonFeyerabend2021" class="csl-entry">
-Brown, Matthew J. 2021. <span>“Against Expertise: A Lesson from Feyerabend’s Science in a Free Society?”</span> In <em>Interpreting Feyerabend: Critical Essays</em>, edited by Jamie Shaw and Karim Bschir, 191–212. Cambridge: Cambridge University Press. <a href="https://doi.org/10.1017/9781108575102.011">https://doi.org/10.1017/9781108575102.011</a>.
+Brown, Matthew J. 2021. <span>“Against Expertise: A Lesson from Feyerabend’s Science in a Free Society?”</span> In <em>Interpreting Feyerabend: Critical Essays</em>, edited by Jamie Shaw and Karim Bschir. Cambridge University Press. <a href="https://doi.org/10.1017/9781108575102.011">https://doi.org/10.1017/9781108575102.011</a>.
 </div>
 <div id="ref-EpsteinImpureScience1996" class="csl-entry">
-Epstein, Steven. 1996. <em>Impure Science</em>. AIDS, Activism, and the Politics of Knowledge. Berkeley, Los Angeles, and Oxford: University of California Press. <a href="http://books.google.ca/books?id=kZOso0FMsrMC&amp;pg=PA39&amp;dq=intitle:Impure+Science+inauthor:epstein&amp;hl=&amp;cd=1&amp;source=gbs_api">http://books.google.ca/books?id=kZOso0FMsrMC&amp;pg=PA39&amp;dq=intitle:Impure+Science+inauthor:epstein&amp;hl=&amp;cd=1&amp;source=gbs_api</a>.
+Epstein, Steven. 1996. <em>Impure Science</em>. AIDS, Activism, and the Politics of Knowledge. University of California Press. <a href="http://books.google.ca/books?id=kZOso0FMsrMC&amp;pg=PA39&amp;dq=intitle:Impure+Science+inauthor:epstein&amp;hl=&amp;cd=1&amp;source=gbs_api">http://books.google.ca/books?id=kZOso0FMsrMC&amp;pg=PA39&amp;dq=intitle:Impure+Science+inauthor:epstein&amp;hl=&amp;cd=1&amp;source=gbs_api</a>.
 </div>
 <div id="ref-FeyerabendHowDefendSociety1975" class="csl-entry">
 Feyerabend, Paul. 1975. <span>“How to Defend Society Against Science.”</span> <em>Radical Philosophy</em>, no. 011 (Summer): 3–8.
 </div>
 <div id="ref-FeyerabendScienceFreeSociety2017" class="csl-entry">
-———. 2017. <em>Science in a Free Society</em>. Verso Books.
+Feyerabend, Paul. 2017. <em>Science in a Free Society</em>. Verso Books.
 </div>
 <div id="ref-LeeViralVisualizationsHow2021" class="csl-entry">
-Lee, Crystal, Tanya Yang, Gabrielle Inchoco, Graham M. Jones, and Arvind Satyanarayan. 2021. <span>“Viral Visualizations: How Coronavirus Skeptics Use Orthodox Data Practices to Promote Unorthodox Science Online.”</span> <em>Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems</em>, May, 1–18. <a href="https://doi.org/10.1145/3411764.3445211">https://doi.org/10.1145/3411764.3445211</a>.
+Lee, Crystal, Tanya Yang, Gabrielle Inchoco, Graham M. Jones, and Arvind Satyanarayan. 2021. <span>“Viral Visualizations: How Coronavirus Skeptics Use Orthodox Data Practices to Promote Unorthodox Science Online.”</span> <em>Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems</em>, May 6, 1–18. <a href="https://doi.org/10.1145/3411764.3445211">https://doi.org/10.1145/3411764.3445211</a>.
 </div>
 <div id="ref-OttingerTechnoscienceEnvironmentalJustice2011" class="csl-entry">
-Ottinger, Gwen, and Benjamin R. Cohen, eds. 2011. <em>Technoscience and Environmental Justice: Expert Cultures in a Grassroots Movement</em>. Urban and Industrial Environments. Cambridge, Mass: MIT Press.
+Ottinger, Gwen, and Benjamin R. Cohen, eds. 2011. <em>Technoscience and Environmental Justice: Expert Cultures in a Grassroots Movement</em>. Urban and Industrial Environments. MIT Press.
 </div>
 <div id="ref-WylieComingTermsValues2007" class="csl-entry">
-Wylie, Alison, and Lynn Hankinson Nelson. 2007. <span>“Coming to Terms with the Values of Science: Insights from Feminist Science Studies Scholarship.”</span> In <em>Value-Free Science?</em>, edited by Harold Kincaid, John Dupré, and Alison Wylie, 58–86. Oxford University Press. <a href="http://books.google.com/books?id=9Nqppv6uq7oC">http://books.google.com/books?id=9Nqppv6uq7oC</a>.
+Wylie, Alison, and Lynn Hankinson Nelson. 2007. <span>“Coming to Terms with the Values of Science: Insights from Feminist Science Studies Scholarship.”</span> In <em>Value-Free Science?</em>, edited by Harold Kincaid, John Dupré, and Alison Wylie. Oxford University Press. <a href="http://books.google.com/books?id=9Nqppv6uq7oC">http://books.google.com/books?id=9Nqppv6uq7oC</a>.
 </div>
 </div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
@@ -2749,7 +2749,7 @@ Wylie, Alison, and Lynn Hankinson Nelson. 2007. <span>“Coming to Terms with th
 <li id="fn1"><p>The first is based on Mill’s argument in chapter 2 of <em>On Liberty</em>. My thoughts about this argument are complex and not what I’m interested in here.↩︎</p></li>
 <li id="fn2"><p>Brown uses “citizen” 45 times in the paper, compared to 28 uses of “public.” I’m guessing this is following Feyerabend. But because of my location in California’s Central Valley, with its large population of migrant and often undocumented farmworkers, I prefer the broader term.↩︎</p></li>
 </ol>
-</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>Dan Hicks</div></div></section></div> ]]></description>
+</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2023-04-12-anarchy-covid19.html</guid>
   <pubDate>Thu, 04 May 2023 07:00:00 GMT</pubDate>
 </item>

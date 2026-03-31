@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Dan Hicks "
+  title: "D. Hicks "
   site-url: "https://dhicks.github.io/"
   description: "Website description"
   navbar:
@@ -42,7 +42,7 @@ format:
   html:
     theme: yeti
     css: styles.css
-    copyright: "Dan Hicks"
+    copyright: "D. Hicks"
     license: CC BY-NC
 
 

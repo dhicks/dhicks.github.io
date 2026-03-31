@@ -1,5 +1,21 @@
 ---
 references:
+- id: AmplifiersEpistemicPosture
+  abstract: Essays and writing on AI
+  accessed:
+    - year: 2026
+      month: 2
+      day: 25
+  author:
+    - family: Barrett
+      given: Sam
+  citation-key: AmplifiersEpistemicPosture
+  container-title: rotating_the_space
+  language: en-US
+  title: Amplifiers of Epistemic Posture
+  type: webpage
+  URL: https://sbgeoaiphd.github.io/rotating_the_space/posture.html
+
 - id: AnthonyAIBadUX2025
   abstract: >-
     teapot from the cover of Don Norman’s “The Design of Everyday Things”
@@ -91,6 +107,29 @@ references:
   type: report
   URL: http://knightcolumbia.org/content/ai-as-normal-technology
 
+- id: NewsWhyIsntThere2025
+  abstract: >-
+    Advertisers, politicians, and investors are still all-in on X, despite a
+    sexual abuse crisis.
+  accessed:
+    - year: 2026
+      month: 1
+      day: 9
+  author:
+    - family: News
+      given: Kat from Spitfire
+  citation-key: NewsWhyIsntThere2025
+  container-title: Spitfire News
+  issued:
+    - year: 2025
+      month: 6
+      day: 19
+  language: en
+  title: Why isn't there a bigger Grok boycott?
+  type: webpage
+  URL: >-
+    https://spitfirenews.com/p/grok-deepfakes-x-advertisers-investors-take-it-down
+
 - id: PinchSocialConstructionFacts1984
   author:
     - family: Pinch
@@ -126,6 +165,62 @@ references:
   title: How science makes environmental controversies worse
   type: article-journal
   volume: '7'
+
+- id: TadimallaComprehensiveAILiteracy2025
+  abstract: >-
+    The rapid assimilation of Artificial Intelligence technologies into various
+    facets of society has created a significant educational imperative that
+    current frameworks are failing to effectively address. We are witnessing the
+    rise of a dangerous literacy gap, where a focus on the functional,
+    operational skills of using AI tools is eclipsing the development of
+    critical and ethical reasoning about them. This position paper argues for a
+    systemic shift toward comprehensive AI literacy that centers human agency -
+    the empowered capacity for intentional, critical, and responsible choice.
+    This principle applies to all stakeholders in the educational ecosystem: it
+    is the student's agency to question, create with, or consciously decide not
+    to use AI based on the task; it is the teacher's agency to design learning
+    experiences that align with instructional values, rather than ceding
+    pedagogical control to a tool. True literacy involves teaching about agency
+    itself, framing technology not as an inevitability to be adopted, but as a
+    choice to be made. This requires a deep commitment to critical thinking and
+    a robust understanding of epistemology. Through the AI Literacy, Fluency,
+    and Competency frameworks described in this paper, educators and students
+    will become agents in their own human-centric approaches to AI, providing
+    necessary pathways to clearly articulate the intentions informing decisions
+    and attitudes toward AI and the impact of these decisions on academic work,
+    career, and society.
+  accessed:
+    - year: 2026
+      month: 2
+      day: 19
+  author:
+    - family: Tadimalla
+      given: Sri Yash
+    - family: Cary
+      given: Justin
+    - family: Hull
+      given: Gordon
+    - family: Register
+      given: Jordan
+    - family: Maxwell
+      given: Daniel
+    - family: Pugalee
+      given: David
+    - family: Heafner
+      given: Tina
+  citation-key: TadimallaComprehensiveAILiteracy2025
+  DOI: 10.48550/arXiv.2512.16656
+  issued:
+    - year: 2025
+      month: 12
+      day: 18
+  number: arXiv:2512.16656
+  publisher: arXiv
+  source: arXiv.org
+  title: 'Comprehensive AI Literacy: The Case for Centering Human Agency'
+  title-short: Comprehensive AI Literacy
+  type: article
+  URL: http://arxiv.org/abs/2512.16656
 
 - id: TuringComputingMachineryIntelligence1950
   accessed:
@@ -173,4 +268,30 @@ references:
   type: article-journal
   URL: https://doi.org/10.1145/365153.365168
   volume: '9'
+
+- id: WuAIRaisesProductivity2026
+  accessed:
+    - year: 2026
+      month: 2
+      day: 21
+  author:
+    - family: Wu
+      given: Lingfei
+    - family: Vasilescu
+      given: Bogdan
+  citation-key: WuAIRaisesProductivity2026
+  container-title: Science
+  DOI: 10.1126/science.aef5239
+  issue: '6787'
+  issued:
+    - year: 2026
+      month: 2
+      day: 19
+  page: 763–764
+  publisher: American Association for the Advancement of Science
+  source: science.org (Atypon)
+  title: AI raises the productivity bar
+  type: article-journal
+  URL: https://www.science.org/doi/full/10.1126/science.aef5239
+  volume: '391'
 ...
