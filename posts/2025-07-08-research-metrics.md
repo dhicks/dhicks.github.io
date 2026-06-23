@@ -6,19 +6,12 @@ date: 2025-07-08
 format: 
     html: 
         toc: true
-    pdf:
-        include-in-header:
-            text: |
-               \usepackage{titling}
-               \pretitle{\Large\bfseries\sffamily}
-               \posttitle{}
-               \preauthor{\par}
-               \postauthor{}
-               \predate{\par}
-               \postdate{}
+    typst: 
+        toc: true
     docx: default
         
-bibliography: "2025-07-08-research_metrics.yaml"
+bibliography: "2025-07-08-research-metrics.yaml"
+citeproc: true
 ---
 
 ::: {.callout-note}

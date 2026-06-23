@@ -1,0 +1,37 @@
+---
+references:
+- id: KleinbergInherentTradeOffsFair2016
+  abstract: >-
+    Recent discussion in the public sphere about algorithmic classification has
+    involved tension between competing notions of what it means for a
+    probabilistic classification to be fair to different groups. We formalize
+    three fairness conditions that lie at the heart of these debates, and we
+    prove that except in highly constrained special cases, there is no method
+    that can satisfy these three conditions simultaneously. Moreover, even
+    satisfying all three conditions approximately requires that the data lie in
+    an approximate version of one of the constrained special cases identified by
+    our theorem. These results suggest some of the ways in which key notions of
+    fairness are incompatible with each other, and hence provide a framework for
+    thinking about the trade-offs between them.
+  accessed:
+    - year: 2020
+      month: 6
+      day: 10
+  author:
+    - family: Kleinberg
+      given: Jon
+    - family: Mullainathan
+      given: Sendhil
+    - family: Raghavan
+      given: Manish
+  citation-key: KleinbergInherentTradeOffsFair2016
+  container-title: arXiv:1609.05807 [cs, stat]
+  issued:
+    - year: 2016
+      month: 11
+      day: 17
+  source: arXiv.org
+  title: Inherent Trade-Offs in the Fair Determination of Risk Scores
+  type: article-journal
+  URL: http://arxiv.org/abs/1609.05807
+...

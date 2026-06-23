@@ -10,7 +10,76 @@
 <atom:link href="https://dhicks.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Website description</description>
 <generator>quarto-1.9.32</generator>
-<lastBuildDate>Sat, 11 Apr 2026 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 21 Jun 2026 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>The SAT as a proxy debate over reparations</title>
+  <dc:creator>Dan Hicks</dc:creator>
+  <link>https://dhicks.github.io/posts/2026-06-23-sat_fairness.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="a-fair-sat-is-impossible" class="level2">
+<h2 class="anchored" data-anchor-id="a-fair-sat-is-impossible">A fair SAT is impossible</h2>
+<p>The SAT is intended to predict college success, where higher scores indicate a student is more likely to complete their degree and graduate.</p>
+<p>Let’s rescale the scores, so they’re between 0 and 1 inclusive. Let’s also simplify by supposing our society is stratified into two groups, A and B. These groups might be races, or they might be socioeconomic (Pell grant eligible or not) or they might be based on first gen status. (Below we’ll be talking mostly about races, but that’s not necessary for the math.) What’s important is that the two groups have different true college success rates <img src="https://latex.codecogs.com/png.latex?Y%20=%201">:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%20r_g%20=%20%5CPr(Y%20=%201%20%7C%20G%20=%20g)%20"> <img src="https://latex.codecogs.com/png.latex?%20r_A%20%5Cneq%20r_B%20"></p>
+<p>To be fair predictors of college success in our unfair society, we’d like SAT scores <img src="https://latex.codecogs.com/png.latex?s"> to satisfy at least three fairness properties:</p>
+<ol type="1">
+<li>Calibration: <img src="https://latex.codecogs.com/png.latex?%5CPr(Y%20=%201%20%7C%20score%20=%20s,%20G)%20=%20s"></li>
+</ol>
+<p>The SAT measures college success, at least probabilistically, and does so in the same way for both groups.</p>
+<ol start="2" type="1">
+<li>Negative balance: <img src="https://latex.codecogs.com/png.latex?%5Cbar%7Bs%7D_%7BY%20=%200,%20A%7D%20=%20%5Cbar%7Bs%7D_%7BY%20=%200,%20B%7D%20=%20s_%7B-%7D"></li>
+</ol>
+<p>Among individuals who won’t graduate, the average score <img src="https://latex.codecogs.com/png.latex?s_%7B-%7D"> is the same for both groups. If this didn’t hold, then we would have disparities in the false positive rate across the two groups. For instance, more A students who won’t graduate would be admitted (false positives) than B students who won’t graduate.</p>
+<ol start="3" type="1">
+<li>Positive balance: <img src="https://latex.codecogs.com/png.latex?%5Cbar%7Bs%7D_%7BY%20=%201,%20A%7D%20=%20%5Cbar%7Bs%7D_%7BY%20=%201,%20B%7D%20=%20s_%7B+%7D"></li>
+</ol>
+<p>This is the same as negative balance, but for students who will graduate. A failure of positive balance might mean more A students who would graduate will be rejected (false negatives) than B students who would graduate.</p>
+<p>In the context of debates over fairness in machine learning, <span class="citation" data-cites="KleinbergInherentTradeOffsFair2016">Kleinberg et al. (2016)</span> showed that no scoring system can satisfy all three of these conditions at once, unless either (1) the true success rates are equal <img src="https://latex.codecogs.com/png.latex?r_A%20=%20r_B"> or (2) the scores are a “perfect predictor.”<sup>1</sup></p>
+<p>The basic idea of the proof involves two moves. First, calibration implies that each group’s average score is equal to its true chance of success <img src="https://latex.codecogs.com/png.latex?%5Cbar%7Bs%7D_%7BG%7D%20=%20r_G"> (which Kleinberg et al.&nbsp;call the group’s “base rate”). Second, using the balance requirements, we can derive a formula for base rate in terms of the group-independent positive and negative average scores <img src="https://latex.codecogs.com/png.latex?s_%7B+%7D"> and <img src="https://latex.codecogs.com/png.latex?s_%7B-%7D">:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%20r_A%20=%20%5Cfrac%7Bs_-%7D%7B1%20-%20s_+%20+%20s_-%7D%20=%20r_B%20"></p>
+<p>So either <img src="https://latex.codecogs.com/png.latex?r_A%20=%20r_B">; or <img src="https://latex.codecogs.com/png.latex?s_+%20=%201"> and <img src="https://latex.codecogs.com/png.latex?s_-%20=%200"> (“perfection prediction”); or at least one of the fairness properties fails to hold.</p>
+<p>Since there are clear empirical differences in college success rates, and no one expects the SAT to be a perfect predictor, a fair version of the SAT is impossible. We cannot fairly predict college success in our unfair world.</p>
+</section>
+<section id="social-construction-of-recidivism-and-college-success" class="level2">
+<h2 class="anchored" data-anchor-id="social-construction-of-recidivism-and-college-success">Social construction of recidivism and college success</h2>
+<p><span class="citation" data-cites="KleinbergInherentTradeOffsFair2016">Kleinberg et al. (2016)</span> and the fairness literature more generally are often framed in terms of predicting recidivism. But recidivism is not a natural kind. Recidivism is often <em>defined</em> as committing a crime again<sup>2</sup> in the future. But criminality is not a natural kind, much less <em>future</em> criminality. There is no innate or essential probability of committing crime at either the individual or group level.</p>
+<p>In addition, recidivism is typically <em>operationalized</em> as being arrested again. Substantial racial differences in “true” recidivism risk are due, in the first instance, to cops being more likely to profile Black people. While policy decisions might not completely eliminate racial differences in “true” recidivism risk, it seems highly plausible that policy changes could significantly reduce these differences. In this very concrete sense, recidivism risk is a social construction.</p>
+<p>College success is socially constructed in a similar way. Students from privileged backgrounds are more likely to graduate college than students from marginalized backgrounds because of social policies that tie school funding to the cost of housing and consign impoverished children to chronic malnutrition. In terms of both K-12 preparation and providing support for struggling students, policy could do a lot to reduce differences in the chance of completing a bachelor’s degree.</p>
+<p>The transfer of resources from the privileged to the marginalized, in order to equalize opportunity, is <em>redistribution</em>. When the groups are racial, redistribution is <em>reparations</em>.</p>
+<p>The SAT can only do what its proponents want it do — provide a racially neutral basis for admissions decisions — against a background of reparations.</p>
+</section>
+<section id="proxy-politics" class="level2">
+<h2 class="anchored" data-anchor-id="proxy-politics">Proxy politics</h2>
+<p>And yet we do not see SAT proponents advocating for sweeping reforms of our entire educational system. In the UC, the <a href="https://ucstudentsuccess.org/">call to resume the use of the SAT in admissions</a> is coming from people who seem to be vehemently opposed to offering remedial math and writing courses, which help ensure that all admitted students are up to speed. In their eyes, the UC should not redistribute resources towards underprepared students. That is — since the students who need remedial courses are overwhelmingly from low income communities of color — the UC should not engage in reparations.<sup>3</sup></p>
+<p>For proponents of the SAT, its appeal is that it offers the appearance of a racially-neutral and objective measure of college preparedness. We do not need reparations, they think, because we have the SAT. My application of Kleinberg et al.’s result indicates this is mistaken: without reparations, the SAT cannot be racially neutral.</p>
+<p>But for some SAT proponents, the appearance of neutrality may be more important than actual equality of opportunity. The appearance of neutrality allows them to present themselves as color-blind and post-racial. For many centrists, reparations and racial injustice are too controversial, too provocative, best avoided whenever possible. They’re talking about the efficient allocation of scarce educational resources, not some wild-eyed proposal for the radical redistribution of wealth. And for the ethnonationalist right, the disparate impact of SAT-based admissions gives them a way to maintain racial segregation without being too blatant even for Samuel Alito. Here, the necessary unfairness of the SAT is a feature, not a bug.</p>
+<p>In other words, the SAT gives some of its advocates a way to oppose the pursuit of racial equality without talking about the reality of racial inequality. The SAT is a proxy for reparations.</p>
+
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-KleinbergInherentTradeOffsFair2016" class="csl-entry">
+Kleinberg, Jon, Sendhil Mullainathan, and Manish Raghavan. 2016. <span>“Inherent Trade-Offs in the Fair Determination of Risk Scores.”</span> <em>arXiv:1609.05807 [Cs, Stat]</em>, November 17. <a href="http://arxiv.org/abs/1609.05807">http://arxiv.org/abs/1609.05807</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Meaning that every positive case (every student who will graduate) gets a score of 1 and every negative case (every student who won’t graduate) gets a score of 0.↩︎</p></li>
+<li id="fn2"><p>Note that “recidivism” predictions are often made when someone has been accused and is being considered for release pending trial. At this point in time, the accused has not yet been convicted. So “again” is a mistake.↩︎</p></li>
+<li id="fn3"><p>I can imagine some of them might be fine with directing those students towards UC Merced and UC Riverside. At Merced we have lots of seats in the remedial writing and math courses, and the instructors work extremely hard trying to get their students caught up. Of course, this would just intensify the de facto segregation of the UC system: Merced and Riverside are already the two majority-Hispanic, majority-Pell eligible campuses.↩︎</p></li>
+</ol>
+</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
+  <guid>https://dhicks.github.io/posts/2026-06-23-sat_fairness.html</guid>
+  <pubDate>Sun, 21 Jun 2026 07:00:00 GMT</pubDate>
+</item>
 <item>
   <title>LLMs lack latent attention?</title>
   <dc:creator>Dan Hicks</dc:creator>
@@ -313,43 +382,55 @@ Note
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">library</span>(tidyverse)</span>
-<span id="cb1-2"><span class="fu" style="color: #4758AB;
+font-style: inherit;">library</span>(tidyverse)</span></code></pre></div></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'tibble' was built under R version 4.5.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'readr' was built under R version 4.5.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'purrr' was built under R version 4.5.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'dplyr' was built under R version 4.5.2</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">theme_set</span>(<span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">theme_bw</span>())</span>
-<span id="cb1-3"><span class="fu" style="color: #4758AB;
+<span id="cb6-2"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">library</span>(purrr) <span class="do" style="color: #5E5E5E;
 background-color: null;
 font-style: italic;">## &gt;= 1.1 for parallel processing</span></span>
-<span id="cb1-4"><span class="fu" style="color: #4758AB;
+<span id="cb6-3"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">library</span>(mirai) <span class="do" style="color: #5E5E5E;
 background-color: null;
 font-style: italic;">## for parallel processing</span></span>
-<span id="cb1-5">max_daemons <span class="ot" style="color: #003B4F;
+<span id="cb6-4">max_daemons <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">10</span> <span class="do" style="color: #5E5E5E;
 background-color: null;
 font-style: italic;">## be sure to adjust for your particular machine</span></span>
-<span id="cb1-6"></span>
-<span id="cb1-7"><span class="fu" style="color: #4758AB;
+<span id="cb6-5"></span>
+<span id="cb6-6"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">library</span>(MASS) <span class="do" style="color: #5E5E5E;
 background-color: null;
 font-style: italic;">## multivariate Gaussian samples</span></span>
-<span id="cb1-8"></span>
-<span id="cb1-9"><span class="do" style="color: #5E5E5E;
+<span id="cb6-7"></span>
+<span id="cb6-8"><span class="do" style="color: #5E5E5E;
 background-color: null;
 font-style: italic;">## utilities</span></span>
-<span id="cb1-10"><span class="fu" style="color: #4758AB;
+<span id="cb6-9"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">library</span>(tictoc)</span>
-<span id="cb1-11"><span class="fu" style="color: #4758AB;
+<span id="cb6-10"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">library</span>(assertthat)</span></code></pre></div></div>
 </div>
@@ -361,13 +442,13 @@ font-style: inherit;">library</span>(assertthat)</span></code></pre></div></div>
 <p>These final steps — hiring the top researchers from the pool and calculating their mean merit and productivity — are done by the <code>hire</code> function.</p>
 <p>A single iteration of the simulation is handled by the following function:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="do" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><span class="do" style="color: #5E5E5E;
 background-color: null;
 font-style: italic;">## n: number of researchers in the pool</span></span>
-<span id="cb2-2"><span class="do" style="color: #5E5E5E;
+<span id="cb7-2"><span class="do" style="color: #5E5E5E;
 background-color: null;
 font-style: italic;">## hiring: a vector of the fraction of researchers to hire</span></span>
-<span id="cb2-3">simulate <span class="ot" style="color: #003B4F;
+<span id="cb7-3">simulate <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> <span class="cf" style="color: #003B4F;
 background-color: null;
@@ -377,7 +458,7 @@ background-color: null;
 font-style: inherit;">n =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">50</span>) {</span>
-<span id="cb2-4">    draw_pool <span class="ot" style="color: #003B4F;
+<span id="cb7-4">    draw_pool <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> <span class="cf" style="color: #003B4F;
 background-color: null;
@@ -387,7 +468,7 @@ background-color: null;
 font-style: inherit;">n =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">50</span>) {</span>
-<span id="cb2-5">        Sigma <span class="ot" style="color: #003B4F;
+<span id="cb7-5">        Sigma <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -402,7 +483,7 @@ background-color: null;
 font-style: inherit;">-</span> rho) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span> rho</span>
-<span id="cb2-6">        sample <span class="ot" style="color: #003B4F;
+<span id="cb7-6">        sample <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> MASS<span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -419,7 +500,7 @@ background-color: null;
 font-style: inherit;">0</span>), <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">Sigma =</span> Sigma)</span>
-<span id="cb2-7">        <span class="fu" style="color: #4758AB;
+<span id="cb7-7">        <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">colnames</span>(sample) <span class="ot" style="color: #003B4F;
 background-color: null;
@@ -430,18 +511,18 @@ background-color: null;
 font-style: inherit;">'merit'</span>, <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'diversity'</span>)</span>
-<span id="cb2-8">        <span class="fu" style="color: #4758AB;
+<span id="cb7-8">        <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">return</span>(sample)</span>
-<span id="cb2-9">    }</span>
-<span id="cb2-10">    </span>
-<span id="cb2-11">    score_pool <span class="ot" style="color: #003B4F;
+<span id="cb7-9">    }</span>
+<span id="cb7-10">    </span>
+<span id="cb7-11">    score_pool <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">function</span>(pool, alpha) {</span>
-<span id="cb2-12">        score <span class="ot" style="color: #003B4F;
+<span id="cb7-12">        score <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> alpha <span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -460,31 +541,31 @@ background-color: null;
 font-style: inherit;">*</span> pool[,<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'merit'</span>]</span>
-<span id="cb2-13">        pool <span class="ot" style="color: #003B4F;
+<span id="cb7-13">        pool <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">cbind</span>(pool, score)</span>
-<span id="cb2-14">        <span class="fu" style="color: #4758AB;
+<span id="cb7-14">        <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">return</span>(pool)</span>
-<span id="cb2-15">    }</span>
-<span id="cb2-16">    </span>
-<span id="cb2-17">    hire <span class="ot" style="color: #003B4F;
+<span id="cb7-15">    }</span>
+<span id="cb7-16">    </span>
+<span id="cb7-17">    hire <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">function</span>(hiring, pool) {</span>
-<span id="cb2-18">        <span class="fu" style="color: #4758AB;
+<span id="cb7-18">        <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">library</span>(magrittr)</span>
-<span id="cb2-19">        pool[,<span class="st" style="color: #20794D;
+<span id="cb7-19">        pool[,<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'score'</span>] <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span> </span>
-<span id="cb2-20">            <span class="fu" style="color: #4758AB;
+<span id="cb7-20">            <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">order</span>(<span class="at" style="color: #657422;
 background-color: null;
@@ -493,7 +574,7 @@ background-color: null;
 font-style: inherit;">TRUE</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb2-21">            {<span class="fu" style="color: #4758AB;
+<span id="cb7-21">            {<span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">head</span>(., hiring <span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -502,15 +583,15 @@ background-color: null;
 font-style: inherit;">length</span>(.))} <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span></span>
-<span id="cb2-22">            {pool[.,]} <span class="sc" style="color: #5E5E5E;
+<span id="cb7-22">            {pool[.,]} <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span> </span>
-<span id="cb2-23">            {.[,<span class="st" style="color: #20794D;
+<span id="cb7-23">            {.[,<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'merit'</span>]} <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">%&gt;%</span> </span>
-<span id="cb2-24">            {<span class="fu" style="color: #4758AB;
+<span id="cb7-24">            {<span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">list</span>(<span class="at" style="color: #657422;
 background-color: null;
@@ -521,32 +602,32 @@ background-color: null;
 font-style: inherit;">prod =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">sum</span>(.))}</span>
-<span id="cb2-25">    }</span>
-<span id="cb2-26">    </span>
-<span id="cb2-27">    pool <span class="ot" style="color: #003B4F;
+<span id="cb7-25">    }</span>
+<span id="cb7-26">    </span>
+<span id="cb7-27">    pool <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> rho <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span> </span>
-<span id="cb2-28">        <span class="fu" style="color: #4758AB;
+<span id="cb7-28">        <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">draw_pool</span>(n) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span> </span>
-<span id="cb2-29">        <span class="fu" style="color: #4758AB;
+<span id="cb7-29">        <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">score_pool</span>(diversity_weight)</span>
-<span id="cb2-30">    </span>
-<span id="cb2-31">    tibble<span class="sc" style="color: #5E5E5E;
+<span id="cb7-30">    </span>
+<span id="cb7-31">    tibble<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">tibble</span>(rho, </span>
-<span id="cb2-32">                   diversity_weight,</span>
-<span id="cb2-33">                   hiring) <span class="sc" style="color: #5E5E5E;
+<span id="cb7-32">                   diversity_weight,</span>
+<span id="cb7-33">                   hiring) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span> </span>
-<span id="cb2-34">        dplyr<span class="sc" style="color: #5E5E5E;
+<span id="cb7-34">        dplyr<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -559,12 +640,12 @@ background-color: null;
 font-style: inherit;">~</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">hire</span>(.x, pool)))</span>
-<span id="cb2-35">}</span></code></pre></div></div>
+<span id="cb7-35">}</span></code></pre></div></div>
 </div>
 <p>(To take advantage of <a href="https://www.tidyverse.org/blog/2025/07/purrr-1-1-0-parallel/"><code>purrr</code>’s new parallelization feature</a>, we need to nest the functions for each step inside <code>simulate</code>, and reference package functions using <code>::</code> syntax.)</p>
 <p>We’ll wrap this in another function, <code>simulations</code>, which iterates the simulation in parallel.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">simulations <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1">simulations <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> <span class="cf" style="color: #003B4F;
 background-color: null;
@@ -574,47 +655,47 @@ background-color: null;
 font-style: inherit;">n =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">50</span>) {</span>
-<span id="cb3-2">    <span class="fu" style="color: #4758AB;
+<span id="cb8-2">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">map_dfr</span>(<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span>N, </span>
-<span id="cb3-3">            <span class="fu" style="color: #4758AB;
+<span id="cb8-3">            <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">in_parallel</span>(\(N) </span>
-<span id="cb3-4">                        <span class="fu" style="color: #4758AB;
+<span id="cb8-4">                        <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">simulate</span>(rho, diversity_weight, hiring, n), </span>
-<span id="cb3-5">                        <span class="at" style="color: #657422;
+<span id="cb8-5">                        <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">simulate =</span> simulate, </span>
-<span id="cb3-6">                        <span class="at" style="color: #657422;
+<span id="cb8-6">                        <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">rho =</span> rho, </span>
-<span id="cb3-7">                        <span class="at" style="color: #657422;
+<span id="cb8-7">                        <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">diversity_weight =</span> diversity_weight, </span>
-<span id="cb3-8">                        <span class="at" style="color: #657422;
+<span id="cb8-8">                        <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">hiring =</span> hiring, </span>
-<span id="cb3-9">                        <span class="at" style="color: #657422;
+<span id="cb8-9">                        <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">n =</span> n), </span>
-<span id="cb3-10">            <span class="at" style="color: #657422;
+<span id="cb8-10">            <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">.id =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'iter'</span>)</span>
-<span id="cb3-11">}</span></code></pre></div></div>
+<span id="cb8-11">}</span></code></pre></div></div>
 </div>
 </section>
 <section id="simulation-parameters" class="level1">
 <h1>Simulation parameters</h1>
 <p>The simulation parameters are defined below. We’ll use a parameter grid for <code>rho</code> and <code>diversity_weight</code>; it’s more efficient to handle <code>hiring</code> separately. While we’re here, we’ll also calculate the expected length of the output dataframe, and use this in an assertion below.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1">rho <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1">rho <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -629,7 +710,7 @@ background-color: null;
 font-style: inherit;">by =</span> .<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2</span>)</span>
-<span id="cb4-2">diversity_weight <span class="ot" style="color: #003B4F;
+<span id="cb9-2">diversity_weight <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -644,7 +725,7 @@ background-color: null;
 font-style: inherit;">by =</span> .<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2</span>)</span>
-<span id="cb4-3">hiring <span class="ot" style="color: #003B4F;
+<span id="cb9-3">hiring <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -655,32 +736,32 @@ background-color: null;
 font-style: inherit;">25</span>, .<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">5</span>)</span>
-<span id="cb4-4">n <span class="ot" style="color: #003B4F;
+<span id="cb9-4">n <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">500</span> <span class="do" style="color: #5E5E5E;
 background-color: null;
 font-style: italic;">## size of the hiring pool</span></span>
-<span id="cb4-5">N <span class="ot" style="color: #003B4F;
+<span id="cb9-5">N <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">100</span> <span class="do" style="color: #5E5E5E;
 background-color: null;
 font-style: italic;">## num. simulation runs at each parameter combo</span></span>
-<span id="cb4-6"></span>
-<span id="cb4-7">params <span class="ot" style="color: #003B4F;
+<span id="cb9-6"></span>
+<span id="cb9-7">params <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">expand_grid</span>(rho, </span>
-<span id="cb4-8">                     diversity_weight)</span>
-<span id="cb4-9"></span>
-<span id="cb4-10"><span class="do" style="color: #5E5E5E;
+<span id="cb9-8">                     diversity_weight)</span>
+<span id="cb9-9"></span>
+<span id="cb9-10"><span class="do" style="color: #5E5E5E;
 background-color: null;
 font-style: italic;">## Expected number of rows in output</span></span>
-<span id="cb4-11">expect_rows <span class="ot" style="color: #003B4F;
+<span id="cb9-11">expect_rows <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> (<span class="fu" style="color: #4758AB;
 background-color: null;
@@ -691,18 +772,18 @@ background-color: null;
 font-style: inherit;">length</span>(diversity_weight) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">*</span> </span>
-<span id="cb4-12">                   <span class="fu" style="color: #4758AB;
+<span id="cb9-12">                   <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">length</span>(hiring) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">*</span> N) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span> </span>
-<span id="cb4-13">    <span class="fu" style="color: #4758AB;
+<span id="cb9-13">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">as.integer</span>()</span>
-<span id="cb4-14"></span>
-<span id="cb4-15"><span class="fu" style="color: #4758AB;
+<span id="cb9-14"></span>
+<span id="cb9-15"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">message</span>(<span class="st" style="color: #20794D;
 background-color: null;
@@ -716,24 +797,24 @@ font-style: inherit;">'Expected number of output rows: '</span>, expect_rows)</s
 <h1>Run the simulation</h1>
 <p>In the development script, I nested these lines of code in braces so that I could run them all without highlighting. (This takes several seconds on my machine, so I’m caching it. Wall times might be different as a result of caching.)</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1">{</span>
-<span id="cb6-2">    <span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1">{</span>
+<span id="cb11-2">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">set.seed</span>(<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">20250714</span>)</span>
-<span id="cb6-3">    <span class="fu" style="color: #4758AB;
+<span id="cb11-3">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">daemons</span>(max_daemons)</span>
-<span id="cb6-4">    <span class="fu" style="color: #4758AB;
+<span id="cb11-4">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">tic</span>()</span>
-<span id="cb6-5">    dataf <span class="ot" style="color: #003B4F;
+<span id="cb11-5">    dataf <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> params <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span> </span>
-<span id="cb6-6">        <span class="fu" style="color: #4758AB;
+<span id="cb11-6">        <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">pmap</span>(<span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -746,25 +827,25 @@ background-color: null;
 font-style: inherit;">2</span>, hiring, n)) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span> </span>
-<span id="cb6-7">        <span class="fu" style="color: #4758AB;
+<span id="cb11-7">        <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">bind_rows</span>()</span>
-<span id="cb6-8">    <span class="fu" style="color: #4758AB;
+<span id="cb11-8">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">assert_that</span>(<span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">identical</span>(<span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">nrow</span>(dataf), expect_rows))</span>
-<span id="cb6-9">    <span class="fu" style="color: #4758AB;
+<span id="cb11-9">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">toc</span>()</span>
-<span id="cb6-10">    <span class="fu" style="color: #4758AB;
+<span id="cb11-10">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">daemons</span>(<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">0</span>)</span>
-<span id="cb6-11">}</span></code></pre></div></div>
+<span id="cb11-11">}</span></code></pre></div></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>5.624 sec elapsed</code></pre>
 </div>
@@ -774,39 +855,39 @@ font-style: inherit;">0</span>)</span>
 </div>
 <p>Alongside the output for each iteration, it’s useful to have just the mean within each combination of parameter values.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1">dataf_sum <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1">dataf_sum <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> dataf <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span> </span>
-<span id="cb9-2">    <span class="fu" style="color: #4758AB;
+<span id="cb14-2">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">group_by</span>(rho, diversity_weight, hiring) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span> </span>
-<span id="cb9-3">    <span class="fu" style="color: #4758AB;
+<span id="cb14-3">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">summarize</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">N =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">n</span>(), </span>
-<span id="cb9-4">              <span class="fu" style="color: #4758AB;
+<span id="cb14-4">              <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">across</span>(<span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">c</span>(merit, prod),</span>
-<span id="cb9-5">                     <span class="fu" style="color: #4758AB;
+<span id="cb14-5">                     <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">lst</span>(mean, sd))) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span> </span>
-<span id="cb9-6">    <span class="fu" style="color: #4758AB;
+<span id="cb14-6">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">ungroup</span>() <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span> </span>
-<span id="cb9-7">    <span class="fu" style="color: #4758AB;
+<span id="cb14-7">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
@@ -815,7 +896,7 @@ background-color: null;
 font-style: inherit;">/</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">sqrt</span>(N), </span>
-<span id="cb9-8">           <span class="at" style="color: #657422;
+<span id="cb14-8">           <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">prod_se =</span> prod_sd <span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -823,8 +904,12 @@ font-style: inherit;">/</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">sqrt</span>(N))</span></code></pre></div></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`summarise()` has grouped output by 'rho', 'diversity_weight'. You can override
-using the `.groups` argument.</code></pre>
+<pre><code>`summarise()` has regrouped the output.
+ℹ Summaries were computed grouped by rho, diversity_weight, and hiring.
+ℹ Output is grouped by rho and diversity_weight.
+ℹ Use `summarise(.groups = "drop_last")` to silence this message.
+ℹ Use `summarise(.by = c(rho, diversity_weight, hiring))` for per-operation
+  grouping (`?dplyr::dplyr_by`) instead.</code></pre>
 </div>
 </div>
 </section>
@@ -834,316 +919,9 @@ using the `.groups` argument.</code></pre>
 <h2 class="anchored" data-anchor-id="merit">Merit</h2>
 <p>This tile plot shows the average merit (<code>merit_mean</code>) for each combination of <code>rho</code> (diversity-merit tradeoff), weight <img src="https://latex.codecogs.com/png.latex?%5Calpha"> given to diversity (<code>diversity_weight</code>), and hiring scenario (the panels).</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1">merit_tile <span class="ot" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1">merit_tile <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">ggplot</span>(dataf_sum, </span>
-<span id="cb11-2">       <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">aes</span>(diversity_weight, rho)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb11-3">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_raster</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">fill =</span> merit_mean)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb11-4">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">scale_fill_gradient2</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">low =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'red'</span>, </span>
-<span id="cb11-5">                         <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">mid =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'white'</span>, </span>
-<span id="cb11-6">                         <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">high =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'blue'</span>, </span>
-<span id="cb11-7">                         <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">midpoint =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb11-8">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">facet_wrap</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">vars</span>(hiring)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb11-9">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">coord_equal</span>()</span>
-<span id="cb11-10">merit_tile</span></code></pre></div></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://dhicks.github.io/posts/2025-07-12-diversity-merit_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>First, high austerity tends to heighten the effects of diversity weighting (or not): the difference between the maximum and minimum values of mean merit is greatest when only the top 10% are hired, and smallest when the top 50% are hired. Second, within a hiring level, mean merit appears to be maximized when diversity is given zero weight. Third, the effect of weighting diversity depends on <img src="https://latex.codecogs.com/png.latex?%5Crho">, the correlation between merit and diversity. When <img src="https://latex.codecogs.com/png.latex?%5Crho%20%3E%200">, then positively weighting diversity doesn’t appear to diminish mean merit very much; while discrimination decreases it sharply.</p>
-<p>Let’s plot “transects,” mean merit against diversity for moderate values <img src="https://latex.codecogs.com/png.latex?-0.4%20%5Cleq%20%5Crho%20%5Cleq%200.4">. We’ll go ahead and include every iteration, and GAM curves across values of <img src="https://latex.codecogs.com/png.latex?%5Crho">.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1">dataf <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span> </span>
-<span id="cb12-2">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">filter</span>(<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-</span><span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.41</span> <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;</span> rho, rho <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;</span> <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.41</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb12-3">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">ggplot</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">aes</span>(diversity_weight, merit, </span>
-<span id="cb12-4">               <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">color =</span> rho)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb12-5">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_vline</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">xintercept =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'grey65'</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb12-6">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_point</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">position =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'jitter'</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">alpha =</span> .<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">05</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb12-7">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_smooth</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">group =</span> rho), </span>
-<span id="cb12-8">                <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'black'</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">linewidth =</span> <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1.2</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb12-9">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_smooth</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">color =</span> rho, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">group =</span> rho), </span>
-<span id="cb12-10">                <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">linewidth =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb12-11">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">scale_color_viridis_c</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">option =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'C'</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb12-12">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">facet_wrap</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">vars</span>(hiring))</span></code></pre></div></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'
-`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
-</div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://dhicks.github.io/posts/2025-07-12-diversity-merit_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>These confirm that more extreme weightings of diversity do indeed have less dramatic effects when they’re aligned with <img src="https://latex.codecogs.com/png.latex?%5Crho">. There’s also a “plateau,” roughly independent of <img src="https://latex.codecogs.com/png.latex?%5Crho"> and for <img src="https://latex.codecogs.com/png.latex?-0.25%20%3C%20%5Calpha%20%3C%200.25">. Giving some weight to diversity, but placing more weight on merit, has negligible effects on mean merit.</p>
-<p>It also looks like, for <img src="https://latex.codecogs.com/png.latex?%5Crho%20=%200.4">, mean merit might not be maximized right at <img src="https://latex.codecogs.com/png.latex?%5Calpha%20=%200">. Let’s zoom in on this area, and let each panel have its own y-axis scale.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1">dataf <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span> </span>
-<span id="cb14-2">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">filter</span>(<span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.39</span> <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;</span> rho, rho <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;</span> <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.41</span>, </span>
-<span id="cb14-3">           <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-</span>.<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">41</span> <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;</span> diversity_weight, diversity_weight <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;</span> .<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">41</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb14-4">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">ggplot</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">aes</span>(diversity_weight, merit, </span>
-<span id="cb14-5">               <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">color =</span> rho)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb14-6">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_vline</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">xintercept =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'grey65'</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb14-7">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_point</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">position =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'jitter'</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">alpha =</span> .<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">05</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb14-8">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_smooth</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">group =</span> rho), </span>
-<span id="cb14-9">                <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'black'</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">linewidth =</span> <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1.2</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb14-10">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_smooth</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">color =</span> rho, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">group =</span> rho), </span>
-<span id="cb14-11">                <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">linewidth =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb14-12">    <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># scale_color_viridis_c(option = 'C') +</span></span>
-<span id="cb14-13">    <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">facet_wrap</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">vars</span>(hiring), <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">scales =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'free'</span>)</span></code></pre></div></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using method = 'loess' and formula = 'y ~ x'
-`geom_smooth()` using method = 'loess' and formula = 'y ~ x'</code></pre>
-</div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://dhicks.github.io/posts/2025-07-12-diversity-merit_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>No, that suggestion appears to be incorrect. The curve is all but completely flat around <img src="https://latex.codecogs.com/png.latex?%5Calpha%20=%200">.</p>
-</section>
-<section id="productivity" class="level2">
-<h2 class="anchored" data-anchor-id="productivity">Productivity</h2>
-<p>We’ll adapt the visualizations for mean merit to productivity.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">ggplot</span>(dataf_sum, </span>
 <span id="cb16-2">       <span class="fu" style="color: #4758AB;
@@ -1157,7 +935,7 @@ font-style: inherit;">geom_raster</span>(<span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
 background-color: null;
-font-style: inherit;">fill =</span> prod_mean)) <span class="sc" style="color: #5E5E5E;
+font-style: inherit;">fill =</span> merit_mean)) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
 <span id="cb16-4">    <span class="fu" style="color: #4758AB;
@@ -1193,17 +971,18 @@ background-color: null;
 font-style: inherit;">+</span></span>
 <span id="cb16-9">    <span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">coord_equal</span>()</span></code></pre></div></div>
+font-style: inherit;">coord_equal</span>()</span>
+<span id="cb16-10">merit_tile</span></code></pre></div></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://dhicks.github.io/posts/2025-07-12-diversity-merit_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://dhicks.github.io/posts/2025-07-12-diversity-merit_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
-<p>Productivity is much, much greater under less austere hiring; and the effects of weighting diversity or discrimination are more dramatic.</p>
-<p>Here’s the “transect” plot:</p>
+<p>First, high austerity tends to heighten the effects of diversity weighting (or not): the difference between the maximum and minimum values of mean merit is greatest when only the top 10% are hired, and smallest when the top 50% are hired. Second, within a hiring level, mean merit appears to be maximized when diversity is given zero weight. Third, the effect of weighting diversity depends on <img src="https://latex.codecogs.com/png.latex?%5Crho">, the correlation between merit and diversity. When <img src="https://latex.codecogs.com/png.latex?%5Crho%20%3E%200">, then positively weighting diversity doesn’t appear to diminish mean merit very much; while discrimination decreases it sharply.</p>
+<p>Let’s plot “transects,” mean merit against diversity for moderate values <img src="https://latex.codecogs.com/png.latex?-0.4%20%5Cleq%20%5Crho%20%5Cleq%200.4">. We’ll go ahead and include every iteration, and GAM curves across values of <img src="https://latex.codecogs.com/png.latex?%5Crho">.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1">dataf <span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -1227,13 +1006,26 @@ font-style: inherit;">|&gt;</span></span>
 background-color: null;
 font-style: inherit;">ggplot</span>(<span class="fu" style="color: #4758AB;
 background-color: null;
-font-style: inherit;">aes</span>(diversity_weight, prod, </span>
+font-style: inherit;">aes</span>(diversity_weight, merit, </span>
 <span id="cb17-4">               <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">color =</span> rho)) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
 <span id="cb17-5">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_vline</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">xintercept =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'grey65'</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb17-6">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">geom_point</span>(<span class="at" style="color: #657422;
 background-color: null;
@@ -1246,14 +1038,14 @@ background-color: null;
 font-style: inherit;">05</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb17-6">    <span class="fu" style="color: #4758AB;
+<span id="cb17-7">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">geom_smooth</span>(<span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">group =</span> rho), </span>
-<span id="cb17-7">                <span class="at" style="color: #657422;
+<span id="cb17-8">                <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
 background-color: null;
@@ -1264,7 +1056,7 @@ background-color: null;
 font-style: inherit;">1.2</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb17-8">    <span class="fu" style="color: #4758AB;
+<span id="cb17-9">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">geom_smooth</span>(<span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1273,14 +1065,14 @@ background-color: null;
 font-style: inherit;">color =</span> rho, <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">group =</span> rho), </span>
-<span id="cb17-9">                <span class="at" style="color: #657422;
+<span id="cb17-10">                <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">linewidth =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb17-10">    <span class="fu" style="color: #4758AB;
+<span id="cb17-11">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">scale_color_viridis_c</span>(<span class="at" style="color: #657422;
 background-color: null;
@@ -1289,7 +1081,300 @@ background-color: null;
 font-style: inherit;">'C'</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb17-11">    <span class="fu" style="color: #4758AB;
+<span id="cb17-12">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">facet_wrap</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">vars</span>(hiring))</span></code></pre></div></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'
+`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://dhicks.github.io/posts/2025-07-12-diversity-merit_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>These confirm that more extreme weightings of diversity do indeed have less dramatic effects when they’re aligned with <img src="https://latex.codecogs.com/png.latex?%5Crho">. There’s also a “plateau,” roughly independent of <img src="https://latex.codecogs.com/png.latex?%5Crho"> and for <img src="https://latex.codecogs.com/png.latex?-0.25%20%3C%20%5Calpha%20%3C%200.25">. Giving some weight to diversity, but placing more weight on merit, has negligible effects on mean merit.</p>
+<p>It also looks like, for <img src="https://latex.codecogs.com/png.latex?%5Crho%20=%200.4">, mean merit might not be maximized right at <img src="https://latex.codecogs.com/png.latex?%5Calpha%20=%200">. Let’s zoom in on this area, and let each panel have its own y-axis scale.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1">dataf <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb19-2">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.39</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> rho, rho <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.41</span>, </span>
+<span id="cb19-3">           <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>.<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">41</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> diversity_weight, diversity_weight <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">41</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb19-4">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplot</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(diversity_weight, merit, </span>
+<span id="cb19-5">               <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> rho)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb19-6">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_vline</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">xintercept =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'grey65'</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb19-7">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_point</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">position =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'jitter'</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">alpha =</span> .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">05</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb19-8">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_smooth</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">group =</span> rho), </span>
+<span id="cb19-9">                <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'black'</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">linewidth =</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.2</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb19-10">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_smooth</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> rho, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">group =</span> rho), </span>
+<span id="cb19-11">                <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">linewidth =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb19-12">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># scale_color_viridis_c(option = 'C') +</span></span>
+<span id="cb19-13">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">facet_wrap</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">vars</span>(hiring), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">scales =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'free'</span>)</span></code></pre></div></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using method = 'loess' and formula = 'y ~ x'
+`geom_smooth()` using method = 'loess' and formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://dhicks.github.io/posts/2025-07-12-diversity-merit_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>No, that suggestion appears to be incorrect. The curve is all but completely flat around <img src="https://latex.codecogs.com/png.latex?%5Calpha%20=%200">.</p>
+</section>
+<section id="productivity" class="level2">
+<h2 class="anchored" data-anchor-id="productivity">Productivity</h2>
+<p>We’ll adapt the visualizations for mean merit to productivity.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplot</span>(dataf_sum, </span>
+<span id="cb21-2">       <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(diversity_weight, rho)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb21-3">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_raster</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">fill =</span> prod_mean)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb21-4">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">scale_fill_gradient2</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">low =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'red'</span>, </span>
+<span id="cb21-5">                         <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mid =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'white'</span>, </span>
+<span id="cb21-6">                         <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">high =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'blue'</span>, </span>
+<span id="cb21-7">                         <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">midpoint =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb21-8">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">facet_wrap</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">vars</span>(hiring)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb21-9">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">coord_equal</span>()</span></code></pre></div></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://dhicks.github.io/posts/2025-07-12-diversity-merit_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Productivity is much, much greater under less austere hiring; and the effects of weighting diversity or discrimination are more dramatic.</p>
+<p>Here’s the “transect” plot:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1">dataf <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> </span>
+<span id="cb22-2">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.41</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> rho, rho <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.41</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb22-3">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplot</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(diversity_weight, prod, </span>
+<span id="cb22-4">               <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> rho)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb22-5">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_point</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">position =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'jitter'</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">alpha =</span> .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">05</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb22-6">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_smooth</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">group =</span> rho), </span>
+<span id="cb22-7">                <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'black'</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">linewidth =</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.2</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb22-8">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_smooth</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color =</span> rho, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">group =</span> rho), </span>
+<span id="cb22-9">                <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">linewidth =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb22-10">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">scale_color_viridis_c</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">option =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'C'</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb22-11">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">facet_wrap</span>(<span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1312,10 +1397,10 @@ font-style: inherit;">vars</span>(hiring))</span></code></pre></div></div>
 <h1>Mapping parameters to political imaginaries</h1>
 <p>For reference, here’s the mean merit tile plot again.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1">merit_tile <span class="sc" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1">merit_tile <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb19-2">    <span class="fu" style="color: #4758AB;
+<span id="cb24-2">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">annotate</span>(<span class="st" style="color: #20794D;
 background-color: null;
@@ -1340,7 +1425,7 @@ background-color: null;
 font-style: inherit;">-</span>.<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">4</span>, </span>
-<span id="cb19-3">             <span class="at" style="color: #657422;
+<span id="cb24-3">             <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">arrow =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1355,7 +1440,7 @@ background-color: null;
 font-style: inherit;">'inches'</span>))) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb19-4">    <span class="fu" style="color: #4758AB;
+<span id="cb24-4">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">annotate</span>(<span class="st" style="color: #20794D;
 background-color: null;
@@ -1378,7 +1463,7 @@ background-color: null;
 font-style: inherit;">'A'</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb19-5">    <span class="fu" style="color: #4758AB;
+<span id="cb24-5">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">annotate</span>(<span class="st" style="color: #20794D;
 background-color: null;
@@ -1401,7 +1486,7 @@ background-color: null;
 font-style: inherit;">yend =</span> .<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">4</span>, </span>
-<span id="cb19-6">             <span class="at" style="color: #657422;
+<span id="cb24-6">             <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">arrow =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1416,7 +1501,7 @@ background-color: null;
 font-style: inherit;">'inches'</span>))) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb19-7">    <span class="fu" style="color: #4758AB;
+<span id="cb24-7">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">annotate</span>(<span class="st" style="color: #20794D;
 background-color: null;
@@ -2648,28 +2733,6 @@ Yap, Audrey. 2015. <span>“Feminist Radical Empiricism, Values, and Evidence.�
 </section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
   <guid>https://dhicks.github.io/posts/2023-06-07-nazi-problem.html</guid>
   <pubDate>Wed, 07 Jun 2023 07:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>New preprint: tmfast fits topic models fast</title>
-  <dc:creator>Dan Hicks</dc:creator>
-  <link>https://dhicks.github.io/posts/2023-05-04-tmfast.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>Yesterday I published a new preprint on the arXiv: <a href="https://arxiv.org/abs/2305.01535">“<code>tmfast</code> fits topic models fast”</a>. Here’s the abstract:</p>
-<blockquote class="blockquote">
-<p><code>tmfast</code> is an R package for fitting topic models using a fast algorithm based on partial PCA and the varimax rotation. After providing mathematical background to the method, we present two examples, using a simulated corpus and aggregated works of a selection of authors from the long nineteenth century, and compare the quality of the fitted models to a standard topic modeling package.</p>
-</blockquote>
-<p>The package itself is available <a href="https://github.com/dhicks/tmfast">on Github</a>.</p>
-
-
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>D. Hicks</div></div></section></div> ]]></description>
-  <guid>https://dhicks.github.io/posts/2023-05-04-tmfast.html</guid>
-  <pubDate>Thu, 04 May 2023 07:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
