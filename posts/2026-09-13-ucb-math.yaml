@@ -1,0 +1,287 @@
+---
+references:
+-
+  id: AliCompositeVariableBias2025
+  abstract: 'Researchers often use composite variables (e.g., BMI and change scores). By combining multiple variables (e.g., height and weight or follow-up weight and baseline weight) into a single variable it becomes challenging to untangle the causal roles of each component variable. Composite variable bias—an issue previously identified for exposure variables that may yield misleading causal inferences—is illustrated as a similar concern for composite outcomes. We explain how this occurs for composite weight outcomes: BMI, ‘weight change’, their combination ‘BMI change’, and variations involving relative change.'
+  accessed:
+    -
+      year: 2026
+      month: 9
+      day: 20
+  author:
+    -
+      family: Ali
+      given: Ridda
+    -
+      family: Prestwich
+      given: Andrew
+    -
+      family: Ge
+      given: Jiaqi
+    -
+      family: Griffiths
+      given: Claire
+    -
+      family: Allmendinger
+      given: Richard
+    -
+      family: Shahgholian
+      given: Azar
+    -
+      family: Chen
+      given: Yu-wang
+    -
+      family: Mansournia
+      given: Mohammad Ali
+    -
+      family: Gilthorpe
+      given: Mark S.
+  citation-key: AliCompositeVariableBias2025
+  container-title: International Journal of Obesity
+  container-title-short: Int. J. Obes.
+  DOI: 10.1038/s41366-025-01732-6
+  ISSN: 1476-5497
+  issue: '6'
+  issued:
+    -
+      year: 2025
+      month: 6
+  language: en
+  license: 2025 The Author(s)
+  page: 1043–1050
+  publisher: Nature Publishing Group
+  source: www.nature.com
+  title: 'Composite variable bias: causal analysis of weight outcomes'
+  title-short: Composite variable bias
+  type: article-journal
+  URL: https://www.nature.com/articles/s41366-025-01732-6
+  volume: '49'
+
+-
+  id: BerrieDepictingDeterministicVariables2025
+  abstract: Deterministic variables are variables that are functionally determined by one or more parent variables. They commonly arise when a variable has been functionally created from one or more parent variables, as with derived variables, and in compositional data, where the “whole” variable is determined from its “parts.” This article introduces how deterministic variables may be depicted within directed acyclic graphs (DAGs) to help with identifying and interpreting causal effects involving derived variables and/or compositional data. We propose a 2-step approach in which all variables are initially considered, and a choice is made as to whether to focus on the deterministic variable or its determining parents. Depicting deterministic variables within DAGs brings several benefits. It is easier to identify and avoid misinterpreting tautological associations, that is, self-fulfilling associations between deterministic variables and their parents, or between sibling variables with shared parents. In compositional data, it is easier to understand the consequences of conditioning on the “whole” variable and to correctly identify total and relative causal effects. For derived variables, it encourages greater consideration of the target estimand and greater scrutiny of the consistency and exchangeability assumptions. DAGs with deterministic variables are a useful aid for planning and interpreting analyses involving derived variables and/or compositional data.
+  accessed:
+    -
+      year: 2025
+      month: 7
+      day: 8
+  author:
+    -
+      family: Berrie
+      given: Laurie
+    -
+      family: Arnold
+      given: Kellyn F
+    -
+      family: Tomova
+      given: Georgia D
+    -
+      family: Gilthorpe
+      given: Mark S
+    -
+      family: Tennant
+      given: Peter W G
+  citation-key: BerrieDepictingDeterministicVariables2025
+  container-title: American Journal of Epidemiology
+  container-title-short: Am. J. Epidemiol.
+  DOI: 10.1093/aje/kwae153
+  ISSN: 0002-9262
+  issue: '2'
+  issued:
+    -
+      year: 2025
+      month: 2
+      day: 5
+  page: 469–479
+  source: Silverchair
+  title: 'Depicting deterministic variables within directed acyclic graphs: an aid for identifying and interpreting causal effects involving derived variables and compositional data'
+  title-short: Depicting deterministic variables within directed acyclic graphs
+  type: article-journal
+  URL: https://doi.org/10.1093/aje/kwae153
+  volume: '194'
+
+-
+  id: ElliottTapestryValuesIntroduction2017
+  abstract: The role of values in scientific research has become an important topic of discussion in both scholarly and popular debates. Pundits across the political spectrum worry that research on topics like climate change, evolutionary theory, vaccine safety, and genetically modified foods has become overly politicized. At the same time, it is clear that values play an important role in science by limiting unethical forms of research and by deciding what areas of research have the greatest relevance for society. Deciding how to distinguish legitimate and illegitimate influences of values in scientific research is a matter of vital importance. Recently, philosophers of science have written a great deal on this topic, but most of their work has been directed toward a scholarly audience. This book makes the contemporary philosophical literature on science and values accessible to a wide readership. It examines case studies from a variety of research areas, including climate science, anthropology, chemical risk assessment, ecology, neurobiology, biomedical research, and agriculture. These cases show that values have necessary roles to play in identifying research topics, choosing research questions, determining the aims of inquiry, responding to uncertainty, and deciding how to communicate information. Kevin Elliott focuses not just on describing roles for values but also on determining when their influences are actually appropriate. He emphasizes several conditions for incorporating values in a legitimate fashion, and highlights multiple strategies for fostering engagement between stakeholders so that value influences can be subjected to careful and critical scrutiny.
+  author:
+    -
+      family: Elliott
+      given: Kevin C.
+  citation-key: ElliottTapestryValuesIntroduction2017
+  ISBN: 978-0-19-026081-1
+  issued:
+    -
+      year: 2017
+  language: en
+  number-of-pages: '225'
+  publisher: Oxford University Press
+  source: Google Books
+  title: 'A Tapestry of Values: An Introduction to Values in Science'
+  title-short: A Tapestry of Values
+  type: book
+
+-
+  id: GreenlandValidPValuesBehave2019
+  abstract: 'The present note explores sources of misplaced criticisms of P-values, such as conflicting definitions of “significance levels” and “P-values” in authoritative sources, and the consequent misinterpretation of P-values as error probabilities. It then discusses several properties of P-values that have been presented as fatal flaws: That P-values exhibit extreme variation across samples (and thus are “unreliable”), confound effect size with sample size, are sensitive to sample size, and depend on investigator sampling intentions. These properties are often criticized from a likelihood or Bayesian framework, yet they are exactly the properties P-values should exhibit when they are constructed and interpreted correctly within their originating framework. Other common criticisms are that P-values force users to focus on irrelevant hypotheses and overstate evidence against those hypotheses. These problems are not however properties of P-values but are faults of researchers who focus on null hypotheses and overstate evidence based on misperceptions that p = 0.05 represents enough evidence to reject hypotheses. Those problems are easily seen without use of Bayesian concepts by translating the observed P-value p into the Shannon information (S-value or surprisal) –log2(p).'
+  accessed:
+    -
+      year: 2019
+      month: 3
+      day: 21
+  author:
+    -
+      family: Greenland
+      given: Sander
+  citation-key: GreenlandValidPValuesBehave2019
+  container-title: The American Statistician
+  container-title-short: Am. Stat.
+  DOI: 10.1080/00031305.2018.1529625
+  ISSN: 0003-1305
+  issue: sup1
+  issued:
+    -
+      year: 2019
+      month: 3
+      day: 29
+  page: 106–114
+  source: Taylor and Francis+NEJM
+  title: 'Valid P-Values Behave Exactly as They Should: Some Misleading Criticisms of P-Values and Their Resolution With S-Values'
+  title-short: Valid P-Values Behave Exactly as They Should
+  type: article-journal
+  URL: https://doi.org/10.1080/00031305.2018.1529625
+  volume: '73'
+
+-
+  id: HoofnagleFundingDealHollowing2026
+  abstract: A 2022 state funding deal has quietly forced California's elite research universities to chase graduation quotas at the expense of academic rigor, turning Nobel-minting institutions into remedial classrooms.
+  accessed:
+    -
+      year: 2026
+      month: 9
+      day: 27
+  author:
+    -
+      family: Hoofnagle
+      given: Chris
+  citation-key: HoofnagleFundingDealHollowing2026
+  container-title: Garry's List
+  issued:
+    -
+      year: 2026
+      month: 6
+      day: 15
+  language: en
+  title: A Funding Deal Is Hollowing Out California's Public Ivies
+  type: webpage
+  URL: https://garryslist.org/posts/a-funding-deal-is-hollowing-out-california-s-public-ivies
+
+-
+  id: LonginoScienceSocialKnowledge1990
+  author:
+    -
+      family: Longino
+      given: Helen E.
+  call-number: Q175 .L655 1990
+  citation-key: LonginoScienceSocialKnowledge1990
+  ISBN: 978-0-691-07342-2 978-0-691-02051-8
+  issued:
+    -
+      year: 1990
+  number-of-pages: '262'
+  publisher: Princeton University Press
+  publisher-place: Princeton, N.J
+  source: Library of Congress ISBN
+  title: 'Science as social knowledge: values and objectivity in scientific inquiry'
+  title-short: Science as social knowledge
+  type: book
+
+-
+  id: MitchellUnsimpleTruths2009
+  abstract: The world is complex, but acknowledging its complexity requires an appreciation for the many roles context plays in shaping natural phenomena. In Unsimple Truths, Sandra Mitchell argues that the long-standing scientific and philosophical deference to reductive explanations founded on simple universal laws, linear causal models, and predict-and-act strategies fails to accommodate the kinds of knowledge that many contemporary sciences are providing about the world. She advocates, instead, for a new understanding that represents the rich, variegated, interdependent fabric of many levels and kinds of explanation that are integrated with one another to ground effective prediction and action. Mitchell draws from diverse fields including psychiatry, social insect biology, and studies of climate change to defend “integrative pluralism”—a theory of scientific practices that makes sense of how many natural and social sciences represent the multi-level, multi-component, dynamic structures they study. She explains how we must, in light of the now-acknowledged complexity and contingency of biological and social systems, revise how we conceptualize the world, how we investigate the world, and how we act in the world. Ultimately Unsimple Truths argues that the very idea of what should count as legitimate science itself should change.
+  author:
+    -
+      family: Mitchell
+      given: Sandra D.
+  citation-key: MitchellUnsimpleTruths2009
+  collection-title: Science, Complexity, and Policy
+  ISBN: 978-0-226-53265-3
+  issued:
+    -
+      year: 2009
+  number-of-pages: '160'
+  publisher: University of Chicago Press
+  title: Unsimple Truths
+  type: book
+  URL: http://books.google.ca/books?id=obbUPu0HbHEC&pg=PA97&dq=intitle:Unsimple+Truths&hl=&cd=1&source=gbs_api
+
+-
+  id: NortonSustainabilityPhilosophyAdaptive2005
+  author:
+    -
+      family: Norton
+      given: Bryan G.
+  call-number: GE170 .N67 2005
+  citation-key: NortonSustainabilityPhilosophyAdaptive2005
+  ISBN: 0-226-59519-6 0-226-59521-8
+  issued:
+    -
+      year: 2005
+  number-of-pages: '607'
+  publisher: University of Chicago Press
+  publisher-place: Chicago
+  source: Library of Congress ISBN
+  title: 'Sustainability: a philosophy of adaptive ecosystem management'
+  title-short: Sustainability
+  type: book
+
+-
+  id: RothsteinUniversityCaliforniaAdmissions2026
+  abstract: 'In 2020, the Regents of the University of California voted to stop considering SAT scores (or ACT scores) in undergraduate admissions. A group of UC faculty have recently signed open letters calling on the Regents to reverse this decision.UC’s renewed debate on the SAT follows decisions from a number of Ivy League institutions to return to requiring standardized test scores, after going “test optional” during the pandemic. UC, however, is a public institution, with a different mission from that of the Ivy League private universities. As the “About UC” page on the ucop.edu website describes it, “The University of California began more than 150 years ago with a simple but revolutionary idea: that college should be available to everyone. That same spirit still guides us today…We’re an engine of social and economic mobility for hundreds of thousands of students, and our research and innovation powers health care for all Californians.” As the Regents and other stakeholders consider the question of whether to bring back the SAT, they will need to do so in light of the UC’s unique role in the state.This document attempts to address a number of factual and interpretive issues about the role of SAT scores in college admissions, in general and specifically at the University of California. It takes the form of a series of frequently asked questions and answers. It may be updated as new questions arise or new evidence comes to light.'
+  accessed:
+    -
+      year: 2026
+      month: 9
+      day: 11
+  author:
+    -
+      family: Rothstein
+      given: Jesse
+  citation-key: RothsteinUniversityCaliforniaAdmissions2026
+  issued:
+    -
+      year: 2026
+      month: 9
+      day: 8
+  language: en
+  source: escholarship.org
+  title: 'University of California admissions and the SAT: FAQs'
+  title-short: University of California admissions and the SAT
+  type: article-journal
+  URL: https://escholarship.org/uc/item/6kx2q4zw
+
+-
+  id: StankovaOpinionTeachCalculus2026
+  abstract: Since the University of California abandoned the SAT and ACT, thousands of faculty say it’s admitting students who aren’t prepared for the coursework. Will UC listen?
+  accessed:
+    -
+      year: 2026
+      month: 9
+      day: 27
+  author:
+    -
+      family: Stankova
+      given: Zvezdelina
+  citation-key: StankovaOpinionTeachCalculus2026
+  container-title: The San Francisco Standard
+  issued:
+    -
+      year: 2026
+      month: 8
+      day: 15
+  language: en
+  section: Opinion
+  title: 'Opinion: I teach calculus at Berkeley. Some of my students can’t do middle school math'
+  title-short: Opinion
+  type: webpage
+  URL: https://sfstandard.com/opinion/2026/08/15/uc-berkeley-sat-test-blind-admissions-math-scores/
+...

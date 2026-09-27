@@ -61,62 +61,6 @@
     <lastmod>2026-06-23T20:38:45.939Z</lastmod>
   </url>
   <url>
-    <loc>https://dhicks.github.io/posts/2026-06-23-sat_fairness.html</loc>
-    <lastmod>2026-06-23T20:23:29.931Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhicks.github.io/posts/2014-05-06-thoughts-on-first.html</loc>
-    <lastmod>2022-12-29T21:41:04.713Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhicks.github.io/posts/2019-02-01-explainable-machine-learning.html</loc>
-    <lastmod>2022-12-29T21:03:26.947Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhicks.github.io/posts/2013-04-14-local-food-global-justice.html</loc>
-    <lastmod>2022-12-29T21:41:04.704Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhicks.github.io/posts/2020-05-04-chlorpyrifos-paper.html</loc>
-    <lastmod>2022-12-29T21:02:04.264Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhicks.github.io/posts/2023-06-07-nazi-problem.html</loc>
-    <lastmod>2023-06-07T17:47:48.023Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhicks.github.io/posts/2020-07-10-critical-thinking.html</loc>
-    <lastmod>2022-12-29T21:01:08.440Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhicks.github.io/posts/2013-01-11-satz-account-of-noxious-markets.html</loc>
-    <lastmod>2022-12-29T21:40:47.853Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhicks.github.io/posts/2025-01-14-weaponized-metascience.html</loc>
-    <lastmod>2025-02-14T18:57:48.878Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhicks.github.io/posts/2024-11-08-fire-ecology.html</loc>
-    <lastmod>2024-11-08T16:42:28.669Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhicks.github.io/posts/2021-06-26-city-sim-dynamics.html</loc>
-    <lastmod>2022-12-29T21:00:11.367Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhicks.github.io/posts/2023-11-10-ChatGPT.html</loc>
-    <lastmod>2025-08-02T19:56:02.711Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhicks.github.io/phrail.html</loc>
-    <lastmod>2026-01-20T02:43:11.898Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dhicks.github.io/about.html</loc>
-    <lastmod>2024-11-03T19:14:57.879Z</lastmod>
-  </url>
-  <url>
     <loc>https://dhicks.github.io/posts/2014-06-18-virtue-ethics-for-robots.html</loc>
     <lastmod>2022-12-29T21:41:04.713Z</lastmod>
   </url>
@@ -241,12 +185,16 @@
     <lastmod>2023-09-25T22:34:00.342Z</lastmod>
   </url>
   <url>
-    <loc>https://dhicks.github.io/posts/2013-09-04-how-to-use-citations-to-create-ignorance.html</loc>
-    <lastmod>2022-12-29T21:41:04.706Z</lastmod>
+    <loc>https://dhicks.github.io/posts/2026-09-13-ucb-math.html</loc>
+    <lastmod>2026-09-27T22:23:27.309Z</lastmod>
   </url>
   <url>
     <loc>https://dhicks.github.io/posts/2018-10-25-autotag.html</loc>
     <lastmod>2022-12-29T21:41:04.723Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhicks.github.io/posts/2013-09-04-how-to-use-citations-to-create-ignorance.html</loc>
+    <lastmod>2022-12-29T21:41:04.706Z</lastmod>
   </url>
   <url>
     <loc>https://dhicks.github.io/posts/2016-05-26-no-psychologists-haven-t-shown-that-gmo-opponents-don-t-care-about-evidence.html</loc>
@@ -375,5 +323,61 @@
   <url>
     <loc>https://dhicks.github.io/posts/2019-12-06-White-supremacy-and-evolutionary-games.html</loc>
     <lastmod>2022-12-29T21:02:46.294Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhicks.github.io/posts/2026-06-23-sat_fairness.html</loc>
+    <lastmod>2026-06-23T20:23:29.931Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhicks.github.io/posts/2014-05-06-thoughts-on-first.html</loc>
+    <lastmod>2022-12-29T21:41:04.713Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhicks.github.io/posts/2019-02-01-explainable-machine-learning.html</loc>
+    <lastmod>2022-12-29T21:03:26.947Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhicks.github.io/posts/2013-04-14-local-food-global-justice.html</loc>
+    <lastmod>2022-12-29T21:41:04.704Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhicks.github.io/posts/2020-05-04-chlorpyrifos-paper.html</loc>
+    <lastmod>2022-12-29T21:02:04.264Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhicks.github.io/posts/2023-06-07-nazi-problem.html</loc>
+    <lastmod>2023-06-07T17:47:48.023Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhicks.github.io/posts/2020-07-10-critical-thinking.html</loc>
+    <lastmod>2022-12-29T21:01:08.440Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhicks.github.io/posts/2013-01-11-satz-account-of-noxious-markets.html</loc>
+    <lastmod>2022-12-29T21:40:47.853Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhicks.github.io/posts/2025-01-14-weaponized-metascience.html</loc>
+    <lastmod>2025-02-14T18:57:48.878Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhicks.github.io/posts/2024-11-08-fire-ecology.html</loc>
+    <lastmod>2024-11-08T16:42:28.669Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhicks.github.io/posts/2021-06-26-city-sim-dynamics.html</loc>
+    <lastmod>2022-12-29T21:00:11.367Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhicks.github.io/posts/2023-11-10-ChatGPT.html</loc>
+    <lastmod>2025-08-02T19:56:02.711Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhicks.github.io/phrail.html</loc>
+    <lastmod>2026-01-20T02:43:11.898Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dhicks.github.io/about.html</loc>
+    <lastmod>2024-11-03T19:14:57.879Z</lastmod>
   </url>
 </urlset>
